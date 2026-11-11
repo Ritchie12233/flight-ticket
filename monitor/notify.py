@@ -173,6 +173,13 @@ def fare_message(f: dict, cur: str, site: str = "") -> tuple[str, str, str]:
         lines.append("✨ 你还没去过这个国家")
     if f.get("baseline"):
         lines.append(f'近期常规价：{sym}{f["baseline"]:,.0f}（现价为其 {f["ratio"]:.0%}）')
+    if f.get("back"):
+        total = f["price"] + f["back"]["price"]
+        line = f'回程参考：{f["dest_name_zh"]}→吉隆坡单程最低 {sym}{f["back"]["price"]:,.0f}，去回合计约 {sym}{total:,.0f}'
+        if f.get("rt_ref"):
+            diff = f["rt_ref"] - total
+            line += f'（直接买往返最低 {sym}{f["rt_ref"]:,.0f}，' + (f'这样买省 {sym}{diff:,.0f}）' if diff > 0 else f'这样买贵 {sym}{-diff:,.0f}，单程适合配别的回程）')
+        lines.append(line)
     if f.get("transfers") is not None:
         lines.append("直飞" if f["transfers"] == 0 else f'中转 {f["transfers"]} 次')
     if f.get("airline"):

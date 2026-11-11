@@ -80,6 +80,22 @@ def fetch_cheap(token: str, origin: str, currency: str) -> list[dict]:
     return out
 
 
+def cheapest_back(dest: str, origin: str, currency: str) -> dict | None:
+    """单程 bug 价推送时用：查目的地飞回出发地的单程最低价（只在推送时调用，量很小）。"""
+    token = os.environ.get("TRAVELPAYOUTS_TOKEN", "").strip()
+    if not token:
+        return None
+    try:
+        js = _get("/v2/prices/latest", token, currency=currency, origin=dest, destination=origin,
+                  period_type="year", one_way="true", page=1, limit=5, sorting="price",
+                  trip_class=0, show_to_affiliates="true")
+        d = (js.get("data") or [None])[0]
+        return {"price": float(d["value"]), "depart": d.get("depart_date")} if d else None
+    except Exception as e:  # noqa: BLE001
+        log.warning("回程查询失败 %s→%s: %s", dest, origin, e)
+        return None
+
+
 # ---------------- 城市 / 航司字典（缓存一周） ----------------
 
 def _cached_json(url: str, path: Path, max_age_days: int = 7):

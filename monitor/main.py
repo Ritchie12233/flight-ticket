@@ -163,6 +163,19 @@ def run(args):
         if lvl in push_levels and should_alert(n["id"], None, state["alerted"], cfg, now):
             to_push.append(("news", n))
 
+    # 单程推送：补上回程参考价和同目的地往返最低价，方便判断「单程 bug + 正常回程」划不划算
+    rt_cheapest = {}
+    for r in results:
+        if r["trip_class"] == 0 and not r["one_way"] and (r["dest"] not in rt_cheapest or r["price"] < rt_cheapest[r["dest"]]):
+            rt_cheapest[r["dest"]] = r["price"]
+    for kind, item in to_push[:budget]:
+        if kind == "fare" and item["one_way"] and item["trip_class"] == 0 and not args.demo:
+            back = travelpayouts.cheapest_back(item["dest"], item["origin"], cur)
+            if back:
+                item["back"] = back
+            if item["dest"] in rt_cheapest:
+                item["rt_ref"] = rt_cheapest[item["dest"]]
+
     pushed = []
     for kind, item in to_push[:budget]:
         title, body, url = (notify.fare_message(item, cur, site) if kind == "fare"
