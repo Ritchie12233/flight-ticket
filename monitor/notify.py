@@ -167,6 +167,8 @@ def fare_message(f: dict, cur: str, site: str = "") -> tuple[str, str, str]:
         lines.append("直飞" if f["transfers"] == 0 else f'中转 {f["transfers"]} 次')
     if f.get("airline"):
         lines.append(f'航司：{f["airline"]}')
+    if f.get("gate"):
+        lines.append(f'报价来源：{f["gate"]}')
     if f.get("reasons"):
         lines.append("判定：" + "；".join(f["reasons"]))
     lines.append("⚠️ 缓存价，可能已失效，请尽快核实。bug 价出票后先别订酒店。")

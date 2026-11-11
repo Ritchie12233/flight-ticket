@@ -29,7 +29,9 @@ def _get(path: str, token: str, **params):
 def fetch_latest(token: str, origin: str, currency: str, trip_class: int,
                  one_way: bool, limit: int) -> list[dict]:
     """v2/prices/latest：从 origin 出发到任意目的地，按价格排序。"""
-    js = _get("/v2/prices/latest", token, currency=currency, origin=origin,
+    # v2 只支持经济舱；商务舱用 v3/get_latest_prices
+    path = "/v2/prices/latest" if trip_class == 0 else "/aviasales/v3/get_latest_prices"
+    js = _get(path, token, currency=currency, origin=origin,
               period_type="year", one_way=str(one_way).lower(), page=1,
               limit=limit, sorting="price", trip_class=trip_class,
               show_to_affiliates="true")
@@ -39,8 +41,8 @@ def fetch_latest(token: str, origin: str, currency: str, trip_class: int,
             "origin": d.get("origin", origin),
             "dest": d.get("destination"),
             "price": float(d.get("value") or 0),
-            "depart": d.get("depart_date"),
-            "return": None if one_way else d.get("return_date"),
+            "depart": (d.get("depart_date") or "")[:10] or None,
+            "return": None if one_way else ((d.get("return_date") or "")[:10] or None),
             "one_way": one_way,
             "trip_class": trip_class,
             "transfers": d.get("number_of_changes"),

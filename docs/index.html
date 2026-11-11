@@ -201,6 +201,7 @@ function card(f){
       <span>${f.one_way ? "单程" : "往返"} · ${f.trip_class === 1 ? "商务舱" : "经济舱"}</span>
       ${f.transfers != null ? `<span>${f.transfers === 0 ? "直飞" : "中转 " + f.transfers + " 次"}</span>` : ""}
       ${f.airline ? `<span>✈ ${esc(f.airline)}</span>` : ""}
+      ${f.gate ? `<span>🏷 ${esc(f.gate)}</span>` : ""}
       ${f.per_km ? `<span>${f.per_km.toFixed(3)}/km</span>` : ""}
     </div>
     ${pct ? `<div class="bar" title="现价 / 近期常规价"><i style="width:${pct}%"></i></div>` : ""}
