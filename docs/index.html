@@ -488,7 +488,8 @@ function arc(a, b, n = 72){
   return out;
 }
 function mapStyle(){
-  const zh = ["coalesce", ["get","name:zh"], ["get","name:latin"], ["get","name"]];
+  const raw = ["coalesce", ["get","name:zh"], ["get","name:latin"], ["get","name"], ""];   // 中文名优先；"雅加达 / 雅加達" 只取前半
+  const zh = ["let", "n", raw, ["case", [">", ["index-of", " / ", ["var","n"]], 0], ["slice", ["var","n"], 0, ["index-of", " / ", ["var","n"]]], ["var","n"]]];
   const font = ["Noto Sans Regular"], bold = ["Noto Sans Bold"];
   const s = "omt", L = [];
   const lb = (id, layer, filter, minzoom, size, extra = {}) => L.push({id:"lb-" + id, type:"symbol", source:s, "source-layer":layer, minzoom, ...(extra.maxzoom ? {maxzoom:extra.maxzoom} : {}),
