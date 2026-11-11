@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-11T16:20:57.365677+08:00",
+ "updated_at": "2026-11-11T16:28:08.168429+08:00",
  "origin": "KUL",
  "currency": "MYR",
  "stats": {
-  "fares_scanned": 1153,
+  "fares_scanned": 1154,
   "routes": 818,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1153
+   "count": 1154
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -1869,15 +1869,15 @@
   {
    "origin": "KUL",
    "dest": "PPS",
-   "price": 1170.0,
-   "depart": "2027-01-27",
-   "return": "2027-02-09",
+   "price": 1169.0,
+   "depart": "2027-02-01",
+   "return": "2027-02-14",
    "one_way": false,
    "trip_class": 0,
    "transfers": 1,
    "distance": 2023,
-   "airline": "AirAsia (AK)",
-   "flight_number": 590,
+   "airline": "Cebu Pacific (5J)",
+   "flight_number": 502,
    "found_at": null,
    "source": "aviasales-cheap",
    "gate": "Trip.com",
@@ -1887,7 +1887,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2892,
+   "per_km": 0.289,
    "dest_name": "Puerto Princesa",
    "dest_name_zh": "普林塞萨港",
    "country": "PH"
