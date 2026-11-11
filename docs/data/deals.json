@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-12T01:34:57.890295+08:00",
+ "updated_at": "2026-11-12T01:49:18.210681+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1113,
-  "routes": 776,
+  "fares_scanned": 1116,
+  "routes": 777,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1113
+   "count": 1116
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -4093,12 +4093,13 @@
    "return": "2027-03-06",
    "one_way": false,
    "trip_class": 0,
-   "transfers": null,
+   "transfers": 1,
    "distance": 1444,
    "airline": "Vietjet (VJ)",
    "flight_number": 826,
    "found_at": null,
    "source": "aviasales-cheap",
+   "gate": "Tickets",
    "id": "KUL-UIH|RT|0",
    "type": "fare",
    "level": "normal",
@@ -14873,6 +14874,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "CGP",
+   "price": 1188.0,
+   "depart": "2026-11-18",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 2415,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-11T17:32:16",
+   "source": "aviasales-latest",
+   "id": "KUL-CGP|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4919,
+   "dest_name": "Chittagong",
+   "dest_name_zh": "吉大港",
+   "country": "BD",
+   "lat": 22.356851,
+   "lon": 91.7831819,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "VII",
    "price": 1188.0,
    "depart": "2027-01-29",
@@ -23811,39 +23845,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "电子旅行授权 eTA"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "VLI",
-   "price": 3812.0,
-   "depart": "2026-12-21",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 7639,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-07T17:26:40",
-   "source": "aviasales-latest",
-   "id": "KUL-VLI|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.499,
-   "dest_name": "Port Vila",
-   "dest_name_zh": "Port Vila",
-   "country": "VU",
-   "lat": -17.701853,
-   "lon": 168.3195,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
