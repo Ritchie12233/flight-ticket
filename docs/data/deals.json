@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-11T16:56:42.775457+08:00",
+ "updated_at": "2026-11-11T17:11:03.311177+08:00",
  "origin": "KUL",
- "currency": "MYR",
+ "currency": "CNY",
  "stats": {
-  "fares_scanned": 1155,
-  "routes": 819,
+  "fares_scanned": 1154,
+  "routes": 818,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1155
+   "count": 1154
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -45,329 +45,717 @@
   }
  ],
  "hot": [],
- "watch": [
+ "hot_business": [],
+ "business_routes": [
   {
-   "dest": "LON",
-   "target": 1600,
-   "dest_name": "London",
-   "dest_name_zh": "伦敦",
-   "country": "GB",
-   "current": {
-    "origin": "KUL",
-    "dest": "LON",
-    "price": 2501.0,
-    "depart": "2027-04-10",
-    "return": "2027-05-03",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 1,
-    "distance": 10546,
-    "airline": "Oman Air (WY)",
-    "flight_number": 822,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Oman Air",
-    "id": "KUL-LON|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1186,
-    "dest_name": "London",
-    "dest_name_zh": "伦敦",
-    "country": "GB"
+   "origin": "KUL",
+   "dest": "PEN",
+   "price": 1124.0,
+   "depart": "2026-11-28",
+   "return": "2026-12-03",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 324,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-06T14:08:01Z",
+   "source": "aviasales-latest",
+   "id": "KUL-PEN|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.7346,
+   "dest_name": "Penang",
+   "dest_name_zh": "槟城",
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     2501.0
-    ]
-   ]
+   "visited": true
   },
   {
-   "dest": "PAR",
-   "target": 1700,
-   "dest_name": "Paris",
-   "dest_name_zh": "巴黎",
-   "country": "FR",
-   "current": {
-    "origin": "KUL",
-    "dest": "PAR",
-    "price": 2412.0,
-    "depart": "2027-03-30",
-    "return": "2027-04-10",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 1,
-    "distance": 10424,
-    "airline": "Saudia (SV)",
-    "flight_number": 841,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Flightnetwork",
-    "id": "KUL-PAR|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1157,
-    "dest_name": "Paris",
-    "dest_name_zh": "巴黎",
-    "country": "FR"
+   "origin": "KUL",
+   "dest": "LGK",
+   "price": 1348.0,
+   "depart": "2027-01-07",
+   "return": "2027-01-14",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 454,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-10T06:51:40Z",
+   "source": "aviasales-latest",
+   "id": "KUL-LGK|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.4846,
+   "dest_name": "Langkawi",
+   "dest_name_zh": "兰卡威",
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     2412.0
-    ]
-   ]
+   "visited": true
   },
   {
-   "dest": "TYO",
-   "target": 900,
-   "dest_name": "Tokyo",
-   "dest_name_zh": "东京",
-   "country": "JP",
-   "current": {
-    "origin": "KUL",
-    "dest": "TYO",
-    "price": 1461.0,
-    "depart": "2027-06-06",
-    "return": "2027-06-13",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 1,
-    "distance": 5318,
-    "airline": "Vietjet (VJ)",
-    "flight_number": 906,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Tickets",
-    "id": "KUL-TYO|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1374,
-    "dest_name": "Tokyo",
-    "dest_name_zh": "东京",
-    "country": "JP"
+   "origin": "KUL",
+   "dest": "SIN",
+   "price": 2025.0,
+   "depart": "2026-11-12",
+   "return": "2026-11-15",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 297,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-08T14:42:52Z",
+   "source": "aviasales-latest",
+   "id": "KUL-SIN|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 3.4091,
+   "dest_name": "Singapore",
+   "dest_name_zh": "新加坡",
+   "country": "SG",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     1461.0
-    ]
-   ]
+   "visited": true
   },
   {
-   "dest": "OSA",
-   "target": 850,
-   "dest_name": "Osaka",
-   "dest_name_zh": "大阪",
-   "country": "JP",
-   "current": {
-    "origin": "KUL",
-    "dest": "OSA",
-    "price": 1659.0,
-    "depart": "2027-07-09",
-    "return": "2027-07-12",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 1,
-    "distance": 4948,
-    "airline": "Philippine Airlines (PR)",
-    "flight_number": 526,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Mytrip.com",
-    "id": "KUL-OSA|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1676,
-    "dest_name": "Osaka",
-    "dest_name_zh": "大阪",
-    "country": "JP"
+   "origin": "KUL",
+   "dest": "HKG",
+   "price": 4774.0,
+   "depart": "2027-02-22",
+   "return": "2027-02-28",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 2544,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-10T04:20:53Z",
+   "source": "aviasales-latest",
+   "id": "KUL-HKG|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.9383,
+   "dest_name": "Hong Kong",
+   "dest_name_zh": "香港",
+   "country": "HK",
+   "visa": {
+    "status": "easy",
+    "label": "通行证",
+    "note": "凭港澳通行证及有效签注入境"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     1659.0
-    ]
-   ]
+   "visited": false
   },
   {
+   "origin": "KUL",
+   "dest": "SZX",
+   "price": 4944.0,
+   "depart": "2026-12-16",
+   "return": "2026-12-27",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 2567,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-10T21:15:11Z",
+   "source": "aviasales-latest",
+   "id": "KUL-SZX|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.963,
+   "dest_name": "Shenzhen",
+   "dest_name_zh": "深圳",
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "SHA",
+   "price": 5090.0,
+   "depart": "2027-01-13",
+   "return": "2027-01-18",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 3796,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-10T06:41:11Z",
+   "source": "aviasales-latest",
+   "id": "KUL-SHA|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.6704,
+   "dest_name": "Shanghai",
+   "dest_name_zh": "上海",
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "SEL",
-   "target": 700,
+   "price": 5189.0,
+   "depart": "2027-01-15",
+   "return": "2027-01-21",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 4610,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-05T14:25:41Z",
+   "source": "aviasales-latest",
+   "id": "KUL-SEL|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5628,
    "dest_name": "Seoul",
    "dest_name_zh": "首尔",
    "country": "KR",
-   "current": {
-    "origin": "KUL",
-    "dest": "SEL",
-    "price": 1194.0,
-    "depart": "2027-04-12",
-    "return": "2027-04-18",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 1,
-    "distance": 4614,
-    "airline": "Philippine Airlines (PR)",
-    "flight_number": 530,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Kupi.com",
-    "id": "KUL-SEL|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1294,
-    "dest_name": "Seoul",
-    "dest_name_zh": "首尔",
-    "country": "KR"
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     1194.0
-    ]
-   ]
+   "visited": false
   },
   {
+   "origin": "KUL",
+   "dest": "SYX",
+   "price": 5822.0,
+   "depart": "2026-11-14",
+   "return": "2026-11-21",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 1922,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-10T01:11:23Z",
+   "source": "aviasales-latest",
+   "id": "KUL-SYX|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.5146,
+   "dest_name": "Sanya",
+   "dest_name_zh": "三亚",
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "PQC",
+   "price": 5946.0,
+   "depart": "2026-11-26",
+   "return": "2026-12-11",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 866,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-06T17:00:46Z",
+   "source": "aviasales-latest",
+   "id": "KUL-PQC|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 3.433,
+   "dest_name": "Phu Quoc",
+   "dest_name_zh": "富国岛",
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CMB",
+   "price": 7201.0,
+   "depart": "2027-01-07",
+   "return": "2027-01-12",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 2465,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-07T12:17:36Z",
+   "source": "aviasales-latest",
+   "id": "KUL-CMB|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.4606,
+   "dest_name": "Colombo",
+   "dest_name_zh": "科伦坡",
+   "country": "LK",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "免费 ETA（2026-05 起）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "OSA",
+   "price": 7603.0,
+   "depart": "2027-01-25",
+   "return": "2027-02-08",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 4942,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-07T12:17:57Z",
+   "source": "aviasales-latest",
+   "id": "KUL-OSA|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.7692,
+   "dest_name": "Osaka",
+   "dest_name_zh": "大阪",
+   "country": "JP",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TYO",
+   "price": 8097.0,
+   "depart": "2026-11-19",
+   "return": "2026-11-23",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 5349,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-09T13:56:00Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TYO|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.7569,
+   "dest_name": "Tokyo",
+   "dest_name_zh": "东京",
+   "country": "JP",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TAS",
+   "price": 10862.0,
+   "depart": "2027-01-11",
+   "return": "2027-01-25",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 5369,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-11T08:08:48Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TAS|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.0115,
+   "dest_name": "Tashkent",
+   "dest_name_zh": "塔什干",
+   "country": "UZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "DXB",
+   "price": 11005.0,
+   "depart": "2026-12-27",
+   "return": "2027-01-03",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 5548,
+   "airline": null,
+   "gate": "Авиасейлс",
+   "found_at": "2026-11-08T12:29:19Z",
+   "source": "aviasales-latest",
+   "id": "KUL-DXB|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.9918,
+   "dest_name": "Dubai",
+   "dest_name_zh": "迪拜",
+   "country": "AE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "LON",
+   "price": 11713.0,
+   "depart": "2027-03-10",
+   "return": "2027-03-24",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 10590,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-11T05:09:40Z",
+   "source": "aviasales-latest",
+   "id": "KUL-LON|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.553,
+   "dest_name": "London",
+   "dest_name_zh": "伦敦",
+   "country": "GB",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MED",
+   "price": 12120.0,
+   "depart": "2026-11-13",
+   "return": "2026-11-24",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 7058,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-04T11:39:25Z",
+   "source": "aviasales-latest",
+   "id": "KUL-MED|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.8586,
+   "dest_name": "Medina",
+   "dest_name_zh": "麦地那城",
+   "country": "SA",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "ROM",
+   "price": 14364.0,
+   "depart": "2026-12-23",
+   "return": "2027-01-04",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 9757,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-08T03:13:47Z",
+   "source": "aviasales-latest",
+   "id": "KUL-ROM|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.7361,
+   "dest_name": "Rome",
+   "dest_name_zh": "罗马",
+   "country": "IT",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "SYD",
-   "target": 1000,
+   "price": 15705.0,
+   "depart": "2026-12-17",
+   "return": "2027-01-11",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 6585,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-07T01:21:07Z",
+   "source": "aviasales-latest",
+   "id": "KUL-SYD|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.1925,
    "dest_name": "Sydney",
    "dest_name_zh": "悉尼",
    "country": "AU",
-   "current": {
-    "origin": "KUL",
-    "dest": "SYD",
-    "price": 1889.0,
-    "depart": "2026-12-11",
-    "return": "2027-02-01",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 1,
-    "distance": 6615,
-    "airline": "Scoot (TR)",
-    "flight_number": 457,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Wingie",
-    "id": "KUL-SYD|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1428,
-    "dest_name": "Sydney",
-    "dest_name_zh": "悉尼",
-    "country": "AU"
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     1889.0
-    ]
-   ]
+   "visited": false
   },
   {
-   "dest": "AKL",
-   "target": 1500,
-   "dest_name": "Auckland",
-   "dest_name_zh": "奥克兰",
-   "country": "NZ",
-   "current": {
-    "origin": "KUL",
-    "dest": "AKL",
-    "price": 3357.0,
-    "depart": "2027-01-28",
-    "return": "2027-02-25",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 2,
-    "distance": 8726,
-    "airline": "Garuda Indonesia (GA)",
-    "flight_number": 821,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Wingie",
-    "id": "KUL-AKL|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1923,
-    "dest_name": "Auckland",
-    "dest_name_zh": "奥克兰",
-    "country": "NZ"
+   "origin": "KUL",
+   "dest": "MEL",
+   "price": 16743.0,
+   "depart": "2026-12-19",
+   "return": "2027-01-01",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 6316,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-06T22:24:01Z",
+   "source": "aviasales-latest",
+   "id": "KUL-MEL|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.3254,
+   "dest_name": "Melbourne",
+   "dest_name_zh": "墨尔本",
+   "country": "AU",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     3357.0
-    ]
-   ]
+   "visited": false
   },
   {
-   "dest": "YVR",
-   "target": 2200,
-   "dest_name": "Vancouver",
-   "dest_name_zh": "温哥华",
-   "country": "CA",
-   "current": {
-    "origin": "KUL",
-    "dest": "YVR",
-    "price": 3106.0,
-    "depart": "2027-03-19",
-    "return": "2027-04-03",
-    "one_way": false,
-    "trip_class": 0,
-    "transfers": 1,
-    "distance": 12773,
-    "airline": "China Southern Airlines (CZ)",
-    "flight_number": 8302,
-    "found_at": null,
-    "source": "aviasales-cheap",
-    "gate": "Wingie",
-    "id": "KUL-YVR|RT|0",
-    "type": "fare",
-    "level": "normal",
-    "reasons": [],
-    "baseline": null,
-    "ratio": null,
-    "per_km": 0.1216,
-    "dest_name": "Vancouver",
-    "dest_name_zh": "温哥华",
-    "country": "CA"
+   "origin": "KUL",
+   "dest": "MOW",
+   "price": 17531.0,
+   "depart": "2026-11-20",
+   "return": "2026-11-27",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 8183,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-06T16:52:46Z",
+   "source": "aviasales-latest",
+   "id": "KUL-MOW|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.0712,
+   "dest_name": "Moscow",
+   "dest_name_zh": "莫斯科",
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
-   "trend": [
-    [
-     "2026-11-11",
-     3106.0
-    ]
-   ]
+   "visited": false
   },
+  {
+   "origin": "KUL",
+   "dest": "FRA",
+   "price": 17638.0,
+   "depart": "2026-11-15",
+   "return": "2026-11-22",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 9995,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-10T22:50:58Z",
+   "source": "aviasales-latest",
+   "id": "KUL-FRA|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.8823,
+   "dest_name": "Frankfurt",
+   "dest_name_zh": "法兰克福",
+   "country": "DE",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "LAX",
+   "price": 20173.0,
+   "depart": "2027-02-20",
+   "return": "2027-03-06",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 14161,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-07T15:54:18Z",
+   "source": "aviasales-latest",
+   "id": "KUL-LAX|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.7123,
+   "dest_name": "Los Angeles",
+   "dest_name_zh": "洛杉矶",
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  }
+ ],
+ "visa_source": "外交部互免签证协定一览表（2026-05-29）及多家签证机构 2026 年汇总，整理于 2026-11-11；出行前以官方为准",
+ "visited": [
+  "CN",
+  "MY",
+  "PH",
+  "SG",
+  "ZA"
+ ],
+ "held_visas": [],
+ "watch": [
   {
    "dest": "CTU",
-   "target": 500,
+   "target": 900,
    "dest_name": "Chengdu",
    "dest_name_zh": "成都",
    "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true,
    "current": {
     "origin": "KUL",
     "dest": "CTU",
-    "price": 847.0,
+    "price": 1392.0,
     "depart": "2027-01-23",
     "return": "2027-01-28",
     "one_way": false,
@@ -385,28 +773,40 @@
     "reasons": [],
     "baseline": null,
     "ratio": null,
-    "per_km": 0.1384,
+    "per_km": 0.2274,
     "dest_name": "Chengdu",
     "dest_name_zh": "成都",
-    "country": "CN"
+    "country": "CN",
+    "visa": {
+     "status": "free",
+     "label": "国内",
+     "note": "回国，不需要签证"
+    },
+    "visited": true
    },
    "trend": [
     [
      "2026-11-11",
-     847.0
+     1392.0
     ]
    ]
   },
   {
    "dest": "SHA",
-   "target": 550,
+   "target": 950,
    "dest_name": "Shanghai",
    "dest_name_zh": "上海",
    "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true,
    "current": {
     "origin": "KUL",
     "dest": "SHA",
-    "price": 877.0,
+    "price": 1441.0,
     "depart": "2027-05-01",
     "return": "2027-05-07",
     "one_way": false,
@@ -424,15 +824,530 @@
     "reasons": [],
     "baseline": null,
     "ratio": null,
-    "per_km": 0.117,
+    "per_km": 0.1922,
     "dest_name": "Shanghai",
     "dest_name_zh": "上海",
-    "country": "CN"
+    "country": "CN",
+    "visa": {
+     "status": "free",
+     "label": "国内",
+     "note": "回国，不需要签证"
+    },
+    "visited": true
    },
    "trend": [
     [
      "2026-11-11",
-     877.0
+     1441.0
+    ]
+   ]
+  },
+  {
+   "dest": "BKK",
+   "target": 450,
+   "dest_name": "Bangkok",
+   "dest_name_zh": "曼谷",
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "BKK",
+    "price": 834.0,
+    "depart": "2026-12-25",
+    "return": "2027-01-13",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 0,
+    "distance": 1188,
+    "airline": "Thai Vietjet Air (VZ)",
+    "flight_number": 683,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Авиасейлс",
+    "id": "KUL-BKK|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.3511,
+    "dest_name": "Bangkok",
+    "dest_name_zh": "曼谷",
+    "country": "TH",
+    "visa": {
+     "status": "free",
+     "label": "免签",
+     "note": "免签 60 天"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     834.0
+    ]
+   ]
+  },
+  {
+   "dest": "DPS",
+   "target": 650,
+   "dest_name": "Denpasar (Bali)",
+   "dest_name_zh": "巴厘",
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "DPS",
+    "price": 932.0,
+    "depart": "2027-01-16",
+    "return": "2027-01-28",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 0,
+    "distance": 1993,
+    "airline": "AirAsia (AK)",
+    "flight_number": 368,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Trip.com",
+    "id": "KUL-DPS|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.2338,
+    "dest_name": "Denpasar (Bali)",
+    "dest_name_zh": "巴厘",
+    "country": "ID",
+    "visa": {
+     "status": "easy",
+     "label": "落地签/电子签",
+     "note": "落地签 30 天"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     932.0
+    ]
+   ]
+  },
+  {
+   "dest": "MLE",
+   "target": 1300,
+   "dest_name": "Male",
+   "dest_name_zh": "马累",
+   "country": "MV",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（行前 96 小时填 IMUGA）"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "MLE",
+    "price": 2028.0,
+    "depart": "2026-11-17",
+    "return": "2026-11-24",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 0,
+    "distance": 3129,
+    "airline": "AirAsia (AK)",
+    "flight_number": 72,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Trip.com",
+    "id": "KUL-MLE|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.3241,
+    "dest_name": "Male",
+    "dest_name_zh": "马累",
+    "country": "MV",
+    "visa": {
+     "status": "free",
+     "label": "免签",
+     "note": "免签 30 天（行前 96 小时填 IMUGA）"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     2028.0
+    ]
+   ]
+  },
+  {
+   "dest": "DXB",
+   "target": 1400,
+   "dest_name": "Dubai",
+   "dest_name_zh": "迪拜",
+   "country": "AE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "DXB",
+    "price": 3371.0,
+    "depart": "2026-12-04",
+    "return": "2026-12-07",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 1,
+    "distance": 5553,
+    "airline": null,
+    "gate": "Wingie",
+    "found_at": "2026-11-10T12:06:28",
+    "source": "aviasales-latest",
+    "id": "KUL-DXB|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.3035,
+    "dest_name": "Dubai",
+    "dest_name_zh": "迪拜",
+    "country": "AE",
+    "visa": {
+     "status": "free",
+     "label": "免签",
+     "note": "免签 30 天"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     3371.0
+    ]
+   ]
+  },
+  {
+   "dest": "IST",
+   "target": 2000,
+   "dest_name": "Istanbul",
+   "dest_name_zh": "伊斯坦布尔",
+   "country": "TR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "IST",
+    "price": 2944.0,
+    "depart": "2026-12-30",
+    "return": "2027-02-15",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 0,
+    "distance": 8333,
+    "airline": "Turkish Airlines (TK)",
+    "flight_number": 63,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Lucky2Go",
+    "id": "KUL-IST|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.1767,
+    "dest_name": "Istanbul",
+    "dest_name_zh": "伊斯坦布尔",
+    "country": "TR",
+    "visa": {
+     "status": "free",
+     "label": "免签",
+     "note": "免签（180 天内累计 90 天，2026-01 起）"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     2944.0
+    ]
+   ]
+  },
+  {
+   "dest": "TBS",
+   "target": 2200,
+   "dest_name": "Tbilisi",
+   "dest_name_zh": "第比利斯",
+   "country": "GE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "TBS",
+    "price": 4140.0,
+    "depart": "2027-03-10",
+    "return": "2027-03-24",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 1,
+    "distance": 7077,
+    "airline": "Turkish Airlines (TK)",
+    "flight_number": 63,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Wingie",
+    "id": "KUL-TBS|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.2925,
+    "dest_name": "Tbilisi",
+    "dest_name_zh": "第比利斯",
+    "country": "GE",
+    "visa": {
+     "status": "free",
+     "label": "免签",
+     "note": "免签 90 天"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     4140.0
+    ]
+   ]
+  },
+  {
+   "dest": "CAI",
+   "target": 2200,
+   "dest_name": "Cairo",
+   "dest_name_zh": "开罗",
+   "country": "EG",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "CAI",
+    "price": 3242.0,
+    "depart": "2026-11-26",
+    "return": "2026-12-03",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 1,
+    "distance": 7955,
+    "airline": "Turkish Airlines (TK)",
+    "flight_number": 63,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Trip.com",
+    "id": "KUL-CAI|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.2038,
+    "dest_name": "Cairo",
+    "dest_name_zh": "开罗",
+    "country": "EG",
+    "visa": {
+     "status": "easy",
+     "label": "落地签/电子签",
+     "note": "落地签"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     3242.0
+    ]
+   ]
+  },
+  {
+   "dest": "MRU",
+   "target": 2500,
+   "dest_name": "Mauritius",
+   "dest_name_zh": "毛里求斯",
+   "country": "MU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "MRU",
+    "price": 4238.0,
+    "depart": "2027-01-10",
+    "return": "2027-01-25",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 1,
+    "distance": 5472,
+    "airline": "IndiGo (6E)",
+    "flight_number": 1038,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Trip.com",
+    "id": "KUL-MRU|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.3872,
+    "dest_name": "Mauritius",
+    "dest_name_zh": "毛里求斯",
+    "country": "MU",
+    "visa": {
+     "status": "free",
+     "label": "免签",
+     "note": "免签 90 天"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     4238.0
+    ]
+   ]
+  },
+  {
+   "dest": "YVR",
+   "target": 3500,
+   "dest_name": "Vancouver",
+   "dest_name_zh": "温哥华",
+   "country": "CA",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "YVR",
+    "price": 5110.0,
+    "depart": "2027-03-19",
+    "return": "2027-04-03",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 1,
+    "distance": 12773,
+    "airline": "China Southern Airlines (CZ)",
+    "flight_number": 8302,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Wingie",
+    "id": "KUL-YVR|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.2,
+    "dest_name": "Vancouver",
+    "dest_name_zh": "温哥华",
+    "country": "CA",
+    "visa": {
+     "status": "visa",
+     "label": "需签证",
+     "note": "需提前办签证，抢到特价票也可能来不及"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     5110.0
+    ]
+   ]
+  },
+  {
+   "dest": "AKL",
+   "target": 2500,
+   "dest_name": "Auckland",
+   "dest_name_zh": "奥克兰",
+   "country": "NZ",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false,
+   "current": {
+    "origin": "KUL",
+    "dest": "AKL",
+    "price": 5499.0,
+    "depart": "2027-01-28",
+    "return": "2027-02-25",
+    "one_way": false,
+    "trip_class": 0,
+    "transfers": 2,
+    "distance": 8726,
+    "airline": "Garuda Indonesia (GA)",
+    "flight_number": 821,
+    "found_at": null,
+    "source": "aviasales-cheap",
+    "gate": "Wingie",
+    "id": "KUL-AKL|RT|0",
+    "type": "fare",
+    "level": "normal",
+    "reasons": [],
+    "baseline": null,
+    "ratio": null,
+    "per_km": 0.3151,
+    "dest_name": "Auckland",
+    "dest_name_zh": "奥克兰",
+    "country": "NZ",
+    "visa": {
+     "status": "visa",
+     "label": "需签证",
+     "note": "需提前办签证，抢到特价票也可能来不及"
+    },
+    "visited": false
+   },
+   "trend": [
+    [
+     "2026-11-11",
+     5499.0
     ]
    ]
   }
@@ -441,7 +1356,7 @@
   {
    "origin": "KUL",
    "dest": "TGG",
-   "price": 182.0,
+   "price": 301.0,
    "depart": "2027-02-25",
    "return": "2027-02-28",
    "one_way": false,
@@ -459,15 +1374,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3118,
+   "per_km": 0.5156,
    "dest_name": "Kuala Terengganu",
    "dest_name_zh": "瓜拉丁加奴",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "PEN",
-   "price": 186.0,
+   "price": 307.0,
    "depart": "2026-11-26",
    "return": "2026-11-30",
    "one_way": false,
@@ -485,15 +1406,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3125,
+   "per_km": 0.5158,
    "dest_name": "Penang",
    "dest_name_zh": "槟城",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "JHB",
-   "price": 191.0,
+   "price": 314.0,
    "depart": "2026-11-20",
    "return": "2026-11-20",
    "one_way": false,
@@ -511,15 +1438,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3264,
+   "per_km": 0.5366,
    "dest_name": "Johor Bahru",
    "dest_name_zh": "新山",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "AOR",
-   "price": 195.0,
+   "price": 320.0,
    "depart": "2027-01-06",
    "return": "2027-01-11",
    "one_way": false,
@@ -537,15 +1470,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2686,
+   "per_km": 0.4408,
    "dest_name": "Alor Setar",
    "dest_name_zh": "亚罗士打",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "LGK",
-   "price": 198.0,
+   "price": 325.0,
    "depart": "2027-02-22",
    "return": "2027-03-03",
    "one_way": false,
@@ -563,15 +1502,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2375,
+   "per_km": 0.3898,
    "dest_name": "Langkawi",
    "dest_name_zh": "兰卡威",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "KBR",
-   "price": 233.0,
+   "price": 383.0,
    "depart": "2027-03-28",
    "return": "2027-04-03",
    "one_way": false,
@@ -589,15 +1534,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3448,
+   "per_km": 0.5667,
    "dest_name": "Kota Bharu",
    "dest_name_zh": "哥达巴鲁",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "PDG",
-   "price": 282.0,
+   "price": 464.0,
    "depart": "2026-11-25",
    "return": "2026-12-04",
    "one_way": false,
@@ -615,15 +1566,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2964,
+   "per_km": 0.4876,
    "dest_name": "Padang",
    "dest_name_zh": "巴东",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MES",
-   "price": 286.0,
+   "price": 470.0,
    "depart": "2026-12-01",
    "return": "2026-12-04",
    "one_way": false,
@@ -641,15 +1598,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4225,
+   "per_km": 0.6943,
    "dest_name": "Medan",
    "dest_name_zh": "棉兰",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SIN",
-   "price": 370.0,
+   "price": 609.0,
    "depart": "2027-01-21",
    "return": "2027-01-24",
    "one_way": false,
@@ -667,15 +1630,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.5982,
+   "per_km": 0.9846,
    "dest_name": "Singapore",
    "dest_name_zh": "新加坡",
-   "country": "SG"
+   "country": "SG",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "BTJ",
-   "price": 379.0,
+   "price": 623.0,
    "depart": "2027-01-09",
    "return": "2027-01-30",
    "one_way": false,
@@ -693,15 +1662,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2511,
+   "per_km": 0.4128,
    "dest_name": "Banda Aceh",
    "dest_name_zh": "班达亚齐",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SBW",
-   "price": 383.0,
+   "price": 630.0,
    "depart": "2026-11-24",
    "return": "2026-12-01",
    "one_way": false,
@@ -719,15 +1694,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1694,
+   "per_km": 0.2786,
    "dest_name": "Sibu",
    "dest_name_zh": "泗务",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "KCH",
-   "price": 416.0,
+   "price": 682.0,
    "depart": "2027-07-22",
    "return": "2027-07-31",
    "one_way": false,
@@ -745,15 +1726,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2124,
+   "per_km": 0.3481,
    "dest_name": "Kuching",
    "dest_name_zh": "古晋",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "PLM",
-   "price": 437.0,
+   "price": 720.0,
    "depart": "2027-01-07",
    "return": "2027-01-15",
    "one_way": false,
@@ -771,15 +1758,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2869,
+   "per_km": 0.4726,
    "dest_name": "Palembang",
    "dest_name_zh": "巨港",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KBV",
-   "price": 457.0,
+   "price": 751.0,
    "depart": "2027-01-10",
    "return": "2027-01-19",
    "one_way": false,
@@ -797,15 +1790,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3642,
+   "per_km": 0.5985,
    "dest_name": "Krabi",
    "dest_name_zh": "喀比",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SDK",
-   "price": 462.0,
+   "price": 761.0,
    "depart": "2027-01-18",
    "return": "2027-01-21",
    "one_way": false,
@@ -823,41 +1822,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1252,
+   "per_km": 0.2062,
    "dest_name": "Sandakan",
    "dest_name_zh": "山打根",
-   "country": "MY"
-  },
-  {
-   "origin": "KUL",
-   "dest": "JKT",
-   "price": 483.0,
-   "depart": "2026-12-21",
-   "return": "2027-01-02",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 1187,
-   "airline": "Citilink (QG)",
-   "flight_number": 503,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Trip.com",
-   "id": "KUL-JKT|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2034,
-   "dest_name": "Jakarta",
-   "dest_name_zh": "雅加达",
-   "country": "ID"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "BTH",
-   "price": 484.0,
+   "price": 793.0,
    "depart": "2027-01-08",
    "return": "2027-01-10",
    "one_way": false,
@@ -875,15 +1854,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.6899,
+   "per_km": 1.1304,
    "dest_name": "Batam",
    "dest_name_zh": "巴都贝萨尔",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BKI",
-   "price": 485.0,
+   "price": 794.0,
    "depart": "2027-04-16",
    "return": "2027-04-22",
    "one_way": false,
@@ -901,15 +1886,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1492,
+   "per_km": 0.2442,
    "dest_name": "Kota-Kinabalu",
    "dest_name_zh": "哥打基纳巴卢",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "JKT",
+   "price": 794.0,
+   "depart": "2026-12-21",
+   "return": "2027-01-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 1187,
+   "airline": "Citilink (QG)",
+   "flight_number": 503,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Trip.com",
+   "id": "KUL-JKT|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3344,
+   "dest_name": "Jakarta",
+   "dest_name_zh": "雅加达",
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "HKT",
-   "price": 487.0,
+   "price": 801.0,
    "depart": "2026-11-29",
    "return": "2026-12-03",
    "one_way": false,
@@ -927,15 +1950,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3741,
+   "per_km": 0.6153,
    "dest_name": "Phuket",
    "dest_name_zh": "普吉岛",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BKK",
-   "price": 509.0,
+   "price": 834.0,
    "depart": "2026-12-25",
    "return": "2027-01-13",
    "one_way": false,
@@ -953,15 +1982,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2143,
+   "per_km": 0.3511,
    "dest_name": "Bangkok",
    "dest_name_zh": "曼谷",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SUB",
-   "price": 534.0,
+   "price": 877.0,
    "depart": "2026-11-16",
    "return": "2026-11-30",
    "one_way": false,
@@ -979,41 +2014,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1583,
+   "per_km": 0.26,
    "dest_name": "Surabaya",
    "dest_name_zh": "泗水",
-   "country": "ID"
-  },
-  {
-   "origin": "KUL",
-   "dest": "SGN",
-   "price": 537.0,
-   "depart": "2027-02-27",
-   "return": "2027-03-06",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 1014,
-   "airline": "Vietjet (VJ)",
-   "flight_number": 826,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Wowtickets",
-   "id": "KUL-SGN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2649,
-   "dest_name": "Ho Chi Minh City",
-   "dest_name_zh": "胡志明市",
-   "country": "VN"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TWU",
-   "price": 539.0,
+   "price": 886.0,
    "depart": "2027-05-01",
    "return": "2027-05-07",
    "one_way": false,
@@ -1031,15 +2046,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1495,
+   "per_km": 0.2458,
    "dest_name": "Tawau",
    "dest_name_zh": "斗湖",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "SGN",
+   "price": 886.0,
+   "depart": "2027-02-27",
+   "return": "2027-03-06",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 1014,
+   "airline": "Vietjet (VJ)",
+   "flight_number": 826,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Wowtickets",
+   "id": "KUL-SGN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4371,
+   "dest_name": "Ho Chi Minh City",
+   "dest_name_zh": "胡志明市",
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DPS",
-   "price": 567.0,
+   "price": 932.0,
    "depart": "2027-01-16",
    "return": "2027-01-28",
    "one_way": false,
@@ -1057,15 +2110,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1422,
+   "per_km": 0.2338,
    "dest_name": "Denpasar (Bali)",
    "dest_name_zh": "巴厘",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "PNK",
-   "price": 568.0,
+   "price": 935.0,
    "depart": "2027-01-18",
    "return": "2027-01-21",
    "one_way": false,
@@ -1083,15 +2142,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3084,
+   "per_km": 0.5077,
    "dest_name": "Pontianak",
    "dest_name_zh": "坤甸",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "PQC",
-   "price": 573.0,
+   "price": 940.0,
    "depart": "2027-01-05",
    "return": "2027-01-12",
    "one_way": false,
@@ -1109,15 +2174,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3465,
+   "per_km": 0.5684,
    "dest_name": "Phu Quoc",
    "dest_name_zh": "富国岛",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DAD",
-   "price": 579.0,
+   "price": 955.0,
    "depart": "2026-11-18",
    "return": "2026-11-19",
    "one_way": false,
@@ -1135,15 +2206,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1806,
+   "per_km": 0.2978,
    "dest_name": "Da Nang",
    "dest_name_zh": "岘港",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "HDY",
-   "price": 588.0,
+   "price": 967.0,
    "depart": "2027-01-10",
    "return": "2027-01-14",
    "one_way": false,
@@ -1161,15 +2238,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.6523,
+   "per_km": 1.0727,
    "dest_name": "Hat Yai",
    "dest_name_zh": "合艾",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BWN",
-   "price": 620.0,
+   "price": 1015.0,
    "depart": "2027-02-25",
    "return": "2027-02-27",
    "one_way": false,
@@ -1187,15 +2270,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.209,
+   "per_km": 0.3422,
    "dest_name": "Bandar Seri Begawan",
    "dest_name_zh": "斯里巴加湾",
-   "country": "BN"
+   "country": "BN",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "NHA",
-   "price": 629.0,
+   "price": 1038.0,
    "depart": "2026-11-14",
    "return": "2026-11-16",
    "one_way": false,
@@ -1213,15 +2302,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2407,
+   "per_km": 0.3972,
    "dest_name": "Nha Trang",
    "dest_name_zh": "芽庄",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "LBJ",
-   "price": 689.0,
+   "price": 1133.0,
    "depart": "2026-12-05",
    "return": "2026-12-08",
    "one_way": false,
@@ -1239,15 +2334,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1439,
+   "per_km": 0.2367,
    "dest_name": "Labuan Bajo",
    "dest_name_zh": "下拉布安",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SRG",
-   "price": 692.0,
+   "price": 1138.0,
    "depart": "2026-11-12",
    "return": "2026-11-14",
    "one_way": false,
@@ -1265,15 +2366,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2324,
+   "per_km": 0.3823,
    "dest_name": "Semarang",
    "dest_name_zh": "三宝拢",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "HKG",
-   "price": 694.0,
+   "price": 1142.0,
    "depart": "2027-02-02",
    "return": "2027-02-11",
    "one_way": false,
@@ -1291,15 +2398,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1376,
+   "per_km": 0.2264,
    "dest_name": "Hong Kong",
    "dest_name_zh": "香港",
-   "country": "HK"
+   "country": "HK",
+   "visa": {
+    "status": "easy",
+    "label": "通行证",
+    "note": "凭港澳通行证及有效签注入境"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DLI",
-   "price": 702.0,
+   "price": 1154.0,
    "depart": "2027-01-18",
    "return": "2027-01-20",
    "one_way": false,
@@ -1317,15 +2430,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2853,
+   "per_km": 0.469,
    "dest_name": "Dalat",
    "dest_name_zh": "大叻",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BPN",
-   "price": 708.0,
+   "price": 1163.0,
    "depart": "2026-11-25",
    "return": "2026-11-27",
    "one_way": false,
@@ -1343,15 +2462,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2018,
+   "per_km": 0.3314,
    "dest_name": "Balikpapan",
    "dest_name_zh": "巴里巴班",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MYY",
-   "price": 712.0,
+   "price": 1170.0,
    "depart": "2026-12-23",
    "return": "2026-12-31",
    "one_way": false,
@@ -1369,15 +2494,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2594,
+   "per_km": 0.4263,
    "dest_name": "Miri",
    "dest_name_zh": "米里",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "MNL",
-   "price": 724.0,
+   "price": 1190.0,
    "depart": "2027-01-20",
    "return": "2027-03-15",
    "one_way": false,
@@ -1395,41 +2526,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1465,
+   "per_km": 0.2409,
    "dest_name": "Manila",
    "dest_name_zh": "马尼拉",
-   "country": "PH"
-  },
-  {
-   "origin": "KUL",
-   "dest": "CAN",
-   "price": 733.0,
-   "depart": "2026-12-30",
-   "return": "2027-01-18",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2548,
-   "airline": "AirAsia (AK)",
-   "flight_number": 118,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Trip.com",
-   "id": "KUL-CAN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1438,
-   "dest_name": "Guangzhou",
-   "dest_name_zh": "广州",
-   "country": "CN"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "HAN",
-   "price": 737.0,
+   "price": 1207.0,
    "depart": "2027-02-17",
    "return": "2027-02-23",
    "one_way": false,
@@ -1447,15 +2558,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1807,
+   "per_km": 0.296,
    "dest_name": "Hanoi",
    "dest_name_zh": "河内",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CAN",
+   "price": 1210.0,
+   "depart": "2026-12-30",
+   "return": "2027-01-18",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2548,
+   "airline": "AirAsia (AK)",
+   "flight_number": 118,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Trip.com",
+   "id": "KUL-CAN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2374,
+   "dest_name": "Guangzhou",
+   "dest_name_zh": "广州",
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "SZX",
-   "price": 757.0,
+   "price": 1240.0,
    "depart": "2027-04-17",
    "return": "2027-04-25",
    "one_way": false,
@@ -1473,15 +2622,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1492,
+   "per_km": 0.2444,
    "dest_name": "Shenzhen",
    "dest_name_zh": "深圳",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "LBU",
-   "price": 758.0,
+   "price": 1251.0,
    "depart": "2026-12-15",
    "return": "2026-12-19",
    "one_way": false,
@@ -1499,15 +2654,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2492,
+   "per_km": 0.4113,
    "dest_name": "Labuan",
    "dest_name_zh": "拉布安",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "LOP",
-   "price": 781.0,
+   "price": 1285.0,
    "depart": "2026-11-25",
    "return": "2026-12-17",
    "one_way": false,
@@ -1525,15 +2686,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1869,
+   "per_km": 0.3075,
    "dest_name": "Praya",
    "dest_name_zh": "Praya",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CEB",
-   "price": 786.0,
+   "price": 1291.0,
    "depart": "2027-03-24",
    "return": "2027-04-05",
    "one_way": false,
@@ -1551,15 +2718,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.152,
+   "per_km": 0.2496,
    "dest_name": "Cebu City",
    "dest_name_zh": "宿务",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "JOG",
-   "price": 794.0,
+   "price": 1306.0,
    "depart": "2026-12-10",
    "return": "2026-12-15",
    "one_way": false,
@@ -1577,15 +2750,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2559,
+   "per_km": 0.421,
    "dest_name": "Yogyakarta",
    "dest_name_zh": "日惹",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KMG",
-   "price": 808.0,
+   "price": 1329.0,
    "depart": "2026-12-01",
    "return": "2026-12-07",
    "one_way": false,
@@ -1603,15 +2782,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1669,
+   "per_km": 0.2745,
    "dest_name": "Kunming",
    "dest_name_zh": "昆明",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "SAI",
-   "price": 819.0,
+   "price": 1342.0,
    "depart": "2027-01-11",
    "return": "2027-01-25",
    "one_way": false,
@@ -1629,15 +2814,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3525,
+   "per_km": 0.5776,
    "dest_name": "Siem Reap",
    "dest_name_zh": "暹粒",
-   "country": "KH"
+   "country": "KH",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MFM",
-   "price": 836.0,
+   "price": 1373.0,
    "depart": "2026-11-22",
    "return": "2026-11-25",
    "one_way": false,
@@ -1655,15 +2846,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1689,
+   "per_km": 0.2773,
    "dest_name": "Macau",
    "dest_name_zh": "澳门",
-   "country": "MO"
+   "country": "MO",
+   "visa": {
+    "status": "easy",
+    "label": "通行证",
+    "note": "凭港澳通行证及有效签注入境"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CTU",
-   "price": 847.0,
+   "price": 1392.0,
    "depart": "2027-01-23",
    "return": "2027-01-28",
    "one_way": false,
@@ -1681,15 +2878,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1384,
+   "per_km": 0.2274,
    "dest_name": "Chengdu",
    "dest_name_zh": "成都",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "CMB",
-   "price": 848.0,
+   "price": 1398.0,
    "depart": "2026-11-23",
    "return": "2026-11-30",
    "one_way": false,
@@ -1707,15 +2910,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1727,
+   "per_km": 0.2847,
    "dest_name": "Colombo",
    "dest_name_zh": "科伦坡",
-   "country": "LK"
+   "country": "LK",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "免费 ETA（2026-05 起）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "PGK",
-   "price": 857.0,
+   "price": 1414.0,
    "depart": "2027-01-07",
    "return": "2027-01-15",
    "one_way": false,
@@ -1733,15 +2942,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.5598,
+   "per_km": 0.9236,
    "dest_name": "Pangkal Pinang",
    "dest_name_zh": "槟榔",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ILO",
-   "price": 864.0,
+   "price": 1421.0,
    "depart": "2027-01-16",
    "return": "2027-02-02",
    "one_way": false,
@@ -1759,15 +2974,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1762,
+   "per_km": 0.2898,
    "dest_name": "Iloilo",
    "dest_name_zh": "伊洛伊洛",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "SHA",
-   "price": 877.0,
+   "price": 1441.0,
    "depart": "2027-05-01",
    "return": "2027-05-07",
    "one_way": false,
@@ -1785,15 +3006,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.117,
+   "per_km": 0.1922,
    "dest_name": "Shanghai",
    "dest_name_zh": "上海",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "VTE",
-   "price": 900.0,
+   "price": 1479.0,
    "depart": "2027-01-12",
    "return": "2027-01-16",
    "one_way": false,
@@ -1811,67 +3038,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2722,
+   "per_km": 0.4474,
    "dest_name": "Vientiane",
    "dest_name_zh": "万象",
-   "country": "LA"
-  },
-  {
-   "origin": "KUL",
-   "dest": "PER",
-   "price": 919.0,
-   "depart": "2026-12-07",
-   "return": "2027-01-17",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 4179,
-   "airline": "AirAsia (AK)",
-   "flight_number": 604,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Kiwi.com",
-   "id": "KUL-PER|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1099,
-   "dest_name": "Perth",
-   "dest_name_zh": "佩斯",
-   "country": "AU"
-  },
-  {
-   "origin": "KUL",
-   "dest": "BDJ",
-   "price": 922.0,
-   "depart": "2026-12-24",
-   "return": "2026-12-28",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 1604,
-   "airline": "AirAsia (AK)",
-   "flight_number": 442,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Kiwi.com",
-   "id": "KUL-BDJ|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2874,
-   "dest_name": "Banjarmasin",
-   "dest_name_zh": "马辰",
-   "country": "ID"
+   "country": "LA",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CNX",
-   "price": 924.0,
+   "price": 1513.0,
    "depart": "2027-02-25",
    "return": "2027-02-27",
    "one_way": false,
@@ -1889,41 +3070,85 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2616,
+   "per_km": 0.4284,
    "dest_name": "Chiang Mai",
    "dest_name_zh": "清迈",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
-   "dest": "CSX",
-   "price": 946.0,
-   "depart": "2026-12-01",
-   "return": "2026-12-04",
+   "dest": "PER",
+   "price": 1516.0,
+   "depart": "2026-12-07",
+   "return": "2027-01-17",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
-   "distance": 3034,
+   "distance": 4179,
    "airline": "AirAsia (AK)",
-   "flight_number": 190,
+   "flight_number": 604,
    "found_at": null,
    "source": "aviasales-cheap",
-   "gate": "Clickavia",
-   "id": "KUL-CSX|RT|0",
+   "gate": "Kiwi.com",
+   "id": "KUL-PER|RT|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1559,
-   "dest_name": "Changsha",
-   "dest_name_zh": "长沙",
-   "country": "CN"
+   "per_km": 0.1814,
+   "dest_name": "Perth",
+   "dest_name_zh": "佩斯",
+   "country": "AU",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BDJ",
+   "price": 1516.0,
+   "depart": "2026-12-24",
+   "return": "2026-12-28",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1604,
+   "airline": "AirAsia (AK)",
+   "flight_number": 442,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Kiwi.com",
+   "id": "KUL-BDJ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4725,
+   "dest_name": "Banjarmasin",
+   "dest_name_zh": "马辰",
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KOS",
-   "price": 946.0,
+   "price": 1550.0,
    "depart": "2027-01-07",
    "return": "2027-01-19",
    "one_way": false,
@@ -1941,15 +3166,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.5519,
+   "per_km": 0.9043,
    "dest_name": "Sihanoukville",
    "dest_name_zh": "西哈努克城",
-   "country": "KH"
+   "country": "KH",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CSX",
+   "price": 1556.0,
+   "depart": "2026-12-01",
+   "return": "2026-12-04",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 3034,
+   "airline": "AirAsia (AK)",
+   "flight_number": 190,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Clickavia",
+   "id": "KUL-CSX|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2564,
+   "dest_name": "Changsha",
+   "dest_name_zh": "长沙",
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "PNH",
-   "price": 959.0,
+   "price": 1575.0,
    "depart": "2027-01-05",
    "return": "2027-01-15",
    "one_way": false,
@@ -1967,15 +3230,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4786,
+   "per_km": 0.7861,
    "dest_name": "Phnom Penh",
    "dest_name_zh": "金边",
-   "country": "KH"
+   "country": "KH",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SYX",
-   "price": 974.0,
+   "price": 1599.0,
    "depart": "2027-01-02",
    "return": "2027-01-09",
    "one_way": false,
@@ -1993,15 +3262,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2585,
+   "per_km": 0.4243,
    "dest_name": "Sanya",
    "dest_name_zh": "三亚",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "TPE",
-   "price": 979.0,
+   "price": 1603.0,
    "depart": "2027-10-19",
    "return": "2027-10-26",
    "one_way": false,
@@ -2019,41 +3294,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1514,
+   "per_km": 0.2479,
    "dest_name": "Taipei",
    "dest_name_zh": "台北",
-   "country": "TW"
-  },
-  {
-   "origin": "KUL",
-   "dest": "BJS",
-   "price": 983.0,
-   "depart": "2027-01-23",
-   "return": "2027-02-09",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4349,
-   "airline": "China Southern Airlines (CZ)",
-   "flight_number": 350,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "OneTwoTrip",
-   "id": "KUL-BJS|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.113,
-   "dest_name": "Beijing",
-   "dest_name_zh": "北京",
-   "country": "CN"
+   "country": "TW",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KWE",
-   "price": 985.0,
+   "price": 1617.0,
    "depart": "2026-11-25",
    "return": "2026-12-01",
    "one_way": false,
@@ -2071,15 +3326,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1847,
+   "per_km": 0.3032,
    "dest_name": "Guiyang",
    "dest_name_zh": "贵阳",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "BJS",
+   "price": 1622.0,
+   "depart": "2027-01-23",
+   "return": "2027-02-09",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4349,
+   "airline": "China Southern Airlines (CZ)",
+   "flight_number": 350,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "OneTwoTrip",
+   "id": "KUL-BJS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.1865,
+   "dest_name": "Beijing",
+   "dest_name_zh": "北京",
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "UPG",
-   "price": 1017.0,
+   "price": 1672.0,
    "depart": "2026-11-21",
    "return": "2026-11-28",
    "one_way": false,
@@ -2097,15 +3390,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2337,
+   "per_km": 0.3842,
    "dest_name": "Makassar",
    "dest_name_zh": "乌戒潘当",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TAO",
-   "price": 1036.0,
+   "price": 1702.0,
    "depart": "2027-01-04",
    "return": "2027-01-10",
    "one_way": false,
@@ -2123,15 +3422,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1253,
+   "per_km": 0.2059,
    "dest_name": "Qingdao",
    "dest_name_zh": "青岛",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "MAA",
-   "price": 1049.0,
+   "price": 1724.0,
    "depart": "2027-03-02",
    "return": "2027-03-29",
    "one_way": false,
@@ -2149,15 +3454,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2017,
+   "per_km": 0.3314,
    "dest_name": "Chennai",
    "dest_name_zh": "金奈",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "URT",
-   "price": 1050.0,
+   "price": 1725.0,
    "depart": "2027-02-18",
    "return": "2027-03-02",
    "one_way": false,
@@ -2175,15 +3486,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.7328,
+   "per_km": 1.2038,
    "dest_name": "Surat Thani",
    "dest_name_zh": "万伦",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "NKG",
-   "price": 1059.0,
+   "price": 1742.0,
    "depart": "2026-11-26",
    "return": "2026-12-01",
    "one_way": false,
@@ -2201,15 +3518,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1439,
+   "per_km": 0.2367,
    "dest_name": "Nanjing",
    "dest_name_zh": "南京",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "CKG",
-   "price": 1068.0,
+   "price": 1758.0,
    "depart": "2026-11-24",
    "return": "2026-11-29",
    "one_way": false,
@@ -2227,15 +3550,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1795,
+   "per_km": 0.2954,
    "dest_name": "Chongqing",
    "dest_name_zh": "重庆",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "MPH",
-   "price": 1096.0,
+   "price": 1803.0,
    "depart": "2027-01-13",
    "return": "2027-01-27",
    "one_way": false,
@@ -2253,15 +3582,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.225,
+   "per_km": 0.3701,
    "dest_name": "Caticlan",
    "dest_name_zh": "马来",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "PPS",
-   "price": 1169.0,
+   "price": 1914.0,
    "depart": "2027-02-01",
    "return": "2027-02-14",
    "one_way": false,
@@ -2279,15 +3614,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.289,
+   "per_km": 0.4731,
    "dest_name": "Puerto Princesa",
    "dest_name_zh": "普林塞萨港",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "USM",
-   "price": 1170.0,
+   "price": 1923.0,
    "depart": "2027-05-29",
    "return": "2027-06-11",
    "one_way": false,
@@ -2305,15 +3646,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.7952,
+   "per_km": 1.307,
    "dest_name": "Koh Samui",
    "dest_name_zh": "苏梅岛",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KHH",
-   "price": 1179.0,
+   "price": 1939.0,
    "depart": "2026-12-01",
    "return": "2026-12-04",
    "one_way": false,
@@ -2331,15 +3678,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1996,
+   "per_km": 0.3283,
    "dest_name": "Kaohsiung",
    "dest_name_zh": "高雄",
-   "country": "TW"
+   "country": "TW",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SIA",
-   "price": 1180.0,
+   "price": 1941.0,
    "depart": "2026-11-14",
    "return": "2026-11-20",
    "one_way": false,
@@ -2357,15 +3710,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1662,
+   "per_km": 0.2734,
    "dest_name": "Xian",
    "dest_name_zh": "西安",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "DVO",
-   "price": 1191.0,
+   "price": 1957.0,
    "depart": "2026-11-27",
    "return": "2026-12-01",
    "one_way": false,
@@ -2383,15 +3742,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2231,
+   "per_km": 0.3665,
    "dest_name": "Davao City",
    "dest_name_zh": "达沃",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "SEL",
-   "price": 1194.0,
+   "price": 1965.0,
    "depart": "2027-04-12",
    "return": "2027-04-18",
    "one_way": false,
@@ -2409,15 +3774,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1294,
+   "per_km": 0.2129,
    "dest_name": "Seoul",
    "dest_name_zh": "首尔",
-   "country": "KR"
+   "country": "KR",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "LDU",
-   "price": 1197.0,
+   "price": 1967.0,
    "depart": "2027-04-08",
    "return": "2027-04-11",
    "one_way": false,
@@ -2435,15 +3806,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3222,
+   "per_km": 0.5295,
    "dest_name": "Lahad Datu",
    "dest_name_zh": "拉哈达图",
-   "country": "MY"
+   "country": "MY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "VCS",
-   "price": 1200.0,
+   "price": 1971.0,
    "depart": "2026-12-30",
    "return": "2027-01-14",
    "one_way": false,
@@ -2461,15 +3838,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.6173,
+   "per_km": 1.014,
    "dest_name": "Con Dao",
    "dest_name_zh": "Con Dao",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TRV",
-   "price": 1201.0,
+   "price": 1974.0,
    "depart": "2027-01-27",
    "return": "2027-02-25",
    "one_way": false,
@@ -2487,15 +3870,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2144,
+   "per_km": 0.3523,
    "dest_name": "Thiruvananthapuram",
    "dest_name_zh": "特里凡得琅",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "INC",
-   "price": 1202.0,
+   "price": 1977.0,
    "depart": "2026-11-25",
    "return": "2026-12-05",
    "one_way": false,
@@ -2513,15 +3902,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1519,
+   "per_km": 0.2498,
    "dest_name": "Yinchuan",
    "dest_name_zh": "银川",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "CGO",
-   "price": 1202.0,
+   "price": 1977.0,
    "depart": "2027-06-24",
    "return": "2027-06-25",
    "one_way": false,
@@ -2539,15 +3934,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1614,
+   "per_km": 0.2654,
    "dest_name": "Zhengzhou",
    "dest_name_zh": "郑州",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "WUH",
-   "price": 1207.0,
+   "price": 1985.0,
    "depart": "2027-03-03",
    "return": "2027-03-09",
    "one_way": false,
@@ -2565,15 +3966,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1813,
+   "per_km": 0.2982,
    "dest_name": "Wuhan",
    "dest_name_zh": "武汉",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "MLE",
-   "price": 1235.0,
+   "price": 2028.0,
    "depart": "2026-11-17",
    "return": "2026-11-24",
    "one_way": false,
@@ -2591,15 +3998,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1974,
+   "per_km": 0.3241,
    "dest_name": "Male",
    "dest_name_zh": "马累",
-   "country": "MV"
+   "country": "MV",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（行前 96 小时填 IMUGA）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KLO",
-   "price": 1240.0,
+   "price": 2038.0,
    "depart": "2027-02-01",
    "return": "2027-02-04",
    "one_way": false,
@@ -2617,15 +4030,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.251,
+   "per_km": 0.4126,
    "dest_name": "Kalibo",
    "dest_name_zh": "卡利博",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "PUS",
-   "price": 1246.0,
+   "price": 2050.0,
    "depart": "2026-11-17",
    "return": "2026-12-01",
    "one_way": false,
@@ -2643,15 +4062,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1371,
+   "per_km": 0.2255,
    "dest_name": "Busan",
    "dest_name_zh": "釜山",
-   "country": "KR"
+   "country": "KR",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ZUH",
-   "price": 1270.0,
+   "price": 2089.0,
    "depart": "2027-01-22",
    "return": "2027-01-25",
    "one_way": false,
@@ -2669,15 +4094,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2556,
+   "per_km": 0.4205,
    "dest_name": "Zhuhai",
    "dest_name_zh": "珠海",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "HAK",
-   "price": 1274.0,
+   "price": 2094.0,
    "depart": "2026-11-11",
    "return": "2026-11-15",
    "one_way": false,
@@ -2695,15 +4126,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3042,
+   "per_km": 0.4999,
    "dest_name": "Haikou",
    "dest_name_zh": "海口",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "HGH",
-   "price": 1293.0,
+   "price": 2126.0,
    "depart": "2026-12-01",
    "return": "2026-12-10",
    "one_way": false,
@@ -2721,15 +4158,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1802,
+   "per_km": 0.2962,
    "dest_name": "Hangzhou",
    "dest_name_zh": "杭州",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "KWL",
-   "price": 1299.0,
+   "price": 2136.0,
    "depart": "2026-11-14",
    "return": "2026-11-21",
    "one_way": false,
@@ -2747,15 +4190,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2479,
+   "per_km": 0.4077,
    "dest_name": "Guilin",
    "dest_name_zh": "桂林",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "TRZ",
-   "price": 1307.0,
+   "price": 2150.0,
    "depart": "2027-08-19",
    "return": "2027-08-28",
    "one_way": false,
@@ -2773,15 +4222,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2444,
+   "per_km": 0.4021,
    "dest_name": "Tiruchirappalli",
    "dest_name_zh": "蒂鲁吉拉伯利",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DAC",
-   "price": 1346.0,
+   "price": 2215.0,
    "depart": "2027-03-22",
    "return": "2027-03-28",
    "one_way": false,
@@ -2799,15 +4254,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.259,
+   "per_km": 0.4263,
    "dest_name": "Dhaka",
    "dest_name_zh": "达卡",
-   "country": "BD"
+   "country": "BD",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RGN",
-   "price": 1355.0,
+   "price": 2236.0,
    "depart": "2027-01-05",
    "return": "2027-01-21",
    "one_way": false,
@@ -2825,15 +4286,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4135,
+   "per_km": 0.6824,
    "dest_name": "Yangon",
    "dest_name_zh": "仰光",
-   "country": "MM"
+   "country": "MM",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KDI",
-   "price": 1361.0,
+   "price": 2238.0,
    "depart": "2026-11-21",
    "return": "2026-11-28",
    "one_way": false,
@@ -2851,15 +4318,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2782,
+   "per_km": 0.4574,
    "dest_name": "Kendari",
    "dest_name_zh": "肯达里",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TAG",
-   "price": 1379.0,
+   "price": 2269.0,
    "depart": "2027-07-01",
    "return": "2027-07-04",
    "one_way": false,
@@ -2877,15 +4350,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2698,
+   "per_km": 0.444,
    "dest_name": "Tagbilaran",
    "dest_name_zh": "塔比拉兰",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "SWQ",
-   "price": 1414.0,
+   "price": 2324.0,
    "depart": "2027-01-03",
    "return": "2027-01-21",
    "one_way": false,
@@ -2903,15 +4382,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3255,
+   "per_km": 0.535,
    "dest_name": "Sumbawa Besar",
    "dest_name_zh": "松吧哇岛",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "HUI",
-   "price": 1414.0,
+   "price": 2332.0,
    "depart": "2027-02-04",
    "return": "2027-02-18",
    "one_way": false,
@@ -2929,15 +4414,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4375,
+   "per_km": 0.7215,
    "dest_name": "Hue",
    "dest_name_zh": "顺化",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "COK",
-   "price": 1421.0,
+   "price": 2338.0,
    "depart": "2027-02-05",
    "return": "2027-02-16",
    "one_way": false,
@@ -2955,15 +4446,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2445,
+   "per_km": 0.4023,
    "dest_name": "Kochi",
    "dest_name_zh": "库奇",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CCU",
-   "price": 1430.0,
+   "price": 2350.0,
    "depart": "2027-06-01",
    "return": "2027-06-04",
    "one_way": false,
@@ -2981,15 +4478,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2756,
+   "per_km": 0.4529,
    "dest_name": "Kolkata",
    "dest_name_zh": "加尔格达",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "HPH",
-   "price": 1449.0,
+   "price": 2373.0,
    "depart": "2026-12-18",
    "return": "2026-12-23",
    "one_way": false,
@@ -3007,15 +4510,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3548,
+   "per_km": 0.5811,
    "dest_name": "Haiphong",
    "dest_name_zh": "海防",
-   "country": "VN"
+   "country": "VN",
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TYO",
-   "price": 1461.0,
+   "price": 2411.0,
    "depart": "2027-06-06",
    "return": "2027-06-13",
    "one_way": false,
@@ -3033,15 +4542,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1374,
+   "per_km": 0.2267,
    "dest_name": "Tokyo",
    "dest_name_zh": "东京",
-   "country": "JP"
+   "country": "JP",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BLR",
-   "price": 1528.0,
+   "price": 2514.0,
    "depart": "2026-12-24",
    "return": "2027-01-12",
    "one_way": false,
@@ -3059,15 +4574,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2666,
+   "per_km": 0.4387,
    "dest_name": "Bengaluru",
    "dest_name_zh": "班加罗尔",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AAP",
-   "price": 1574.0,
+   "price": 2590.0,
    "depart": "2026-12-04",
    "return": "2026-12-05",
    "one_way": false,
@@ -3085,15 +4606,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4464,
+   "per_km": 0.7345,
    "dest_name": "Samarinda",
    "dest_name_zh": "三马林达",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DEL",
-   "price": 1581.0,
+   "price": 2600.0,
    "depart": "2027-02-04",
    "return": "2027-02-15",
    "one_way": false,
@@ -3111,15 +4638,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.206,
+   "per_km": 0.3387,
    "dest_name": "New Delhi",
    "dest_name_zh": "新德里",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TDX",
-   "price": 1601.0,
+   "price": 2634.0,
    "depart": "2026-11-23",
    "return": "2026-11-30",
    "one_way": false,
@@ -3137,15 +4670,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.7862,
+   "per_km": 1.2935,
    "dest_name": "Trat",
    "dest_name_zh": "Trat",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BOM",
-   "price": 1649.0,
+   "price": 2710.0,
    "depart": "2027-01-11",
    "return": "2027-01-25",
    "one_way": false,
@@ -3163,15 +4702,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2292,
+   "per_km": 0.3766,
    "dest_name": "Mumbai",
    "dest_name_zh": "孟买",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "OSA",
-   "price": 1659.0,
+   "price": 2726.0,
    "depart": "2027-07-09",
    "return": "2027-07-12",
    "one_way": false,
@@ -3189,15 +4734,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1676,
+   "per_km": 0.2755,
    "dest_name": "Osaka",
    "dest_name_zh": "大阪",
-   "country": "JP"
+   "country": "JP",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ENI",
-   "price": 1675.0,
+   "price": 2754.0,
    "depart": "2027-04-03",
    "return": "2027-04-06",
    "one_way": false,
@@ -3215,15 +4766,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3896,
+   "per_km": 0.6405,
    "dest_name": "El Nido",
    "dest_name_zh": "El Nido",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "CGY",
-   "price": 1676.0,
+   "price": 2757.0,
    "depart": "2026-12-11",
    "return": "2027-01-10",
    "one_way": false,
@@ -3241,15 +4798,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3217,
+   "per_km": 0.5291,
    "dest_name": "Cagayan De Oro",
    "dest_name_zh": "卡加延德奥罗",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "TAS",
-   "price": 1730.0,
+   "price": 2854.0,
    "depart": "2026-11-12",
    "return": "2026-11-19",
    "one_way": false,
@@ -3267,15 +4830,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1621,
+   "per_km": 0.2674,
    "dest_name": "Tashkent",
    "dest_name_zh": "塔什干",
-   "country": "UZ"
+   "country": "UZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KTM",
-   "price": 1741.0,
+   "price": 2861.0,
    "depart": "2027-10-07",
    "return": "2027-10-21",
    "one_way": false,
@@ -3293,15 +4862,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2688,
+   "per_km": 0.4418,
    "dest_name": "Kathmandu",
    "dest_name_zh": "加德满都",
-   "country": "NP"
+   "country": "NP",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "UTP",
-   "price": 1763.0,
+   "price": 2896.0,
    "depart": "2027-01-05",
    "return": "2027-01-09",
    "one_way": false,
@@ -3319,15 +4894,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.8075,
+   "per_km": 1.3265,
    "dest_name": "Pattaya",
    "dest_name_zh": "乌塔保",
-   "country": "TH"
+   "country": "TH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "IST",
-   "price": 1791.0,
+   "price": 2944.0,
    "depart": "2026-12-30",
    "return": "2027-02-15",
    "one_way": false,
@@ -3345,15 +4926,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1075,
+   "per_km": 0.1767,
    "dest_name": "Istanbul",
    "dest_name_zh": "伊斯坦布尔",
-   "country": "TR"
+   "country": "TR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RMQ",
-   "price": 1815.0,
+   "price": 2983.0,
    "depart": "2026-11-19",
    "return": "2026-11-22",
    "one_way": false,
@@ -3371,15 +4958,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2928,
+   "per_km": 0.4812,
    "dest_name": "Taichung",
    "dest_name_zh": "Taichung",
-   "country": "TW"
+   "country": "TW",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SYD",
-   "price": 1889.0,
+   "price": 3105.0,
    "depart": "2026-12-11",
    "return": "2027-02-01",
    "one_way": false,
@@ -3397,15 +4990,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1428,
+   "per_km": 0.2347,
    "dest_name": "Sydney",
    "dest_name_zh": "悉尼",
-   "country": "AU"
+   "country": "AU",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MEL",
-   "price": 1893.0,
+   "price": 3123.0,
    "depart": "2026-11-17",
    "return": "2026-11-24",
    "one_way": false,
@@ -3423,15 +5022,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1486,
+   "per_km": 0.2452,
    "dest_name": "Melbourne",
    "dest_name_zh": "墨尔本",
-   "country": "AU"
+   "country": "AU",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ALA",
-   "price": 1921.0,
+   "price": 3155.0,
    "depart": "2027-01-17",
    "return": "2027-01-25",
    "one_way": false,
@@ -3449,15 +5054,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1888,
+   "per_km": 0.3101,
    "dest_name": "Almaty",
    "dest_name_zh": "阿拉木图",
-   "country": "KZ"
+   "country": "KZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "GOI",
-   "price": 1928.0,
+   "price": 3166.0,
    "depart": "2026-12-22",
    "return": "2027-01-05",
    "one_way": false,
@@ -3475,15 +5086,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2915,
+   "per_km": 0.4786,
    "dest_name": "Goa",
    "dest_name_zh": "果阿",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CAI",
-   "price": 1974.0,
+   "price": 3242.0,
    "depart": "2026-11-26",
    "return": "2026-12-03",
    "one_way": false,
@@ -3501,41 +5118,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1241,
+   "per_km": 0.2038,
    "dest_name": "Cairo",
    "dest_name_zh": "开罗",
-   "country": "EG"
-  },
-  {
-   "origin": "KUL",
-   "dest": "DOH",
-   "price": 2006.0,
-   "depart": "2026-11-16",
-   "return": "2026-11-23",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5893,
-   "airline": "Etihad Airways (EY)",
-   "flight_number": 487,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Wingie",
-   "id": "KUL-DOH|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1702,
-   "dest_name": "Doha",
-   "dest_name_zh": "多哈",
-   "country": "QA"
+   "country": "EG",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DMM",
-   "price": 2020.0,
+   "price": 3309.0,
    "depart": "2026-11-24",
    "return": "2026-12-07",
    "one_way": false,
@@ -3553,15 +5150,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1665,
+   "per_km": 0.2727,
    "dest_name": "Dammam",
    "dest_name_zh": "达曼",
-   "country": "SA"
+   "country": "SA",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "DOH",
+   "price": 3310.0,
+   "depart": "2026-11-16",
+   "return": "2026-11-23",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5893,
+   "airline": "Etihad Airways (EY)",
+   "flight_number": 487,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Wingie",
+   "id": "KUL-DOH|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2808,
+   "dest_name": "Doha",
+   "dest_name_zh": "多哈",
+   "country": "QA",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MOW",
-   "price": 2029.0,
+   "price": 3335.0,
    "depart": "2026-12-29",
    "return": "2027-01-09",
    "one_way": false,
@@ -3579,15 +5214,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1248,
+   "per_km": 0.2052,
    "dest_name": "Moscow",
    "dest_name_zh": "莫斯科",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "FUK",
-   "price": 2035.0,
+   "price": 3348.0,
    "depart": "2027-04-06",
    "return": "2027-04-16",
    "one_way": false,
@@ -3605,15 +5246,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2256,
+   "per_km": 0.3712,
    "dest_name": "Fukuoka",
    "dest_name_zh": "福冈",
-   "country": "JP"
+   "country": "JP",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DXB",
-   "price": 2049.0,
+   "price": 3371.0,
    "depart": "2026-12-04",
    "return": "2026-12-07",
    "one_way": false,
@@ -3630,15 +5277,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1845,
+   "per_km": 0.3035,
    "dest_name": "Dubai",
    "dest_name_zh": "迪拜",
-   "country": "AE"
+   "country": "AE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "URC",
-   "price": 2058.0,
+   "price": 3386.0,
    "depart": "2026-12-22",
    "return": "2027-01-11",
    "one_way": false,
@@ -3656,15 +5309,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2175,
+   "per_km": 0.3578,
    "dest_name": "Urumqi",
    "dest_name_zh": "乌鲁木齐",
-   "country": "CN"
+   "country": "CN",
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "SPK",
-   "price": 2076.0,
+   "price": 3416.0,
    "depart": "2027-01-26",
    "return": "2027-01-31",
    "one_way": false,
@@ -3682,15 +5341,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1755,
+   "per_km": 0.2887,
    "dest_name": "Sapporo",
    "dest_name_zh": "札幌",
-   "country": "JP"
+   "country": "JP",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "VVO",
-   "price": 2100.0,
+   "price": 3454.0,
    "depart": "2027-01-03",
    "return": "2027-01-17",
    "one_way": false,
@@ -3708,15 +5373,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1961,
+   "per_km": 0.3225,
    "dest_name": "Vladivostok",
    "dest_name_zh": "海参崴",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "GVA",
-   "price": 2130.0,
+   "price": 3501.0,
    "depart": "2026-12-29",
    "return": "2027-01-11",
    "one_way": false,
@@ -3734,15 +5405,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1046,
+   "per_km": 0.1719,
    "dest_name": "Geneva",
    "dest_name_zh": "日内瓦",
-   "country": "CH"
+   "country": "CH",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CRK",
-   "price": 2153.0,
+   "price": 3539.0,
    "depart": "2026-12-29",
    "return": "2027-01-05",
    "one_way": false,
@@ -3760,15 +5437,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.437,
+   "per_km": 0.7183,
    "dest_name": "City of Angeles",
    "dest_name_zh": "City of Angeles",
-   "country": "PH"
+   "country": "PH",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "SHJ",
-   "price": 2174.0,
+   "price": 3587.0,
    "depart": "2026-11-15",
    "return": "2026-11-19",
    "one_way": false,
@@ -3786,15 +5469,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1968,
+   "per_km": 0.3248,
    "dest_name": "Sharjah",
    "dest_name_zh": "沙迦",
-   "country": "AE"
+   "country": "AE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "LKO",
-   "price": 2229.0,
+   "price": 3667.0,
    "depart": "2026-12-10",
    "return": "2026-12-11",
    "one_way": false,
@@ -3812,15 +5501,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3241,
+   "per_km": 0.5333,
    "dest_name": "Lucknow",
    "dest_name_zh": "勒克瑙",
-   "country": "IN"
+   "country": "IN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ZRH",
-   "price": 2233.0,
+   "price": 3674.0,
    "depart": "2027-01-15",
    "return": "2027-01-22",
    "one_way": false,
@@ -3838,15 +5533,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1118,
+   "per_km": 0.1839,
    "dest_name": "Zurich",
    "dest_name_zh": "苏黎世",
-   "country": "CH"
+   "country": "CH",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "JED",
-   "price": 2266.0,
+   "price": 3725.0,
    "depart": "2026-12-09",
    "return": "2026-12-31",
    "one_way": false,
@@ -3864,15 +5565,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1609,
+   "per_km": 0.2646,
    "dest_name": "Jeddah",
    "dest_name_zh": "吉达",
-   "country": "SA"
+   "country": "SA",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "FRA",
-   "price": 2316.0,
+   "price": 3794.0,
    "depart": "2027-03-30",
    "return": "2027-04-10",
    "one_way": false,
@@ -3890,41 +5597,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1162,
+   "per_km": 0.1904,
    "dest_name": "Frankfurt",
    "dest_name_zh": "法兰克福",
-   "country": "DE"
-  },
-  {
-   "origin": "KUL",
-   "dest": "DIL",
-   "price": 2316.0,
-   "depart": "2026-11-22",
-   "return": "2026-11-25",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 2949,
-   "airline": "Batik Air Malaysia (OD)",
-   "flight_number": 157,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Trip.com",
-   "id": "KUL-DIL|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3927,
-   "dest_name": "Dili",
-   "dest_name_zh": "Dili",
-   "country": "TL"
+   "country": "DE",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SOQ",
-   "price": 2318.0,
+   "price": 3796.0,
    "depart": "2026-12-04",
    "return": "2026-12-15",
    "one_way": false,
@@ -3942,15 +5629,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3494,
+   "per_km": 0.5722,
    "dest_name": "Sorong",
    "dest_name_zh": "索龙",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "DIL",
+   "price": 3807.0,
+   "depart": "2026-11-22",
+   "return": "2026-11-25",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 2949,
+   "airline": "Batik Air Malaysia (OD)",
+   "flight_number": 157,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Trip.com",
+   "id": "KUL-DIL|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.6454,
+   "dest_name": "Dili",
+   "dest_name_zh": "Dili",
+   "country": "TL",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ROM",
-   "price": 2326.0,
+   "price": 3826.0,
    "depart": "2027-04-10",
    "return": "2027-05-10",
    "one_way": false,
@@ -3968,15 +5693,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1198,
+   "per_km": 0.1971,
    "dest_name": "Rome",
    "dest_name_zh": "罗马",
-   "country": "IT"
+   "country": "IT",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AYT",
-   "price": 2356.0,
+   "price": 3873.0,
    "depart": "2027-03-26",
    "return": "2027-04-02",
    "one_way": false,
@@ -3994,41 +5725,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1452,
+   "per_km": 0.2387,
    "dest_name": "Antalya",
    "dest_name_zh": "安塔利亚",
-   "country": "TR"
-  },
-  {
-   "origin": "KUL",
-   "dest": "MED",
-   "price": 2356.0,
-   "depart": "2026-11-12",
-   "return": "2026-11-28",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 7051,
-   "airline": "Etihad Airways (EY)",
-   "flight_number": 489,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Tickets",
-   "id": "KUL-MED|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1671,
-   "dest_name": "Medina",
-   "dest_name_zh": "麦地那城",
-   "country": "SA"
+   "country": "TR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MIL",
-   "price": 2373.0,
+   "price": 3886.0,
    "depart": "2027-03-30",
    "return": "2027-04-10",
    "one_way": false,
@@ -4046,15 +5757,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1192,
+   "per_km": 0.1952,
    "dest_name": "Milan",
    "dest_name_zh": "米兰",
-   "country": "IT"
+   "country": "IT",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MED",
+   "price": 3887.0,
+   "depart": "2026-11-12",
+   "return": "2026-11-28",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 7051,
+   "airline": "Etihad Airways (EY)",
+   "flight_number": 489,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Tickets",
+   "id": "KUL-MED|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2756,
+   "dest_name": "Medina",
+   "dest_name_zh": "麦地那城",
+   "country": "SA",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "PAR",
-   "price": 2412.0,
+   "price": 3950.0,
    "depart": "2027-03-30",
    "return": "2027-04-10",
    "one_way": false,
@@ -4072,15 +5821,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1157,
+   "per_km": 0.1895,
    "dest_name": "Paris",
    "dest_name_zh": "巴黎",
-   "country": "FR"
+   "country": "FR",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ANK",
-   "price": 2418.0,
+   "price": 3977.0,
    "depart": "2027-04-01",
    "return": "2027-04-04",
    "one_way": false,
@@ -4098,15 +5853,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1513,
+   "per_km": 0.2489,
    "dest_name": "Ankara",
    "dest_name_zh": "安卡拉",
-   "country": "TR"
+   "country": "TR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MUC",
-   "price": 2423.0,
+   "price": 3983.0,
    "depart": "2026-12-10",
    "return": "2027-01-07",
    "one_way": false,
@@ -4124,15 +5885,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1242,
+   "per_km": 0.2041,
    "dest_name": "Munich",
    "dest_name_zh": "慕尼黑",
-   "country": "DE"
+   "country": "DE",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "IKT",
-   "price": 2476.0,
+   "price": 4072.0,
    "depart": "2026-12-21",
    "return": "2027-01-10",
    "one_way": false,
@@ -4150,15 +5917,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2263,
+   "per_km": 0.3722,
    "dest_name": "Irkutsk",
    "dest_name_zh": "伊尔库次克",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "OVB",
-   "price": 2479.0,
+   "price": 4075.0,
    "depart": "2026-12-28",
    "return": "2027-01-12",
    "one_way": false,
@@ -4176,41 +5949,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2063,
+   "per_km": 0.3391,
    "dest_name": "Novosibirsk",
    "dest_name_zh": "新西伯利亚",
-   "country": "RU"
-  },
-  {
-   "origin": "KUL",
-   "dest": "LON",
-   "price": 2501.0,
-   "depart": "2027-04-10",
-   "return": "2027-05-03",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 10546,
-   "airline": "Oman Air (WY)",
-   "flight_number": 822,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Oman Air",
-   "id": "KUL-LON|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1186,
-   "dest_name": "London",
-   "dest_name_zh": "伦敦",
-   "country": "GB"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MAD",
-   "price": 2503.0,
+   "price": 4111.0,
    "depart": "2026-11-16",
    "return": "2026-11-19",
    "one_way": false,
@@ -4228,15 +5981,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.113,
+   "per_km": 0.1857,
    "dest_name": "Madrid",
    "dest_name_zh": "马德里",
-   "country": "ES"
+   "country": "ES",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "LON",
+   "price": 4115.0,
+   "depart": "2027-04-10",
+   "return": "2027-05-03",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 10546,
+   "airline": "Oman Air (WY)",
+   "flight_number": 822,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Oman Air",
+   "id": "KUL-LON|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.1951,
+   "dest_name": "London",
+   "dest_name_zh": "伦敦",
+   "country": "GB",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BNE",
-   "price": 2508.0,
+   "price": 4125.0,
    "depart": "2027-10-17",
    "return": "2027-10-28",
    "one_way": false,
@@ -4254,15 +6045,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1941,
+   "per_km": 0.3192,
    "dest_name": "Brisbane",
    "dest_name_zh": "布里斯班",
-   "country": "AU"
+   "country": "AU",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TBS",
-   "price": 2517.0,
+   "price": 4140.0,
    "depart": "2027-03-10",
    "return": "2027-03-24",
    "one_way": false,
@@ -4280,15 +6077,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1778,
+   "per_km": 0.2925,
    "dest_name": "Tbilisi",
    "dest_name_zh": "第比利斯",
-   "country": "GE"
+   "country": "GE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KHI",
-   "price": 2567.0,
+   "price": 4223.0,
    "depart": "2027-03-01",
    "return": "2027-03-04",
    "one_way": false,
@@ -4306,41 +6109,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2898,
+   "per_km": 0.4768,
    "dest_name": "Karachi",
    "dest_name_zh": "卡拉奇",
-   "country": "PK"
-  },
-  {
-   "origin": "KUL",
-   "dest": "BUD",
-   "price": 2576.0,
-   "depart": "2026-12-24",
-   "return": "2027-01-05",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 9198,
-   "airline": "China Eastern (MU)",
-   "flight_number": 8642,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "City.Travel",
-   "id": "KUL-BUD|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.14,
-   "dest_name": "Budapest",
-   "dest_name_zh": "布达佩斯",
-   "country": "HU"
+   "country": "PK",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MRU",
-   "price": 2580.0,
+   "price": 4238.0,
    "depart": "2027-01-10",
    "return": "2027-01-25",
    "one_way": false,
@@ -4358,15 +6141,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2357,
+   "per_km": 0.3872,
    "dest_name": "Mauritius",
    "dest_name_zh": "毛里求斯",
-   "country": "MU"
+   "country": "MU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BUD",
+   "price": 4250.0,
+   "depart": "2026-12-24",
+   "return": "2027-01-05",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 9198,
+   "airline": "China Eastern (MU)",
+   "flight_number": 8642,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "City.Travel",
+   "id": "KUL-BUD|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.231,
+   "dest_name": "Budapest",
+   "dest_name_zh": "布达佩斯",
+   "country": "HU",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KWI",
-   "price": 2627.0,
+   "price": 4318.0,
    "depart": "2026-12-25",
    "return": "2027-01-08",
    "one_way": false,
@@ -4384,41 +6205,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2066,
+   "per_km": 0.3395,
    "dest_name": "Kuwait City",
    "dest_name_zh": "科威特",
-   "country": "KW"
-  },
-  {
-   "origin": "KUL",
-   "dest": "LED",
-   "price": 2646.0,
-   "depart": "2026-11-21",
-   "return": "2026-12-01",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 8675,
-   "airline": "Uzbekistan Airways (HY)",
-   "flight_number": 554,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Wingie",
-   "id": "KUL-LED|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1525,
-   "dest_name": "Saint Petersburg",
-   "dest_name_zh": "圣彼得堡",
-   "country": "RU"
+   "country": "KW",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BAK",
-   "price": 2648.0,
+   "price": 4337.0,
    "depart": "2027-02-23",
    "return": "2027-03-18",
    "one_way": false,
@@ -4436,15 +6237,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1997,
+   "per_km": 0.327,
    "dest_name": "Baku",
    "dest_name_zh": "巴库",
-   "country": "AZ"
+   "country": "AZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "LED",
+   "price": 4353.0,
+   "depart": "2026-11-21",
+   "return": "2026-12-01",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 8675,
+   "airline": "Uzbekistan Airways (HY)",
+   "flight_number": 554,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Wingie",
+   "id": "KUL-LED|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2509,
+   "dest_name": "Saint Petersburg",
+   "dest_name_zh": "圣彼得堡",
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AUH",
-   "price": 2649.0,
+   "price": 4370.0,
    "depart": "2027-04-01",
    "return": "2027-04-04",
    "one_way": false,
@@ -4462,15 +6301,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2369,
+   "per_km": 0.3908,
    "dest_name": "Abu Dhabi",
    "dest_name_zh": "阿布扎比",
-   "country": "AE"
+   "country": "AE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KHV",
-   "price": 2667.0,
+   "price": 4384.0,
    "depart": "2027-01-01",
    "return": "2027-01-10",
    "one_way": false,
@@ -4488,15 +6333,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2238,
+   "per_km": 0.3679,
    "dest_name": "Khabarovsk",
    "dest_name_zh": "哈巴罗夫斯克",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ASB",
-   "price": 2685.0,
+   "price": 4413.0,
    "depart": "2026-12-17",
    "return": "2026-12-29",
    "one_way": false,
@@ -4514,15 +6365,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2291,
+   "per_km": 0.3766,
    "dest_name": "Ashgabat",
    "dest_name_zh": "阿什哈巴德",
-   "country": "TM"
+   "country": "TM",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签（需邀请函）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KZN",
-   "price": 2687.0,
+   "price": 4420.0,
    "depart": "2026-11-26",
    "return": "2026-12-03",
    "one_way": false,
@@ -4540,15 +6397,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1796,
+   "per_km": 0.2955,
    "dest_name": "Kazan",
    "dest_name_zh": "喀山",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DUB",
-   "price": 2690.0,
+   "price": 4424.0,
    "depart": "2026-11-24",
    "return": "2027-01-23",
    "one_way": false,
@@ -4566,15 +6429,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1234,
+   "per_km": 0.2029,
    "dest_name": "Dublin",
    "dest_name_zh": "都柏林",
-   "country": "IE"
+   "country": "IE",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "NQZ",
-   "price": 2727.0,
+   "price": 4486.0,
    "depart": "2026-11-27",
    "return": "2026-12-02",
    "one_way": false,
@@ -4592,15 +6461,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2259,
+   "per_km": 0.3715,
    "dest_name": "Astana",
    "dest_name_zh": "阿斯塔纳",
-   "country": "KZ"
+   "country": "KZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BEG",
-   "price": 2744.0,
+   "price": 4515.0,
    "depart": "2026-11-24",
    "return": "2026-12-03",
    "one_way": false,
@@ -4618,15 +6493,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1513,
+   "per_km": 0.2489,
    "dest_name": "Belgrade",
    "dest_name_zh": "贝尔格莱德",
-   "country": "RS"
+   "country": "RS",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BSZ",
-   "price": 2752.0,
+   "price": 4523.0,
    "depart": "2027-01-03",
    "return": "2027-01-13",
    "one_way": false,
@@ -4644,15 +6525,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2662,
+   "per_km": 0.4375,
    "dest_name": "Bishkek",
    "dest_name_zh": "比什凯克",
-   "country": "KG"
+   "country": "KG",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SSH",
-   "price": 2768.0,
+   "price": 4533.0,
    "depart": "2026-11-29",
    "return": "2026-12-15",
    "one_way": false,
@@ -4670,15 +6557,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1816,
+   "per_km": 0.2974,
    "dest_name": "Sharm el Sheikh",
    "dest_name_zh": "沙姆沙伊赫",
-   "country": "EG"
+   "country": "EG",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "LCA",
-   "price": 2790.0,
+   "price": 4585.0,
    "depart": "2027-01-14",
    "return": "2027-01-27",
    "one_way": false,
@@ -4696,15 +6589,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1785,
+   "per_km": 0.2933,
    "dest_name": "Larnaca",
    "dest_name_zh": "拉纳卡",
-   "country": "CY"
+   "country": "CY",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "JNB",
-   "price": 2824.0,
+   "price": 4643.0,
    "depart": "2026-11-17",
    "return": "2026-11-19",
    "one_way": false,
@@ -4722,15 +6621,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1653,
+   "per_km": 0.2718,
    "dest_name": "Johannesburg",
    "dest_name_zh": "约翰内斯堡",
-   "country": "ZA"
+   "country": "ZA",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "LUV",
-   "price": 2832.0,
+   "price": 4655.0,
    "depart": "2027-01-20",
    "return": "2027-02-17",
    "one_way": false,
@@ -4748,15 +6653,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3953,
+   "per_km": 0.6497,
    "dest_name": "Langgur",
    "dest_name_zh": "兰格格尔",
-   "country": "ID"
+   "country": "ID",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RZV",
-   "price": 2835.0,
+   "price": 4663.0,
    "depart": "2026-12-02",
    "return": "2027-01-01",
    "one_way": false,
@@ -4774,15 +6685,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1918,
+   "per_km": 0.3155,
    "dest_name": "Rize",
    "dest_name_zh": "Rize",
-   "country": "TR"
+   "country": "TR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AMS",
-   "price": 2861.0,
+   "price": 4706.0,
    "depart": "2026-12-10",
    "return": "2026-12-20",
    "one_way": false,
@@ -4800,15 +6717,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1404,
+   "per_km": 0.2309,
    "dest_name": "Amsterdam",
    "dest_name_zh": "阿姆斯特丹",
-   "country": "NL"
+   "country": "NL",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ISB",
-   "price": 2876.0,
+   "price": 4727.0,
    "depart": "2026-11-15",
    "return": "2026-11-20",
    "one_way": false,
@@ -4826,41 +6749,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3187,
+   "per_km": 0.5239,
    "dest_name": "Islamabad",
    "dest_name_zh": "伊斯兰堡",
-   "country": "PK"
-  },
-  {
-   "origin": "KUL",
-   "dest": "CMN",
-   "price": 2878.0,
-   "depart": "2026-11-16",
-   "return": "2026-11-30",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 11581,
-   "airline": "Turkish Airlines (TK)",
-   "flight_number": 63,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Wingie",
-   "id": "KUL-CMN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1243,
-   "dest_name": "Casablanca",
-   "dest_name_zh": "Casablanca",
-   "country": "MA"
+   "country": "PK",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AER",
-   "price": 2879.0,
+   "price": 4729.0,
    "depart": "2026-12-10",
    "return": "2027-01-07",
    "one_way": false,
@@ -4878,15 +6781,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1915,
+   "per_km": 0.3145,
    "dest_name": "Adler/Sochi",
    "dest_name_zh": "索契",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CMN",
+   "price": 4730.0,
+   "depart": "2026-11-16",
+   "return": "2026-11-30",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 11581,
+   "airline": "Turkish Airlines (TK)",
+   "flight_number": 63,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Wingie",
+   "id": "KUL-CMN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2042,
+   "dest_name": "Casablanca",
+   "dest_name_zh": "Casablanca",
+   "country": "MA",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "LHE",
-   "price": 2888.0,
+   "price": 4746.0,
    "depart": "2026-12-07",
    "return": "2026-12-21",
    "one_way": false,
@@ -4904,15 +6845,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3391,
+   "per_km": 0.5572,
    "dest_name": "Lahore",
    "dest_name_zh": "拉合尔",
-   "country": "PK"
+   "country": "PK",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DYU",
-   "price": 2899.0,
+   "price": 4766.0,
    "depart": "2026-11-16",
    "return": "2026-12-16",
    "one_way": false,
@@ -4930,15 +6877,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.281,
+   "per_km": 0.4619,
    "dest_name": "Dushanbe",
    "dest_name_zh": "杜尚别",
-   "country": "TJ"
+   "country": "TJ",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BCN",
-   "price": 2915.0,
+   "price": 4792.0,
    "depart": "2027-01-18",
    "return": "2027-02-27",
    "one_way": false,
@@ -4956,15 +6909,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1379,
+   "per_km": 0.2267,
    "dest_name": "Barcelona",
    "dest_name_zh": "巴塞罗那",
-   "country": "ES"
+   "country": "ES",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ECN",
-   "price": 2934.0,
+   "price": 4823.0,
    "depart": "2027-03-01",
    "return": "2027-03-04",
    "one_way": false,
@@ -4982,15 +6941,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1873,
+   "per_km": 0.3079,
    "dest_name": "Ercan",
    "dest_name_zh": "埃阿坎",
-   "country": "NY"
+   "country": "NY",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DRW",
-   "price": 2974.0,
+   "price": 4892.0,
    "depart": "2027-04-04",
    "return": "2027-04-20",
    "one_way": false,
@@ -5008,15 +6973,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4065,
+   "per_km": 0.6686,
    "dest_name": "Darwin",
    "dest_name_zh": "达尔文",
-   "country": "AU"
+   "country": "AU",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "OKA",
-   "price": 2979.0,
+   "price": 4898.0,
    "depart": "2026-12-23",
    "return": "2026-12-23",
    "one_way": false,
@@ -5034,15 +7005,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3949,
+   "per_km": 0.6493,
    "dest_name": "Okinawa",
    "dest_name_zh": "冲绳",
-   "country": "JP"
+   "country": "JP",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "OSL",
-   "price": 3013.0,
+   "price": 4949.0,
    "depart": "2026-11-14",
    "return": "2026-11-30",
    "one_way": false,
@@ -5060,15 +7037,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1544,
+   "per_km": 0.2536,
    "dest_name": "Oslo",
    "dest_name_zh": "奥斯陆",
-   "country": "NO"
+   "country": "NO",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ALG",
-   "price": 3028.0,
+   "price": 4958.0,
    "depart": "2027-05-01",
    "return": "2027-05-04",
    "one_way": false,
@@ -5086,41 +7069,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1433,
+   "per_km": 0.2347,
    "dest_name": "Algiers",
    "dest_name_zh": "阿爾及爾",
-   "country": "DZ"
-  },
-  {
-   "origin": "KUL",
-   "dest": "NBO",
-   "price": 3068.0,
-   "depart": "2027-01-14",
-   "return": "2027-01-24",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 7227,
-   "airline": "Air Arabia (G9)",
-   "flight_number": 801,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Clickavia",
-   "id": "KUL-NBO|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2123,
-   "dest_name": "Nairobi",
-   "dest_name_zh": "内罗毕",
-   "country": "KE"
+   "country": "DZ",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "WAW",
-   "price": 3071.0,
+   "price": 5044.0,
    "depart": "2026-11-12",
    "return": "2026-11-15",
    "one_way": false,
@@ -5138,15 +7101,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1688,
+   "per_km": 0.2772,
    "dest_name": "Warsaw",
    "dest_name_zh": "华沙",
-   "country": "PL"
+   "country": "PL",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DTM",
-   "price": 3081.0,
+   "price": 5063.0,
    "depart": "2026-12-04",
    "return": "2026-12-06",
    "one_way": false,
@@ -5164,15 +7133,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1537,
+   "per_km": 0.2525,
    "dest_name": "Dortmund",
    "dest_name_zh": "多特蒙德",
-   "country": "DE"
+   "country": "DE",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "NBO",
+   "price": 5063.0,
+   "depart": "2027-01-14",
+   "return": "2027-01-24",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 7227,
+   "airline": "Air Arabia (G9)",
+   "flight_number": 801,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Clickavia",
+   "id": "KUL-NBO|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3503,
+   "dest_name": "Nairobi",
+   "dest_name_zh": "内罗毕",
+   "country": "KE",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "电子旅行授权 eTA"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KUT",
-   "price": 3083.0,
+   "price": 5071.0,
    "depart": "2026-12-02",
    "return": "2027-01-01",
    "one_way": false,
@@ -5190,15 +7197,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2123,
+   "per_km": 0.3492,
    "dest_name": "Kutaisi",
    "dest_name_zh": "库塔伊西",
-   "country": "GE"
+   "country": "GE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KJA",
-   "price": 3095.0,
+   "price": 5084.0,
    "depart": "2026-11-27",
    "return": "2026-11-28",
    "one_way": false,
@@ -5216,41 +7229,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2599,
+   "per_km": 0.4269,
    "dest_name": "Krasnoyarsk",
    "dest_name_zh": "克拉斯诺尔斯克",
-   "country": "RU"
-  },
-  {
-   "origin": "KUL",
-   "dest": "YVR",
-   "price": 3106.0,
-   "depart": "2027-03-19",
-   "return": "2027-04-03",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 12773,
-   "airline": "China Southern Airlines (CZ)",
-   "flight_number": 8302,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Wingie",
-   "id": "KUL-YVR|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1216,
-   "dest_name": "Vancouver",
-   "dest_name_zh": "温哥华",
-   "country": "CA"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RIX",
-   "price": 3106.0,
+   "price": 5107.0,
    "depart": "2027-01-20",
    "return": "2027-01-31",
    "one_way": false,
@@ -5268,15 +7261,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1732,
+   "per_km": 0.2848,
    "dest_name": "Riga",
    "dest_name_zh": "里加",
-   "country": "LV"
+   "country": "LV",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "YVR",
+   "price": 5110.0,
+   "depart": "2027-03-19",
+   "return": "2027-04-03",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 12773,
+   "airline": "China Southern Airlines (CZ)",
+   "flight_number": 8302,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Wingie",
+   "id": "KUL-YVR|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2,
+   "dest_name": "Vancouver",
+   "dest_name_zh": "温哥华",
+   "country": "CA",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "GZP",
-   "price": 3152.0,
+   "price": 5181.0,
    "depart": "2026-11-14",
    "return": "2026-11-18",
    "one_way": false,
@@ -5294,15 +7325,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1972,
+   "per_km": 0.3241,
    "dest_name": "Alanya",
    "dest_name_zh": "Alanya",
-   "country": "TR"
+   "country": "TR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TIV",
-   "price": 3238.0,
+   "price": 5318.0,
    "depart": "2027-07-02",
    "return": "2027-07-07",
    "one_way": false,
@@ -5320,15 +7357,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1761,
+   "per_km": 0.2892,
    "dest_name": "Tivat",
    "dest_name_zh": "蒂瓦特",
-   "country": "ME"
+   "country": "ME",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "UBN",
-   "price": 3258.0,
+   "price": 5355.0,
    "depart": "2027-06-19",
    "return": "2027-06-23",
    "one_way": false,
@@ -5346,15 +7389,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3258,
+   "per_km": 0.5354,
    "dest_name": "Ulaanbaatar",
    "dest_name_zh": "乌兰巴托",
-   "country": "MN"
+   "country": "MN",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "LIS",
-   "price": 3277.0,
+   "price": 5386.0,
    "depart": "2026-12-02",
    "return": "2026-12-05",
    "one_way": false,
@@ -5372,15 +7421,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1416,
+   "per_km": 0.2328,
    "dest_name": "Lisbon",
    "dest_name_zh": "里斯本",
-   "country": "PT"
+   "country": "PT",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RAK",
-   "price": 3290.0,
+   "price": 5412.0,
    "depart": "2026-12-12",
    "return": "2026-12-14",
    "one_way": false,
@@ -5398,15 +7453,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.141,
+   "per_km": 0.232,
    "dest_name": "Marrakech",
    "dest_name_zh": "马拉喀什",
-   "country": "MA"
+   "country": "MA",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KRR",
-   "price": 3321.0,
+   "price": 5439.0,
    "depart": "2027-01-01",
    "return": "2027-01-11",
    "one_way": false,
@@ -5424,15 +7485,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2172,
+   "per_km": 0.3557,
    "dest_name": "Krasnodar",
    "dest_name_zh": "克拉斯诺达尔",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ROR",
-   "price": 3328.0,
+   "price": 5491.0,
    "depart": "2027-03-10",
    "return": "2027-03-17",
    "one_way": false,
@@ -5450,15 +7517,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4539,
+   "per_km": 0.7489,
    "dest_name": "Koror",
    "dest_name_zh": "科罗尔",
-   "country": "PW"
+   "country": "PW",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AKL",
-   "price": 3357.0,
+   "price": 5499.0,
    "depart": "2027-01-28",
    "return": "2027-02-25",
    "one_way": false,
@@ -5476,15 +7549,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1923,
+   "per_km": 0.3151,
    "dest_name": "Auckland",
    "dest_name_zh": "奥克兰",
-   "country": "NZ"
+   "country": "NZ",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MRV",
-   "price": 3372.0,
+   "price": 5545.0,
    "depart": "2026-11-26",
    "return": "2026-11-27",
    "one_way": false,
@@ -5502,41 +7581,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2308,
+   "per_km": 0.3795,
    "dest_name": "Mineralnye Vody",
    "dest_name_zh": "矿泉城机场",
-   "country": "RU"
-  },
-  {
-   "origin": "KUL",
-   "dest": "MSQ",
-   "price": 3428.0,
-   "depart": "2027-02-08",
-   "return": "2027-02-25",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 8691,
-   "airline": "Turkish Airlines (TK)",
-   "flight_number": 63,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Turna.com",
-   "id": "KUL-MSQ|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1972,
-   "dest_name": "Minsk",
-   "dest_name_zh": "明斯克",
-   "country": "BY"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AZN",
-   "price": 3428.0,
+   "price": 5636.0,
    "depart": "2026-11-14",
    "return": "2026-11-28",
    "one_way": false,
@@ -5554,15 +7613,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3348,
+   "per_km": 0.5504,
    "dest_name": "Andijan",
    "dest_name_zh": "安集延",
-   "country": "UZ"
+   "country": "UZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MSQ",
+   "price": 5640.0,
+   "depart": "2027-02-08",
+   "return": "2027-02-25",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 8691,
+   "airline": "Turkish Airlines (TK)",
+   "flight_number": 63,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Turna.com",
+   "id": "KUL-MSQ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3245,
+   "dest_name": "Minsk",
+   "dest_name_zh": "明斯克",
+   "country": "BY",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CIT",
-   "price": 3432.0,
+   "price": 5664.0,
    "depart": "2026-12-01",
    "return": "2027-01-03",
    "one_way": false,
@@ -5580,15 +7677,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3179,
+   "per_km": 0.5247,
    "dest_name": "Shymkent",
    "dest_name_zh": "Shymkent",
-   "country": "KZ"
+   "country": "KZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CEK",
-   "price": 3466.0,
+   "price": 5698.0,
    "depart": "2026-12-07",
    "return": "2026-12-10",
    "one_way": false,
@@ -5606,15 +7709,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2543,
+   "per_km": 0.418,
    "dest_name": "Chelyabinsk",
    "dest_name_zh": "车里雅宾斯克",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "TJM",
-   "price": 3467.0,
+   "price": 5703.0,
    "depart": "2026-12-11",
    "return": "2026-12-14",
    "one_way": false,
@@ -5632,15 +7741,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2552,
+   "per_km": 0.4198,
    "dest_name": "Tyumen",
    "dest_name_zh": "秋明",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "UKK",
-   "price": 3497.0,
+   "price": 5751.0,
    "depart": "2027-01-31",
    "return": "2027-02-10",
    "one_way": false,
@@ -5658,15 +7773,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3174,
+   "per_km": 0.5219,
    "dest_name": "Oskemen",
    "dest_name_zh": "Oskemen",
-   "country": "KZ"
+   "country": "KZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SKD",
-   "price": 3503.0,
+   "price": 5754.0,
    "depart": "2026-12-26",
    "return": "2027-01-30",
    "one_way": false,
@@ -5684,15 +7805,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3271,
+   "per_km": 0.5373,
    "dest_name": "Samarkand",
    "dest_name_zh": "撒马尔罕",
-   "country": "UZ"
+   "country": "UZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "EVN",
-   "price": 3537.0,
+   "price": 5813.0,
    "depart": "2026-12-29",
    "return": "2027-01-03",
    "one_way": false,
@@ -5710,15 +7837,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2511,
+   "per_km": 0.4127,
    "dest_name": "Yerevan",
    "dest_name_zh": "埃里温",
-   "country": "AM"
+   "country": "AM",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "FLR",
-   "price": 3587.0,
+   "price": 5896.0,
    "depart": "2027-05-31",
    "return": "2027-06-11",
    "one_way": false,
@@ -5736,15 +7869,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.183,
+   "per_km": 0.3008,
    "dest_name": "Florence",
    "dest_name_zh": "佛罗伦萨",
-   "country": "IT"
+   "country": "IT",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "UUD",
-   "price": 3588.0,
+   "price": 5903.0,
    "depart": "2026-11-28",
    "return": "2026-12-19",
    "one_way": false,
@@ -5762,15 +7901,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3296,
+   "per_km": 0.5423,
    "dest_name": "Ulan-Ude",
    "dest_name_zh": "乌兰乌德",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "LAX",
-   "price": 3594.0,
+   "price": 5906.0,
    "depart": "2027-02-20",
    "return": "2027-03-06",
    "one_way": false,
@@ -5788,67 +7933,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1271,
+   "per_km": 0.2089,
    "dest_name": "Los Angeles",
    "dest_name_zh": "洛杉矶",
-   "country": "US"
-  },
-  {
-   "origin": "KUL",
-   "dest": "BUS",
-   "price": 3620.0,
-   "depart": "2026-12-04",
-   "return": "2027-01-02",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 7323,
-   "airline": "AirAsia X (D7)",
-   "flight_number": 604,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Kupi.com",
-   "id": "KUL-BUS|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2472,
-   "dest_name": "Batumi",
-   "dest_name_zh": "巴统",
-   "country": "GE"
-  },
-  {
-   "origin": "KUL",
-   "dest": "MAN",
-   "price": 3622.0,
-   "depart": "2027-04-09",
-   "return": "2027-04-24",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 10639,
-   "airline": "Scoot (TR)",
-   "flight_number": 8511,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Kiwi.com",
-   "id": "KUL-MAN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1702,
-   "dest_name": "Manchester",
-   "dest_name_zh": "曼彻斯特",
-   "country": "GB"
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SVX",
-   "price": 3624.0,
+   "price": 5952.0,
    "depart": "2027-01-28",
    "return": "2027-02-09",
    "one_way": false,
@@ -5866,15 +7965,85 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2597,
+   "per_km": 0.4265,
    "dest_name": "Yekaterinburg",
    "dest_name_zh": "叶卡捷琳堡",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MAN",
+   "price": 5953.0,
+   "depart": "2027-04-09",
+   "return": "2027-04-24",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 10639,
+   "airline": "Scoot (TR)",
+   "flight_number": 8511,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Kiwi.com",
+   "id": "KUL-MAN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2798,
+   "dest_name": "Manchester",
+   "dest_name_zh": "曼彻斯特",
+   "country": "GB",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BUS",
+   "price": 5954.0,
+   "depart": "2026-12-04",
+   "return": "2027-01-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 7323,
+   "airline": "AirAsia X (D7)",
+   "flight_number": 604,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Kupi.com",
+   "id": "KUL-BUS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4065,
+   "dest_name": "Batumi",
+   "dest_name_zh": "巴统",
+   "country": "GE",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "NAN",
-   "price": 3630.0,
+   "price": 5966.0,
    "depart": "2027-02-15",
    "return": "2027-03-04",
    "one_way": false,
@@ -5892,15 +8061,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2107,
+   "per_km": 0.3463,
    "dest_name": "Nadi",
    "dest_name_zh": "楠迪",
-   "country": "FJ"
+   "country": "FJ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CPT",
-   "price": 3661.0,
+   "price": 6023.0,
    "depart": "2026-12-13",
    "return": "2026-12-24",
    "one_way": false,
@@ -5918,15 +8093,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.191,
+   "per_km": 0.3143,
    "dest_name": "Cape Town",
    "dest_name_zh": "开普敦",
-   "country": "ZA"
+   "country": "ZA",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
    "dest": "UUS",
-   "price": 3707.0,
+   "price": 6099.0,
    "depart": "2026-12-19",
    "return": "2026-12-22",
    "one_way": false,
@@ -5944,41 +8125,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2958,
+   "per_km": 0.4866,
    "dest_name": "Yuzhno-Sakhalinsk",
    "dest_name_zh": "南萨哈林斯克",
-   "country": "RU"
-  },
-  {
-   "origin": "KUL",
-   "dest": "LAS",
-   "price": 3764.0,
-   "depart": "2027-02-20",
-   "return": "2027-03-06",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 14211,
-   "airline": "Korean Air (KE)",
-   "flight_number": 428,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Trip.com",
-   "id": "KUL-LAS|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1324,
-   "dest_name": "Las Vegas",
-   "dest_name_zh": "拉斯维加斯",
-   "country": "US"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KUF",
-   "price": 3764.0,
+   "price": 6186.0,
    "depart": "2026-12-16",
    "return": "2026-12-18",
    "one_way": false,
@@ -5996,15 +8157,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2587,
+   "per_km": 0.4252,
    "dest_name": "Samara",
    "dest_name_zh": "萨马拉",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "LAS",
+   "price": 6187.0,
+   "depart": "2027-02-20",
+   "return": "2027-03-06",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 14211,
+   "airline": "Korean Air (KE)",
+   "flight_number": 428,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Trip.com",
+   "id": "KUL-LAS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2177,
+   "dest_name": "Las Vegas",
+   "dest_name_zh": "拉斯维加斯",
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "PZU",
-   "price": 3779.0,
+   "price": 6217.0,
    "depart": "2027-03-15",
    "return": "2027-04-15",
    "one_way": false,
@@ -6022,15 +8221,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2616,
+   "per_km": 0.4304,
    "dest_name": "Port Sudan",
    "dest_name_zh": "苏丹港",
-   "country": "SD"
+   "country": "SD",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ZNZ",
-   "price": 3785.0,
+   "price": 6220.0,
    "depart": "2026-12-01",
    "return": "2026-12-06",
    "one_way": false,
@@ -6048,15 +8253,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2698,
+   "per_km": 0.4434,
    "dest_name": "Zanzibar",
    "dest_name_zh": "桑吉巴",
-   "country": "TZ"
+   "country": "TZ",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "AKX",
-   "price": 3803.0,
+   "price": 6255.0,
    "depart": "2027-01-23",
    "return": "2027-02-06",
    "one_way": false,
@@ -6074,15 +8285,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2841,
+   "per_km": 0.4672,
    "dest_name": "Aktobe",
    "dest_name_zh": "Aktobe",
-   "country": "KZ"
+   "country": "KZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KGD",
-   "price": 3807.0,
+   "price": 6257.0,
    "depart": "2027-09-24",
    "return": "2027-09-30",
    "one_way": false,
@@ -6100,15 +8317,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2078,
+   "per_km": 0.3415,
    "dest_name": "Kaliningrad",
    "dest_name_zh": "加里宁格勒",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "UFA",
-   "price": 3825.0,
+   "price": 6283.0,
    "depart": "2026-12-17",
    "return": "2027-01-06",
    "one_way": false,
@@ -6126,15 +8349,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2711,
+   "per_km": 0.4454,
    "dest_name": "Ufa",
    "dest_name_zh": "乌法",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "NOZ",
-   "price": 3841.0,
+   "price": 6312.0,
    "depart": "2026-12-01",
    "return": "2026-12-04",
    "one_way": false,
@@ -6152,15 +8381,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3321,
+   "per_km": 0.5457,
    "dest_name": "Novokuznetsk",
    "dest_name_zh": "新库兹涅茨克",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "URA",
-   "price": 3874.0,
+   "price": 6371.0,
    "depart": "2027-03-05",
    "return": "2027-03-27",
    "one_way": false,
@@ -6178,15 +8413,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2732,
+   "per_km": 0.4493,
    "dest_name": "Oral",
    "dest_name_zh": "Oral",
-   "country": "KZ"
+   "country": "KZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ONT",
-   "price": 3920.0,
+   "price": 6442.0,
    "depart": "2027-02-20",
    "return": "2027-03-06",
    "one_way": false,
@@ -6204,15 +8445,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1382,
+   "per_km": 0.2271,
    "dest_name": "Ontario",
    "dest_name_zh": "安大略",
-   "country": "US"
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KGF",
-   "price": 4054.0,
+   "price": 6669.0,
    "depart": "2026-12-21",
    "return": "2026-12-29",
    "one_way": false,
@@ -6230,15 +8477,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3467,
+   "per_km": 0.5704,
    "dest_name": "Karagandy",
    "dest_name_zh": "卡拉干达",
-   "country": "KZ"
+   "country": "KZ",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "JRO",
-   "price": 4104.0,
+   "price": 6748.0,
    "depart": "2027-03-01",
    "return": "2027-03-16",
    "one_way": false,
@@ -6256,15 +8509,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2843,
+   "per_km": 0.4674,
    "dest_name": "Kilimanjaro",
    "dest_name_zh": "乞力马扎罗",
-   "country": "TZ"
+   "country": "TZ",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "NYC",
-   "price": 4226.0,
+   "price": 6947.0,
    "depart": "2026-12-21",
    "return": "2026-12-27",
    "one_way": false,
@@ -6282,15 +8541,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1398,
+   "per_km": 0.2297,
    "dest_name": "New York",
    "dest_name_zh": "纽约",
-   "country": "US"
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KBL",
-   "price": 4227.0,
+   "price": 6975.0,
    "depart": "2026-12-26",
    "return": "2027-01-03",
    "one_way": false,
@@ -6308,15 +8573,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4364,
+   "per_km": 0.7202,
    "dest_name": "Kabul",
    "dest_name_zh": "喀布尔",
-   "country": "AF"
+   "country": "AF",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SCW",
-   "price": 4295.0,
+   "price": 7061.0,
    "depart": "2027-03-01",
    "return": "2027-03-04",
    "one_way": false,
@@ -6334,15 +8605,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2772,
+   "per_km": 0.4557,
    "dest_name": "Syktyvkar",
    "dest_name_zh": "瑟克特夫卡尔",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SEZ",
-   "price": 4313.0,
+   "price": 7084.0,
    "depart": "2026-11-15",
    "return": "2026-11-18",
    "one_way": false,
@@ -6360,15 +8637,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4142,
+   "per_km": 0.6803,
    "dest_name": "Mahe",
    "dest_name_zh": "马埃岛",
-   "country": "SC"
+   "country": "SC",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "REN",
-   "price": 4514.0,
+   "price": 7426.0,
    "depart": "2027-01-12",
    "return": "2027-02-27",
    "one_way": false,
@@ -6386,15 +8669,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3268,
+   "per_km": 0.5376,
    "dest_name": "Orenburg",
    "dest_name_zh": "奥伦堡",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RGK",
-   "price": 4550.0,
+   "price": 7478.0,
    "depart": "2027-04-11",
    "return": "2027-04-22",
    "one_way": false,
@@ -6412,15 +8701,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4047,
+   "per_km": 0.6652,
    "dest_name": "Gorno-Altaysk",
    "dest_name_zh": "Gorno-Altaysk",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ABA",
-   "price": 4577.0,
+   "price": 7522.0,
    "depart": "2027-01-12",
    "return": "2027-01-19",
    "one_way": false,
@@ -6438,15 +8733,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4014,
+   "per_km": 0.6596,
    "dest_name": "Abakan",
    "dest_name_zh": "阿巴坎",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "KGL",
-   "price": 4600.0,
+   "price": 7591.0,
    "depart": "2027-05-01",
    "return": "2027-05-04",
    "one_way": false,
@@ -6464,15 +8765,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2882,
+   "per_km": 0.4756,
    "dest_name": "Kigali",
    "dest_name_zh": "基加利",
-   "country": "RW"
+   "country": "RW",
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "NCE",
-   "price": 4758.0,
+   "price": 7822.0,
    "depart": "2026-12-21",
    "return": "2026-12-26",
    "one_way": false,
@@ -6490,15 +8797,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.235,
+   "per_km": 0.3864,
    "dest_name": "Nice",
    "dest_name_zh": "尼斯",
-   "country": "FR"
+   "country": "FR",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "POM",
-   "price": 4829.0,
+   "price": 7931.0,
    "depart": "2027-01-08",
    "return": "2027-01-16",
    "one_way": false,
@@ -6516,15 +8829,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4616,
+   "per_km": 0.7581,
    "dest_name": "Port Moresby",
    "dest_name_zh": "泊特莫尔斯比港",
-   "country": "PG"
+   "country": "PG",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "DFW",
-   "price": 4859.0,
+   "price": 7989.0,
    "depart": "2027-03-01",
    "return": "2027-03-04",
    "one_way": false,
@@ -6542,15 +8861,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.156,
+   "per_km": 0.2565,
    "dest_name": "Dallas",
    "dest_name_zh": "Dallas",
-   "country": "US"
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "PKC",
-   "price": 5015.0,
+   "price": 8243.0,
    "depart": "2026-12-21",
    "return": "2027-02-04",
    "one_way": false,
@@ -6568,15 +8893,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3306,
+   "per_km": 0.5433,
    "dest_name": "Petropavlovsk-Kamchatsky",
    "dest_name_zh": "彼得罗巴甫洛夫斯克",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "PEE",
-   "price": 5021.0,
+   "price": 8261.0,
    "depart": "2026-12-19",
    "return": "2027-01-02",
    "one_way": false,
@@ -6594,15 +8925,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3456,
+   "per_km": 0.5686,
    "dest_name": "Perm",
    "dest_name_zh": "彼尔姆",
-   "country": "RU"
+   "country": "RU",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "YTO",
-   "price": 5182.0,
+   "price": 8523.0,
    "depart": "2027-01-18",
    "return": "2027-01-31",
    "one_way": false,
@@ -6620,15 +8957,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1749,
+   "per_km": 0.2877,
    "dest_name": "Toronto",
    "dest_name_zh": "多伦多",
-   "country": "CA"
+   "country": "CA",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "YMQ",
-   "price": 5264.0,
+   "price": 8685.0,
    "depart": "2027-06-08",
    "return": "2027-06-08",
    "one_way": false,
@@ -6646,15 +8989,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1805,
+   "per_km": 0.2977,
    "dest_name": "Montreal",
    "dest_name_zh": "蒙特利尔",
-   "country": "CA"
+   "country": "CA",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "CUN",
-   "price": 5637.0,
+   "price": 9265.0,
    "depart": "2027-02-10",
    "return": "2027-02-15",
    "one_way": false,
@@ -6672,15 +9021,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1643,
+   "per_km": 0.27,
    "dest_name": "Cancun",
    "dest_name_zh": "坎昆",
-   "country": "MX"
+   "country": "MX",
+   "visa": {
+    "status": "conditional",
+    "label": "有条件免签",
+    "note": "持有效美/加/日/英/申根签证可免签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RAR",
-   "price": 5707.0,
+   "price": 9379.0,
    "depart": "2026-11-20",
    "return": "2026-12-03",
    "one_way": false,
@@ -6698,41 +9053,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.259,
+   "per_km": 0.4257,
    "dest_name": "Rarotonga",
    "dest_name_zh": "Rarotonga",
-   "country": "CK"
-  },
-  {
-   "origin": "KUL",
-   "dest": "HOU",
-   "price": 5823.0,
-   "depart": "2027-08-01",
-   "return": "2027-08-31",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 15930,
-   "airline": "All Nippon Airways (NH)",
-   "flight_number": 886,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Kupi.com",
-   "id": "KUL-HOU|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1828,
-   "dest_name": "Houston",
-   "dest_name_zh": "休斯敦",
-   "country": "US"
+   "country": "CK",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MLB",
-   "price": 5824.0,
+   "price": 9572.0,
    "depart": "2026-12-14",
    "return": "2026-12-27",
    "one_way": false,
@@ -6750,15 +9085,53 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1761,
+   "per_km": 0.2895,
    "dest_name": "Melbourne",
    "dest_name_zh": "墨尔本(美国)",
-   "country": "US"
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "HOU",
+   "price": 9607.0,
+   "depart": "2027-08-01",
+   "return": "2027-08-31",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 15930,
+   "airline": "All Nippon Airways (NH)",
+   "flight_number": 886,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Kupi.com",
+   "id": "KUL-HOU|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3015,
+   "dest_name": "Houston",
+   "dest_name_zh": "休斯敦",
+   "country": "US",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ZQN",
-   "price": 6052.0,
+   "price": 9946.0,
    "depart": "2027-01-03",
    "return": "2027-01-10",
    "one_way": false,
@@ -6776,15 +9149,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3566,
+   "per_km": 0.586,
    "dest_name": "Queenstown",
    "dest_name_zh": "皇后镇",
-   "country": "NZ"
+   "country": "NZ",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "SAO",
-   "price": 6095.0,
+   "price": 10017.0,
    "depart": "2027-02-04",
    "return": "2027-02-11",
    "one_way": false,
@@ -6802,15 +9181,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1914,
+   "per_km": 0.3145,
    "dest_name": "Sao Paulo",
    "dest_name_zh": "圣保罗",
-   "country": "BR"
+   "country": "BR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（2026-05 起，试行至 2026 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "MEX",
-   "price": 6236.0,
+   "price": 10250.0,
    "depart": "2027-05-01",
    "return": "2027-05-04",
    "one_way": false,
@@ -6828,15 +9213,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1875,
+   "per_km": 0.3082,
    "dest_name": "Mexico City",
    "dest_name_zh": "墨西哥城",
-   "country": "MX"
+   "country": "MX",
+   "visa": {
+    "status": "conditional",
+    "label": "有条件免签",
+    "note": "持有效美/加/日/英/申根签证可免签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BUE",
-   "price": 6452.0,
+   "price": 10604.0,
    "depart": "2027-04-01",
    "return": "2027-04-11",
    "one_way": false,
@@ -6854,15 +9245,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2022,
+   "per_km": 0.3323,
    "dest_name": "Buenos Aires",
    "dest_name_zh": "布宜诺斯艾利斯",
-   "country": "AR"
+   "country": "AR",
+   "visa": {
+    "status": "conditional",
+    "label": "有条件免签",
+    "note": "持有效美/申根签证可申请电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "RIO",
-   "price": 6673.0,
+   "price": 10976.0,
    "depart": "2027-02-01",
    "return": "2027-02-14",
    "one_way": false,
@@ -6880,15 +9277,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2133,
+   "per_km": 0.3509,
    "dest_name": "Rio de Janeiro",
    "dest_name_zh": "里约热内卢",
-   "country": "BR"
+   "country": "BR",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（2026-05 起，试行至 2026 年底）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "YQY",
-   "price": 6772.0,
+   "price": 11137.0,
    "depart": "2026-12-01",
    "return": "2026-12-08",
    "one_way": false,
@@ -6906,15 +9309,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2376,
+   "per_km": 0.3907,
    "dest_name": "Sydney",
    "dest_name_zh": "悉尼 (加拿大)",
-   "country": "CA"
+   "country": "CA",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "WLG",
-   "price": 7371.0,
+   "price": 12107.0,
    "depart": "2026-12-10",
    "return": "2026-12-20",
    "one_way": false,
@@ -6932,15 +9341,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.4169,
+   "per_km": 0.6847,
    "dest_name": "Wellington",
    "dest_name_zh": "惠灵顿",
-   "country": "NZ"
+   "country": "NZ",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "ANU",
-   "price": 7579.0,
+   "price": 12456.0,
    "depart": "2027-01-07",
    "return": "2027-01-11",
    "one_way": false,
@@ -6958,15 +9373,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2213,
+   "per_km": 0.3637,
    "dest_name": "Saint John's",
    "dest_name_zh": "圣约翰的",
-   "country": "AG"
+   "country": "AG",
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "POP",
-   "price": 8776.0,
+   "price": 14481.0,
    "depart": "2026-12-16",
    "return": "2026-12-26",
    "one_way": false,
@@ -6984,15 +9405,21 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2531,
+   "per_km": 0.4177,
    "dest_name": "Puerto Plata",
    "dest_name_zh": "普拉塔港",
-   "country": "DO"
+   "country": "DO",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
    "dest": "BOB",
-   "price": 9139.0,
+   "price": 15080.0,
    "depart": "2027-04-05",
    "return": "2027-04-15",
    "one_way": false,
@@ -7010,10 +9437,16 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3849,
+   "per_km": 0.6351,
    "dest_name": "Bora Bora",
    "dest_name_zh": "博拉博拉",
-   "country": "PF"
+   "country": "PF",
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   }
  ],
  "trend": {},
@@ -7032,26 +9465,28 @@
  ],
  "alerts": [],
  "targets": {
-  "LON": 1600,
-  "PAR": 1700,
-  "TYO": 900,
-  "OSA": 850,
-  "SEL": 700,
-  "SYD": 1000,
-  "AKL": 1500,
-  "YVR": 2200,
-  "CTU": 500,
-  "SHA": 550
+  "CTU": 900,
+  "SHA": 950,
+  "BKK": 450,
+  "DPS": 650,
+  "MLE": 1300,
+  "DXB": 1400,
+  "IST": 2000,
+  "TBS": 2200,
+  "CAI": 2200,
+  "MRU": 2500,
+  "YVR": 3500,
+  "AKL": 2500
  },
  "rules": {
   "bug_ratio": 0.45,
   "great_ratio": 0.65,
   "min_history_days": 5,
   "min_distance_km": 1800,
-  "economy_bug_per_km": 0.045,
-  "economy_great_per_km": 0.07,
-  "business_bug_per_km": 0.14,
-  "business_great_per_km": 0.22
+  "economy_bug_per_km": 0.075,
+  "economy_great_per_km": 0.115,
+  "business_bug_per_km": 0.23,
+  "business_great_per_km": 0.36
  },
  "history_days": 1,
  "demo": false
