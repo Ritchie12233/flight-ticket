@@ -141,7 +141,7 @@ def trip_url(f: dict) -> str:
     """携程国际版（Trip.com 马来西亚站）搜索链接"""
     q = (f"dcity={f['origin'].lower()}&acity={f['dest'].lower()}&ddate={f.get('depart') or ''}"
          + (f"&rdate={f['return']}&triptype=rt" if f.get("return") else "&triptype=ow")
-         + f"&class={'c' if f.get('trip_class') == 1 else 'y'}&quantity=1&locale=en-MY&curr=MYR")
+         + f"&class={'c' if f.get('trip_class') == 1 else 'y'}&quantity=1&locale=en-MY&curr=CNY")
     return "https://my.trip.com/flights/showfarefirst?" + q
 
 
@@ -155,14 +155,24 @@ def skyscanner_url(f: dict) -> str:
     return f"https://www.skyscanner.com.my/transport/flights/{path}?adultsv2=1&cabinclass={cabin}"
 
 
+SYM = {"CNY": "¥", "MYR": "RM", "USD": "$"}
+
+
 def fare_message(f: dict, cur: str, site: str = "") -> tuple[str, str, str]:
     trip = "单程" if f["one_way"] else "往返"
     cabin = "商务舱" if f["trip_class"] == 1 else "经济舱"
-    title = f'{ICON.get(f["level"], "")} 吉隆坡→{f["dest_name_zh"]} {cur.upper()} {f["price"]:.0f}'
+    sym = SYM.get(cur.upper(), cur.upper() + " ")
+    v = f.get("visa") or {}
+    vtag = f'【{v["label"]}】' if v.get("label") else ""
+    title = f'{ICON.get(f["level"], "")} 吉隆坡→{f["dest_name_zh"]} {sym}{f["price"]:,.0f}{vtag}'
     lines = [f'{f["origin"]}→{f["dest"]}（{f["dest_name"]}）· {trip} · {cabin}',
              f'日期：{f.get("depart") or "?"}' + (f' ～ {f["return"]}' if f.get("return") else "")]
+    if v.get("note"):
+        lines.append(f'签证：{v["note"]}')
+    if f.get("visited") is False:
+        lines.append("✨ 你还没去过这个国家")
     if f.get("baseline"):
-        lines.append(f'近期常规价：{f["baseline"]:.0f}（现价为其 {f["ratio"]:.0%}）')
+        lines.append(f'近期常规价：{sym}{f["baseline"]:,.0f}（现价为其 {f["ratio"]:.0%}）')
     if f.get("transfers") is not None:
         lines.append("直飞" if f["transfers"] == 0 else f'中转 {f["transfers"]} 次')
     if f.get("airline"):

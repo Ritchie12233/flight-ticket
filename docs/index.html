@@ -90,6 +90,28 @@ h2{font-family:var(--serif);font-weight:900;font-size:26px;margin:0 0 4px}
 .lrow.none .now{color:var(--muted);font-family:var(--sans);font-size:14px}
 .edit-hint{font-size:14px;color:var(--muted);margin:14px 0 0}
 
+/* ---------- visa & visited tags ---------- */
+.tags{display:inline-flex;flex-wrap:wrap;gap:4px;vertical-align:middle}
+.vt{display:inline-flex;align-items:center;font-family:var(--sans);font-weight:500;font-size:12px;line-height:1;padding:4px 8px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+.vt.free{background:#dcefe9;color:#0b4f55}
+.vt.easy,.vt.free_partial{background:#fbe6cf;color:#7a3a07}
+.vt.conditional,.vt.visa{background:transparent;color:var(--muted);border-color:var(--rule)}
+.vt.new{background:transparent;color:var(--sun);border-color:var(--sun)}
+.vt.been{background:transparent;color:var(--muted);border-color:var(--rule)}
+.hero .vt.free{background:rgba(247,242,233,.92);color:#0b4f55}
+.hero .vt.easy,.hero .vt.free_partial{background:rgba(247,242,233,.92);color:#7a3a07}
+.hero .vt.visa,.hero .vt.conditional,.hero .vt.been{color:var(--cream);border-color:rgba(247,242,233,.6)}
+.hero .vt.new{background:transparent;color:var(--cream);border-color:var(--cream)}
+.hero .tags{margin-top:8px}
+.lrow .dst .tags{margin-top:6px;display:flex}
+.pc .tags{margin-top:6px}
+.biz-list{border-top:1px solid var(--ink)}
+.brow{display:grid;grid-template-columns:minmax(150px,1.2fr) 1.4fr auto auto;gap:6px 20px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule)}
+.brow .dn{font-family:var(--serif);font-weight:900;font-size:18px}
+.brow .dn small{font-family:var(--display);font-weight:400;font-size:13px;color:var(--muted);margin-left:6px}
+.brow .sub{font-size:13px;color:var(--muted)}
+.brow .pr{font-family:var(--display);font-size:22px;color:var(--sun);text-align:right}
+
 /* ---------- anomalies ---------- */
 .quiet{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:20px 22px;max-width:760px}
 .quiet p{margin:0 0 6px}
@@ -160,6 +182,8 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .lrow .act{grid-column:1/-1;order:4}
   .lrow .val{text-align:right}
   .two,footer .cols{grid-template-columns:1fr}
+  .brow{grid-template-columns:1fr auto}
+  .brow .mid,.brow .links{grid-column:1/-1}
   .cards{grid-template-columns:1fr 1fr}
   .pc .links .btn,.lrow .links .btn{min-height:40px}
   .hero .links{display:grid;grid-template-columns:1fr 1fr;gap:8px}
@@ -183,7 +207,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   <div class="status" id="status" aria-live="polite">正在读取最新票价…</div>
 </header>
 <nav class="top" aria-label="页面导航"><div class="wrap">
-  <a href="#today">今日</a><a href="#mine">我的航线</a><a href="#deals">异常低价</a><a href="#ideas">出行灵感</a><a href="#intel">情报与推送</a>
+  <a href="#today">今日</a><a href="#mine">我的航线</a><a href="#deals">异常低价</a><a href="#ideas">出行灵感</a><a href="#biz">商务舱</a><a href="#intel">情报与推送</a>
 </div></nav>
 
 <main class="wrap">
@@ -205,11 +229,17 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 
   <section id="ideas">
     <h2>出行灵感</h2>
-    <p class="lede">各目的地经济舱往返最低价。默认只看国际长途，按每公里价格排序，越靠前越划算。</p>
+    <p class="lede">各目的地经济舱往返最低价。默认只看不用提前办签证、你还没去过的国际目的地，免签的排在前面，同一档里按每公里价格排序。</p>
     <div class="ctrls" id="ctrls"></div>
     <p class="count" id="count"></p>
     <div class="cards" id="cards"></div>
     <div class="more" id="moreBox"></div>
+  </section>
+
+  <section id="biz">
+    <h2>商务舱</h2>
+    <p class="lede">平时以价格为准，商务舱单独放在这里。只有出现疑似 bug 价时才会推送。</p>
+    <div id="bizBox"></div>
   </section>
 
   <section id="intel">
@@ -254,12 +284,25 @@ const BAND = {"东亚":"#d9644a","东南亚":"#e39a3b","南亚":"#c9822b","中�
   "大洋洲":"#2f8a8a","美洲":"#a44a2a","非洲":"#b7792f","中亚":"#7a6a3a","马来西亚":"#6f7d3c","其他":"#9b8f80"};
 
 let D = null;
+const SYM = {CNY:"¥", MYR:"RM ", USD:"$"};
+const sym = () => SYM[D.currency] ?? (D.currency + " ");
+const VRANK = {free:0, free_partial:1, easy:1, conditional:2, visa:3};
+const vrank = r => VRANK[r.visa?.status] ?? 3;
+const quickVisa = r => vrank(r) <= 1;
+function tags(r, opt = {}){
+  const v = r.visa, out = [];
+  if (v && v.label) out.push(`<span class="vt ${v.status}" title="${esc(v.note || "")}">${esc(v.label)}</span>`);
+  if (r.visited === false && r.country !== "CN") out.push(`<span class="vt new">没去过</span>`);
+  if (r.visited === true && r.country !== "CN" && !opt.hideBeen) out.push(`<span class="vt been">去过</span>`);
+  return out.length ? `<span class="tags">${out.join("")}</span>` : "";
+}
 const PAGE = matchMedia("(max-width:760px)").matches ? 12 : 24;
-const S = {region:"", intl:true, sort:"value", q:"", shown:PAGE};
+const S = {region:"", intl:true, sort:"value", q:"", shown:PAGE, quick:true, fresh:true};
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const rules = () => ({...RULES_DEFAULT, ...(D.rules || {})});
 const money = n => Math.round(n).toLocaleString("en-US");
+const price = n => sym() + money(n);
 const md = s => s && s.length >= 10 ? `${+s.slice(5,7)}月${+s.slice(8,10)}日` : "";
 const dates = f => f.depart ? md(f.depart) + (f.return ? ` 至 ${md(f.return)}` : "") : "";
 const trTxt = t => t == null ? "" : t === 0 ? "直飞" : `中转 ${t} 次`;
@@ -270,7 +313,7 @@ const ddmm = s => s && s.length >= 10 ? s.slice(8,10) + s.slice(5,7) : "";
 const aviasales = f => { const d = ddmm(f.depart), r = ddmm(f.return);
   return d ? `https://www.aviasales.com/search/${f.origin}${d}${f.dest}${r}1` : `https://www.aviasales.com/search?origin_iata=${f.origin}&destination_iata=${f.dest}`; };
 const tripcom = f => `https://my.trip.com/flights/showfarefirst?dcity=${f.origin.toLowerCase()}&acity=${f.dest.toLowerCase()}&ddate=${f.depart||""}`
-  + (f.return ? `&rdate=${f.return}&triptype=rt` : "&triptype=ow") + `&class=${f.trip_class===1?"c":"y"}&quantity=1&locale=en-MY&curr=MYR`;
+  + (f.return ? `&rdate=${f.return}&triptype=rt` : "&triptype=ow") + `&class=${f.trip_class===1?"c":"y"}&quantity=1&locale=en-MY&curr=CNY`;
 const skyscanner = f => { const y = s => s && s.length >= 10 ? s.slice(2,4)+s.slice(5,7)+s.slice(8,10) : "";
   return `https://www.skyscanner.com.my/transport/flights/${f.origin.toLowerCase()}/${f.dest.toLowerCase()}/${y(f.depart)}/${f.return ? y(f.return)+"/" : ""}?adultsv2=1&cabinclass=${f.trip_class===1?"business":"economy"}`; };
 const gflights = f => { let q = `Flights from ${f.origin} to ${f.dest} on ${f.depart||""}`;
@@ -297,26 +340,28 @@ function spark(pts, now, color){
 /* ---------- derived data ---------- */
 function nearest(){
   const R = rules();
-  return D.all_routes.filter(r => r.per_km && (r.distance || 0) >= R.min_distance_km && r.country !== "MY")
-    .sort((a,b) => a.per_km - b.per_km);
+  const pool = D.all_routes.filter(r => r.per_km && (r.distance || 0) >= R.min_distance_km && r.country !== "MY");
+  const pref = pool.filter(r => quickVisa(r) && r.visited !== true);
+  return (pref.length ? pref : pool).sort((a,b) => a.per_km - b.per_km);
 }
 function watchList(){
   if (D.watch) return D.watch;
   const m = Object.fromEntries(D.all_routes.map(r => [r.dest, r]));   // 兼容旧数据
   return Object.entries(D.targets || {}).map(([k,t]) => { const r = m[k.toUpperCase()];
-    return {dest:k.toUpperCase(), target:t, dest_name:r?.dest_name || k, dest_name_zh:r?.dest_name_zh || k, current:r || null, trend:[]}; });
+    return {dest:k.toUpperCase(), target:t, dest_name:r?.dest_name || k, dest_name_zh:r?.dest_name_zh || k, current:r || null, trend:[], visa:r?.visa, visited:r?.visited, country:r?.country}; });
 }
 
 /* ---------- hero ---------- */
 function renderHero(){
-  const R = rules(), hot = D.hot.find(h => h.level === "bug" || h.level === "target") || D.hot[0];
+  const R = rules(), econ = D.hot.filter(h => h.trip_class === 0);
+  const hot = econ.find(h => (h.level === "bug" || h.level === "target") && quickVisa(h)) || econ.find(h => h.level === "bug" || h.level === "target") || econ[0];
   const f = hot || nearest()[0];
   if (!f){ $("#today").innerHTML = `<div class="hero-in"><p class="kicker">正在积累数据，下一轮扫描后这里会出现今天最值得看的航线。</p></div>`; return; }
   const kicker = hot ? ({bug:"疑似 bug 价", target:"到达你的目标价", great:"今天的超值票"}[hot.level] || "今天的特价")
                      : "今天最接近 bug 价的航线";
   const bugLine = Math.round(R.economy_bug_per_km * (f.distance || 0) * 2);
   const why = hot ? (hot.reasons || []).join("；")
-              : (f.distance ? `再便宜到 ${D.currency} ${money(bugLine)} 以下，就会判为 bug 价并推送给你。` : "");
+              : (f.distance ? `再便宜到 ${price(bugLine)} 以下，就会判为 bug 价并推送给你。` : "");
   $("#today").innerHTML = `<div class="hero-in">
     <p class="kicker">${kicker}</p>
     <p class="big" lang="en">${esc(f.dest_name)}</p>
@@ -324,9 +369,10 @@ function renderHero(){
       <p class="where">${esc(f.dest_name_zh)}，${f.one_way ? "单程" : "往返"}${f.trip_class === 1 ? "商务舱" : "经济舱"}</p>
       <p class="facts">${esc(join(dates(f), trTxt(f.transfers), f.gate ? "报价来自 " + f.gate : ""))}</p>
       ${why ? `<p class="why">${esc(why)}</p>` : ""}
+      ${tags(f)}${f.visa?.note ? `<p class="why">签证：${esc(f.visa.note)}</p>` : ""}
     </div>
-    <div class="price"><div class="u">${D.currency}</div><div class="n">${money(f.price)}</div>
-      ${f.baseline ? `<div class="u">平时约 ${money(f.baseline)}</div>` : ""}</div>
+    <div class="price"><div class="u">人民币</div><div class="n">${price(f.price)}</div>
+      ${f.baseline ? `<div class="u">平时约 ${price(f.baseline)}</div>` : ""}</div>
     <div class="acts">${links(f, true)}</div>
   </div>`;
 }
@@ -338,17 +384,17 @@ function renderWatch(){
   if (!list.length){ $("#ledger").innerHTML = `<p class="empty">还没有设目标价。告诉 Claude 想盯哪些目的地、多少钱以下提醒你。</p>`; return; }
   $("#ledger").innerHTML = list.map(w => {
     const c = w.current;
-    if (!c) return `<div class="lrow none"><div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small></div>
-      <div class="bar"><div class="meter"></div><div class="meter-cap"><span>这一轮没有找到报价</span><span>目标 ${money(w.target)}</span></div></div>
+    if (!c) return `<div class="lrow none"><div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small>${tags(w)}</div>
+      <div class="bar"><div class="meter"></div><div class="meter-cap"><span>这一轮没有找到报价</span><span>目标 ${price(w.target)}</span></div></div>
       <div class="val"><div class="now">暂无报价</div></div><div class="act"></div></div>`;
     const hit = c.price <= w.target, pct = Math.min(100, w.target / c.price * 100);
     return `<div class="lrow${hit ? " hit" : ""}">
-      <div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small></div>
+      <div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small>${tags(w)}</div>
       <div class="bar"><div class="meter" role="img" aria-label="目标价是当前价的 ${Math.round(pct)}%"><i style="width:${pct}%"></i></div>
-        <div class="meter-cap"><span>${esc(join(dates(c), trTxt(c.transfers)))}</span><span>目标 ${money(w.target)}</span></div>
+        <div class="meter-cap"><span>${esc(join(dates(c), trTxt(c.transfers)))}</span><span>目标 ${price(w.target)}</span></div>
         ${spark(w.trend, c.price, hit ? "#0f5f66" : "#b8420f")}</div>
-      <div class="val"><div class="now">${money(c.price)}</div>
-        <div class="gap">${hit ? `比目标低 ${money(w.target - c.price)}` : `离目标还差 ${money(c.price - w.target)}`}</div></div>
+      <div class="val"><div class="now">${price(c.price)}</div>
+        <div class="gap">${hit ? `比目标低 ${price(w.target - c.price)}` : `离目标还差 ${price(c.price - w.target)}`}</div></div>
       <div class="act">${links(c, false)}</div>
     </div>`;
   }).join("");
@@ -356,7 +402,7 @@ function renderWatch(){
 
 /* ---------- anomalies ---------- */
 function renderDeals(){
-  const R = rules(), days = D.history_days ?? 0, need = R.min_history_days, list = D.hot;
+  const R = rules(), days = D.history_days ?? 0, need = R.min_history_days, list = D.hot.filter(h => h.trip_class === 0);
   if (!list.length){
     $("#dealsLede").textContent = "疑似 bug 价、到达目标价和明显超值的票会出现在这里。";
     $("#dealsBox").innerHTML = `<div class="quiet">
@@ -371,25 +417,44 @@ function renderDeals(){
   $("#dealsBox").innerHTML = `<div class="deals">${list.map(f => `<article class="deal ${f.level}">
     <p class="tag">${TAG[f.level] || ""}</p>
     <div class="row1"><div class="dn">${esc(f.dest_name_zh)}<small lang="en">${esc(f.dest_name)}</small></div>
-      <div><span class="pr">${money(f.price)}</span>${f.baseline ? `<span class="was">${money(f.baseline)}</span>` : ""}</div></div>
+      <div><span class="pr">${price(f.price)}</span>${f.baseline ? `<span class="was">${price(f.baseline)}</span>` : ""}</div></div>
+    <p style="margin:0 0 6px">${tags(f)}</p>
     <p class="facts">${esc(join(f.one_way ? "单程" : "往返", f.trip_class === 1 ? "商务舱" : "经济舱", dates(f), trTxt(f.transfers), f.airline))}</p>
     ${f.reasons?.length ? `<ul>${f.reasons.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
+    ${f.visa?.note ? `<p class="facts">签证：${esc(f.visa.note)}</p>` : ""}
     ${links(f, true)}</article>`).join("")}</div>`;
+}
+
+/* ---------- business ---------- */
+function renderBiz(){
+  const hot = (D.hot_business || []), routes = (D.business_routes || []).filter(r => quickVisa(r) && (r.distance || 0) >= rules().min_distance_km && r.country !== "MY").slice(0, 12);
+  if (!hot.length && !routes.length){ $("#bizBox").innerHTML = `<p class="empty">这一轮没有商务舱报价。</p>`; return; }
+  const row = r => `<div class="brow">
+    <div class="dn">${esc(r.dest_name_zh)}<small lang="en">${esc(r.dest_name)}</small><div>${tags(r, {hideBeen:true})}</div></div>
+    <div class="mid sub">${esc(join(dates(r), trTxt(r.transfers), r.level && r.level !== "normal" ? (r.reasons || []).join("；") : ""))}</div>
+    <div class="pr">${price(r.price)}</div>${links(r, false)}</div>`;
+  $("#bizBox").innerHTML = (hot.length ? `<h3 style="font-family:var(--serif);margin:0 0 8px">异常低价</h3><div class="biz-list">${hot.map(row).join("")}</div>` : "")
+    + `<h3 style="font-family:var(--serif);margin:${hot.length ? 24 : 0}px 0 8px">不用提前办签证的目的地，商务舱往返最低价</h3>
+    <div class="biz-list">${routes.map(row).join("") || `<p class="empty">暂无。</p>`}</div>`;
 }
 
 /* ---------- inspiration ---------- */
 function ideasList(){
   const R = rules(), q = S.q.trim().toLowerCase();
   const list = D.all_routes.filter(x => (!S.intl || ((x.distance || 0) >= R.min_distance_km && x.country !== "MY")) &&
+    (!S.quick || quickVisa(x)) && (!S.fresh || x.visited !== true) &&
     (S.region === "" || region(x.country) === S.region) &&
     (!q || [x.dest, x.dest_name, x.dest_name_zh, x.country, region(x.country)].join(" ").toLowerCase().includes(q)));
-  return list.slice().sort(S.sort === "price" ? (a,b) => a.price - b.price : (a,b) => (a.per_km ?? 9) - (b.per_km ?? 9) || a.price - b.price);
+  return list.slice().sort(S.sort === "price" ? (a,b) => vrank(a) - vrank(b) || a.price - b.price
+    : (a,b) => vrank(a) - vrank(b) || (a.per_km ?? 9) - (b.per_km ?? 9) || a.price - b.price);
 }
 function renderCtrls(){
   const regions = ["", ...[...new Set(D.all_routes.map(r => region(r.country)))].sort((a,b) => a.localeCompare(b, "zh"))];
   $("#ctrls").innerHTML = regions.map(r => `<button class="chip" data-region="${r}" aria-pressed="${S.region === r}">${r || "全部地区"}</button>`).join("")
     + `<span class="sp"></span>
-    <select id="sort" aria-label="排序方式"><option value="value">按每公里价格</option><option value="price">按总价</option></select>
+    <select id="sort" aria-label="排序方式"><option value="value">免签优先，再按每公里价格</option><option value="price">免签优先，再按总价</option></select>
+    <label class="chip"><input type="checkbox" id="quick" ${S.quick ? "checked" : ""}> 不用提前办签证</label>
+    <label class="chip"><input type="checkbox" id="fresh" ${S.fresh ? "checked" : ""}> 只看没去过</label>
     <label class="chip"><input type="checkbox" id="intl" ${S.intl ? "checked" : ""}> 只看国际长途</label>
     <input type="search" id="q" placeholder="搜目的地" aria-label="搜索目的地" value="${esc(S.q)}">`;
   $("#sort").value = S.sort;
@@ -398,6 +463,8 @@ function renderCtrls(){
     $("#ctrls").querySelectorAll("[data-region]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderIdeas(); });
   $("#sort").oninput = e => { S.sort = e.target.value; renderIdeas(); };
   $("#intl").oninput = e => { S.intl = e.target.checked; S.shown = PAGE; renderIdeas(); };
+  $("#quick").oninput = e => { S.quick = e.target.checked; S.shown = PAGE; renderIdeas(); };
+  $("#fresh").oninput = e => { S.fresh = e.target.checked; S.shown = PAGE; renderIdeas(); };
   $("#q").oninput = e => { S.q = e.target.value; S.shown = PAGE; renderIdeas(); };
 }
 function renderIdeas(){
@@ -406,10 +473,10 @@ function renderIdeas(){
   $("#cards").innerHTML = list.length ? shown.map(r => { const rg = region(r.country);
     return `<article class="pc"><div class="band" style="background:${BAND[rg] || BAND["其他"]}" title="${rg}"></div><div class="body">
       <div class="en" lang="en">${esc(r.dest_name)}</div><div class="cn">${esc(r.dest_name_zh)}，${rg}</div>
-      <div class="pr">${money(r.price)}<small>${D.currency} 往返</small></div>
-      <div class="sub">${esc(join(dates(r), trTxt(r.transfers)))}</div>
+      <div class="pr">${price(r.price)}<small>往返</small></div>
+      <div class="sub">${esc(join(dates(r), trTxt(r.transfers)))}</div>${tags(r, {hideBeen:true})}
       ${links(r, false)}</div></article>`; }).join("")
-    : `<p class="empty">没有符合条件的目的地。换个地区，或取消「只看国际长途」。</p>`;
+    : `<p class="empty">没有符合条件的目的地。换个地区，或取消上面的勾选。</p>`;
   $("#moreBox").innerHTML = list.length > S.shown ? `<button class="btn" id="more">再显示 ${Math.min(PAGE, list.length - S.shown)} 个</button>` : "";
   const m = $("#more"); if (m) m.onclick = () => { S.shown += PAGE; renderIdeas(); };
 }
@@ -431,9 +498,11 @@ function renderMeta(){
     <span>${D.channels.length ? "推送到 " + D.channels.join("、") : "还没有配置推送"}</span>`;
   $("#notice").innerHTML = D.demo ? `<p class="notice">现在显示的是演示数据。</p>`
     : stale ? `<p class="notice">票价已经 ${ago(D.updated_at).replace("前","")}没有更新，系统会自动恢复。这段时间出现的 bug 价，推送可能会晚到。</p>` : "";
-  $("#rules").innerHTML = `<li>疑似 bug 价：低于这条航线平时价格的 ${Math.round(R.bug_ratio*100)}%，或经济舱往返每公里低于 ${D.currency} ${R.economy_bug_per_km}（商务舱 ${R.business_bug_per_km}，只看 ${R.min_distance_km} 公里以上的航线）。会推送。</li>
-    <li>到达目标价：低于你在「我的航线」里设的价格。会推送。</li>
-    <li>超值：低于平时价格的 ${Math.round(R.great_ratio*100)}%，或经济舱每公里低于 ${R.economy_great_per_km}。只在网页显示。</li>`;
+  $("#rules").innerHTML = `<li>疑似 bug 价：低于这条航线平时价格的 ${Math.round(R.bug_ratio*100)}%，或经济舱往返每公里低于 ${sym()}${R.economy_bug_per_km}（只看 ${R.min_distance_km} 公里以上的航线）。只推送免签、落地签或电子签的目的地。</li>
+    <li>到达目标价：低于你在「我的航线」里设的价格。不管签证都会推送。</li>
+    <li>超值：低于平时价格的 ${Math.round(R.great_ratio*100)}%，或经济舱每公里低于 ${sym()}${R.economy_great_per_km}。只在网页显示。</li>
+    <li>商务舱：每公里低于 ${sym()}${R.business_bug_per_km} 判为疑似 bug 价，只有这种情况才推送。</li>
+    <li>签证按中国普通护照判断${D.held_visas?.length ? `，并计入你持有的 ${D.held_visas.join("、")} 签证` : ""}。${esc(D.visa_source || "")}</li>`;
   $("#runinfo").textContent = `每 15 分钟扫描一次。这一轮扫描了 ${D.stats.fares_scanned} 条票价，覆盖 ${D.stats.routes} 条航线。`;
   $("#srcs").innerHTML = D.sources.map(x => `<span class="${x.ok ? "" : "bad"}">${esc(x.name)}：${x.count}</span>`).join("");
 }
@@ -442,7 +511,7 @@ async function load(){
   try{
     const first = !D;
     D = await (await fetch("data/deals.json?t=" + Date.now())).json();
-    renderMeta(); renderHero(); renderWatch(); renderDeals(); renderFeeds();
+    renderMeta(); renderHero(); renderWatch(); renderDeals(); renderBiz(); renderFeeds();
     if (first) renderCtrls();
     renderIdeas();
   }catch(e){ $("#status").textContent = "票价数据读取失败，请刷新页面重试。（" + e.message + "）"; }

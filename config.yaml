@@ -5,7 +5,7 @@
 
 origin: KUL            # 出发地（IATA 城市/机场代码）。想加槟城可改成多个，见 extra_origins
 extra_origins: []      # 例如 [PEN, JHB]，会一起监控
-currency: myr          # 价格币种：myr / usd / cny
+currency: cny          # 价格币种：cny（人民币）/ myr / usd。改币种会清空历史价格（单位不同不能混用）
 
 # ---------- 数据源 1：Travelpayouts / Aviasales 实时低价缓存 ----------
 # 需要免费 token（见 README），放在 GitHub Secrets: TRAVELPAYOUTS_TOKEN
@@ -23,28 +23,36 @@ detection:
   bug_ratio: 0.45            # ≤ 历史中位数的 45% → 🔥 疑似 bug 价
   great_ratio: 0.65          # ≤ 65% → 💎 超值
 
-  # B. 按距离算单价（马币/公里，往返按双程距离），新航线没历史时也能判断
+  # B. 按距离算单价（人民币/公里，往返按双程距离），新航线没历史时也能判断
   min_distance_km: 1800      # 太短的航线（如 KUL-SIN）不用这条规则，避免廉航促销刷屏
-  economy_bug_per_km: 0.045  # 经济舱 ≤ 0.045 MYR/km → 疑似 bug（KUL-伦敦往返 ≈ RM950）
-  economy_great_per_km: 0.07
-  business_bug_per_km: 0.14  # 商务舱 ≤ 0.14 MYR/km → 疑似 bug（KUL-伦敦往返 ≈ RM2950）
-  business_great_per_km: 0.22
+  economy_bug_per_km: 0.075  # 经济舱 ≤ ¥0.075/km → 疑似 bug（KUL-伦敦往返 ≈ ¥1,580）
+  economy_great_per_km: 0.115
+  business_bug_per_km: 0.23  # 商务舱 ≤ ¥0.23/km → 疑似 bug
+  business_great_per_km: 0.36
 
-  # C. 目标价：某目的地低于你设定的价格就提醒（往返/经济舱，单位同 currency）
+  # C. 我的航线：低于目标价就提醒（经济舱往返，人民币）
+  #    按你的情况挑的：回家、求职面试、潜水、免签又没去过的国家。改成你真正想去的。
   targets:
-    LON: 1600     # 伦敦
-    PAR: 1700     # 巴黎
-    TYO: 900      # 东京
-    OSA: 850      # 大阪
-    SEL: 700      # 首尔
-    SYD: 1000     # 悉尼
-    AKL: 1500     # 奥克兰
-    YVR: 2200     # 温哥华
-    CTU: 500      # 成都
-    SHA: 550      # 上海
+    CTU: 900      # 成都 · 回家（德阳）
+    SHA: 950      # 上海 · 去苏州/无锡面试
+    BKK: 450      # 曼谷 · 免签 60 天，涛岛潜水
+    DPS: 650      # 巴厘岛 · 落地签，潜水
+    MLE: 1300     # 马尔代夫 · 免签，潜水圣地
+    DXB: 1400     # 迪拜 · 免签
+    IST: 2000     # 伊斯坦布尔 · 2026 年起免签
+    TBS: 2200     # 第比利斯 · 格鲁吉亚免签 90 天
+    CAI: 2200     # 开罗 · 落地签，红海潜水
+    MRU: 2500     # 毛里求斯 · 免签，海岛潜水
+    YVR: 3500     # 温哥华 · 需加拿大签证
+    AKL: 2500     # 奥克兰 · 新西兰（读博/交换意向），需签证
 
   realert_hours: 24          # 同一航线同一价格，多少小时内不重复推送
   realert_drop: 0.10         # 价格再降 10% 以上则立即再次推送
+
+# ---------- 你的情况 ----------
+passport: CN                 # 中国普通护照，用来判断免签
+held_visas: []               # 你手上有效的签证，可填 US / CA / GB / JP / AU / NZ / KR / SCHENGEN
+visited: [CN, MY, SG, PH, ZA]   # 去过的国家（ISO 两位代码），看板会标「去过」
 
 # ---------- 数据源 2：错误票价情报 RSS ----------
 rss:
@@ -76,6 +84,8 @@ rss:
 #   邮件     : SMTP_HOST SMTP_PORT SMTP_USER SMTP_PASS MAIL_TO
 notify:
   push_levels: [bug, target]   # 推送哪些级别：bug / great / target / news
+  push_visa: [free, free_partial, easy]   # 只推送不用提前办签证的目的地（「我的航线」里的目标价提醒不受此限制）
+  business_push_levels: [bug]  # 商务舱只在疑似 bug 价时推送
   max_per_run: 8               # 每轮最多推几条，防刷屏
   site_url: "https://ritchie12233.github.io/flight-ticket/"   # 推送里附带的看板链接
   ntfy_topic: "ritchie-kulfare-216c97de"   # 手机 ntfy App 订阅这个频道名

@@ -10,7 +10,7 @@ from pathlib import Path
 
 import yaml
 
-from . import detect, notify, rss, travelpayouts
+from . import detect, notify, rss, travelpayouts, visa_cn
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / "data" / "state.json"
@@ -104,6 +104,13 @@ def run(args):
     today = now.strftime("%Y-%m-%d")
     state = load_json(STATE, {"history": {}, "alerted": {}, "news": [], "alerts_log": []})
     sources = []
+    # 换币种后旧历史价格单位不同，不能混用：清空历史和推送去重记录
+    if state.get("currency", "myr") != cur and not args.demo:
+        log.warning("币种从 %s 改为 %s，清空历史价格", state.get("currency", "myr"), cur)
+        state["history"], state["alerted"] = {}, {}
+    state["currency"] = cur
+    held = cfg.get("held_visas") or []
+    visited = {c.upper() for c in (cfg.get("visited") or [])}
 
     if args.test_push:
         sent = notify.send("✈️ bug价机票监控 · 测试推送", f"推送渠道工作正常。\n时间：{now:%Y-%m-%d %H:%M} (MYT)", site)
@@ -127,13 +134,27 @@ def run(args):
 
     results = detect.evaluate(fares, state["history"], cities, cfg, today)
     detect.update_history(state["history"], fares, today, cfg["detection"].get("history_days", 60))
+    for r in results:
+        r["visa"] = visa_cn.info(r.get("country"), held)
+        r["visited"] = (r.get("country") or "") in visited
 
     # ---------- 推送 ----------
     push_levels = set(cfg.get("notify", {}).get("push_levels", ["bug", "target"]))
+    push_visa = set(cfg.get("notify", {}).get("push_visa", ["free", "free_partial", "easy"]))
+    biz_levels = set(cfg.get("notify", {}).get("business_push_levels", ["bug"]))
+
+    def pushable(f):
+        if f["level"] not in push_levels:
+            return False
+        if f["trip_class"] >= 1 and f["level"] not in biz_levels:
+            return False
+        # 目标价是你自己设的航线，签证不限；其他异常只推不用提前办签证的
+        return f["level"] == "target" or f["visa"]["status"] in push_visa
+
     budget = cfg.get("notify", {}).get("max_per_run", 8)
     to_push = []
     for f in results:
-        if f["level"] in push_levels and should_alert(f["id"], f["price"], state["alerted"], cfg, now):
+        if pushable(f) and should_alert(f["id"], f["price"], state["alerted"], cfg, now):
             to_push.append(("fare", f))
     known_news = {n["id"] for n in state["news"]}
     fresh_news = [n for n in news if n["id"] not in known_news]
@@ -159,13 +180,21 @@ def run(args):
     state["news"] = sorted(fresh_news + state["news"], key=lambda n: n["published"], reverse=True)[:150]
 
     # ---------- 网站数据 ----------
-    hot = [r for r in results if r["level"] != "normal"]
+    hot_all = [r for r in results if r["level"] != "normal"]
+    rank = {"free": 0, "free_partial": 1, "easy": 1, "conditional": 2, "visa": 3}
+    hot_all.sort(key=lambda r: (rank[r["visa"]["status"]], -detect.LEVEL_RANK[r["level"]], r["ratio"] or 9))
+    hot = [r for r in hot_all if r["trip_class"] == 0]
+    hot_biz = [r for r in hot_all if r["trip_class"] >= 1]
+    biz_by_dest = {}
+    for r in sorted(results, key=lambda r: r["price"]):
+        if r["trip_class"] >= 1 and not r["one_way"]:
+            biz_by_dest.setdefault(r["dest"], r)
     cheapest_by_dest = {}
     for r in sorted(results, key=lambda r: r["price"]):
         if r["trip_class"] == 0 and not r["one_way"]:
             cheapest_by_dest.setdefault(r["dest"], r)
     trend = {}
-    for r in hot[:80]:
+    for r in (hot[:80] + hot_biz[:20]):
         h = state["history"].get(r["id"], {})
         trend[r["id"]] = [[d, p] for d, p in sorted(h.items())]
     # 我的航线：config 里设了目标价的目的地（经济舱往返）
@@ -180,6 +209,8 @@ def run(args):
             "dest": code, "target": tgt,
             "dest_name": city.get("name", code), "dest_name_zh": city.get("name_zh", code),
             "country": city.get("country"),
+            "visa": visa_cn.info(city.get("country"), held),
+            "visited": (city.get("country") or "") in visited,
             "current": cur_fare,
             "trend": [[d, p] for d, p in sorted(state["history"].get(key, {}).items())],
         })
@@ -193,6 +224,10 @@ def run(args):
         "channels": notify.configured(),
         "sources": sources,
         "hot": hot[:120],
+        "hot_business": hot_biz[:40],
+        "business_routes": sorted(biz_by_dest.values(), key=lambda r: r["price"])[:120],
+        "visa_source": "外交部互免签证协定一览表（2026-05-29）及多家签证机构 2026 年汇总，整理于 2026-11-11；出行前以官方为准",
+        "visited": sorted(visited), "held_visas": held,
         "watch": watch,
         "all_routes": sorted(cheapest_by_dest.values(), key=lambda r: r["price"])[:300],
         "trend": trend,
@@ -211,9 +246,9 @@ def run(args):
         if first_run and not args.no_push:
             notify.send("✈️ bug价机票监控已启动",
                         f"KUL 出发全球监控已开始运行，每 15 分钟扫描一次。\n"
-                        f"本轮扫描 {len(fares)} 条票价，发现异常 {len(hot)} 条。", site)
+                        f"本轮扫描 {len(fares)} 条票价，发现异常 {len(hot_all)} 条。", site)
     print(f"完成：扫描 {len(fares)} 条票价 / {len(results)} 条航线，"
-          f"异常 {len(hot)} 条，推送 {len(pushed)} 条，情报新增 {len(fresh_news)} 条")
+          f"异常 {len(hot_all)} 条（经济舱 {len(hot)}），推送 {len(pushed)} 条，情报新增 {len(fresh_news)} 条")
 
 
 def cli():
