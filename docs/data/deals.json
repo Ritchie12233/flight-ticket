@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-11T16:42:25.098824+08:00",
+ "updated_at": "2026-11-11T16:56:42.775457+08:00",
  "origin": "KUL",
  "currency": "MYR",
  "stats": {
-  "fares_scanned": 1154,
-  "routes": 818,
+  "fares_scanned": 1155,
+  "routes": 819,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1154
+   "count": 1155
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -1440,7 +1440,7 @@
    "flight_number": 516,
    "found_at": null,
    "source": "aviasales-cheap",
-   "gate": "Biletix",
+   "gate": "Trip.com",
    "id": "KUL-HAN|RT|0",
    "type": "fare",
    "level": "normal",
@@ -3727,7 +3727,7 @@
    "flight_number": 485,
    "found_at": null,
    "source": "aviasales-cheap",
-   "gate": "Mytrip.com",
+   "gate": "Vayama",
    "id": "KUL-GVA|RT|0",
    "type": "fare",
    "level": "normal",
