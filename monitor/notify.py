@@ -26,8 +26,11 @@ def _telegram(title, body, url):
     return "telegram"
 
 
+NTFY_TOPIC_CFG = ""  # 由 main.py 从 config.yaml 读入
+
+
 def _ntfy(title, body, url):
-    topic = env("NTFY_TOPIC")
+    topic = env("NTFY_TOPIC") or NTFY_TOPIC_CFG
     if not topic:
         return None
     server = env("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
@@ -93,9 +96,10 @@ CHANNELS = [_telegram, _ntfy, _bark, _serverchan, _pushplus, _email]
 
 
 def configured() -> list[str]:
+    out = ["ntfy"] if (NTFY_TOPIC_CFG and not env("NTFY_TOPIC")) else []
     names = {"_telegram": "TELEGRAM_BOT_TOKEN", "_ntfy": "NTFY_TOPIC", "_bark": "BARK_KEY",
              "_serverchan": "SERVERCHAN_KEY", "_pushplus": "PUSHPLUS_TOKEN", "_email": "SMTP_HOST"}
-    return [k.strip("_") for k, v in names.items() if env(v)]
+    return out + [k.strip("_") for k, v in names.items() if env(v)]
 
 
 def send(title: str, body: str, url: str = "") -> list[str]:
@@ -133,6 +137,24 @@ def google_flights_url(f: dict) -> str:
     return "https://www.google.com/travel/flights?q=" + quote(q)
 
 
+def trip_url(f: dict) -> str:
+    """携程国际版（Trip.com 马来西亚站）搜索链接"""
+    q = (f"dcity={f['origin'].lower()}&acity={f['dest'].lower()}&ddate={f.get('depart') or ''}"
+         + (f"&rdate={f['return']}&triptype=rt" if f.get("return") else "&triptype=ow")
+         + f"&class={'c' if f.get('trip_class') == 1 else 'y'}&quantity=1&locale=en-MY&curr=MYR")
+    return "https://my.trip.com/flights/showfarefirst?" + q
+
+
+def skyscanner_url(f: dict) -> str:
+    def ymd(s):
+        return s[2:4] + s[5:7] + s[8:10] if s and len(s) >= 10 else ""
+    path = f"{f['origin'].lower()}/{f['dest'].lower()}/{ymd(f.get('depart'))}/"
+    if f.get("return"):
+        path += f"{ymd(f['return'])}/"
+    cabin = "business" if f.get("trip_class") == 1 else "economy"
+    return f"https://www.skyscanner.com.my/transport/flights/{path}?adultsv2=1&cabinclass={cabin}"
+
+
 def fare_message(f: dict, cur: str, site: str = "") -> tuple[str, str, str]:
     trip = "单程" if f["one_way"] else "往返"
     cabin = "商务舱" if f["trip_class"] == 1 else "经济舱"
@@ -148,7 +170,9 @@ def fare_message(f: dict, cur: str, site: str = "") -> tuple[str, str, str]:
     if f.get("reasons"):
         lines.append("判定：" + "；".join(f["reasons"]))
     lines.append("⚠️ 缓存价，可能已失效，请尽快核实。bug 价出票后先别订酒店。")
-    lines.append(f"Google Flights 核价：{google_flights_url(f)}")
+    lines.append(f"携程查价：{trip_url(f)}")
+    lines.append(f"Skyscanner 查价：{skyscanner_url(f)}")
+    lines.append(f"Google Flights 查价：{google_flights_url(f)}")
     if site:
         lines.append(f"监控站：{site}")
     return title, "\n".join(lines), booking_url(f)

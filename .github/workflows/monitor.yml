@@ -3,6 +3,9 @@ name: Bug 价机票监控
 on:
   schedule:
     - cron: "*/15 * * * *"     # 每 15 分钟（GitHub 高峰期可能会延迟几分钟）
+  push:
+    branches: [main]
+    paths: ["config.yaml", "monitor/**", ".github/workflows/**"]
   workflow_dispatch:
     inputs:
       test_push:

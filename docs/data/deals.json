@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T12:01:37.902444+08:00",
+ "updated_at": "2026-11-11T12:56:39.748121+08:00",
  "origin": "KUL",
  "currency": "MYR",
  "stats": {
@@ -9,7 +9,9 @@
   "great": 1,
   "target": 1
  },
- "channels": [],
+ "channels": [
+  "ntfy"
+ ],
  "sources": [
   {
    "name": "演示数据",
@@ -29,7 +31,7 @@
    "transfers": 1,
    "distance": 12773,
    "airline": "EK",
-   "found_at": "2026-11-11T04:01:37.904398+00:00",
+   "found_at": "2026-11-11T04:56:39.750148+00:00",
    "source": "demo",
    "id": "KUL-YVR|RT|1",
    "type": "fare",
@@ -56,7 +58,7 @@
    "transfers": 1,
    "distance": 10546,
    "airline": "MH",
-   "found_at": "2026-11-11T04:01:37.904253+00:00",
+   "found_at": "2026-11-11T04:56:39.750006+00:00",
    "source": "demo",
    "id": "KUL-LON|RT|0",
    "type": "fare",
@@ -84,7 +86,7 @@
    "transfers": 1,
    "distance": 5321,
    "airline": "SQ",
-   "found_at": "2026-11-11T04:01:37.904285+00:00",
+   "found_at": "2026-11-11T04:56:39.750039+00:00",
    "source": "demo",
    "id": "KUL-TYO|RT|0",
    "type": "fare",
@@ -111,7 +113,7 @@
    "transfers": 1,
    "distance": 3129,
    "airline": "MH",
-   "found_at": "2026-11-11T04:01:37.904468+00:00",
+   "found_at": "2026-11-11T04:56:39.750223+00:00",
    "source": "demo",
    "id": "KUL-MLE|RT|0",
    "type": "fare",
@@ -139,7 +141,7 @@
    "transfers": 1,
    "distance": 1187,
    "airline": "D7",
-   "found_at": "2026-11-11T04:01:37.904359+00:00",
+   "found_at": "2026-11-11T04:56:39.750111+00:00",
    "source": "demo",
    "id": "KUL-BKK|RT|0",
    "type": "fare",
@@ -163,7 +165,7 @@
    "transfers": 1,
    "distance": 3129,
    "airline": "MH",
-   "found_at": "2026-11-11T04:01:37.904468+00:00",
+   "found_at": "2026-11-11T04:56:39.750223+00:00",
    "source": "demo",
    "id": "KUL-MLE|RT|0",
    "type": "fare",
@@ -189,7 +191,7 @@
    "transfers": 0,
    "distance": 4614,
    "airline": "EK",
-   "found_at": "2026-11-11T04:01:37.904344+00:00",
+   "found_at": "2026-11-11T04:56:39.750096+00:00",
    "source": "demo",
    "id": "KUL-SEL|RT|0",
    "type": "fare",
@@ -213,7 +215,7 @@
    "transfers": 1,
    "distance": 5321,
    "airline": "SQ",
-   "found_at": "2026-11-11T04:01:37.904285+00:00",
+   "found_at": "2026-11-11T04:56:39.750039+00:00",
    "source": "demo",
    "id": "KUL-TYO|RT|0",
    "type": "fare",
@@ -240,7 +242,7 @@
    "transfers": 1,
    "distance": 3070,
    "airline": "SQ",
-   "found_at": "2026-11-11T04:01:37.904377+00:00",
+   "found_at": "2026-11-11T04:56:39.750126+00:00",
    "source": "demo",
    "id": "KUL-CTU|RT|0",
    "type": "fare",
@@ -264,7 +266,7 @@
    "transfers": 1,
    "distance": 10546,
    "airline": "MH",
-   "found_at": "2026-11-11T04:01:37.904253+00:00",
+   "found_at": "2026-11-11T04:56:39.750006+00:00",
    "source": "demo",
    "id": "KUL-LON|RT|0",
    "type": "fare",
@@ -292,7 +294,7 @@
    "transfers": 1,
    "distance": 4947,
    "airline": "MH",
-   "found_at": "2026-11-11T04:01:37.904450+00:00",
+   "found_at": "2026-11-11T04:56:39.750207+00:00",
    "source": "demo",
    "id": "KUL-OSA|RT|0",
    "type": "fare",
@@ -316,7 +318,7 @@
    "transfers": 1,
    "distance": 6614,
    "airline": "SQ",
-   "found_at": "2026-11-11T04:01:37.904312+00:00",
+   "found_at": "2026-11-11T04:56:39.750059+00:00",
    "source": "demo",
    "id": "KUL-SYD|RT|0",
    "type": "fare",
@@ -340,7 +342,7 @@
    "transfers": 0,
    "distance": 5532,
    "airline": "TK",
-   "found_at": "2026-11-11T04:01:37.904422+00:00",
+   "found_at": "2026-11-11T04:56:39.750173+00:00",
    "source": "demo",
    "id": "KUL-DXB|RT|0",
    "type": "fare",
@@ -364,7 +366,7 @@
    "transfers": 1,
    "distance": 8333,
    "airline": "OD",
-   "found_at": "2026-11-11T04:01:37.904407+00:00",
+   "found_at": "2026-11-11T04:56:39.750158+00:00",
    "source": "demo",
    "id": "KUL-IST|RT|0",
    "type": "fare",
@@ -388,7 +390,7 @@
    "transfers": 1,
    "distance": 8726,
    "airline": "TK",
-   "found_at": "2026-11-11T04:01:37.904436+00:00",
+   "found_at": "2026-11-11T04:56:39.750192+00:00",
    "source": "demo",
    "id": "KUL-AKL|RT|0",
    "type": "fare",
@@ -412,7 +414,7 @@
    "transfers": 1,
    "distance": 10424,
    "airline": "D7",
-   "found_at": "2026-11-11T04:01:37.904330+00:00",
+   "found_at": "2026-11-11T04:56:39.750081+00:00",
    "source": "demo",
    "id": "KUL-PAR|RT|0",
    "type": "fare",
@@ -436,7 +438,7 @@
    "transfers": 1,
    "distance": 12773,
    "airline": "QR",
-   "found_at": "2026-11-11T04:01:37.904391+00:00",
+   "found_at": "2026-11-11T04:56:39.750141+00:00",
    "source": "demo",
    "id": "KUL-YVR|RT|0",
    "type": "fare",
@@ -950,7 +952,7 @@
    "summary": "Malaysia Airlines 往返马尔代夫，疑似燃油附加费漏算。",
    "link": "https://www.secretflying.com/",
    "source": "演示数据",
-   "published": "2026-11-11T04:01:37.904479+00:00"
+   "published": "2026-11-11T04:56:39.750234+00:00"
   },
   {
    "id": "rss:demo2",
@@ -961,30 +963,30 @@
    "summary": "非错误票价，但属于明显低价。",
    "link": "https://www.secretflying.com/",
    "source": "演示数据",
-   "published": "2026-11-10T23:01:37.904481+00:00"
+   "published": "2026-11-10T23:56:39.750237+00:00"
   }
  ],
  "alerts": [
   {
-   "at": "2026-11-11T12:01:37.902444+08:00",
+   "at": "2026-11-11T12:56:39.748121+08:00",
    "title": "🔥 疑似BUG价 吉隆坡→温哥华 MYR 4900",
    "url": "https://www.aviasales.com/search/KUL1801YVR26011",
    "channels": []
   },
   {
-   "at": "2026-11-11T12:01:37.902444+08:00",
+   "at": "2026-11-11T12:56:39.748121+08:00",
    "title": "🔥 疑似BUG价 吉隆坡→伦敦 MYR 1180",
    "url": "https://www.aviasales.com/search/KUL0112LON13121",
    "channels": []
   },
   {
-   "at": "2026-11-11T12:01:37.902444+08:00",
+   "at": "2026-11-11T12:56:39.748121+08:00",
    "title": "🎯 到达目标价 吉隆坡→东京 MYR 840",
    "url": "https://www.aviasales.com/search/KUL1412TYO22121",
    "channels": []
   },
   {
-   "at": "2026-11-11T12:01:37.902444+08:00",
+   "at": "2026-11-11T12:56:39.748121+08:00",
    "title": "🔥 错误票价情报：ERROR FARE: Kuala Lumpur, Malaysia to Male, Maldives for only $148 USD roundtrip",
    "url": "https://www.secretflying.com/",
    "channels": []

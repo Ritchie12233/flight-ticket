@@ -63,7 +63,7 @@ header{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content
 .why li::before{content:"› ";color:var(--amber)}
 .spark{margin-top:8px;width:calc(100% - 92px);height:34px}
 .btns{display:flex;gap:8px;margin-top:12px}
-.btn{flex:1;text-align:center;text-decoration:none;font-size:13px;font-weight:700;padding:7px 8px;border-radius:8px;border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
+.btn{flex:1;text-align:center;text-decoration:none;font-size:12px;font-weight:700;padding:7px 8px;border-radius:8px;border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
 .btn.pri{background:var(--amber);color:#1b1200;border-color:var(--amber)}
 .list{display:flex;flex-direction:column;gap:10px}
 .row{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
@@ -114,7 +114,7 @@ footer ol{padding-left:20px}
   <footer>
     <b>抢 bug 价小贴士</b>
     <ol>
-      <li>价格来自 Aviasales 用户近几天的搜索缓存，<b>可能已经失效</b>——点「核价」在 Google Flights / 航司官网确认。</li>
+      <li>价格来自 Aviasales 用户近几天的搜索缓存，<b>可能已经失效</b>——点卡片上的「携程 / Skyscanner / Google」三个按钮实时比价确认。</li>
       <li>真 bug 价通常几小时内就被修复：先订（选可免费取消/24h 内可退的渠道），再慢慢想。</li>
       <li>拿到正式电子客票号且出票几天后没被取消，再订酒店和不可退的行程。</li>
       <li>不要打电话问航司"这个价格对不对"。</li>
@@ -140,6 +140,14 @@ function gflights(f){
   if (f.return) q += ` returning ${f.return}`;
   if (f.trip_class === 1) q += " business class";
   return "https://www.google.com/travel/flights?q=" + encodeURIComponent(q);
+}
+function tripcom(f){
+  return `https://my.trip.com/flights/showfarefirst?dcity=${f.origin.toLowerCase()}&acity=${f.dest.toLowerCase()}&ddate=${f.depart||""}`
+    + (f.return ? `&rdate=${f.return}&triptype=rt` : "&triptype=ow") + `&class=${f.trip_class===1?"c":"y"}&quantity=1&locale=en-MY&curr=MYR`;
+}
+function skyscanner(f){
+  const y = s => s && s.length >= 10 ? s.slice(2,4)+s.slice(5,7)+s.slice(8,10) : "";
+  return `https://www.skyscanner.com.my/transport/flights/${f.origin.toLowerCase()}/${f.dest.toLowerCase()}/${y(f.depart)}/${f.return ? y(f.return)+"/" : ""}?adultsv2=1&cabinclass=${f.trip_class===1?"business":"economy"}`;
 }
 function fmtTime(iso){
   const d = new Date(iso);
@@ -188,8 +196,10 @@ function card(f){
     ${pct ? `<div class="bar" title="现价 / 近期常规价"><i style="width:${pct}%"></i></div>` : ""}
     ${f.reasons && f.reasons.length ? `<ul class="why">${f.reasons.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
     ${spark(D.trend[f.id], f.price)}
-    <div class="btns"><a class="btn pri" href="${aviasales(f)}" target="_blank" rel="noopener">去订票</a>
-      <a class="btn" href="${gflights(f)}" target="_blank" rel="noopener">Google 核价</a></div>
+    <div class="btns"><a class="btn pri" href="${aviasales(f)}" target="_blank" rel="noopener">Aviasales</a>
+      <a class="btn" href="${tripcom(f)}" target="_blank" rel="noopener">携程</a>
+      <a class="btn" href="${skyscanner(f)}" target="_blank" rel="noopener">Skyscanner</a>
+      <a class="btn" href="${gflights(f)}" target="_blank" rel="noopener">Google</a></div>
   </article>`;
 }
 
@@ -209,7 +219,7 @@ function render(){
         <td class="mono">${f.ratio ? Math.round(f.ratio*100) + "%" : "—"}</td>
         <td class="mono">${esc(f.depart || "")}${f.return ? " → " + esc(f.return) : ""}</td>
         <td>${f.transfers == null ? "—" : f.transfers === 0 ? "直飞" : f.transfers}</td>
-        <td><a href="${aviasales(f)}" target="_blank" rel="noopener">订</a> · <a href="${gflights(f)}" target="_blank" rel="noopener">核价</a></td></tr>`).join("")
+        <td><a href="${aviasales(f)}" target="_blank" rel="noopener">Aviasales</a> · <a href="${tripcom(f)}" target="_blank" rel="noopener">携程</a> · <a href="${skyscanner(f)}" target="_blank" rel="noopener">Skyscanner</a></td></tr>`).join("")
     }</tbody></table></div>`;
   } else if (tab === "news"){
     v.innerHTML = D.news.length ? `<div class="list">${D.news.map(n => `<div class="row ${n.level === "bug" ? "bug" : ""}">

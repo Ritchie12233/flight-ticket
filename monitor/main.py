@@ -98,6 +98,8 @@ def run(args):
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text("utf-8"))
     cur = cfg.get("currency", "myr")
     site = cfg.get("notify", {}).get("site_url", "")
+    notify.NTFY_TOPIC_CFG = str(cfg.get("notify", {}).get("ntfy_topic") or "")
+    first_run = not STATE.exists()
     now = datetime.now(MYT)
     today = now.strftime("%Y-%m-%d")
     state = load_json(STATE, {"history": {}, "alerted": {}, "news": [], "alerts_log": []})
@@ -186,6 +188,10 @@ def run(args):
     save_json(SITE_DATA, site_data)
     if not args.demo:
         save_json(STATE, state)
+        if first_run and not args.no_push:
+            notify.send("✈️ bug价机票监控已启动",
+                        f"KUL 出发全球监控已开始运行，每 15 分钟扫描一次。\n"
+                        f"本轮扫描 {len(fares)} 条票价，发现异常 {len(hot)} 条。", site)
     print(f"完成：扫描 {len(fares)} 条票价 / {len(results)} 条航线，"
           f"异常 {len(hot)} 条，推送 {len(pushed)} 条，情报新增 {len(fresh_news)} 条")
 

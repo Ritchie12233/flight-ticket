@@ -78,3 +78,4 @@ notify:
   push_levels: [bug, target]   # 推送哪些级别：bug / great / target / news
   max_per_run: 8               # 每轮最多推几条，防刷屏
   site_url: "https://ritchie12233.github.io/flight-ticket/"   # 推送里附带的看板链接
+  ntfy_topic: "ritchie-kulfare-216c97de"   # 手机 ntfy App 订阅这个频道名
