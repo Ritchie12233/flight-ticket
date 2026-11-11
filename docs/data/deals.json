@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T17:25:21.998124+08:00",
+ "updated_at": "2026-11-11T17:39:41.342048+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -71,6 +71,8 @@
    "dest_name": "Penang",
    "dest_name_zh": "槟城",
    "country": "MY",
+   "lat": 5.4356367,
+   "lon": 100.3091,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -102,6 +104,8 @@
    "dest_name": "Langkawi",
    "dest_name_zh": "兰卡威",
    "country": "MY",
+   "lat": 6.342174,
+   "lon": 99.7314,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -133,6 +137,8 @@
    "dest_name": "Singapore",
    "dest_name_zh": "新加坡",
    "country": "SG",
+   "lat": 1.352083,
+   "lon": 103.819836,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -164,6 +170,8 @@
    "dest_name": "Hong Kong",
    "dest_name_zh": "香港",
    "country": "HK",
+   "lat": 22.3193039,
+   "lon": 114.1693611,
    "visa": {
     "status": "easy",
     "label": "通行证",
@@ -195,6 +203,8 @@
    "dest_name": "Shenzhen",
    "dest_name_zh": "深圳",
    "country": "CN",
+   "lat": 22.543099,
+   "lon": 114.057868,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -226,6 +236,8 @@
    "dest_name": "Shanghai",
    "dest_name_zh": "上海",
    "country": "CN",
+   "lat": 31.230393,
+   "lon": 121.473704,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -257,6 +269,8 @@
    "dest_name": "Seoul",
    "dest_name_zh": "首尔",
    "country": "KR",
+   "lat": 37.566535,
+   "lon": 126.9779692,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -288,6 +302,8 @@
    "dest_name": "Sanya",
    "dest_name_zh": "三亚",
    "country": "CN",
+   "lat": 18.252847,
+   "lon": 109.511909,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -319,6 +335,8 @@
    "dest_name": "Phu Quoc",
    "dest_name_zh": "富国岛",
    "country": "VN",
+   "lat": 10.223722,
+   "lon": 103.96324,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -350,6 +368,8 @@
    "dest_name": "Colombo",
    "dest_name_zh": "科伦坡",
    "country": "LK",
+   "lat": 6.927468,
+   "lon": 79.848358,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -381,6 +401,8 @@
    "dest_name": "Osaka",
    "dest_name_zh": "大阪",
    "country": "JP",
+   "lat": 34.6937378,
+   "lon": 135.5021651,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -412,6 +434,8 @@
    "dest_name": "Tokyo",
    "dest_name_zh": "东京",
    "country": "JP",
+   "lat": 35.6761919,
+   "lon": 139.6503106,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -443,6 +467,8 @@
    "dest_name": "Tashkent",
    "dest_name_zh": "塔什干",
    "country": "UZ",
+   "lat": 41.2994958,
+   "lon": 69.2400734,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -474,6 +500,8 @@
    "dest_name": "Dubai",
    "dest_name_zh": "迪拜",
    "country": "AE",
+   "lat": 25.2048493,
+   "lon": 55.2707828,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -505,6 +533,8 @@
    "dest_name": "London",
    "dest_name_zh": "伦敦",
    "country": "GB",
+   "lat": 51.5073509,
+   "lon": -0.1277583,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -536,6 +566,8 @@
    "dest_name": "Medina",
    "dest_name_zh": "麦地那城",
    "country": "SA",
+   "lat": 24.5246542,
+   "lon": 39.5691841,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -567,6 +599,8 @@
    "dest_name": "Rome",
    "dest_name_zh": "罗马",
    "country": "IT",
+   "lat": 41.8905198,
+   "lon": 12.4942486,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -598,6 +632,8 @@
    "dest_name": "Sydney",
    "dest_name_zh": "悉尼",
    "country": "AU",
+   "lat": -33.8689009,
+   "lon": 151.2070914,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -629,6 +665,8 @@
    "dest_name": "Melbourne",
    "dest_name_zh": "墨尔本",
    "country": "AU",
+   "lat": -37.8131869,
+   "lon": 144.9629796,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -660,6 +698,8 @@
    "dest_name": "Moscow",
    "dest_name_zh": "莫斯科",
    "country": "RU",
+   "lat": 55.755786,
+   "lon": 37.617633,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -691,6 +731,8 @@
    "dest_name": "Frankfurt",
    "dest_name_zh": "法兰克福",
    "country": "DE",
+   "lat": 50.050735,
+   "lon": 8.570773,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -722,6 +764,8 @@
    "dest_name": "Los Angeles",
    "dest_name_zh": "洛杉矶",
    "country": "US",
+   "lat": 34.0522342,
+   "lon": -118.2436849,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -777,6 +821,8 @@
     "dest_name": "Chengdu",
     "dest_name_zh": "成都",
     "country": "CN",
+    "lat": 30.572815,
+    "lon": 104.066801,
     "visa": {
      "status": "free",
      "label": "国内",
@@ -808,6 +854,8 @@
     "dest_name": "Chengdu",
     "dest_name_zh": "成都",
     "country": "CN",
+    "lat": 30.572815,
+    "lon": 104.066801,
     "visa": {
      "status": "free",
      "label": "国内",
@@ -860,6 +908,8 @@
     "dest_name": "Shanghai",
     "dest_name_zh": "上海",
     "country": "CN",
+    "lat": 31.230393,
+    "lon": 121.473704,
     "visa": {
      "status": "free",
      "label": "国内",
@@ -891,6 +941,8 @@
     "dest_name": "Shanghai",
     "dest_name_zh": "上海",
     "country": "CN",
+    "lat": 31.230393,
+    "lon": 121.473704,
     "visa": {
      "status": "free",
      "label": "国内",
@@ -943,6 +995,8 @@
     "dest_name": "Bangkok",
     "dest_name_zh": "曼谷",
     "country": "TH",
+    "lat": 13.7563309,
+    "lon": 100.5017651,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -974,6 +1028,8 @@
     "dest_name": "Bangkok",
     "dest_name_zh": "曼谷",
     "country": "TH",
+    "lat": 13.7563309,
+    "lon": 100.5017651,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1026,6 +1082,8 @@
     "dest_name": "Denpasar (Bali)",
     "dest_name_zh": "巴厘",
     "country": "ID",
+    "lat": -8.6704582,
+    "lon": 115.2126293,
     "visa": {
      "status": "easy",
      "label": "落地签/电子签",
@@ -1037,7 +1095,7 @@
     "origin": "KUL",
     "dest": "DPS",
     "price": 447.0,
-    "depart": "2026-11-30",
+    "depart": "2026-11-14",
     "return": null,
     "one_way": true,
     "trip_class": 0,
@@ -1045,7 +1103,7 @@
     "distance": 1964,
     "airline": null,
     "gate": "Clickavia",
-    "found_at": "2026-11-11T08:26:12",
+    "found_at": "2026-11-11T08:03:27",
     "source": "aviasales-latest",
     "id": "KUL-DPS|OW|0",
     "type": "fare",
@@ -1057,6 +1115,8 @@
     "dest_name": "Denpasar (Bali)",
     "dest_name_zh": "巴厘",
     "country": "ID",
+    "lat": -8.6704582,
+    "lon": 115.2126293,
     "visa": {
      "status": "easy",
      "label": "落地签/电子签",
@@ -1109,6 +1169,8 @@
     "dest_name": "Male",
     "dest_name_zh": "马累",
     "country": "MV",
+    "lat": 4.1754959,
+    "lon": 73.5093474,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1140,6 +1202,8 @@
     "dest_name": "Male",
     "dest_name_zh": "马累",
     "country": "MV",
+    "lat": 4.1754959,
+    "lon": 73.5093474,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1191,6 +1255,8 @@
     "dest_name": "Dubai",
     "dest_name_zh": "迪拜",
     "country": "AE",
+    "lat": 25.2048493,
+    "lon": 55.2707828,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1222,6 +1288,8 @@
     "dest_name": "Dubai",
     "dest_name_zh": "迪拜",
     "country": "AE",
+    "lat": 25.2048493,
+    "lon": 55.2707828,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1274,6 +1342,8 @@
     "dest_name": "Istanbul",
     "dest_name_zh": "伊斯坦布尔",
     "country": "TR",
+    "lat": 41.0082376,
+    "lon": 28.9783589,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1305,6 +1375,8 @@
     "dest_name": "Istanbul",
     "dest_name_zh": "伊斯坦布尔",
     "country": "TR",
+    "lat": 41.0082376,
+    "lon": 28.9783589,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1357,6 +1429,8 @@
     "dest_name": "Tbilisi",
     "dest_name_zh": "第比利斯",
     "country": "GE",
+    "lat": 41.7151377,
+    "lon": 44.827096,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1388,6 +1462,8 @@
     "dest_name": "Tbilisi",
     "dest_name_zh": "第比利斯",
     "country": "GE",
+    "lat": 41.7151377,
+    "lon": 44.827096,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1440,6 +1516,8 @@
     "dest_name": "Cairo",
     "dest_name_zh": "开罗",
     "country": "EG",
+    "lat": 30.0444196,
+    "lon": 31.2357116,
     "visa": {
      "status": "easy",
      "label": "落地签/电子签",
@@ -1471,6 +1549,8 @@
     "dest_name": "Cairo",
     "dest_name_zh": "开罗",
     "country": "EG",
+    "lat": 30.0444196,
+    "lon": 31.2357116,
     "visa": {
      "status": "easy",
      "label": "落地签/电子签",
@@ -1523,6 +1603,8 @@
     "dest_name": "Mauritius",
     "dest_name_zh": "毛里求斯",
     "country": "MU",
+    "lat": -20.1608912,
+    "lon": 57.5012222,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1554,6 +1636,8 @@
     "dest_name": "Mauritius",
     "dest_name_zh": "毛里求斯",
     "country": "MU",
+    "lat": -20.1608912,
+    "lon": 57.5012222,
     "visa": {
      "status": "free",
      "label": "免签",
@@ -1606,6 +1690,8 @@
     "dest_name": "Vancouver",
     "dest_name_zh": "温哥华",
     "country": "CA",
+    "lat": 49.2827291,
+    "lon": -123.1207375,
     "visa": {
      "status": "visa",
      "label": "需签证",
@@ -1659,6 +1745,8 @@
     "dest_name": "Auckland",
     "dest_name_zh": "奥克兰",
     "country": "NZ",
+    "lat": -36.8484597,
+    "lon": 174.7633315,
     "visa": {
      "status": "visa",
      "label": "需签证",
@@ -1690,6 +1778,8 @@
     "dest_name": "Auckland",
     "dest_name_zh": "奥克兰",
     "country": "NZ",
+    "lat": -36.8484597,
+    "lon": 174.7633315,
     "visa": {
      "status": "visa",
      "label": "需签证",
@@ -1732,6 +1822,8 @@
    "dest_name": "Kuala Terengganu",
    "dest_name_zh": "瓜拉丁加奴",
    "country": "MY",
+   "lat": 5.329624,
+   "lon": 103.1370142,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -1764,6 +1856,8 @@
    "dest_name": "Penang",
    "dest_name_zh": "槟城",
    "country": "MY",
+   "lat": 5.4356367,
+   "lon": 100.3091,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -1796,6 +1890,8 @@
    "dest_name": "Alor Setar",
    "dest_name_zh": "亚罗士打",
    "country": "MY",
+   "lat": 6.1263074,
+   "lon": 100.3671695,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -1828,6 +1924,8 @@
    "dest_name": "Langkawi",
    "dest_name_zh": "兰卡威",
    "country": "MY",
+   "lat": 6.342174,
+   "lon": 99.7314,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -1860,6 +1958,8 @@
    "dest_name": "Johor Bahru",
    "dest_name_zh": "新山",
    "country": "MY",
+   "lat": 1.492659,
+   "lon": 103.7413591,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -1892,6 +1992,8 @@
    "dest_name": "Kota Bharu",
    "dest_name_zh": "哥达巴鲁",
    "country": "MY",
+   "lat": 6.124785,
+   "lon": 102.2543825,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -1924,6 +2026,8 @@
    "dest_name": "Padang",
    "dest_name_zh": "巴东",
    "country": "ID",
+   "lat": -0.9470832,
+   "lon": 100.417181,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -1956,6 +2060,8 @@
    "dest_name": "Medan",
    "dest_name_zh": "棉兰",
    "country": "ID",
+   "lat": 3.5951956,
+   "lon": 98.6722227,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -1988,6 +2094,8 @@
    "dest_name": "Singapore",
    "dest_name_zh": "新加坡",
    "country": "SG",
+   "lat": 1.352083,
+   "lon": 103.819836,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2020,6 +2128,8 @@
    "dest_name": "Banda Aceh",
    "dest_name_zh": "班达亚齐",
    "country": "ID",
+   "lat": 5.5482904,
+   "lon": 95.3237559,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2052,6 +2162,8 @@
    "dest_name": "Sibu",
    "dest_name_zh": "泗务",
    "country": "MY",
+   "lat": 2.287284,
+   "lon": 111.830535,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2084,6 +2196,8 @@
    "dest_name": "Kuching",
    "dest_name_zh": "古晋",
    "country": "MY",
+   "lat": 1.553504,
+   "lon": 110.3592927,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2116,6 +2230,8 @@
    "dest_name": "Palembang",
    "dest_name_zh": "巨港",
    "country": "ID",
+   "lat": -2.9760735,
+   "lon": 104.7754307,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2148,6 +2264,8 @@
    "dest_name": "Krabi",
    "dest_name_zh": "喀比",
    "country": "TH",
+   "lat": 8.097281,
+   "lon": 98.98062,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2180,6 +2298,8 @@
    "dest_name": "Sandakan",
    "dest_name_zh": "山打根",
    "country": "MY",
+   "lat": 5.839444,
+   "lon": 118.1171729,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2212,6 +2332,8 @@
    "dest_name": "Batam",
    "dest_name_zh": "巴都贝萨尔",
    "country": "ID",
+   "lat": 1.123627,
+   "lon": 104.11528,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2244,6 +2366,8 @@
    "dest_name": "Kota-Kinabalu",
    "dest_name_zh": "哥打基纳巴卢",
    "country": "MY",
+   "lat": 5.980408,
+   "lon": 116.0734568,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2276,6 +2400,8 @@
    "dest_name": "Jakarta",
    "dest_name_zh": "雅加达",
    "country": "ID",
+   "lat": -6.211544,
+   "lon": 106.845172,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2308,6 +2434,8 @@
    "dest_name": "Phuket",
    "dest_name_zh": "普吉岛",
    "country": "TH",
+   "lat": 7.9519331,
+   "lon": 98.3380884,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2340,6 +2468,8 @@
    "dest_name": "Bangkok",
    "dest_name_zh": "曼谷",
    "country": "TH",
+   "lat": 13.7563309,
+   "lon": 100.5017651,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2372,6 +2502,8 @@
    "dest_name": "Surabaya",
    "dest_name_zh": "泗水",
    "country": "ID",
+   "lat": -7.2574719,
+   "lon": 112.7520883,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2404,6 +2536,8 @@
    "dest_name": "Tawau",
    "dest_name_zh": "斗湖",
    "country": "MY",
+   "lat": 4.244651,
+   "lon": 117.8911861,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2436,6 +2570,8 @@
    "dest_name": "Ho Chi Minh City",
    "dest_name_zh": "胡志明市",
    "country": "VN",
+   "lat": 10.8230989,
+   "lon": 106.6296638,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -2468,6 +2604,8 @@
    "dest_name": "Denpasar (Bali)",
    "dest_name_zh": "巴厘",
    "country": "ID",
+   "lat": -8.6704582,
+   "lon": 115.2126293,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2500,6 +2638,8 @@
    "dest_name": "Pontianak",
    "dest_name_zh": "坤甸",
    "country": "ID",
+   "lat": -0.0263303,
+   "lon": 109.3425039,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2532,6 +2672,8 @@
    "dest_name": "Da Nang",
    "dest_name_zh": "岘港",
    "country": "VN",
+   "lat": 16.055399,
+   "lon": 108.20298,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -2564,6 +2706,8 @@
    "dest_name": "Phu Quoc",
    "dest_name_zh": "富国岛",
    "country": "VN",
+   "lat": 10.223722,
+   "lon": 103.96324,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -2596,6 +2740,8 @@
    "dest_name": "Hat Yai",
    "dest_name_zh": "合艾",
    "country": "TH",
+   "lat": 7.0086472,
+   "lon": 100.4746879,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2628,6 +2774,8 @@
    "dest_name": "Bandar Seri Begawan",
    "dest_name_zh": "斯里巴加湾",
    "country": "BN",
+   "lat": 4.9030522,
+   "lon": 114.939821,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2660,6 +2808,8 @@
    "dest_name": "Nha Trang",
    "dest_name_zh": "芽庄",
    "country": "VN",
+   "lat": 12.2387911,
+   "lon": 109.1967488,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -2692,6 +2842,8 @@
    "dest_name": "Labuan Bajo",
    "dest_name_zh": "下拉布安",
    "country": "ID",
+   "lat": -8.4538484,
+   "lon": 119.8728421,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2724,6 +2876,8 @@
    "dest_name": "Semarang",
    "dest_name_zh": "三宝拢",
    "country": "ID",
+   "lat": -7.0051453,
+   "lon": 110.4381254,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2756,6 +2910,8 @@
    "dest_name": "Hong Kong",
    "dest_name_zh": "香港",
    "country": "HK",
+   "lat": 22.3193039,
+   "lon": 114.1693611,
    "visa": {
     "status": "easy",
     "label": "通行证",
@@ -2788,6 +2944,8 @@
    "dest_name": "Dalat",
    "dest_name_zh": "大叻",
    "country": "VN",
+   "lat": 11.9404192,
+   "lon": 108.4583132,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -2820,6 +2978,8 @@
    "dest_name": "Balikpapan",
    "dest_name_zh": "巴里巴班",
    "country": "ID",
+   "lat": -1.2379274,
+   "lon": 116.8528526,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -2852,6 +3012,8 @@
    "dest_name": "Miri",
    "dest_name_zh": "米里",
    "country": "MY",
+   "lat": 4.399493,
+   "lon": 113.9913832,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2884,6 +3046,8 @@
    "dest_name": "Manila",
    "dest_name_zh": "马尼拉",
    "country": "PH",
+   "lat": 14.5995124,
+   "lon": 120.9842195,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -2916,6 +3080,8 @@
    "dest_name": "Hanoi",
    "dest_name_zh": "河内",
    "country": "VN",
+   "lat": 21.0277644,
+   "lon": 105.8341598,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -2948,6 +3114,8 @@
    "dest_name": "Guangzhou",
    "dest_name_zh": "广州",
    "country": "CN",
+   "lat": 23.12911,
+   "lon": 113.264385,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -2980,6 +3148,8 @@
    "dest_name": "Shenzhen",
    "dest_name_zh": "深圳",
    "country": "CN",
+   "lat": 22.543099,
+   "lon": 114.057868,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3012,6 +3182,8 @@
    "dest_name": "Labuan",
    "dest_name_zh": "拉布安",
    "country": "MY",
+   "lat": 5.2831456,
+   "lon": 115.230825,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -3044,6 +3216,8 @@
    "dest_name": "Praya",
    "dest_name_zh": "Praya",
    "country": "ID",
+   "lat": -8.757322,
+   "lon": 116.27667,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3076,6 +3250,8 @@
    "dest_name": "Cebu City",
    "dest_name_zh": "宿务",
    "country": "PH",
+   "lat": 10.313333,
+   "lon": 123.98278,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -3108,6 +3284,8 @@
    "dest_name": "Yogyakarta",
    "dest_name_zh": "日惹",
    "country": "ID",
+   "lat": -7.7955798,
+   "lon": 110.3694896,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3140,6 +3318,8 @@
    "dest_name": "Kunming",
    "dest_name_zh": "昆明",
    "country": "CN",
+   "lat": 24.880095,
+   "lon": 102.832891,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3172,6 +3352,8 @@
    "dest_name": "Siem Reap",
    "dest_name_zh": "暹粒",
    "country": "KH",
+   "lat": 13.3632533,
+   "lon": 103.856403,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3204,6 +3386,8 @@
    "dest_name": "Macau",
    "dest_name_zh": "澳门",
    "country": "MO",
+   "lat": 22.198745,
+   "lon": 113.543873,
    "visa": {
     "status": "easy",
     "label": "通行证",
@@ -3236,6 +3420,8 @@
    "dest_name": "Chengdu",
    "dest_name_zh": "成都",
    "country": "CN",
+   "lat": 30.572815,
+   "lon": 104.066801,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3268,6 +3454,8 @@
    "dest_name": "Colombo",
    "dest_name_zh": "科伦坡",
    "country": "LK",
+   "lat": 6.927468,
+   "lon": 79.848358,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3300,6 +3488,8 @@
    "dest_name": "Pangkal Pinang",
    "dest_name_zh": "槟榔",
    "country": "ID",
+   "lat": -2.1316266,
+   "lon": 106.1169299,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3332,6 +3522,8 @@
    "dest_name": "Iloilo",
    "dest_name_zh": "伊洛伊洛",
    "country": "PH",
+   "lat": 10.7201501,
+   "lon": 122.5621063,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -3364,6 +3556,8 @@
    "dest_name": "Shanghai",
    "dest_name_zh": "上海",
    "country": "CN",
+   "lat": 31.230393,
+   "lon": 121.473704,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3396,6 +3590,8 @@
    "dest_name": "Vientiane",
    "dest_name_zh": "万象",
    "country": "LA",
+   "lat": 17.9757058,
+   "lon": 102.6331035,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3428,6 +3624,8 @@
    "dest_name": "Chiang Mai",
    "dest_name_zh": "清迈",
    "country": "TH",
+   "lat": 18.7952876,
+   "lon": 98.9620002,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -3460,6 +3658,8 @@
    "dest_name": "Perth",
    "dest_name_zh": "佩斯",
    "country": "AU",
+   "lat": -31.9522222,
+   "lon": 115.8588889,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -3492,6 +3692,8 @@
    "dest_name": "Banjarmasin",
    "dest_name_zh": "马辰",
    "country": "ID",
+   "lat": -3.3186067,
+   "lon": 114.5943784,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3524,6 +3726,8 @@
    "dest_name": "Sihanoukville",
    "dest_name_zh": "西哈努克城",
    "country": "KH",
+   "lat": 10.633333,
+   "lon": 103.5,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3556,6 +3760,8 @@
    "dest_name": "Changsha",
    "dest_name_zh": "长沙",
    "country": "CN",
+   "lat": 28.228209,
+   "lon": 112.938814,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3588,6 +3794,8 @@
    "dest_name": "Phnom Penh",
    "dest_name_zh": "金边",
    "country": "KH",
+   "lat": 11.5563738,
+   "lon": 104.9282099,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3620,6 +3828,8 @@
    "dest_name": "Taipei",
    "dest_name_zh": "台北",
    "country": "TW",
+   "lat": 25.0329694,
+   "lon": 121.5654177,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -3652,6 +3862,8 @@
    "dest_name": "Guiyang",
    "dest_name_zh": "贵阳",
    "country": "CN",
+   "lat": 26.647661,
+   "lon": 106.630153,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3684,6 +3896,8 @@
    "dest_name": "Beijing",
    "dest_name_zh": "北京",
    "country": "CN",
+   "lat": 39.904214,
+   "lon": 116.407413,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3716,6 +3930,8 @@
    "dest_name": "Makassar",
    "dest_name_zh": "乌戒潘当",
    "country": "ID",
+   "lat": -5.1476651,
+   "lon": 119.4327314,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -3748,6 +3964,8 @@
    "dest_name": "Sanya",
    "dest_name_zh": "三亚",
    "country": "CN",
+   "lat": 18.252847,
+   "lon": 109.511909,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3780,6 +3998,8 @@
    "dest_name": "Qingdao",
    "dest_name_zh": "青岛",
    "country": "CN",
+   "lat": 36.067108,
+   "lon": 120.382609,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3812,6 +4032,8 @@
    "dest_name": "Chennai",
    "dest_name_zh": "金奈",
    "country": "IN",
+   "lat": 13.0826802,
+   "lon": 80.2707184,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -3844,6 +4066,8 @@
    "dest_name": "Surat Thani",
    "dest_name_zh": "万伦",
    "country": "TH",
+   "lat": 9.1382389,
+   "lon": 99.3217483,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -3876,6 +4100,8 @@
    "dest_name": "Nanjing",
    "dest_name_zh": "南京",
    "country": "CN",
+   "lat": 32.060255,
+   "lon": 118.796877,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3908,6 +4134,8 @@
    "dest_name": "Chongqing",
    "dest_name_zh": "重庆",
    "country": "CN",
+   "lat": 29.4315861,
+   "lon": 106.912251,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -3940,6 +4168,8 @@
    "dest_name": "Caticlan",
    "dest_name_zh": "马来",
    "country": "PH",
+   "lat": 11.925263,
+   "lon": 121.9521,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -3972,6 +4202,8 @@
    "dest_name": "Puerto Princesa",
    "dest_name_zh": "普林塞萨港",
    "country": "PH",
+   "lat": 9.7638429,
+   "lon": 118.7473298,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -4004,6 +4236,8 @@
    "dest_name": "Koh Samui",
    "dest_name_zh": "苏梅岛",
    "country": "TH",
+   "lat": 9.555315,
+   "lon": 100.0628,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -4036,6 +4270,8 @@
    "dest_name": "Kaohsiung",
    "dest_name_zh": "高雄",
    "country": "TW",
+   "lat": 22.6272784,
+   "lon": 120.3014353,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -4068,6 +4304,8 @@
    "dest_name": "Xian",
    "dest_name_zh": "西安",
    "country": "CN",
+   "lat": 34.341574,
+   "lon": 108.93977,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4100,6 +4338,8 @@
    "dest_name": "Davao City",
    "dest_name_zh": "达沃",
    "country": "PH",
+   "lat": 7.190708,
+   "lon": 125.455341,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -4132,6 +4372,8 @@
    "dest_name": "Seoul",
    "dest_name_zh": "首尔",
    "country": "KR",
+   "lat": 37.566535,
+   "lon": 126.9779692,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -4164,6 +4406,8 @@
    "dest_name": "Lahad Datu",
    "dest_name_zh": "拉哈达图",
    "country": "MY",
+   "lat": 5.035278,
+   "lon": 118.32611,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -4196,6 +4440,8 @@
    "dest_name": "Con Dao",
    "dest_name_zh": "Con Dao",
    "country": "VN",
+   "lat": 10.371389,
+   "lon": 106.63333,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -4228,6 +4474,8 @@
    "dest_name": "Thiruvananthapuram",
    "dest_name_zh": "特里凡得琅",
    "country": "IN",
+   "lat": 8.5241391,
+   "lon": 76.9366376,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -4260,6 +4508,8 @@
    "dest_name": "Yinchuan",
    "dest_name_zh": "银川",
    "country": "CN",
+   "lat": 38.487193,
+   "lon": 106.230908,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4292,6 +4542,8 @@
    "dest_name": "Zhengzhou",
    "dest_name_zh": "郑州",
    "country": "CN",
+   "lat": 34.746611,
+   "lon": 113.625328,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4324,6 +4576,8 @@
    "dest_name": "Wuhan",
    "dest_name_zh": "武汉",
    "country": "CN",
+   "lat": 30.592849,
+   "lon": 114.305539,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4356,6 +4610,8 @@
    "dest_name": "Male",
    "dest_name_zh": "马累",
    "country": "MV",
+   "lat": 4.1754959,
+   "lon": 73.5093474,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -4388,6 +4644,8 @@
    "dest_name": "Kalibo",
    "dest_name_zh": "卡利博",
    "country": "PH",
+   "lat": 11.687152,
+   "lon": 122.38183,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -4420,6 +4678,8 @@
    "dest_name": "Busan",
    "dest_name_zh": "釜山",
    "country": "KR",
+   "lat": 35.1795543,
+   "lon": 129.0756416,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -4452,6 +4712,8 @@
    "dest_name": "Zhuhai",
    "dest_name_zh": "珠海",
    "country": "CN",
+   "lat": 22.270715,
+   "lon": 113.576726,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4484,6 +4746,8 @@
    "dest_name": "Haikou",
    "dest_name_zh": "海口",
    "country": "CN",
+   "lat": 20.044412,
+   "lon": 110.198286,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4516,6 +4780,8 @@
    "dest_name": "Hangzhou",
    "dest_name_zh": "杭州",
    "country": "CN",
+   "lat": 30.274084,
+   "lon": 120.15507,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4548,6 +4814,8 @@
    "dest_name": "Guilin",
    "dest_name_zh": "桂林",
    "country": "CN",
+   "lat": 25.234479,
+   "lon": 110.179953,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -4580,6 +4848,8 @@
    "dest_name": "Tiruchirappalli",
    "dest_name_zh": "蒂鲁吉拉伯利",
    "country": "IN",
+   "lat": 10.7904833,
+   "lon": 78.7046725,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -4612,6 +4882,8 @@
    "dest_name": "Dhaka",
    "dest_name_zh": "达卡",
    "country": "BD",
+   "lat": 23.810332,
+   "lon": 90.4125181,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -4644,6 +4916,8 @@
    "dest_name": "Yangon",
    "dest_name_zh": "仰光",
    "country": "MM",
+   "lat": 16.840939,
+   "lon": 96.173526,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -4676,6 +4950,8 @@
    "dest_name": "Kendari",
    "dest_name_zh": "肯达里",
    "country": "ID",
+   "lat": -3.9984597,
+   "lon": 122.5129742,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -4708,6 +4984,8 @@
    "dest_name": "Tagbilaran",
    "dest_name_zh": "塔比拉兰",
    "country": "PH",
+   "lat": 9.672948,
+   "lon": 123.8730022,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -4740,6 +5018,8 @@
    "dest_name": "Sumbawa Besar",
    "dest_name_zh": "松吧哇岛",
    "country": "ID",
+   "lat": -8.5,
+   "lon": 117.416664,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -4772,6 +5052,8 @@
    "dest_name": "Hue",
    "dest_name_zh": "顺化",
    "country": "VN",
+   "lat": 16.4637117,
+   "lon": 107.5908628,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -4804,6 +5086,8 @@
    "dest_name": "Kochi",
    "dest_name_zh": "库奇",
    "country": "IN",
+   "lat": 9.9312328,
+   "lon": 76.2673041,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -4836,6 +5120,8 @@
    "dest_name": "Kolkata",
    "dest_name_zh": "加尔格达",
    "country": "IN",
+   "lat": 22.572646,
+   "lon": 88.363895,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -4868,6 +5154,8 @@
    "dest_name": "Haiphong",
    "dest_name_zh": "海防",
    "country": "VN",
+   "lat": 20.8449115,
+   "lon": 106.6880841,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -4900,6 +5188,8 @@
    "dest_name": "Tokyo",
    "dest_name_zh": "东京",
    "country": "JP",
+   "lat": 35.6761919,
+   "lon": 139.6503106,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -4932,6 +5222,8 @@
    "dest_name": "Bengaluru",
    "dest_name_zh": "班加罗尔",
    "country": "IN",
+   "lat": 12.9715987,
+   "lon": 77.5945627,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -4964,6 +5256,8 @@
    "dest_name": "Samarinda",
    "dest_name_zh": "三马林达",
    "country": "ID",
+   "lat": -0.5016166,
+   "lon": 117.1264753,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -4996,6 +5290,8 @@
    "dest_name": "New Delhi",
    "dest_name_zh": "新德里",
    "country": "IN",
+   "lat": 28.6139391,
+   "lon": 77.2090212,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5028,6 +5324,8 @@
    "dest_name": "Trat",
    "dest_name_zh": "Trat",
    "country": "TH",
+   "lat": 12.273953,
+   "lon": 102.31867,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5060,6 +5358,8 @@
    "dest_name": "Mumbai",
    "dest_name_zh": "孟买",
    "country": "IN",
+   "lat": 19.0759837,
+   "lon": 72.8776559,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5092,6 +5392,8 @@
    "dest_name": "Osaka",
    "dest_name_zh": "大阪",
    "country": "JP",
+   "lat": 34.6937378,
+   "lon": 135.5021651,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5124,6 +5426,8 @@
    "dest_name": "El Nido",
    "dest_name_zh": "El Nido",
    "country": "PH",
+   "lat": 11.205556,
+   "lon": 119.41278,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5156,6 +5460,8 @@
    "dest_name": "Cagayan De Oro",
    "dest_name_zh": "卡加延德奥罗",
    "country": "PH",
+   "lat": 8.4542363,
+   "lon": 124.6318977,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5188,6 +5494,8 @@
    "dest_name": "Tashkent",
    "dest_name_zh": "塔什干",
    "country": "UZ",
+   "lat": 41.2994958,
+   "lon": 69.2400734,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5220,6 +5528,8 @@
    "dest_name": "Kathmandu",
    "dest_name_zh": "加德满都",
    "country": "NP",
+   "lat": 27.7172453,
+   "lon": 85.3239605,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -5252,6 +5562,8 @@
    "dest_name": "Pattaya",
    "dest_name_zh": "乌塔保",
    "country": "TH",
+   "lat": 12.9235557,
+   "lon": 100.8824551,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5284,6 +5596,8 @@
    "dest_name": "Istanbul",
    "dest_name_zh": "伊斯坦布尔",
    "country": "TR",
+   "lat": 41.0082376,
+   "lon": 28.9783589,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5316,6 +5630,8 @@
    "dest_name": "Taichung",
    "dest_name_zh": "Taichung",
    "country": "TW",
+   "lat": 24.1477358,
+   "lon": 120.6736482,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5348,6 +5664,8 @@
    "dest_name": "Sydney",
    "dest_name_zh": "悉尼",
    "country": "AU",
+   "lat": -33.8689009,
+   "lon": 151.2070914,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5380,6 +5698,8 @@
    "dest_name": "Melbourne",
    "dest_name_zh": "墨尔本",
    "country": "AU",
+   "lat": -37.8131869,
+   "lon": 144.9629796,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5412,6 +5732,8 @@
    "dest_name": "Almaty",
    "dest_name_zh": "阿拉木图",
    "country": "KZ",
+   "lat": 43.2220146,
+   "lon": 76.8512485,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5444,6 +5766,8 @@
    "dest_name": "Cairo",
    "dest_name_zh": "开罗",
    "country": "EG",
+   "lat": 30.0444196,
+   "lon": 31.2357116,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -5476,6 +5800,8 @@
    "dest_name": "Goa",
    "dest_name_zh": "果阿",
    "country": "IN",
+   "lat": 15.2993265,
+   "lon": 74.123996,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5508,6 +5834,8 @@
    "dest_name": "Dammam",
    "dest_name_zh": "达曼",
    "country": "SA",
+   "lat": 26.4206828,
+   "lon": 50.0887943,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -5540,6 +5868,8 @@
    "dest_name": "Doha",
    "dest_name_zh": "多哈",
    "country": "QA",
+   "lat": 25.2854473,
+   "lon": 51.5310398,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5572,6 +5902,8 @@
    "dest_name": "Moscow",
    "dest_name_zh": "莫斯科",
    "country": "RU",
+   "lat": 55.755786,
+   "lon": 37.617633,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5604,6 +5936,8 @@
    "dest_name": "Fukuoka",
    "dest_name_zh": "福冈",
    "country": "JP",
+   "lat": 33.5901838,
+   "lon": 130.4016888,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5635,6 +5969,8 @@
    "dest_name": "Dubai",
    "dest_name_zh": "迪拜",
    "country": "AE",
+   "lat": 25.2048493,
+   "lon": 55.2707828,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5667,6 +6003,8 @@
    "dest_name": "Urumqi",
    "dest_name_zh": "乌鲁木齐",
    "country": "CN",
+   "lat": 43.825592,
+   "lon": 87.616848,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -5699,6 +6037,8 @@
    "dest_name": "Sapporo",
    "dest_name_zh": "札幌",
    "country": "JP",
+   "lat": 43.0620958,
+   "lon": 141.3543763,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5731,6 +6071,8 @@
    "dest_name": "Vladivostok",
    "dest_name_zh": "海参崴",
    "country": "RU",
+   "lat": 43.1332484,
+   "lon": 131.9112975,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5763,6 +6105,8 @@
    "dest_name": "Geneva",
    "dest_name_zh": "日内瓦",
    "country": "CH",
+   "lat": 46.1983922,
+   "lon": 6.1422961,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5795,6 +6139,8 @@
    "dest_name": "City of Angeles",
    "dest_name_zh": "City of Angeles",
    "country": "PH",
+   "lat": 15.147181,
+   "lon": 120.584733,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5827,6 +6173,8 @@
    "dest_name": "Sharjah",
    "dest_name_zh": "沙迦",
    "country": "AE",
+   "lat": 25.3462553,
+   "lon": 55.4209317,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -5859,6 +6207,8 @@
    "dest_name": "Lucknow",
    "dest_name_zh": "勒克瑙",
    "country": "IN",
+   "lat": 26.8466937,
+   "lon": 80.946166,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5891,6 +6241,8 @@
    "dest_name": "Zurich",
    "dest_name_zh": "苏黎世",
    "country": "CH",
+   "lat": 47.367347,
+   "lon": 8.5500025,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5923,6 +6275,8 @@
    "dest_name": "Jeddah",
    "dest_name_zh": "吉达",
    "country": "SA",
+   "lat": 21.485811,
+   "lon": 39.1925048,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -5955,6 +6309,8 @@
    "dest_name": "Frankfurt",
    "dest_name_zh": "法兰克福",
    "country": "DE",
+   "lat": 50.050735,
+   "lon": 8.570773,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -5987,6 +6343,8 @@
    "dest_name": "Sorong",
    "dest_name_zh": "索龙",
    "country": "ID",
+   "lat": -0.8761629,
+   "lon": 131.255828,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -6019,6 +6377,8 @@
    "dest_name": "Dili",
    "dest_name_zh": "Dili",
    "country": "TL",
+   "lat": -8.5568557,
+   "lon": 125.5603143,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -6051,6 +6411,8 @@
    "dest_name": "Rome",
    "dest_name_zh": "罗马",
    "country": "IT",
+   "lat": 41.8905198,
+   "lon": 12.4942486,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6083,6 +6445,8 @@
    "dest_name": "Antalya",
    "dest_name_zh": "安塔利亚",
    "country": "TR",
+   "lat": 36.8968908,
+   "lon": 30.7133233,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6115,6 +6479,8 @@
    "dest_name": "Milan",
    "dest_name_zh": "米兰",
    "country": "IT",
+   "lat": 45.463681,
+   "lon": 9.1881714,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6147,6 +6513,8 @@
    "dest_name": "Medina",
    "dest_name_zh": "麦地那城",
    "country": "SA",
+   "lat": 24.5246542,
+   "lon": 39.5691841,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -6179,6 +6547,8 @@
    "dest_name": "Paris",
    "dest_name_zh": "巴黎",
    "country": "FR",
+   "lat": 48.856614,
+   "lon": 2.3522219,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6211,6 +6581,8 @@
    "dest_name": "Ankara",
    "dest_name_zh": "安卡拉",
    "country": "TR",
+   "lat": 39.9333635,
+   "lon": 32.8597419,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6243,6 +6615,8 @@
    "dest_name": "Munich",
    "dest_name_zh": "慕尼黑",
    "country": "DE",
+   "lat": 48.1391265,
+   "lon": 11.5801863,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6275,6 +6649,8 @@
    "dest_name": "Irkutsk",
    "dest_name_zh": "伊尔库次克",
    "country": "RU",
+   "lat": 52.2869741,
+   "lon": 104.3050183,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6307,6 +6683,8 @@
    "dest_name": "Novosibirsk",
    "dest_name_zh": "新西伯利亚",
    "country": "RU",
+   "lat": 54.9832693,
+   "lon": 82.8963831,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6339,6 +6717,8 @@
    "dest_name": "Madrid",
    "dest_name_zh": "马德里",
    "country": "ES",
+   "lat": 40.4166909,
+   "lon": -3.7003454,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6371,6 +6751,8 @@
    "dest_name": "London",
    "dest_name_zh": "伦敦",
    "country": "GB",
+   "lat": 51.5073509,
+   "lon": -0.1277583,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6403,6 +6785,8 @@
    "dest_name": "Brisbane",
    "dest_name_zh": "布里斯班",
    "country": "AU",
+   "lat": -27.4709331,
+   "lon": 153.0235024,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6435,6 +6819,8 @@
    "dest_name": "Tbilisi",
    "dest_name_zh": "第比利斯",
    "country": "GE",
+   "lat": 41.7151377,
+   "lon": 44.827096,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6467,6 +6853,8 @@
    "dest_name": "Karachi",
    "dest_name_zh": "卡拉奇",
    "country": "PK",
+   "lat": 24.8607343,
+   "lon": 67.0011364,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6499,6 +6887,8 @@
    "dest_name": "Mauritius",
    "dest_name_zh": "毛里求斯",
    "country": "MU",
+   "lat": -20.1608912,
+   "lon": 57.5012222,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6531,6 +6921,8 @@
    "dest_name": "Budapest",
    "dest_name_zh": "布达佩斯",
    "country": "HU",
+   "lat": 47.4984056,
+   "lon": 19.0407578,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6563,6 +6955,8 @@
    "dest_name": "Kuwait City",
    "dest_name_zh": "科威特",
    "country": "KW",
+   "lat": 29.375859,
+   "lon": 47.9774052,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6595,6 +6989,8 @@
    "dest_name": "Baku",
    "dest_name_zh": "巴库",
    "country": "AZ",
+   "lat": 40.4092617,
+   "lon": 49.8670924,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6627,6 +7023,8 @@
    "dest_name": "Saint Petersburg",
    "dest_name_zh": "圣彼得堡",
    "country": "RU",
+   "lat": 59.9310584,
+   "lon": 30.3609096,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6659,6 +7057,8 @@
    "dest_name": "Abu Dhabi",
    "dest_name_zh": "阿布扎比",
    "country": "AE",
+   "lat": 24.453884,
+   "lon": 54.3773438,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6691,6 +7091,8 @@
    "dest_name": "Khabarovsk",
    "dest_name_zh": "哈巴罗夫斯克",
    "country": "RU",
+   "lat": 48.4814433,
+   "lon": 135.0720666,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6723,6 +7125,8 @@
    "dest_name": "Ashgabat",
    "dest_name_zh": "阿什哈巴德",
    "country": "TM",
+   "lat": 37.9600766,
+   "lon": 58.3260629,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -6755,6 +7159,8 @@
    "dest_name": "Kazan",
    "dest_name_zh": "喀山",
    "country": "RU",
+   "lat": 55.7878944,
+   "lon": 49.1233294,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6787,6 +7193,8 @@
    "dest_name": "Dublin",
    "dest_name_zh": "都柏林",
    "country": "IE",
+   "lat": 53.3498053,
+   "lon": -6.2603097,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6819,6 +7227,8 @@
    "dest_name": "Astana",
    "dest_name_zh": "阿斯塔纳",
    "country": "KZ",
+   "lat": 51.147222,
+   "lon": 71.422222,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6851,6 +7261,8 @@
    "dest_name": "Belgrade",
    "dest_name_zh": "贝尔格莱德",
    "country": "RS",
+   "lat": 44.786568,
+   "lon": 20.4489216,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -6883,6 +7295,8 @@
    "dest_name": "Bishkek",
    "dest_name_zh": "比什凯克",
    "country": "KG",
+   "lat": 42.8746212,
+   "lon": 74.5697617,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6915,6 +7329,8 @@
    "dest_name": "Sharm el Sheikh",
    "dest_name_zh": "沙姆沙伊赫",
    "country": "EG",
+   "lat": 27.979357,
+   "lon": 34.385254,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -6947,6 +7363,8 @@
    "dest_name": "Larnaca",
    "dest_name_zh": "拉纳卡",
    "country": "CY",
+   "lat": 34.9002535,
+   "lon": 33.6231723,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6979,6 +7397,8 @@
    "dest_name": "Johannesburg",
    "dest_name_zh": "约翰内斯堡",
    "country": "ZA",
+   "lat": -26.2041028,
+   "lon": 28.0473051,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7011,6 +7431,8 @@
    "dest_name": "Langgur",
    "dest_name_zh": "兰格格尔",
    "country": "ID",
+   "lat": -5.666667,
+   "lon": 132.71666,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -7043,6 +7465,8 @@
    "dest_name": "Rize",
    "dest_name_zh": "Rize",
    "country": "TR",
+   "lat": 41.024722,
+   "lon": 40.522222,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7075,6 +7499,8 @@
    "dest_name": "Amsterdam",
    "dest_name_zh": "阿姆斯特丹",
    "country": "NL",
+   "lat": 52.3730556,
+   "lon": 4.8922222,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7107,6 +7533,8 @@
    "dest_name": "Islamabad",
    "dest_name_zh": "伊斯兰堡",
    "country": "PK",
+   "lat": 33.6844202,
+   "lon": 73.0478848,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7139,6 +7567,8 @@
    "dest_name": "Adler/Sochi",
    "dest_name_zh": "索契",
    "country": "RU",
+   "lat": 43.4343234,
+   "lon": 39.9339462,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7171,6 +7601,8 @@
    "dest_name": "Casablanca",
    "dest_name_zh": "Casablanca",
    "country": "MA",
+   "lat": 33.533333,
+   "lon": -7.583333,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7203,6 +7635,8 @@
    "dest_name": "Lahore",
    "dest_name_zh": "拉合尔",
    "country": "PK",
+   "lat": 31.5203696,
+   "lon": 74.3587473,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7235,6 +7669,8 @@
    "dest_name": "Dushanbe",
    "dest_name_zh": "杜尚别",
    "country": "TJ",
+   "lat": 38.5597722,
+   "lon": 68.7870384,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7267,6 +7703,8 @@
    "dest_name": "Barcelona",
    "dest_name_zh": "巴塞罗那",
    "country": "ES",
+   "lat": 41.387917,
+   "lon": 2.1699187,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7299,6 +7737,8 @@
    "dest_name": "Ercan",
    "dest_name_zh": "埃阿坎",
    "country": "NY",
+   "lat": 35.15812,
+   "lon": 33.50307,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7331,6 +7771,8 @@
    "dest_name": "Darwin",
    "dest_name_zh": "达尔文",
    "country": "AU",
+   "lat": -12.4628198,
+   "lon": 130.8417694,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7363,6 +7805,8 @@
    "dest_name": "Okinawa",
    "dest_name_zh": "冲绳",
    "country": "JP",
+   "lat": 26.1201911,
+   "lon": 127.7025012,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7395,6 +7839,8 @@
    "dest_name": "Oslo",
    "dest_name_zh": "奥斯陆",
    "country": "NO",
+   "lat": 59.9138688,
+   "lon": 10.7522454,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7427,6 +7873,8 @@
    "dest_name": "Algiers",
    "dest_name_zh": "阿爾及爾",
    "country": "DZ",
+   "lat": 36.753768,
+   "lon": 3.0587561,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7459,6 +7907,8 @@
    "dest_name": "Warsaw",
    "dest_name_zh": "华沙",
    "country": "PL",
+   "lat": 52.2296756,
+   "lon": 21.0122287,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7491,6 +7941,8 @@
    "dest_name": "Dortmund",
    "dest_name_zh": "多特蒙德",
    "country": "DE",
+   "lat": 51.5135872,
+   "lon": 7.4652981,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7523,6 +7975,8 @@
    "dest_name": "Nairobi",
    "dest_name_zh": "内罗毕",
    "country": "KE",
+   "lat": -1.2833333,
+   "lon": 36.8166667,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -7555,6 +8009,8 @@
    "dest_name": "Kutaisi",
    "dest_name_zh": "库塔伊西",
    "country": "GE",
+   "lat": 42.2662428,
+   "lon": 42.7180019,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7587,6 +8043,8 @@
    "dest_name": "Krasnoyarsk",
    "dest_name_zh": "克拉斯诺尔斯克",
    "country": "RU",
+   "lat": 56.18113,
+   "lon": 92.48286,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7619,6 +8077,8 @@
    "dest_name": "Riga",
    "dest_name_zh": "里加",
    "country": "LV",
+   "lat": 56.9496487,
+   "lon": 24.1051865,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7651,6 +8111,8 @@
    "dest_name": "Vancouver",
    "dest_name_zh": "温哥华",
    "country": "CA",
+   "lat": 49.2827291,
+   "lon": -123.1207375,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7683,6 +8145,8 @@
    "dest_name": "Alanya",
    "dest_name_zh": "Alanya",
    "country": "TR",
+   "lat": 36.544443,
+   "lon": 31.995408,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7715,6 +8179,8 @@
    "dest_name": "Tivat",
    "dest_name_zh": "蒂瓦特",
    "country": "ME",
+   "lat": 42.40361,
+   "lon": 18.725555,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7747,6 +8213,8 @@
    "dest_name": "Ulaanbaatar",
    "dest_name_zh": "乌兰巴托",
    "country": "MN",
+   "lat": 47.8863988,
+   "lon": 106.9057439,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7779,6 +8247,8 @@
    "dest_name": "Lisbon",
    "dest_name_zh": "里斯本",
    "country": "PT",
+   "lat": 38.7222524,
+   "lon": -9.1393366,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7811,6 +8281,8 @@
    "dest_name": "Marrakech",
    "dest_name_zh": "马拉喀什",
    "country": "MA",
+   "lat": 31.6294723,
+   "lon": -7.9810845,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7843,6 +8315,8 @@
    "dest_name": "Krasnodar",
    "dest_name_zh": "克拉斯诺达尔",
    "country": "RU",
+   "lat": 45.0392674,
+   "lon": 38.9872209,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7875,6 +8349,8 @@
    "dest_name": "Koror",
    "dest_name_zh": "科罗尔",
    "country": "PW",
+   "lat": 7.364122,
+   "lon": 134.5329,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7907,6 +8383,8 @@
    "dest_name": "Auckland",
    "dest_name_zh": "奥克兰",
    "country": "NZ",
+   "lat": -36.8484597,
+   "lon": 174.7633315,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -7939,6 +8417,8 @@
    "dest_name": "Mineralnye Vody",
    "dest_name_zh": "矿泉城机场",
    "country": "RU",
+   "lat": 44.211675,
+   "lon": 43.1238527,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -7971,6 +8451,8 @@
    "dest_name": "Andijan",
    "dest_name_zh": "安集延",
    "country": "UZ",
+   "lat": 40.8153561,
+   "lon": 72.28375,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8003,6 +8485,8 @@
    "dest_name": "Minsk",
    "dest_name_zh": "明斯克",
    "country": "BY",
+   "lat": 53.9,
+   "lon": 27.5666667,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8035,6 +8519,8 @@
    "dest_name": "Shymkent",
    "dest_name_zh": "Shymkent",
    "country": "KZ",
+   "lat": 42.3416847,
+   "lon": 69.590101,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8067,6 +8553,8 @@
    "dest_name": "Chelyabinsk",
    "dest_name_zh": "车里雅宾斯克",
    "country": "RU",
+   "lat": 55.1644419,
+   "lon": 61.4368432,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8099,6 +8587,8 @@
    "dest_name": "Tyumen",
    "dest_name_zh": "秋明",
    "country": "RU",
+   "lat": 57.1553394,
+   "lon": 65.5618637,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8131,6 +8621,8 @@
    "dest_name": "Oskemen",
    "dest_name_zh": "Oskemen",
    "country": "KZ",
+   "lat": 49.9749295,
+   "lon": 82.6017244,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8163,6 +8655,8 @@
    "dest_name": "Samarkand",
    "dest_name_zh": "撒马尔罕",
    "country": "UZ",
+   "lat": 39.627012,
+   "lon": 66.9749731,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8195,6 +8689,8 @@
    "dest_name": "Yerevan",
    "dest_name_zh": "埃里温",
    "country": "AM",
+   "lat": 40.1872023,
+   "lon": 44.515209,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8227,6 +8723,8 @@
    "dest_name": "Florence",
    "dest_name_zh": "佛罗伦萨",
    "country": "IT",
+   "lat": 43.7687324,
+   "lon": 11.2569013,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8259,6 +8757,8 @@
    "dest_name": "Ulan-Ude",
    "dest_name_zh": "乌兰乌德",
    "country": "RU",
+   "lat": 51.8335896,
+   "lon": 107.5840433,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8291,6 +8791,8 @@
    "dest_name": "Los Angeles",
    "dest_name_zh": "洛杉矶",
    "country": "US",
+   "lat": 34.0522342,
+   "lon": -118.2436849,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8323,6 +8825,8 @@
    "dest_name": "Yekaterinburg",
    "dest_name_zh": "叶卡捷琳堡",
    "country": "RU",
+   "lat": 56.8430993,
+   "lon": 60.6454086,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8355,6 +8859,8 @@
    "dest_name": "Manchester",
    "dest_name_zh": "曼彻斯特",
    "country": "GB",
+   "lat": 53.4807125,
+   "lon": -2.2343765,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8387,6 +8893,8 @@
    "dest_name": "Batumi",
    "dest_name_zh": "巴统",
    "country": "GE",
+   "lat": 41.6167547,
+   "lon": 41.6367455,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8419,6 +8927,8 @@
    "dest_name": "Nadi",
    "dest_name_zh": "楠迪",
    "country": "FJ",
+   "lat": -17.75327,
+   "lon": 177.45161,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8451,6 +8961,8 @@
    "dest_name": "Cape Town",
    "dest_name_zh": "开普敦",
    "country": "ZA",
+   "lat": -33.9248685,
+   "lon": 18.4240553,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8483,6 +8995,8 @@
    "dest_name": "Yuzhno-Sakhalinsk",
    "dest_name_zh": "南萨哈林斯克",
    "country": "RU",
+   "lat": 46.9640949,
+   "lon": 142.7284716,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8515,6 +9029,8 @@
    "dest_name": "Samara",
    "dest_name_zh": "萨马拉",
    "country": "RU",
+   "lat": 53.203772,
+   "lon": 50.1606382,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8547,6 +9063,8 @@
    "dest_name": "Las Vegas",
    "dest_name_zh": "拉斯维加斯",
    "country": "US",
+   "lat": 36.1699412,
+   "lon": -115.1398296,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8579,6 +9097,8 @@
    "dest_name": "Port Sudan",
    "dest_name_zh": "苏丹港",
    "country": "SD",
+   "lat": 19.5903471,
+   "lon": 37.1901616,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8611,6 +9131,8 @@
    "dest_name": "Zanzibar",
    "dest_name_zh": "桑吉巴",
    "country": "TZ",
+   "lat": -6.165193,
+   "lon": 39.1989144,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -8643,6 +9165,8 @@
    "dest_name": "Aktobe",
    "dest_name_zh": "Aktobe",
    "country": "KZ",
+   "lat": 50.2839339,
+   "lon": 57.166978,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8675,6 +9199,8 @@
    "dest_name": "Kaliningrad",
    "dest_name_zh": "加里宁格勒",
    "country": "RU",
+   "lat": 54.7104264,
+   "lon": 20.4522144,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8707,6 +9233,8 @@
    "dest_name": "Ufa",
    "dest_name_zh": "乌法",
    "country": "RU",
+   "lat": 54.7387621,
+   "lon": 55.9720554,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8739,6 +9267,8 @@
    "dest_name": "Novokuznetsk",
    "dest_name_zh": "新库兹涅茨克",
    "country": "RU",
+   "lat": 53.7595935,
+   "lon": 87.1215705,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8771,6 +9301,8 @@
    "dest_name": "Oral",
    "dest_name_zh": "Oral",
    "country": "KZ",
+   "lat": 51.227821,
+   "lon": 51.3865431,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8803,6 +9335,8 @@
    "dest_name": "Ontario",
    "dest_name_zh": "安大略",
    "country": "US",
+   "lat": 34.05,
+   "lon": -117.64,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8835,6 +9369,8 @@
    "dest_name": "Karagandy",
    "dest_name_zh": "卡拉干达",
    "country": "KZ",
+   "lat": 49.8046835,
+   "lon": 73.1093826,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8867,6 +9403,8 @@
    "dest_name": "Kilimanjaro",
    "dest_name_zh": "乞力马扎罗",
    "country": "TZ",
+   "lat": -3.424123,
+   "lon": 37.065342,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -8899,6 +9437,8 @@
    "dest_name": "New York",
    "dest_name_zh": "纽约",
    "country": "US",
+   "lat": 40.7143528,
+   "lon": -74.0059731,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8931,6 +9471,8 @@
    "dest_name": "Kabul",
    "dest_name_zh": "喀布尔",
    "country": "AF",
+   "lat": 34.56069,
+   "lon": 69.21152,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -8963,6 +9505,8 @@
    "dest_name": "Syktyvkar",
    "dest_name_zh": "瑟克特夫卡尔",
    "country": "RU",
+   "lat": 61.6641145,
+   "lon": 50.8168773,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -8995,6 +9539,8 @@
    "dest_name": "Mahe",
    "dest_name_zh": "马埃岛",
    "country": "SC",
+   "lat": -4.6826693,
+   "lon": 55.480396,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9027,6 +9573,8 @@
    "dest_name": "Orenburg",
    "dest_name_zh": "奥伦堡",
    "country": "RU",
+   "lat": 51.7666482,
+   "lon": 55.1004538,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9059,6 +9607,8 @@
    "dest_name": "Gorno-Altaysk",
    "dest_name_zh": "Gorno-Altaysk",
    "country": "RU",
+   "lat": 51.9587202,
+   "lon": 85.9601203,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9091,6 +9641,8 @@
    "dest_name": "Abakan",
    "dest_name_zh": "阿巴坎",
    "country": "RU",
+   "lat": 53.7175644,
+   "lon": 91.4293172,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9123,6 +9675,8 @@
    "dest_name": "Kigali",
    "dest_name_zh": "基加利",
    "country": "RW",
+   "lat": -1.9440727,
+   "lon": 30.0618851,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -9155,6 +9709,8 @@
    "dest_name": "Nice",
    "dest_name_zh": "尼斯",
    "country": "FR",
+   "lat": 43.7101728,
+   "lon": 7.2619532,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9187,6 +9743,8 @@
    "dest_name": "Port Moresby",
    "dest_name_zh": "泊特莫尔斯比港",
    "country": "PG",
+   "lat": -9.4438004,
+   "lon": 147.1802671,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9219,6 +9777,8 @@
    "dest_name": "Dallas",
    "dest_name_zh": "Dallas",
    "country": "US",
+   "lat": 32.7766642,
+   "lon": -96.7969879,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9251,6 +9811,8 @@
    "dest_name": "Petropavlovsk-Kamchatsky",
    "dest_name_zh": "彼得罗巴甫洛夫斯克",
    "country": "RU",
+   "lat": 53.0583997,
+   "lon": 158.6320734,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9283,6 +9845,8 @@
    "dest_name": "Perm",
    "dest_name_zh": "彼尔姆",
    "country": "RU",
+   "lat": 58.0091683,
+   "lon": 56.2269674,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9315,6 +9879,8 @@
    "dest_name": "Toronto",
    "dest_name_zh": "多伦多",
    "country": "CA",
+   "lat": 43.653524,
+   "lon": -79.3839069,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9347,6 +9913,8 @@
    "dest_name": "Montreal",
    "dest_name_zh": "蒙特利尔",
    "country": "CA",
+   "lat": 45.5088889,
+   "lon": -73.5541667,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9379,6 +9947,8 @@
    "dest_name": "Cancun",
    "dest_name_zh": "坎昆",
    "country": "MX",
+   "lat": 21.161908,
+   "lon": -86.8515279,
    "visa": {
     "status": "conditional",
     "label": "有条件免签",
@@ -9411,6 +9981,8 @@
    "dest_name": "Rarotonga",
    "dest_name_zh": "Rarotonga",
    "country": "CK",
+   "lat": -21.19992,
+   "lon": -159.79852,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9443,6 +10015,8 @@
    "dest_name": "Melbourne",
    "dest_name_zh": "墨尔本(美国)",
    "country": "US",
+   "lat": 28.1025,
+   "lon": -80.63028,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9475,6 +10049,8 @@
    "dest_name": "Houston",
    "dest_name_zh": "休斯敦",
    "country": "US",
+   "lat": 29.762778,
+   "lon": -95.383056,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9507,6 +10083,8 @@
    "dest_name": "Queenstown",
    "dest_name_zh": "皇后镇",
    "country": "NZ",
+   "lat": -45.022038,
+   "lon": 168.7391,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9539,6 +10117,8 @@
    "dest_name": "Sao Paulo",
    "dest_name_zh": "圣保罗",
    "country": "BR",
+   "lat": -23.5505199,
+   "lon": -46.6333094,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9571,6 +10151,8 @@
    "dest_name": "Mexico City",
    "dest_name_zh": "墨西哥城",
    "country": "MX",
+   "lat": 19.4270499,
+   "lon": -99.1275711,
    "visa": {
     "status": "conditional",
     "label": "有条件免签",
@@ -9603,6 +10185,8 @@
    "dest_name": "Buenos Aires",
    "dest_name_zh": "布宜诺斯艾利斯",
    "country": "AR",
+   "lat": -34.6084175,
+   "lon": -58.3731613,
    "visa": {
     "status": "conditional",
     "label": "有条件免签",
@@ -9635,6 +10219,8 @@
    "dest_name": "Rio de Janeiro",
    "dest_name_zh": "里约热内卢",
    "country": "BR",
+   "lat": -22.9068467,
+   "lon": -43.1728965,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9667,6 +10253,8 @@
    "dest_name": "Sydney",
    "dest_name_zh": "悉尼 (加拿大)",
    "country": "CA",
+   "lat": 46.1377317,
+   "lon": -60.1995746,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9699,6 +10287,8 @@
    "dest_name": "Saint John's",
    "dest_name_zh": "圣约翰的",
    "country": "AG",
+   "lat": 17.108334,
+   "lon": -61.76389,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9731,6 +10321,8 @@
    "dest_name": "Puerto Plata",
    "dest_name_zh": "普拉塔港",
    "country": "DO",
+   "lat": 19.7807686,
+   "lon": -70.6871091,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9763,6 +10355,8 @@
    "dest_name": "Bora Bora",
    "dest_name_zh": "博拉博拉",
    "country": "PF",
+   "lat": -16.501111,
+   "lon": -151.74,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -9796,6 +10390,8 @@
    "dest_name": "Johor Bahru",
    "dest_name_zh": "新山",
    "country": "MY",
+   "lat": 1.492659,
+   "lon": 103.7413591,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9827,6 +10423,8 @@
    "dest_name": "Kota Bharu",
    "dest_name_zh": "哥达巴鲁",
    "country": "MY",
+   "lat": 6.124785,
+   "lon": 102.2543825,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9858,6 +10456,8 @@
    "dest_name": "Penang",
    "dest_name_zh": "槟城",
    "country": "MY",
+   "lat": 5.4356367,
+   "lon": 100.3091,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9889,6 +10489,8 @@
    "dest_name": "Kuala Terengganu",
    "dest_name_zh": "瓜拉丁加奴",
    "country": "MY",
+   "lat": 5.329624,
+   "lon": 103.1370142,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9920,6 +10522,8 @@
    "dest_name": "Langkawi",
    "dest_name_zh": "兰卡威",
    "country": "MY",
+   "lat": 6.342174,
+   "lon": 99.7314,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9951,6 +10555,8 @@
    "dest_name": "Alor Setar",
    "dest_name_zh": "亚罗士打",
    "country": "MY",
+   "lat": 6.1263074,
+   "lon": 100.3671695,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -9982,6 +10588,8 @@
    "dest_name": "Singapore",
    "dest_name_zh": "新加坡",
    "country": "SG",
+   "lat": 1.352083,
+   "lon": 103.819836,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10013,6 +10621,8 @@
    "dest_name": "Pekanbaru",
    "dest_name_zh": "北干巴鲁",
    "country": "ID",
+   "lat": 0.5070677,
+   "lon": 101.4477793,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10044,6 +10654,8 @@
    "dest_name": "Padang",
    "dest_name_zh": "巴东",
    "country": "ID",
+   "lat": -0.9470832,
+   "lon": 100.417181,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10075,6 +10687,8 @@
    "dest_name": "Kuantan",
    "dest_name_zh": "关丹",
    "country": "MY",
+   "lat": 3.7633859,
+   "lon": 103.2201828,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10106,6 +10720,8 @@
    "dest_name": "Medan",
    "dest_name_zh": "棉兰",
    "country": "ID",
+   "lat": 3.5951956,
+   "lon": 98.6722227,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10137,6 +10753,8 @@
    "dest_name": "Sibu",
    "dest_name_zh": "泗务",
    "country": "MY",
+   "lat": 2.287284,
+   "lon": 111.830535,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10168,6 +10786,8 @@
    "dest_name": "Kuching",
    "dest_name_zh": "古晋",
    "country": "MY",
+   "lat": 1.553504,
+   "lon": 110.3592927,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10199,6 +10819,8 @@
    "dest_name": "Banda Aceh",
    "dest_name_zh": "班达亚齐",
    "country": "ID",
+   "lat": 5.5482904,
+   "lon": 95.3237559,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10230,6 +10852,8 @@
    "dest_name": "Batam",
    "dest_name_zh": "巴都贝萨尔",
    "country": "ID",
+   "lat": 1.123627,
+   "lon": 104.11528,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10261,6 +10885,8 @@
    "dest_name": "Phuket",
    "dest_name_zh": "普吉岛",
    "country": "TH",
+   "lat": 7.9519331,
+   "lon": 98.3380884,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10292,6 +10918,8 @@
    "dest_name": "Miri",
    "dest_name_zh": "米里",
    "country": "MY",
+   "lat": 4.399493,
+   "lon": 113.9913832,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10323,6 +10951,8 @@
    "dest_name": "Bintulu",
    "dest_name_zh": "宾图卢",
    "country": "MY",
+   "lat": 3.171772,
+   "lon": 113.04346,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10354,6 +10984,8 @@
    "dest_name": "Krabi",
    "dest_name_zh": "喀比",
    "country": "TH",
+   "lat": 8.097281,
+   "lon": 98.98062,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10385,6 +11017,8 @@
    "dest_name": "Sandakan",
    "dest_name_zh": "山打根",
    "country": "MY",
+   "lat": 5.839444,
+   "lon": 118.1171729,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10416,6 +11050,8 @@
    "dest_name": "Kota-Kinabalu",
    "dest_name_zh": "哥打基纳巴卢",
    "country": "MY",
+   "lat": 5.980408,
+   "lon": 116.0734568,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10447,6 +11083,8 @@
    "dest_name": "Jakarta",
    "dest_name_zh": "雅加达",
    "country": "ID",
+   "lat": -6.211544,
+   "lon": 106.845172,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10478,6 +11116,8 @@
    "dest_name": "Hat Yai",
    "dest_name_zh": "合艾",
    "country": "TH",
+   "lat": 7.0086472,
+   "lon": 100.4746879,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10509,6 +11149,8 @@
    "dest_name": "Da Nang",
    "dest_name_zh": "岘港",
    "country": "VN",
+   "lat": 16.055399,
+   "lon": 108.20298,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -10540,6 +11182,8 @@
    "dest_name": "Bangkok",
    "dest_name_zh": "曼谷",
    "country": "TH",
+   "lat": 13.7563309,
+   "lon": 100.5017651,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10571,6 +11215,8 @@
    "dest_name": "Surabaya",
    "dest_name_zh": "泗水",
    "country": "ID",
+   "lat": -7.2574719,
+   "lon": 112.7520883,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10602,6 +11248,8 @@
    "dest_name": "Ho Chi Minh City",
    "dest_name_zh": "胡志明市",
    "country": "VN",
+   "lat": 10.8230989,
+   "lon": 106.6296638,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -10613,7 +11261,7 @@
    "origin": "KUL",
    "dest": "DPS",
    "price": 447.0,
-   "depart": "2026-11-30",
+   "depart": "2026-11-14",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -10621,7 +11269,7 @@
    "distance": 1964,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-11T08:26:12",
+   "found_at": "2026-11-11T08:03:27",
    "source": "aviasales-latest",
    "id": "KUL-DPS|OW|0",
    "type": "fare",
@@ -10633,6 +11281,8 @@
    "dest_name": "Denpasar (Bali)",
    "dest_name_zh": "巴厘",
    "country": "ID",
+   "lat": -8.6704582,
+   "lon": 115.2126293,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10664,6 +11314,8 @@
    "dest_name": "Phu Quoc",
    "dest_name_zh": "富国岛",
    "country": "VN",
+   "lat": 10.223722,
+   "lon": 103.96324,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -10695,6 +11347,8 @@
    "dest_name": "Bandar Lampung",
    "dest_name_zh": "楠榜港",
    "country": "ID",
+   "lat": -5.3971396,
+   "lon": 105.2667887,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10726,6 +11380,8 @@
    "dest_name": "Tawau",
    "dest_name_zh": "斗湖",
    "country": "MY",
+   "lat": 4.244651,
+   "lon": 117.8911861,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10757,6 +11413,8 @@
    "dest_name": "Hong Kong",
    "dest_name_zh": "香港",
    "country": "HK",
+   "lat": 22.3193039,
+   "lon": 114.1693611,
    "visa": {
     "status": "easy",
     "label": "通行证",
@@ -10788,6 +11446,8 @@
    "dest_name": "Ipoh",
    "dest_name_zh": "怡保",
    "country": "MY",
+   "lat": 4.597479,
+   "lon": 101.090106,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10819,6 +11479,8 @@
    "dest_name": "Pontianak",
    "dest_name_zh": "坤甸",
    "country": "ID",
+   "lat": -0.0263303,
+   "lon": 109.3425039,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -10850,6 +11512,8 @@
    "dest_name": "Hanoi",
    "dest_name_zh": "河内",
    "country": "VN",
+   "lat": 21.0277644,
+   "lon": 105.8341598,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -10881,6 +11545,8 @@
    "dest_name": "Dalat",
    "dest_name_zh": "大叻",
    "country": "VN",
+   "lat": 11.9404192,
+   "lon": 108.4583132,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -10912,6 +11578,8 @@
    "dest_name": "Bandar Seri Begawan",
    "dest_name_zh": "斯里巴加湾",
    "country": "BN",
+   "lat": 4.9030522,
+   "lon": 114.939821,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10943,6 +11611,8 @@
    "dest_name": "Labuan",
    "dest_name_zh": "拉布安",
    "country": "MY",
+   "lat": 5.2831456,
+   "lon": 115.230825,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -10974,6 +11644,8 @@
    "dest_name": "Siem Reap",
    "dest_name_zh": "暹粒",
    "country": "KH",
+   "lat": 13.3632533,
+   "lon": 103.856403,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11005,6 +11677,8 @@
    "dest_name": "Nha Trang",
    "dest_name_zh": "芽庄",
    "country": "VN",
+   "lat": 12.2387911,
+   "lon": 109.1967488,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -11036,6 +11710,8 @@
    "dest_name": "Semarang",
    "dest_name_zh": "三宝拢",
    "country": "ID",
+   "lat": -7.0051453,
+   "lon": 110.4381254,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11067,6 +11743,8 @@
    "dest_name": "Yogyakarta",
    "dest_name_zh": "日惹",
    "country": "ID",
+   "lat": -7.7955798,
+   "lon": 110.3694896,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11098,6 +11776,8 @@
    "dest_name": "Nanning",
    "dest_name_zh": "南宁",
    "country": "CN",
+   "lat": 22.817002,
+   "lon": 108.366543,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11129,6 +11809,8 @@
    "dest_name": "Makassar",
    "dest_name_zh": "乌戒潘当",
    "country": "ID",
+   "lat": -5.1476651,
+   "lon": 119.4327314,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11160,6 +11842,8 @@
    "dest_name": "Sihanoukville",
    "dest_name_zh": "西哈努克城",
    "country": "KH",
+   "lat": 10.633333,
+   "lon": 103.5,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11191,6 +11875,8 @@
    "dest_name": "Balikpapan",
    "dest_name_zh": "巴里巴班",
    "country": "ID",
+   "lat": -1.2379274,
+   "lon": 116.8528526,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11222,6 +11908,8 @@
    "dest_name": "Labuan Bajo",
    "dest_name_zh": "下拉布安",
    "country": "ID",
+   "lat": -8.4538484,
+   "lon": 119.8728421,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11253,6 +11941,8 @@
    "dest_name": "Perth",
    "dest_name_zh": "佩斯",
    "country": "AU",
+   "lat": -31.9522222,
+   "lon": 115.8588889,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -11284,6 +11974,8 @@
    "dest_name": "Colombo",
    "dest_name_zh": "科伦坡",
    "country": "LK",
+   "lat": 6.927468,
+   "lon": 79.848358,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11315,6 +12007,8 @@
    "dest_name": "Praya",
    "dest_name_zh": "Praya",
    "country": "ID",
+   "lat": -8.757322,
+   "lon": 116.27667,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11346,6 +12040,8 @@
    "dest_name": "Cebu City",
    "dest_name_zh": "宿务",
    "country": "PH",
+   "lat": 10.313333,
+   "lon": 123.98278,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -11377,6 +12073,8 @@
    "dest_name": "Banjarmasin",
    "dest_name_zh": "马辰",
    "country": "ID",
+   "lat": -3.3186067,
+   "lon": 114.5943784,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11408,6 +12106,8 @@
    "dest_name": "Shanghai",
    "dest_name_zh": "上海",
    "country": "CN",
+   "lat": 31.230393,
+   "lon": 121.473704,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11439,6 +12139,8 @@
    "dest_name": "Shenzhen",
    "dest_name_zh": "深圳",
    "country": "CN",
+   "lat": 22.543099,
+   "lon": 114.057868,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11470,6 +12172,8 @@
    "dest_name": "Kunming",
    "dest_name_zh": "昆明",
    "country": "CN",
+   "lat": 24.880095,
+   "lon": 102.832891,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11501,6 +12205,8 @@
    "dest_name": "Phnom Penh",
    "dest_name_zh": "金边",
    "country": "KH",
+   "lat": 11.5563738,
+   "lon": 104.9282099,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11532,6 +12238,8 @@
    "dest_name": "Haiphong",
    "dest_name_zh": "海防",
    "country": "VN",
+   "lat": 20.8449115,
+   "lon": 106.6880841,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -11563,6 +12271,8 @@
    "dest_name": "Taipei",
    "dest_name_zh": "台北",
    "country": "TW",
+   "lat": 25.0329694,
+   "lon": 121.5654177,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -11594,6 +12304,8 @@
    "dest_name": "Guangzhou",
    "dest_name_zh": "广州",
    "country": "CN",
+   "lat": 23.12911,
+   "lon": 113.264385,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11625,6 +12337,8 @@
    "dest_name": "Macau",
    "dest_name_zh": "澳门",
    "country": "MO",
+   "lat": 22.198745,
+   "lon": 113.543873,
    "visa": {
     "status": "easy",
     "label": "通行证",
@@ -11656,6 +12370,8 @@
    "dest_name": "Vientiane",
    "dest_name_zh": "万象",
    "country": "LA",
+   "lat": 17.9757058,
+   "lon": 102.6331035,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -11687,6 +12403,8 @@
    "dest_name": "Manila",
    "dest_name_zh": "马尼拉",
    "country": "PH",
+   "lat": 14.5995124,
+   "lon": 120.9842195,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -11718,6 +12436,8 @@
    "dest_name": "Chiang Mai",
    "dest_name_zh": "清迈",
    "country": "TH",
+   "lat": 18.7952876,
+   "lon": 98.9620002,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -11749,6 +12469,8 @@
    "dest_name": "Mulu",
    "dest_name_zh": "穆鲁",
    "country": "MY",
+   "lat": 4.033333,
+   "lon": 114.8,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -11780,6 +12502,8 @@
    "dest_name": "Haikou",
    "dest_name_zh": "海口",
    "country": "CN",
+   "lat": 20.044412,
+   "lon": 110.198286,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11811,6 +12535,8 @@
    "dest_name": "Male",
    "dest_name_zh": "马累",
    "country": "MV",
+   "lat": 4.1754959,
+   "lon": 73.5093474,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -11842,6 +12568,8 @@
    "dest_name": "Koh Samui",
    "dest_name_zh": "苏梅岛",
    "country": "TH",
+   "lat": 9.555315,
+   "lon": 100.0628,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -11873,6 +12601,8 @@
    "dest_name": "Wuhan",
    "dest_name_zh": "武汉",
    "country": "CN",
+   "lat": 30.592849,
+   "lon": 114.305539,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11904,6 +12634,8 @@
    "dest_name": "Chennai",
    "dest_name_zh": "金奈",
    "country": "IN",
+   "lat": 13.0826802,
+   "lon": 80.2707184,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -11935,6 +12667,8 @@
    "dest_name": "Chengdu",
    "dest_name_zh": "成都",
    "country": "CN",
+   "lat": 30.572815,
+   "lon": 104.066801,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11966,6 +12700,8 @@
    "dest_name": "Guilin",
    "dest_name_zh": "桂林",
    "country": "CN",
+   "lat": 25.234479,
+   "lon": 110.179953,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -11997,6 +12733,8 @@
    "dest_name": "Thiruvananthapuram",
    "dest_name_zh": "特里凡得琅",
    "country": "IN",
+   "lat": 8.5241391,
+   "lon": 76.9366376,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -12028,6 +12766,8 @@
    "dest_name": "Nakhon Si Thammarat",
    "dest_name_zh": "那空是贪吗叻",
    "country": "TH",
+   "lat": 8.4324831,
+   "lon": 99.9599033,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12059,6 +12799,8 @@
    "dest_name": "Del Carmen",
    "dest_name_zh": "Del Carmen",
    "country": "PH",
+   "lat": 9.858889,
+   "lon": 126.013885,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12090,6 +12832,8 @@
    "dest_name": "Dhaka",
    "dest_name_zh": "达卡",
    "country": "BD",
+   "lat": 23.810332,
+   "lon": 90.4125181,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -12121,6 +12865,8 @@
    "dest_name": "Xian",
    "dest_name_zh": "西安",
    "country": "CN",
+   "lat": 34.341574,
+   "lon": 108.93977,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12152,6 +12898,8 @@
    "dest_name": "Ranong",
    "dest_name_zh": "拉廊",
    "country": "TH",
+   "lat": 9.852778,
+   "lon": 98.629166,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12183,6 +12931,8 @@
    "dest_name": "Caticlan",
    "dest_name_zh": "马来",
    "country": "PH",
+   "lat": 11.925263,
+   "lon": 121.9521,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12214,6 +12964,8 @@
    "dest_name": "Hangzhou",
    "dest_name_zh": "杭州",
    "country": "CN",
+   "lat": 30.274084,
+   "lon": 120.15507,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12245,6 +12997,8 @@
    "dest_name": "Dong Hoi",
    "dest_name_zh": "Dong Hoi",
    "country": "VN",
+   "lat": 17.515,
+   "lon": 106.59055,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -12276,6 +13030,8 @@
    "dest_name": "Sanya",
    "dest_name_zh": "三亚",
    "country": "CN",
+   "lat": 18.252847,
+   "lon": 109.511909,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12307,6 +13063,8 @@
    "dest_name": "Chongqing",
    "dest_name_zh": "重庆",
    "country": "CN",
+   "lat": 29.4315861,
+   "lon": 106.912251,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12338,6 +13096,8 @@
    "dest_name": "Surakarta",
    "dest_name_zh": "苏位卡尔塔",
    "country": "ID",
+   "lat": -7.5754887,
+   "lon": 110.8243272,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -12369,6 +13129,8 @@
    "dest_name": "Tiruchirappalli",
    "dest_name_zh": "蒂鲁吉拉伯利",
    "country": "IN",
+   "lat": 10.7904833,
+   "lon": 78.7046725,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -12400,6 +13162,8 @@
    "dest_name": "Kochi",
    "dest_name_zh": "库奇",
    "country": "IN",
+   "lat": 9.9312328,
+   "lon": 76.2673041,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -12431,6 +13195,8 @@
    "dest_name": "Luang Prabang",
    "dest_name_zh": "Luang Prabang",
    "country": "LA",
+   "lat": 19.897055,
+   "lon": 102.16371,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -12462,6 +13228,8 @@
    "dest_name": "Dumaguete",
    "dest_name_zh": "杜马格特",
    "country": "PH",
+   "lat": 9.3068402,
+   "lon": 123.3054467,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12493,6 +13261,8 @@
    "dest_name": "Bandung",
    "dest_name_zh": "万隆",
    "country": "ID",
+   "lat": -6.9174639,
+   "lon": 107.6191228,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -12524,6 +13294,8 @@
    "dest_name": "Qingdao",
    "dest_name_zh": "青岛",
    "country": "CN",
+   "lat": 36.067108,
+   "lon": 120.382609,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12555,6 +13327,8 @@
    "dest_name": "Surat Thani",
    "dest_name_zh": "万伦",
    "country": "TH",
+   "lat": 9.1382389,
+   "lon": 99.3217483,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12586,6 +13360,8 @@
    "dest_name": "Guiyang",
    "dest_name_zh": "贵阳",
    "country": "CN",
+   "lat": 26.647661,
+   "lon": 106.630153,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12617,6 +13393,8 @@
    "dest_name": "Beijing",
    "dest_name_zh": "北京",
    "country": "CN",
+   "lat": 39.904214,
+   "lon": 116.407413,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12648,6 +13426,8 @@
    "dest_name": "Malang",
    "dest_name_zh": "马朗",
    "country": "ID",
+   "lat": -7.9666204,
+   "lon": 112.6326321,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -12679,6 +13459,8 @@
    "dest_name": "Puerto Princesa",
    "dest_name_zh": "普林塞萨港",
    "country": "PH",
+   "lat": 9.7638429,
+   "lon": 118.7473298,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12710,6 +13492,8 @@
    "dest_name": "Kolkata",
    "dest_name_zh": "加尔格达",
    "country": "IN",
+   "lat": 22.572646,
+   "lon": 88.363895,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -12741,6 +13525,8 @@
    "dest_name": "Hyderabad",
    "dest_name_zh": "海德拉巴",
    "country": "IN",
+   "lat": 17.385044,
+   "lon": 78.486671,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -12772,6 +13558,8 @@
    "dest_name": "Seoul",
    "dest_name_zh": "首尔",
    "country": "KR",
+   "lat": 37.566535,
+   "lon": 126.9779692,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -12803,6 +13591,8 @@
    "dest_name": "Xining",
    "dest_name_zh": "西宁",
    "country": "CN",
+   "lat": 36.617134,
+   "lon": 101.778223,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12834,6 +13624,8 @@
    "dest_name": "Yichang",
    "dest_name_zh": "宜昌",
    "country": "CN",
+   "lat": 30.691966,
+   "lon": 111.286471,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12865,6 +13657,8 @@
    "dest_name": "Chumphon",
    "dest_name_zh": "春蓬",
    "country": "TH",
+   "lat": 10.4930496,
+   "lon": 99.1800199,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -12896,6 +13690,8 @@
    "dest_name": "Nanjing",
    "dest_name_zh": "南京",
    "country": "CN",
+   "lat": 32.060255,
+   "lon": 118.796877,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -12927,41 +13723,12 @@
    "dest_name": "Pattaya",
    "dest_name_zh": "乌塔保",
    "country": "TH",
+   "lat": 12.9235557,
+   "lon": 100.8824551,
    "visa": {
     "status": "free",
     "label": "免签",
     "note": "免签 60 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PUS",
-   "price": 1030.0,
-   "depart": "2026-11-17",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4570,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-06T04:34:06",
-   "source": "aviasales-latest",
-   "id": "KUL-PUS|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2254,
-   "dest_name": "Busan",
-   "dest_name_zh": "釜山",
-   "country": "KR",
-   "visa": {
-    "status": "free_partial",
-    "label": "部分免签",
-    "note": "仅济州岛免签 30 天，其他地区需签证"
    },
    "visited": false
   },
@@ -12989,6 +13756,8 @@
    "dest_name": "Pleiku",
    "dest_name_zh": "Pleiku",
    "country": "VN",
+   "lat": 13.9718356,
+   "lon": 108.0150796,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -13020,6 +13789,8 @@
    "dest_name": "Bengaluru",
    "dest_name_zh": "班加罗尔",
    "country": "IN",
+   "lat": 12.9715987,
+   "lon": 77.5945627,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -13051,6 +13822,8 @@
    "dest_name": "Harbin",
    "dest_name_zh": "哈尔滨",
    "country": "CN",
+   "lat": 45.803775,
+   "lon": 126.534967,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13082,6 +13855,8 @@
    "dest_name": "Jinjiang",
    "dest_name_zh": "晋江",
    "country": "CN",
+   "lat": 24.781681,
+   "lon": 118.552365,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13113,6 +13888,8 @@
    "dest_name": "Tambolaka",
    "dest_name_zh": "坦姆波拉卡",
    "country": "ID",
+   "lat": -9.340278,
+   "lon": 119.18306,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -13144,6 +13921,8 @@
    "dest_name": "Kathmandu",
    "dest_name_zh": "加德满都",
    "country": "NP",
+   "lat": 27.7172453,
+   "lon": 85.3239605,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -13175,6 +13954,8 @@
    "dest_name": "Jinan",
    "dest_name_zh": "济南",
    "country": "CN",
+   "lat": 36.6512,
+   "lon": 117.120095,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13206,10 +13987,45 @@
    "dest_name": "Gunungsitoli",
    "dest_name_zh": "古农西托利",
    "country": "ID",
+   "lat": 1.25,
+   "lon": 97.5,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "PUS",
+   "price": 1061.0,
+   "depart": "2026-11-17",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4570,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-11T09:12:42",
+   "source": "aviasales-latest",
+   "id": "KUL-PUS|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2322,
+   "dest_name": "Busan",
+   "dest_name_zh": "釜山",
+   "country": "KR",
+   "lat": 35.1795543,
+   "lon": 129.0756416,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
    },
    "visited": false
   },
@@ -13237,6 +14053,8 @@
    "dest_name": "Kalibo",
    "dest_name_zh": "卡利博",
    "country": "PH",
+   "lat": 11.687152,
+   "lon": 122.38183,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -13268,6 +14086,8 @@
    "dest_name": "Chiang Rai",
    "dest_name_zh": "清莱",
    "country": "TH",
+   "lat": 19.9104798,
+   "lon": 99.840576,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -13299,6 +14119,8 @@
    "dest_name": "Kaohsiung",
    "dest_name_zh": "高雄",
    "country": "TW",
+   "lat": 22.6272784,
+   "lon": 120.3014353,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -13330,6 +14152,8 @@
    "dest_name": "Hue",
    "dest_name_zh": "顺化",
    "country": "VN",
+   "lat": 16.4637117,
+   "lon": 107.5908628,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -13361,6 +14185,8 @@
    "dest_name": "Sumbawa Besar",
    "dest_name_zh": "松吧哇岛",
    "country": "ID",
+   "lat": -8.5,
+   "lon": 117.416664,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -13392,6 +14218,8 @@
    "dest_name": "Tagbilaran",
    "dest_name_zh": "塔比拉兰",
    "country": "PH",
+   "lat": 9.672948,
+   "lon": 123.8730022,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -13423,6 +14251,8 @@
    "dest_name": "Buri Ram",
    "dest_name_zh": "布里兰",
    "country": "TH",
+   "lat": 15.226944,
+   "lon": 103.25528,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -13454,6 +14284,8 @@
    "dest_name": "Shantou",
    "dest_name_zh": "揭阳",
    "country": "CN",
+   "lat": 23.354091,
+   "lon": 116.681972,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13485,6 +14317,8 @@
    "dest_name": "Xiamen",
    "dest_name_zh": "厦门",
    "country": "CN",
+   "lat": 24.479833,
+   "lon": 118.089425,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13516,6 +14350,8 @@
    "dest_name": "Lijiang",
    "dest_name_zh": "丽江",
    "country": "CN",
+   "lat": 26.855047,
+   "lon": 100.22775,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13547,6 +14383,8 @@
    "dest_name": "Yangon",
    "dest_name_zh": "仰光",
    "country": "MM",
+   "lat": 16.840939,
+   "lon": 96.173526,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -13578,6 +14416,8 @@
    "dest_name": "Taiyuan",
    "dest_name_zh": "太原",
    "country": "CN",
+   "lat": 37.87059,
+   "lon": 112.548879,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13609,6 +14449,8 @@
    "dest_name": "Tokyo",
    "dest_name_zh": "东京",
    "country": "JP",
+   "lat": 35.6761919,
+   "lon": 139.6503106,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -13640,6 +14482,8 @@
    "dest_name": "Melbourne",
    "dest_name_zh": "墨尔本",
    "country": "AU",
+   "lat": -37.8131869,
+   "lon": 144.9629796,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -13671,6 +14515,8 @@
    "dest_name": "Busuanga",
    "dest_name_zh": "Busuanga",
    "country": "PH",
+   "lat": 12.1,
+   "lon": 120.166664,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -13702,6 +14548,8 @@
    "dest_name": "Shenyang",
    "dest_name_zh": "沈阳",
    "country": "CN",
+   "lat": 41.805699,
+   "lon": 123.431472,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13733,6 +14581,8 @@
    "dest_name": "Osaka",
    "dest_name_zh": "大阪",
    "country": "JP",
+   "lat": 34.6937378,
+   "lon": 135.5021651,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -13764,6 +14614,8 @@
    "dest_name": "Ozamis City",
    "dest_name_zh": "Ozamis City",
    "country": "PH",
+   "lat": 8.162411,
+   "lon": 123.7741195,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -13795,6 +14647,8 @@
    "dest_name": "Hefei",
    "dest_name_zh": "合肥",
    "country": "CN",
+   "lat": 31.820591,
+   "lon": 117.227219,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13826,6 +14680,8 @@
    "dest_name": "Butuan",
    "dest_name_zh": "武端",
    "country": "PH",
+   "lat": 8.9475377,
+   "lon": 125.5406234,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -13857,6 +14713,8 @@
    "dest_name": "Fuzhou",
    "dest_name_zh": "福州",
    "country": "CN",
+   "lat": 26.074478,
+   "lon": 119.296482,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13888,6 +14746,8 @@
    "dest_name": "Nanchang",
    "dest_name_zh": "南昌",
    "country": "CN",
+   "lat": 28.682892,
+   "lon": 115.858197,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13919,6 +14779,8 @@
    "dest_name": "Daegu",
    "dest_name_zh": "大邱",
    "country": "KR",
+   "lat": 35.8714354,
+   "lon": 128.601445,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -13950,6 +14812,8 @@
    "dest_name": "Lanzhou",
    "dest_name_zh": "兰州",
    "country": "CN",
+   "lat": 36.061089,
+   "lon": 103.834303,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -13981,6 +14845,8 @@
    "dest_name": "Yiwu",
    "dest_name_zh": "义乌",
    "country": "CN",
+   "lat": 29.306756,
+   "lon": 120.07514,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14012,6 +14878,8 @@
    "dest_name": "Manado",
    "dest_name_zh": "万鸦老",
    "country": "ID",
+   "lat": 1.4748305,
+   "lon": 124.8420794,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -14043,6 +14911,8 @@
    "dest_name": "Kendari",
    "dest_name_zh": "肯达里",
    "country": "ID",
+   "lat": -3.9984597,
+   "lon": 122.5129742,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -14074,6 +14944,8 @@
    "dest_name": "Mumbai",
    "dest_name_zh": "孟买",
    "country": "IN",
+   "lat": 19.0759837,
+   "lon": 72.8776559,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14105,6 +14977,8 @@
    "dest_name": "Yanji",
    "dest_name_zh": "延吉",
    "country": "CN",
+   "lat": 42.891255,
+   "lon": 129.508945,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14136,6 +15010,8 @@
    "dest_name": "Hohhot",
    "dest_name_zh": "呼和浩特",
    "country": "CN",
+   "lat": 40.842356,
+   "lon": 111.749995,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14167,6 +15043,8 @@
    "dest_name": "Pangkalanbun",
    "dest_name_zh": "庞卡兰布翁",
    "country": "ID",
+   "lat": -2.7,
+   "lon": 111.666664,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -14198,6 +15076,8 @@
    "dest_name": "Zhengzhou",
    "dest_name_zh": "郑州",
    "country": "CN",
+   "lat": 34.746611,
+   "lon": 113.625328,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14229,6 +15109,8 @@
    "dest_name": "Ahmedabad",
    "dest_name_zh": "艾哈迈达巴德",
    "country": "IN",
+   "lat": 23.022505,
+   "lon": 72.5713621,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14260,6 +15142,8 @@
    "dest_name": "New Delhi",
    "dest_name_zh": "新德里",
    "country": "IN",
+   "lat": 28.6139391,
+   "lon": 77.2090212,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14291,6 +15175,8 @@
    "dest_name": "Okinawa",
    "dest_name_zh": "冲绳",
    "country": "JP",
+   "lat": 26.1201911,
+   "lon": 127.7025012,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14322,6 +15208,8 @@
    "dest_name": "City of Angeles",
    "dest_name_zh": "City of Angeles",
    "country": "PH",
+   "lat": 15.147181,
+   "lon": 120.584733,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14353,6 +15241,8 @@
    "dest_name": "Jining",
    "dest_name_zh": "济宁",
    "country": "CN",
+   "lat": 35.414982,
+   "lon": 116.587282,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14384,6 +15274,8 @@
    "dest_name": "Goa",
    "dest_name_zh": "果阿",
    "country": "IN",
+   "lat": 15.2993265,
+   "lon": 74.123996,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14415,6 +15307,8 @@
    "dest_name": "Jeju",
    "dest_name_zh": "济州",
    "country": "KR",
+   "lat": 33.4890113,
+   "lon": 126.4983023,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -14446,6 +15340,8 @@
    "dest_name": "Changzhou",
    "dest_name_zh": "常州",
    "country": "CN",
+   "lat": 31.811226,
+   "lon": 119.974061,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14477,6 +15373,8 @@
    "dest_name": "Changchun",
    "dest_name_zh": "长春",
    "country": "CN",
+   "lat": 43.817071,
+   "lon": 125.323544,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14508,6 +15406,8 @@
    "dest_name": "Iloilo",
    "dest_name_zh": "伊洛伊洛",
    "country": "PH",
+   "lat": 10.7201501,
+   "lon": 122.5621063,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14539,6 +15439,8 @@
    "dest_name": "El Nido",
    "dest_name_zh": "El Nido",
    "country": "PH",
+   "lat": 11.205556,
+   "lon": 119.41278,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14570,6 +15472,8 @@
    "dest_name": "Luzhou",
    "dest_name_zh": "泸州",
    "country": "CN",
+   "lat": 28.844757,
+   "lon": 105.37902,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14601,6 +15505,8 @@
    "dest_name": "Dayong",
    "dest_name_zh": "张家界",
    "country": "CN",
+   "lat": 29.10712,
+   "lon": 110.44569,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14632,6 +15538,8 @@
    "dest_name": "Sukhothai",
    "dest_name_zh": "素可泰",
    "country": "TH",
+   "lat": 17.223057,
+   "lon": 99.82222,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14663,6 +15571,8 @@
    "dest_name": "Davao City",
    "dest_name_zh": "达沃",
    "country": "PH",
+   "lat": 7.190708,
+   "lon": 125.455341,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14694,6 +15604,8 @@
    "dest_name": "Kotabaru",
    "dest_name_zh": "哥打巴鲁",
    "country": "ID",
+   "lat": -3.333333,
+   "lon": 116.333336,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -14725,6 +15637,8 @@
    "dest_name": "Lucknow",
    "dest_name_zh": "勒克瑙",
    "country": "IN",
+   "lat": 26.8466937,
+   "lon": 80.946166,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14756,6 +15670,8 @@
    "dest_name": "Yining",
    "dest_name_zh": "伊宁",
    "country": "CN",
+   "lat": 43.952,
+   "lon": 81.33144,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14787,6 +15703,8 @@
    "dest_name": "Frankfurt",
    "dest_name_zh": "法兰克福",
    "country": "DE",
+   "lat": 50.050735,
+   "lon": 8.570773,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14818,6 +15736,8 @@
    "dest_name": "Hua Hin",
    "dest_name_zh": "华欣",
    "country": "TH",
+   "lat": 12.6274,
+   "lon": 99.95145,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14849,6 +15769,8 @@
    "dest_name": "Gan Island",
    "dest_name_zh": "Gan Island",
    "country": "MV",
+   "lat": -0.690003,
+   "lon": 73.15654,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14880,6 +15802,8 @@
    "dest_name": "Miyazaki",
    "dest_name_zh": "宫崎",
    "country": "JP",
+   "lat": 31.9077285,
+   "lon": 131.4202196,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14911,6 +15835,8 @@
    "dest_name": "Nanyang",
    "dest_name_zh": "南阳",
    "country": "CN",
+   "lat": 32.9837,
+   "lon": 112.61305,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14942,6 +15868,8 @@
    "dest_name": "Urumqi",
    "dest_name_zh": "乌鲁木齐",
    "country": "CN",
+   "lat": 43.825592,
+   "lon": 87.616848,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14973,6 +15901,8 @@
    "dest_name": "Sapporo",
    "dest_name_zh": "札幌",
    "country": "JP",
+   "lat": 43.0620958,
+   "lon": 141.3543763,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15004,6 +15934,8 @@
    "dest_name": "Muscat",
    "dest_name_zh": "马斯喀特",
    "country": "OM",
+   "lat": 23.5880307,
+   "lon": 58.3828717,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15035,6 +15967,8 @@
    "dest_name": "Ambon",
    "dest_name_zh": "安汶",
    "country": "ID",
+   "lat": -3.6386665,
+   "lon": 128.1688559,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -15066,6 +16000,8 @@
    "dest_name": "Xuzhou",
    "dest_name_zh": "徐州",
    "country": "CN",
+   "lat": 34.205768,
+   "lon": 117.284124,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -15097,6 +16033,8 @@
    "dest_name": "London",
    "dest_name_zh": "伦敦",
    "country": "GB",
+   "lat": 51.5073509,
+   "lon": -0.1277583,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15128,6 +16066,8 @@
    "dest_name": "Vladivostok",
    "dest_name_zh": "海参崴",
    "country": "RU",
+   "lat": 43.1332484,
+   "lon": 131.9112975,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15159,6 +16099,8 @@
    "dest_name": "Doha",
    "dest_name_zh": "多哈",
    "country": "QA",
+   "lat": 25.2854473,
+   "lon": 51.5310398,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15190,6 +16132,8 @@
    "dest_name": "Manama",
    "dest_name_zh": "巴林",
    "country": "BH",
+   "lat": 26.2235305,
+   "lon": 50.5875935,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -15221,6 +16165,8 @@
    "dest_name": "Dili",
    "dest_name_zh": "Dili",
    "country": "TL",
+   "lat": -8.5568557,
+   "lon": 125.5603143,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -15252,6 +16198,8 @@
    "dest_name": "Sydney",
    "dest_name_zh": "悉尼",
    "country": "AU",
+   "lat": -33.8689009,
+   "lon": 151.2070914,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15283,6 +16231,8 @@
    "dest_name": "Foshan",
    "dest_name_zh": "佛山",
    "country": "CN",
+   "lat": 23.021548,
+   "lon": 113.121416,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -15314,6 +16264,8 @@
    "dest_name": "Cairns",
    "dest_name_zh": "凯恩斯",
    "country": "AU",
+   "lat": -16.9185514,
+   "lon": 145.7780548,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15345,6 +16297,8 @@
    "dest_name": "Lhasa",
    "dest_name_zh": "拉萨",
    "country": "CN",
+   "lat": 29.6534,
+   "lon": 91.1719,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -15376,6 +16330,8 @@
    "dest_name": "Rome",
    "dest_name_zh": "罗马",
    "country": "IT",
+   "lat": 41.8905198,
+   "lon": 12.4942486,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15407,6 +16363,8 @@
    "dest_name": "Varanasi",
    "dest_name_zh": "瓦拉纳西",
    "country": "IN",
+   "lat": 25.3176452,
+   "lon": 82.9739144,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15438,6 +16396,8 @@
    "dest_name": "Brisbane",
    "dest_name_zh": "布里斯班",
    "country": "AU",
+   "lat": -27.4709331,
+   "lon": 153.0235024,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15469,6 +16429,8 @@
    "dest_name": "Fukuoka",
    "dest_name_zh": "福冈",
    "country": "JP",
+   "lat": 33.5901838,
+   "lon": 130.4016888,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15500,6 +16462,8 @@
    "dest_name": "Istanbul",
    "dest_name_zh": "伊斯坦布尔",
    "country": "TR",
+   "lat": 41.0082376,
+   "lon": 28.9783589,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15531,6 +16495,8 @@
    "dest_name": "Stockholm",
    "dest_name_zh": "斯德哥尔摩",
    "country": "SE",
+   "lat": 59.3327881,
+   "lon": 18.0644881,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15562,6 +16528,8 @@
    "dest_name": "Almaty",
    "dest_name_zh": "阿拉木图",
    "country": "KZ",
+   "lat": 43.2220146,
+   "lon": 76.8512485,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15593,6 +16561,8 @@
    "dest_name": "Paris",
    "dest_name_zh": "巴黎",
    "country": "FR",
+   "lat": 48.856614,
+   "lon": 2.3522219,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15604,7 +16574,7 @@
    "origin": "KUL",
    "dest": "TAS",
    "price": 1699.0,
-   "depart": "2026-11-19",
+   "depart": "2026-11-16",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -15612,7 +16582,7 @@
    "distance": 5369,
    "airline": null,
    "gate": "Uzbekistan airways",
-   "found_at": "2026-11-11T08:14:58",
+   "found_at": "2026-11-11T08:11:04",
    "source": "aviasales-latest",
    "id": "KUL-TAS|OW|0",
    "type": "fare",
@@ -15624,6 +16594,8 @@
    "dest_name": "Tashkent",
    "dest_name_zh": "塔什干",
    "country": "UZ",
+   "lat": 41.2994958,
+   "lon": 69.2400734,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15655,6 +16627,8 @@
    "dest_name": "Trat",
    "dest_name_zh": "Trat",
    "country": "TH",
+   "lat": 12.273953,
+   "lon": 102.31867,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15686,6 +16660,8 @@
    "dest_name": "Wonju",
    "dest_name_zh": "原州市",
    "country": "KR",
+   "lat": 37.3422186,
+   "lon": 127.9201621,
    "visa": {
     "status": "free_partial",
     "label": "部分免签",
@@ -15717,6 +16693,8 @@
    "dest_name": "Luwuk",
    "dest_name_zh": "卢武克",
    "country": "ID",
+   "lat": -0.933333,
+   "lon": 122.78333,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -15748,6 +16726,8 @@
    "dest_name": "Dubai",
    "dest_name_zh": "迪拜",
    "country": "AE",
+   "lat": 25.2048493,
+   "lon": 55.2707828,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -15779,6 +16759,8 @@
    "dest_name": "Sorong",
    "dest_name_zh": "索龙",
    "country": "ID",
+   "lat": -0.8761629,
+   "lon": 131.255828,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -15810,6 +16792,8 @@
    "dest_name": "Pakse",
    "dest_name_zh": "Pakse",
    "country": "LA",
+   "lat": 15.1171823,
+   "lon": 105.8159045,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -15841,6 +16825,8 @@
    "dest_name": "Mangalore",
    "dest_name_zh": "曼加洛尔",
    "country": "IN",
+   "lat": 12.9141417,
+   "lon": 74.8559568,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15872,6 +16858,8 @@
    "dest_name": "Heihe",
    "dest_name_zh": "黑河",
    "country": "CN",
+   "lat": 50.245129,
+   "lon": 127.528293,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -15903,6 +16891,8 @@
    "dest_name": "Nagoya",
    "dest_name_zh": "名古屋",
    "country": "JP",
+   "lat": 35.1814506,
+   "lon": 136.9065571,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15934,6 +16924,8 @@
    "dest_name": "Lahore",
    "dest_name_zh": "拉合尔",
    "country": "PK",
+   "lat": 31.5203696,
+   "lon": 74.3587473,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -15965,6 +16957,8 @@
    "dest_name": "Cairo",
    "dest_name_zh": "开罗",
    "country": "EG",
+   "lat": 30.0444196,
+   "lon": 31.2357116,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -15996,6 +16990,8 @@
    "dest_name": "Amsterdam",
    "dest_name_zh": "阿姆斯特丹",
    "country": "NL",
+   "lat": 52.3730556,
+   "lon": 4.8922222,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16027,6 +17023,8 @@
    "dest_name": "Abu Dhabi",
    "dest_name_zh": "阿布扎比",
    "country": "AE",
+   "lat": 24.453884,
+   "lon": 54.3773438,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -16058,6 +17056,8 @@
    "dest_name": "Medina",
    "dest_name_zh": "麦地那城",
    "country": "SA",
+   "lat": 24.5246542,
+   "lon": 39.5691841,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -16089,6 +17089,8 @@
    "dest_name": "Bhubaneswar",
    "dest_name_zh": "布巴内斯瓦尔",
    "country": "IN",
+   "lat": 20.2960587,
+   "lon": 85.8245398,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16120,6 +17122,8 @@
    "dest_name": "Bucharest",
    "dest_name_zh": "布加勒斯特",
    "country": "RO",
+   "lat": 44.437711,
+   "lon": 26.097367,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16151,6 +17155,8 @@
    "dest_name": "Novosibirsk",
    "dest_name_zh": "新西伯利亚",
    "country": "RU",
+   "lat": 54.9832693,
+   "lon": 82.8963831,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -16182,6 +17188,8 @@
    "dest_name": "Dali",
    "dest_name_zh": "大理",
    "country": "CN",
+   "lat": 25.606486,
+   "lon": 100.267638,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -16213,6 +17221,8 @@
    "dest_name": "Vienna",
    "dest_name_zh": "维也纳",
    "country": "AT",
+   "lat": 48.2081743,
+   "lon": 16.3738189,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16244,6 +17254,8 @@
    "dest_name": "Izmir",
    "dest_name_zh": "伊兹密尔",
    "country": "TR",
+   "lat": 38.423734,
+   "lon": 27.142826,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -16275,6 +17287,8 @@
    "dest_name": "Kumamoto",
    "dest_name_zh": "熊本",
    "country": "JP",
+   "lat": 32.8032164,
+   "lon": 130.7079369,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16306,6 +17320,8 @@
    "dest_name": "Milan",
    "dest_name_zh": "米兰",
    "country": "IT",
+   "lat": 45.463681,
+   "lon": 9.1881714,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16337,6 +17353,8 @@
    "dest_name": "Sharjah",
    "dest_name_zh": "沙迦",
    "country": "AE",
+   "lat": 25.3462553,
+   "lon": 55.4209317,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -16368,6 +17386,8 @@
    "dest_name": "Helsinki",
    "dest_name_zh": "赫尔辛基",
    "country": "FI",
+   "lat": 60.1698557,
+   "lon": 24.9383791,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16399,6 +17419,8 @@
    "dest_name": "Amritsar",
    "dest_name_zh": "阿姆利则",
    "country": "IN",
+   "lat": 31.6339793,
+   "lon": 74.8722642,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16430,6 +17452,8 @@
    "dest_name": "Bishkek",
    "dest_name_zh": "比什凯克",
    "country": "KG",
+   "lat": 42.8746212,
+   "lon": 74.5697617,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16461,6 +17485,8 @@
    "dest_name": "Kerry County",
    "dest_name_zh": "克立",
    "country": "IE",
+   "lat": 52.181477,
+   "lon": -9.535666,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16492,6 +17518,8 @@
    "dest_name": "Alicante",
    "dest_name_zh": "阿利坎特",
    "country": "ES",
+   "lat": 38.34521,
+   "lon": -0.4809945,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16523,6 +17551,8 @@
    "dest_name": "Sharm el Sheikh",
    "dest_name_zh": "沙姆沙伊赫",
    "country": "EG",
+   "lat": 27.979357,
+   "lon": 34.385254,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -16554,6 +17584,8 @@
    "dest_name": "Valencia",
    "dest_name_zh": "巴伦西亚",
    "country": "ES",
+   "lat": 39.4699075,
+   "lon": -0.3762881,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16585,6 +17617,8 @@
    "dest_name": "Khabarovsk",
    "dest_name_zh": "哈巴罗夫斯克",
    "country": "RU",
+   "lat": 48.4814433,
+   "lon": 135.0720666,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -16616,6 +17650,8 @@
    "dest_name": "Weifang",
    "dest_name_zh": "潍坊",
    "country": "CN",
+   "lat": 36.706962,
+   "lon": 119.161748,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -16647,6 +17683,8 @@
    "dest_name": "Jixi",
    "dest_name_zh": "Jixi",
    "country": "CN",
+   "lat": 45.295075,
+   "lon": 130.969333,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -16678,6 +17716,8 @@
    "dest_name": "Hiroshima",
    "dest_name_zh": "广岛",
    "country": "JP",
+   "lat": 34.3852029,
+   "lon": 132.4552927,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16709,6 +17749,8 @@
    "dest_name": "Leh",
    "dest_name_zh": "列城",
    "country": "IN",
+   "lat": 34.14035,
+   "lon": 77.54746,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16740,6 +17782,8 @@
    "dest_name": "Prague",
    "dest_name_zh": "布拉格",
    "country": "CZ",
+   "lat": 50.0755381,
+   "lon": 14.4378005,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16771,6 +17815,8 @@
    "dest_name": "Bilbao",
    "dest_name_zh": "毕尔巴鄂",
    "country": "ES",
+   "lat": 43.2569629,
+   "lon": -2.9234409,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16802,6 +17848,8 @@
    "dest_name": "Copenhagen",
    "dest_name_zh": "哥本哈根",
    "country": "DK",
+   "lat": 55.6760968,
+   "lon": 12.5683372,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16833,6 +17881,8 @@
    "dest_name": "Irkutsk",
    "dest_name_zh": "伊尔库次克",
    "country": "RU",
+   "lat": 52.2869741,
+   "lon": 104.3050183,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -16864,6 +17914,8 @@
    "dest_name": "Madrid",
    "dest_name_zh": "马德里",
    "country": "ES",
+   "lat": 40.4166909,
+   "lon": -3.7003454,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16895,6 +17947,8 @@
    "dest_name": "Catania",
    "dest_name_zh": "卡塔尼亚",
    "country": "IT",
+   "lat": 37.5078772,
+   "lon": 15.0830304,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16926,6 +17980,8 @@
    "dest_name": "Chandigarh",
    "dest_name_zh": "昌迪加尔",
    "country": "IN",
+   "lat": 30.7333148,
+   "lon": 76.7794179,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16957,6 +18013,8 @@
    "dest_name": "Geneva",
    "dest_name_zh": "日内瓦",
    "country": "CH",
+   "lat": 46.1983922,
+   "lon": 6.1422961,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16988,6 +18046,8 @@
    "dest_name": "Antalya",
    "dest_name_zh": "安塔利亚",
    "country": "TR",
+   "lat": 36.8968908,
+   "lon": 30.7133233,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17019,6 +18079,8 @@
    "dest_name": "Dubrovnik",
    "dest_name_zh": "杜勃罗夫尼克",
    "country": "HR",
+   "lat": 42.56072,
+   "lon": 18.260616,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17050,6 +18112,8 @@
    "dest_name": "Moscow",
    "dest_name_zh": "莫斯科",
    "country": "RU",
+   "lat": 55.755786,
+   "lon": 37.617633,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17081,6 +18145,8 @@
    "dest_name": "Edinburgh",
    "dest_name_zh": "爱丁堡",
    "country": "GB",
+   "lat": 55.9501755,
+   "lon": -3.1875359,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17112,6 +18178,8 @@
    "dest_name": "Komatsu",
    "dest_name_zh": "小松",
    "country": "JP",
+   "lat": 36.40237,
+   "lon": 136.41342,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17143,6 +18211,8 @@
    "dest_name": "Samarkand",
    "dest_name_zh": "撒马尔罕",
    "country": "UZ",
+   "lat": 39.627012,
+   "lon": 66.9749731,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17174,6 +18244,8 @@
    "dest_name": "Barcelona",
    "dest_name_zh": "巴塞罗那",
    "country": "ES",
+   "lat": 41.387917,
+   "lon": 2.1699187,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17205,6 +18277,8 @@
    "dest_name": "Bhopal",
    "dest_name_zh": "博帕尔",
    "country": "IN",
+   "lat": 23.2599333,
+   "lon": 77.412615,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17236,6 +18310,8 @@
    "dest_name": "Warsaw",
    "dest_name_zh": "华沙",
    "country": "PL",
+   "lat": 52.2296756,
+   "lon": 21.0122287,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17267,6 +18343,8 @@
    "dest_name": "Tirana",
    "dest_name_zh": "地拉那",
    "country": "AL",
+   "lat": 41.3275459,
+   "lon": 19.8186982,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17298,6 +18376,8 @@
    "dest_name": "Alanya",
    "dest_name_zh": "Alanya",
    "country": "TR",
+   "lat": 36.544443,
+   "lon": 31.995408,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17329,6 +18409,8 @@
    "dest_name": "Brussels",
    "dest_name_zh": "布鲁塞尔",
    "country": "BE",
+   "lat": 50.8503396,
+   "lon": 4.3517103,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17360,6 +18442,8 @@
    "dest_name": "Sofia",
    "dest_name_zh": "索非亚",
    "country": "BG",
+   "lat": 42.6977082,
+   "lon": 23.3218675,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17391,6 +18475,8 @@
    "dest_name": "Dublin",
    "dest_name_zh": "都柏林",
    "country": "IE",
+   "lat": 53.3498053,
+   "lon": -6.2603097,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17422,6 +18508,8 @@
    "dest_name": "Lisbon",
    "dest_name_zh": "里斯本",
    "country": "PT",
+   "lat": 38.7222524,
+   "lon": -9.1393366,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17453,6 +18541,8 @@
    "dest_name": "Chisinau",
    "dest_name_zh": "基辛那乌",
    "country": "MD",
+   "lat": 47.0104529,
+   "lon": 28.8638102,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17484,6 +18574,8 @@
    "dest_name": "Casablanca",
    "dest_name_zh": "Casablanca",
    "country": "MA",
+   "lat": 33.533333,
+   "lon": -7.583333,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17515,6 +18607,8 @@
    "dest_name": "Budapest",
    "dest_name_zh": "布达佩斯",
    "country": "HU",
+   "lat": 47.4984056,
+   "lon": 19.0407578,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17546,6 +18640,8 @@
    "dest_name": "Liverpool",
    "dest_name_zh": "利物浦",
    "country": "GB",
+   "lat": 53.4083714,
+   "lon": -2.9915726,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17577,6 +18673,8 @@
    "dest_name": "Nairobi",
    "dest_name_zh": "内罗毕",
    "country": "KE",
+   "lat": -1.2833333,
+   "lon": 36.8166667,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -17608,6 +18706,8 @@
    "dest_name": "Johannesburg",
    "dest_name_zh": "约翰内斯堡",
    "country": "ZA",
+   "lat": -26.2041028,
+   "lon": 28.0473051,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17639,6 +18739,8 @@
    "dest_name": "Oslo",
    "dest_name_zh": "奥斯陆",
    "country": "NO",
+   "lat": 59.9138688,
+   "lon": 10.7522454,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17670,6 +18772,8 @@
    "dest_name": "Sarajevo",
    "dest_name_zh": "萨拉热窝",
    "country": "BA",
+   "lat": 43.8562586,
+   "lon": 18.4130763,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17701,6 +18805,8 @@
    "dest_name": "Palma",
    "dest_name_zh": "马略卡",
    "country": "ES",
+   "lat": 39.5696005,
+   "lon": 2.6501603,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17732,6 +18838,8 @@
    "dest_name": "Ankara",
    "dest_name_zh": "安卡拉",
    "country": "TR",
+   "lat": 39.9333635,
+   "lon": 32.8597419,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17763,6 +18871,8 @@
    "dest_name": "Kanpur",
    "dest_name_zh": "坎普尔",
    "country": "IN",
+   "lat": 26.449923,
+   "lon": 80.3318736,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17794,6 +18904,8 @@
    "dest_name": "Pisa",
    "dest_name_zh": "比萨",
    "country": "IT",
+   "lat": 43.7228386,
+   "lon": 10.4016888,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17825,6 +18937,8 @@
    "dest_name": "Riga",
    "dest_name_zh": "里加",
    "country": "LV",
+   "lat": 56.9496487,
+   "lon": 24.1051865,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17856,6 +18970,8 @@
    "dest_name": "Belgrade",
    "dest_name_zh": "贝尔格莱德",
    "country": "RS",
+   "lat": 44.786568,
+   "lon": 20.4489216,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17887,6 +19003,8 @@
    "dest_name": "Tbilisi",
    "dest_name_zh": "第比利斯",
    "country": "GE",
+   "lat": 41.7151377,
+   "lon": 44.827096,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -17918,6 +19036,8 @@
    "dest_name": "Jeddah",
    "dest_name_zh": "吉达",
    "country": "SA",
+   "lat": 21.485811,
+   "lon": 39.1925048,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -17949,6 +19069,8 @@
    "dest_name": "Athens",
    "dest_name_zh": "雅典",
    "country": "GR",
+   "lat": 37.9838096,
+   "lon": 23.7275388,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -17980,6 +19102,8 @@
    "dest_name": "Astana",
    "dest_name_zh": "阿斯塔纳",
    "country": "KZ",
+   "lat": 51.147222,
+   "lon": 71.422222,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18011,6 +19135,8 @@
    "dest_name": "Canberra",
    "dest_name_zh": "堪培拉",
    "country": "AU",
+   "lat": -35.2809368,
+   "lon": 149.1300092,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18042,6 +19168,8 @@
    "dest_name": "Adelaide",
    "dest_name_zh": "阿德莱德",
    "country": "AU",
+   "lat": -34.9286212,
+   "lon": 138.5999594,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18073,6 +19201,8 @@
    "dest_name": "Zurich",
    "dest_name_zh": "苏黎世",
    "country": "CH",
+   "lat": 47.367347,
+   "lon": 8.5500025,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18104,6 +19234,8 @@
    "dest_name": "Mauritius",
    "dest_name_zh": "毛里求斯",
    "country": "MU",
+   "lat": -20.1608912,
+   "lon": 57.5012222,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18135,6 +19267,8 @@
    "dest_name": "Bhavnagar",
    "dest_name_zh": "巴夫那加尔",
    "country": "IN",
+   "lat": 21.7644725,
+   "lon": 72.1519304,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18166,6 +19300,8 @@
    "dest_name": "Cologne",
    "dest_name_zh": "科隆",
    "country": "DE",
+   "lat": 50.9406645,
+   "lon": 6.9599115,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18197,6 +19333,8 @@
    "dest_name": "Krasnodar",
    "dest_name_zh": "克拉斯诺达尔",
    "country": "RU",
+   "lat": 45.0392674,
+   "lon": 38.9872209,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18228,6 +19366,8 @@
    "dest_name": "Dusseldorf",
    "dest_name_zh": "杜塞尔多夫",
    "country": "DE",
+   "lat": 51.2249429,
+   "lon": 6.7756524,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18259,6 +19399,8 @@
    "dest_name": "Salalah",
    "dest_name_zh": "塞拉莱",
    "country": "OM",
+   "lat": 17.0193843,
+   "lon": 54.1107505,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18290,6 +19432,8 @@
    "dest_name": "Lamezia Terme",
    "dest_name_zh": "拉默齐亚",
    "country": "IT",
+   "lat": 38.962912,
+   "lon": 16.3092719,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18321,6 +19465,8 @@
    "dest_name": "Nice",
    "dest_name_zh": "尼斯",
    "country": "FR",
+   "lat": 43.7101728,
+   "lon": 7.2619532,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18352,6 +19498,8 @@
    "dest_name": "Aktobe",
    "dest_name_zh": "Aktobe",
    "country": "KZ",
+   "lat": 50.2839339,
+   "lon": 57.166978,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18383,6 +19531,8 @@
    "dest_name": "Osh",
    "dest_name_zh": "奥什",
    "country": "KG",
+   "lat": 40.5139985,
+   "lon": 72.8160976,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18414,6 +19564,8 @@
    "dest_name": "Islamabad",
    "dest_name_zh": "伊斯兰堡",
    "country": "PK",
+   "lat": 33.6844202,
+   "lon": 73.0478848,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18445,6 +19597,8 @@
    "dest_name": "Porto",
    "dest_name_zh": "波尔图",
    "country": "PT",
+   "lat": 41.1579438,
+   "lon": -8.6291053,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18476,6 +19630,8 @@
    "dest_name": "Dushanbe",
    "dest_name_zh": "杜尚别",
    "country": "TJ",
+   "lat": 38.5597722,
+   "lon": 68.7870384,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18507,6 +19663,8 @@
    "dest_name": "Munich",
    "dest_name_zh": "慕尼黑",
    "country": "DE",
+   "lat": 48.1391265,
+   "lon": 11.5801863,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18538,6 +19696,8 @@
    "dest_name": "Shymkent",
    "dest_name_zh": "Shymkent",
    "country": "KZ",
+   "lat": 42.3416847,
+   "lon": 69.590101,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18569,6 +19729,8 @@
    "dest_name": "Kutaisi",
    "dest_name_zh": "库塔伊西",
    "country": "GE",
+   "lat": 42.2662428,
+   "lon": 42.7180019,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18600,6 +19762,8 @@
    "dest_name": "Berlin",
    "dest_name_zh": "勃兰登堡国际机场",
    "country": "DE",
+   "lat": 52.5234051,
+   "lon": 13.4113999,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18631,6 +19795,8 @@
    "dest_name": "Ercan",
    "dest_name_zh": "埃阿坎",
    "country": "NY",
+   "lat": 35.15812,
+   "lon": 33.50307,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18662,6 +19828,8 @@
    "dest_name": "Baku",
    "dest_name_zh": "巴库",
    "country": "AZ",
+   "lat": 40.4092617,
+   "lon": 49.8670924,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18693,6 +19861,8 @@
    "dest_name": "Manchester",
    "dest_name_zh": "曼彻斯特",
    "country": "GB",
+   "lat": 53.4807125,
+   "lon": -2.2343765,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18724,6 +19894,8 @@
    "dest_name": "Dammam",
    "dest_name_zh": "达曼",
    "country": "SA",
+   "lat": 26.4206828,
+   "lon": 50.0887943,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -18755,6 +19927,8 @@
    "dest_name": "Oskemen",
    "dest_name_zh": "Oskemen",
    "country": "KZ",
+   "lat": 49.9749295,
+   "lon": 82.6017244,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18786,6 +19960,8 @@
    "dest_name": "Kuwait City",
    "dest_name_zh": "科威特",
    "country": "KW",
+   "lat": 29.375859,
+   "lon": 47.9774052,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18817,6 +19993,8 @@
    "dest_name": "Hurghada",
    "dest_name_zh": "赫尔加达",
    "country": "EG",
+   "lat": 27.2578957,
+   "lon": 33.8116067,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -18848,6 +20026,8 @@
    "dest_name": "Adler/Sochi",
    "dest_name_zh": "索契",
    "country": "RU",
+   "lat": 43.4343234,
+   "lon": 39.9339462,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18879,6 +20059,8 @@
    "dest_name": "Pokhara",
    "dest_name_zh": "Pokhara",
    "country": "NP",
+   "lat": 28.197222,
+   "lon": 83.986115,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -18910,6 +20092,8 @@
    "dest_name": "Saint Petersburg",
    "dest_name_zh": "圣彼得堡",
    "country": "RU",
+   "lat": 59.9310584,
+   "lon": 30.3609096,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -18941,6 +20125,8 @@
    "dest_name": "Vilnius",
    "dest_name_zh": "维尔纽斯",
    "country": "LT",
+   "lat": 54.6871555,
+   "lon": 25.2796514,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -18972,6 +20158,8 @@
    "dest_name": "Malaga",
    "dest_name_zh": "马拉加",
    "country": "ES",
+   "lat": 36.7196484,
+   "lon": -4.4200163,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19003,6 +20191,8 @@
    "dest_name": "Baghdad",
    "dest_name_zh": "巴格达",
    "country": "IQ",
+   "lat": 33.315241,
+   "lon": 44.3660671,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19034,6 +20224,8 @@
    "dest_name": "Ulaanbaatar",
    "dest_name_zh": "乌兰巴托",
    "country": "MN",
+   "lat": 47.8863988,
+   "lon": 106.9057439,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19065,6 +20257,8 @@
    "dest_name": "Batumi",
    "dest_name_zh": "巴统",
    "country": "GE",
+   "lat": 41.6167547,
+   "lon": 41.6367455,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19096,6 +20290,8 @@
    "dest_name": "Yerevan",
    "dest_name_zh": "埃里温",
    "country": "AM",
+   "lat": 40.1872023,
+   "lon": 44.515209,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19127,6 +20323,8 @@
    "dest_name": "Birmingham",
    "dest_name_zh": "伯明翰",
    "country": "GB",
+   "lat": 52.4829614,
+   "lon": -1.893592,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19158,6 +20356,8 @@
    "dest_name": "Oral",
    "dest_name_zh": "Oral",
    "country": "KZ",
+   "lat": 51.227821,
+   "lon": 51.3865431,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19189,6 +20389,8 @@
    "dest_name": "Kazan",
    "dest_name_zh": "喀山",
    "country": "RU",
+   "lat": 55.7878944,
+   "lon": 49.1233294,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19220,6 +20422,8 @@
    "dest_name": "Chita",
    "dest_name_zh": "赤塔",
    "country": "RU",
+   "lat": 52.0515032,
+   "lon": 113.4711906,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19251,6 +20455,8 @@
    "dest_name": "Rajkot",
    "dest_name_zh": "拉杰果德",
    "country": "IN",
+   "lat": 22.3038945,
+   "lon": 70.8021599,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19282,6 +20488,8 @@
    "dest_name": "Algiers",
    "dest_name_zh": "阿爾及爾",
    "country": "DZ",
+   "lat": 36.753768,
+   "lon": 3.0587561,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19313,6 +20521,8 @@
    "dest_name": "Samara",
    "dest_name_zh": "萨马拉",
    "country": "RU",
+   "lat": 53.203772,
+   "lon": 50.1606382,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19344,6 +20554,8 @@
    "dest_name": "Hamburg",
    "dest_name_zh": "汉堡",
    "country": "DE",
+   "lat": 53.553813,
+   "lon": 9.991586,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19375,6 +20587,8 @@
    "dest_name": "Yuzhno-Sakhalinsk",
    "dest_name_zh": "南萨哈林斯克",
    "country": "RU",
+   "lat": 46.9640949,
+   "lon": 142.7284716,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19406,6 +20620,8 @@
    "dest_name": "Venice",
    "dest_name_zh": "威尼斯",
    "country": "IT",
+   "lat": 45.4408474,
+   "lon": 12.3155151,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19437,6 +20653,8 @@
    "dest_name": "Mineralnye Vody",
    "dest_name_zh": "矿泉城机场",
    "country": "RU",
+   "lat": 44.211675,
+   "lon": 43.1238527,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19468,6 +20686,8 @@
    "dest_name": "Ashgabat",
    "dest_name_zh": "阿什哈巴德",
    "country": "TM",
+   "lat": 37.9600766,
+   "lon": 58.3260629,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -19499,6 +20719,8 @@
    "dest_name": "Ufa",
    "dest_name_zh": "乌法",
    "country": "RU",
+   "lat": 54.7387621,
+   "lon": 55.9720554,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19530,6 +20752,8 @@
    "dest_name": "Kagoshima",
    "dest_name_zh": "鹿儿岛",
    "country": "JP",
+   "lat": 31.5968539,
+   "lon": 130.5571392,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19561,6 +20785,8 @@
    "dest_name": "Varna",
    "dest_name_zh": "瓦尔纳",
    "country": "BG",
+   "lat": 43.2140504,
+   "lon": 27.9147333,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19592,6 +20818,8 @@
    "dest_name": "Aktau",
    "dest_name_zh": "阿克套",
    "country": "KZ",
+   "lat": 43.6588079,
+   "lon": 51.1974563,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19623,6 +20851,8 @@
    "dest_name": "Minsk",
    "dest_name_zh": "明斯克",
    "country": "BY",
+   "lat": 53.9,
+   "lon": 27.5666667,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19654,6 +20884,8 @@
    "dest_name": "Ulan-Ude",
    "dest_name_zh": "乌兰乌德",
    "country": "RU",
+   "lat": 51.8335896,
+   "lon": 107.5840433,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19685,6 +20917,8 @@
    "dest_name": "Heho",
    "dest_name_zh": "Heho",
    "country": "MM",
+   "lat": 20.743862,
+   "lon": 96.79341,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -19716,6 +20950,8 @@
    "dest_name": "Nottingham",
    "dest_name_zh": "诺丁汉",
    "country": "GB",
+   "lat": 52.9551147,
+   "lon": -1.1491718,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19747,6 +20983,8 @@
    "dest_name": "Karachi",
    "dest_name_zh": "卡拉奇",
    "country": "PK",
+   "lat": 24.8607343,
+   "lon": 67.0011364,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19778,6 +21016,8 @@
    "dest_name": "Vladikavkaz",
    "dest_name_zh": "弗拉季高加索",
    "country": "RU",
+   "lat": 43.0252344,
+   "lon": 44.6659759,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19809,6 +21049,8 @@
    "dest_name": "Erbil",
    "dest_name_zh": "阿尔贝拉",
    "country": "IQ",
+   "lat": 36.190073,
+   "lon": 43.9930303,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19840,6 +21082,8 @@
    "dest_name": "Larnaca",
    "dest_name_zh": "拉纳卡",
    "country": "CY",
+   "lat": 34.9002535,
+   "lon": 33.6231723,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19871,6 +21115,8 @@
    "dest_name": "Hail",
    "dest_name_zh": "Hail",
    "country": "SA",
+   "lat": 27.5114102,
+   "lon": 41.7208243,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -19902,6 +21148,8 @@
    "dest_name": "Groznyy",
    "dest_name_zh": "格罗兹尼",
    "country": "RU",
+   "lat": 43.3168796,
+   "lon": 45.6814856,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19933,6 +21181,8 @@
    "dest_name": "Verona",
    "dest_name_zh": "维罗纳",
    "country": "IT",
+   "lat": 45.4383278,
+   "lon": 10.9917623,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19964,6 +21214,8 @@
    "dest_name": "Makhachkala",
    "dest_name_zh": "马哈奇卡拉",
    "country": "RU",
+   "lat": 42.9666308,
+   "lon": 47.5126285,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -19995,6 +21247,8 @@
    "dest_name": "Omsk",
    "dest_name_zh": "鄂木斯克",
    "country": "RU",
+   "lat": 54.9913545,
+   "lon": 73.3645204,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20026,6 +21280,8 @@
    "dest_name": "Nadi",
    "dest_name_zh": "楠迪",
    "country": "FJ",
+   "lat": -17.75327,
+   "lon": 177.45161,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20057,6 +21313,8 @@
    "dest_name": "Krasnoyarsk",
    "dest_name_zh": "克拉斯诺尔斯克",
    "country": "RU",
+   "lat": 56.18113,
+   "lon": 92.48286,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20088,6 +21346,8 @@
    "dest_name": "Darwin",
    "dest_name_zh": "达尔文",
    "country": "AU",
+   "lat": -12.4628198,
+   "lon": 130.8417694,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20119,6 +21379,8 @@
    "dest_name": "Auckland",
    "dest_name_zh": "奥克兰",
    "country": "NZ",
+   "lat": -36.8484597,
+   "lon": 174.7633315,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20150,6 +21412,8 @@
    "dest_name": "Kilimanjaro",
    "dest_name_zh": "乞力马扎罗",
    "country": "TZ",
+   "lat": -3.424123,
+   "lon": 37.065342,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -20181,6 +21445,8 @@
    "dest_name": "Yekaterinburg",
    "dest_name_zh": "叶卡捷琳堡",
    "country": "RU",
+   "lat": 56.8430993,
+   "lon": 60.6454086,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20212,6 +21478,8 @@
    "dest_name": "Mersin",
    "dest_name_zh": "梅爾辛",
    "country": "TR",
+   "lat": 36.9165,
+   "lon": 34.8951,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20243,6 +21511,8 @@
    "dest_name": "Pavlodar",
    "dest_name_zh": "Pavlodar",
    "country": "KZ",
+   "lat": 52.2873032,
+   "lon": 76.9674023,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20274,6 +21544,8 @@
    "dest_name": "Kefallinia",
    "dest_name_zh": "凯法利尼亚",
    "country": "GR",
+   "lat": 38.118057,
+   "lon": 20.505556,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20305,6 +21577,8 @@
    "dest_name": "Zagreb",
    "dest_name_zh": "萨格勒布",
    "country": "HR",
+   "lat": 45.8150108,
+   "lon": 15.9819189,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20336,6 +21610,8 @@
    "dest_name": "Perm",
    "dest_name_zh": "彼尔姆",
    "country": "RU",
+   "lat": 58.0091683,
+   "lon": 56.2269674,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20367,6 +21643,8 @@
    "dest_name": "Izhevsk",
    "dest_name_zh": "伊热夫斯克",
    "country": "RU",
+   "lat": 56.8618601,
+   "lon": 53.2324284,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20398,6 +21676,8 @@
    "dest_name": "Chelyabinsk",
    "dest_name_zh": "车里雅宾斯克",
    "country": "RU",
+   "lat": 55.1644419,
+   "lon": 61.4368432,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20429,6 +21709,8 @@
    "dest_name": "San Francisco",
    "dest_name_zh": "旧金山",
    "country": "US",
+   "lat": 37.7749295,
+   "lon": -122.4194155,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20460,6 +21742,8 @@
    "dest_name": "Nizhniy Novgorod",
    "dest_name_zh": "下诺夫格罗德",
    "country": "RU",
+   "lat": 56.3268684,
+   "lon": 44.0058793,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20491,6 +21775,8 @@
    "dest_name": "Port Sudan",
    "dest_name_zh": "苏丹港",
    "country": "SD",
+   "lat": 19.5903471,
+   "lon": 37.1901616,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20522,6 +21808,8 @@
    "dest_name": "Kaliningrad",
    "dest_name_zh": "加里宁格勒",
    "country": "RU",
+   "lat": 54.7104264,
+   "lon": 20.4522144,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20553,6 +21841,8 @@
    "dest_name": "Dar Es Salaam",
    "dest_name_zh": "达累斯萨拉姆",
    "country": "TZ",
+   "lat": -6.792354,
+   "lon": 39.2083284,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -20584,6 +21874,8 @@
    "dest_name": "Peshawar",
    "dest_name_zh": "白沙瓦",
    "country": "PK",
+   "lat": 34.0151366,
+   "lon": 71.5249154,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20615,6 +21907,8 @@
    "dest_name": "Newcastle",
    "dest_name_zh": "纽卡斯尔",
    "country": "GB",
+   "lat": 54.978252,
+   "lon": -1.61778,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20646,6 +21940,8 @@
    "dest_name": "Atyrau",
    "dest_name_zh": "阿特劳",
    "country": "KZ",
+   "lat": 47.0944959,
+   "lon": 51.9238373,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20677,6 +21973,8 @@
    "dest_name": "Bukhara",
    "dest_name_zh": "布哈拉",
    "country": "UZ",
+   "lat": 39.7680827,
+   "lon": 64.4555769,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20708,6 +22006,8 @@
    "dest_name": "Tyumen",
    "dest_name_zh": "秋明",
    "country": "RU",
+   "lat": 57.1553394,
+   "lon": 65.5618637,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20739,6 +22039,8 @@
    "dest_name": "Song Pan",
    "dest_name_zh": "九寨沟",
    "country": "CN",
+   "lat": 32.856667,
+   "lon": 103.68306,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -20770,6 +22072,8 @@
    "dest_name": "Naberezhnye Chelny",
    "dest_name_zh": "下卡母斯克",
    "country": "RU",
+   "lat": 55.7305685,
+   "lon": 52.3892885,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20801,6 +22105,8 @@
    "dest_name": "Orenburg",
    "dest_name_zh": "奥伦堡",
    "country": "RU",
+   "lat": 51.7666482,
+   "lon": 55.1004538,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20832,6 +22138,8 @@
    "dest_name": "Stavropol",
    "dest_name_zh": "斯塔夫罗波尔",
    "country": "RU",
+   "lat": 45.0454764,
+   "lon": 41.9683431,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20863,6 +22171,8 @@
    "dest_name": "Matsumoto",
    "dest_name_zh": "松本",
    "country": "JP",
+   "lat": 36.233334,
+   "lon": 137.96666,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -20894,6 +22204,8 @@
    "dest_name": "Blagoveschensk",
    "dest_name_zh": "布拉戈维申斯克",
    "country": "RU",
+   "lat": 50.2727763,
+   "lon": 127.5404017,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20925,6 +22237,8 @@
    "dest_name": "Marsa Alam",
    "dest_name_zh": "Marsa Alam",
    "country": "EG",
+   "lat": 25.555786,
+   "lon": 34.592777,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -20956,6 +22270,8 @@
    "dest_name": "Nalchik",
    "dest_name_zh": "纳尔奇克",
    "country": "RU",
+   "lat": 43.4949918,
+   "lon": 43.6045133,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -20987,6 +22303,8 @@
    "dest_name": "Bursa",
    "dest_name_zh": "Bursa",
    "country": "TR",
+   "lat": 40.1885281,
+   "lon": 29.0609636,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21018,6 +22336,8 @@
    "dest_name": "Magnitogorsk",
    "dest_name_zh": "马格尼托哥尔斯克",
    "country": "RU",
+   "lat": 53.3927214,
+   "lon": 59.0623067,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21049,6 +22369,8 @@
    "dest_name": "Lampedusa",
    "dest_name_zh": "兰佩杜萨",
    "country": "IT",
+   "lat": 35.5,
+   "lon": 12.616667,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21080,6 +22402,8 @@
    "dest_name": "Volgograd",
    "dest_name_zh": "伏尔加格勒",
    "country": "RU",
+   "lat": 48.708048,
+   "lon": 44.5133035,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21111,6 +22435,8 @@
    "dest_name": "Koror",
    "dest_name_zh": "科罗尔",
    "country": "PW",
+   "lat": 7.364122,
+   "lon": 134.5329,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21142,6 +22468,8 @@
    "dest_name": "Paro",
    "dest_name_zh": "Paro",
    "country": "BT",
+   "lat": 27.433332,
+   "lon": 89.416664,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21173,6 +22501,8 @@
    "dest_name": "Bologna",
    "dest_name_zh": "博罗尼亚",
    "country": "IT",
+   "lat": 44.4941903,
+   "lon": 11.3465185,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21204,6 +22534,8 @@
    "dest_name": "Paros",
    "dest_name_zh": "帕罗斯",
    "country": "GR",
+   "lat": 37.066666,
+   "lon": 25.1,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21235,6 +22567,8 @@
    "dest_name": "Southampton",
    "dest_name_zh": "南安普顿",
    "country": "GB",
+   "lat": 50.9097004,
+   "lon": -1.4043509,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21266,6 +22600,8 @@
    "dest_name": "Harare",
    "dest_name_zh": "哈拉雷",
    "country": "ZW",
+   "lat": -17.8251657,
+   "lon": 31.03351,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -21297,6 +22633,8 @@
    "dest_name": "Tomsk",
    "dest_name_zh": "托木斯克",
    "country": "RU",
+   "lat": 56.4884295,
+   "lon": 84.9480469,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21328,6 +22666,8 @@
    "dest_name": "Sialkot",
    "dest_name_zh": "锡亚尔科特",
    "country": "PK",
+   "lat": 32.4944991,
+   "lon": 74.5228916,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21359,6 +22699,8 @@
    "dest_name": "Zanzibar",
    "dest_name_zh": "桑吉巴",
    "country": "TZ",
+   "lat": -6.165193,
+   "lon": 39.1989144,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -21390,6 +22732,8 @@
    "dest_name": "Kostanay",
    "dest_name_zh": "Kostanay",
    "country": "KZ",
+   "lat": 53.2198089,
+   "lon": 63.6354232,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21421,6 +22765,8 @@
    "dest_name": "Los Angeles",
    "dest_name_zh": "洛杉矶",
    "country": "US",
+   "lat": 34.0522342,
+   "lon": -118.2436849,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21452,6 +22798,8 @@
    "dest_name": "Mahe",
    "dest_name_zh": "马埃岛",
    "country": "SC",
+   "lat": -4.6826693,
+   "lon": 55.480396,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21483,6 +22831,8 @@
    "dest_name": "Khanty-Mansiysk",
    "dest_name_zh": "汉特-曼西斯克",
    "country": "RU",
+   "lat": 61.006057,
+   "lon": 69.0312136,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21514,6 +22864,8 @@
    "dest_name": "Guernsey",
    "dest_name_zh": "根西岛",
    "country": "GG",
+   "lat": 49.432755,
+   "lon": -2.595044,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21545,6 +22897,8 @@
    "dest_name": "Cape Town",
    "dest_name_zh": "开普敦",
    "country": "ZA",
+   "lat": -33.9248685,
+   "lon": 18.4240553,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21576,6 +22930,8 @@
    "dest_name": "Poznan",
    "dest_name_zh": "波兹南",
    "country": "PL",
+   "lat": 52.406374,
+   "lon": 16.9251681,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21607,6 +22963,8 @@
    "dest_name": "Tunis",
    "dest_name_zh": "突尼斯",
    "country": "TN",
+   "lat": 36.8064948,
+   "lon": 10.1815316,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21638,6 +22996,8 @@
    "dest_name": "Surgut",
    "dest_name_zh": "苏尔古特",
    "country": "RU",
+   "lat": 61.2559503,
+   "lon": 73.3845471,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21669,6 +23029,8 @@
    "dest_name": "Cardiff",
    "dest_name_zh": "加的夫",
    "country": "GB",
+   "lat": 51.481581,
+   "lon": -3.17909,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21700,6 +23062,8 @@
    "dest_name": "Seattle",
    "dest_name_zh": "西雅图",
    "country": "US",
+   "lat": 47.6062095,
+   "lon": -122.3320708,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21731,6 +23095,8 @@
    "dest_name": "Funchal",
    "dest_name_zh": "丰沙尔",
    "country": "PT",
+   "lat": 32.6669328,
+   "lon": -16.9240554,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21762,6 +23128,8 @@
    "dest_name": "Kalemyo",
    "dest_name_zh": "Kalemyo",
    "country": "MM",
+   "lat": 23.183332,
+   "lon": 94.05,
    "visa": {
     "status": "easy",
     "label": "落地签/电子签",
@@ -21793,6 +23161,8 @@
    "dest_name": "Santa Cruz De La Palma",
    "dest_name_zh": "圣克鲁斯帕尔马",
    "country": "ES",
+   "lat": 28.626389,
+   "lon": -17.755556,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21824,6 +23194,8 @@
    "dest_name": "Gilgit",
    "dest_name_zh": "吉尔吉特",
    "country": "PK",
+   "lat": 35.91972,
+   "lon": 74.33224,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21855,6 +23227,8 @@
    "dest_name": "New York",
    "dest_name_zh": "纽约",
    "country": "US",
+   "lat": 40.7143528,
+   "lon": -74.0059731,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21886,6 +23260,8 @@
    "dest_name": "Turkistan",
    "dest_name_zh": "Turkistan",
    "country": "KZ",
+   "lat": 43.301944,
+   "lon": 68.269167,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -21917,6 +23293,8 @@
    "dest_name": "Sibiu",
    "dest_name_zh": "锡比乌",
    "country": "RO",
+   "lat": 45.7983273,
+   "lon": 24.1255826,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21948,6 +23326,8 @@
    "dest_name": "Wellington",
    "dest_name_zh": "惠灵顿",
    "country": "NZ",
+   "lat": -41.2864603,
+   "lon": 174.776236,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -21979,6 +23359,8 @@
    "dest_name": "Zhezqazghan",
    "dest_name_zh": "Zhezqazghan",
    "country": "KZ",
+   "lat": 47.7963656,
+   "lon": 67.7020019,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -22010,6 +23392,8 @@
    "dest_name": "Ouarzazate",
    "dest_name_zh": "瓦尔扎扎特",
    "country": "MA",
+   "lat": 30.9335436,
+   "lon": -6.937016,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -22041,6 +23425,8 @@
    "dest_name": "Yakutsk",
    "dest_name_zh": "雅库茨克",
    "country": "RU",
+   "lat": 62.0396912,
+   "lon": 129.7422192,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -22072,6 +23458,8 @@
    "dest_name": "Kyzyl",
    "dest_name_zh": "克孜勒",
    "country": "RU",
+   "lat": 51.7150832,
+   "lon": 94.4574804,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -22103,6 +23491,8 @@
    "dest_name": "Queenstown",
    "dest_name_zh": "皇后镇",
    "country": "NZ",
+   "lat": -45.022038,
+   "lon": 168.7391,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -22134,6 +23524,8 @@
    "dest_name": "Boston",
    "dest_name_zh": "波斯顿",
    "country": "US",
+   "lat": 42.3584308,
+   "lon": -71.0597732,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -22165,6 +23557,8 @@
    "dest_name": "Christchurch",
    "dest_name_zh": "基督城",
    "country": "NZ",
+   "lat": -43.5320544,
+   "lon": 172.6362254,
    "visa": {
     "status": "visa",
     "label": "需签证",
