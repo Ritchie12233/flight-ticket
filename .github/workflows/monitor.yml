@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 允许本流程预约下一轮（接力）
 
 concurrency:
   group: fare-monitor
@@ -23,7 +24,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -66,3 +67,19 @@ jobs:
           git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Kuala_Lumpur date '+%m-%d %H:%M') 更新票价"
           git pull --rebase --autostash || true
           git push
+
+      # ---- 接力：GitHub 的定时触发经常延迟甚至不触发，这里等 14 分钟后自己预约下一轮 ----
+      - name: 预约下一轮
+        if: ${{ always() && inputs.test_push != true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 840
+          busy=$(gh run list -R "$GITHUB_REPOSITORY" -w monitor.yml --json status,databaseId \
+                 --jq "[.[] | select(.databaseId != ${GITHUB_RUN_ID} and (.status==\"queued\" or .status==\"in_progress\" or .status==\"pending\"))] | length")
+          if [ "$busy" = "0" ]; then
+            gh workflow run monitor.yml -R "$GITHUB_REPOSITORY" --ref main
+            echo "已预约下一轮"
+          else
+            echo "已有排队中的运行，不重复预约"
+          fi
