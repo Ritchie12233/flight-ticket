@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-<script src="vendor/leaflet/leaflet.js" defer></script>
+<link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
+<script src="vendor/maplibre/maplibre-gl.js" defer></script>
 <style>
 :root{
   --paper:#f5efe4; --card:#fffdf8; --ink:#23201b; --muted:#6b5f52; --rule:#ddd2c2; --ctl:#8f8070;
@@ -55,7 +55,17 @@ h2{font-family:var(--serif);font-weight:900;font-size:26px;margin:0 0 4px}
 .seg button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
 .today .lede{margin:8px 0 14px}
 .today-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr);gap:16px;align-items:stretch}
-#map{height:560px;border-radius:var(--r);border:1px solid var(--rule);background:#e9e2d4;z-index:0}
+.map-shell{position:relative;height:560px;border-radius:var(--r);border:1px solid var(--rule);background:#e9e2d4;overflow:hidden;z-index:0}
+.map-shell.sat{background:radial-gradient(circle at 50% 45%,#1c2a3a 0,#0b111b 70%)}
+.map-shell.full{position:fixed;inset:0;height:auto;z-index:1000;border-radius:0;border:0}
+body.map-open{overflow:hidden}
+#map{position:absolute;inset:0}
+.map-tools{position:absolute;top:10px;left:10px;right:10px;display:flex;flex-wrap:wrap;gap:6px;pointer-events:none;z-index:2}
+.map-tools>*{pointer-events:auto}
+.map-tools .seg,.mbtn{background:var(--card);border:1px solid var(--ink);border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.map-tools .seg button,.mbtn{min-height:36px;padding:4px 13px;font-size:13px;cursor:pointer}
+.mbtn:hover{background:#efe6d6}
+.map-shell.full .map-tools{top:max(10px,env(safe-area-inset-top))}
 .top{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-height:560px;overflow:auto}
 .top li{display:grid;grid-template-columns:28px 1fr auto;gap:2px 10px;padding:10px 4px 10px 0;border-bottom:1px solid var(--rule);cursor:pointer}
 .top li:hover,.top li.on{background:#efe6d6}
@@ -69,17 +79,26 @@ h2{font-family:var(--serif);font-weight:900;font-size:26px;margin:0 0 4px}
 .top .meta b.hot{color:#9f1d0a}
 .top .links{grid-column:2/-1;margin-top:4px}
 .top .links .btn{min-height:32px;padding:2px 10px;font-size:12px}
-.pin{background:var(--card);border:1px solid var(--ink);border-radius:999px;padding:2px 7px;font-size:12px;font-weight:700;white-space:nowrap;color:var(--ink);box-shadow:0 1px 2px rgba(35,32,27,.25);font-family:var(--sans);line-height:1.4;transform:translate(-50%,-50%);display:inline-block}
+.pin{background:var(--card);border:1px solid var(--ink);border-radius:999px;padding:2px 8px;font-size:12px;font-weight:700;white-space:nowrap;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.35);font-family:var(--sans);line-height:1.4;cursor:pointer}
+.pin::after{content:"";position:absolute;left:50%;bottom:-5px;width:8px;height:8px;margin-left:-4px;background:inherit;border:inherit;border-top:0;border-left:0;transform:rotate(45deg);border-radius:0 0 2px 0}
 .pin.free{border-color:var(--sea)} .pin.easy,.pin.free_partial{border-color:#b7792f}
 .pin.hot{background:#9f1d0a;color:#fff;border-color:#9f1d0a}
-.pin.sel{background:var(--ink);color:var(--paper)}
-.pin-wrap{background:none;border:0}
-.home{background:var(--sun);color:#fff;border-radius:999px;padding:2px 8px;font-size:12px;font-weight:700;transform:translate(-50%,-50%);display:inline-block;white-space:nowrap}
-.leaflet-popup-content{font-family:var(--sans);font-size:14px;margin:12px 14px}
-.leaflet-popup-content .pn{font-family:var(--serif);font-weight:900;font-size:17px}
-.leaflet-popup-content .pp{font-family:var(--display);font-size:22px;color:var(--sun)}
-.leaflet-popup-content .links{margin-top:8px}
-.leaflet-popup-content .links .btn{min-height:32px;padding:2px 10px;font-size:12px}
+.pin.sel{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.home{background:var(--sun);color:#fff;border:1px solid #fff;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.maplibregl-map{font-family:var(--sans)}
+.maplibregl-popup{z-index:3}
+.maplibregl-popup-content{font-size:14px;padding:14px 16px 12px;border-radius:var(--r);background:var(--card);color:var(--ink);box-shadow:0 6px 24px rgba(0,0,0,.3);line-height:1.5}
+.maplibregl-popup-content .pn{font-family:var(--serif);font-weight:900;font-size:17px;padding-right:18px}
+.maplibregl-popup-content .pp{font-family:var(--display);font-size:22px;color:var(--sun)}
+.maplibregl-popup-content .links{margin-top:8px}
+.maplibregl-popup-content .links .btn{min-height:32px;padding:2px 10px;font-size:12px;cursor:pointer}
+.maplibregl-popup-close-button{font-size:22px;width:36px;height:36px;color:var(--muted)}
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip{border-top-color:var(--card)}
+.maplibregl-popup-anchor-top .maplibregl-popup-tip{border-bottom-color:var(--card)}
+.maplibregl-popup-anchor-left .maplibregl-popup-tip{border-right-color:var(--card)}
+.maplibregl-popup-anchor-right .maplibregl-popup-tip{border-left-color:var(--card)}
+.tip{pointer-events:none}
+.tip .maplibregl-popup-content{padding:4px 10px;font-size:13px;font-weight:700;border-radius:999px}
 .legend-map{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);margin-top:8px}
 .legend-map i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
 .nomap{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:20px}
@@ -197,7 +216,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .wrap{padding:0 16px}
   .mast{padding-top:20px}
   .today-grid{grid-template-columns:1fr}
-  #map{height:380px}
+  .map-shell{height:460px}
   .top{max-height:none}
   .lrow{grid-template-columns:1fr auto;gap:6px 12px}
   .lrow .bar{grid-column:1/-1;order:3}
@@ -244,8 +263,16 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
     </div>
     <p class="lede" id="todayLede"></p>
     <div class="today-grid">
-      <div><div id="map" role="region" aria-label="全球低价地图"></div>
-        <div class="legend-map"><span><i style="background:#9f1d0a"></i>疑似 bug 价 / 到达目标</span><span><i style="background:var(--sea)"></i>免签</span><span><i style="background:#b7792f"></i>落地签、电子签</span><span><i style="background:#9b8f80"></i>需签证</span></div></div>
+      <div><div class="map-shell sat" id="mapShell">
+          <div id="map" role="region" aria-label="全球低价 3D 地图"></div>
+          <div class="map-tools">
+            <div class="seg" role="group" aria-label="底图"><button data-base="sat" aria-pressed="true">卫星</button><button data-base="street" aria-pressed="false">地图</button></div>
+            <button type="button" class="mbtn" id="mProj" aria-pressed="true">3D 地球</button>
+            <button type="button" class="mbtn" id="mHome">看全球</button>
+            <button type="button" class="mbtn" id="mFull" aria-pressed="false">全屏</button>
+          </div>
+        </div>
+        <div class="legend-map"><span><i style="background:#c2260f"></i>疑似 bug 价 / 到达目标</span><span><i style="background:var(--sea)"></i>免签</span><span><i style="background:#b7792f"></i>落地签、电子签</span><span><i style="background:#9b8f80"></i>需签证</span></div></div>
       <ol class="top" id="topList" aria-label="超级特价排行"></ol>
     </div>
   </section>
@@ -389,7 +416,7 @@ function watchList(){
 
 /* ---------- today: map + ranking ---------- */
 const T = {trip:"rt", quick:true, fresh:true, sel:null};
-let MAP = null, LAYER = null, MARK = {}, RANKED = [];
+let MAP = null, RANKED = [];
 const LV_RANK = {bug:3, target:2, great:1, normal:0};
 function bugLine(r){ const R = rules(); const k = r.trip_class === 1 ? R.business_bug_per_km : R.economy_bug_per_km;
   return r.distance ? Math.round(k * r.distance * (r.one_way ? 1 : 2)) : null; }
@@ -421,7 +448,7 @@ function renderToday(){
   const hotN = ranked.filter(r => r.level === "bug" || r.level === "target").length;
   $("#todayLede").textContent = `${T.trip === "ow" ? "单程" : "往返"}经济舱，${ranked.length} 个国际目的地。`
     + (hotN ? `其中 ${hotN} 个已达 bug 价或目标价，排在最前。` : "现在没有 bug 价，越靠前越接近 bug 线（低于 bug 线就会推送）。")
-    + " 点右侧排行，地图会飞到那里。";
+    + " 地球可以拖动旋转、滚轮或双指放大到街道，点右侧排行会飞到那座城市。";
   $("#topList").innerHTML = top.length ? top.map((r,i) => { const bl = bugLine(r), hot = r.level === "bug" || r.level === "target";
 
     return `<li data-dest="${r.dest}" tabindex="0">
@@ -437,54 +464,198 @@ function renderToday(){
   });
   drawMap(ranked, top);
 }
+/* ---------- 3D 地球（MapLibre GL，矢量底图 + 卫星影像，坐标为城市中心点） ---------- */
+const KUL = [101.6869, 3.139];
+const GEO = {base:"sat", globe:true, bucket:-1, first:true, ready:false, pills:[], popup:null, tip:null};
+const coordOK = r => Number.isFinite(r.lat) && Number.isFinite(r.lon) && Math.abs(r.lat) <= 90 && Math.abs(r.lon) <= 180;
+const isHot = r => r.level === "bug" || r.level === "target";
+const pinCol = r => isHot(r) ? "#c2260f" : r.visa?.status === "free" ? "#0f7a83"
+  : (r.visa?.status === "easy" || r.visa?.status === "free_partial") ? "#c98a2b" : "#9b8f80";
+const calm = () => matchMedia("(prefers-reduced-motion:reduce)").matches;
+/* 大圆航线：在球面上插值，经度连续（跨 180° 不折返） */
+function arc(a, b, n = 72){
+  const rad = Math.PI / 180, v = ([lo, la]) => [Math.cos(la*rad)*Math.cos(lo*rad), Math.cos(la*rad)*Math.sin(lo*rad), Math.sin(la*rad)];
+  const p = v(a), q = v(b), w = Math.acos(Math.max(-1, Math.min(1, p[0]*q[0] + p[1]*q[1] + p[2]*q[2])));
+  if (w < 1e-6) return [a, b];
+  const out = []; let prev = a[0];
+  for (let i = 0; i <= n; i++){
+    const t = i / n, s1 = Math.sin((1-t)*w) / Math.sin(w), s2 = Math.sin(t*w) / Math.sin(w);
+    const x = s1*p[0] + s2*q[0], y = s1*p[1] + s2*q[1], z = s1*p[2] + s2*q[2];
+    let lo = Math.atan2(y, x) / rad; const la = Math.atan2(z, Math.hypot(x, y)) / rad;
+    while (lo - prev > 180) lo -= 360; while (lo - prev < -180) lo += 360;
+    prev = lo; out.push([+lo.toFixed(4), +la.toFixed(4)]);
+  }
+  return out;
+}
+function mapStyle(){
+  const zh = ["coalesce", ["get","name:zh"], ["get","name:latin"], ["get","name"]];
+  const font = ["Noto Sans Regular"], bold = ["Noto Sans Bold"];
+  const s = "omt", L = [];
+  const lb = (id, layer, filter, minzoom, size, extra = {}) => L.push({id:"lb-" + id, type:"symbol", source:s, "source-layer":layer, minzoom, ...(extra.maxzoom ? {maxzoom:extra.maxzoom} : {}),
+    ...(filter ? {filter} : {}),
+    layout:{"text-field":extra.field || zh, "text-font":extra.bold ? bold : font, "text-size":size, "text-max-width":8, "text-padding":4,
+      ...(extra.sort ? {"symbol-sort-key":["to-number", ["get","rank"], 99]} : {}), ...(extra.layout || {})},
+    paint:{"text-color":"#fff", "text-halo-color":"rgba(10,14,22,.8)", "text-halo-width":1.3, ...(extra.paint || {})}});
+  L.push({id:"bg", type:"background", paint:{"background-color":"#efe7d8"}});
+  L.push({id:"cover-green", type:"fill", source:s, "source-layer":"landcover", filter:["in", ["get","class"], ["literal", ["wood","grass","farmland","wetland"]]], paint:{"fill-color":"#dde2c6", "fill-opacity":.7}});
+  L.push({id:"cover-ice", type:"fill", source:s, "source-layer":"landcover", filter:["==", ["get","class"], "ice"], paint:{"fill-color":"#fbfaf6"}});
+  L.push({id:"cover-sand", type:"fill", source:s, "source-layer":"landcover", filter:["==", ["get","class"], "sand"], paint:{"fill-color":"#f1e3bf", "fill-opacity":.7}});
+  L.push({id:"park", type:"fill", source:s, "source-layer":"park", minzoom:6, paint:{"fill-color":"#d3dfbf", "fill-opacity":.6}});
+  L.push({id:"water", type:"fill", source:s, "source-layer":"water", paint:{"fill-color":"#a8cdd1"}});
+  L.push({id:"river", type:"line", source:s, "source-layer":"waterway", minzoom:7, paint:{"line-color":"#a8cdd1", "line-width":["interpolate", ["linear"], ["zoom"], 7, .5, 14, 2.5]}});
+  L.push({id:"aeroway", type:"line", source:s, "source-layer":"aeroway", minzoom:10, paint:{"line-color":"#cfc3b0", "line-width":["interpolate", ["linear"], ["zoom"], 10, 1, 15, 12]}});
+  L.push({id:"building", type:"fill", source:s, "source-layer":"building", minzoom:13, paint:{"fill-color":"#e2d7c4", "fill-outline-color":"#d2c5ae"}});
+  const road = (id, classes, minzoom, color, w0, w1) => L.push({id:"road-" + id, type:"line", source:s, "source-layer":"transportation", minzoom,
+    filter:["in", ["get","class"], ["literal", classes]], layout:{"line-cap":"round", "line-join":"round"},
+    paint:{"line-color":color, "line-width":["interpolate", ["exponential", 1.5], ["zoom"], minzoom, w0, 16, w1]}});
+  road("minor", ["minor","service","tertiary","secondary"], 10, "#fffdf8", .4, 7);
+  road("rail", ["rail"], 9, "#c9bca8", .4, 2);
+  road("main", ["primary","trunk"], 6, "#fbe9c6", .4, 10);
+  road("motorway", ["motorway"], 5, "#f1c98b", .5, 12);
+  L.push({id:"sat", type:"raster", source:"sat", paint:{"raster-fade-duration":150}});
+  L.push({id:"bd-state", type:"line", source:s, "source-layer":"boundary", minzoom:3, filter:["all", ["==", ["get","admin_level"], 4], ["!=", ["get","maritime"], 1]],
+    paint:{"line-color":"rgba(255,255,255,.45)", "line-width":.7, "line-dasharray":[3, 2]}});
+  L.push({id:"bd-country", type:"line", source:s, "source-layer":"boundary", filter:["all", ["<=", ["get","admin_level"], 2], ["!=", ["get","maritime"], 1]],
+    paint:{"line-color":"rgba(255,255,255,.75)", "line-width":["interpolate", ["linear"], ["zoom"], 1, .6, 8, 1.6]}});
+  lb("sea", "water_name", ["in", ["get","class"], ["literal", ["ocean","sea"]]], 1, 12, {paint:{"text-color":"#cfe6ea"}, layout:{"text-letter-spacing":.15}});
+  lb("road", "transportation_name", null, 13, 11, {layout:{"symbol-placement":"line"}});
+  lb("airport", "aerodrome_label", null, 8, 12, {field:["concat", "✈ ", zh, ["case", ["has","iata"], ["concat", " ", ["get","iata"]], ""]], paint:{"text-color":"#ffd9a8"}});
+  lb("suburb", "place", ["in", ["get","class"], ["literal", ["suburb","neighbourhood","quarter"]]], 11, 11);
+  lb("village", "place", ["in", ["get","class"], ["literal", ["village","hamlet","island"]]], 9, 11);
+  lb("town", "place", ["==", ["get","class"], "town"], 6, 12, {sort:true});
+  lb("city", "place", ["==", ["get","class"], "city"], 3, ["interpolate", ["linear"], ["zoom"], 3, 11, 8, 15, 12, 18], {sort:true, bold:true});
+  lb("state", "place", ["in", ["get","class"], ["literal", ["state","province"]]], 4, 11, {maxzoom:8, paint:{"text-color":"#e9dcc6"}, layout:{"text-letter-spacing":.1}});
+  lb("country", "place", ["==", ["get","class"], "country"], 1, ["interpolate", ["linear"], ["zoom"], 1, 11, 5, 16], {maxzoom:8, sort:true, bold:true, layout:{"text-letter-spacing":.08}});
+  const empty = {type:"geojson", data:{type:"FeatureCollection", features:[]}};
+  L.push({id:"arc", type:"line", source:"arcs", layout:{"line-cap":"round"}, paint:{"line-color":"#ffb347", "line-opacity":.55, "line-width":1.3, "line-dasharray":[2, 2]}});
+  L.push({id:"arc-sel", type:"line", source:"arcs", filter:["==", ["get","dest"], ""], layout:{"line-cap":"round"}, paint:{"line-color":"#ff6a2b", "line-width":3}});
+  L.push({id:"dest-pt", type:"circle", source:"dests", paint:{"circle-color":["get","col"], "circle-stroke-color":"#fff",
+    "circle-stroke-width":["case", ["get","hot"], 2, 1.2], "circle-radius":["interpolate", ["linear"], ["zoom"], 1, ["case", ["get","hot"], 5, 3.2], 6, ["case", ["get","hot"], 8, 6], 12, 9]}});
+  L.push({id:"dest-sel", type:"circle", source:"dests", filter:["==", ["get","dest"], ""], paint:{"circle-color":"rgba(0,0,0,0)", "circle-stroke-color":"#ff6a2b", "circle-stroke-width":3, "circle-radius":12}});
+  return {version:8, projection:{type:"globe"},
+    sky:{"atmosphere-blend":["interpolate", ["linear"], ["zoom"], 0, 1, 5, 1, 7, 0]},
+    glyphs:"https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+    sources:{
+      omt:{type:"vector", url:"https://tiles.openfreemap.org/planet", attribution:'<a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> © <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a> © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'},
+      sat:{type:"raster", tiles:["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"], tileSize:256, maxzoom:18,
+        attribution:"卫星影像 © Esri, Maxar, Earthstar Geographics"},
+      dests:empty, arcs:empty},
+    layers:L};
+}
+function applyBase(){
+  if (!MAP || !GEO.ready) return;
+  const sat = GEO.base === "sat";
+  $("#mapShell").classList.toggle("sat", sat);
+  MAP.setLayoutProperty("sat", "visibility", sat ? "visible" : "none");
+  for (const l of MAP.getStyle().layers){
+    if (l.id.startsWith("lb-")){
+      const tone = l.id === "lb-sea" ? ["#cfe6ea", "#3d7f88"] : l.id === "lb-airport" ? ["#ffd9a8", "#8a4a12"] : l.id === "lb-state" ? ["#e9dcc6", "#8f8070"] : ["#fff", "#23201b"];
+      MAP.setPaintProperty(l.id, "text-color", tone[sat ? 0 : 1]);
+      MAP.setPaintProperty(l.id, "text-halo-color", sat ? "rgba(10,14,22,.8)" : "rgba(255,253,248,.9)");
+    }
+  }
+  MAP.setPaintProperty("bd-country", "line-color", sat ? "rgba(255,255,255,.75)" : "#8f8070");
+  MAP.setPaintProperty("bd-state", "line-color", sat ? "rgba(255,255,255,.45)" : "#b9ab97");
+  MAP.setPaintProperty("arc", "line-color", sat ? "#ffb347" : "#b8420f");
+  document.querySelectorAll("[data-base]").forEach(b => b.setAttribute("aria-pressed", b.dataset.base === GEO.base));
+}
+function homeView(anim = true){
+  const small = MAP.getContainer().clientWidth < 520;
+  MAP.flyTo({center:[104, 14], zoom:small ? 1.5 : 2, pitch:0, bearing:0, duration:anim && !calm() ? 1400 : 0, essential:true});
+}
+function setFull(on){
+  const sh = $("#mapShell"); sh.classList.toggle("full", on); document.body.classList.toggle("map-open", on);
+  $("#mFull").setAttribute("aria-pressed", on); $("#mFull").textContent = on ? "退出全屏" : "全屏";
+  requestAnimationFrame(() => MAP && MAP.resize());
+}
 function drawMap(ranked, top){
   const box = $("#map");
-  if (!window.L){ box.innerHTML = `<div class="nomap" style="height:100%">地图组件还没加载出来，右侧排行可以正常使用。</div>`; return; }
+  RANKED = ranked.filter(coordOK);
+  if (!window.maplibregl){ box.innerHTML = `<div class="nomap" style="height:100%">地图组件还没加载出来，右侧排行可以正常使用。</div>`; return; }
   if (!MAP){
-    MAP = L.map(box, {worldCopyJump:true, zoomControl:true, minZoom:2, attributionControl:true}).setView([22, 95], 3);
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", {
-      subdomains:"abcd", maxZoom:10, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'}).addTo(MAP);
-    let lastZ = MAP.getZoom();
-    MAP.on("zoomend", () => { const z = MAP.getZoom(); if (z !== lastZ){ lastZ = z; const open = T.sel; drawMarkers(); if (open && MARK[open]) MARK[open].openPopup(); } });
-    L.marker([3.14, 101.69], {interactive:false, icon:L.divIcon({className:"pin-wrap", html:'<span class="home">吉隆坡</span>', iconSize:null})}).addTo(MAP);
+    try {
+      MAP = new maplibregl.Map({container:box, style:mapStyle(), center:[104, 14], zoom:box.clientWidth < 520 ? 1.5 : 2, minZoom:.6, maxZoom:18, maxPitch:70,
+        attributionControl:false, dragRotate:true, renderWorldCopies:true});
+    } catch (e){ box.innerHTML = `<div class="nomap" style="height:100%">这台设备的浏览器不支持 3D 地图（WebGL），右侧排行可以正常使用。</div>`; MAP = null; return; }
+    MAP.addControl(new maplibregl.AttributionControl({compact:true}), "bottom-left");
+    MAP.addControl(new maplibregl.ScaleControl({maxWidth:110}), "bottom-left");
+    MAP.addControl(new maplibregl.NavigationControl({visualizePitch:true}), "bottom-right");
+    MAP.addControl(new maplibregl.GeolocateControl({positionOptions:{enableHighAccuracy:true}, showAccuracyCircle:true}), "bottom-right");
+    MAP.touchZoomRotate.enable(); MAP.touchPitch.enable();
+    new maplibregl.Marker({element:Object.assign(document.createElement("span"), {className:"home", textContent:"吉隆坡出发"}), anchor:"bottom", offset:[0, -7], opacityWhenCovered:"0"}).setLngLat(KUL).addTo(MAP);
+    GEO.tip = new maplibregl.Popup({closeButton:false, closeOnClick:false, offset:10, className:"tip"});
+    MAP.on("mousemove", "dest-pt", e => { MAP.getCanvas().style.cursor = "pointer"; const p = e.features[0].properties;
+      if (p.dest !== T.sel) GEO.tip.setLngLat([p.lon, p.lat]).setText(`${p.name} ${p.price}`).addTo(MAP); else GEO.tip.remove(); });
+    MAP.on("mouseleave", "dest-pt", () => { MAP.getCanvas().style.cursor = ""; GEO.tip.remove(); });
+    MAP.on("click", "dest-pt", e => { e.originalEvent.stopPropagation?.(); openDest(e.features[0].properties.dest, false); });
+    MAP.on("zoomend", () => { if (zoomBucket() !== GEO.bucket) drawPills(); });
+    MAP.on("style.load", () => { GEO.ready = true; applyBase(); syncMap(); });
+    MAP.on("error", e => console.warn("map:", e.error?.message || e));
+    document.querySelectorAll("[data-base]").forEach(b => b.onclick = () => { GEO.base = b.dataset.base; applyBase(); });
+    $("#mProj").onclick = () => { GEO.globe = !GEO.globe; MAP.setProjection({type:GEO.globe ? "globe" : "mercator"});
+      $("#mProj").setAttribute("aria-pressed", GEO.globe); $("#mProj").textContent = GEO.globe ? "3D 地球" : "平面地图"; };
+    $("#mHome").onclick = () => { closePopup(); homeView(); };
+    $("#mFull").onclick = () => setFull(!$("#mapShell").classList.contains("full"));
+    document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#mapShell").classList.contains("full")) setFull(false); });
+    new ResizeObserver(() => MAP.resize()).observe(box);
   }
-  RANKED = ranked;
-  drawMarkers();
-  const pts = top.filter(r => r.lat != null).map(r => [r.lat, r.lon]).concat([[3.14, 101.69]]);
-  if (!T.sel && pts.length > 1) MAP.fitBounds(pts, {padding:[30, 30], maxZoom:4});
-  setTimeout(() => MAP.invalidateSize(), 50);
+  GEO.top = top.filter(coordOK);
+  if (GEO.ready) syncMap();
 }
-function drawMarkers(){
-  const ranked = RANKED, z = MAP.getZoom();
-  if (LAYER) LAYER.remove();
-  LAYER = L.layerGroup().addTo(MAP); MARK = {};
-  const n = z <= 2 ? 10 : z === 3 ? 15 : z === 4 ? 35 : z === 5 ? 70 : 999;   // 越放大，标价的点越多
-  const labelled = new Set(ranked.slice(0, n).map(r => r.dest));
-  if (T.sel) labelled.add(T.sel);
-  const col = r => (r.level === "bug" || r.level === "target") ? "#9f1d0a" : r.visa?.status === "free" ? "#0f5f66"
-    : (r.visa?.status === "easy" || r.visa?.status === "free_partial") ? "#b7792f" : "#9b8f80";
-  ranked.slice().reverse().forEach(r => {
-    if (r.lat == null || r.lon == null) return;
-    const hot = r.level === "bug" || r.level === "target";
-    const m = labelled.has(r.dest)
-      ? L.marker([r.lat, r.lon], {icon:L.divIcon({className:"pin-wrap", iconSize:null,
-          html:`<span class="pin ${hot ? "hot" : (r.visa?.status || "")}" title="${esc(r.dest_name_zh)}">${esc(r.dest_name_zh)} ${price(r.price)}</span>`}), riseOnHover:true})
-      : L.circleMarker([r.lat, r.lon], {radius:4, color:col(r), weight:1, fillColor:col(r), fillOpacity:.85})
-          .bindTooltip(`${esc(r.dest_name_zh)} ${price(r.price)}`);
-    m.bindPopup(popupHTML(r), {maxWidth:280}); m.addTo(LAYER); MARK[r.dest] = m;
+function zoomBucket(){ const z = MAP.getZoom(); return z < 1.8 ? 0 : z < 2.8 ? 1 : z < 3.8 ? 2 : z < 4.8 ? 3 : z < 5.8 ? 4 : 5; }
+function syncMap(){
+  if (!T.sel) closePopup();
+  MAP.getSource("dests").setData({type:"FeatureCollection", features:RANKED.slice().reverse().map(r => ({type:"Feature",
+    geometry:{type:"Point", coordinates:[r.lon, r.lat]},
+    properties:{dest:r.dest, name:r.dest_name_zh, price:price(r.price), col:pinCol(r), hot:isHot(r), lon:r.lon, lat:r.lat}}))});
+  drawArcs(); drawPills();
+}
+function drawArcs(){
+  const set = new Map((GEO.top || []).map(r => [r.dest, r]));
+  const sel = RANKED.find(r => r.dest === T.sel); if (sel) set.set(sel.dest, sel);
+  MAP.getSource("arcs").setData({type:"FeatureCollection", features:[...set.values()].map(r => ({type:"Feature",
+    geometry:{type:"LineString", coordinates:arc(KUL, [r.lon, r.lat])}, properties:{dest:r.dest}}))});
+  const f = ["==", ["get","dest"], T.sel || ""];
+  MAP.setFilter("arc-sel", f); MAP.setFilter("dest-sel", f);
+}
+function drawPills(){
+  GEO.pills.forEach(m => m.remove()); GEO.pills = [];
+  const b = GEO.bucket = zoomBucket(), n = [8, 12, 20, 40, 80, 999][b];    // 越放大，标价的点越多
+  const show = RANKED.slice(0, n); const sel = RANKED.find(r => r.dest === T.sel);
+  if (sel && !show.includes(sel)) show.push(sel);
+  show.slice().reverse().forEach(r => {
+    const el = document.createElement("button");
+    el.type = "button"; el.className = `pin ${isHot(r) ? "hot" : (r.visa?.status || "")}${r.dest === T.sel ? " sel" : ""}`;
+    el.textContent = `${r.dest_name_zh} ${price(r.price)}`; el.setAttribute("aria-label", `${r.dest_name_zh} ${price(r.price)}，查看详情`);
+    el.onclick = e => { e.stopPropagation(); openDest(r.dest, false); };
+    GEO.pills.push(new maplibregl.Marker({element:el, anchor:"bottom", offset:[0, -8], opacityWhenCovered:"0"}).setLngLat([r.lon, r.lat]).addTo(MAP));
   });
 }
-function focusDest(code){
+function closePopup(){ if (GEO.popup){ const p = GEO.popup; GEO.popup = null; p.remove(); } }
+function openDest(code, fly){
+  const r = RANKED.find(x => x.dest === code);
   T.sel = code;
   $("#topList").querySelectorAll("li").forEach(li => li.classList.toggle("on", li.dataset.dest === code));
-  const m = MARK[code]; if (!MAP || !m) return;
-  if (matchMedia("(max-width:760px)").matches) $("#map").scrollIntoView({behavior:"smooth", block:"center"});
-  MAP.flyTo(m.getLatLng(), Math.max(MAP.getZoom(), 4), {duration:.8}); setTimeout(() => m.openPopup(), 850);
+  if (!MAP || !GEO.ready || !r) return;
+  GEO.tip.remove(); closePopup(); drawArcs(); drawPills();
+  const at = [r.lon, r.lat];
+  const pop = GEO.popup = new maplibregl.Popup({maxWidth:"300px", anchor:"bottom", offset:40, focusAfterOpen:false})
+    .setLngLat(at).setHTML(popupHTML(r) + `<div class="links"><button type="button" class="btn" data-zoomcity>放大看城市</button></div>`).addTo(MAP);
+  pop.on("close", () => { if (GEO.popup === pop){ GEO.popup = null; T.sel = null; drawArcs(); drawPills();
+    $("#topList").querySelectorAll("li.on").forEach(li => li.classList.remove("on")); } });
+  pop.getElement().querySelector("[data-zoomcity]").onclick = () => MAP.flyTo({center:at, zoom:10.5, duration:calm() ? 0 : 2200, essential:true});
+  const dy = Math.round(Math.min(170, MAP.getContainer().clientHeight * .33));   // 城市点放在偏下的位置，上方留给详情卡
+  if (fly) MAP.flyTo({center:at, offset:[0, dy], zoom:Math.max(MAP.getZoom(), 4.2), duration:calm() ? 0 : 1600, essential:true});
+  else MAP.easeTo({center:at, offset:[0, dy], duration:calm() ? 0 : 500, essential:true});
+}
+function focusDest(code){
+  if (matchMedia("(max-width:760px)").matches) $("#mapShell").scrollIntoView({behavior:"smooth", block:"center"});
+  openDest(code, true);
 }
 function bindToday(){
-  document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
+  document.querySelectorAll(".seg button[data-trip]").forEach(b => b.onclick = () => {
     T.trip = b.dataset.trip; T.sel = null;
-    document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderToday(); });
+    document.querySelectorAll(".seg button[data-trip]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderToday(); });
   $("#tQuick").oninput = e => { T.quick = e.target.checked; T.sel = null; renderToday(); };
   $("#tFresh").oninput = e => { T.fresh = e.target.checked; T.sel = null; renderToday(); };
 }
