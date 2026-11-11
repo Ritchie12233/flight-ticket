@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T01:20:33.598128+08:00",
+ "updated_at": "2026-11-12T01:34:57.890295+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -4084,6 +4084,39 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "UIH",
+   "price": 1646.0,
+   "depart": "2027-02-14",
+   "return": "2027-03-06",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 1444,
+   "airline": "Vietjet (VJ)",
+   "flight_number": 826,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-UIH|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.57,
+   "dest_name": "Qui Nhon",
+   "dest_name_zh": "归仁",
+   "country": "VN",
+   "lat": 13.7829673,
+   "lon": 109.2196634,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -8297,39 +8330,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签（180 天内累计 90 天，2026-01 起）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "TIV",
-   "price": 5332.0,
-   "depart": "2027-07-02",
-   "return": "2027-07-07",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 9224,
-   "airline": null,
-   "gate": "Wingie",
-   "found_at": "2026-11-04T16:17:08",
-   "source": "aviasales-latest",
-   "id": "KUL-TIV|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.289,
-   "dest_name": "Tivat",
-   "dest_name_zh": "蒂瓦特",
-   "country": "ME",
-   "lat": 42.40361,
-   "lon": 18.725555,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
