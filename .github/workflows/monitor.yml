@@ -2,7 +2,7 @@ name: Bug 价机票监控
 
 on:
   schedule:
-    - cron: "*/15 * * * *"     # 每 15 分钟（GitHub 高峰期可能会延迟几分钟）
+    - cron: "7,22,37,52 * * * *"   # 每 15 分钟，避开整点高峰（GitHub 整点排队严重）
   push:
     branches: [main]
     paths: ["config.yaml", "monitor/**", ".github/workflows/**"]
