@@ -216,7 +216,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 
   <section id="mine">
     <h2>我的航线</h2>
-    <p class="lede">经济舱往返，当前能找到的最低价和你设的目标价。低于目标价会立刻推送到手机。</p>
+    <p class="lede">经济舱往返最低价和你设的目标价，下面一行是单程（单程目标价按往返的 55% 算）。往返或单程任一低于目标价都会立刻推送到手机。</p>
     <div class="ledger" id="ledger"></div>
     <p class="edit-hint">想加航线或改目标价，直接告诉 Claude，或修改仓库里的 config.yaml。</p>
   </section>
@@ -229,7 +229,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 
   <section id="ideas">
     <h2>出行灵感</h2>
-    <p class="lede">各目的地经济舱往返最低价。默认只看不用提前办签证、你还没去过的国际目的地，免签的排在前面，同一档里按每公里价格排序。</p>
+    <p class="lede">各目的地经济舱最低价，可切换往返或单程。默认只看不用提前办签证、你还没去过的国际目的地，免签的排在前面，同一档里按每公里价格排序。</p>
     <div class="ctrls" id="ctrls"></div>
     <p class="count" id="count"></p>
     <div class="cards" id="cards"></div>
@@ -297,7 +297,7 @@ function tags(r, opt = {}){
   return out.length ? `<span class="tags">${out.join("")}</span>` : "";
 }
 const PAGE = matchMedia("(max-width:760px)").matches ? 12 : 24;
-const S = {region:"", intl:true, sort:"value", q:"", shown:PAGE, quick:true, fresh:true};
+const S = {region:"", intl:true, sort:"value", q:"", shown:PAGE, quick:true, fresh:true, trip:"rt"};
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const rules = () => ({...RULES_DEFAULT, ...(D.rules || {})});
@@ -394,7 +394,8 @@ function renderWatch(){
         <div class="meter-cap"><span>${esc(join(dates(c), trTxt(c.transfers)))}</span><span>目标 ${price(w.target)}</span></div>
         ${spark(w.trend, c.price, hit ? "#0f5f66" : "#b8420f")}</div>
       <div class="val"><div class="now">${price(c.price)}</div>
-        <div class="gap">${hit ? `比目标低 ${price(w.target - c.price)}` : `离目标还差 ${price(c.price - w.target)}`}</div></div>
+        <div class="gap">${hit ? `比目标低 ${price(w.target - c.price)}` : `离目标还差 ${price(c.price - w.target)}`}</div>
+        ${w.current_ow ? `<div class="gap"${w.current_ow.price <= w.target_ow ? ' style="color:var(--sea);font-weight:700"' : ""}>单程 ${price(w.current_ow.price)}（目标 ${price(w.target_ow)}）</div>` : ""}</div>
       <div class="act">${links(c, false)}</div>
     </div>`;
   }).join("");
@@ -441,7 +442,8 @@ function renderBiz(){
 /* ---------- inspiration ---------- */
 function ideasList(){
   const R = rules(), q = S.q.trim().toLowerCase();
-  const list = D.all_routes.filter(x => (!S.intl || ((x.distance || 0) >= R.min_distance_km && x.country !== "MY")) &&
+  const src = S.trip === "ow" && D.ow_routes ? D.ow_routes : D.all_routes;
+  const list = src.filter(x => (!S.intl || ((x.distance || 0) >= R.min_distance_km && x.country !== "MY")) &&
     (!S.quick || quickVisa(x)) && (!S.fresh || x.visited !== true) &&
     (S.region === "" || region(x.country) === S.region) &&
     (!q || [x.dest, x.dest_name, x.dest_name_zh, x.country, region(x.country)].join(" ").toLowerCase().includes(q)));
@@ -452,12 +454,14 @@ function renderCtrls(){
   const regions = ["", ...[...new Set(D.all_routes.map(r => region(r.country)))].sort((a,b) => a.localeCompare(b, "zh"))];
   $("#ctrls").innerHTML = regions.map(r => `<button class="chip" data-region="${r}" aria-pressed="${S.region === r}">${r || "全部地区"}</button>`).join("")
     + `<span class="sp"></span>
+    <select id="trip" aria-label="往返或单程"><option value="rt">往返</option><option value="ow">单程</option></select>
     <select id="sort" aria-label="排序方式"><option value="value">免签优先，再按每公里价格</option><option value="price">免签优先，再按总价</option></select>
     <label class="chip"><input type="checkbox" id="quick" ${S.quick ? "checked" : ""}> 不用提前办签证</label>
     <label class="chip"><input type="checkbox" id="fresh" ${S.fresh ? "checked" : ""}> 只看没去过</label>
     <label class="chip"><input type="checkbox" id="intl" ${S.intl ? "checked" : ""}> 只看国际长途</label>
     <input type="search" id="q" placeholder="搜目的地" aria-label="搜索目的地" value="${esc(S.q)}">`;
-  $("#sort").value = S.sort;
+  $("#sort").value = S.sort; $("#trip").value = S.trip;
+  $("#trip").oninput = e => { S.trip = e.target.value; S.shown = PAGE; renderIdeas(); };
   $("#ctrls").querySelectorAll("[data-region]").forEach(b => b.onclick = () => {
     S.region = b.dataset.region; S.shown = PAGE;
     $("#ctrls").querySelectorAll("[data-region]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderIdeas(); });
@@ -473,7 +477,7 @@ function renderIdeas(){
   $("#cards").innerHTML = list.length ? shown.map(r => { const rg = region(r.country);
     return `<article class="pc"><div class="band" style="background:${BAND[rg] || BAND["其他"]}" title="${rg}"></div><div class="body">
       <div class="en" lang="en">${esc(r.dest_name)}</div><div class="cn">${esc(r.dest_name_zh)}，${rg}</div>
-      <div class="pr">${price(r.price)}<small>往返</small></div>
+      <div class="pr">${price(r.price)}<small>${r.one_way ? "单程" : "往返"}</small></div>
       <div class="sub">${esc(join(dates(r), trTxt(r.transfers)))}</div>${tags(r, {hideBeen:true})}
       ${links(r, false)}</div></article>`; }).join("")
     : `<p class="empty">没有符合条件的目的地。换个地区，或取消上面的勾选。</p>`;
@@ -499,7 +503,8 @@ function renderMeta(){
   $("#notice").innerHTML = D.demo ? `<p class="notice">现在显示的是演示数据。</p>`
     : stale ? `<p class="notice">票价已经 ${ago(D.updated_at).replace("前","")}没有更新，系统会自动恢复。这段时间出现的 bug 价，推送可能会晚到。</p>` : "";
   $("#rules").innerHTML = `<li>疑似 bug 价：低于这条航线平时价格的 ${Math.round(R.bug_ratio*100)}%，或经济舱往返每公里低于 ${sym()}${R.economy_bug_per_km}（只看 ${R.min_distance_km} 公里以上的航线）。只推送免签、落地签或电子签的目的地。</li>
-    <li>到达目标价：低于你在「我的航线」里设的价格。不管签证都会推送。</li>
+    <li>到达目标价：低于你在「我的航线」里设的价格（单程按往返目标价的 55%）。不管签证都会推送。</li>
+    <li>单程和往返分开判断：各自和自己的平时价比，每公里价格按各自的飞行距离算。</li>
     <li>超值：低于平时价格的 ${Math.round(R.great_ratio*100)}%，或经济舱每公里低于 ${sym()}${R.economy_great_per_km}。只在网页显示。</li>
     <li>商务舱：每公里低于 ${sym()}${R.business_bug_per_km} 判为疑似 bug 价，只有这种情况才推送。</li>
     <li>签证按中国普通护照判断${D.held_visas?.length ? `，并计入你持有的 ${D.held_visas.join("、")} 签证` : ""}。${esc(D.visa_source || "")}</li>`;

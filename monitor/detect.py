@@ -100,8 +100,11 @@ def evaluate(fares: list[dict], history: dict, cities: dict, cfg: dict, today: s
             elif per_km <= great_km:
                 bump("great", f"每公里 {per_km:.3f}，很划算")
         tgt = targets.get(f["dest"])
-        if tgt and not f["one_way"] and not biz and f["price"] <= tgt:
-            bump("target", f"低于你设的目标价 {tgt}")
+        if tgt and not biz:
+            if f["one_way"]:
+                tgt = round(tgt * dc.get("one_way_target_ratio", 0.55))
+            if f["price"] <= tgt:
+                bump("target", f"低于你设的{'单程' if f['one_way'] else '往返'}目标价 {tgt}")
 
         city = cities.get(f["dest"], {})
         results.append({

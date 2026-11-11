@@ -189,10 +189,10 @@ def run(args):
     for r in sorted(results, key=lambda r: r["price"]):
         if r["trip_class"] >= 1 and not r["one_way"]:
             biz_by_dest.setdefault(r["dest"], r)
-    cheapest_by_dest = {}
+    cheapest_by_dest, cheapest_ow = {}, {}
     for r in sorted(results, key=lambda r: r["price"]):
-        if r["trip_class"] == 0 and not r["one_way"]:
-            cheapest_by_dest.setdefault(r["dest"], r)
+        if r["trip_class"] == 0:
+            (cheapest_ow if r["one_way"] else cheapest_by_dest).setdefault(r["dest"], r)
     trend = {}
     for r in (hot[:80] + hot_biz[:20]):
         h = state["history"].get(r["id"], {})
@@ -212,6 +212,8 @@ def run(args):
             "visa": visa_cn.info(city.get("country"), held),
             "visited": (city.get("country") or "") in visited,
             "current": cur_fare,
+            "current_ow": cheapest_ow.get(code),
+            "target_ow": round(tgt * cfg["detection"].get("one_way_target_ratio", 0.55)),
             "trend": [[d, p] for d, p in sorted(state["history"].get(key, {}).items())],
         })
     site_data = {
@@ -230,6 +232,7 @@ def run(args):
         "visited": sorted(visited), "held_visas": held,
         "watch": watch,
         "all_routes": sorted(cheapest_by_dest.values(), key=lambda r: r["price"])[:300],
+        "ow_routes": sorted(cheapest_ow.values(), key=lambda r: r["price"])[:400],
         "trend": trend,
         "news": state["news"][:80],
         "alerts": state["alerts_log"][:50],
