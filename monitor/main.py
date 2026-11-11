@@ -114,6 +114,7 @@ def run(args):
     if not (args.demo or args.test_push):
         got = notify.fetch_settings()
         if got and got["_time"] > (state.get("settings") or {}).get("_time", 0):
+            prev_targets = (state.get("settings") or {}).get("targets")
             lines = {}
             for name, v in list(got["region_lines"].items())[:30]:
                 try:
@@ -124,8 +125,25 @@ def run(args):
                 if 0 < p < 1e6 and cs:
                     lines[str(name)[:20]] = {"p": round(p), "c": cs}
             state["settings"] = {"_time": got["_time"], "region_lines": lines}
-            log.info("采用看板新设置：%s", {k: v["p"] for k, v in lines.items()})
+            # 我的航线：看板发来就整份替换 config 里的 targets（这样删除航线也能生效）
+            if isinstance(got.get("targets"), dict):
+                tg = {}
+                for code, p in list(got["targets"].items())[:60]:
+                    try:
+                        p = float(p)
+                    except Exception:
+                        continue
+                    code = str(code).upper()
+                    if len(code) == 3 and code.isalpha() and 0 < p < 1e6:
+                        tg[code] = round(p)
+                state["settings"]["targets"] = tg
+            elif isinstance(prev_targets, dict):
+                state["settings"]["targets"] = prev_targets
+            log.info("采用看板新设置：地区线 %s，航线目标 %s", {k: v["p"] for k, v in lines.items()},
+                     state["settings"].get("targets", "（沿用 config）"))
     cfg["detection"]["region_lines"] = (state.get("settings") or {}).get("region_lines") or {}
+    if isinstance((state.get("settings") or {}).get("targets"), dict):
+        cfg["detection"]["targets"] = state["settings"]["targets"]
     visited = {c.upper() for c in (cfg.get("visited") or [])}
 
     if args.test_push:

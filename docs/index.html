@@ -81,6 +81,29 @@ body.map-open{overflow:hidden}
 .top .more .links{margin:0}
 .top .tomap{display:none}
 .top-more{margin-top:10px}
+.ledger{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:0 28px;border-top:1px solid var(--ink)}
+.wrow{padding:12px 0 10px;border-bottom:1px solid var(--rule);min-width:0}
+.wrow .w1{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.wrow .nm{font-family:var(--serif);font-weight:900;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wrow .nm small{font-family:var(--display);font-weight:400;font-size:13px;color:var(--muted);margin-left:6px}
+.wrow .now{font-family:var(--display);font-size:22px;color:var(--sun);white-space:nowrap}
+.wrow.hit .now{color:#9f1d0a}
+.wrow .w2{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted);margin-top:2px}
+.wrow .w2>span{min-width:0}
+.wrow .gap{white-space:nowrap;color:var(--ink)} .wrow .gap.hot{color:#9f1d0a}
+.wrow .w3{display:flex;align-items:center;gap:10px;margin-top:4px}
+.wrow .w3 label{font-size:13px;color:var(--muted);white-space:nowrap}
+.wrow .w3 output{font-family:var(--display);font-size:18px;color:var(--ink)}
+.wrow .w3 input{flex:1;min-width:0;accent-color:var(--sun);height:30px;cursor:pointer;touch-action:pan-y}
+.wrow .w4{font-size:12px;color:var(--muted)} .wrow .w4 i{font-style:normal}
+.wrow .owhit{color:#9f1d0a;font-weight:700}
+.wrow .more{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}
+.wrow .more .btn{min-height:32px;padding:2px 10px;font-size:12px}
+.wrow .del{margin-left:auto;color:#9f1d0a;border-color:#d9b3a8;cursor:pointer}
+.wadd{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:12px 0;font-size:13px}
+.wadd select{min-height:40px;border:1px solid var(--ink);border-radius:999px;padding:4px 12px;background:var(--card);font:inherit;font-size:14px;max-width:100%}
+.wadd .ok{color:var(--sea)} .wadd .bad{color:#9f1d0a}
+.wadd .st button{border:0;background:none;color:inherit;text-decoration:underline;cursor:pointer;padding:0;font:inherit}
 .top-more[hidden]{display:none}
 .rtabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .rtabs .chip small{font-size:12px;opacity:.7;font-weight:400}
@@ -270,6 +293,13 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .rtabs .chip,.fsel{min-height:36px}
   .today .lede{font-size:13px;margin:8px 0 10px}
   .top li{grid-template-columns:20px minmax(0,1fr) auto;gap:0 8px;padding:7px 0}
+  .ledger{grid-template-columns:1fr}
+  .wrow{padding:8px 0 6px}
+  .wrow .nm{font-size:16px} .wrow .nm small{display:none}
+  .wrow .now{font-size:19px}
+  .wrow .w2{font-size:12px} .wrow .w2>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .wrow .w2 .vt{padding:0 5px;font-size:11px}
+  .wrow .more{display:none} .wrow.open .more{display:flex}
   .top .rk{font-size:14px;padding-top:3px}
   .top li{scroll-margin-top:calc(var(--navh,45px) + clamp(220px,36vh,320px) + 16px)}
   .top .nm{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -349,7 +379,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 
   <section id="mine">
     <h2>我的航线</h2>
-    <p class="lede">往返最低价对比你的目标价（单程按 55% 算），低于就推送。</p>
+    <p class="lede">拖滑条改目标价，往返或单程（按 55%）低于它就推送到 ntfy。</p>
     <div class="ledger" id="ledger"></div>
   </section>
 
@@ -477,10 +507,11 @@ function nearest(){
   return (pref.length ? pref : pool).sort((a,b) => a.per_km - b.per_km);
 }
 function watchList(){
-  if (D.watch) return D.watch;
-  const m = Object.fromEntries(D.all_routes.map(r => [r.dest, r]));   // 兼容旧数据
-  return Object.entries(D.targets || {}).map(([k,t]) => { const r = m[k.toUpperCase()];
-    return {dest:k.toUpperCase(), target:t, dest_name:r?.dest_name || k, dest_name_zh:r?.dest_name_zh || k, current:r || null, trend:[], visa:r?.visa, visited:r?.visited, country:r?.country}; });
+  const rt = Object.fromEntries(D.all_routes.map(r => [r.dest, r])), ow = Object.fromEntries((D.ow_routes || []).map(r => [r.dest, r]));
+  const base = Object.fromEntries((D.watch || []).map(w => [w.dest, w]));
+  return Object.entries(LN.targets).map(([k, t]) => { const b = base[k], r = b?.current || rt[k] || null, any = r || ow[k] || b;
+    return {dest:k, target:t, dest_name:any?.dest_name || k, dest_name_zh:any?.dest_name_zh || k, country:any?.country,
+      current:r, current_ow:b?.current_ow || ow[k] || null, target_ow:Math.round(t * OW_RATIO()), trend:b?.trend || [], visa:any?.visa, visited:any?.visited}; });
 }
 
 /* ---------- today: map + ranking ---------- */
@@ -505,11 +536,12 @@ const LV_RANK = {bug:3, target:2, great:1, normal:0};
 function bugLine(r){ const R = rules(); const k = r.trip_class === 1 ? R.business_bug_per_km : R.economy_bug_per_km;
   return r.distance ? Math.round(k * r.distance * (r.one_way ? 1 : 2)) : null; }
 /* 各地区推送线：滑条设的往返价，存在本机并经 ntfy 回传给监控；监控采用后写回 D.region_lines */
-const LN = {lines:{}, at:0, state:""};
+const LN = {lines:{}, targets:{}, at:0, state:""};
 function loadLines(){
   let loc = null; try { loc = JSON.parse(localStorage.getItem("kul.lines.v1") || "null"); } catch (e) {}
-  if (loc && loc.at > (D.settings_at || 0)){ LN.lines = loc.lines || {}; LN.at = loc.at; LN.state = loc.sent ? "sent" : "bad"; }
-  else { LN.lines = {...(D.region_lines || {})}; LN.at = D.settings_at || 0; LN.state = ""; }
+  const live = Object.fromEntries(Object.entries(D.targets || {}).map(([k, v]) => [k.toUpperCase(), v]));
+  if (loc && loc.at > (D.settings_at || 0)){ LN.lines = loc.lines || {}; LN.targets = loc.targets || live; LN.at = loc.at; LN.state = loc.sent ? "sent" : "bad"; }
+  else { LN.lines = {...(D.region_lines || {})}; LN.targets = live; LN.at = D.settings_at || 0; LN.state = ""; }
 }
 const OW_RATIO = () => D.one_way_target_ratio || .55;
 function userLine(r){ const p = LN.lines[region(r.country)]; return p ? (r.one_way ? Math.round(p * OW_RATIO()) : p) : null; }
@@ -520,11 +552,11 @@ const regionCodes = name => { const cs = Object.keys(REGION).filter(c => REGION[
 async function saveLines(){
   LN.at = Math.floor(Date.now() / 1000) + 1; let sent = false;
   if (D.settings_url){
-    try { const body = {v:1, region_lines:Object.fromEntries(Object.entries(LN.lines).filter(([, p]) => p > 0).map(([k, p]) => [k, {p, c:regionCodes(k)}]))};
+    try { const body = {v:1, ...(D.targets ? {targets:LN.targets} : {}), region_lines:Object.fromEntries(Object.entries(LN.lines).filter(([, p]) => p > 0).map(([k, p]) => [k, {p, c:regionCodes(k)}]))};
       sent = (await fetch(D.settings_url, {method:"POST", body:JSON.stringify(body)})).ok; } catch (e) {}
   }
   LN.state = sent ? "sent" : "bad";
-  try { localStorage.setItem("kul.lines.v1", JSON.stringify({lines:LN.lines, at:LN.at, sent})); } catch (e) {}
+  try { localStorage.setItem("kul.lines.v1", JSON.stringify({lines:LN.lines, targets:LN.targets, at:LN.at, sent})); } catch (e) {}
 }
 const CN_NAME = (() => { try { const d = new Intl.DisplayNames(["zh-CN"], {type:"region"}); return c => { try { return d.of(c) || c; } catch (e) { return c; } }; } catch (e) { return c => c; } })();
 const REGION_ORDER = ["东南亚","东亚","南亚","中东","中亚","欧洲","大洋洲","美洲","非洲","其他"];
@@ -853,26 +885,48 @@ let saveT = () => {};
 
 /* ---------- watchlist ---------- */
 function renderWatch(){
-  const list = watchList().slice().sort((a,b) => {
-    const ra = a.current ? a.current.price / a.target : 99, rb = b.current ? b.current.price / b.target : 99; return ra - rb; });
-  if (!list.length){ $("#ledger").innerHTML = `<p class="empty">还没有设目标价。告诉 Claude 想盯哪些目的地、多少钱以下提醒你。</p>`; return; }
-  $("#ledger").innerHTML = list.map(w => {
-    const c = w.current;
-    if (!c) return `<div class="lrow none"><div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small>${tags(w)}</div>
-      <div class="bar"><div class="meter"></div><div class="meter-cap"><span>这一轮没有找到报价</span><span>目标 ${price(w.target)}</span></div></div>
-      <div class="val"><div class="now">暂无报价</div></div><div class="act"></div></div>`;
-    const hit = c.price <= w.target, pct = Math.min(100, w.target / c.price * 100);
-    return `<div class="lrow${hit ? " hit" : ""}">
-      <div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small>${tags(w)}</div>
-      <div class="bar"><div class="meter" role="img" aria-label="目标价是当前价的 ${Math.round(pct)}%"><i style="width:${pct}%"></i></div>
-        <div class="meter-cap"><span>${esc(join(dates(c), trTxt(c.transfers)))}</span><span>目标 ${price(w.target)}</span></div>
-        ${spark(w.trend, c.price, hit ? "#0f5f66" : "#b8420f")}</div>
-      <div class="val"><div class="now">${price(c.price)}</div>
-        <div class="gap">${hit ? `比目标低 ${price(w.target - c.price)}` : `离目标还差 ${price(c.price - w.target)}`}</div>
-        ${w.current_ow ? `<div class="gap"${w.current_ow.price <= w.target_ow ? ' style="color:var(--sea);font-weight:700"' : ""}>单程 ${price(w.current_ow.price)}（目标 ${price(w.target_ow)}）</div>` : ""}</div>
-      <div class="act">${links(c, false)}</div>
-    </div>`;
-  }).join("");
+  const gapOf = w => w.current ? w.current.price / w.target : 99;
+  const list = watchList().sort((a,b) => gapOf(a) - gapOf(b));
+  const stTxt = () => { const same = JSON.stringify(Object.entries(LN.targets).sort()) === JSON.stringify(Object.entries(D.targets || {}).map(([k, v]) => [k.toUpperCase(), v]).sort());
+    return LN.state === "bad" ? `<span class="bad">没发出去，<button type="button" id="wRetry">重试</button></span>` : same ? "" : LN.state === "sent" ? `<span class="ok">已保存，约 15 分钟内生效</span>` : ""; };
+  const have = new Set(Object.keys(LN.targets));
+  const opts = D.all_routes.filter(r => !have.has(r.dest) && r.country !== "MY").sort((a,b) => a.dest_name_zh.localeCompare(b.dest_name_zh, "zh"));
+  $("#ledger").innerHTML = (list.length ? list.map(w => {
+    const c = w.current, t = w.target, hit = c && c.price <= t, owHit = w.current_ow && w.current_ow.price <= w.target_ow;
+    const bl = c ? bugLine(c) : null, low = w.trend.length >= 5 ? Math.min(...w.trend.map(x => x[1])) : null;
+    const max = Math.max(500, Math.ceil(Math.max(c ? c.price : 0, t) * 1.05 / 100) * 100), step = max <= 2000 ? 10 : 50;
+    return `<div class="wrow${hit || owHit ? " hit" : ""}" data-dest="${w.dest}" tabindex="0">
+      <div class="w1"><div class="nm">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small></div>
+        <div class="now">${c ? price(c.price) : "暂无报价"}</div></div>
+      <div class="w2"><span>${c ? esc(join(dates(c), trTxt(c.transfers))) : "这一轮没有找到往返报价"} ${tags(w)}</span>
+        <b class="gap" data-gap></b></div>
+      <div class="w3"><label>目标 <output data-out>${price(t)}</output></label>
+        <input type="range" min="${step}" max="${max}" step="${step}" value="${Math.min(max, t)}" aria-label="${esc(w.dest_name_zh)}往返目标价">
+      </div>
+      <div class="w4"><span>${[bl ? `bug 线 ${price(bl)}` : "", low != null ? `${w.trend.length} 天最低 ${price(low)}` : "", w.current_ow ? `<span${owHit ? ' class="owhit"' : ""}>单程 ${price(w.current_ow.price)} / 目标 <i data-ow>${price(w.target_ow)}</i></span>` : ""].filter(Boolean).join(" · ")}</span></div>
+      <div class="more">${c ? links(c, false) : ""}<button type="button" class="btn del" data-del>移除</button></div>
+    </div>`; }).join("") : `<p class="empty">还没有航线，在下面添加一个。</p>`)
+    + `<div class="wadd"><select id="wAdd" aria-label="添加航线"><option value="">＋ 添加航线…</option>${opts.map(r => `<option value="${r.dest}">${esc(r.dest_name_zh)} ${r.dest} · 现价 ${price(r.price)}</option>`).join("")}</select>
+       <span class="st" id="wSt">${stTxt()}</span></div>`;
+  const commit = async () => { $("#wSt").textContent = "保存中…"; await saveLines(); $("#wSt").innerHTML = stTxt(); bindRetry(); };
+  const bindRetry = () => { const b = $("#wRetry"); if (b) b.onclick = commit; };
+  bindRetry();
+  $("#ledger").querySelectorAll(".wrow").forEach(row => {
+    const code = row.dataset.dest, w = list.find(x => x.dest === code), rng = row.querySelector("input[type=range]");
+    const paint = () => { const t = +rng.value, c = w.current, g = row.querySelector("[data-gap]");
+      row.querySelector("[data-out]").textContent = price(t);
+      const ow = row.querySelector("[data-ow]"); if (ow) ow.textContent = price(Math.round(t * OW_RATIO()));
+      const hit = c && c.price <= t; g.classList.toggle("hot", !!hit);
+      g.textContent = !c ? "" : hit ? `已到价，低 ${price(t - c.price)}` : `还差 ${Math.round((c.price - t) / c.price * 100)}%`; };
+    rng.oninput = paint; paint();
+    rng.onchange = () => { LN.targets[code] = +rng.value; w.target = +rng.value; row.classList.toggle("hit", !!(w.current && w.current.price <= w.target)); commit(); };
+    row.querySelector("[data-del]").onclick = e => { e.stopPropagation(); delete LN.targets[code]; renderWatch(); saveLines().then(() => { $("#wSt").innerHTML = stTxt(); }); };
+    row.onclick = e => { if (e.target.closest("a,button,input,label")) return; row.classList.toggle("open"); };
+  });
+  $("#wAdd").onchange = e => { const code = e.target.value; if (!code) return;
+    const r = D.all_routes.find(x => x.dest === code); LN.targets[code] = Math.max(50, Math.round((r ? r.price * .8 : 1000) / 50) * 50);
+    renderWatch(); saveLines().then(() => { $("#wSt").innerHTML = stTxt(); });
+    $("#ledger").querySelector(`.wrow[data-dest="${code}"]`)?.scrollIntoView({behavior:"smooth", block:"center"}); };
 }
 
 /* ---------- anomalies ---------- */
