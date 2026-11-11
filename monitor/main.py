@@ -168,6 +168,21 @@ def run(args):
     for r in hot[:80]:
         h = state["history"].get(r["id"], {})
         trend[r["id"]] = [[d, p] for d, p in sorted(h.items())]
+    # 我的航线：config 里设了目标价的目的地（经济舱往返）
+    by_key = {r["id"]: r for r in results}
+    watch = []
+    for code, tgt in (cfg["detection"].get("targets") or {}).items():
+        code = code.upper()
+        key = f'{cfg["origin"]}-{code}|RT|0'
+        cur_fare = by_key.get(key)
+        city = cities.get(code, {})
+        watch.append({
+            "dest": code, "target": tgt,
+            "dest_name": city.get("name", code), "dest_name_zh": city.get("name_zh", code),
+            "country": city.get("country"),
+            "current": cur_fare,
+            "trend": [[d, p] for d, p in sorted(state["history"].get(key, {}).items())],
+        })
     site_data = {
         "updated_at": now.isoformat(),
         "origin": cfg["origin"], "currency": cur.upper(),
@@ -178,6 +193,7 @@ def run(args):
         "channels": notify.configured(),
         "sources": sources,
         "hot": hot[:120],
+        "watch": watch,
         "all_routes": sorted(cheapest_by_dest.values(), key=lambda r: r["price"])[:300],
         "trend": trend,
         "news": state["news"][:80],

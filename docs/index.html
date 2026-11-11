@@ -3,156 +3,170 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KUL Bug 价雷达 · 吉隆坡出发错误票价监控</title>
-<meta name="theme-color" content="#07142b">
+<title>吉隆坡出发 · 特价雷达</title>
+<meta name="theme-color" content="#5c1d0b">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#07142b; --panel:#0c1f40; --panel2:#10284f; --line:#1d3a6b; --ctl:#3a5d96;
-  --ink:#e8eefb; --mute:#8ea3c8; --amber:#ffb627;
-  --red:#ff5b5b; --green:#3ddc97; --cyan:#59c3ff;
-  --r-sm:8px; --r:12px;
-  --mono:"JetBrains Mono",ui-monospace,monospace; --sans:"Noto Sans SC",system-ui,-apple-system,sans-serif;
+  --paper:#f5efe4; --card:#fffdf8; --ink:#23201b; --muted:#6b5f52; --rule:#ddd2c2; --ctl:#8f8070;
+  --sun:#b8420f; --sea:#0f5f66; --hero-a:#5c1d0b; --hero-b:#a83a0c; --cream:#f7f2e9;
+  --r-sm:8px; --r:14px;
+  --display:"Young Serif","Noto Serif SC",Georgia,serif;
+  --serif:"Noto Serif SC","Songti SC",serif;
+  --sans:"Noto Sans SC",system-ui,-apple-system,sans-serif;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;
-  background-image:linear-gradient(rgba(89,195,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(89,195,255,.05) 1px,transparent 1px);
-  background-size:32px 32px}
-a{color:var(--cyan)}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;font-variant-numeric:tabular-nums}
+a{color:var(--sea)}
 button{font:inherit;color:inherit}
-.num{font-family:var(--mono)}
-.wrap{max-width:1180px;margin:0 auto;padding:24px 18px 60px}
+:focus-visible{outline:2px solid var(--sea);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 
-/* ---------- header ---------- */
-header{border-bottom:2px solid var(--amber);padding-bottom:14px}
-.brand small{display:block;font-family:var(--mono);color:var(--amber);letter-spacing:.25em;font-size:12px}
-.brand h1{margin:2px 0 0;font-size:30px;font-weight:900;letter-spacing:.02em}
-.brand h1 b{color:var(--amber)}
-.status{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;margin-top:8px;font-size:13px;color:var(--mute)}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
-.dot.stale{background:var(--red);box-shadow:0 0 8px var(--red)}
-@keyframes pulse{50%{opacity:.35}}
-@media (prefers-reduced-motion:reduce){.dot{animation:none}}
-.banner{margin:16px 0 0;padding:10px 14px;border:1px dashed var(--amber);color:var(--amber);border-radius:var(--r);font-size:14px}
+/* ---------- masthead & nav ---------- */
+.mast{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px 24px;padding:28px 0 14px}
+.mark{font-family:var(--serif);font-weight:900;font-size:26px;letter-spacing:.02em;margin:0}
+.mark span{font-family:var(--display);font-weight:400;color:var(--sun);margin-left:6px}
+.status{font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 16px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sea);margin-right:6px;vertical-align:1px}
+.dot.stale{background:var(--sun)}
+nav.top{position:sticky;top:0;z-index:5;background:var(--paper);border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav.top a{flex:0 0 auto;color:var(--ink);text-decoration:none;font-size:15px;padding:12px 12px;min-height:44px;display:flex;align-items:center}
+nav.top a:hover{color:var(--sun)}
+.notice{margin:16px 0 0;padding:10px 14px;background:#fbe6d3;border-radius:var(--r-sm);font-size:14px}
 
-/* ---------- stats ---------- */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 6px}
-.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
-.stat .k{color:var(--mute);font-size:13px}
-.stat .v{font-family:var(--mono);font-size:28px;font-weight:700;line-height:1.2}
-.stat.bug .v{color:var(--red)} .stat.target .v{color:var(--amber)} .stat.great .v{color:var(--green)}
-.legend-btn{background:none;border:0;color:var(--cyan);cursor:pointer;font-size:13px;padding:6px 0;min-height:32px}
-.legend{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;font-size:14px;margin-bottom:6px}
-.legend ul{margin:6px 0 0;padding-left:18px}
-.legend li{margin:3px 0}
+section{padding:40px 0 8px}
+h2{font-family:var(--serif);font-weight:900;font-size:26px;margin:0 0 4px}
+.lede{color:var(--muted);margin:0 0 20px;max-width:62ch}
 
-/* ---------- tabs & filters ---------- */
-.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
-.tab{background:transparent;color:var(--mute);border:1px solid var(--ctl);padding:8px 14px;border-radius:999px;cursor:pointer;min-height:40px}
-.tab[aria-selected=true]{background:var(--amber);color:#1b1200;border-color:var(--amber);font-weight:700}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;align-items:center}
-.filters select,.filters input[type=search]{background:var(--panel);color:var(--ink);border:1px solid var(--ctl);border-radius:var(--r-sm);padding:7px 10px;font:inherit;min-height:40px}
-.filters input[type=search]{flex:1;min-width:150px}
-.filters select:focus,.filters input:focus,.tab:focus-visible,.btn:focus-visible,.legend-btn:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
-.toggle{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--ink);background:var(--panel);border:1px solid var(--ctl);border-radius:var(--r-sm);padding:0 12px;min-height:40px;cursor:pointer}
-.toggle input{accent-color:var(--amber);width:16px;height:16px}
-.count{font-size:13px;color:var(--mute);margin:-4px 0 10px}
+/* ---------- hero poster ---------- */
+.hero{margin-top:24px;border-radius:var(--r);overflow:hidden;color:var(--cream);
+  background:linear-gradient(115deg,var(--hero-a) 0%,var(--hero-b) 100%);position:relative}
+.hero::before{content:"";position:absolute;inset:auto -10% -55% auto;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,196,140,.35),rgba(255,196,140,0) 65%)}
+.hero-in{position:relative;padding:28px 32px 30px;display:grid;grid-template-columns:1fr auto;gap:12px 32px;align-items:end}
+.hero .kicker{font-size:15px;margin:0;opacity:.95;grid-column:1/-1}
+.hero .big{grid-column:1/-1;font-family:var(--display);font-size:clamp(56px,11vw,132px);line-height:.92;margin:6px 0 4px;letter-spacing:-.01em;overflow-wrap:anywhere}
+.hero .where{font-family:var(--serif);font-weight:600;font-size:22px;margin:0}
+.hero .facts{margin:6px 0 0;font-size:15px;opacity:.95}
+.hero .price{text-align:right}
+.hero .price .n{font-family:var(--display);font-size:clamp(40px,6vw,64px);line-height:1}
+.hero .price .u{font-size:14px;opacity:.9}
+.hero .why{font-size:14px;margin:4px 0 0;opacity:.95}
+.hero .acts{grid-column:1/-1;margin-top:14px}
+.hero .btn{border-color:rgba(247,242,233,.6);color:var(--cream)}
+.hero .btn:hover{color:#fff;border-color:#fff}
+.hero .btn.pri{background:var(--cream);color:var(--hero-a);border-color:var(--cream)}
 
-/* ---------- cards ---------- */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
-.card{position:relative;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 14px;overflow:hidden}
-.card::after{content:"";position:absolute;right:92px;top:0;bottom:62px;border-left:2px dashed rgba(142,163,200,.18)}
-.card.bug{border-color:rgba(255,91,91,.65);box-shadow:0 0 0 1px rgba(255,91,91,.25),0 10px 30px -12px rgba(255,91,91,.45)}
-.card.target{border-color:rgba(255,182,39,.6)}
-.card.great{border-color:rgba(61,220,151,.45)}
-.badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:var(--r-sm);margin-bottom:8px}
-.badge.bug{background:var(--red);color:#2a0000}.badge.target{background:var(--amber);color:#241800}.badge.great{background:var(--green);color:#002a18}.badge.normal{background:var(--line);color:var(--ink)}
-.route{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:24px;font-weight:700}
-.route .arrow{color:var(--amber);font-size:16px}
-.city{color:var(--mute);font-size:13px;margin-top:-2px}
-.price{position:absolute;right:14px;top:16px;width:72px;text-align:right}
-.price .cur{font-family:var(--mono);font-size:11px;color:var(--mute)}
-.price .n{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--amber);line-height:1.1}
-.price .was{font-family:var(--mono);font-size:12px;color:var(--mute);text-decoration:line-through}
-.meta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px;color:var(--mute);margin:10px 92px 0 0}
-.meta b{color:var(--ink);font-weight:500}
-.bar{height:6px;background:var(--line);border-radius:3px;margin:12px 92px 4px 0;overflow:hidden}
-.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--amber))}
-.why{font-size:13px;color:#cfd9ee;margin:8px 0 0;padding-left:0;list-style:none}
-.why li::before{content:"› ";color:var(--amber)}
-.spark{margin-top:8px;width:calc(100% - 92px);height:34px}
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 16px;border-radius:999px;
+  border:1px solid var(--ctl);color:var(--ink);text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap;background:transparent;cursor:pointer}
+.btn:hover{border-color:var(--sun);color:var(--sun)}
+.btn.pri{background:var(--sun);border-color:var(--sun);color:#fff;font-weight:700}
+.btn.pri:hover{background:#9a360c;color:#fff}
+.links{display:flex;flex-wrap:wrap;gap:6px}
+.lrow .links .btn,.pc .links .btn,.deal .links .btn:not(.pri){min-height:36px;padding:4px 12px;font-size:13px}
 
-/* unified booking buttons */
-.btns{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
-.btn{flex:1;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:13px;font-weight:700;min-height:36px;padding:4px 10px;border-radius:var(--r-sm);border:1px solid var(--ctl);color:var(--ink);background:rgba(255,255,255,.03);white-space:nowrap}
-.btn:hover{border-color:var(--cyan)}
-.btn.pri{background:var(--amber);color:#1b1200;border-color:var(--amber)}
-.btns.sm .btn{flex:0 0 auto;min-height:32px;font-size:12px;font-weight:500;padding:4px 8px}
-.mini .btns.sm{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
-.mini .btns.sm .btn{padding:4px 2px}
-td .btns{flex-wrap:nowrap;margin:0}
+/* ---------- watchlist ledger ---------- */
+.ledger{border-top:1px solid var(--ink)}
+.lrow{display:grid;grid-template-columns:minmax(140px,1.1fr) 2fr minmax(120px,.8fr) auto;gap:8px 24px;align-items:center;
+  padding:16px 0;border-bottom:1px solid var(--rule)}
+.lrow .dst{font-family:var(--serif);font-weight:900;font-size:20px;line-height:1.2}
+.lrow .dst small{display:block;font-family:var(--display);font-weight:400;font-size:14px;color:var(--muted)}
+.meter{position:relative;height:6px;background:var(--rule);border-radius:3px}
+.meter i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--sun)}
+.lrow.hit .meter i{background:var(--sea)}
+.meter-cap{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted);margin-top:6px}
+.lrow .now{font-family:var(--display);font-size:26px;line-height:1.1;color:var(--sun)}
+.lrow.hit .now{color:var(--sea)}
+.lrow .gap{font-size:13px;color:var(--muted)}
+.lrow.hit .gap{color:var(--sea);font-weight:700}
+.lrow .spark{display:block;width:100%;height:28px;margin-top:6px}
+.lrow.none .now{color:var(--muted);font-family:var(--sans);font-size:14px}
+.edit-hint{font-size:14px;color:var(--muted);margin:14px 0 0}
 
-/* ---------- empty state & near list ---------- */
-.empty{padding:28px;text-align:center;color:var(--mute);border:1px dashed var(--line);border-radius:var(--r)}
-.idle{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-bottom:16px}
-.idle h2{margin:0 0 4px;font-size:17px}
-.idle p{margin:0;color:var(--mute);font-size:14px}
-.progress{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:10px 0 4px}
-.progress i{display:block;height:100%;background:var(--cyan)}
-h3.sec{font-size:16px;margin:18px 0 10px}
-h3.sec small{font-weight:400;color:var(--mute);font-size:13px;margin-left:6px}
-.near{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
-.mini{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
-.mini .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.mini .dst{font-weight:700}
-.mini .dst span{color:var(--mute);font-weight:400;font-family:var(--mono);font-size:12px;margin-left:4px}
-.mini .p{font-family:var(--mono);font-weight:700;color:var(--amber);font-size:18px}
-.mini .sub{font-size:12px;color:var(--mute);margin-top:2px}
-.gap{height:4px;background:var(--line);border-radius:2px;margin:8px 0 2px;overflow:hidden}
-.gap i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--amber))}
+/* ---------- anomalies ---------- */
+.quiet{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);padding:20px 22px;max-width:760px}
+.quiet p{margin:0 0 6px}
+.prog{height:6px;background:var(--rule);border-radius:3px;margin:12px 0 6px;max-width:420px}
+.prog i{display:block;height:100%;background:var(--sea);border-radius:3px}
+.deals{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.deal{background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--sun);border-radius:var(--r-sm);padding:16px 18px}
+.deal.great{border-left-color:var(--sea)}
+.deal .tag{font-size:13px;font-weight:700;color:var(--sun);margin:0}
+.deal.great .tag{color:var(--sea)}
+.deal .row1{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:4px 0}
+.deal .dn{font-family:var(--serif);font-weight:900;font-size:22px}
+.deal .dn small{font-family:var(--display);font-weight:400;font-size:14px;color:var(--muted);margin-left:6px}
+.deal .pr{font-family:var(--display);font-size:28px;color:var(--sun)}
+.deal .was{font-size:13px;color:var(--muted);text-decoration:line-through;margin-left:6px}
+.deal .facts{font-size:14px;color:var(--muted);margin:0 0 8px}
+.deal ul{margin:0 0 12px;padding-left:18px;font-size:14px}
 
-/* ---------- table (desktop) / list (mobile) ---------- */
-.tbl{overflow:auto}
-table{width:100%;border-collapse:collapse;font-size:14px}
-th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
-th{color:var(--mute);font-weight:500;font-size:12px;position:sticky;top:0;background:var(--bg)}
-td.p{font-family:var(--mono);color:var(--amber);font-weight:700}
-td .code{color:var(--mute);font-family:var(--mono);font-size:12px;margin-left:4px}
-.rows{display:flex;flex-direction:column;gap:10px}
+/* ---------- inspiration postcards ---------- */
+.ctrls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--ctl);background:transparent;border-radius:999px;padding:6px 14px;min-height:40px;cursor:pointer;font-size:14px}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip input{accent-color:var(--sun);width:16px;height:16px;margin:0}
+.ctrls select,.ctrls input[type=search]{background:var(--card);border:1px solid var(--ctl);border-radius:var(--r-sm);padding:6px 10px;min-height:40px;font:inherit;font-size:14px;color:var(--ink)}
+.ctrls input[type=search]{flex:1;min-width:140px}
+.ctrls .sp{flex-basis:100%;height:0}
+.count{font-size:14px;color:var(--muted);margin:0 0 12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.pc{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.pc .band{height:10px}
+.pc .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:2px;flex:1}
+.pc .en{font-family:var(--display);font-size:20px;line-height:1.15}
+.pc .cn{font-size:14px;color:var(--muted)}
+.pc .pr{font-family:var(--display);font-size:24px;color:var(--sun);margin-top:6px}
+.pc .pr small{font-family:var(--sans);font-size:12px;color:var(--muted);margin-left:4px}
+.pc .sub{font-size:13px;color:var(--muted)}
+.pc .links{margin-top:auto;padding-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.pc .links .btn{padding:4px 6px}
+.more{margin:18px 0 0}
 
-.list{display:flex;flex-direction:column;gap:10px}
-.row{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
-.row.bug{border-left:4px solid var(--red)}
-.row h3{margin:0 0 4px;font-size:15px}
-.row p{margin:0;color:var(--mute);font-size:13px}
-.row .src{font-size:12px;color:var(--amber)}
+/* ---------- intel & alerts ---------- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.feed{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.feed li{padding:12px 0;border-bottom:1px solid var(--rule)}
+.feed .src{font-size:13px;color:var(--muted)}
+.feed .src b{color:var(--sun)}
+.feed a{color:var(--ink);text-decoration:none;font-weight:500}
+.feed a:hover{color:var(--sun);text-decoration:underline}
+.empty{color:var(--muted);font-size:15px;padding:12px 0}
 
-footer{margin-top:40px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
-footer ol{padding-left:20px}
-footer summary{cursor:pointer;color:var(--ink);min-height:32px;display:flex;align-items:center}
-.sources{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.chip{border:1px solid var(--line);border-radius:999px;padding:3px 10px}
-.chip.ok::before{content:"● ";color:var(--green)} .chip.bad::before{content:"● ";color:var(--red)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+footer{margin-top:48px;padding:28px 0 48px;border-top:2px solid var(--ink);font-size:14px;color:var(--muted)}
+footer h3{font-family:var(--serif);color:var(--ink);font-size:17px;margin:0 0 6px}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:32px}
+footer ol,footer ul{padding-left:18px;margin:0}
+footer li{margin:4px 0}
+footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;align-items:center}
+.srcs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.srcs span{border:1px solid var(--rule);border-radius:999px;padding:2px 10px}
+.srcs .bad{border-color:var(--sun);color:var(--sun)}
 
-@media (max-width:640px){
-  .wrap{padding:18px 14px 48px}
-  .brand h1{font-size:24px}
-  .stats{gap:8px}
-  .stat{padding:10px}
-  .stat .k{font-size:12px}
-  .stat .v{font-size:22px}
-  .grid{grid-template-columns:1fr}
-  .tab{flex:1 1 calc(50% - 6px);padding:8px 6px}
-  .btn{min-height:44px}
-  .btns.sm .btn{flex:1;min-height:44px}
-  .filters select{flex:1 1 calc(50% - 4px)}
-  .near{grid-template-columns:1fr}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .mast{padding-top:20px}
+  .hero-in{grid-template-columns:1fr;padding:22px 20px 22px}
+  .hero .price{text-align:left}
+  .lrow{grid-template-columns:1fr auto;gap:6px 12px}
+  .lrow .bar{grid-column:1/-1;order:3}
+  .lrow .act{grid-column:1/-1;order:4}
+  .lrow .val{text-align:right}
+  .two,footer .cols{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .pc .links .btn,.lrow .links .btn{min-height:40px}
+  .hero .links{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 }
+@media (max-width:420px){ .cards{grid-template-columns:1fr} }
 </style>
-<!-- Travelpayouts Drive（账号验证用，可在拿到 token 后删除） -->
+<!-- Travelpayouts Drive（账号验证用，可删除） -->
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
   (function () {
       var script = document.createElement("script");
@@ -164,62 +178,92 @@ footer summary{cursor:pointer;color:var(--ink);min-height:32px;display:flex;alig
 </script>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="brand"><small>KUL ✈ WORLDWIDE · FARE RADAR</small><h1>吉隆坡出发 <b>Bug 价</b>雷达</h1></div>
-    <div class="status" id="status">加载中…</div>
-  </header>
-  <div id="banner"></div>
+<header class="wrap mast">
+  <p class="mark">吉隆坡出发特价雷达<span>KUL</span></p>
+  <div class="status" id="status" aria-live="polite">正在读取最新票价…</div>
+</header>
+<nav class="top" aria-label="页面导航"><div class="wrap">
+  <a href="#today">今日</a><a href="#mine">我的航线</a><a href="#deals">异常低价</a><a href="#ideas">出行灵感</a><a href="#intel">情报与推送</a>
+</div></nav>
 
-  <section class="stats" id="stats" aria-label="当前发现"></section>
-  <button class="legend-btn" id="legendBtn" aria-expanded="false" aria-controls="legend">ⓘ 这三种级别是怎么判定的？</button>
-  <div class="legend" id="legend" hidden></div>
+<main class="wrap">
+  <div id="notice"></div>
+  <div id="today" class="hero" aria-label="今日焦点"></div>
 
-  <nav class="tabs" role="tablist" aria-label="视图">
-    <button class="tab" role="tab" data-t="hot">🔥 异常低价</button>
-    <button class="tab" role="tab" data-t="all">🗺 各目的地最低价</button>
-    <button class="tab" role="tab" data-t="news">📰 错误票价情报</button>
-    <button class="tab" role="tab" data-t="alerts">🔔 推送记录</button>
-  </nav>
+  <section id="mine">
+    <h2>我的航线</h2>
+    <p class="lede">经济舱往返，当前能找到的最低价和你设的目标价。低于目标价会立刻推送到手机。</p>
+    <div class="ledger" id="ledger"></div>
+    <p class="edit-hint">想加航线或改目标价，直接告诉 Claude，或修改仓库里的 config.yaml。</p>
+  </section>
 
-  <div class="filters" id="filters"></div>
-  <main id="view" aria-live="polite"></main>
+  <section id="deals">
+    <h2>异常低价</h2>
+    <p class="lede" id="dealsLede"></p>
+    <div id="dealsBox"></div>
+  </section>
 
-  <footer>
-    <b>抢 bug 价小贴士</b>
+  <section id="ideas">
+    <h2>出行灵感</h2>
+    <p class="lede">各目的地经济舱往返最低价。默认只看国际长途，按每公里价格排序，越靠前越划算。</p>
+    <div class="ctrls" id="ctrls"></div>
+    <p class="count" id="count"></p>
+    <div class="cards" id="cards"></div>
+    <div class="more" id="moreBox"></div>
+  </section>
+
+  <section id="intel">
+    <div class="two">
+      <div><h2>错误票价情报</h2><p class="lede">来自专门发 bug 价的网站和新闻。</p><ul class="feed" id="news"></ul></div>
+      <div><h2>推送记录</h2><p class="lede">发到你手机上的每一条提醒。</p><ul class="feed" id="alerts"></ul></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap cols">
+  <div>
+    <h3>怎么判定 bug 价</h3>
+    <ul id="rules"></ul>
+    <h3 style="margin-top:18px">抢 bug 价的四条规矩</h3>
     <ol>
-      <li>价格来自 Aviasales 用户近几天的搜索缓存，<b>可能已经失效</b>——点「携程 / Skyscanner / Google」实时比价确认。</li>
-      <li>真 bug 价通常几小时内就被修复：先订（选可免费取消 / 24 小时内可退的渠道），再慢慢想。</li>
-      <li>拿到正式电子客票号、出票几天后没被取消，再订酒店和不可退的行程。</li>
-      <li>不要打电话问航司「这个价格对不对」。</li>
+      <li>这里的价格是用户近几天搜索的缓存，可能已经失效，先点「携程」「Skyscanner」或「Google」实时核价。</li>
+      <li>真 bug 价通常几小时内就被修复。先订能免费取消或 24 小时内可退的，再慢慢想。</li>
+      <li>拿到电子客票号、出票几天没被取消，再订酒店和不能退的行程。</li>
+      <li>别打电话问航司这个价格对不对。</li>
     </ol>
-    <details>
-      <summary>数据源运行状态</summary>
-      <div class="sources" id="sources"></div>
-    </details>
-    <p>后台每 15 分钟扫描一次 · 本页每 5 分钟自动刷新</p>
-  </footer>
-</div>
+  </div>
+  <div>
+    <h3>运行情况</h3>
+    <p id="runinfo" style="margin:0 0 8px"></p>
+    <details><summary>数据源状态</summary><div class="srcs" id="srcs"></div></details>
+  </div>
+</div></footer>
 
 <script>
 const $ = s => document.querySelector(s);
-const LV = {bug:"🔥 疑似 BUG 价", target:"🎯 到达目标价", great:"💎 超值", normal:"常规"};
 const RULES_DEFAULT = {bug_ratio:.45, great_ratio:.65, min_history_days:5, min_distance_km:1800,
   economy_bug_per_km:.045, economy_great_per_km:.07, business_bug_per_km:.14, business_great_per_km:.22};
-const REGION = {MY:"马来西亚国内"};
+const REGION = {MY:"马来西亚"};
 [["东南亚","SG TH ID VN PH KH LA MM BN TL"],["东亚","CN HK MO TW JP KR MN"],["南亚","IN LK BD NP MV PK BT"],
  ["中东","AE QA SA OM BH KW TR JO IL IR IQ LB"],
  ["欧洲","GB IE FR DE IT ES PT NL BE LU CH AT DK SE NO FI IS PL CZ SK HU GR RO BG HR SI RS RU UA EE LV LT CY MT"],
  ["大洋洲","AU NZ FJ PG NC PF"],["美洲","US CA MX BR AR CL PE CO CU"],["非洲","ZA EG KE MA ET TZ MU NG SC MG TN"],
  ["中亚","KZ UZ KG TJ TM GE AM AZ"]].forEach(([r,cs]) => cs.split(" ").forEach(c => REGION[c] = r));
 const region = c => REGION[c] || "其他";
+const BAND = {"东亚":"#d9644a","东南亚":"#e39a3b","南亚":"#c9822b","中东":"#c7a46a","欧洲":"#8c3b5a",
+  "大洋洲":"#2f8a8a","美洲":"#a44a2a","非洲":"#b7792f","中亚":"#7a6a3a","马来西亚":"#6f7d3c","其他":"#9b8f80"};
 
-let D = null, tab = "hot", legendOpen = false;
-const F = {hot:{cls:"", trip:"", level:"", q:""}, all:{region:"", intl:true, sort:"value", q:""}};
+let D = null;
+const PAGE = matchMedia("(max-width:760px)").matches ? 12 : 24;
+const S = {region:"", intl:true, sort:"value", q:"", shown:PAGE};
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const isMobile = () => matchMedia("(max-width:640px)").matches;
 const rules = () => ({...RULES_DEFAULT, ...(D.rules || {})});
+const money = n => Math.round(n).toLocaleString("en-US");
+const md = s => s && s.length >= 10 ? `${+s.slice(5,7)}月${+s.slice(8,10)}日` : "";
+const dates = f => f.depart ? md(f.depart) + (f.return ? ` 至 ${md(f.return)}` : "") : "";
+const trTxt = t => t == null ? "" : t === 0 ? "直飞" : `中转 ${t} 次`;
+const join = (...xs) => xs.filter(Boolean).join("，");
 
 /* ---------- booking links ---------- */
 const ddmm = s => s && s.length >= 10 ? s.slice(8,10) + s.slice(5,7) : "";
@@ -232,211 +276,177 @@ const skyscanner = f => { const y = s => s && s.length >= 10 ? s.slice(2,4)+s.sl
 const gflights = f => { let q = `Flights from ${f.origin} to ${f.dest} on ${f.depart||""}`;
   if (f.return) q += ` returning ${f.return}`; if (f.trip_class === 1) q += " business class";
   return "https://www.google.com/travel/flights?q=" + encodeURIComponent(q); };
-const btns = (f, small) => `<div class="btns${small ? " sm" : ""}">
-  <a class="btn${small ? "" : " pri"}" href="${aviasales(f)}" target="_blank" rel="noopener">Aviasales</a>
-  <a class="btn" href="${tripcom(f)}" target="_blank" rel="noopener">携程</a>
-  <a class="btn" href="${skyscanner(f)}" target="_blank" rel="noopener">Skyscanner</a>
-  <a class="btn" href="${gflights(f)}" target="_blank" rel="noopener">Google</a></div>`;
+const ext = (href, label, cls="btn") => `<a class="${cls}" href="${href}" target="_blank" rel="noopener">${label}</a>`;
+const links = (f, primary) => `<div class="links">${primary ? ext(aviasales(f), "去订票", "btn pri") : ext(aviasales(f), "Aviasales")}
+  ${ext(tripcom(f), "携程")}${ext(skyscanner(f), "Skyscanner")}${ext(gflights(f), "Google")}</div>`;
 
-/* ---------- time helpers ---------- */
 const fmtTime = iso => new Date(iso).toLocaleString("zh-CN",{timeZone:"Asia/Kuala_Lumpur",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"});
 function ago(iso){ const m = Math.round((Date.now() - new Date(iso)) / 60000);
   return m < 1 ? "刚刚" : m < 60 ? `${m} 分钟前` : m < 1440 ? `${Math.round(m/60)} 小时前` : `${Math.round(m/1440)} 天前`; }
-const transfersTxt = t => t == null ? "" : t === 0 ? "直飞" : `中转 ${t} 次`;
 
-function spark(pts, now){
+function spark(pts, now, color){
   if (!pts || pts.length < 2) return "";
-  const vals = pts.map(p => p[1]).concat([now]);
-  const mn = Math.min(...vals), mx = Math.max(...vals), W = 230, H = 34;
-  const x = i => i / (vals.length - 1) * W, y = v => H - 4 - (mx === mn ? .5 : (v - mn) / (mx - mn)) * (H - 8);
+  const vals = pts.map(p => p[1]).concat(now ? [now] : []);
+  const mn = Math.min(...vals), mx = Math.max(...vals), W = 200, H = 28;
+  const x = i => i / (vals.length - 1) * W, y = v => H - 3 - (mx === mn ? .5 : (v - mn) / (mx - mn)) * (H - 6);
   const d = vals.map((v,i) => `${i?"L":"M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join("");
-  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="近期价格走势">
-    <path d="${d}" fill="none" stroke="#59c3ff" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
-    <circle cx="${x(vals.length-1)}" cy="${y(now)}" r="3" fill="#ffb627"/></svg>`;
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="近 ${pts.length} 天价格走势">
+    <path d="${d}" fill="none" stroke="${color}" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>`;
 }
 
-/* ---------- views ---------- */
-function card(f){
-  const pct = f.ratio ? Math.max(4, Math.min(100, f.ratio * 100)) : null;
-  return `<article class="card ${f.level}">
-    <span class="badge ${f.level}">${LV[f.level]}</span>
-    <div class="route">${esc(f.origin)}<span class="arrow" aria-label="${f.one_way ? "单程" : "往返"}">${f.one_way ? "━━✈" : "⇄"}</span>${esc(f.dest)}</div>
-    <div class="city">${esc(f.dest_name_zh)} · ${esc(f.dest_name)}${f.country ? " · " + esc(f.country) : ""}</div>
-    <div class="price"><div class="cur">${D.currency}</div><div class="n">${Math.round(f.price)}</div>
-      ${f.baseline ? `<div class="was" aria-label="常规价">${Math.round(f.baseline)}</div>` : ""}</div>
-    <div class="meta">
-      <span>📅 <b>${esc(f.depart || "?")}</b>${f.return ? ` → <b>${esc(f.return)}</b>` : ""}</span>
-      <span>${f.one_way ? "单程" : "往返"} · ${f.trip_class === 1 ? "商务舱" : "经济舱"}</span>
-      ${f.transfers != null ? `<span>${transfersTxt(f.transfers)}</span>` : ""}
-      ${f.airline ? `<span>✈ ${esc(f.airline)}</span>` : ""}
-      ${f.gate ? `<span>报价：${esc(f.gate)}</span>` : ""}
-    </div>
-    ${pct ? `<div class="bar" title="现价 / 近期常规价"><i style="width:${pct}%"></i></div>` : ""}
-    ${f.reasons && f.reasons.length ? `<ul class="why">${f.reasons.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
-    ${spark(D.trend[f.id], f.price)}
-    ${btns(f)}
-  </article>`;
-}
-
-function nearList(){
+/* ---------- derived data ---------- */
+function nearest(){
   const R = rules();
-  return D.all_routes.filter(r => r.per_km && (r.distance || 0) >= R.min_distance_km)
-    .sort((a,b) => a.per_km - b.per_km).slice(0, 10);
+  return D.all_routes.filter(r => r.per_km && (r.distance || 0) >= R.min_distance_km && r.country !== "MY")
+    .sort((a,b) => a.per_km - b.per_km);
+}
+function watchList(){
+  if (D.watch) return D.watch;
+  const m = Object.fromEntries(D.all_routes.map(r => [r.dest, r]));   // 兼容旧数据
+  return Object.entries(D.targets || {}).map(([k,t]) => { const r = m[k.toUpperCase()];
+    return {dest:k.toUpperCase(), target:t, dest_name:r?.dest_name || k, dest_name_zh:r?.dest_name_zh || k, current:r || null, trend:[]}; });
 }
 
-function idleView(){
-  const R = rules(), days = D.history_days ?? 0, need = R.min_history_days;
-  const ready = days >= need;
-  const near = nearList();
-  return `<div class="idle">
-      <h2>暂时没有异常低价</h2>
-      <p>雷达每 15 分钟扫描一次，一出现 bug 价会立刻推送到你手机。</p>
-      <div class="progress" aria-hidden="true"><i style="width:${Math.min(100, days / need * 100)}%"></i></div>
-      <p>${ready ? `「对比历史价」规则已启用（已积累 ${days} 天数据）。`
-        : `「对比历史价」规则还在积累数据：${days} / ${need} 天，满 ${need} 天后自动启用。在此之前按「每公里单价」和「目标价」判定。`}</p>
+/* ---------- hero ---------- */
+function renderHero(){
+  const R = rules(), hot = D.hot.find(h => h.level === "bug" || h.level === "target") || D.hot[0];
+  const f = hot || nearest()[0];
+  if (!f){ $("#today").innerHTML = `<div class="hero-in"><p class="kicker">正在积累数据，下一轮扫描后这里会出现今天最值得看的航线。</p></div>`; return; }
+  const kicker = hot ? ({bug:"疑似 bug 价", target:"到达你的目标价", great:"今天的超值票"}[hot.level] || "今天的特价")
+                     : "今天最接近 bug 价的航线";
+  const bugLine = Math.round(R.economy_bug_per_km * (f.distance || 0) * 2);
+  const why = hot ? (hot.reasons || []).join("；")
+              : (f.distance ? `再便宜到 ${D.currency} ${money(bugLine)} 以下，就会判为 bug 价并推送给你。` : "");
+  $("#today").innerHTML = `<div class="hero-in">
+    <p class="kicker">${kicker}</p>
+    <p class="big" lang="en">${esc(f.dest_name)}</p>
+    <div>
+      <p class="where">${esc(f.dest_name_zh)}，${f.one_way ? "单程" : "往返"}${f.trip_class === 1 ? "商务舱" : "经济舱"}</p>
+      <p class="facts">${esc(join(dates(f), trTxt(f.transfers), f.gate ? "报价来自 " + f.gate : ""))}</p>
+      ${why ? `<p class="why">${esc(why)}</p>` : ""}
     </div>
-    <h3 class="sec">最接近 bug 价的航线 <small>经济舱往返 · 按每公里单价排序，越靠前越便宜</small></h3>
-    ${near.length ? `<div class="near">${near.map(r => {
-      const gap = Math.min(100, R.economy_bug_per_km / r.per_km * 100);
-      const bugPrice = Math.round(R.economy_bug_per_km * r.distance * 2);
-      return `<div class="mini">
-        <div class="top"><div class="dst">${esc(r.dest_name_zh)}<span>${esc(r.dest)}</span></div><div class="p">${Math.round(r.price)}</div></div>
-        <div class="sub">${esc(r.depart || "")}${r.return ? " → " + esc(r.return) : ""}${r.transfers != null ? " · " + transfersTxt(r.transfers) : ""}</div>
-        <div class="gap" title="离 bug 线的距离"><i style="width:${gap}%"></i></div>
-        <div class="sub">低于 ${D.currency} ${bugPrice} 会判为 bug 价 · 每公里 ${r.per_km.toFixed(3)}</div>
-        ${btns(r, true)}
-      </div>`; }).join("")}</div>` : `<div class="empty">数据积累中，下一轮扫描后显示。</div>`}`;
+    <div class="price"><div class="u">${D.currency}</div><div class="n">${money(f.price)}</div>
+      ${f.baseline ? `<div class="u">平时约 ${money(f.baseline)}</div>` : ""}</div>
+    <div class="acts">${links(f, true)}</div>
+  </div>`;
 }
 
-function filteredHot(){
-  const f = F.hot, q = f.q.trim().toLowerCase();
-  return D.hot.filter(x => (f.cls === "" || String(x.trip_class) === f.cls) && (f.trip === "" || (f.trip === "ow") === !!x.one_way) &&
-    (f.level === "" || x.level === f.level) && (!q || [x.dest, x.dest_name, x.dest_name_zh, x.country].join(" ").toLowerCase().includes(q)));
+/* ---------- watchlist ---------- */
+function renderWatch(){
+  const list = watchList().slice().sort((a,b) => {
+    const ra = a.current ? a.current.price / a.target : 99, rb = b.current ? b.current.price / b.target : 99; return ra - rb; });
+  if (!list.length){ $("#ledger").innerHTML = `<p class="empty">还没有设目标价。告诉 Claude 想盯哪些目的地、多少钱以下提醒你。</p>`; return; }
+  $("#ledger").innerHTML = list.map(w => {
+    const c = w.current;
+    if (!c) return `<div class="lrow none"><div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small></div>
+      <div class="bar"><div class="meter"></div><div class="meter-cap"><span>这一轮没有找到报价</span><span>目标 ${money(w.target)}</span></div></div>
+      <div class="val"><div class="now">暂无报价</div></div><div class="act"></div></div>`;
+    const hit = c.price <= w.target, pct = Math.min(100, w.target / c.price * 100);
+    return `<div class="lrow${hit ? " hit" : ""}">
+      <div class="dst">${esc(w.dest_name_zh)}<small lang="en">${esc(w.dest_name)}</small></div>
+      <div class="bar"><div class="meter" role="img" aria-label="目标价是当前价的 ${Math.round(pct)}%"><i style="width:${pct}%"></i></div>
+        <div class="meter-cap"><span>${esc(join(dates(c), trTxt(c.transfers)))}</span><span>目标 ${money(w.target)}</span></div>
+        ${spark(w.trend, c.price, hit ? "#0f5f66" : "#b8420f")}</div>
+      <div class="val"><div class="now">${money(c.price)}</div>
+        <div class="gap">${hit ? `比目标低 ${money(w.target - c.price)}` : `离目标还差 ${money(c.price - w.target)}`}</div></div>
+      <div class="act">${links(c, false)}</div>
+    </div>`;
+  }).join("");
 }
-function filteredAll(){
-  const f = F.all, q = f.q.trim().toLowerCase(), R = rules();
-  let list = D.all_routes.filter(x => (!f.intl || ((x.distance || 0) >= R.min_distance_km && x.country !== "MY")) &&
-    (f.region === "" || region(x.country) === f.region) &&
+
+/* ---------- anomalies ---------- */
+function renderDeals(){
+  const R = rules(), days = D.history_days ?? 0, need = R.min_history_days, list = D.hot;
+  if (!list.length){
+    $("#dealsLede").textContent = "疑似 bug 价、到达目标价和明显超值的票会出现在这里。";
+    $("#dealsBox").innerHTML = `<div class="quiet">
+      <p>这一轮扫描了 ${D.stats.fares_scanned} 条票价，没有发现异常低价。一出现会立刻推送到你手机。</p>
+      <div class="prog" aria-hidden="true"><i style="width:${Math.min(100, days / need * 100)}%"></i></div>
+      <p style="color:var(--muted);font-size:14px">${days >= need ? `历史价格对比已启用，已积累 ${days} 天数据。`
+        : `历史价格对比还在积累数据：${days} / ${need} 天。满 ${need} 天之前，靠每公里价格和你的目标价来判断。`}</p></div>`;
+    return;
+  }
+  $("#dealsLede").textContent = `共 ${list.length} 条。价格来自缓存，订票前先核价。`;
+  const TAG = {bug:"疑似 bug 价", target:"到达目标价", great:"超值"};
+  $("#dealsBox").innerHTML = `<div class="deals">${list.map(f => `<article class="deal ${f.level}">
+    <p class="tag">${TAG[f.level] || ""}</p>
+    <div class="row1"><div class="dn">${esc(f.dest_name_zh)}<small lang="en">${esc(f.dest_name)}</small></div>
+      <div><span class="pr">${money(f.price)}</span>${f.baseline ? `<span class="was">${money(f.baseline)}</span>` : ""}</div></div>
+    <p class="facts">${esc(join(f.one_way ? "单程" : "往返", f.trip_class === 1 ? "商务舱" : "经济舱", dates(f), trTxt(f.transfers), f.airline))}</p>
+    ${f.reasons?.length ? `<ul>${f.reasons.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
+    ${links(f, true)}</article>`).join("")}</div>`;
+}
+
+/* ---------- inspiration ---------- */
+function ideasList(){
+  const R = rules(), q = S.q.trim().toLowerCase();
+  const list = D.all_routes.filter(x => (!S.intl || ((x.distance || 0) >= R.min_distance_km && x.country !== "MY")) &&
+    (S.region === "" || region(x.country) === S.region) &&
     (!q || [x.dest, x.dest_name, x.dest_name_zh, x.country, region(x.country)].join(" ").toLowerCase().includes(q)));
-  list = list.slice().sort(f.sort === "price" ? (a,b) => a.price - b.price
-    : (a,b) => (a.per_km ?? 9) - (b.per_km ?? 9) || a.price - b.price);
-  return list;
+  return list.slice().sort(S.sort === "price" ? (a,b) => a.price - b.price : (a,b) => (a.per_km ?? 9) - (b.per_km ?? 9) || a.price - b.price);
+}
+function renderCtrls(){
+  const regions = ["", ...[...new Set(D.all_routes.map(r => region(r.country)))].sort((a,b) => a.localeCompare(b, "zh"))];
+  $("#ctrls").innerHTML = regions.map(r => `<button class="chip" data-region="${r}" aria-pressed="${S.region === r}">${r || "全部地区"}</button>`).join("")
+    + `<span class="sp"></span>
+    <select id="sort" aria-label="排序方式"><option value="value">按每公里价格</option><option value="price">按总价</option></select>
+    <label class="chip"><input type="checkbox" id="intl" ${S.intl ? "checked" : ""}> 只看国际长途</label>
+    <input type="search" id="q" placeholder="搜目的地" aria-label="搜索目的地" value="${esc(S.q)}">`;
+  $("#sort").value = S.sort;
+  $("#ctrls").querySelectorAll("[data-region]").forEach(b => b.onclick = () => {
+    S.region = b.dataset.region; S.shown = PAGE;
+    $("#ctrls").querySelectorAll("[data-region]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderIdeas(); });
+  $("#sort").oninput = e => { S.sort = e.target.value; renderIdeas(); };
+  $("#intl").oninput = e => { S.intl = e.target.checked; S.shown = PAGE; renderIdeas(); };
+  $("#q").oninput = e => { S.q = e.target.value; S.shown = PAGE; renderIdeas(); };
+}
+function renderIdeas(){
+  const list = ideasList(), shown = list.slice(0, S.shown);
+  $("#count").textContent = list.length ? `${list.length} 个目的地` : "";
+  $("#cards").innerHTML = list.length ? shown.map(r => { const rg = region(r.country);
+    return `<article class="pc"><div class="band" style="background:${BAND[rg] || BAND["其他"]}" title="${rg}"></div><div class="body">
+      <div class="en" lang="en">${esc(r.dest_name)}</div><div class="cn">${esc(r.dest_name_zh)}，${rg}</div>
+      <div class="pr">${money(r.price)}<small>${D.currency} 往返</small></div>
+      <div class="sub">${esc(join(dates(r), trTxt(r.transfers)))}</div>
+      ${links(r, false)}</div></article>`; }).join("")
+    : `<p class="empty">没有符合条件的目的地。换个地区，或取消「只看国际长途」。</p>`;
+  $("#moreBox").innerHTML = list.length > S.shown ? `<button class="btn" id="more">再显示 ${Math.min(PAGE, list.length - S.shown)} 个</button>` : "";
+  const m = $("#more"); if (m) m.onclick = () => { S.shown += PAGE; renderIdeas(); };
 }
 
-function filtersHTML(){
-  if (tab === "hot"){
-    if (!D.hot.length) return "";
-    const f = F.hot;
-    return `<label class="sr" for="fCls">舱位</label><select id="fCls" data-k="cls" aria-label="舱位">
-        <option value="">全部舱位</option><option value="0">经济舱</option><option value="1">商务舱</option></select>
-      <select data-k="trip" aria-label="行程类型"><option value="">往返+单程</option><option value="rt">往返</option><option value="ow">单程</option></select>
-      <select data-k="level" aria-label="级别"><option value="">全部级别</option><option value="bug">🔥 疑似 bug</option><option value="target">🎯 目标价</option><option value="great">💎 超值</option></select>
-      <input type="search" data-k="q" placeholder="搜目的地" aria-label="搜索目的地" value="${esc(f.q)}">`;
-  }
-  if (tab === "all"){
-    const regions = [...new Set(D.all_routes.map(r => region(r.country)))].sort();
-    return `<select data-k="sort" aria-label="排序"><option value="value">按性价比（每公里）</option><option value="price">按价格</option></select>
-      <select data-k="region" aria-label="地区"><option value="">全部地区</option>${regions.map(r => `<option>${r}</option>`).join("")}</select>
-      <label class="toggle"><input type="checkbox" data-k="intl" ${F.all.intl ? "checked" : ""}> 只看国际长途</label>
-      <input type="search" data-k="q" placeholder="搜目的地" aria-label="搜索目的地" value="${esc(F.all.q)}">`;
-  }
-  return "";
+/* ---------- feeds & meta ---------- */
+function renderFeeds(){
+  $("#news").innerHTML = D.news.length ? D.news.slice(0, 12).map(n => `<li>
+    <div class="src">${n.level === "bug" ? "<b>错误票价</b>，" : ""}${esc(n.source)}，${ago(n.published)}</div>
+    <a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a></li>`).join("")
+    : `<li class="empty">暂时没有新的错误票价情报。</li>`;
+  $("#alerts").innerHTML = D.alerts.length ? D.alerts.slice(0, 12).map(a => `<li>
+    <div class="src">${fmtTime(a.at)}，${a.channels?.length ? "已推送到 " + a.channels.join("、") : "未发送"}</div>
+    <a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></li>`).join("")
+    : `<li class="empty">还没有推送过。发现 bug 价或到达目标价时，这里会留下记录。</li>`;
 }
-function bindFilters(){
-  const box = $("#filters"), state = F[tab];
-  box.querySelectorAll("[data-k]").forEach(el => {
-    const k = el.dataset.k;
-    if (el.tagName === "SELECT") el.value = state[k];
-    el.addEventListener("input", () => { state[k] = el.type === "checkbox" ? el.checked : el.value; renderView(); });
-  });
-}
-
-function allView(){
-  const list = filteredAll();
-  if (!list.length) return `<div class="empty">没有符合条件的航线，试试放宽筛选。</div>`;
-  const hasBase = list.some(r => r.baseline), hasTr = list.some(r => r.transfers != null);
-  const count = `<p class="count">共 ${list.length} 个目的地 · 经济舱往返最低价</p>`;
-  if (isMobile()){
-    return count + `<div class="rows">${list.map(r => `<div class="mini">
-      <div class="top"><div class="dst">${esc(r.dest_name_zh)}<span>${esc(r.dest)}</span></div><div class="p">${Math.round(r.price)}</div></div>
-      <div class="sub">${esc(r.depart || "")}${r.return ? " → " + esc(r.return) : ""}${r.transfers != null ? " · " + transfersTxt(r.transfers) : ""}${r.per_km ? " · 每公里 " + r.per_km.toFixed(3) : ""}</div>
-      ${r.baseline ? `<div class="sub">常规价 ${Math.round(r.baseline)}（现价为其 ${Math.round(r.ratio*100)}%）</div>` : ""}
-      ${btns(r, true)}</div>`).join("")}</div>`;
-  }
-  return count + `<div class="tbl"><table><thead><tr><th>目的地</th><th>地区</th><th>最低往返（${D.currency}）</th>
-    ${hasBase ? "<th>常规价</th><th>比例</th>" : ""}<th>每公里</th><th>日期</th>${hasTr ? "<th>中转</th>" : ""}<th>查价</th></tr></thead><tbody>${
-    list.map(r => `<tr><td><b>${esc(r.dest_name_zh)}</b><span class="code">${esc(r.dest)}</span></td>
-      <td>${region(r.country)}</td><td class="p">${Math.round(r.price)}</td>
-      ${hasBase ? `<td class="num">${r.baseline ? Math.round(r.baseline) : "—"}</td><td class="num">${r.ratio ? Math.round(r.ratio*100) + "%" : "—"}</td>` : ""}
-      <td class="num">${r.per_km ? r.per_km.toFixed(3) : "—"}</td>
-      <td class="num">${esc(r.depart || "")}${r.return ? " → " + esc(r.return) : ""}</td>
-      ${hasTr ? `<td>${r.transfers == null ? "—" : transfersTxt(r.transfers)}</td>` : ""}
-      <td>${btns(r, true)}</td></tr>`).join("")}</tbody></table></div>`;
-}
-
-function renderView(){
-  const v = $("#view");
-  if (tab === "hot"){
-    const list = filteredHot();
-    v.innerHTML = !D.hot.length ? idleView()
-      : list.length ? `<div class="grid">${list.map(card).join("")}</div>` : `<div class="empty">没有符合筛选条件的结果。</div>`;
-  } else if (tab === "all"){
-    v.innerHTML = allView();
-  } else if (tab === "news"){
-    v.innerHTML = D.news.length ? `<div class="list">${D.news.map(n => `<div class="row ${n.level === "bug" ? "bug" : ""}">
-      <div class="src">${n.level === "bug" ? "🔥 错误票价 · " : n.level === "global" ? "🌏 其他出发地 · " : "📰 "}${esc(n.source)} · ${ago(n.published)}</div>
-      <h3><a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a></h3>
-      ${n.summary ? `<p>${esc(n.summary)}</p>` : ""}</div>`).join("")}</div>`
-      : `<div class="empty">暂时没有新的错误票价情报。</div>`;
-  } else {
-    v.innerHTML = D.alerts.length ? `<div class="list">${D.alerts.map(a => `<div class="row">
-      <div class="src">${fmtTime(a.at)} · ${a.channels && a.channels.length ? "已推送到 " + a.channels.join(" / ") : "未发送"}</div>
-      <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3></div>`).join("")}</div>`
-      : `<div class="empty">还没有推送过。发现 bug 价时这里会留下记录。</div>`;
-  }
-}
-
-function render(){
-  if (!D) return;
-  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.t === tab));
-  $("#filters").innerHTML = filtersHTML();
-  $("#filters").hidden = !$("#filters").innerHTML.trim();
-  bindFilters();
-  renderView();
-}
-
-function header(){
-  const age = (Date.now() - new Date(D.updated_at)) / 60000;
-  const stale = age > 60;
-  const s = D.stats;
-  $("#status").innerHTML = `<span><span class="dot${stale ? " stale" : ""}"></span>${esc(D.origin)} 出发 · 更新于 ${fmtTime(D.updated_at)}（${ago(D.updated_at)}）</span>
-    <span>本轮扫描 <span class="num">${s.fares_scanned}</span> 条票价 · <span class="num">${s.routes}</span> 条航线</span>
-    <span>${D.channels.length ? "推送到 " + D.channels.join(" / ") : "⚠️ 尚未配置推送"}</span>`;
-  $("#banner").innerHTML = D.demo ? `<div class="banner">当前展示的是演示数据。</div>`
-    : stale ? `<div class="banner">数据已经 ${ago(D.updated_at).replace("前","")}没有更新，系统会自动恢复；期间如有 bug 价，推送可能会延迟。</div>` : "";
-  $("#stats").innerHTML = [["bug","🔥 疑似 bug 价",s.bug],["target","🎯 到达目标价",s.target],["great","💎 超值",s.great]]
-    .map(([c,k,v]) => `<div class="stat ${c}"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
-  const R = rules();
-  $("#legend").innerHTML = `<b>判定规则</b><ul>
-    <li><b>🔥 疑似 bug 价</b>：低于该航线近期常规价的 ${Math.round(R.bug_ratio*100)}%；或经济舱往返每公里 ≤ ${D.currency} ${R.economy_bug_per_km}、商务舱 ≤ ${R.business_bug_per_km}（${R.min_distance_km} 公里以上航线）。会推送。</li>
-    <li><b>🎯 到达目标价</b>：低于你在 config.yaml 里给该目的地设的目标价（经济舱往返）。会推送。</li>
-    <li><b>💎 超值</b>：低于常规价的 ${Math.round(R.great_ratio*100)}%，或经济舱每公里 ≤ ${R.economy_great_per_km}、商务舱 ≤ ${R.business_great_per_km}。只在网页显示，不推送。</li>
-    </ul>`;
-  $("#sources").innerHTML = D.sources.map(x => `<span class="chip ${x.ok ? "ok" : "bad"}">${esc(x.name)} · ${x.count}</span>`).join("");
+function renderMeta(){
+  const age = (Date.now() - new Date(D.updated_at)) / 60000, stale = age > 60, R = rules();
+  $("#status").innerHTML = `<span><span class="dot${stale ? " stale" : ""}"></span>${fmtTime(D.updated_at)} 更新（${ago(D.updated_at)}）</span>
+    <span>${D.channels.length ? "推送到 " + D.channels.join("、") : "还没有配置推送"}</span>`;
+  $("#notice").innerHTML = D.demo ? `<p class="notice">现在显示的是演示数据。</p>`
+    : stale ? `<p class="notice">票价已经 ${ago(D.updated_at).replace("前","")}没有更新，系统会自动恢复。这段时间出现的 bug 价，推送可能会晚到。</p>` : "";
+  $("#rules").innerHTML = `<li>疑似 bug 价：低于这条航线平时价格的 ${Math.round(R.bug_ratio*100)}%，或经济舱往返每公里低于 ${D.currency} ${R.economy_bug_per_km}（商务舱 ${R.business_bug_per_km}，只看 ${R.min_distance_km} 公里以上的航线）。会推送。</li>
+    <li>到达目标价：低于你在「我的航线」里设的价格。会推送。</li>
+    <li>超值：低于平时价格的 ${Math.round(R.great_ratio*100)}%，或经济舱每公里低于 ${R.economy_great_per_km}。只在网页显示。</li>`;
+  $("#runinfo").textContent = `每 15 分钟扫描一次。这一轮扫描了 ${D.stats.fares_scanned} 条票价，覆盖 ${D.stats.routes} 条航线。`;
+  $("#srcs").innerHTML = D.sources.map(x => `<span class="${x.ok ? "" : "bad"}">${esc(x.name)}：${x.count}</span>`).join("");
 }
 
 async function load(){
   try{
-    const r = await fetch("data/deals.json?t=" + Date.now());
     const first = !D;
-    D = await r.json(); header();
-    first ? render() : renderView();   // 定时刷新时不重建筛选器，避免打断输入
-  }catch(e){ $("#status").textContent = "数据加载失败：" + e.message; }
+    D = await (await fetch("data/deals.json?t=" + Date.now())).json();
+    renderMeta(); renderHero(); renderWatch(); renderDeals(); renderFeeds();
+    if (first) renderCtrls();
+    renderIdeas();
+  }catch(e){ $("#status").textContent = "票价数据读取失败，请刷新页面重试。（" + e.message + "）"; }
 }
-document.querySelectorAll(".tab").forEach(b => b.onclick = () => { tab = b.dataset.t; render(); });
-$("#legendBtn").onclick = () => { legendOpen = !legendOpen; $("#legend").hidden = !legendOpen; $("#legendBtn").setAttribute("aria-expanded", legendOpen); };
-let lastMobile = null;
-addEventListener("resize", () => { const m = isMobile(); if (D && m !== lastMobile){ lastMobile = m; renderView(); } });
 load(); setInterval(load, 5 * 60 * 1000);
 </script>
 </body>
