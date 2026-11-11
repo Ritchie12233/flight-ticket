@@ -38,6 +38,8 @@ def baseline(history: dict, key: str, today: str, min_days: int):
 def evaluate(fares: list[dict], history: dict, cities: dict, cfg: dict, today: str) -> list[dict]:
     dc = cfg["detection"]
     targets = {k.upper(): v for k, v in (dc.get("targets") or {}).items()}
+    # 各地区推送线：国家代码 → (地区名, 往返价)
+    region_line = {c: (name, v["p"]) for name, v in (dc.get("region_lines") or {}).items() for c in v.get("c", [])}
     best: dict[str, dict] = {}
     # 同航线其他报价里的中转次数/报价平台，用来补全最便宜那条缺失的字段
     meta: dict[str, dict] = {}
@@ -107,6 +109,12 @@ def evaluate(fares: list[dict], history: dict, cities: dict, cfg: dict, today: s
                 bump("target", f"低于你设的{'单程' if f['one_way'] else '往返'}目标价 {tgt}")
 
         city = cities.get(f["dest"], {})
+        rl = region_line.get(city.get("country"))
+        if rl and not biz and city.get("country") != o.get("country"):
+            line = round(rl[1] * dc.get("one_way_target_ratio", 0.55)) if f["one_way"] else rl[1]
+            if f["price"] <= line:
+                bump("target", f"低于你给{rl[0]}设的{'单程' if f['one_way'] else '往返'}推送线 {line}")
+
         results.append({
             **f,
             "id": key,

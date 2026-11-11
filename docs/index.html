@@ -77,7 +77,27 @@ body.map-open{overflow:hidden}
 .top .meta{grid-column:2/-1;font-size:13px;color:var(--muted)}
 .top .meta b{color:var(--sea);font-weight:700}
 .top .meta b.hot{color:#9f1d0a}
-.top .links{grid-column:2/-1;margin-top:4px}
+.top .more{grid-column:2/-1;margin-top:4px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.top .more .links{margin:0}
+.top .tomap{display:none}
+.top-more{margin-top:10px}
+.top-more[hidden]{display:none}
+.rtabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.rtabs .chip small{font-size:12px;opacity:.7;font-weight:400}
+.rtabs .chip .ln{font-size:12px;font-weight:700;color:var(--sun)}
+.rtabs .chip[aria-pressed=true] .ln{color:#ffc9a3}
+.rpanel{margin-top:10px;border:1px solid var(--rule);border-radius:var(--r);background:var(--card);padding:12px 14px}
+.rpanel .hint{margin:0;color:var(--muted);font-size:14px}
+.ctys{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.ctys .chip{min-height:34px;padding:3px 12px;font-size:13px}
+.lineset .lh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.lineset .lh b{font-family:var(--serif);font-size:16px}
+.lineset output{font-family:var(--display);font-size:22px;color:var(--sun)}
+.lineset output.off{font-family:var(--sans);font-size:14px;color:var(--muted)}
+.lineset input[type=range]{width:100%;margin:8px 0 4px;accent-color:var(--sun);height:32px;cursor:pointer}
+.lineset .lf{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px;font-size:13px;color:var(--muted)}
+.lineset .st.ok{color:var(--sea)} .lineset .st.bad{color:#9f1d0a}
+.lineset .st button{border:0;background:none;color:inherit;text-decoration:underline;cursor:pointer;padding:0;font:inherit}
 .top .links .btn{min-height:32px;padding:2px 10px;font-size:12px}
 .pin{background:var(--card);border:1px solid var(--ink);border-radius:999px;padding:2px 8px;font-size:12px;font-weight:700;white-space:nowrap;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.35);font-family:var(--sans);line-height:1.4;cursor:pointer}
 .pin::after{content:"";position:absolute;left:50%;bottom:-5px;width:8px;height:8px;margin-left:-4px;background:inherit;border:inherit;border-top:0;border-left:0;transform:rotate(45deg);border-radius:0 0 2px 0}
@@ -178,6 +198,16 @@ body.map-open{overflow:hidden}
 .ctrls select,.ctrls input[type=search]{background:var(--card);border:1px solid var(--ctl);border-radius:var(--r-sm);padding:6px 10px;min-height:40px;font:inherit;font-size:14px;color:var(--ink)}
 .ctrls input[type=search]{flex:1;min-width:140px}
 .ctrls .sp{flex-basis:100%;height:0}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.fsel{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--ctl);border-radius:999px;padding:0 4px 0 14px;min-height:40px;font-size:14px;background:transparent}
+.fsel>span{color:var(--muted);white-space:nowrap}
+.fsel select{border:0;background:transparent;font:inherit;font-size:14px;font-weight:700;color:var(--ink);padding:6px 4px;min-height:38px;cursor:pointer;max-width:9.5em}
+.fsel select:focus-visible{outline:2px solid var(--sea);outline-offset:2px;border-radius:999px}
+.fsel.on{border-color:var(--ink);background:var(--ink)}
+.fsel.on>span{color:#cfc5b6}.fsel.on select{color:var(--paper)}
+.fsel.on select option{color:var(--ink)}
+.freset{border:0;background:none;color:var(--sea);text-decoration:underline;cursor:pointer;min-height:40px;padding:0 6px;font-size:14px}
+.freset[hidden]{display:none}
 .count{font-size:14px;color:var(--muted);margin:0 0 12px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
 .pc{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
@@ -216,7 +246,25 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .wrap{padding:0 16px}
   .mast{padding-top:20px}
   .today-grid{grid-template-columns:1fr}
-  .map-shell{height:460px}
+  .map-shell{height:340px}
+  .rtabs,.filters,.ctys{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-16px;margin-right:-16px;padding:0 16px}
+  .rpanel .ctys{margin-left:-14px;margin-right:-14px;padding:0 14px}
+  .rtabs::-webkit-scrollbar,.filters::-webkit-scrollbar,.ctys::-webkit-scrollbar{display:none}
+  .rtabs>*,.filters>*,.ctys>*{flex:none}
+  .rtabs .chip,.fsel{min-height:36px}
+  .today .lede{font-size:13px;margin:8px 0 10px}
+  .top li{grid-template-columns:20px minmax(0,1fr) auto;gap:0 8px;padding:7px 0}
+  .top .rk{font-size:14px;padding-top:3px}
+  .top .nm{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .top .nm small{display:none}
+  .top .pr{font-size:18px}
+  .top .meta{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .top .meta .tags{display:inline}
+  .top .meta .vt{padding:0 5px;font-size:11px}
+  .top .more{display:none}
+  .top li.open .more{display:flex;margin:6px 0 2px}
+  .top li.open .meta{white-space:normal}
+  .top .tomap{display:inline-flex;min-height:32px;padding:2px 10px;font-size:12px}
   .top{max-height:none}
   .lrow{grid-template-columns:1fr auto;gap:6px 12px}
   .lrow .bar{grid-column:1/-1;order:3}
@@ -258,9 +306,10 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
       <div class="seg" role="group" aria-label="往返或单程">
         <button data-trip="rt" aria-pressed="true">往返</button><button data-trip="ow" aria-pressed="false">单程</button>
       </div>
-      <label class="chip"><input type="checkbox" id="tQuick" checked> 不用提前办签证</label>
-      <label class="chip"><input type="checkbox" id="tFresh" checked> 只看没去过</label>
     </div>
+    <div class="rtabs" id="tRegions" role="group" aria-label="按地区筛选"></div>
+    <div class="rpanel" id="tPanel"></div>
+    <div class="filters" id="tFilters" role="group" aria-label="筛选特价"></div>
     <p class="lede" id="todayLede"></p>
     <div class="today-grid">
       <div><div class="map-shell sat" id="mapShell">
@@ -272,8 +321,9 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
             <button type="button" class="mbtn" id="mFull" aria-pressed="false">全屏</button>
           </div>
         </div>
-        <div class="legend-map"><span><i style="background:#c2260f"></i>疑似 bug 价 / 到达目标</span><span><i style="background:var(--sea)"></i>免签</span><span><i style="background:#b7792f"></i>落地签、电子签</span><span><i style="background:#9b8f80"></i>需签证</span></div></div>
-      <ol class="top" id="topList" aria-label="超级特价排行"></ol>
+        <div class="legend-map"><span><i style="background:#c2260f"></i>疑似 bug 价 / 到达目标价 / 低于推送线</span><span><i style="background:var(--sea)"></i>免签</span><span><i style="background:#b7792f"></i>落地签、电子签</span><span><i style="background:#9b8f80"></i>需签证</span></div></div>
+      <div><ol class="top" id="topList" aria-label="超级特价排行"></ol>
+        <button type="button" class="btn top-more" id="topMore" hidden></button></div>
     </div>
   </section>
 
@@ -360,7 +410,7 @@ function tags(r, opt = {}){
   return out.length ? `<span class="tags">${out.join("")}</span>` : "";
 }
 const PAGE = matchMedia("(max-width:760px)").matches ? 12 : 24;
-const S = {region:"", intl:true, sort:"value", q:"", shown:PAGE, quick:true, fresh:true, trip:"rt"};
+const S = {region:"", intl:true, sort:"value", q:"", shown:PAGE, visa:"", trip:"rt"};
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const rules = () => ({...RULES_DEFAULT, ...(D.rules || {})});
@@ -404,7 +454,7 @@ function spark(pts, now, color){
 function nearest(){
   const R = rules();
   const pool = D.all_routes.filter(r => r.per_km && (r.distance || 0) >= R.min_distance_km && r.country !== "MY");
-  const pref = pool.filter(r => quickVisa(r) && r.visited !== true);
+  const pref = pool.filter(r => quickVisa(r));
   return (pref.length ? pref : pool).sort((a,b) => a.per_km - b.per_km);
 }
 function watchList(){
@@ -415,21 +465,66 @@ function watchList(){
 }
 
 /* ---------- today: map + ranking ---------- */
-const T = {trip:"rt", quick:true, fresh:true, sel:null};
+const T_DEF = {visa:"", region:"", country:"", budget:"", when:"", stops:"", sort:"bug"};
+const T = {trip:"rt", sel:null, shown:30, ...T_DEF};
+try { const sv = JSON.parse(localStorage.getItem("kul.today.v2") || "{}"); for (const k in T_DEF) if (typeof sv[k] === "string") T[k] = sv[k]; if (sv.trip === "ow") T.trip = "ow"; } catch (e) {}
+const VISA_OPT = [["", "不限"], ["free", "免签"], ["quick", "免签 + 落地签/电子签"]];
+const visaOK = (r, v) => !v || (v === "free" ? r.visa?.status === "free" : quickVisa(r));
+const daysTo = d => d ? (new Date(d + "T00:00:00") - Date.now()) / 864e5 : null;
+function tFilters(){
+  const s = sym().trim();
+  return [
+    ["visa", "签证", VISA_OPT],
+    ["budget", "预算", [["", "不限"], ...[1000, 2000, 3000, 5000].map(n => [String(n), `${s}${money(n)} 以内`])]],
+    ["when", "出发", [["", "不限"], ["30", "30 天内"], ["90", "3 个月内"], ["later", "3 个月以后"]]],
+    ["stops", "中转", [["", "不限"], ["0", "只看直飞"], ["1", "最多转 1 次"]]],
+    ["sort", "排序", [["bug", "最接近 bug 价"], ["price", "价格最低"], ["soon", "出发最早"]]],
+  ];
+}
 let MAP = null, RANKED = [];
 const LV_RANK = {bug:3, target:2, great:1, normal:0};
 function bugLine(r){ const R = rules(); const k = r.trip_class === 1 ? R.business_bug_per_km : R.economy_bug_per_km;
   return r.distance ? Math.round(k * r.distance * (r.one_way ? 1 : 2)) : null; }
-function todayPool(){
+/* 各地区推送线：滑条设的往返价，存在本机并经 ntfy 回传给监控；监控采用后写回 D.region_lines */
+const LN = {lines:{}, at:0, state:""};
+function loadLines(){
+  let loc = null; try { loc = JSON.parse(localStorage.getItem("kul.lines.v1") || "null"); } catch (e) {}
+  if (loc && loc.at > (D.settings_at || 0)){ LN.lines = loc.lines || {}; LN.at = loc.at; LN.state = loc.sent ? "sent" : "bad"; }
+  else { LN.lines = {...(D.region_lines || {})}; LN.at = D.settings_at || 0; LN.state = ""; }
+}
+const OW_RATIO = () => D.one_way_target_ratio || .55;
+function userLine(r){ const p = LN.lines[region(r.country)]; return p ? (r.one_way ? Math.round(p * OW_RATIO()) : p) : null; }
+const underLine = r => { const l = userLine(r); return l != null && r.price <= l; };
+const isHot = r => r.level === "bug" || r.level === "target" || underLine(r);
+const regionCodes = name => { const cs = Object.keys(REGION).filter(c => REGION[c] === name);
+  return cs.length ? cs : [...new Set(D.all_routes.concat(D.ow_routes || []).filter(r => r.country && region(r.country) === name).map(r => r.country))]; };
+async function saveLines(){
+  LN.at = Math.floor(Date.now() / 1000) + 1; let sent = false;
+  if (D.settings_url){
+    try { const body = {v:1, region_lines:Object.fromEntries(Object.entries(LN.lines).filter(([, p]) => p > 0).map(([k, p]) => [k, {p, c:regionCodes(k)}]))};
+      sent = (await fetch(D.settings_url, {method:"POST", body:JSON.stringify(body)})).ok; } catch (e) {}
+  }
+  LN.state = sent ? "sent" : "bad";
+  try { localStorage.setItem("kul.lines.v1", JSON.stringify({lines:LN.lines, at:LN.at, sent})); } catch (e) {}
+}
+const CN_NAME = (() => { try { const d = new Intl.DisplayNames(["zh-CN"], {type:"region"}); return c => { try { return d.of(c) || c; } catch (e) { return c; } }; } catch (e) { return c => c; } })();
+const REGION_ORDER = ["东南亚","东亚","南亚","中东","中亚","欧洲","大洋洲","美洲","非洲","其他"];
+function todayPool(noGeo){
   const R = rules(), ow = T.trip === "ow";
   const base = (ow ? (D.ow_routes || []) : D.all_routes).slice();
   const byId = Object.fromEntries(base.map(r => [r.dest, r]));
   for (const h of D.hot) if (h.trip_class === 0 && !!h.one_way === ow && (!byId[h.dest] || h.price <= byId[h.dest].price)) byId[h.dest] = h;
   return Object.values(byId).filter(r => r.country !== "MY" && (r.distance || 0) >= R.min_distance_km &&
-    (!T.quick || quickVisa(r)) && (!T.fresh || r.visited !== true));
+    visaOK(r, T.visa) && (noGeo || ((!T.region || region(r.country) === T.region) && (!T.country || r.country === T.country))) &&
+    (!T.budget || r.price <= +T.budget) &&
+    (!T.stops || (r.transfers != null && r.transfers <= +T.stops)) &&
+    (!T.when || (d => d != null && (T.when === "later" ? d > 90 : d <= +T.when))(daysTo(r.depart))));
 }
 function rankToday(list){
-  return list.slice().sort((a,b) => (LV_RANK[b.level] || 0) - (LV_RANK[a.level] || 0) ||
+  if (T.sort === "price") return list.slice().sort((a,b) => a.price - b.price);
+  if (T.sort === "soon") return list.slice().sort((a,b) => String(a.depart || "9").localeCompare(String(b.depart || "9")) || a.price - b.price);
+  const lv = r => Math.max(LV_RANK[r.level] || 0, underLine(r) ? 2 : 0);
+  return list.slice().sort((a,b) => lv(b) - lv(a) ||
     (a.price / (bugLine(a) || 1e9)) - (b.price / (bugLine(b) || 1e9)) || a.price - b.price);
 }
 function popupHTML(r){
@@ -437,38 +532,93 @@ function popupHTML(r){
   return `<div class="pn">${esc(r.dest_name_zh)} <small lang="en" style="font-weight:400;color:var(--muted)">${esc(r.dest_name)}</small></div>
     <div class="pp">${price(r.price)} <small style="font-family:var(--sans);font-size:12px;color:var(--muted)">${r.one_way ? "单程" : "往返"}</small></div>
     <div style="color:var(--muted);font-size:13px">${esc(join(dates(r), trTxt(r.transfers)))}</div>
-    ${tags(r, {hideBeen:true})}
+    ${tags(r)}
     ${r.level && r.level !== "normal" ? `<div style="margin-top:6px;color:#9f1d0a;font-weight:700">${esc((r.reasons || []).join("；"))}</div>`
       : bl ? `<div style="margin-top:6px;font-size:13px">再便宜到 ${price(bl)} 以下判为 bug 价</div>` : ""}
     ${r.visa?.note ? `<div style="font-size:13px;color:var(--muted)">签证：${esc(r.visa.note)}</div>` : ""}
     ${links(r, true)}`;
 }
-function renderToday(){
-  const ranked = rankToday(todayPool()), top = ranked.slice(0, 12);
-  const hotN = ranked.filter(r => r.level === "bug" || r.level === "target").length;
-  $("#todayLede").textContent = `${T.trip === "ow" ? "单程" : "往返"}经济舱，${ranked.length} 个国际目的地。`
-    + (hotN ? `其中 ${hotN} 个已达 bug 价或目标价，排在最前。` : "现在没有 bug 价，越靠前越接近 bug 线（低于 bug 线就会推送）。")
-    + " 地球可以拖动旋转、滚轮或双指放大到街道，点右侧排行会飞到那座城市。";
-  $("#topList").innerHTML = top.length ? top.map((r,i) => { const bl = bugLine(r), hot = r.level === "bug" || r.level === "target";
-
-    return `<li data-dest="${r.dest}" tabindex="0">
+function renderRegions(){
+  const pool = todayPool(true), cnt = {};
+  pool.forEach(r => { const g = region(r.country); cnt[g] = (cnt[g] || 0) + 1; });
+  const names = REGION_ORDER.filter(g => cnt[g]);
+  if (T.region && !cnt[T.region]){ names.push(T.region); cnt[T.region] = 0; }
+  $("#tRegions").innerHTML = [["", "全部", pool.length], ...names.map(g => [g, g, cnt[g]])].map(([v, t, n]) =>
+    `<button type="button" class="chip" data-region="${v}" aria-pressed="${T.region === v}">${t} <small>${n}</small>${v && LN.lines[v] ? `<span class="ln">≤${price(LN.lines[v])}</span>` : ""}</button>`).join("");
+  $("#tRegions").querySelectorAll("button").forEach(b => b.onclick = () => { T.region = b.dataset.region; T.country = ""; T.sel = null; T.shown = 30; saveT(); renderToday(); });
+  const box = $("#tPanel"), g = T.region;
+  if (!g){
+    const set = Object.entries(LN.lines).filter(([, p]) => p > 0);
+    box.innerHTML = `<p class="hint">点上面任意一个地区，可以再按国家筛选，并拖滑条给这个地区设一条推送线：价格低于它就推送到手机 ntfy。${
+      set.length ? `已设：${set.map(([k, p]) => `${esc(k)} ≤ ${price(p)}`).join("、")}。` : ""}</p>`;
+    return;
+  }
+  const inG = pool.filter(r => region(r.country) === g), byC = {};
+  inG.forEach(r => byC[r.country] = (byC[r.country] || 0) + 1);
+  const ctys = Object.entries(byC).sort((a,b) => b[1] - a[1]);
+  const rt = D.all_routes.filter(r => region(r.country) === g && r.country !== "MY").map(r => r.price).sort((a,b) => a - b);
+  const cur = LN.lines[g] || 0, q = rt.length ? rt[Math.min(rt.length - 1, Math.floor(rt.length * .75))] : 3000;
+  const max = Math.max(500, Math.ceil(q / 100) * 100, Math.ceil(cur / 100) * 100), step = max <= 2000 ? 20 : 50;
+  box.innerHTML = `<div class="ctys" role="group" aria-label="${g}的国家">${[["", "全部国家", inG.length], ...ctys.map(([c, n]) => [c, CN_NAME(c), n])].map(([c, t, n]) =>
+      `<button type="button" class="chip" data-cty="${c}" aria-pressed="${T.country === c}">${esc(t)} <small>${n}</small></button>`).join("")}</div>
+    <div class="lineset">
+      <div class="lh"><b>${g}推送线</b><output id="lnOut"></output></div>
+      <input type="range" id="lnRange" min="0" max="${max}" step="${step}" value="${cur}" aria-label="${g}往返推送线，拖到最左边为不设">
+      <div class="lf"><span id="lnInfo"></span><span class="st" id="lnSt"></span></div>
+    </div>`;
+  box.querySelectorAll("[data-cty]").forEach(b => b.onclick = () => { T.country = b.dataset.cty; T.sel = null; T.shown = 30; saveT(); renderToday(); });
+  const rng = $("#lnRange");
+  const label = () => { const v = +rng.value, n = rt.filter(p => p <= v).length;
+    $("#lnOut").className = v ? "" : "off";
+    $("#lnOut").textContent = v ? `往返 ≤ ${price(v)}` : "未设置（只按自动 bug 线推送）";
+    $("#lnInfo").textContent = v ? `现在有 ${n} 个目的地低于这条线；单程按 ${price(Math.round(v * OW_RATIO()))} 算。${rt.length ? `目前最低 ${price(rt[0])}。` : ""}`
+      : `往右拖设置价格。${rt.length ? `${g}目前往返最低 ${price(rt[0])}。` : ""}`; };
+  const status = () => { const st = $("#lnSt"), v = LN.lines[g] || 0, live = (D.region_lines || {})[g] || 0;
+    st.className = "st"; st.innerHTML = "";
+    if (v === live && LN.state !== "bad"){ if (v){ st.classList.add("ok"); st.textContent = "已生效，低于这条线会推送到 ntfy"; } }
+    else if (LN.state === "sent"){ st.classList.add("ok"); st.textContent = "已保存，下一轮扫描（约 15 分钟内）生效"; }
+    else if (LN.state === "bad"){ st.classList.add("bad"); st.innerHTML = D.settings_url ? `没发出去，<button type="button">点这里重试</button>` : "监控还没更新到支持滑条的版本，稍后刷新再试";
+      const b = st.querySelector("button"); if (b) b.onclick = async () => { st.textContent = "保存中…"; await saveLines(); status(); }; } };
+  rng.oninput = label;
+  rng.onchange = async () => { const v = +rng.value; if (v) LN.lines[g] = v; else delete LN.lines[g];
+    $("#lnSt").className = "st"; $("#lnSt").textContent = "保存中…";
+    renderList(); await saveLines(); status();
+    const chip = $("#tRegions").querySelector(`[data-region="${g}"]`); if (chip){ chip.querySelector(".ln")?.remove(); if (v) chip.insertAdjacentHTML("beforeend", `<span class="ln">≤${price(v)}</span>`); } };
+  label(); status();
+}
+function renderToday(){ renderRegions(); renderList(); }
+function renderList(){
+  const ranked = rankToday(todayPool()), top = ranked.slice(0, T.shown);
+  const hotN = ranked.filter(isHot).length;
+  const where = T.country ? CN_NAME(T.country) : T.region || "国际";
+  $("#todayLede").textContent = `${T.trip === "ow" ? "单程" : "往返"}经济舱，${where} ${ranked.length} 个目的地。`
+    + (hotN ? `其中 ${hotN} 个已达 bug 价、目标价或你的推送线${T.sort === "bug" ? "，排在最前" : ""}。` : T.sort === "bug" ? "现在没有 bug 价，越靠前越接近 bug 线。" : "现在没有 bug 价。");
+  $("#topList").innerHTML = top.length ? top.map((r,i) => { const bl = bugLine(r), ul = userLine(r), hot = isHot(r);
+    const why = r.level === "bug" ? "疑似 bug 价" : r.level === "target" ? "到达目标价" : "低于你的推送线";
+    return `<li data-dest="${r.dest}" tabindex="0" class="${r.dest === T.sel ? "on" : ""}">
       <span class="rk">${i + 1}</span>
       <div class="nm">${esc(r.dest_name_zh)}<small lang="en">${esc(r.dest_name)}</small></div>
       <div class="pr${hot ? " hot" : ""}">${price(r.price)}</div>
-      <div class="meta">${hot ? `<b class="hot">${r.level === "bug" ? "疑似 bug 价" : "到达目标价"}</b>，` : bl ? `bug 线 <b>${price(bl)}</b>，` : ""}${esc(join(dates(r), trTxt(r.transfers)))} ${tags(r, {hideBeen:true})}</div>
-      ${links(r, false)}</li>`; }).join("")
-    : `<li class="empty" style="display:block">没有符合条件的目的地，取消上面的勾选试试。</li>`;
+      <div class="meta">${hot ? `<b class="hot">${why}</b>，` : ul ? `推送线 <b>${price(ul)}</b>，` : bl ? `bug 线 <b>${price(bl)}</b>，` : ""}${esc(join(dates(r), trTxt(r.transfers)))} ${tags(r)}</div>
+      <div class="more">${links(r, false)}<button type="button" class="btn tomap">在地图上看</button></div></li>`; }).join("")
+    : `<li class="empty" style="display:block">没有符合条件的目的地，放宽上面的筛选试试。</li>`;
+  $("#topMore").hidden = ranked.length <= T.shown;
+  $("#topMore").textContent = `再显示 30 个（共 ${ranked.length} 个）`;
   $("#topList").querySelectorAll("li[data-dest]").forEach(li => {
-    const go = e => { if (e.target.closest("a")) return; focusDest(li.dataset.dest); };
-    li.onclick = go; li.onkeydown = e => { if (e.key === "Enter") go(e); };
+    const go = e => { if (e.target.closest("a")) return;
+      if (matchMedia("(max-width:760px)").matches && !e.target.closest(".tomap")){
+        const open = !li.classList.contains("open");
+        $("#topList").querySelectorAll("li.open").forEach(x => x.classList.remove("open"));
+        li.classList.toggle("open", open); if (open) openDest(li.dataset.dest, true); return; }
+      focusDest(li.dataset.dest); };
+    li.onclick = go; li.onkeydown = e => { if (e.key === "Enter" && e.target === li) go(e); };
   });
-  drawMap(ranked, top);
+  drawMap(ranked, ranked.slice(0, 12));
 }
 /* ---------- 3D 地球（MapLibre GL，矢量底图 + 卫星影像，坐标为城市中心点） ---------- */
 const KUL = [101.6869, 3.139];
 const GEO = {base:"sat", globe:true, bucket:-1, first:true, ready:false, pills:[], popup:null, tip:null};
 const coordOK = r => Number.isFinite(r.lat) && Number.isFinite(r.lon) && Math.abs(r.lat) <= 90 && Math.abs(r.lon) <= 180;
-const isHot = r => r.level === "bug" || r.level === "target";
 const pinCol = r => isHot(r) ? "#c2260f" : r.visa?.status === "free" ? "#0f7a83"
   : (r.visa?.status === "easy" || r.visa?.status === "free_partial") ? "#c98a2b" : "#9b8f80";
 const calm = () => matchMedia("(prefers-reduced-motion:reduce)").matches;
@@ -655,11 +805,24 @@ function focusDest(code){
 }
 function bindToday(){
   document.querySelectorAll(".seg button[data-trip]").forEach(b => b.onclick = () => {
-    T.trip = b.dataset.trip; T.sel = null;
+    T.trip = b.dataset.trip; T.sel = null; T.shown = 30; saveT();
     document.querySelectorAll(".seg button[data-trip]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderToday(); });
-  $("#tQuick").oninput = e => { T.quick = e.target.checked; T.sel = null; renderToday(); };
-  $("#tFresh").oninput = e => { T.fresh = e.target.checked; T.sel = null; renderToday(); };
+  document.querySelectorAll(".seg button[data-trip]").forEach(x => x.setAttribute("aria-pressed", x.dataset.trip === T.trip));
+  const box = $("#tFilters");
+  box.innerHTML = tFilters().map(([k, label, opts]) => { if (!opts.some(o => o[0] === T[k])) T[k] = T_DEF[k];
+    return `<label class="fsel" data-k="${k}"><span>${label}</span><select data-k="${k}" aria-label="${label}">${opts.map(([v, t]) => `<option value="${esc(v)}"${T[k] === v ? " selected" : ""}>${esc(t)}</option>`).join("")}</select></label>`; }).join("")
+    + `<button type="button" class="freset" id="tReset" hidden>清空筛选</button>`;
+  const paint = () => { let n = 0;
+    box.querySelectorAll(".fsel").forEach(l => l.classList.toggle("on", T[l.dataset.k] !== T_DEF[l.dataset.k]));
+    for (const k in T_DEF) if (T[k] !== T_DEF[k]) n++;
+    $("#tReset").hidden = !n;
+    try { localStorage.setItem("kul.today.v2", JSON.stringify({trip:T.trip, ...Object.fromEntries(Object.keys(T_DEF).map(k => [k, T[k]]))})); } catch (e) {} };
+  box.querySelectorAll("select").forEach(el => el.oninput = () => { T[el.dataset.k] = el.value; T.sel = null; T.shown = 30; paint(); renderToday(); });
+  $("#tReset").onclick = () => { Object.assign(T, T_DEF); T.sel = null; T.shown = 30; box.querySelectorAll("select").forEach(el => el.value = T[el.dataset.k]); paint(); renderToday(); };
+  $("#topMore").onclick = () => { T.shown += 30; renderList(); };
+  saveT = paint; paint();
 }
+let saveT = () => {};
 
 /* ---------- watchlist ---------- */
 function renderWatch(){
@@ -728,7 +891,7 @@ function ideasList(){
   const R = rules(), q = S.q.trim().toLowerCase();
   const src = S.trip === "ow" && D.ow_routes ? D.ow_routes : D.all_routes;
   const list = src.filter(x => (!S.intl || ((x.distance || 0) >= R.min_distance_km && x.country !== "MY")) &&
-    (!S.quick || quickVisa(x)) && (!S.fresh || x.visited !== true) &&
+    visaOK(x, S.visa) &&
     (S.region === "" || region(x.country) === S.region) &&
     (!q || [x.dest, x.dest_name, x.dest_name_zh, x.country, region(x.country)].join(" ").toLowerCase().includes(q)));
   return list.slice().sort(S.sort === "price" ? (a,b) => vrank(a) - vrank(b) || a.price - b.price
@@ -740,8 +903,7 @@ function renderCtrls(){
     + `<span class="sp"></span>
     <select id="trip" aria-label="往返或单程"><option value="rt">往返</option><option value="ow">单程</option></select>
     <select id="sort" aria-label="排序方式"><option value="value">免签优先，再按每公里价格</option><option value="price">免签优先，再按总价</option></select>
-    <label class="chip"><input type="checkbox" id="quick" ${S.quick ? "checked" : ""}> 不用提前办签证</label>
-    <label class="chip"><input type="checkbox" id="fresh" ${S.fresh ? "checked" : ""}> 只看没去过</label>
+    <select id="visaSel" aria-label="签证">${VISA_OPT.map(([v, t]) => `<option value="${v}">签证：${t}</option>`).join("")}</select>
     <label class="chip"><input type="checkbox" id="intl" ${S.intl ? "checked" : ""}> 只看国际长途</label>
     <input type="search" id="q" placeholder="搜目的地" aria-label="搜索目的地" value="${esc(S.q)}">`;
   $("#sort").value = S.sort; $("#trip").value = S.trip;
@@ -751,8 +913,7 @@ function renderCtrls(){
     $("#ctrls").querySelectorAll("[data-region]").forEach(x => x.setAttribute("aria-pressed", x === b)); renderIdeas(); });
   $("#sort").oninput = e => { S.sort = e.target.value; renderIdeas(); };
   $("#intl").oninput = e => { S.intl = e.target.checked; S.shown = PAGE; renderIdeas(); };
-  $("#quick").oninput = e => { S.quick = e.target.checked; S.shown = PAGE; renderIdeas(); };
-  $("#fresh").oninput = e => { S.fresh = e.target.checked; S.shown = PAGE; renderIdeas(); };
+  $("#visaSel").value = S.visa; $("#visaSel").oninput = e => { S.visa = e.target.value; S.shown = PAGE; renderIdeas(); };
   $("#q").oninput = e => { S.q = e.target.value; S.shown = PAGE; renderIdeas(); };
 }
 function renderIdeas(){
@@ -762,9 +923,9 @@ function renderIdeas(){
     return `<article class="pc"><div class="band" style="background:${BAND[rg] || BAND["其他"]}" title="${rg}"></div><div class="body">
       <div class="en" lang="en">${esc(r.dest_name)}</div><div class="cn">${esc(r.dest_name_zh)}，${rg}</div>
       <div class="pr">${price(r.price)}<small>${r.one_way ? "单程" : "往返"}</small></div>
-      <div class="sub">${esc(join(dates(r), trTxt(r.transfers)))}</div>${tags(r, {hideBeen:true})}
+      <div class="sub">${esc(join(dates(r), trTxt(r.transfers)))}</div>${tags(r)}
       ${links(r, false)}</div></article>`; }).join("")
-    : `<p class="empty">没有符合条件的目的地。换个地区，或取消上面的勾选。</p>`;
+    : `<p class="empty">没有符合条件的目的地。换个地区，或放宽上面的筛选。</p>`;
   $("#moreBox").innerHTML = list.length > S.shown ? `<button class="btn" id="more">再显示 ${Math.min(PAGE, list.length - S.shown)} 个</button>` : "";
   const m = $("#more"); if (m) m.onclick = () => { S.shown += PAGE; renderIdeas(); };
 }
@@ -800,7 +961,7 @@ async function load(){
   try{
     const first = !D;
     D = await (await fetch("data/deals.json?t=" + Date.now())).json();
-    renderMeta(); if (first) bindToday(); renderToday(); renderWatch(); renderDeals(); renderBiz(); renderFeeds();
+    renderMeta(); loadLines(); if (first) bindToday(); renderToday(); renderWatch(); renderDeals(); renderBiz(); renderFeeds();
     if (first) renderCtrls();
     renderIdeas();
   }catch(e){ $("#status").textContent = "票价数据读取失败，请刷新页面重试。（" + e.message + "）"; }

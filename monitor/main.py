@@ -110,6 +110,22 @@ def run(args):
         state["history"], state["alerted"] = {}, {}
     state["currency"] = cur
     held = cfg.get("held_visas") or []
+    # 看板上用滑条设的各地区推送线（经 ntfy 回传），比上次新就采用并存进 state
+    if not (args.demo or args.test_push):
+        got = notify.fetch_settings()
+        if got and got["_time"] > (state.get("settings") or {}).get("_time", 0):
+            lines = {}
+            for name, v in list(got["region_lines"].items())[:30]:
+                try:
+                    p = float(v.get("p") or 0)
+                    cs = [str(c).upper()[:2] for c in (v.get("c") or [])][:80]
+                except Exception:
+                    continue
+                if 0 < p < 1e6 and cs:
+                    lines[str(name)[:20]] = {"p": round(p), "c": cs}
+            state["settings"] = {"_time": got["_time"], "region_lines": lines}
+            log.info("采用看板新设置：%s", {k: v["p"] for k, v in lines.items()})
+    cfg["detection"]["region_lines"] = (state.get("settings") or {}).get("region_lines") or {}
     visited = {c.upper() for c in (cfg.get("visited") or [])}
 
     if args.test_push:
@@ -250,6 +266,11 @@ def run(args):
         "news": state["news"][:80],
         "alerts": state["alerts_log"][:50],
         "targets": cfg["detection"].get("targets", {}),
+        "region_lines": {k: v["p"] for k, v in cfg["detection"]["region_lines"].items()},
+        "settings_at": (state.get("settings") or {}).get("_time", 0),
+        "settings_url": (f'{notify.env("NTFY_SERVER", "https://ntfy.sh").rstrip("/")}/{notify.settings_topic()}'
+                         if notify.settings_topic() else ""),
+        "one_way_target_ratio": cfg["detection"].get("one_way_target_ratio", 0.55),
         "rules": {k: cfg["detection"].get(k) for k in (
             "bug_ratio", "great_ratio", "min_history_days", "min_distance_km",
             "economy_bug_per_km", "economy_great_per_km", "business_bug_per_km", "business_great_per_km")},

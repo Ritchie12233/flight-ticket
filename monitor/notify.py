@@ -8,6 +8,8 @@ import smtplib
 from email.mime.text import MIMEText
 from urllib.parse import quote
 
+import json
+
 import requests
 
 log = logging.getLogger(__name__)
@@ -27,6 +29,37 @@ def _telegram(title, body, url):
 
 
 NTFY_TOPIC_CFG = ""  # 由 main.py 从 config.yaml 读入
+
+
+def settings_topic() -> str:
+    """看板回传设置（各地区推送线）用的频道：config 里的 ntfy_topic 加 -set。"""
+    return f"{NTFY_TOPIC_CFG}-set" if NTFY_TOPIC_CFG else ""
+
+
+def fetch_settings() -> dict | None:
+    """读看板最近 12 小时内发来的最新一份设置；没有或读取失败返回 None。"""
+    topic = settings_topic()
+    if not topic:
+        return None
+    server = env("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
+    try:
+        r = requests.get(f"{server}/{topic}/json", params={"poll": "1", "since": "12h"}, timeout=20)
+        r.raise_for_status()
+    except Exception as e:  # 设置读不到不影响监控
+        log.warning("读取看板设置失败: %s", e)
+        return None
+    best = None
+    for line in r.text.splitlines():
+        try:
+            m = json.loads(line)
+            body = json.loads(m.get("message") or "")
+        except Exception:
+            continue
+        if isinstance(body, dict) and body.get("v") == 1 and isinstance(body.get("region_lines"), dict):
+            body["_time"] = int(m.get("time") or 0)
+            if best is None or body["_time"] >= best["_time"]:
+                best = body
+    return best
 
 
 def _ntfy(title, body, url):
