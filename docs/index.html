@@ -246,7 +246,23 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .wrap{padding:0 16px}
   .mast{padding-top:20px}
   .today-grid{grid-template-columns:1fr}
-  .map-shell{height:340px}
+  .today{display:flex;flex-direction:column}
+  .today-grid{display:contents}
+  .today-head{order:0}
+  .today-map{order:1;position:sticky;top:var(--navh,45px);z-index:4;background:var(--paper);margin:8px -16px 0;padding:0 16px 8px;border-bottom:1px solid var(--rule)}
+  body.map-open .today-map{z-index:1000}
+  .rtabs{order:2;margin-top:10px} .rpanel{order:3} .filters{order:4} .today .lede{order:5}
+  .today-grid>div:last-child{order:6}
+  .map-shell{height:clamp(220px,36vh,320px)}
+  .legend-map{display:none}
+  .map-tools{gap:4px;top:6px;left:6px}
+  .map-tools .seg button,.mbtn{min-height:32px;padding:2px 10px;font-size:12px}
+  .rpanel{padding:10px 12px}
+  .rpanel:has(>.hint:empty){display:none}
+  .maplibregl-popup-content{padding:8px 30px 8px 12px;font-size:12px}
+  .maplibregl-popup-content .pn{font-size:14px;padding-right:0}
+  .maplibregl-popup-content .pp{font-size:17px}
+  .maplibregl-popup-close-button{width:30px;height:30px}
   .rtabs,.filters,.ctys{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-16px;margin-right:-16px;padding:0 16px}
   .rpanel .ctys{margin-left:-14px;margin-right:-14px;padding:0 14px}
   .rtabs::-webkit-scrollbar,.filters::-webkit-scrollbar,.ctys::-webkit-scrollbar{display:none}
@@ -255,6 +271,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .today .lede{font-size:13px;margin:8px 0 10px}
   .top li{grid-template-columns:20px minmax(0,1fr) auto;gap:0 8px;padding:7px 0}
   .top .rk{font-size:14px;padding-top:3px}
+  .top li{scroll-margin-top:calc(var(--navh,45px) + clamp(220px,36vh,320px) + 16px)}
   .top .nm{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .top .nm small{display:none}
   .top .pr{font-size:18px}
@@ -274,7 +291,10 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .brow{grid-template-columns:1fr auto}
   .brow .mid,.brow .links{grid-column:1/-1}
   .cards{grid-template-columns:1fr 1fr}
-  .pc .links .btn,.lrow .links .btn{min-height:40px}
+  .pc .links .btn,.lrow .links .btn{min-height:34px;padding:2px 10px;font-size:12px}
+  section{padding-top:28px}
+  .lede{font-size:13px;margin-bottom:12px}
+  .maplibregl-ctrl-scale{display:none}
 }
 @media (max-width:420px){ .cards{grid-template-columns:1fr} }
 </style>
@@ -312,7 +332,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
     <div class="filters" id="tFilters" role="group" aria-label="筛选特价"></div>
     <p class="lede" id="todayLede"></p>
     <div class="today-grid">
-      <div><div class="map-shell sat" id="mapShell">
+      <div class="today-map"><div class="map-shell sat" id="mapShell">
           <div id="map" role="region" aria-label="全球低价 3D 地图"></div>
           <div class="map-tools">
             <div class="seg" role="group" aria-label="底图"><button data-base="sat" aria-pressed="true">卫星</button><button data-base="street" aria-pressed="false">地图</button></div>
@@ -321,7 +341,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
             <button type="button" class="mbtn" id="mFull" aria-pressed="false">全屏</button>
           </div>
         </div>
-        <div class="legend-map"><span><i style="background:#c2260f"></i>疑似 bug 价 / 到达目标价 / 低于推送线</span><span><i style="background:var(--sea)"></i>免签</span><span><i style="background:#b7792f"></i>落地签、电子签</span><span><i style="background:#9b8f80"></i>需签证</span></div></div>
+        <div class="legend-map"><span><i style="background:#c2260f"></i>bug 价 / 到价</span><span><i style="background:var(--sea)"></i>免签</span><span><i style="background:#b7792f"></i>落地签 · 电子签</span><span><i style="background:#9b8f80"></i>需签证</span></div></div>
       <div><ol class="top" id="topList" aria-label="超级特价排行"></ol>
         <button type="button" class="btn top-more" id="topMore" hidden></button></div>
     </div>
@@ -329,9 +349,8 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 
   <section id="mine">
     <h2>我的航线</h2>
-    <p class="lede">经济舱往返最低价和你设的目标价，下面一行是单程（单程目标价按往返的 55% 算）。往返或单程任一低于目标价都会立刻推送到手机。</p>
+    <p class="lede">往返最低价对比你的目标价（单程按 55% 算），低于就推送。</p>
     <div class="ledger" id="ledger"></div>
-    <p class="edit-hint">想加航线或改目标价，直接告诉 Claude，或修改仓库里的 config.yaml。</p>
   </section>
 
   <section id="deals">
@@ -342,7 +361,7 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 
   <section id="ideas">
     <h2>出行灵感</h2>
-    <p class="lede">各目的地经济舱最低价，可切换往返或单程。默认只看不用提前办签证、你还没去过的国际目的地，免签的排在前面，同一档里按每公里价格排序。</p>
+    <p class="lede">各目的地经济舱最低价，免签排前，同档按每公里价格排序。</p>
     <div class="ctrls" id="ctrls"></div>
     <p class="count" id="count"></p>
     <div class="cards" id="cards"></div>
@@ -351,14 +370,14 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 
   <section id="biz">
     <h2>商务舱</h2>
-    <p class="lede">平时以价格为准，商务舱单独放在这里。只有出现疑似 bug 价时才会推送。</p>
+    <p class="lede">只在出现疑似 bug 价时推送。</p>
     <div id="bizBox"></div>
   </section>
 
   <section id="intel">
     <div class="two">
-      <div><h2>错误票价情报</h2><p class="lede">来自专门发 bug 价的网站和新闻。</p><ul class="feed" id="news"></ul></div>
-      <div><h2>推送记录</h2><p class="lede">发到你手机上的每一条提醒。</p><ul class="feed" id="alerts"></ul></div>
+      <div><h2>错误票价情报</h2><ul class="feed" id="news"></ul></div>
+      <div><h2>推送记录</h2><ul class="feed" id="alerts"></ul></div>
     </div>
   </section>
 </main>
@@ -545,12 +564,11 @@ function renderRegions(){
   if (T.region && !cnt[T.region]){ names.push(T.region); cnt[T.region] = 0; }
   $("#tRegions").innerHTML = [["", "全部", pool.length], ...names.map(g => [g, g, cnt[g]])].map(([v, t, n]) =>
     `<button type="button" class="chip" data-region="${v}" aria-pressed="${T.region === v}">${t} <small>${n}</small>${v && LN.lines[v] ? `<span class="ln">≤${price(LN.lines[v])}</span>` : ""}</button>`).join("");
-  $("#tRegions").querySelectorAll("button").forEach(b => b.onclick = () => { T.region = b.dataset.region; T.country = ""; T.sel = null; T.shown = 30; saveT(); renderToday(); });
+  $("#tRegions").querySelectorAll("button").forEach(b => b.onclick = () => { T.region = b.dataset.region; T.country = ""; T.sel = null; T.shown = 30; GEO.refit = true; saveT(); renderToday(); });
   const box = $("#tPanel"), g = T.region;
   if (!g){
     const set = Object.entries(LN.lines).filter(([, p]) => p > 0);
-    box.innerHTML = `<p class="hint">点上面任意一个地区，可以再按国家筛选，并拖滑条给这个地区设一条推送线：价格低于它就推送到手机 ntfy。${
-      set.length ? `已设：${set.map(([k, p]) => `${esc(k)} ≤ ${price(p)}`).join("、")}。` : ""}</p>`;
+    box.innerHTML = `<p class="hint">${set.length ? `推送线：${set.map(([k, p]) => `${esc(k)} ≤ ${price(p)}`).join("、")}` : matchMedia("(max-width:760px)").matches ? "" : "选一个地区，可按国家筛选并设推送线。"}</p>`;
     return;
   }
   const inG = pool.filter(r => region(r.country) === g), byC = {};
@@ -566,18 +584,18 @@ function renderRegions(){
       <input type="range" id="lnRange" min="0" max="${max}" step="${step}" value="${cur}" aria-label="${g}往返推送线，拖到最左边为不设">
       <div class="lf"><span id="lnInfo"></span><span class="st" id="lnSt"></span></div>
     </div>`;
-  box.querySelectorAll("[data-cty]").forEach(b => b.onclick = () => { T.country = b.dataset.cty; T.sel = null; T.shown = 30; saveT(); renderToday(); });
+  box.querySelectorAll("[data-cty]").forEach(b => b.onclick = () => { T.country = b.dataset.cty; T.sel = null; T.shown = 30; GEO.refit = true; saveT(); renderToday(); });
   const rng = $("#lnRange");
   const label = () => { const v = +rng.value, n = rt.filter(p => p <= v).length;
     $("#lnOut").className = v ? "" : "off";
-    $("#lnOut").textContent = v ? `往返 ≤ ${price(v)}` : "未设置（只按自动 bug 线推送）";
-    $("#lnInfo").textContent = v ? `现在有 ${n} 个目的地低于这条线；单程按 ${price(Math.round(v * OW_RATIO()))} 算。${rt.length ? `目前最低 ${price(rt[0])}。` : ""}`
-      : `往右拖设置价格。${rt.length ? `${g}目前往返最低 ${price(rt[0])}。` : ""}`; };
+    $("#lnOut").textContent = v ? `往返 ≤ ${price(v)}` : "未设置";
+    $("#lnInfo").textContent = (v ? `${n} 个低于此线 · 单程 ${price(Math.round(v * OW_RATIO()))}` : "低于此价就推送到手机")
+      + (rt.length ? ` · 现最低 ${price(rt[0])}` : ""); };
   const status = () => { const st = $("#lnSt"), v = LN.lines[g] || 0, live = (D.region_lines || {})[g] || 0;
     st.className = "st"; st.innerHTML = "";
-    if (v === live && LN.state !== "bad"){ if (v){ st.classList.add("ok"); st.textContent = "已生效，低于这条线会推送到 ntfy"; } }
-    else if (LN.state === "sent"){ st.classList.add("ok"); st.textContent = "已保存，下一轮扫描（约 15 分钟内）生效"; }
-    else if (LN.state === "bad"){ st.classList.add("bad"); st.innerHTML = D.settings_url ? `没发出去，<button type="button">点这里重试</button>` : "监控还没更新到支持滑条的版本，稍后刷新再试";
+    if (v === live && LN.state !== "bad"){ if (v){ st.classList.add("ok"); st.textContent = "已生效"; } }
+    else if (LN.state === "sent"){ st.classList.add("ok"); st.textContent = "已保存，约 15 分钟内生效"; }
+    else if (LN.state === "bad"){ st.classList.add("bad"); st.innerHTML = D.settings_url ? `没发出去，<button type="button">重试</button>` : "暂时无法保存，稍后刷新再试";
       const b = st.querySelector("button"); if (b) b.onclick = async () => { st.textContent = "保存中…"; await saveLines(); status(); }; } };
   rng.oninput = label;
   rng.onchange = async () => { const v = +rng.value; if (v) LN.lines[g] = v; else delete LN.lines[g];
@@ -591,8 +609,7 @@ function renderList(){
   const ranked = rankToday(todayPool()), top = ranked.slice(0, T.shown);
   const hotN = ranked.filter(isHot).length;
   const where = T.country ? CN_NAME(T.country) : T.region || "国际";
-  $("#todayLede").textContent = `${T.trip === "ow" ? "单程" : "往返"}经济舱，${where} ${ranked.length} 个目的地。`
-    + (hotN ? `其中 ${hotN} 个已达 bug 价、目标价或你的推送线${T.sort === "bug" ? "，排在最前" : ""}。` : T.sort === "bug" ? "现在没有 bug 价，越靠前越接近 bug 线。" : "现在没有 bug 价。");
+  $("#todayLede").textContent = `${where} ${ranked.length} 个目的地` + (hotN ? `，${hotN} 个已到价` : "，暂无 bug 价");
   $("#topList").innerHTML = top.length ? top.map((r,i) => { const bl = bugLine(r), ul = userLine(r), hot = isHot(r);
     const why = r.level === "bug" ? "疑似 bug 价" : r.level === "target" ? "到达目标价" : "低于你的推送线";
     return `<li data-dest="${r.dest}" tabindex="0" class="${r.dest === T.sel ? "on" : ""}">
@@ -600,13 +617,14 @@ function renderList(){
       <div class="nm">${esc(r.dest_name_zh)}<small lang="en">${esc(r.dest_name)}</small></div>
       <div class="pr${hot ? " hot" : ""}">${price(r.price)}</div>
       <div class="meta">${hot ? `<b class="hot">${why}</b>，` : ul ? `推送线 <b>${price(ul)}</b>，` : bl ? `bug 线 <b>${price(bl)}</b>，` : ""}${esc(join(dates(r), trTxt(r.transfers)))} ${tags(r)}</div>
-      <div class="more">${links(r, false)}<button type="button" class="btn tomap">在地图上看</button></div></li>`; }).join("")
+      <div class="more">${links(r, false)}<button type="button" class="btn tomap">放大看城市</button></div></li>`; }).join("")
     : `<li class="empty" style="display:block">没有符合条件的目的地，放宽上面的筛选试试。</li>`;
   $("#topMore").hidden = ranked.length <= T.shown;
-  $("#topMore").textContent = `再显示 30 个（共 ${ranked.length} 个）`;
+  $("#topMore").textContent = `再显示 ${Math.min(30, ranked.length - T.shown)} 个`;
   $("#topList").querySelectorAll("li[data-dest]").forEach(li => {
     const go = e => { if (e.target.closest("a")) return;
-      if (matchMedia("(max-width:760px)").matches && !e.target.closest(".tomap")){
+      if (e.target.closest(".tomap")){ const r = RANKED.find(x => x.dest === li.dataset.dest); if (r && MAP) MAP.flyTo({center:[r.lon, r.lat], zoom:10.5, duration:calm() ? 0 : 2200, essential:true}); return; }
+      if (matchMedia("(max-width:760px)").matches){
         const open = !li.classList.contains("open");
         $("#topList").querySelectorAll("li.open").forEach(x => x.classList.remove("open"));
         li.classList.toggle("open", open); if (open) openDest(li.dataset.dest, true); return; }
@@ -741,6 +759,7 @@ function drawMap(ranked, top){
     MAP.on("click", "dest-pt", e => { e.originalEvent.stopPropagation?.(); openDest(e.features[0].properties.dest, false); });
     MAP.on("zoomend", () => { if (zoomBucket() !== GEO.bucket) drawPills(); });
     MAP.on("style.load", () => { GEO.ready = true; applyBase(); syncMap(); });
+    MAP.once("idle", () => { const a = box.querySelector(".maplibregl-ctrl-attrib"); if (a && box.clientWidth < 520){ a.classList.remove("maplibregl-compact-show"); a.removeAttribute("open"); } });
     MAP.on("error", e => console.warn("map:", e.error?.message || e));
     document.querySelectorAll("[data-base]").forEach(b => b.onclick = () => { GEO.base = b.dataset.base; applyBase(); });
     $("#mProj").onclick = () => { GEO.globe = !GEO.globe; MAP.setProjection({type:GEO.globe ? "globe" : "mercator"});
@@ -760,6 +779,10 @@ function syncMap(){
     geometry:{type:"Point", coordinates:[r.lon, r.lat]},
     properties:{dest:r.dest, name:r.dest_name_zh, price:price(r.price), col:pinCol(r), hot:isHot(r), lon:r.lon, lat:r.lat}}))});
   drawArcs(); drawPills();
+  if (GEO.refit){ GEO.refit = false;
+    if ((!T.region && !T.country) || !RANKED.length) homeView();
+    else { const b = new maplibregl.LngLatBounds(); RANKED.forEach(r => b.extend([r.lon, r.lat]));
+      MAP.fitBounds(b, {padding:{top:64, bottom:36, left:44, right:44}, maxZoom:6, duration:calm() ? 0 : 1200, essential:true}); } }
 }
 function drawArcs(){
   const set = new Map((GEO.top || []).map(r => [r.dest, r]));
@@ -790,17 +813,21 @@ function openDest(code, fly){
   if (!MAP || !GEO.ready || !r) return;
   GEO.tip.remove(); closePopup(); drawArcs(); drawPills();
   const at = [r.lon, r.lat];
-  const pop = GEO.popup = new maplibregl.Popup({maxWidth:"300px", anchor:"bottom", offset:40, focusAfterOpen:false})
-    .setLngLat(at).setHTML(popupHTML(r) + `<div class="links"><button type="button" class="btn" data-zoomcity>放大看城市</button></div>`).addTo(MAP);
+  const small = matchMedia("(max-width:760px)").matches;
+  if (small){ const li = $("#topList").querySelector(`li[data-dest="${code}"]`);
+    $("#topList").querySelectorAll("li.open").forEach(x => { if (x !== li) x.classList.remove("open"); });
+    if (li && !li.classList.contains("open")){ li.classList.add("open"); if (!fly) li.scrollIntoView({behavior:"smooth", block:"nearest"}); } }
+  const pop = GEO.popup = new maplibregl.Popup({maxWidth:small ? "210px" : "300px", anchor:"bottom", offset:40, focusAfterOpen:false})
+    .setLngLat(at).setHTML(small ? `<div class="pn">${esc(r.dest_name_zh)}</div><div class="pp">${price(r.price)}</div><div style="color:var(--muted)">${esc(dates(r))}</div>`
+      : popupHTML(r) + `<div class="links"><button type="button" class="btn" data-zoomcity>放大看城市</button></div>`).addTo(MAP);
   pop.on("close", () => { if (GEO.popup === pop){ GEO.popup = null; T.sel = null; drawArcs(); drawPills();
     $("#topList").querySelectorAll("li.on").forEach(li => li.classList.remove("on")); } });
-  pop.getElement().querySelector("[data-zoomcity]").onclick = () => MAP.flyTo({center:at, zoom:10.5, duration:calm() ? 0 : 2200, essential:true});
+  if (!small) pop.getElement().querySelector("[data-zoomcity]").onclick = () => MAP.flyTo({center:at, zoom:10.5, duration:calm() ? 0 : 2200, essential:true});
   const dy = Math.round(Math.min(170, MAP.getContainer().clientHeight * .33));   // 城市点放在偏下的位置，上方留给详情卡
   if (fly) MAP.flyTo({center:at, offset:[0, dy], zoom:Math.max(MAP.getZoom(), 4.2), duration:calm() ? 0 : 1600, essential:true});
   else MAP.easeTo({center:at, offset:[0, dy], duration:calm() ? 0 : 500, essential:true});
 }
 function focusDest(code){
-  if (matchMedia("(max-width:760px)").matches) $("#mapShell").scrollIntoView({behavior:"smooth", block:"center"});
   openDest(code, true);
 }
 function bindToday(){
@@ -860,7 +887,7 @@ function renderDeals(){
         : `历史价格对比还在积累数据：${days} / ${need} 天。满 ${need} 天之前，靠每公里价格和你的目标价来判断。`}</p></div>`;
     return;
   }
-  $("#dealsLede").textContent = `共 ${list.length} 条。价格来自缓存，订票前先核价。`;
+  $("#dealsLede").textContent = `共 ${list.length} 条，订票前先核价。`;
   const TAG = {bug:"疑似 bug 价", target:"到达目标价", great:"超值"};
   $("#dealsBox").innerHTML = `<div class="deals">${list.map(f => `<article class="deal ${f.level}">
     <p class="tag">${TAG[f.level] || ""}</p>
@@ -961,7 +988,8 @@ async function load(){
   try{
     const first = !D;
     D = await (await fetch("data/deals.json?t=" + Date.now())).json();
-    renderMeta(); loadLines(); if (first) bindToday(); renderToday(); renderWatch(); renderDeals(); renderBiz(); renderFeeds();
+    renderMeta(); loadLines(); if (first) bindToday(); renderToday();
+  const navh = () => document.documentElement.style.setProperty("--navh", (document.querySelector("nav.top")?.offsetHeight || 45) + "px"); navh(); addEventListener("resize", navh); renderWatch(); renderDeals(); renderBiz(); renderFeeds();
     if (first) renderCtrls();
     renderIdeas();
   }catch(e){ $("#status").textContent = "票价数据读取失败，请刷新页面重试。（" + e.message + "）"; }
