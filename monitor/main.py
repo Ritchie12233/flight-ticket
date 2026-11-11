@@ -183,6 +183,10 @@ def run(args):
         "news": state["news"][:80],
         "alerts": state["alerts_log"][:50],
         "targets": cfg["detection"].get("targets", {}),
+        "rules": {k: cfg["detection"].get(k) for k in (
+            "bug_ratio", "great_ratio", "min_history_days", "min_distance_km",
+            "economy_bug_per_km", "economy_great_per_km", "business_bug_per_km", "business_great_per_km")},
+        "history_days": len({d for h in state["history"].values() for d in h}),
         "demo": bool(args.demo),
     }
     save_json(SITE_DATA, site_data)

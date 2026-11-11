@@ -39,6 +39,16 @@ def evaluate(fares: list[dict], history: dict, cities: dict, cfg: dict, today: s
     dc = cfg["detection"]
     targets = {k.upper(): v for k, v in (dc.get("targets") or {}).items()}
     best: dict[str, dict] = {}
+    # 同航线其他报价里的中转次数/报价平台，用来补全最便宜那条缺失的字段
+    meta: dict[str, dict] = {}
+    for f in fares:
+        if not f.get("dest"):
+            continue
+        m = meta.setdefault(route_key(f), {})
+        if f.get("transfers") is not None:
+            m["transfers"] = min(m.get("transfers", 99), f["transfers"])
+        if f.get("gate") and "gate" not in m:
+            m["gate"] = f["gate"]
 
     for f in fares:
         if f["price"] <= 0 or not f.get("dest"):
@@ -51,6 +61,13 @@ def evaluate(fares: list[dict], history: dict, cities: dict, cfg: dict, today: s
                 best[key]["airline"] = f["airline"]
             continue
         best[key] = dict(f)
+
+    for key, f in best.items():
+        m = meta.get(key, {})
+        if f.get("transfers") is None and "transfers" in m:
+            f["transfers"] = m["transfers"]
+        if not f.get("gate") and m.get("gate"):
+            f["gate"] = m["gate"]
 
     results = []
     for key, f in best.items():
