@@ -11,7 +11,7 @@ from urllib.parse import quote
 import requests
 
 log = logging.getLogger(__name__)
-env = lambda k, d="": os.environ.get(k, d).strip()  # noqa: E731
+env = lambda k, d="": (os.environ.get(k) or d).strip()  # noqa: E731
 
 
 def _telegram(title, body, url):
