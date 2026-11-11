@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KUL Bug 价雷达 · 吉隆坡出发错误票价监控</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07142b; --panel:#0c1f40; --panel2:#10284f; --line:#1d3a6b;
+  --ink:#e8eefb; --mute:#8ea3c8; --amber:#ffb627; --amber-d:#c98a0b;
+  --red:#ff5b5b; --green:#3ddc97; --cyan:#59c3ff;
+  --mono:"JetBrains Mono",ui-monospace,monospace; --sans:"Noto Sans SC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;
+  background-image:linear-gradient(rgba(89,195,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(89,195,255,.05) 1px,transparent 1px);
+  background-size:32px 32px}
+a{color:var(--cyan)}
+.wrap{max-width:1180px;margin:0 auto;padding:24px 18px 60px}
+header{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--amber);padding-bottom:16px}
+.brand small{display:block;font-family:var(--mono);color:var(--amber);letter-spacing:.25em;font-size:12px}
+.brand h1{margin:2px 0 0;font-size:30px;font-weight:900;letter-spacing:.02em}
+.brand h1 b{color:var(--amber)}
+.upd{font-family:var(--mono);font-size:13px;color:var(--mute);text-align:right}
+.upd .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;box-shadow:0 0 8px var(--green);animation:pulse 2s infinite}
+.upd .dot.stale{background:var(--red);box-shadow:0 0 8px var(--red)}
+@keyframes pulse{50%{opacity:.35}}
+.banner{margin:16px 0 0;padding:10px 14px;border:1px dashed var(--amber);color:var(--amber);border-radius:8px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stat .k{color:var(--mute);font-size:12px}
+.stat .v{font-family:var(--mono);font-size:26px;font-weight:700}
+.stat.bug .v{color:var(--red)} .stat.target .v{color:var(--amber)} .stat.great .v{color:var(--green)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.tab{background:transparent;color:var(--mute);border:1px solid var(--line);padding:8px 14px;border-radius:999px;cursor:pointer;font:inherit}
+.tab.on{background:var(--amber);color:#1b1200;border-color:var(--amber);font-weight:700}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.filters select,.filters input{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:inherit}
+.filters input{flex:1;min-width:160px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.card{position:relative;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;overflow:hidden}
+.card::after{content:"";position:absolute;right:92px;top:0;bottom:62px;border-left:2px dashed rgba(142,163,200,.18)}
+.card.bug{border-color:rgba(255,91,91,.65);box-shadow:0 0 0 1px rgba(255,91,91,.25),0 10px 30px -12px rgba(255,91,91,.45)}
+.card.target{border-color:rgba(255,182,39,.6)}
+.card.great{border-color:rgba(61,220,151,.45)}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;margin-bottom:8px}
+.badge.bug{background:var(--red);color:#2a0000}.badge.target{background:var(--amber);color:#241800}.badge.great{background:var(--green);color:#002a18}.badge.normal{background:var(--line);color:var(--mute)}
+.route{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:24px;font-weight:700}
+.route .arrow{color:var(--amber);font-size:16px}
+.city{color:var(--mute);font-size:13px;margin-top:-2px}
+.price{position:absolute;right:14px;top:16px;width:72px;text-align:right}
+.price .cur{font-family:var(--mono);font-size:11px;color:var(--mute)}
+.price .num{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--amber);line-height:1.1}
+.price .was{font-family:var(--mono);font-size:12px;color:var(--mute);text-decoration:line-through}
+.meta{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;color:var(--mute);margin:10px 92px 0 0}
+.meta b{color:var(--ink);font-weight:500}
+.bar{height:6px;background:var(--line);border-radius:3px;margin:12px 92px 4px 0;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--amber))}
+.why{font-size:13px;color:#cfd9ee;margin:8px 0 0;padding-left:0;list-style:none}
+.why li::before{content:"› ";color:var(--amber)}
+.spark{margin-top:8px;width:calc(100% - 92px);height:34px}
+.btns{display:flex;gap:8px;margin-top:12px}
+.btn{flex:1;text-align:center;text-decoration:none;font-size:13px;font-weight:700;padding:7px 8px;border-radius:8px;border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
+.btn.pri{background:var(--amber);color:#1b1200;border-color:var(--amber)}
+.list{display:flex;flex-direction:column;gap:10px}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.row.bug{border-left:4px solid var(--red)}
+.row h3{margin:0 0 4px;font-size:15px}
+.row p{margin:0;color:var(--mute);font-size:13px}
+.row .src{font-family:var(--mono);font-size:12px;color:var(--amber)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--mute);font-weight:500;font-size:12px;position:sticky;top:0;background:var(--bg)}
+td.mono{font-family:var(--mono)}
+.empty{padding:40px;text-align:center;color:var(--mute);border:1px dashed var(--line);border-radius:12px}
+.sources{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:12px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--mute)}
+.chip.ok::before{content:"● ";color:var(--green)} .chip.bad::before{content:"● ";color:var(--red)}
+footer{margin-top:40px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+footer ol{padding-left:20px}
+@media (max-width:520px){.brand h1{font-size:24px}.grid{grid-template-columns:1fr}.upd{text-align:left}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><small>KUL ✈ WORLDWIDE · FARE RADAR</small><h1>吉隆坡出发 <b>Bug 价</b>雷达</h1></div>
+    <div class="upd"><span class="dot" id="dot"></span><span id="upd">加载中…</span><br><span id="chan"></span></div>
+  </header>
+  <div id="banner"></div>
+
+  <section class="stats" id="stats"></section>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab on" data-t="hot">🔥 异常低价</button>
+    <button class="tab" data-t="all">🗺 各目的地最低价</button>
+    <button class="tab" data-t="news">📰 错误票价情报</button>
+    <button class="tab" data-t="alerts">🔔 推送记录</button>
+  </nav>
+
+  <div class="filters" id="filters">
+    <select id="fClass"><option value="">全部舱位</option><option value="0">经济舱</option><option value="1">商务舱</option></select>
+    <select id="fTrip"><option value="">往返+单程</option><option value="rt">往返</option><option value="ow">单程</option></select>
+    <select id="fLevel"><option value="">全部级别</option><option value="bug">🔥 疑似 bug</option><option value="target">🎯 目标价</option><option value="great">💎 超值</option></select>
+    <input id="fq" placeholder="搜索目的地：东京 / TYO / Japan">
+  </div>
+
+  <main id="view"></main>
+  <div class="sources" id="sources"></div>
+
+  <footer>
+    <b>抢 bug 价小贴士</b>
+    <ol>
+      <li>价格来自 Aviasales 用户近几天的搜索缓存，<b>可能已经失效</b>——点「核价」在 Google Flights / 航司官网确认。</li>
+      <li>真 bug 价通常几小时内就被修复：先订（选可免费取消/24h 内可退的渠道），再慢慢想。</li>
+      <li>拿到正式电子客票号且出票几天后没被取消，再订酒店和不可退的行程。</li>
+      <li>不要打电话问航司"这个价格对不对"。</li>
+    </ol>
+    数据每 15 分钟自动刷新 · 页面每 5 分钟自动重载数据
+  </footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const LV = {bug:"🔥 疑似 BUG 价", target:"🎯 到达目标价", great:"💎 超值", normal:"常规"};
+let D = null, tab = "hot";
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ddmm = s => s && s.length >= 10 ? s.slice(8,10) + s.slice(5,7) : "";
+function aviasales(f){
+  const d = ddmm(f.depart), r = ddmm(f.return);
+  return d ? `https://www.aviasales.com/search/${f.origin}${d}${f.dest}${r}1`
+           : `https://www.aviasales.com/search?origin_iata=${f.origin}&destination_iata=${f.dest}`;
+}
+function gflights(f){
+  let q = `Flights from ${f.origin} to ${f.dest} on ${f.depart||""}`;
+  if (f.return) q += ` returning ${f.return}`;
+  if (f.trip_class === 1) q += " business class";
+  return "https://www.google.com/travel/flights?q=" + encodeURIComponent(q);
+}
+function fmtTime(iso){
+  const d = new Date(iso);
+  return d.toLocaleString("zh-CN",{timeZone:"Asia/Kuala_Lumpur",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"});
+}
+function ago(iso){
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  return m < 1 ? "刚刚" : m < 60 ? `${m} 分钟前` : m < 1440 ? `${Math.round(m/60)} 小时前` : `${Math.round(m/1440)} 天前`;
+}
+function spark(pts, now){
+  if (!pts || pts.length < 2) return "";
+  const vals = pts.map(p => p[1]).concat([now]);
+  const mn = Math.min(...vals), mx = Math.max(...vals), W = 230, H = 34;
+  const x = i => i / (vals.length - 1) * W, y = v => H - 4 - (mx === mn ? .5 : (v - mn) / (mx - mn)) * (H - 8);
+  const d = vals.map((v,i) => `${i?"L":"M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join("");
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+    <path d="${d}" fill="none" stroke="#59c3ff" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+    <circle cx="${x(vals.length-1)}" cy="${y(now)}" r="3" fill="#ffb627"/></svg>`;
+}
+
+function filtered(list){
+  const c = $("#fClass").value, t = $("#fTrip").value, l = $("#fLevel").value, q = $("#fq").value.trim().toLowerCase();
+  return list.filter(f =>
+    (c === "" || String(f.trip_class) === c) &&
+    (t === "" || (t === "ow") === !!f.one_way) &&
+    (l === "" || f.level === l) &&
+    (!q || [f.dest, f.dest_name, f.dest_name_zh, f.country].join(" ").toLowerCase().includes(q)));
+}
+
+function card(f){
+  const cur = D.currency;
+  const pct = f.ratio ? Math.max(4, Math.min(100, f.ratio * 100)) : null;
+  return `<article class="card ${f.level}">
+    <span class="badge ${f.level}">${LV[f.level]}</span>
+    <div class="route">${esc(f.origin)}<span class="arrow">${f.one_way ? "━━✈" : "⇄"}</span>${esc(f.dest)}</div>
+    <div class="city">${esc(f.dest_name_zh)} · ${esc(f.dest_name)}${f.country ? " · " + esc(f.country) : ""}</div>
+    <div class="price"><div class="cur">${cur}</div><div class="num">${Math.round(f.price)}</div>
+      ${f.baseline ? `<div class="was">${Math.round(f.baseline)}</div>` : ""}</div>
+    <div class="meta">
+      <span>📅 <b>${esc(f.depart || "?")}</b>${f.return ? ` → <b>${esc(f.return)}</b>` : ""}</span>
+      <span>${f.one_way ? "单程" : "往返"} · ${f.trip_class === 1 ? "商务舱" : "经济舱"}</span>
+      ${f.transfers != null ? `<span>${f.transfers === 0 ? "直飞" : "中转 " + f.transfers + " 次"}</span>` : ""}
+      ${f.airline ? `<span>✈ ${esc(f.airline)}</span>` : ""}
+      ${f.per_km ? `<span>${f.per_km.toFixed(3)}/km</span>` : ""}
+    </div>
+    ${pct ? `<div class="bar" title="现价 / 近期常规价"><i style="width:${pct}%"></i></div>` : ""}
+    ${f.reasons && f.reasons.length ? `<ul class="why">${f.reasons.map(r => `<li>${esc(r)}</li>`).join("")}</ul>` : ""}
+    ${spark(D.trend[f.id], f.price)}
+    <div class="btns"><a class="btn pri" href="${aviasales(f)}" target="_blank" rel="noopener">去订票</a>
+      <a class="btn" href="${gflights(f)}" target="_blank" rel="noopener">Google 核价</a></div>
+  </article>`;
+}
+
+function render(){
+  if (!D) return;
+  document.querySelectorAll(".tab").forEach(b => b.classList.toggle("on", b.dataset.t === tab));
+  $("#filters").style.display = (tab === "hot" || tab === "all") ? "flex" : "none";
+  const v = $("#view");
+  if (tab === "hot" || tab === "all"){
+    const list = filtered(tab === "hot" ? D.hot : D.all_routes);
+    if (!list.length){ v.innerHTML = `<div class="empty">${tab === "hot" ? "暂时没有异常低价——雷达在持续扫描，一有发现会立刻推送给你。" : "还没有数据。"}</div>`; return; }
+    if (tab === "hot"){ v.innerHTML = `<div class="grid">${list.map(card).join("")}</div>`; return; }
+    v.innerHTML = `<div style="overflow:auto"><table><thead><tr><th>目的地</th><th>最低往返</th><th>常规价</th><th>比例</th><th>日期</th><th>中转</th><th></th></tr></thead><tbody>${
+      list.map(f => `<tr><td><b>${esc(f.dest_name_zh)}</b> <span style="color:var(--mute)">${esc(f.dest)}</span></td>
+        <td class="mono" style="color:var(--amber)">${Math.round(f.price)}</td>
+        <td class="mono">${f.baseline ? Math.round(f.baseline) : "—"}</td>
+        <td class="mono">${f.ratio ? Math.round(f.ratio*100) + "%" : "—"}</td>
+        <td class="mono">${esc(f.depart || "")}${f.return ? " → " + esc(f.return) : ""}</td>
+        <td>${f.transfers == null ? "—" : f.transfers === 0 ? "直飞" : f.transfers}</td>
+        <td><a href="${aviasales(f)}" target="_blank" rel="noopener">订</a> · <a href="${gflights(f)}" target="_blank" rel="noopener">核价</a></td></tr>`).join("")
+    }</tbody></table></div>`;
+  } else if (tab === "news"){
+    v.innerHTML = D.news.length ? `<div class="list">${D.news.map(n => `<div class="row ${n.level === "bug" ? "bug" : ""}">
+      <div class="src">${n.level === "bug" ? "🔥 错误票价 · " : n.level === "global" ? "🌏 其他出发地 · " : "📰 "}${esc(n.source)} · ${ago(n.published)}</div>
+      <h3><a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a></h3>
+      ${n.summary ? `<p>${esc(n.summary)}</p>` : ""}</div>`).join("")}</div>`
+      : `<div class="empty">暂时没有新的错误票价情报。</div>`;
+  } else {
+    v.innerHTML = D.alerts.length ? `<div class="list">${D.alerts.map(a => `<div class="row">
+      <div class="src">${fmtTime(a.at)} · ${a.channels && a.channels.length ? "已推送到 " + a.channels.join(" / ") : "未发送（未配置渠道或演示）"}</div>
+      <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3></div>`).join("")}</div>`
+      : `<div class="empty">还没有推送过。</div>`;
+  }
+}
+
+function header(){
+  const age = (Date.now() - new Date(D.updated_at)) / 60000;
+  $("#dot").classList.toggle("stale", age > 60);
+  $("#upd").textContent = `${D.origin} 出发 · 更新于 ${fmtTime(D.updated_at)}（${ago(D.updated_at)}）`;
+  $("#chan").textContent = D.channels.length ? `推送渠道：${D.channels.join(" / ")}` : "⚠️ 尚未配置推送渠道";
+  $("#banner").innerHTML = D.demo ? `<div class="banner">当前展示的是<b>演示数据</b>。按 README 配好 Travelpayouts token 后，GitHub 会每 15 分钟用真实数据刷新这里。</div>`
+    : age > 60 ? `<div class="banner">数据已超过 1 小时没有更新，检查一下 GitHub Actions 是否运行正常。</div>` : "";
+  const s = D.stats;
+  $("#stats").innerHTML = [
+    ["bug","🔥 疑似 bug 价", s.bug], ["target","🎯 到达目标价", s.target], ["great","💎 超值", s.great],
+    ["", "本轮扫描票价", s.fares_scanned], ["", "覆盖航线", s.routes]
+  ].map(([c,k,v]) => `<div class="stat ${c}"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  $("#sources").innerHTML = "数据源：" + D.sources.map(x => `<span class="chip ${x.ok ? "ok" : "bad"}">${esc(x.name)} ${x.count}</span>`).join("");
+}
+
+async function load(){
+  try{
+    const r = await fetch("data/deals.json?t=" + Date.now());
+    D = await r.json(); header(); render();
+  }catch(e){ $("#upd").textContent = "数据加载失败：" + e.message; }
+}
+document.querySelectorAll(".tab").forEach(b => b.onclick = () => { tab = b.dataset.t; render(); });
+["#fClass","#fTrip","#fLevel","#fq"].forEach(s => $(s).addEventListener("input", render));
+load(); setInterval(load, 5 * 60 * 1000);
+</script>
+</body>
+</html>

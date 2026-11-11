@@ -1,0 +1,80 @@
+# ============================================================
+#  吉隆坡 Bug 价机票监控 · 配置文件
+#  改完提交到 GitHub 即可生效，下一轮监控就会用新配置
+# ============================================================
+
+origin: KUL            # 出发地（IATA 城市/机场代码）。想加槟城可改成多个，见 extra_origins
+extra_origins: []      # 例如 [PEN, JHB]，会一起监控
+currency: myr          # 价格币种：myr / usd / cny
+
+# ---------- 数据源 1：Travelpayouts / Aviasales 实时低价缓存 ----------
+# 需要免费 token（见 README），放在 GitHub Secrets: TRAVELPAYOUTS_TOKEN
+travelpayouts:
+  enabled: true
+  trip_classes: [0, 1]       # 0=经济舱  1=商务舱
+  include_one_way: true      # 同时监控单程
+  max_results: 1000
+
+# ---------- 异常价判定规则 ----------
+detection:
+  # A. 对比历史：低于该航线近 N 天日最低价中位数的比例
+  history_days: 60
+  min_history_days: 5        # 至少积累几天数据才启用历史对比
+  bug_ratio: 0.45            # ≤ 历史中位数的 45% → 🔥 疑似 bug 价
+  great_ratio: 0.65          # ≤ 65% → 💎 超值
+
+  # B. 按距离算单价（马币/公里，往返按双程距离），新航线没历史时也能判断
+  min_distance_km: 1800      # 太短的航线（如 KUL-SIN）不用这条规则，避免廉航促销刷屏
+  economy_bug_per_km: 0.045  # 经济舱 ≤ 0.045 MYR/km → 疑似 bug（KUL-伦敦往返 ≈ RM950）
+  economy_great_per_km: 0.07
+  business_bug_per_km: 0.14  # 商务舱 ≤ 0.14 MYR/km → 疑似 bug（KUL-伦敦往返 ≈ RM2950）
+  business_great_per_km: 0.22
+
+  # C. 目标价：某目的地低于你设定的价格就提醒（往返/经济舱，单位同 currency）
+  targets:
+    LON: 1600     # 伦敦
+    PAR: 1700     # 巴黎
+    TYO: 900      # 东京
+    OSA: 850      # 大阪
+    SEL: 700      # 首尔
+    SYD: 1000     # 悉尼
+    AKL: 1500     # 奥克兰
+    YVR: 2200     # 温哥华
+    CTU: 500      # 成都
+    SHA: 550      # 上海
+
+  realert_hours: 24          # 同一航线同一价格，多少小时内不重复推送
+  realert_drop: 0.10         # 价格再降 10% 以上则立即再次推送
+
+# ---------- 数据源 2：错误票价情报 RSS ----------
+rss:
+  enabled: true
+  # 文本里出现这些词才算"从吉隆坡出发"
+  origin_keywords: ["Kuala Lumpur", "KUL", "Malaysia", "吉隆坡", "马来西亚"]
+  # 出现这些词判为错误票价
+  error_keywords: ["error fare", "mistake fare", "price error", "pricing error", "glitch", "错误票价", "bug价", "BUG价"]
+  # 非吉隆坡出发、但标明是错误票价的（比如新加坡出发），是否也推送
+  push_global_errors: false
+  feeds:
+    - name: Secret Flying · 吉隆坡出发
+      url: https://www.secretflying.com/cheap-flights-from/kuala-lumpur/feed/
+    - name: Secret Flying · 错误票价
+      url: https://www.secretflying.com/error-fare/feed/
+    - name: Google 新闻 · KL 错误票价
+      url: https://news.google.com/rss/search?q=%22Kuala+Lumpur%22+(%22error+fare%22+OR+%22mistake+fare%22)&hl=en-MY&gl=MY&ceid=MY:en
+    - name: Google 新闻 · 中文 bug 价
+      url: https://news.google.com/rss/search?q=%E5%90%89%E9%9A%86%E5%9D%A1+%E6%9C%BA%E7%A5%A8+(bug%E4%BB%B7+OR+%E9%94%99%E8%AF%AF%E7%A5%A8%E4%BB%B7)&hl=zh-CN&gl=CN&ceid=CN:zh-Hans
+    - name: Fly4free 全球特价
+      url: https://www.fly4free.com/feed/
+
+# ---------- 推送 ----------
+# 渠道开关全部由 GitHub Secrets 决定：填了哪个 Secret 就推哪个，可同时多个
+#   Telegram : TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID
+#   ntfy     : NTFY_TOPIC（可选 NTFY_SERVER）
+#   Bark(iOS): BARK_KEY（可选 BARK_SERVER）
+#   微信     : SERVERCHAN_KEY（Server酱）或 PUSHPLUS_TOKEN
+#   邮件     : SMTP_HOST SMTP_PORT SMTP_USER SMTP_PASS MAIL_TO
+notify:
+  push_levels: [bug, target]   # 推送哪些级别：bug / great / target / news
+  max_per_run: 8               # 每轮最多推几条，防刷屏
+  site_url: "https://ritchie12233.github.io/flight-ticket/"   # 推送里附带的看板链接

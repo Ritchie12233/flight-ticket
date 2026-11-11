@@ -1,0 +1,1006 @@
+{
+ "updated_at": "2026-11-11T12:01:37.902444+08:00",
+ "origin": "KUL",
+ "currency": "MYR",
+ "stats": {
+  "fares_scanned": 26,
+  "routes": 26,
+  "bug": 2,
+  "great": 1,
+  "target": 1
+ },
+ "channels": [],
+ "sources": [
+  {
+   "name": "演示数据",
+   "ok": true,
+   "count": 26
+  }
+ ],
+ "hot": [
+  {
+   "origin": "KUL",
+   "dest": "YVR",
+   "price": 4900.0,
+   "depart": "2027-01-18",
+   "return": "2027-01-26",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 12773,
+   "airline": "EK",
+   "found_at": "2026-11-11T04:01:37.904398+00:00",
+   "source": "demo",
+   "id": "KUL-YVR|RT|1",
+   "type": "fare",
+   "level": "bug",
+   "reasons": [
+    "仅为近期常规价的 33%",
+    "每公里 0.192，很划算"
+   ],
+   "baseline": 14978,
+   "ratio": 0.327,
+   "per_km": 0.1918,
+   "dest_name": "Vancouver",
+   "dest_name_zh": "温哥华",
+   "country": "CA"
+  },
+  {
+   "origin": "KUL",
+   "dest": "LON",
+   "price": 1180.0,
+   "depart": "2026-12-01",
+   "return": "2026-12-13",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 10546,
+   "airline": "MH",
+   "found_at": "2026-11-11T04:01:37.904253+00:00",
+   "source": "demo",
+   "id": "KUL-LON|RT|0",
+   "type": "fare",
+   "level": "bug",
+   "reasons": [
+    "仅为近期常规价的 37%",
+    "每公里 0.056，很划算",
+    "低于你设的目标价 1600"
+   ],
+   "baseline": 3152,
+   "ratio": 0.374,
+   "per_km": 0.0559,
+   "dest_name": "London",
+   "dest_name_zh": "伦敦",
+   "country": "GB"
+  },
+  {
+   "origin": "KUL",
+   "dest": "TYO",
+   "price": 840.0,
+   "depart": "2026-12-14",
+   "return": "2026-12-22",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5321,
+   "airline": "SQ",
+   "found_at": "2026-11-11T04:01:37.904285+00:00",
+   "source": "demo",
+   "id": "KUL-TYO|RT|0",
+   "type": "fare",
+   "level": "target",
+   "reasons": [
+    "比近期常规价低 45%",
+    "低于你设的目标价 900"
+   ],
+   "baseline": 1522,
+   "ratio": 0.552,
+   "per_km": 0.0789,
+   "dest_name": "Tokyo",
+   "dest_name_zh": "东京",
+   "country": "JP"
+  },
+  {
+   "origin": "KUL",
+   "dest": "MLE",
+   "price": 690.0,
+   "depart": "2027-04-04",
+   "return": "2027-04-09",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3129,
+   "airline": "MH",
+   "found_at": "2026-11-11T04:01:37.904468+00:00",
+   "source": "demo",
+   "id": "KUL-MLE|RT|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 39%"
+   ],
+   "baseline": 1140,
+   "ratio": 0.605,
+   "per_km": 0.1103,
+   "dest_name": "Male",
+   "dest_name_zh": "马累",
+   "country": "MV"
+  }
+ ],
+ "all_routes": [
+  {
+   "origin": "KUL",
+   "dest": "BKK",
+   "price": 337.0,
+   "depart": "2027-01-04",
+   "return": "2027-01-10",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1187,
+   "airline": "D7",
+   "found_at": "2026-11-11T04:01:37.904359+00:00",
+   "source": "demo",
+   "id": "KUL-BKK|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 332,
+   "ratio": 1.015,
+   "per_km": 0.142,
+   "dest_name": "Bangkok",
+   "dest_name_zh": "曼谷",
+   "country": "TH"
+  },
+  {
+   "origin": "KUL",
+   "dest": "MLE",
+   "price": 690.0,
+   "depart": "2027-04-04",
+   "return": "2027-04-09",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3129,
+   "airline": "MH",
+   "found_at": "2026-11-11T04:01:37.904468+00:00",
+   "source": "demo",
+   "id": "KUL-MLE|RT|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 39%"
+   ],
+   "baseline": 1140,
+   "ratio": 0.605,
+   "per_km": 0.1103,
+   "dest_name": "Male",
+   "dest_name_zh": "马累",
+   "country": "MV"
+  },
+  {
+   "origin": "KUL",
+   "dest": "SEL",
+   "price": 760.0,
+   "depart": "2027-04-03",
+   "return": "2027-04-15",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 4614,
+   "airline": "EK",
+   "found_at": "2026-11-11T04:01:37.904344+00:00",
+   "source": "demo",
+   "id": "KUL-SEL|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1134,
+   "ratio": 0.67,
+   "per_km": 0.0824,
+   "dest_name": "Seoul",
+   "dest_name_zh": "首尔",
+   "country": "KR"
+  },
+  {
+   "origin": "KUL",
+   "dest": "TYO",
+   "price": 840.0,
+   "depart": "2026-12-14",
+   "return": "2026-12-22",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5321,
+   "airline": "SQ",
+   "found_at": "2026-11-11T04:01:37.904285+00:00",
+   "source": "demo",
+   "id": "KUL-TYO|RT|0",
+   "type": "fare",
+   "level": "target",
+   "reasons": [
+    "比近期常规价低 45%",
+    "低于你设的目标价 900"
+   ],
+   "baseline": 1522,
+   "ratio": 0.552,
+   "per_km": 0.0789,
+   "dest_name": "Tokyo",
+   "dest_name_zh": "东京",
+   "country": "JP"
+  },
+  {
+   "origin": "KUL",
+   "dest": "CTU",
+   "price": 961.0,
+   "depart": "2027-02-11",
+   "return": "2027-02-20",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3070,
+   "airline": "SQ",
+   "found_at": "2026-11-11T04:01:37.904377+00:00",
+   "source": "demo",
+   "id": "KUL-CTU|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 931,
+   "ratio": 1.032,
+   "per_km": 0.1565,
+   "dest_name": "Chengdu",
+   "dest_name_zh": "成都",
+   "country": "CN"
+  },
+  {
+   "origin": "KUL",
+   "dest": "LON",
+   "price": 1180.0,
+   "depart": "2026-12-01",
+   "return": "2026-12-13",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 10546,
+   "airline": "MH",
+   "found_at": "2026-11-11T04:01:37.904253+00:00",
+   "source": "demo",
+   "id": "KUL-LON|RT|0",
+   "type": "fare",
+   "level": "bug",
+   "reasons": [
+    "仅为近期常规价的 37%",
+    "每公里 0.056，很划算",
+    "低于你设的目标价 1600"
+   ],
+   "baseline": 3152,
+   "ratio": 0.374,
+   "per_km": 0.0559,
+   "dest_name": "London",
+   "dest_name_zh": "伦敦",
+   "country": "GB"
+  },
+  {
+   "origin": "KUL",
+   "dest": "OSA",
+   "price": 1478.0,
+   "depart": "2027-02-25",
+   "return": "2027-03-08",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4947,
+   "airline": "MH",
+   "found_at": "2026-11-11T04:01:37.904450+00:00",
+   "source": "demo",
+   "id": "KUL-OSA|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1395,
+   "ratio": 1.059,
+   "per_km": 0.1494,
+   "dest_name": "Osaka",
+   "dest_name_zh": "大阪",
+   "country": "JP"
+  },
+  {
+   "origin": "KUL",
+   "dest": "SYD",
+   "price": 1601.0,
+   "depart": "2027-01-31",
+   "return": "2027-02-07",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6614,
+   "airline": "SQ",
+   "found_at": "2026-11-11T04:01:37.904312+00:00",
+   "source": "demo",
+   "id": "KUL-SYD|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1755,
+   "ratio": 0.912,
+   "per_km": 0.121,
+   "dest_name": "Sydney",
+   "dest_name_zh": "悉尼",
+   "country": "AU"
+  },
+  {
+   "origin": "KUL",
+   "dest": "DXB",
+   "price": 2029.0,
+   "depart": "2027-01-08",
+   "return": "2027-01-20",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 5532,
+   "airline": "TK",
+   "found_at": "2026-11-11T04:01:37.904422+00:00",
+   "source": "demo",
+   "id": "KUL-DXB|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2019,
+   "ratio": 1.005,
+   "per_km": 0.1834,
+   "dest_name": "Dubai",
+   "dest_name_zh": "迪拜",
+   "country": "AE"
+  },
+  {
+   "origin": "KUL",
+   "dest": "IST",
+   "price": 2501.0,
+   "depart": "2027-03-16",
+   "return": "2027-03-21",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 8333,
+   "airline": "OD",
+   "found_at": "2026-11-11T04:01:37.904407+00:00",
+   "source": "demo",
+   "id": "KUL-IST|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2691,
+   "ratio": 0.929,
+   "per_km": 0.1501,
+   "dest_name": "Istanbul",
+   "dest_name_zh": "伊斯坦布尔",
+   "country": "TR"
+  },
+  {
+   "origin": "KUL",
+   "dest": "AKL",
+   "price": 2638.0,
+   "depart": "2027-03-27",
+   "return": "2027-04-01",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 8726,
+   "airline": "TK",
+   "found_at": "2026-11-11T04:01:37.904436+00:00",
+   "source": "demo",
+   "id": "KUL-AKL|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2659,
+   "ratio": 0.992,
+   "per_km": 0.1512,
+   "dest_name": "Auckland",
+   "dest_name_zh": "奥克兰",
+   "country": "NZ"
+  },
+  {
+   "origin": "KUL",
+   "dest": "PAR",
+   "price": 3578.0,
+   "depart": "2027-03-29",
+   "return": "2027-04-04",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 10424,
+   "airline": "D7",
+   "found_at": "2026-11-11T04:01:37.904330+00:00",
+   "source": "demo",
+   "id": "KUL-PAR|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3340,
+   "ratio": 1.071,
+   "per_km": 0.1716,
+   "dest_name": "Paris",
+   "dest_name_zh": "巴黎",
+   "country": "FR"
+  },
+  {
+   "origin": "KUL",
+   "dest": "YVR",
+   "price": 4230.0,
+   "depart": "2027-02-24",
+   "return": "2027-03-07",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 12773,
+   "airline": "QR",
+   "found_at": "2026-11-11T04:01:37.904391+00:00",
+   "source": "demo",
+   "id": "KUL-YVR|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 4279,
+   "ratio": 0.989,
+   "per_km": 0.1656,
+   "dest_name": "Vancouver",
+   "dest_name_zh": "温哥华",
+   "country": "CA"
+  }
+ ],
+ "trend": {
+  "KUL-YVR|RT|1": [
+   [
+    "2026-10-13",
+    13993
+   ],
+   [
+    "2026-10-14",
+    13822
+   ],
+   [
+    "2026-10-15",
+    13872
+   ],
+   [
+    "2026-10-16",
+    13129
+   ],
+   [
+    "2026-10-17",
+    13832
+   ],
+   [
+    "2026-10-18",
+    15089
+   ],
+   [
+    "2026-10-19",
+    14713
+   ],
+   [
+    "2026-10-20",
+    15586
+   ],
+   [
+    "2026-10-21",
+    15128
+   ],
+   [
+    "2026-10-22",
+    13735
+   ],
+   [
+    "2026-10-23",
+    13777
+   ],
+   [
+    "2026-10-24",
+    14547
+   ],
+   [
+    "2026-10-25",
+    15507
+   ],
+   [
+    "2026-10-26",
+    16055
+   ],
+   [
+    "2026-10-27",
+    14808
+   ],
+   [
+    "2026-10-28",
+    15817
+   ],
+   [
+    "2026-10-29",
+    14654
+   ],
+   [
+    "2026-10-30",
+    15420
+   ],
+   [
+    "2026-10-31",
+    15039
+   ],
+   [
+    "2026-11-01",
+    16034
+   ],
+   [
+    "2026-11-02",
+    16244
+   ],
+   [
+    "2026-11-03",
+    14978
+   ],
+   [
+    "2026-11-04",
+    16379
+   ],
+   [
+    "2026-11-05",
+    15235
+   ],
+   [
+    "2026-11-06",
+    15713
+   ],
+   [
+    "2026-11-07",
+    14482
+   ],
+   [
+    "2026-11-08",
+    15881
+   ],
+   [
+    "2026-11-09",
+    13742
+   ],
+   [
+    "2026-11-10",
+    13031
+   ],
+   [
+    "2026-11-11",
+    4900.0
+   ]
+  ],
+  "KUL-LON|RT|0": [
+   [
+    "2026-10-13",
+    3558
+   ],
+   [
+    "2026-10-14",
+    2957
+   ],
+   [
+    "2026-10-15",
+    2954
+   ],
+   [
+    "2026-10-16",
+    3149
+   ],
+   [
+    "2026-10-17",
+    3646
+   ],
+   [
+    "2026-10-18",
+    3004
+   ],
+   [
+    "2026-10-19",
+    3152
+   ],
+   [
+    "2026-10-20",
+    3439
+   ],
+   [
+    "2026-10-21",
+    3525
+   ],
+   [
+    "2026-10-22",
+    2885
+   ],
+   [
+    "2026-10-23",
+    3528
+   ],
+   [
+    "2026-10-24",
+    3351
+   ],
+   [
+    "2026-10-25",
+    3056
+   ],
+   [
+    "2026-10-26",
+    3316
+   ],
+   [
+    "2026-10-27",
+    3400
+   ],
+   [
+    "2026-10-28",
+    3039
+   ],
+   [
+    "2026-10-29",
+    2901
+   ],
+   [
+    "2026-10-30",
+    3284
+   ],
+   [
+    "2026-10-31",
+    3055
+   ],
+   [
+    "2026-11-01",
+    2904
+   ],
+   [
+    "2026-11-02",
+    3218
+   ],
+   [
+    "2026-11-03",
+    2950
+   ],
+   [
+    "2026-11-04",
+    3594
+   ],
+   [
+    "2026-11-05",
+    3421
+   ],
+   [
+    "2026-11-06",
+    3469
+   ],
+   [
+    "2026-11-07",
+    3059
+   ],
+   [
+    "2026-11-08",
+    3100
+   ],
+   [
+    "2026-11-09",
+    2900
+   ],
+   [
+    "2026-11-10",
+    3392
+   ],
+   [
+    "2026-11-11",
+    1180.0
+   ]
+  ],
+  "KUL-TYO|RT|0": [
+   [
+    "2026-10-13",
+    1724
+   ],
+   [
+    "2026-10-14",
+    1432
+   ],
+   [
+    "2026-10-15",
+    1500
+   ],
+   [
+    "2026-10-16",
+    1687
+   ],
+   [
+    "2026-10-17",
+    1569
+   ],
+   [
+    "2026-10-18",
+    1449
+   ],
+   [
+    "2026-10-19",
+    1561
+   ],
+   [
+    "2026-10-20",
+    1442
+   ],
+   [
+    "2026-10-21",
+    1449
+   ],
+   [
+    "2026-10-22",
+    1522
+   ],
+   [
+    "2026-10-23",
+    1693
+   ],
+   [
+    "2026-10-24",
+    1498
+   ],
+   [
+    "2026-10-25",
+    1596
+   ],
+   [
+    "2026-10-26",
+    1468
+   ],
+   [
+    "2026-10-27",
+    1679
+   ],
+   [
+    "2026-10-28",
+    1704
+   ],
+   [
+    "2026-10-29",
+    1429
+   ],
+   [
+    "2026-10-30",
+    1450
+   ],
+   [
+    "2026-10-31",
+    1468
+   ],
+   [
+    "2026-11-01",
+    1362
+   ],
+   [
+    "2026-11-02",
+    1436
+   ],
+   [
+    "2026-11-03",
+    1641
+   ],
+   [
+    "2026-11-04",
+    1666
+   ],
+   [
+    "2026-11-05",
+    1607
+   ],
+   [
+    "2026-11-06",
+    1559
+   ],
+   [
+    "2026-11-07",
+    1590
+   ],
+   [
+    "2026-11-08",
+    1721
+   ],
+   [
+    "2026-11-09",
+    1492
+   ],
+   [
+    "2026-11-10",
+    1411
+   ],
+   [
+    "2026-11-11",
+    840.0
+   ]
+  ],
+  "KUL-MLE|RT|0": [
+   [
+    "2026-10-13",
+    1251
+   ],
+   [
+    "2026-10-14",
+    1148
+   ],
+   [
+    "2026-10-15",
+    1220
+   ],
+   [
+    "2026-10-16",
+    1255
+   ],
+   [
+    "2026-10-17",
+    1015
+   ],
+   [
+    "2026-10-18",
+    1059
+   ],
+   [
+    "2026-10-19",
+    1079
+   ],
+   [
+    "2026-10-20",
+    1109
+   ],
+   [
+    "2026-10-21",
+    1001
+   ],
+   [
+    "2026-10-22",
+    1012
+   ],
+   [
+    "2026-10-23",
+    1126
+   ],
+   [
+    "2026-10-24",
+    1128
+   ],
+   [
+    "2026-10-25",
+    1249
+   ],
+   [
+    "2026-10-26",
+    1182
+   ],
+   [
+    "2026-10-27",
+    1179
+   ],
+   [
+    "2026-10-28",
+    1024
+   ],
+   [
+    "2026-10-29",
+    1069
+   ],
+   [
+    "2026-10-30",
+    1147
+   ],
+   [
+    "2026-10-31",
+    1196
+   ],
+   [
+    "2026-11-01",
+    1075
+   ],
+   [
+    "2026-11-02",
+    1036
+   ],
+   [
+    "2026-11-03",
+    1010
+   ],
+   [
+    "2026-11-04",
+    1217
+   ],
+   [
+    "2026-11-05",
+    1240
+   ],
+   [
+    "2026-11-06",
+    1168
+   ],
+   [
+    "2026-11-07",
+    1140
+   ],
+   [
+    "2026-11-08",
+    1107
+   ],
+   [
+    "2026-11-09",
+    1247
+   ],
+   [
+    "2026-11-10",
+    1172
+   ],
+   [
+    "2026-11-11",
+    690.0
+   ]
+  ]
+ },
+ "news": [
+  {
+   "id": "rss:demo1",
+   "type": "news",
+   "level": "bug",
+   "is_error_fare": true,
+   "title": "ERROR FARE: Kuala Lumpur, Malaysia to Male, Maldives for only $148 USD roundtrip",
+   "summary": "Malaysia Airlines 往返马尔代夫，疑似燃油附加费漏算。",
+   "link": "https://www.secretflying.com/",
+   "source": "演示数据",
+   "published": "2026-11-11T04:01:37.904479+00:00"
+  },
+  {
+   "id": "rss:demo2",
+   "type": "news",
+   "level": "news",
+   "is_error_fare": false,
+   "title": "Non-stop from Kuala Lumpur, Malaysia to Perth, Australia for only $178 USD roundtrip",
+   "summary": "非错误票价，但属于明显低价。",
+   "link": "https://www.secretflying.com/",
+   "source": "演示数据",
+   "published": "2026-11-10T23:01:37.904481+00:00"
+  }
+ ],
+ "alerts": [
+  {
+   "at": "2026-11-11T12:01:37.902444+08:00",
+   "title": "🔥 疑似BUG价 吉隆坡→温哥华 MYR 4900",
+   "url": "https://www.aviasales.com/search/KUL1801YVR26011",
+   "channels": []
+  },
+  {
+   "at": "2026-11-11T12:01:37.902444+08:00",
+   "title": "🔥 疑似BUG价 吉隆坡→伦敦 MYR 1180",
+   "url": "https://www.aviasales.com/search/KUL0112LON13121",
+   "channels": []
+  },
+  {
+   "at": "2026-11-11T12:01:37.902444+08:00",
+   "title": "🎯 到达目标价 吉隆坡→东京 MYR 840",
+   "url": "https://www.aviasales.com/search/KUL1412TYO22121",
+   "channels": []
+  },
+  {
+   "at": "2026-11-11T12:01:37.902444+08:00",
+   "title": "🔥 错误票价情报：ERROR FARE: Kuala Lumpur, Malaysia to Male, Maldives for only $148 USD roundtrip",
+   "url": "https://www.secretflying.com/",
+   "channels": []
+  }
+ ],
+ "targets": {
+  "LON": 1600,
+  "PAR": 1700,
+  "TYO": 900,
+  "OSA": 850,
+  "SEL": 700,
+  "SYD": 1000,
+  "AKL": 1500,
+  "YVR": 2200,
+  "CTU": 500,
+  "SHA": 550
+ },
+ "demo": true
+}
