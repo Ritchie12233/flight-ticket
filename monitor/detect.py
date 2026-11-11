@@ -120,6 +120,7 @@ def evaluate(fares: list[dict], history: dict, cities: dict, cfg: dict, today: s
             "dest_name": city.get("name", f["dest"]),
             "dest_name_zh": city.get("name_zh", f["dest"]),
             "country": city.get("country"),
+            "lat": city.get("lat"), "lon": city.get("lon"),
         })
     results.sort(key=lambda r: (-LEVEL_RANK[r["level"]], r["ratio"] or 9, r["per_km"] or 9))
     return results

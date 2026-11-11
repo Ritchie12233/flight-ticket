@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<script src="vendor/leaflet/leaflet.js" defer></script>
 <style>
 :root{
   --paper:#f5efe4; --card:#fffdf8; --ink:#23201b; --muted:#6b5f52; --rule:#ddd2c2; --ctl:#8f8070;
@@ -44,24 +46,43 @@ section{padding:40px 0 8px}
 h2{font-family:var(--serif);font-weight:900;font-size:26px;margin:0 0 4px}
 .lede{color:var(--muted);margin:0 0 20px;max-width:62ch}
 
-/* ---------- hero poster ---------- */
-.hero{margin-top:24px;border-radius:var(--r);overflow:hidden;color:var(--cream);
-  background:linear-gradient(115deg,var(--hero-a) 0%,var(--hero-b) 100%);position:relative}
-.hero::before{content:"";position:absolute;inset:auto -10% -55% auto;width:520px;height:520px;border-radius:50%;
-  background:radial-gradient(circle,rgba(255,196,140,.35),rgba(255,196,140,0) 65%)}
-.hero-in{position:relative;padding:28px 32px 30px;display:grid;grid-template-columns:1fr auto;gap:12px 32px;align-items:end}
-.hero .kicker{font-size:15px;margin:0;opacity:.95;grid-column:1/-1}
-.hero .big{grid-column:1/-1;font-family:var(--display);font-size:clamp(56px,11vw,132px);line-height:.92;margin:6px 0 4px;letter-spacing:-.01em;overflow-wrap:anywhere}
-.hero .where{font-family:var(--serif);font-weight:600;font-size:22px;margin:0}
-.hero .facts{margin:6px 0 0;font-size:15px;opacity:.95}
-.hero .price{text-align:right}
-.hero .price .n{font-family:var(--display);font-size:clamp(40px,6vw,64px);line-height:1}
-.hero .price .u{font-size:14px;opacity:.9}
-.hero .why{font-size:14px;margin:4px 0 0;opacity:.95}
-.hero .acts{grid-column:1/-1;margin-top:14px}
-.hero .btn{border-color:rgba(247,242,233,.6);color:var(--cream)}
-.hero .btn:hover{color:#fff;border-color:#fff}
-.hero .btn.pri{background:var(--cream);color:var(--hero-a);border-color:var(--cream)}
+/* ---------- today: map + ranking ---------- */
+.today{padding-top:28px}
+.today-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px}
+.today-head h2{margin:0 8px 0 0}
+.seg{display:inline-flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:6px 16px;min-height:40px;cursor:pointer;font-size:14px}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.today .lede{margin:8px 0 14px}
+.today-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr);gap:16px;align-items:stretch}
+#map{height:560px;border-radius:var(--r);border:1px solid var(--rule);background:#e9e2d4;z-index:0}
+.top{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-height:560px;overflow:auto}
+.top li{display:grid;grid-template-columns:28px 1fr auto;gap:2px 10px;padding:10px 4px 10px 0;border-bottom:1px solid var(--rule);cursor:pointer}
+.top li:hover,.top li.on{background:#efe6d6}
+.top .rk{font-family:var(--display);font-size:18px;color:var(--muted);text-align:right;padding-top:2px}
+.top .nm{font-family:var(--serif);font-weight:900;font-size:17px;line-height:1.3}
+.top .nm small{font-family:var(--display);font-weight:400;font-size:13px;color:var(--muted);margin-left:6px}
+.top .pr{font-family:var(--display);font-size:22px;color:var(--sun);text-align:right;line-height:1.2}
+.top .pr.hot{color:#9f1d0a}
+.top .meta{grid-column:2/-1;font-size:13px;color:var(--muted)}
+.top .meta b{color:var(--sea);font-weight:700}
+.top .meta b.hot{color:#9f1d0a}
+.top .links{grid-column:2/-1;margin-top:4px}
+.top .links .btn{min-height:32px;padding:2px 10px;font-size:12px}
+.pin{background:var(--card);border:1px solid var(--ink);border-radius:999px;padding:2px 7px;font-size:12px;font-weight:700;white-space:nowrap;color:var(--ink);box-shadow:0 1px 2px rgba(35,32,27,.25);font-family:var(--sans);line-height:1.4;transform:translate(-50%,-50%);display:inline-block}
+.pin.free{border-color:var(--sea)} .pin.easy,.pin.free_partial{border-color:#b7792f}
+.pin.hot{background:#9f1d0a;color:#fff;border-color:#9f1d0a}
+.pin.sel{background:var(--ink);color:var(--paper)}
+.pin-wrap{background:none;border:0}
+.home{background:var(--sun);color:#fff;border-radius:999px;padding:2px 8px;font-size:12px;font-weight:700;transform:translate(-50%,-50%);display:inline-block;white-space:nowrap}
+.leaflet-popup-content{font-family:var(--sans);font-size:14px;margin:12px 14px}
+.leaflet-popup-content .pn{font-family:var(--serif);font-weight:900;font-size:17px}
+.leaflet-popup-content .pp{font-family:var(--display);font-size:22px;color:var(--sun)}
+.leaflet-popup-content .links{margin-top:8px}
+.leaflet-popup-content .links .btn{min-height:32px;padding:2px 10px;font-size:12px}
+.legend-map{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);margin-top:8px}
+.legend-map i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.nomap{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:20px}
 
 /* ---------- buttons ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 16px;border-radius:999px;
@@ -175,8 +196,9 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
 @media (max-width:760px){
   .wrap{padding:0 16px}
   .mast{padding-top:20px}
-  .hero-in{grid-template-columns:1fr;padding:22px 20px 22px}
-  .hero .price{text-align:left}
+  .today-grid{grid-template-columns:1fr}
+  #map{height:380px}
+  .top{max-height:none}
   .lrow{grid-template-columns:1fr auto;gap:6px 12px}
   .lrow .bar{grid-column:1/-1;order:3}
   .lrow .act{grid-column:1/-1;order:4}
@@ -186,7 +208,6 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   .brow .mid,.brow .links{grid-column:1/-1}
   .cards{grid-template-columns:1fr 1fr}
   .pc .links .btn,.lrow .links .btn{min-height:40px}
-  .hero .links{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 }
 @media (max-width:420px){ .cards{grid-template-columns:1fr} }
 </style>
@@ -207,12 +228,27 @@ footer summary{cursor:pointer;color:var(--ink);min-height:36px;display:flex;alig
   <div class="status" id="status" aria-live="polite">正在读取最新票价…</div>
 </header>
 <nav class="top" aria-label="页面导航"><div class="wrap">
-  <a href="#today">今日</a><a href="#mine">我的航线</a><a href="#deals">异常低价</a><a href="#ideas">出行灵感</a><a href="#biz">商务舱</a><a href="#intel">情报与推送</a>
+  <a href="#today">超级特价</a><a href="#mine">我的航线</a><a href="#deals">异常低价</a><a href="#ideas">出行灵感</a><a href="#biz">商务舱</a><a href="#intel">情报与推送</a>
 </div></nav>
 
 <main class="wrap">
   <div id="notice"></div>
-  <div id="today" class="hero" aria-label="今日焦点"></div>
+  <section id="today" class="today">
+    <div class="today-head">
+      <h2>超级特价</h2>
+      <div class="seg" role="group" aria-label="往返或单程">
+        <button data-trip="rt" aria-pressed="true">往返</button><button data-trip="ow" aria-pressed="false">单程</button>
+      </div>
+      <label class="chip"><input type="checkbox" id="tQuick" checked> 不用提前办签证</label>
+      <label class="chip"><input type="checkbox" id="tFresh" checked> 只看没去过</label>
+    </div>
+    <p class="lede" id="todayLede"></p>
+    <div class="today-grid">
+      <div><div id="map" role="region" aria-label="全球低价地图"></div>
+        <div class="legend-map"><span><i style="background:#9f1d0a"></i>疑似 bug 价 / 到达目标</span><span><i style="background:var(--sea)"></i>免签</span><span><i style="background:#b7792f"></i>落地签、电子签</span><span><i style="background:#9b8f80"></i>需签证</span></div></div>
+      <ol class="top" id="topList" aria-label="超级特价排行"></ol>
+    </div>
+  </section>
 
   <section id="mine">
     <h2>我的航线</h2>
@@ -351,30 +387,106 @@ function watchList(){
     return {dest:k.toUpperCase(), target:t, dest_name:r?.dest_name || k, dest_name_zh:r?.dest_name_zh || k, current:r || null, trend:[], visa:r?.visa, visited:r?.visited, country:r?.country}; });
 }
 
-/* ---------- hero ---------- */
-function renderHero(){
-  const R = rules(), econ = D.hot.filter(h => h.trip_class === 0);
-  const hot = econ.find(h => (h.level === "bug" || h.level === "target") && quickVisa(h)) || econ.find(h => h.level === "bug" || h.level === "target") || econ[0];
-  const f = hot || nearest()[0];
-  if (!f){ $("#today").innerHTML = `<div class="hero-in"><p class="kicker">正在积累数据，下一轮扫描后这里会出现今天最值得看的航线。</p></div>`; return; }
-  const kicker = hot ? ({bug:"疑似 bug 价", target:"到达你的目标价", great:"今天的超值票"}[hot.level] || "今天的特价")
-                     : "今天最接近 bug 价的航线";
-  const bugLine = Math.round(R.economy_bug_per_km * (f.distance || 0) * 2);
-  const why = hot ? (hot.reasons || []).join("；")
-              : (f.distance ? `再便宜到 ${price(bugLine)} 以下，就会判为 bug 价并推送给你。` : "");
-  $("#today").innerHTML = `<div class="hero-in">
-    <p class="kicker">${kicker}</p>
-    <p class="big" lang="en">${esc(f.dest_name)}</p>
-    <div>
-      <p class="where">${esc(f.dest_name_zh)}，${f.one_way ? "单程" : "往返"}${f.trip_class === 1 ? "商务舱" : "经济舱"}</p>
-      <p class="facts">${esc(join(dates(f), trTxt(f.transfers), f.gate ? "报价来自 " + f.gate : ""))}</p>
-      ${why ? `<p class="why">${esc(why)}</p>` : ""}
-      ${tags(f)}${f.visa?.note ? `<p class="why">签证：${esc(f.visa.note)}</p>` : ""}
-    </div>
-    <div class="price"><div class="u">人民币</div><div class="n">${price(f.price)}</div>
-      ${f.baseline ? `<div class="u">平时约 ${price(f.baseline)}</div>` : ""}</div>
-    <div class="acts">${links(f, true)}</div>
-  </div>`;
+/* ---------- today: map + ranking ---------- */
+const T = {trip:"rt", quick:true, fresh:true, sel:null};
+let MAP = null, LAYER = null, MARK = {}, RANKED = [];
+const LV_RANK = {bug:3, target:2, great:1, normal:0};
+function bugLine(r){ const R = rules(); const k = r.trip_class === 1 ? R.business_bug_per_km : R.economy_bug_per_km;
+  return r.distance ? Math.round(k * r.distance * (r.one_way ? 1 : 2)) : null; }
+function todayPool(){
+  const R = rules(), ow = T.trip === "ow";
+  const base = (ow ? (D.ow_routes || []) : D.all_routes).slice();
+  const byId = Object.fromEntries(base.map(r => [r.dest, r]));
+  for (const h of D.hot) if (h.trip_class === 0 && !!h.one_way === ow && (!byId[h.dest] || h.price <= byId[h.dest].price)) byId[h.dest] = h;
+  return Object.values(byId).filter(r => r.country !== "MY" && (r.distance || 0) >= R.min_distance_km &&
+    (!T.quick || quickVisa(r)) && (!T.fresh || r.visited !== true));
+}
+function rankToday(list){
+  return list.slice().sort((a,b) => (LV_RANK[b.level] || 0) - (LV_RANK[a.level] || 0) ||
+    (a.price / (bugLine(a) || 1e9)) - (b.price / (bugLine(b) || 1e9)) || a.price - b.price);
+}
+function popupHTML(r){
+  const bl = bugLine(r);
+  return `<div class="pn">${esc(r.dest_name_zh)} <small lang="en" style="font-weight:400;color:var(--muted)">${esc(r.dest_name)}</small></div>
+    <div class="pp">${price(r.price)} <small style="font-family:var(--sans);font-size:12px;color:var(--muted)">${r.one_way ? "单程" : "往返"}</small></div>
+    <div style="color:var(--muted);font-size:13px">${esc(join(dates(r), trTxt(r.transfers)))}</div>
+    ${tags(r, {hideBeen:true})}
+    ${r.level && r.level !== "normal" ? `<div style="margin-top:6px;color:#9f1d0a;font-weight:700">${esc((r.reasons || []).join("；"))}</div>`
+      : bl ? `<div style="margin-top:6px;font-size:13px">再便宜到 ${price(bl)} 以下判为 bug 价</div>` : ""}
+    ${r.visa?.note ? `<div style="font-size:13px;color:var(--muted)">签证：${esc(r.visa.note)}</div>` : ""}
+    ${links(r, true)}`;
+}
+function renderToday(){
+  const ranked = rankToday(todayPool()), top = ranked.slice(0, 12);
+  const hotN = ranked.filter(r => r.level === "bug" || r.level === "target").length;
+  $("#todayLede").textContent = `${T.trip === "ow" ? "单程" : "往返"}经济舱，${ranked.length} 个国际目的地。`
+    + (hotN ? `其中 ${hotN} 个已达 bug 价或目标价，排在最前。` : "现在没有 bug 价，越靠前越接近 bug 线（低于 bug 线就会推送）。")
+    + " 点右侧排行，地图会飞到那里。";
+  $("#topList").innerHTML = top.length ? top.map((r,i) => { const bl = bugLine(r), hot = r.level === "bug" || r.level === "target";
+
+    return `<li data-dest="${r.dest}" tabindex="0">
+      <span class="rk">${i + 1}</span>
+      <div class="nm">${esc(r.dest_name_zh)}<small lang="en">${esc(r.dest_name)}</small></div>
+      <div class="pr${hot ? " hot" : ""}">${price(r.price)}</div>
+      <div class="meta">${hot ? `<b class="hot">${r.level === "bug" ? "疑似 bug 价" : "到达目标价"}</b>，` : bl ? `bug 线 <b>${price(bl)}</b>，` : ""}${esc(join(dates(r), trTxt(r.transfers)))} ${tags(r, {hideBeen:true})}</div>
+      ${links(r, false)}</li>`; }).join("")
+    : `<li class="empty" style="display:block">没有符合条件的目的地，取消上面的勾选试试。</li>`;
+  $("#topList").querySelectorAll("li[data-dest]").forEach(li => {
+    const go = e => { if (e.target.closest("a")) return; focusDest(li.dataset.dest); };
+    li.onclick = go; li.onkeydown = e => { if (e.key === "Enter") go(e); };
+  });
+  drawMap(ranked, top);
+}
+function drawMap(ranked, top){
+  const box = $("#map");
+  if (!window.L){ box.innerHTML = `<div class="nomap" style="height:100%">地图组件还没加载出来，右侧排行可以正常使用。</div>`; return; }
+  if (!MAP){
+    MAP = L.map(box, {worldCopyJump:true, zoomControl:true, minZoom:2, attributionControl:true}).setView([22, 95], 3);
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", {
+      subdomains:"abcd", maxZoom:10, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'}).addTo(MAP);
+    let lastZ = MAP.getZoom();
+    MAP.on("zoomend", () => { const z = MAP.getZoom(); if (z !== lastZ){ lastZ = z; const open = T.sel; drawMarkers(); if (open && MARK[open]) MARK[open].openPopup(); } });
+    L.marker([3.14, 101.69], {interactive:false, icon:L.divIcon({className:"pin-wrap", html:'<span class="home">吉隆坡</span>', iconSize:null})}).addTo(MAP);
+  }
+  RANKED = ranked;
+  drawMarkers();
+  const pts = top.filter(r => r.lat != null).map(r => [r.lat, r.lon]).concat([[3.14, 101.69]]);
+  if (!T.sel && pts.length > 1) MAP.fitBounds(pts, {padding:[30, 30], maxZoom:4});
+  setTimeout(() => MAP.invalidateSize(), 50);
+}
+function drawMarkers(){
+  const ranked = RANKED, z = MAP.getZoom();
+  if (LAYER) LAYER.remove();
+  LAYER = L.layerGroup().addTo(MAP); MARK = {};
+  const n = z <= 2 ? 10 : z === 3 ? 15 : z === 4 ? 35 : z === 5 ? 70 : 999;   // 越放大，标价的点越多
+  const labelled = new Set(ranked.slice(0, n).map(r => r.dest));
+  if (T.sel) labelled.add(T.sel);
+  const col = r => (r.level === "bug" || r.level === "target") ? "#9f1d0a" : r.visa?.status === "free" ? "#0f5f66"
+    : (r.visa?.status === "easy" || r.visa?.status === "free_partial") ? "#b7792f" : "#9b8f80";
+  ranked.slice().reverse().forEach(r => {
+    if (r.lat == null || r.lon == null) return;
+    const hot = r.level === "bug" || r.level === "target";
+    const m = labelled.has(r.dest)
+      ? L.marker([r.lat, r.lon], {icon:L.divIcon({className:"pin-wrap", iconSize:null,
+          html:`<span class="pin ${hot ? "hot" : (r.visa?.status || "")}" title="${esc(r.dest_name_zh)}">${esc(r.dest_name_zh)} ${price(r.price)}</span>`}), riseOnHover:true})
+      : L.circleMarker([r.lat, r.lon], {radius:4, color:col(r), weight:1, fillColor:col(r), fillOpacity:.85})
+          .bindTooltip(`${esc(r.dest_name_zh)} ${price(r.price)}`);
+    m.bindPopup(popupHTML(r), {maxWidth:280}); m.addTo(LAYER); MARK[r.dest] = m;
+  });
+}
+function focusDest(code){
+  T.sel = code;
+  $("#topList").querySelectorAll("li").forEach(li => li.classList.toggle("on", li.dataset.dest === code));
+  const m = MARK[code]; if (!MAP || !m) return;
+  if (matchMedia("(max-width:760px)").matches) $("#map").scrollIntoView({behavior:"smooth", block:"center"});
+  MAP.flyTo(m.getLatLng(), Math.max(MAP.getZoom(), 4), {duration:.8}); setTimeout(() => m.openPopup(), 850);
+}
+function bindToday(){
+  document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
+    T.trip = b.dataset.trip; T.sel = null;
+    document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderToday(); });
+  $("#tQuick").oninput = e => { T.quick = e.target.checked; T.sel = null; renderToday(); };
+  $("#tFresh").oninput = e => { T.fresh = e.target.checked; T.sel = null; renderToday(); };
 }
 
 /* ---------- watchlist ---------- */
@@ -516,12 +628,12 @@ async function load(){
   try{
     const first = !D;
     D = await (await fetch("data/deals.json?t=" + Date.now())).json();
-    renderMeta(); renderHero(); renderWatch(); renderDeals(); renderBiz(); renderFeeds();
+    renderMeta(); if (first) bindToday(); renderToday(); renderWatch(); renderDeals(); renderBiz(); renderFeeds();
     if (first) renderCtrls();
     renderIdeas();
   }catch(e){ $("#status").textContent = "票价数据读取失败，请刷新页面重试。（" + e.message + "）"; }
 }
-load(); setInterval(load, 5 * 60 * 1000);
+addEventListener("DOMContentLoaded", () => { load(); setInterval(load, 5 * 60 * 1000); });
 </script>
 </body>
 </html>
