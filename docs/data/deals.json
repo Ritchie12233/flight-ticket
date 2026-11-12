@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-12T13:31:38.889264+08:00",
+ "updated_at": "2026-11-12T13:46:02.600071+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1108,
+  "fares_scanned": 1109,
   "routes": 768,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1108
+   "count": 1109
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -17215,39 +17215,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "MOW",
-   "price": 1864.0,
-   "depart": "2026-11-26",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 8183,
-   "airline": null,
-   "gate": "Oman Air",
-   "found_at": "2026-11-12T04:11:36",
-   "source": "aviasales-latest",
-   "id": "KUL-MOW|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2278,
-   "dest_name": "Moscow",
-   "dest_name_zh": "莫斯科",
-   "country": "RU",
-   "lat": 55.755786,
-   "lon": 37.617633,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "LIS",
    "price": 1868.0,
    "depart": "2026-11-26",
@@ -17903,6 +17870,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MOW",
+   "price": 1960.0,
+   "depart": "2026-12-10",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 8183,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-12T04:37:02",
+   "source": "aviasales-latest",
+   "id": "KUL-MOW|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2395,
+   "dest_name": "Moscow",
+   "dest_name_zh": "莫斯科",
+   "country": "RU",
+   "lat": 55.755786,
+   "lon": 37.617633,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
