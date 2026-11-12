@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-12T18:47:53.935320+08:00",
+ "updated_at": "2026-11-12T19:02:14.540267+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1116,
-  "routes": 763,
+  "fares_scanned": 1117,
+  "routes": 764,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1116
+   "count": 1117
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -941,7 +941,7 @@
   {
    "origin": "KUL",
    "dest": "LED",
-   "price": 19152.0,
+   "price": 19150.0,
    "depart": "2027-01-01",
    "return": "2027-01-10",
    "one_way": false,
@@ -958,7 +958,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 1.0992,
+   "per_km": 1.0991,
    "dest_name": "Saint Petersburg",
    "dest_name_zh": "圣彼得堡",
    "country": "RU",
@@ -15995,7 +15995,7 @@
   {
    "origin": "KUL",
    "dest": "KBU",
-   "price": 1496.0,
+   "price": 1510.0,
    "depart": "2026-12-07",
    "return": null,
    "one_way": true,
@@ -16004,7 +16004,7 @@
    "distance": 1761,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-12T03:16:34",
+   "found_at": "2026-11-12T10:43:16",
    "source": "aviasales-latest",
    "id": "KUL-KBU|OW|0",
    "type": "fare",
@@ -16012,7 +16012,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.8495,
+   "per_km": 0.8575,
    "dest_name": "Kotabaru",
    "dest_name_zh": "哥打巴鲁",
    "country": "ID",
@@ -22726,6 +22726,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "LYR",
+   "price": 3363.0,
+   "depart": "2027-02-20",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9614,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-12T10:35:01",
+   "source": "aviasales-latest",
+   "id": "KUL-LYR|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3498,
+   "dest_name": "Longyearbyen",
+   "dest_name_zh": "朗也被恩",
+   "country": "SJ",
+   "lat": 78.208885,
+   "lon": 15.8,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "VFA",
    "price": 3364.0,
    "depart": "2026-11-20",
@@ -23843,39 +23876,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PUJ",
-   "price": 4478.0,
-   "depart": "2026-11-24",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 17406,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-11T01:51:08",
-   "source": "aviasales-latest",
-   "id": "KUL-PUJ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2573,
-   "dest_name": "Punta Cana",
-   "dest_name_zh": "卡纳角",
-   "country": "DO",
-   "lat": 18.562477,
-   "lon": -68.364,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
