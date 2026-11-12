@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T02:13:41.390581+08:00",
+ "updated_at": "2026-11-13T02:28:02.730053+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -13379,7 +13379,7 @@
    "distance": 2653,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-12T17:41:44",
+   "found_at": "2026-11-12T18:02:13",
    "source": "aviasales-latest",
    "id": "KUL-KWL|OW|0",
    "type": "fare",
