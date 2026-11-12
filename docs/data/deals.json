@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-13T02:28:02.730053+08:00",
+ "updated_at": "2026-11-13T02:42:25.534591+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1112,
-  "routes": 762,
+  "fares_scanned": 1113,
+  "routes": 763,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1112
+   "count": 1113
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -13106,7 +13106,7 @@
   {
    "origin": "KUL",
    "dest": "MFM",
-   "price": 793.0,
+   "price": 802.0,
    "depart": "2026-11-24",
    "return": null,
    "one_way": true,
@@ -13114,8 +13114,8 @@
    "transfers": 0,
    "distance": 2508,
    "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-11T07:59:05",
+   "gate": "Trip.com",
+   "found_at": "2026-11-12T18:20:49",
    "source": "aviasales-latest",
    "id": "KUL-MFM|OW|0",
    "type": "fare",
@@ -13123,7 +13123,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3162,
+   "per_km": 0.3198,
    "dest_name": "Macau",
    "dest_name_zh": "澳门",
    "country": "MO",
@@ -16831,6 +16831,39 @@
     "note": "落地签 30 天"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BXU",
+   "price": 1726.0,
+   "depart": "2026-11-14",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 2717,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-12T18:26:28",
+   "source": "aviasales-latest",
+   "id": "KUL-BXU|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.6353,
+   "dest_name": "Butuan",
+   "dest_name_zh": "武端",
+   "country": "PH",
+   "lat": 8.9475377,
+   "lon": 125.5406234,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
@@ -22312,6 +22345,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "LBD",
+   "price": 3021.0,
+   "depart": "2026-11-30",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5262,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-12T18:14:10",
+   "source": "aviasales-latest",
+   "id": "KUL-LBD|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5741,
+   "dest_name": "Khujand",
+   "dest_name_zh": "Khujand",
+   "country": "TJ",
+   "lat": 40.2735091,
+   "lon": 69.6392354,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "KSN",
    "price": 3023.0,
    "depart": "2027-01-10",
@@ -22637,39 +22703,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "LBD",
-   "price": 3167.0,
-   "depart": "2026-11-30",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 5262,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-11T11:24:19",
-   "source": "aviasales-latest",
-   "id": "KUL-LBD|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.6019,
-   "dest_name": "Khujand",
-   "dest_name_zh": "Khujand",
-   "country": "TJ",
-   "lat": 40.2735091,
-   "lon": 69.6392354,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -23990,39 +24023,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "HIR",
-   "price": 4449.0,
-   "depart": "2027-02-16",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 6602,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-05T18:31:52",
-   "source": "aviasales-latest",
-   "id": "KUL-HIR|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.6739,
-   "dest_name": "Honiara",
-   "dest_name_zh": "Honiara",
-   "country": "SB",
-   "lat": -9.4456381,
-   "lon": 159.9728999,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签"
    },
    "visited": false
   }
