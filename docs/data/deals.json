@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-13T04:08:37.912481+08:00",
+ "updated_at": "2026-11-13T04:23:02.433415+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1112,
-  "routes": 762,
+  "fares_scanned": 1113,
+  "routes": 763,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1112
+   "count": 1113
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -25,7 +25,7 @@
   },
   {
    "name": "Secret Flying · 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -6866,6 +6866,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "LHE",
+   "price": 3815.0,
+   "depart": "2026-11-18",
+   "return": "2026-11-20",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 4289,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-12T20:04:36",
+   "source": "aviasales-latest",
+   "id": "KUL-LHE|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4447,
+   "dest_name": "Lahore",
+   "dest_name_zh": "拉合尔",
+   "country": "PK",
+   "lat": 31.5203696,
+   "lon": 74.3587473,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "AYT",
    "price": 3853.0,
    "depart": "2027-03-26",
@@ -8016,39 +8049,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 90 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "LHE",
-   "price": 4722.0,
-   "depart": "2026-12-07",
-   "return": "2026-12-21",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4289,
-   "airline": null,
-   "gate": "Wowtickets",
-   "found_at": "2026-11-08T03:10:18",
-   "source": "aviasales-latest",
-   "id": "KUL-LHE|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.5505,
-   "dest_name": "Lahore",
-   "dest_name_zh": "拉合尔",
-   "country": "PK",
-   "lat": 31.5203696,
-   "lon": 74.3587473,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -22972,6 +22972,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "AGA",
+   "price": 3295.0,
+   "depart": "2027-01-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 11869,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-12T19:54:24",
+   "source": "aviasales-latest",
+   "id": "KUL-AGA|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2776,
+   "dest_name": "Agadir",
+   "dest_name_zh": "阿加迪尔",
+   "country": "MA",
+   "lat": 30.4277547,
+   "lon": -9.5981072,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "WLG",
    "price": 3310.0,
    "depart": "2027-05-28",
@@ -23957,39 +23990,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "TNR",
-   "price": 4191.0,
-   "depart": "2027-06-18",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 6394,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-06T15:46:35",
-   "source": "aviasales-latest",
-   "id": "KUL-TNR|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.6555,
-   "dest_name": "Antananarivo",
-   "dest_name_zh": "塔那那利佛",
-   "country": "MG",
-   "lat": -18.8791902,
-   "lon": 47.5079055,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签"
    },
    "visited": false
   }
