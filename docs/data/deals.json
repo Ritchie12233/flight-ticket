@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-13T02:42:25.534591+08:00",
+ "updated_at": "2026-11-13T02:56:45.250205+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1113,
-  "routes": 763,
+  "fares_scanned": 1114,
+  "routes": 764,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1113
+   "count": 1114
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -145,6 +145,39 @@
     "note": "免签 30 天"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "MES",
+   "price": 2213.0,
+   "depart": "2027-03-11",
+   "return": "2027-03-20",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 329,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-12T18:37:41Z",
+   "source": "aviasales-latest",
+   "id": "KUL-MES|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 3.3632,
+   "dest_name": "Medan",
+   "dest_name_zh": "棉兰",
+   "country": "ID",
+   "lat": 3.5951956,
+   "lon": 98.6722227,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -1566,16 +1599,16 @@
    "current": {
     "origin": "KUL",
     "dest": "DXB",
-    "price": 3242.0,
-    "depart": "2026-12-17",
-    "return": "2027-01-15",
+    "price": 3188.0,
+    "depart": "2027-11-02",
+    "return": "2027-11-08",
     "one_way": false,
     "trip_class": 0,
     "transfers": 2,
     "distance": 5548,
     "airline": null,
-    "gate": "Mytrip.com",
-    "found_at": "2026-11-12T03:01:47",
+    "gate": "Biletix",
+    "found_at": "2026-11-12T18:29:51",
     "source": "aviasales-latest",
     "id": "KUL-DXB|RT|0",
     "type": "fare",
@@ -1583,7 +1616,7 @@
     "reasons": [],
     "baseline": null,
     "ratio": null,
-    "per_km": 0.2922,
+    "per_km": 0.2873,
     "dest_name": "Dubai",
     "dest_name_zh": "迪拜",
     "country": "AE",
@@ -1641,7 +1674,7 @@
     ],
     [
      "2026-11-13",
-     3234.0
+     3188.0
     ]
    ]
   },
@@ -6140,6 +6173,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "DXB",
+   "price": 3188.0,
+   "depart": "2027-11-02",
+   "return": "2027-11-08",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5548,
+   "airline": null,
+   "gate": "Biletix",
+   "found_at": "2026-11-12T18:29:51",
+   "source": "aviasales-latest",
+   "id": "KUL-DXB|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2873,
+   "dest_name": "Dubai",
+   "dest_name_zh": "迪拜",
+   "country": "AE",
+   "lat": 25.2048493,
+   "lon": 55.2707828,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "SSH",
    "price": 3201.0,
    "depart": "2027-02-15",
@@ -6168,39 +6234,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DXB",
-   "price": 3242.0,
-   "depart": "2026-12-17",
-   "return": "2027-01-15",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 5548,
-   "airline": null,
-   "gate": "Mytrip.com",
-   "found_at": "2026-11-12T03:01:47",
-   "source": "aviasales-latest",
-   "id": "KUL-DXB|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2922,
-   "dest_name": "Dubai",
-   "dest_name_zh": "迪拜",
-   "country": "AE",
-   "lat": 25.2048493,
-   "lon": 55.2707828,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -12346,39 +12379,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "CMB",
-   "price": 631.0,
-   "depart": "2026-11-18",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2465,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-11T07:11:26",
-   "source": "aviasales-latest",
-   "id": "KUL-CMB|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.256,
-   "dest_name": "Colombo",
-   "dest_name_zh": "科伦坡",
-   "country": "LK",
-   "lat": 6.927468,
-   "lon": 79.848358,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "免费 ETA（2026-05 起）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "CEB",
    "price": 637.0,
    "depart": "2027-04-19",
@@ -12409,6 +12409,39 @@
     "note": "免签 14 天（试行，限指定机场入境）"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "CMB",
+   "price": 639.0,
+   "depart": "2027-02-26",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2465,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-09T18:11:46",
+   "source": "aviasales-latest",
+   "id": "KUL-CMB|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2592,
+   "dest_name": "Colombo",
+   "dest_name_zh": "科伦坡",
+   "country": "LK",
+   "lat": 6.927468,
+   "lon": 79.848358,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "免费 ETA（2026-05 起）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
