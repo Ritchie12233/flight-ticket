@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-13T03:39:52.443755+08:00",
+ "updated_at": "2026-11-13T03:54:12.324559+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1110,
-  "routes": 760,
+  "fares_scanned": 1111,
+  "routes": 761,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1110
+   "count": 1111
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -13336,6 +13336,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "NNG",
+   "price": 885.0,
+   "depart": "2026-11-27",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2315,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-12T19:23:56",
+   "source": "aviasales-latest",
+   "id": "KUL-NNG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3823,
+   "dest_name": "Nanning",
+   "dest_name_zh": "南宁",
+   "country": "CN",
+   "lat": 22.817002,
+   "lon": 108.366543,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "KWL",
    "price": 893.0,
    "depart": "2026-11-28",
@@ -13558,39 +13591,6 @@
    "country": "CN",
    "lat": 29.4315861,
    "lon": 106.912251,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "NNG",
-   "price": 925.0,
-   "depart": "2026-11-22",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2315,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-07T07:16:38",
-   "source": "aviasales-latest",
-   "id": "KUL-NNG|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3996,
-   "dest_name": "Nanning",
-   "dest_name_zh": "南宁",
-   "country": "CN",
-   "lat": 22.817002,
-   "lon": 108.366543,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -14026,6 +14026,39 @@
     "note": "免签 60 天"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MKZ",
+   "price": 1014.0,
+   "depart": "2027-01-05",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 81,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-12T19:28:59",
+   "source": "aviasales-latest",
+   "id": "KUL-MKZ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 12.5185,
+   "dest_name": "Malacca",
+   "dest_name_zh": "马六甲",
+   "country": "MY",
+   "lat": 2.189594,
+   "lon": 102.2500868,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
@@ -23957,39 +23990,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PKC",
-   "price": 4272.0,
-   "depart": "2026-12-21",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 7618,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-10T03:24:18",
-   "source": "aviasales-latest",
-   "id": "KUL-PKC|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.5608,
-   "dest_name": "Petropavlovsk-Kamchatsky",
-   "dest_name_zh": "彼得罗巴甫洛夫斯克",
-   "country": "RU",
-   "lat": 53.0583997,
-   "lon": 158.6320734,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   }
