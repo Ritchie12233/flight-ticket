@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-12T15:26:30.340484+08:00",
+ "updated_at": "2026-11-12T15:40:51.487627+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1097,
-  "routes": 756,
+  "fares_scanned": 1099,
+  "routes": 757,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1097
+   "count": 1099
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -9552,6 +9552,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CHC",
+   "price": 7222.0,
+   "depart": "2027-09-21",
+   "return": "2027-09-30",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 8692,
+   "airline": null,
+   "gate": "Flightnetwork",
+   "found_at": "2026-11-12T07:21:53",
+   "source": "aviasales-latest",
+   "id": "KUL-CHC|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4154,
+   "dest_name": "Christchurch",
+   "dest_name_zh": "基督城",
+   "country": "NZ",
+   "lat": -43.5320544,
+   "lon": 172.6362254,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
