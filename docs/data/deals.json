@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-13T03:11:05.965536+08:00",
+ "updated_at": "2026-11-13T03:25:31.069756+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1117,
-  "routes": 766,
+  "fares_scanned": 1111,
+  "routes": 762,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1117
+   "count": 1111
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -11389,39 +11389,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "BTH",
-   "price": 365.0,
-   "depart": "2026-11-15",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 323,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-05T17:29:47",
-   "source": "aviasales-latest",
-   "id": "KUL-BTH|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 1.13,
-   "dest_name": "Batam",
-   "dest_name_zh": "巴都贝萨尔",
-   "country": "ID",
-   "lat": 1.123627,
-   "lon": 104.11528,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "BKI",
    "price": 368.0,
    "depart": "2027-02-25",
@@ -11518,6 +11485,39 @@
     "note": "免签 30 天"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "BTH",
+   "price": 379.0,
+   "depart": "2026-11-18",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 323,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-08T07:47:04",
+   "source": "aviasales-latest",
+   "id": "KUL-BTH|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.1734,
+   "dest_name": "Batam",
+   "dest_name_zh": "巴都贝萨尔",
+   "country": "ID",
+   "lat": 1.123627,
+   "lon": 104.11528,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
