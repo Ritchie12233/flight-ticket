@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-12T11:22:14.850888+08:00",
+ "updated_at": "2026-11-12T11:36:38.422490+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1102,
-  "routes": 763,
+  "fares_scanned": 1103,
+  "routes": 764,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1102
+   "count": 1103
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -4871,6 +4871,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "COK",
+   "price": 2114.0,
+   "depart": "2027-02-15",
+   "return": "2027-02-19",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2906,
+   "airline": "AirAsia (AK)",
+   "flight_number": 37,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Kupi.com",
+   "id": "KUL-COK|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3637,
+   "dest_name": "Kochi",
+   "dest_name_zh": "库奇",
+   "country": "IN",
+   "lat": 9.9312328,
+   "lon": 76.2673041,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "HGH",
    "price": 2123.0,
    "depart": "2026-12-01",
@@ -5196,39 +5230,6 @@
     "status": "free_partial",
     "label": "部分免签",
     "note": "仅富国岛免签 30 天，其他地区需电子签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "COK",
-   "price": 2336.0,
-   "depart": "2027-02-05",
-   "return": "2027-02-16",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2913,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-10T12:04:18",
-   "source": "aviasales-latest",
-   "id": "KUL-COK|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.401,
-   "dest_name": "Kochi",
-   "dest_name_zh": "库奇",
-   "country": "IN",
-   "lat": 9.9312328,
-   "lon": 76.2673041,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -9878,6 +9879,39 @@
    "country": "CA",
    "lat": 43.653524,
    "lon": -79.3839069,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CKY",
+   "price": 8585.0,
+   "depart": "2026-12-12",
+   "return": "2026-12-26",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 12706,
+   "airline": "Malaysia Airlines (MH)",
+   "flight_number": 4990,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-CKY|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3378,
+   "dest_name": "Conakry",
+   "dest_name_zh": "科纳克里",
+   "country": "GN",
+   "lat": 9.6411855,
+   "lon": -13.5784012,
    "visa": {
     "status": "visa",
     "label": "需签证",
