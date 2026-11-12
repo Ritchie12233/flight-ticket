@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-12T20:13:59.394184+08:00",
+ "updated_at": "2026-11-12T20:28:22.665621+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1114,
-  "routes": 760,
+  "fares_scanned": 1115,
+  "routes": 761,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1114
+   "count": 1115
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -22132,6 +22132,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "RVN",
+   "price": 3008.0,
+   "depart": "2026-11-22",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9105,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-12T12:04:03",
+   "source": "aviasales-latest",
+   "id": "KUL-RVN|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3304,
+   "dest_name": "Rovaniemi",
+   "dest_name_zh": "罗瓦涅米",
+   "country": "FI",
+   "lat": 66.559044,
+   "lon": 25.829609,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ZNZ",
    "price": 3008.0,
    "depart": "2027-02-04",
@@ -23942,39 +23975,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "AIT",
-   "price": 4651.0,
-   "depart": "2027-02-01",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 11003,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-11T20:04:47",
-   "source": "aviasales-latest",
-   "id": "KUL-AIT|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.4227,
-   "dest_name": "Aitutaki",
-   "dest_name_zh": "Aitutaki",
-   "country": "CK",
-   "lat": -18.829443,
-   "lon": -159.767,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签"
    },
    "visited": false
   }
