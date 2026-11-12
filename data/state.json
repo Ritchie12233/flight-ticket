@@ -3340,7 +3340,21 @@
  "alerts_log": [],
  "currency": "cny",
  "settings": {
-  "_time": 1794390753,
-  "region_lines": {}
+  "_time": 1794442344,
+  "region_lines": {},
+  "targets": {
+   "CTU": 900,
+   "SHA": 950,
+   "BKK": 450,
+   "DPS": 710,
+   "MLE": 1300,
+   "DXB": 1400,
+   "IST": 2000,
+   "TBS": 2200,
+   "CAI": 2200,
+   "MRU": 2500,
+   "YVR": 3500,
+   "AKL": 2500
+  }
  }
 }
