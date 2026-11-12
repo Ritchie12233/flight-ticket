@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-12T21:40:12.273893+08:00",
+ "updated_at": "2026-11-12T21:54:34.723319+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1115,
-  "routes": 763,
+  "fares_scanned": 1117,
+  "routes": 764,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1115
+   "count": 1117
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -5027,6 +5027,39 @@
    "country": "CN",
    "lat": 22.270715,
    "lon": 113.576726,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "HRB",
+   "price": 2081.0,
+   "depart": "2026-11-23",
+   "return": "2026-11-27",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5330,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-12T13:35:24",
+   "source": "aviasales-latest",
+   "id": "KUL-HRB|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.1952,
+   "dest_name": "Harbin",
+   "dest_name_zh": "哈尔滨",
+   "country": "CN",
+   "lat": 45.803775,
+   "lon": 126.534967,
    "visa": {
     "status": "free",
     "label": "国内",
