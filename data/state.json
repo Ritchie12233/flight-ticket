@@ -5128,6 +5128,17 @@
  "alerted": {},
  "news": [
   {
+   "id": "rss:651229cff1f84451",
+   "type": "news",
+   "level": "news",
+   "title": "🇲🇾 5-star Kuala Lumpur stay: Hotel Stripes by Autograph Collection from €86/night",
+   "summary": "At €86 per night, this is not a basic city hotel somewhere on the outskirts. You’re getting a 5-star lifestyle property from Marriott’s Autograph Collection, with a rooftop pool, skyline views, stylish interiors, proper dining, a fitness centre and a central Kuala Lumpur location.",
+   "link": "https://www.fly4free.com/flight-deals/europe/5-star-hotel-in-kuala-lumpur-e86/",
+   "source": "Fly4free 全球特价",
+   "published": "2026-11-13T18:30:59+00:00",
+   "is_error_fare": false
+  },
+  {
    "id": "rss:3e5aa229ae7b4e68",
    "type": "news",
    "level": "news",
