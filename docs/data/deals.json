@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T05:09:18.678582+08:00",
+ "updated_at": "2026-11-14T05:23:54.257078+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1120,
-  "routes": 772,
+  "fares_scanned": 1123,
+  "routes": 773,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1120
+   "count": 1123
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -139,6 +139,39 @@
    "country": "SG",
    "lat": 1.352083,
    "lon": 103.819836,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "TWU",
+   "price": 3096.0,
+   "depart": "2027-04-30",
+   "return": "2027-05-08",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 1803,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-13T21:07:14Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TWU|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.8586,
+   "dest_name": "Tawau",
+   "dest_name_zh": "斗湖",
+   "country": "MY",
+   "lat": 4.244651,
+   "lon": 117.8911861,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -3054,7 +3087,7 @@
   {
    "origin": "KUL",
    "dest": "TWU",
-   "price": 889.0,
+   "price": 893.0,
    "depart": "2027-05-01",
    "return": "2027-05-07",
    "one_way": false,
@@ -3063,7 +3096,7 @@
    "distance": 1803,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-12T06:57:44",
+   "found_at": "2026-11-13T21:03:58",
    "source": "aviasales-latest",
    "id": "KUL-TWU|RT|0",
    "type": "fare",
@@ -3071,7 +3104,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2465,
+   "per_km": 0.2476,
    "dest_name": "Tawau",
    "dest_name_zh": "斗湖",
    "country": "MY",
