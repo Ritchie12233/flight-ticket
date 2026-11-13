@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T04:25:54.929130+08:00",
+ "updated_at": "2026-11-14T04:40:17.930871+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1119,
-  "routes": 772,
+  "fares_scanned": 1120,
+  "routes": 773,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1119
+   "count": 1120
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -475,6 +475,39 @@
     "note": "免签 14 天（试行，限指定机场入境）"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "MLE",
+   "price": 6528.0,
+   "depart": "2027-10-03",
+   "return": "2027-10-13",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 3131,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-13T20:23:13Z",
+   "source": "aviasales-latest",
+   "id": "KUL-MLE|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.0425,
+   "dest_name": "Male",
+   "dest_name_zh": "马累",
+   "country": "MV",
+   "lat": 4.1754959,
+   "lon": 73.5093474,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（行前 96 小时填 IMUGA）"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
