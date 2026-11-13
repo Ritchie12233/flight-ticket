@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T03:42:49.696364+08:00",
+ "updated_at": "2026-11-14T03:57:08.594759+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1116,
-  "routes": 770,
+  "fares_scanned": 1117,
+  "routes": 771,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1116
+   "count": 1117
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -16816,6 +16816,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "AEB",
+   "price": 1663.0,
+   "depart": "2026-11-23",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 2398,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-13T19:31:43",
+   "source": "aviasales-latest",
+   "id": "KUL-AEB|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.6935,
+   "dest_name": "Baise",
+   "dest_name_zh": "Baise",
+   "country": "CN",
+   "lat": 23.71947,
+   "lon": 106.96777,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "TAS",
    "price": 1670.0,
    "depart": "2026-11-25",
@@ -24038,39 +24071,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "NOZ",
-   "price": 4010.0,
-   "depart": "2027-03-07",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 5823,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-13T16:50:59",
-   "source": "aviasales-latest",
-   "id": "KUL-NOZ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.6886,
-   "dest_name": "Novokuznetsk",
-   "dest_name_zh": "新库兹涅茨克",
-   "country": "RU",
-   "lat": 53.7595935,
-   "lon": 87.1215705,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   }
