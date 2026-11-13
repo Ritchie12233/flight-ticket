@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T06:21:29.631688+08:00",
+ "updated_at": "2026-11-14T06:35:50.528773+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1126,
-  "routes": 773,
+  "fares_scanned": 1127,
+  "routes": 774,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1126
+   "count": 1127
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -1750,7 +1750,7 @@
    "current": {
     "origin": "KUL",
     "dest": "IST",
-    "price": 2994.0,
+    "price": 2930.0,
     "depart": "2026-12-30",
     "return": "2027-02-15",
     "one_way": false,
@@ -1759,7 +1759,7 @@
     "distance": 8374,
     "airline": null,
     "gate": "Turna.com",
-    "found_at": "2026-11-12T16:25:47",
+    "found_at": "2026-11-13T22:08:09",
     "source": "aviasales-latest",
     "id": "KUL-IST|RT|0",
     "type": "fare",
@@ -1767,7 +1767,7 @@
     "reasons": [],
     "baseline": null,
     "ratio": null,
-    "per_km": 0.1788,
+    "per_km": 0.1749,
     "dest_name": "Istanbul",
     "dest_name_zh": "伊斯坦布尔",
     "country": "TR",
@@ -1829,7 +1829,7 @@
     ],
     [
      "2026-11-14",
-     2977.0
+     2930.0
     ]
    ]
   },
@@ -3482,39 +3482,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "HAN",
-   "price": 1201.0,
-   "depart": "2027-02-17",
-   "return": "2027-02-23",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2099,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-11T09:29:01",
-   "source": "aviasales-latest",
-   "id": "KUL-HAN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2861,
-   "dest_name": "Hanoi",
-   "dest_name_zh": "河内",
-   "country": "VN",
-   "lat": 21.0277644,
-   "lon": 105.8341598,
-   "visa": {
-    "status": "free_partial",
-    "label": "部分免签",
-    "note": "仅富国岛免签 30 天，其他地区需电子签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "LBJ",
    "price": 1205.0,
    "depart": "2026-12-19",
@@ -3578,6 +3545,39 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "HAN",
+   "price": 1234.0,
+   "depart": "2027-02-17",
+   "return": "2027-02-23",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2099,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-13T22:13:17",
+   "source": "aviasales-latest",
+   "id": "KUL-HAN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2939,
+   "dest_name": "Hanoi",
+   "dest_name_zh": "河内",
+   "country": "VN",
+   "lat": 21.0277644,
+   "lon": 105.8341598,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -6023,6 +6023,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "IST",
+   "price": 2930.0,
+   "depart": "2026-12-30",
+   "return": "2027-02-15",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 8374,
+   "airline": null,
+   "gate": "Turna.com",
+   "found_at": "2026-11-13T22:08:09",
+   "source": "aviasales-latest",
+   "id": "KUL-IST|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.1749,
+   "dest_name": "Istanbul",
+   "dest_name_zh": "伊斯坦布尔",
+   "country": "TR",
+   "lat": 41.0082376,
+   "lon": 28.9783589,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "RMQ",
    "price": 2969.0,
    "depart": "2026-11-19",
@@ -6051,39 +6084,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "IST",
-   "price": 2994.0,
-   "depart": "2026-12-30",
-   "return": "2027-02-15",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 8374,
-   "airline": null,
-   "gate": "Turna.com",
-   "found_at": "2026-11-12T16:25:47",
-   "source": "aviasales-latest",
-   "id": "KUL-IST|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.1788,
-   "dest_name": "Istanbul",
-   "dest_name_zh": "伊斯坦布尔",
-   "country": "TR",
-   "lat": 41.0082376,
-   "lon": 28.9783589,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签（180 天内累计 90 天，2026-01 起）"
    },
    "visited": false
   },
@@ -23383,6 +23383,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "OSW",
+   "price": 3278.0,
+   "depart": "2026-11-14",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 6714,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-13T22:19:28",
+   "source": "aviasales-latest",
+   "id": "KUL-OSW|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4882,
+   "dest_name": "Orsk",
+   "dest_name_zh": "奥斯克",
+   "country": "RU",
+   "lat": 51.2294181,
+   "lon": 58.475142,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "AGA",
    "price": 3295.0,
    "depart": "2027-01-01",
@@ -24137,39 +24170,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "CKY",
-   "price": 3861.0,
-   "depart": "2027-01-12",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 12721,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-12T05:14:56",
-   "source": "aviasales-latest",
-   "id": "KUL-CKY|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3035,
-   "dest_name": "Conakry",
-   "dest_name_zh": "科纳克里",
-   "country": "GN",
-   "lat": 9.6411855,
-   "lon": -13.5784012,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
