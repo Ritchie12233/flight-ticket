@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T13:34:57.546765+08:00",
+ "updated_at": "2026-11-13T13:49:16.431591+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -2163,16 +2163,16 @@
    "current": {
     "origin": "KUL",
     "dest": "AKL",
-    "price": 5479.0,
-    "depart": "2027-01-28",
-    "return": "2027-02-25",
+    "price": 5446.0,
+    "depart": "2027-02-06",
+    "return": "2027-02-15",
     "one_way": false,
     "trip_class": 0,
     "transfers": 2,
     "distance": 8703,
     "airline": null,
-    "gate": "Wingie",
-    "found_at": "2026-11-11T07:03:23",
+    "gate": "Gotogate",
+    "found_at": "2026-11-13T05:33:41",
     "source": "aviasales-latest",
     "id": "KUL-AKL|RT|0",
     "type": "fare",
@@ -2180,7 +2180,7 @@
     "reasons": [],
     "baseline": null,
     "ratio": null,
-    "per_km": 0.3148,
+    "per_km": 0.3129,
     "dest_name": "Auckland",
     "dest_name_zh": "奥克兰",
     "country": "NZ",
@@ -2238,7 +2238,7 @@
     ],
     [
      "2026-11-13",
-     5469.0
+     5446.0
     ]
    ]
   }
@@ -8715,16 +8715,16 @@
   {
    "origin": "KUL",
    "dest": "AKL",
-   "price": 5479.0,
-   "depart": "2027-01-28",
-   "return": "2027-02-25",
+   "price": 5446.0,
+   "depart": "2027-02-06",
+   "return": "2027-02-15",
    "one_way": false,
    "trip_class": 0,
    "transfers": 2,
    "distance": 8703,
    "airline": null,
-   "gate": "Wingie",
-   "found_at": "2026-11-11T07:03:23",
+   "gate": "Gotogate",
+   "found_at": "2026-11-13T05:33:41",
    "source": "aviasales-latest",
    "id": "KUL-AKL|RT|0",
    "type": "fare",
@@ -8732,7 +8732,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.3148,
+   "per_km": 0.3129,
    "dest_name": "Auckland",
    "dest_name_zh": "奥克兰",
    "country": "NZ",
