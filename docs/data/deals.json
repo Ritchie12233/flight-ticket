@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T20:31:05.940925+08:00",
+ "updated_at": "2026-11-13T20:45:28.186400+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -2477,6 +2477,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KUA",
+   "price": 418.0,
+   "depart": "2027-07-30",
+   "return": "2027-08-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 202,
+   "airline": null,
+   "gate": "Flightnetwork",
+   "found_at": "2026-11-13T12:27:27",
+   "source": "aviasales-latest",
+   "id": "KUL-KUA|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.0347,
+   "dest_name": "Kuantan",
+   "dest_name_zh": "关丹",
+   "country": "MY",
+   "lat": 3.7633859,
+   "lon": 103.2201828,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "SIN",
    "price": 435.0,
    "depart": "2027-01-07",
@@ -2540,39 +2573,6 @@
     "note": "落地签 30 天"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "KUA",
-   "price": 461.0,
-   "depart": "2027-07-01",
-   "return": "2027-07-09",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 202,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-11T10:36:36",
-   "source": "aviasales-latest",
-   "id": "KUL-KUA|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 1.1411,
-   "dest_name": "Kuantan",
-   "dest_name_zh": "关丹",
-   "country": "MY",
-   "lat": 3.7633859,
-   "lon": 103.2201828,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
