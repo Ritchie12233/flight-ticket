@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-14T05:38:22.528445+08:00",
+ "updated_at": "2026-11-14T05:52:45.409607+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1123,
+  "fares_scanned": 1124,
   "routes": 773,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1123
+   "count": 1124
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -149,8 +149,8 @@
   {
    "origin": "KUL",
    "dest": "TWU",
-   "price": 3096.0,
-   "depart": "2027-04-30",
+   "price": 3095.0,
+   "depart": "2027-05-01",
    "return": "2027-05-08",
    "one_way": false,
    "trip_class": 1,
@@ -158,7 +158,7 @@
    "distance": 1803,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-13T21:07:14Z",
+   "found_at": "2026-11-13T21:28:46Z",
    "source": "aviasales-latest",
    "id": "KUL-TWU|RT|1",
    "type": "fare",
@@ -166,7 +166,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.8586,
+   "per_km": 0.8583,
    "dest_name": "Tawau",
    "dest_name_zh": "斗湖",
    "country": "MY",
@@ -2888,6 +2888,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "HKT",
+   "price": 787.0,
+   "depart": "2027-02-14",
+   "return": "2027-03-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 703,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-13T21:29:18",
+   "source": "aviasales-latest",
+   "id": "KUL-HKT|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5597,
+   "dest_name": "Phuket",
+   "dest_name_zh": "普吉岛",
+   "country": "TH",
+   "lat": 7.9519331,
+   "lon": 98.3380884,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BTH",
    "price": 789.0,
    "depart": "2027-01-08",
@@ -2951,39 +2984,6 @@
     "note": "免签 30 天"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "HKT",
-   "price": 797.0,
-   "depart": "2026-11-29",
-   "return": "2026-12-03",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 703,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-09T08:14:59",
-   "source": "aviasales-latest",
-   "id": "KUL-HKT|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.5669,
-   "dest_name": "Phuket",
-   "dest_name_zh": "普吉岛",
-   "country": "TH",
-   "lat": 7.9519331,
-   "lon": 98.3380884,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 60 天"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
