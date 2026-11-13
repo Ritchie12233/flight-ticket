@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-13T15:29:38.445079+08:00",
+ "updated_at": "2026-11-13T15:43:57.146356+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1121,
-  "routes": 769,
+  "fares_scanned": 1123,
+  "routes": 770,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1121
+   "count": 1123
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -5442,6 +5442,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CJU",
+   "price": 2324.0,
+   "depart": "2026-11-27",
+   "return": "2026-12-03",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4280,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-13T07:22:08",
+   "source": "aviasales-latest",
+   "id": "KUL-CJU|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2715,
+   "dest_name": "Jeju",
+   "dest_name_zh": "济州",
+   "country": "KR",
+   "lat": 33.4890113,
+   "lon": 126.4983023,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
    },
    "visited": false
   },
@@ -20860,39 +20893,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "HTA",
-   "price": 2445.0,
-   "depart": "2026-11-23",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 5583,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-12T03:15:52",
-   "source": "aviasales-latest",
-   "id": "KUL-HTA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.4379,
-   "dest_name": "Chita",
-   "dest_name_zh": "赤塔",
-   "country": "RU",
-   "lat": 52.0515032,
-   "lon": 113.4711906,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "MCX",
    "price": 2453.0,
    "depart": "2027-02-20",
@@ -20954,6 +20954,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "HTA",
+   "price": 2454.0,
+   "depart": "2026-11-23",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5583,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-13T07:25:20",
+   "source": "aviasales-latest",
+   "id": "KUL-HTA|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4395,
+   "dest_name": "Chita",
+   "dest_name_zh": "赤塔",
+   "country": "RU",
+   "lat": 52.0515032,
+   "lon": 113.4711906,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
