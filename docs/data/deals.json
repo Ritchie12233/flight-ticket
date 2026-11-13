@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-14T06:07:07.230052+08:00",
+ "updated_at": "2026-11-14T06:21:29.631688+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1125,
+  "fares_scanned": 1126,
   "routes": 773,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1125
+   "count": 1126
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -17344,39 +17344,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "SHJ",
-   "price": 1753.0,
-   "depart": "2027-02-10",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 5535,
-   "airline": null,
-   "gate": "Wingie",
-   "found_at": "2026-11-10T13:08:00",
-   "source": "aviasales-latest",
-   "id": "KUL-SHJ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3167,
-   "dest_name": "Sharjah",
-   "dest_name_zh": "沙迦",
-   "country": "AE",
-   "lat": 25.3462553,
-   "lon": 55.4209317,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "CZX",
    "price": 1763.0,
    "depart": "2027-07-28",
@@ -17638,6 +17605,39 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "SHJ",
+   "price": 1830.0,
+   "depart": "2027-02-11",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5535,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-09T07:47:15",
+   "source": "aviasales-latest",
+   "id": "KUL-SHJ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3306,
+   "dest_name": "Sharjah",
+   "dest_name_zh": "沙迦",
+   "country": "AE",
+   "lat": 25.3462553,
+   "lon": 55.4209317,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
