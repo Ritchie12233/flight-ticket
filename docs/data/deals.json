@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-13T18:07:34.230380+08:00",
+ "updated_at": "2026-11-13T18:21:55.560073+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1124,
-  "routes": 771,
+  "fares_scanned": 1125,
+  "routes": 772,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1124
+   "count": 1125
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -20695,6 +20695,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KDU",
+   "price": 2379.0,
+   "depart": "2026-11-16",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4500,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-13T09:58:14",
+   "source": "aviasales-latest",
+   "id": "KUL-KDU|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5287,
+   "dest_name": "Skardu",
+   "dest_name_zh": "斯卡都",
+   "country": "PK",
+   "lat": 35.3,
+   "lon": 75.73333,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ASB",
    "price": 2389.0,
    "depart": "2027-01-20",
@@ -24085,39 +24118,6 @@
    "country": "US",
    "lat": 41.4994954,
    "lon": -81.6954088,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "ACC",
-   "price": 4123.0,
-   "depart": "2026-11-18",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 11289,
-   "airline": null,
-   "gate": "Flightnetwork",
-   "found_at": "2026-11-08T20:39:02",
-   "source": "aviasales-latest",
-   "id": "KUL-ACC|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3652,
-   "dest_name": "Accra",
-   "dest_name_zh": "阿克拉",
-   "country": "GH",
-   "lat": 5.6037168,
-   "lon": -0.1869644,
    "visa": {
     "status": "visa",
     "label": "需签证",
