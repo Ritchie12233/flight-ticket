@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T08:45:50.404509+08:00",
+ "updated_at": "2026-11-14T09:00:12.384347+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1122,
-  "routes": 769,
+  "fares_scanned": 1123,
+  "routes": 770,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1122
+   "count": 1123
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10370,6 +10370,39 @@
    "country": "GN",
    "lat": 9.6411855,
    "lon": -13.5784012,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "ACC",
+   "price": 8980.0,
+   "depart": "2026-11-25",
+   "return": "2026-12-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 11289,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-14T00:44:04",
+   "source": "aviasales-latest",
+   "id": "KUL-ACC|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3977,
+   "dest_name": "Accra",
+   "dest_name_zh": "阿克拉",
+   "country": "GH",
+   "lat": 5.6037168,
+   "lon": -0.1869644,
    "visa": {
     "status": "visa",
     "label": "需签证",
