@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T04:37:41.680483+08:00",
+ "updated_at": "2026-11-15T04:52:00.397539+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
   "fares_scanned": 1131,
-  "routes": 777,
+  "routes": 778,
   "bug": 0,
   "great": 0,
   "target": 0
