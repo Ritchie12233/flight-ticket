@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T10:55:19.591498+08:00",
+ "updated_at": "2026-11-14T11:09:39.843961+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1129,
-  "routes": 773,
+  "fares_scanned": 1131,
+  "routes": 774,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1129
+   "count": 1131
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10655,12 +10655,13 @@
    "return": "2026-12-04",
    "one_way": false,
    "trip_class": 0,
-   "transfers": null,
+   "transfers": 2,
    "distance": 11125,
    "airline": "Malaysia Airlines (MH)",
    "flight_number": 4992,
    "found_at": null,
    "source": "aviasales-cheap",
+   "gate": "City.Travel",
    "id": "KUL-LFW|RT|0",
    "type": "fare",
    "level": "normal",
@@ -17061,6 +17062,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "TAS",
+   "price": 1669.0,
+   "depart": "2026-11-20",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 5369,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-14T02:40:27",
+   "source": "aviasales-latest",
+   "id": "KUL-TAS|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3109,
+   "dest_name": "Tashkent",
+   "dest_name_zh": "塔什干",
+   "country": "UZ",
+   "lat": 41.2994958,
+   "lon": 69.2400734,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "LJG",
    "price": 1669.0,
    "depart": "2026-12-11",
@@ -17091,39 +17125,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "TAS",
-   "price": 1670.0,
-   "depart": "2026-11-25",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 5369,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-14T01:05:37",
-   "source": "aviasales-latest",
-   "id": "KUL-TAS|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.311,
-   "dest_name": "Tashkent",
-   "dest_name_zh": "塔什干",
-   "country": "UZ",
-   "lat": 41.2994958,
-   "lon": 69.2400734,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
