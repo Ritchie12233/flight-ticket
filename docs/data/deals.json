@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T13:48:08.618950+08:00",
+ "updated_at": "2026-11-14T14:02:26.150956+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -3462,6 +3462,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "CAN",
+   "price": 1233.0,
+   "depart": "2027-01-16",
+   "return": "2027-01-23",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2548,
+   "airline": "AirAsia (AK)",
+   "flight_number": 118,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Lucky2Go",
+   "id": "KUL-CAN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2419,
+   "dest_name": "Guangzhou",
+   "dest_name_zh": "广州",
+   "country": "CN",
+   "lat": 23.12911,
+   "lon": 113.264385,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "SZX",
    "price": 1239.0,
    "depart": "2027-04-17",
@@ -3526,39 +3560,6 @@
     "note": "仅富国岛免签 30 天，其他地区需电子签"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "CAN",
-   "price": 1266.0,
-   "depart": "2027-01-06",
-   "return": "2027-01-13",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2611,
-   "airline": "AirAsia (AK)",
-   "gate": "Lucky2Go",
-   "found_at": "2026-11-12T13:01:21",
-   "source": "aviasales-latest",
-   "id": "KUL-CAN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2424,
-   "dest_name": "Guangzhou",
-   "dest_name_zh": "广州",
-   "country": "CN",
-   "lat": 23.12911,
-   "lon": 113.264385,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
