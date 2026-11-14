@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T07:44:32.297157+08:00",
+ "updated_at": "2026-11-15T07:58:53.213721+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1134,
-  "routes": 778,
+  "fares_scanned": 1135,
+  "routes": 779,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1134
+   "count": 1135
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -18353,6 +18353,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "DRW",
+   "price": 1922.0,
+   "depart": "2027-04-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3636,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-14T23:33:00",
+   "source": "aviasales-latest",
+   "id": "KUL-DRW|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5286,
+   "dest_name": "Darwin",
+   "dest_name_zh": "达尔文",
+   "country": "AU",
+   "lat": -12.4628198,
+   "lon": 130.8417694,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BIO",
    "price": 1923.0,
    "depart": "2026-12-01",
@@ -24251,39 +24284,6 @@
    "country": "VU",
    "lat": -17.701853,
    "lon": 168.3195,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "IVL",
-   "price": 3844.0,
-   "depart": "2026-12-17",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 9090,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-08T00:43:50",
-   "source": "aviasales-latest",
-   "id": "KUL-IVL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.4229,
-   "dest_name": "Ivalo",
-   "dest_name_zh": "伊伐洛",
-   "country": "FI",
-   "lat": 68.611115,
-   "lon": 27.415556,
    "visa": {
     "status": "visa",
     "label": "需签证",
