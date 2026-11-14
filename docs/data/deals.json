@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T03:40:19.472510+08:00",
+ "updated_at": "2026-11-15T03:54:36.825190+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1128,
-  "routes": 775,
+  "fares_scanned": 1129,
+  "routes": 776,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1128
+   "count": 1129
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -18649,6 +18649,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "TGD",
+   "price": 1973.0,
+   "depart": "2026-11-29",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9181,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-14T19:30:39",
+   "source": "aviasales-latest",
+   "id": "KUL-TGD|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2149,
+   "dest_name": "Podgorica",
+   "dest_name_zh": "波德戈里察",
+   "country": "ME",
+   "lat": 42.4304196,
+   "lon": 19.2593642,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "GZP",
    "price": 1982.0,
    "depart": "2026-12-07",
@@ -24217,39 +24250,6 @@
    "country": "VU",
    "lat": -17.701853,
    "lon": 168.3195,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "IVL",
-   "price": 3844.0,
-   "depart": "2026-12-17",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 9090,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-08T00:43:50",
-   "source": "aviasales-latest",
-   "id": "KUL-IVL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.4229,
-   "dest_name": "Ivalo",
-   "dest_name_zh": "伊伐洛",
-   "country": "FI",
-   "lat": 68.611115,
-   "lon": 27.415556,
    "visa": {
     "status": "visa",
     "label": "需签证",
