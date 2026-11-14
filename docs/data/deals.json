@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-15T04:08:57.033254+08:00",
+ "updated_at": "2026-11-15T04:23:19.803143+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1130,
+  "fares_scanned": 1131,
   "routes": 777,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1130
+   "count": 1131
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -5422,19 +5422,19 @@
    "return": "2027-02-09",
    "one_way": false,
    "trip_class": 0,
-   "transfers": null,
-   "distance": 5086,
+   "transfers": 0,
+   "distance": 5126,
    "airline": "Shanghai Airlines (FM)",
-   "flight_number": 626,
-   "found_at": null,
-   "source": "aviasales-cheap",
+   "gate": "Т-Банк",
+   "found_at": "2026-11-14T19:50:56",
+   "source": "aviasales-latest",
    "id": "KUL-CGQ|RT|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.2274,
+   "per_km": 0.2256,
    "dest_name": "Changchun",
    "dest_name_zh": "长春",
    "country": "CN",
