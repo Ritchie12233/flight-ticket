@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-15T07:01:36.222325+08:00",
+ "updated_at": "2026-11-15T07:15:54.937879+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1138,
+  "fares_scanned": 1137,
   "routes": 781,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1138
+   "count": 1137
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -18683,7 +18683,7 @@
   {
    "origin": "KUL",
    "dest": "OPO",
-   "price": 1961.0,
+   "price": 1957.0,
    "depart": "2027-02-06",
    "return": null,
    "one_way": true,
@@ -18692,7 +18692,7 @@
    "distance": 11484,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-11T23:17:19",
+   "found_at": "2026-11-14T22:47:57",
    "source": "aviasales-latest",
    "id": "KUL-OPO|OW|0",
    "type": "fare",
@@ -18700,7 +18700,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.1708,
+   "per_km": 0.1704,
    "dest_name": "Porto",
    "dest_name_zh": "波尔图",
    "country": "PT",
@@ -18750,7 +18750,7 @@
    "origin": "KUL",
    "dest": "MOW",
    "price": 1966.0,
-   "depart": "2026-12-07",
+   "depart": "2026-12-10",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -18758,7 +18758,7 @@
    "distance": 8183,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-14T22:45:29",
+   "found_at": "2026-11-14T20:07:46",
    "source": "aviasales-latest",
    "id": "KUL-MOW|OW|0",
    "type": "fare",
