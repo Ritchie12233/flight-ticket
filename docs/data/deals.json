@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-14T20:29:51.768482+08:00",
+ "updated_at": "2026-11-14T20:44:10.268181+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1141,
-  "routes": 784,
+  "fares_scanned": 1144,
+  "routes": 787,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1141
+   "count": 1144
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -473,6 +473,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TPE",
+   "price": 6075.0,
+   "depart": "2026-12-02",
+   "return": "2026-12-05",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 3244,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-14T12:17:01Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TPE|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.9363,
+   "dest_name": "Taipei",
+   "dest_name_zh": "台北",
+   "country": "TW",
+   "lat": 25.0329694,
+   "lon": 121.5654177,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -12845,6 +12878,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "MNL",
+   "price": 663.0,
+   "depart": "2027-01-15",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2488,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-14T12:18:10",
+   "source": "aviasales-latest",
+   "id": "KUL-MNL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2665,
+   "dest_name": "Manila",
+   "dest_name_zh": "马尼拉",
+   "country": "PH",
+   "lat": 14.5995124,
+   "lon": 120.9842195,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "PER",
    "price": 665.0,
    "depart": "2026-12-10",
@@ -12908,39 +12974,6 @@
     "note": "落地签 30 天"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "MNL",
-   "price": 667.0,
-   "depart": "2027-01-15",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2488,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-11T11:32:19",
-   "source": "aviasales-latest",
-   "id": "KUL-MNL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2681,
-   "dest_name": "Manila",
-   "dest_name_zh": "马尼拉",
-   "country": "PH",
-   "lat": 14.5995124,
-   "lon": 120.9842195,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 14 天（试行，限指定机场入境）"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
@@ -18056,6 +18089,39 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "WEH",
+   "price": 1874.0,
+   "depart": "2027-10-27",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4365,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-14T12:21:22",
+   "source": "aviasales-latest",
+   "id": "KUL-WEH|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4293,
+   "dest_name": "Weihai",
+   "dest_name_zh": "威海",
+   "country": "CN",
+   "lat": 37.513068,
+   "lon": 122.120419,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
@@ -24287,39 +24353,6 @@
    "country": "US",
    "lat": 25.7616798,
    "lon": -80.1917902,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "KBL",
-   "price": 3772.0,
-   "depart": "2026-12-15",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 4876,
-   "airline": null,
-   "gate": "Aviakassa",
-   "found_at": "2026-11-12T15:01:37",
-   "source": "aviasales-latest",
-   "id": "KUL-KBL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.7736,
-   "dest_name": "Kabul",
-   "dest_name_zh": "喀布尔",
-   "country": "AF",
-   "lat": 34.56069,
-   "lon": 69.21152,
    "visa": {
     "status": "visa",
     "label": "需签证",
