@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T03:54:36.825190+08:00",
+ "updated_at": "2026-11-15T04:08:57.033254+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1129,
-  "routes": 776,
+  "fares_scanned": 1130,
+  "routes": 777,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1129
+   "count": 1130
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -5407,6 +5407,39 @@
    "country": "CN",
    "lat": 25.234479,
    "lon": 110.179953,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "CGQ",
+   "price": 2313.0,
+   "depart": "2027-01-31",
+   "return": "2027-02-09",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 5086,
+   "airline": "Shanghai Airlines (FM)",
+   "flight_number": 626,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-CGQ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2274,
+   "dest_name": "Changchun",
+   "dest_name_zh": "长春",
+   "country": "CN",
+   "lat": 43.817071,
+   "lon": 125.323544,
    "visa": {
     "status": "free",
     "label": "国内",
@@ -16834,39 +16867,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "LJG",
-   "price": 1622.0,
-   "depart": "2026-11-15",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 2665,
-   "airline": null,
-   "gate": "Tickets",
-   "found_at": "2026-11-14T11:17:24",
-   "source": "aviasales-latest",
-   "id": "KUL-LJG|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.6086,
-   "dest_name": "Lijiang",
-   "dest_name_zh": "丽江",
-   "country": "CN",
-   "lat": 26.855047,
-   "lon": 100.22775,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "IKT",
    "price": 1623.0,
    "depart": "2026-12-30",
@@ -16996,6 +16996,39 @@
     "note": "免签 30 天"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "LJG",
+   "price": 1669.0,
+   "depart": "2026-12-11",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 2665,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-13T15:19:10",
+   "source": "aviasales-latest",
+   "id": "KUL-LJG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.6263,
+   "dest_name": "Lijiang",
+   "dest_name_zh": "丽江",
+   "country": "CN",
+   "lat": 26.855047,
+   "lon": 100.22775,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
