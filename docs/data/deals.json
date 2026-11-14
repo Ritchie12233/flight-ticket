@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14T17:51:52.228137+08:00",
+ "updated_at": "2026-11-14T18:06:12.888201+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -3174,7 +3174,7 @@
    "trip_class": 0,
    "transfers": 0,
    "distance": 487,
-   "airline": null,
+   "airline": "Thai AirAsia (FD)",
    "gate": "City.Travel",
    "found_at": "2026-11-14T09:49:24",
    "source": "aviasales-latest",
