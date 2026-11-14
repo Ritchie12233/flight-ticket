@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T05:06:20.155405+08:00",
+ "updated_at": "2026-11-15T05:20:47.404666+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
