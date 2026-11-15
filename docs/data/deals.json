@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-15T10:37:10.491918+08:00",
+ "updated_at": "2026-11-15T10:51:33.580612+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1139,
+  "fares_scanned": 1140,
   "routes": 782,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1139
+   "count": 1140
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10562,7 +10562,7 @@
    "trip_class": 0,
    "transfers": 1,
    "distance": 6394,
-   "airline": null,
+   "airline": "Emirates (EK)",
    "gate": "Emirates",
    "found_at": "2026-11-15T02:30:06",
    "source": "aviasales-latest",
