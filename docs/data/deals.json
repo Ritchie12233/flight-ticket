@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-16T00:59:27.760607+08:00",
+ "updated_at": "2026-11-16T01:13:50.502478+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1160,
-  "routes": 785,
+  "fares_scanned": 1162,
+  "routes": 787,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1160
+   "count": 1162
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -247,6 +247,39 @@
     "note": "免签 30 天"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "BKK",
+   "price": 3292.0,
+   "depart": "2026-11-24",
+   "return": "2026-11-28",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 1246,
+   "airline": null,
+   "gate": "Flightnetwork",
+   "found_at": "2026-11-15T16:54:34Z",
+   "source": "aviasales-latest",
+   "id": "KUL-BKK|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.321,
+   "dest_name": "Bangkok",
+   "dest_name_zh": "曼谷",
+   "country": "TH",
+   "lat": 13.7563309,
+   "lon": 100.5017651,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -3427,7 +3460,7 @@
    "trip_class": 0,
    "transfers": 0,
    "distance": 1747,
-   "airline": "AirAsia (AK)",
+   "airline": null,
    "gate": "Tickets",
    "found_at": "2026-11-08T16:06:58",
    "source": "aviasales-latest",
@@ -5963,6 +5996,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "PUS",
+   "price": 2849.0,
+   "depart": "2026-12-14",
+   "return": "2026-12-28",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 4570,
+   "airline": "China Eastern (MU)",
+   "gate": "Clickavia",
+   "found_at": "2026-11-15T16:49:55",
+   "source": "aviasales-latest",
+   "id": "KUL-PUS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2050.0,
+   "ratio": 1.39,
+   "per_km": 0.3117,
+   "dest_name": "Busan",
+   "dest_name_zh": "釜山",
+   "country": "KR",
+   "lat": 35.1795543,
+   "lon": 129.0756416,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "MEL",
    "price": 2937.0,
    "depart": "2027-02-24",
@@ -6189,39 +6255,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PUS",
-   "price": 3056.0,
-   "depart": "2026-12-15",
-   "return": "2026-12-19",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4570,
-   "airline": "Philippine Airlines (PR)",
-   "gate": "Vayama",
-   "found_at": "2026-11-09T19:22:20",
-   "source": "aviasales-latest",
-   "id": "KUL-PUS|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2050.0,
-   "ratio": 1.491,
-   "per_km": 0.3344,
-   "dest_name": "Busan",
-   "dest_name_zh": "釜山",
-   "country": "KR",
-   "lat": 35.1795543,
-   "lon": 129.0756416,
-   "visa": {
-    "status": "free_partial",
-    "label": "部分免签",
-    "note": "仅济州岛免签 30 天，其他地区需签证"
    },
    "visited": false
   },
@@ -6686,6 +6719,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MCT",
+   "price": 3430.0,
+   "depart": "2027-01-02",
+   "return": "2027-01-16",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 5175,
+   "airline": "Oman Air (WY)",
+   "flight_number": 824,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-MCT|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3314,
+   "dest_name": "Muscat",
+   "dest_name_zh": "马斯喀特",
+   "country": "OM",
+   "lat": 23.5880307,
+   "lon": 58.3828717,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天"
    },
    "visited": false
   },
