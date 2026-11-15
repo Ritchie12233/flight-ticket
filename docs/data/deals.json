@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T21:38:22.860261+08:00",
+ "updated_at": "2026-11-15T21:52:45.096548+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1146,
-  "routes": 782,
+  "fares_scanned": 1147,
+  "routes": 783,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1146
+   "count": 1147
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -12157,7 +12157,7 @@
    "distance": 2516,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-13T07:07:38",
+   "found_at": "2026-11-15T13:33:58",
    "source": "aviasales-latest",
    "id": "KUL-HKG|OW|0",
    "type": "fare",
@@ -13929,6 +13929,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "CKG",
+   "price": 922.0,
+   "depart": "2027-01-17",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3042,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-15T13:36:42",
+   "source": "aviasales-latest",
+   "id": "KUL-CKG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3031,
+   "dest_name": "Chongqing",
+   "dest_name_zh": "重庆",
+   "country": "CN",
+   "lat": 29.4315861,
+   "lon": 106.912251,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "SYX",
    "price": 923.0,
    "depart": "2027-01-18",
@@ -13992,39 +14025,6 @@
     "note": "免签 60 天"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "CKG",
-   "price": 927.0,
-   "depart": "2027-03-23",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3042,
-   "airline": null,
-   "gate": "Flightnetwork",
-   "found_at": "2026-11-09T09:14:03",
-   "source": "aviasales-latest",
-   "id": "KUL-CKG|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3047,
-   "dest_name": "Chongqing",
-   "dest_name_zh": "重庆",
-   "country": "CN",
-   "lat": 29.4315861,
-   "lon": 106.912251,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
