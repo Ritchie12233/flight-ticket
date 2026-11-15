@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T13:58:25.002427+08:00",
+ "updated_at": "2026-11-15T14:12:56.136535+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -9734,7 +9734,7 @@
    "trip_class": 0,
    "transfers": 3,
    "distance": 7216,
-   "airline": "AirAsia (AK)",
+   "airline": null,
    "gate": "Kupi.com",
    "found_at": "2026-11-12T03:24:17",
    "source": "aviasales-latest",
