@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T12:46:29.249716+08:00",
+ "updated_at": "2026-11-15T13:00:50.551551+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1143,
-  "routes": 784,
+  "fares_scanned": 1145,
+  "routes": 785,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1143
+   "count": 1145
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -9424,6 +9424,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "DAR",
+   "price": 6025.0,
+   "depart": "2027-01-01",
+   "return": "2027-01-26",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 7018,
+   "airline": "AirAsia (AK)",
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-15T04:44:42",
+   "source": "aviasales-latest",
+   "id": "KUL-DAR|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4293,
+   "dest_name": "Dar Es Salaam",
+   "dest_name_zh": "达累斯萨拉姆",
+   "country": "TZ",
+   "lat": -6.792354,
+   "lon": 39.2083284,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "JUH",
    "price": 6089.0,
    "depart": "2026-12-14",
@@ -16963,7 +16996,7 @@
    "origin": "KUL",
    "dest": "TAS",
    "price": 1667.0,
-   "depart": "2026-11-16",
+   "depart": "2026-11-25",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -16971,7 +17004,7 @@
    "distance": 5369,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-14T13:54:42",
+   "found_at": "2026-11-15T03:26:33",
    "source": "aviasales-latest",
    "id": "KUL-TAS|OW|0",
    "type": "fare",
