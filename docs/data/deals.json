@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-15T16:50:53.673530+08:00",
+ "updated_at": "2026-11-15T17:05:13.016622+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1145,
+  "fares_scanned": 1146,
   "routes": 784,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1145
+   "count": 1146
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -3775,7 +3775,7 @@
    "trip_class": 0,
    "transfers": 1,
    "distance": 1694,
-   "airline": null,
+   "airline": "AirAsia (AK)",
    "gate": "Vayama",
    "found_at": "2026-11-15T08:36:37",
    "source": "aviasales-latest",
