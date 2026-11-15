@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-16T06:44:00.484252+08:00",
+ "updated_at": "2026-11-16T06:58:19.324403+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1159,
-  "routes": 783,
+  "fares_scanned": 1160,
+  "routes": 784,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1159
+   "count": 1160
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -14343,6 +14343,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "BBN",
+   "price": 966.0,
+   "depart": "2027-06-09",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1531,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-15T22:27:16",
+   "source": "aviasales-latest",
+   "id": "KUL-BBN|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.631,
+   "dest_name": "Bario",
+   "dest_name_zh": "巴里奥",
+   "country": "MY",
+   "lat": 3.683333,
+   "lon": 115.46667,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "BJS",
    "price": 973.0,
    "depart": "2027-01-12",
@@ -24366,39 +24399,6 @@
    "country": "VU",
    "lat": -17.701853,
    "lon": 168.3195,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "ONT",
-   "price": 3900.0,
-   "depart": "2026-11-17",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 14213,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-14T06:53:06",
-   "source": "aviasales-latest",
-   "id": "KUL-ONT|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3949.0,
-   "ratio": 0.988,
-   "per_km": 0.2744,
-   "dest_name": "Ontario",
-   "dest_name_zh": "安大略",
-   "country": "US",
-   "lat": 34.05,
-   "lon": -117.64,
    "visa": {
     "status": "visa",
     "label": "需签证",
