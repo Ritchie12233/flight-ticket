@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T10:51:33.580612+08:00",
+ "updated_at": "2026-11-15T11:05:51.090636+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -13595,6 +13595,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "DAC",
+   "price": 854.0,
+   "depart": "2026-12-13",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2641,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-15T02:44:50",
+   "source": "aviasales-latest",
+   "id": "KUL-DAC|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3234,
+   "dest_name": "Dhaka",
+   "dest_name_zh": "达卡",
+   "country": "BD",
+   "lat": 23.810332,
+   "lon": 90.4125181,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "NKG",
    "price": 859.0,
    "depart": "2026-12-28",
@@ -13658,39 +13691,6 @@
     "note": "免签 14 天（试行，限指定机场入境）"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "DAC",
-   "price": 871.0,
-   "depart": "2026-11-15",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2641,
-   "airline": null,
-   "gate": "Mytrip.com",
-   "found_at": "2026-11-13T19:58:43",
-   "source": "aviasales-latest",
-   "id": "KUL-DAC|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3298,
-   "dest_name": "Dhaka",
-   "dest_name_zh": "达卡",
-   "country": "BD",
-   "lat": 23.810332,
-   "lon": 90.4125181,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
