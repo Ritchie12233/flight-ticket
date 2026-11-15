@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T22:35:44.378211+08:00",
+ "updated_at": "2026-11-15T22:50:06.315953+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1148,
-  "routes": 784,
+  "fares_scanned": 1151,
+  "routes": 786,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1148
+   "count": 1151
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10288,6 +10288,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "URA",
+   "price": 7904.0,
+   "depart": "2027-06-01",
+   "return": "2027-06-04",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 7113,
+   "airline": "AirAsia X (D7)",
+   "gate": "Clickavia",
+   "found_at": "2026-11-15T14:22:24",
+   "source": "aviasales-latest",
+   "id": "KUL-URA|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5556,
+   "dest_name": "Oral",
+   "dest_name_zh": "Oral",
+   "country": "KZ",
+   "lat": 51.227821,
+   "lon": 51.3865431,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "DFW",
    "price": 7988.0,
    "depart": "2027-03-01",
@@ -19935,6 +19968,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "CBR",
+   "price": 2170.0,
+   "depart": "2026-11-22",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 6500,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-15T14:21:49",
+   "source": "aviasales-latest",
+   "id": "KUL-CBR|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3338,
+   "dest_name": "Canberra",
+   "dest_name_zh": "堪培拉",
+   "country": "AU",
+   "lat": -35.2809368,
+   "lon": 149.1300092,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "OSS",
    "price": 2179.0,
    "depart": "2026-12-09",
@@ -24286,39 +24352,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "MYD",
-   "price": 3789.0,
-   "depart": "2026-12-15",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 6878,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-10T23:18:45",
-   "source": "aviasales-latest",
-   "id": "KUL-MYD|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.5509,
-   "dest_name": "Malindi",
-   "dest_name_zh": "马林迪",
-   "country": "KE",
-   "lat": -3.2191864,
-   "lon": 40.1168906,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "电子旅行授权 eTA"
    },
    "visited": false
   }
