@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T17:33:52.753672+08:00",
+ "updated_at": "2026-11-15T17:48:11.129357+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1147,
-  "routes": 784,
+  "fares_scanned": 1148,
+  "routes": 785,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1147
+   "count": 1148
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -8562,6 +8562,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "电子旅行授权 eTA"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "EDI",
+   "price": 5090.0,
+   "depart": "2026-11-22",
+   "return": "2027-01-12",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 10634,
+   "airline": "Oman Air (WY)",
+   "flight_number": 822,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-EDI|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2393,
+   "dest_name": "Edinburgh",
+   "dest_name_zh": "爱丁堡",
+   "country": "GB",
+   "lat": 55.9501755,
+   "lon": -3.1875359,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -17494,6 +17527,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "EDI",
+   "price": 1762.0,
+   "depart": "2026-11-22",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 10680,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-15T09:28:34",
+   "source": "aviasales-latest",
+   "id": "KUL-EDI|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.165,
+   "dest_name": "Edinburgh",
+   "dest_name_zh": "爱丁堡",
+   "country": "GB",
+   "lat": 55.9501755,
+   "lon": -3.1875359,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "CZX",
    "price": 1771.0,
    "depart": "2027-07-28",
@@ -20818,39 +20884,6 @@
    "country": "ME",
    "lat": 42.4304196,
    "lon": 19.2593642,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "EDI",
-   "price": 2341.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 10680,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-12T12:22:05",
-   "source": "aviasales-latest",
-   "id": "KUL-EDI|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2192,
-   "dest_name": "Edinburgh",
-   "dest_name_zh": "爱丁堡",
-   "country": "GB",
-   "lat": 55.9501755,
-   "lon": -3.1875359,
    "visa": {
     "status": "visa",
     "label": "需签证",
