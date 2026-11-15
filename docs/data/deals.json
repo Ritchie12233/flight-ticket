@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-15T09:10:30.415965+08:00",
+ "updated_at": "2026-11-15T09:24:58.388959+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1136,
-  "routes": 780,
+  "fares_scanned": 1137,
+  "routes": 781,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1136
+   "count": 1137
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -9514,6 +9514,39 @@
    "country": "RU",
    "lat": 53.203772,
    "lon": 50.1606382,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "GOJ",
+   "price": 6210.0,
+   "depart": "2026-11-29",
+   "return": "2026-11-30",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 7831,
+   "airline": "Oman Air (WY)",
+   "gate": "Kupi.com",
+   "found_at": "2026-11-15T01:04:06",
+   "source": "aviasales-latest",
+   "id": "KUL-GOJ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3965,
+   "dest_name": "Nizhniy Novgorod",
+   "dest_name_zh": "下诺夫格罗德",
+   "country": "RU",
+   "lat": 56.3268684,
+   "lon": 44.0058793,
    "visa": {
     "status": "free",
     "label": "免签",
