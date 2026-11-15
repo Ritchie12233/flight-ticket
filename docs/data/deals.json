@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15T20:11:53.131955+08:00",
+ "updated_at": "2026-11-15T20:26:12.822582+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -16934,7 +16934,7 @@
    "origin": "KUL",
    "dest": "TAS",
    "price": 1667.0,
-   "depart": "2026-11-27",
+   "depart": "2026-11-18",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -16942,7 +16942,7 @@
    "distance": 5369,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-15T11:37:57",
+   "found_at": "2026-11-15T08:24:55",
    "source": "aviasales-latest",
    "id": "KUL-TAS|OW|0",
    "type": "fare",
