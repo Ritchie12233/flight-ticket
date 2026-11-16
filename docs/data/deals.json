@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-17T03:29:48.149051+08:00",
+ "updated_at": "2026-11-17T03:44:10.906088+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1176,
-  "routes": 801,
+  "fares_scanned": 1177,
+  "routes": 802,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1176
+   "count": 1177
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,7 +30,7 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -9198,6 +9198,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BQS",
+   "price": 5806.0,
+   "depart": "2026-12-14",
+   "return": "2026-12-17",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5822,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-16T19:27:38",
+   "source": "aviasales-latest",
+   "id": "KUL-BQS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4986,
+   "dest_name": "Blagoveschensk",
+   "dest_name_zh": "布拉戈维申斯克",
+   "country": "RU",
+   "lat": 50.2727763,
+   "lon": 127.5404017,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
@@ -20722,39 +20755,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "LED",
-   "price": 2246.0,
-   "depart": "2026-11-18",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 8712,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-16T14:49:13",
-   "source": "aviasales-latest",
-   "id": "KUL-LED|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2260.0,
-   "ratio": 0.994,
-   "per_km": 0.2578,
-   "dest_name": "Saint Petersburg",
-   "dest_name_zh": "圣彼得堡",
-   "country": "RU",
-   "lat": 59.9310584,
-   "lon": 30.3609096,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "SJJ",
    "price": 2251.0,
    "depart": "2027-02-14",
@@ -20948,6 +20948,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "LED",
+   "price": 2272.0,
+   "depart": "2026-11-20",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 8712,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-16T14:49:13",
+   "source": "aviasales-latest",
+   "id": "KUL-LED|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2260.0,
+   "ratio": 1.005,
+   "per_km": 0.2608,
+   "dest_name": "Saint Petersburg",
+   "dest_name_zh": "圣彼得堡",
+   "country": "RU",
+   "lat": 59.9310584,
+   "lon": 30.3609096,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
