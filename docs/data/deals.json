@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-16T12:14:37.901664+08:00",
+ "updated_at": "2026-11-16T12:28:54.349257+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1161,
-  "routes": 789,
+  "fares_scanned": 1163,
+  "routes": 790,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1161
+   "count": 1163
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -2629,24 +2629,24 @@
   {
    "origin": "KUL",
    "dest": "AOR",
-   "price": 455.0,
-   "depart": "2026-11-19",
-   "return": "2026-11-22",
+   "price": 453.0,
+   "depart": "2026-12-16",
+   "return": "2026-12-19",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
-   "distance": 409,
-   "airline": "AirAsia (AK)",
+   "distance": 364,
+   "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-09T13:46:41",
+   "found_at": "2026-11-16T04:15:28",
    "source": "aviasales-latest",
    "id": "KUL-AOR|RT|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 319.0,
-   "ratio": 1.426,
-   "per_km": 0.5562,
+   "ratio": 1.42,
+   "per_km": 0.6223,
    "dest_name": "Alor Setar",
    "dest_name_zh": "亚罗士打",
    "country": "MY",
@@ -4573,6 +4573,39 @@
     "note": "仅富国岛免签 30 天，其他地区需电子签"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "FOC",
+   "price": 1659.0,
+   "depart": "2027-01-07",
+   "return": "2027-01-24",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3212,
+   "airline": "China Southern Airlines (CZ)",
+   "gate": "Trip.com",
+   "found_at": "2026-11-16T04:02:51",
+   "source": "aviasales-latest",
+   "id": "KUL-FOC|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2583,
+   "dest_name": "Fuzhou",
+   "dest_name_zh": "福州",
+   "country": "CN",
+   "lat": 26.074478,
+   "lon": 119.296482,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
