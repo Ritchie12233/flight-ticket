@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-16T20:30:53.910342+08:00",
+ "updated_at": "2026-11-16T20:45:28.236299+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1171,
-  "routes": 796,
+  "fares_scanned": 1172,
+  "routes": 797,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1171
+   "count": 1172
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -11439,6 +11439,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "SIN",
+   "price": 177.0,
+   "depart": "2027-01-15",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 297,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-16T12:29:47",
+   "source": "aviasales-latest",
+   "id": "KUL-SIN|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 166.0,
+   "ratio": 1.066,
+   "per_km": 0.596,
+   "dest_name": "Singapore",
+   "dest_name_zh": "新加坡",
+   "country": "SG",
+   "lat": 1.352083,
+   "lon": 103.819836,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "AOR",
    "price": 180.0,
    "depart": "2027-01-18",
@@ -11463,39 +11496,6 @@
    "country": "MY",
    "lat": 6.1263074,
    "lon": 100.3671695,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "SIN",
-   "price": 187.0,
-   "depart": "2027-07-14",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 297,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-16T11:32:46",
-   "source": "aviasales-latest",
-   "id": "KUL-SIN|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 166.0,
-   "ratio": 1.127,
-   "per_km": 0.6296,
-   "dest_name": "Singapore",
-   "dest_name_zh": "新加坡",
-   "country": "SG",
-   "lat": 1.352083,
-   "lon": 103.819836,
    "visa": {
     "status": "free",
     "label": "免签",
@@ -14015,39 +14015,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "SIA",
-   "price": 898.0,
-   "depart": "2027-01-26",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 3597,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-10T10:58:30",
-   "source": "aviasales-latest",
-   "id": "KUL-SIA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 896.0,
-   "ratio": 1.002,
-   "per_km": 0.2497,
-   "dest_name": "Xian",
-   "dest_name_zh": "西安",
-   "country": "CN",
-   "lat": 34.341574,
-   "lon": 108.93977,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "USM",
    "price": 907.0,
    "depart": "2027-01-21",
@@ -14078,6 +14045,39 @@
     "note": "免签 60 天"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "SIA",
+   "price": 909.0,
+   "depart": "2027-03-28",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 3597,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-11T01:24:56",
+   "source": "aviasales-latest",
+   "id": "KUL-SIA|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 896.0,
+   "ratio": 1.015,
+   "per_km": 0.2527,
+   "dest_name": "Xian",
+   "dest_name_zh": "西安",
+   "country": "CN",
+   "lat": 34.341574,
+   "lon": 108.93977,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
