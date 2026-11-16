@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-17T06:08:09.330763+08:00",
+ "updated_at": "2026-11-17T06:22:30.090215+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1183,
+  "fares_scanned": 1184,
   "routes": 806,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1183
+   "count": 1184
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,7 +30,7 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -18084,7 +18084,7 @@
    "origin": "KUL",
    "dest": "MOW",
    "price": 1809.0,
-   "depart": "2026-12-27",
+   "depart": "2026-12-28",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -18092,7 +18092,7 @@
    "distance": 8183,
    "airline": null,
    "gate": "Oman Air",
-   "found_at": "2026-11-16T21:47:23",
+   "found_at": "2026-11-16T21:48:48",
    "source": "aviasales-latest",
    "id": "KUL-MOW|OW|0",
    "type": "fare",
@@ -19921,6 +19921,39 @@
    "country": "DZ",
    "lat": 36.753768,
    "lon": 3.0587561,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "SUF",
+   "price": 2070.0,
+   "depart": "2026-12-10",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 9421,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-16T21:53:21",
+   "source": "aviasales-latest",
+   "id": "KUL-SUF|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2150.0,
+   "ratio": 0.963,
+   "per_km": 0.2197,
+   "dest_name": "Lamezia Terme",
+   "dest_name_zh": "拉默齐亚",
+   "country": "IT",
+   "lat": 38.962912,
+   "lon": 16.3092719,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -24545,39 +24578,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "ABA",
-   "price": 3604.0,
-   "depart": "2026-11-27",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 5742,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-13T02:44:31",
-   "source": "aviasales-latest",
-   "id": "KUL-ABA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3604.0,
-   "ratio": 1.0,
-   "per_km": 0.6277,
-   "dest_name": "Abakan",
-   "dest_name_zh": "阿巴坎",
-   "country": "RU",
-   "lat": 53.7175644,
-   "lon": 91.4293172,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   }
