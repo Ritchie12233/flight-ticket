@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T02:17:08.157454+08:00",
+ "updated_at": "2026-11-17T02:31:36.487164+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -3857,6 +3857,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "VTE",
+   "price": 1350.0,
+   "depart": "2027-01-16",
+   "return": "2027-01-19",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1653,
+   "airline": "AirAsia (AK)",
+   "flight_number": 552,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Vayama",
+   "id": "KUL-VTE|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1463.0,
+   "ratio": 0.923,
+   "per_km": 0.4084,
+   "dest_name": "Vientiane",
+   "dest_name_zh": "万象",
+   "country": "LA",
+   "lat": 17.9757058,
+   "lon": 102.6331035,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "CEB",
    "price": 1370.0,
    "depart": "2027-01-20",
@@ -3887,39 +3921,6 @@
     "note": "免签 14 天（试行，限指定机场入境）"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "VTE",
-   "price": 1381.0,
-   "depart": "2027-01-12",
-   "return": "2027-01-16",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 1694,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-15T08:36:37",
-   "source": "aviasales-latest",
-   "id": "KUL-VTE|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1463.0,
-   "ratio": 0.944,
-   "per_km": 0.4076,
-   "dest_name": "Vientiane",
-   "dest_name_zh": "万象",
-   "country": "LA",
-   "lat": 17.9757058,
-   "lon": 102.6331035,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
