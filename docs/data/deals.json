@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-16T22:27:23.015852+08:00",
+ "updated_at": "2026-11-16T22:41:51.336746+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1172,
-  "routes": 795,
+  "fares_scanned": 1173,
+  "routes": 796,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1172
+   "count": 1173
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -5129,6 +5129,39 @@
     "status": "free_partial",
     "label": "部分免签",
     "note": "仅济州岛免签 30 天，其他地区需签证"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "ATQ",
+   "price": 2042.0,
+   "depart": "2027-02-15",
+   "return": "2027-03-08",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 4275,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-16T14:34:23",
+   "source": "aviasales-latest",
+   "id": "KUL-ATQ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2388,
+   "dest_name": "Amritsar",
+   "dest_name_zh": "阿姆利则",
+   "country": "IN",
+   "lat": 31.6339793,
+   "lon": 74.8722642,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
