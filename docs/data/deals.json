@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-16T20:16:33.087803+08:00",
+ "updated_at": "2026-11-16T20:30:53.910342+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1169,
-  "routes": 794,
+  "fares_scanned": 1171,
+  "routes": 796,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1169
+   "count": 1171
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -1072,6 +1072,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TBS",
+   "price": 21696.0,
+   "depart": "2026-11-27",
+   "return": "2026-12-01",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 7096,
+   "airline": null,
+   "gate": "Qatar Airways",
+   "found_at": "2026-11-16T12:13:06Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TBS|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.5287,
+   "dest_name": "Tbilisi",
+   "dest_name_zh": "第比利斯",
+   "country": "GE",
+   "lat": 41.7151377,
+   "lon": 44.827096,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
    },
    "visited": false
   },
@@ -18076,6 +18109,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "MOW",
+   "price": 1823.0,
+   "depart": "2026-12-27",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 8183,
+   "airline": null,
+   "gate": "Oman Air",
+   "found_at": "2026-11-16T12:04:05",
+   "source": "aviasales-latest",
+   "id": "KUL-MOW|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1881.0,
+   "ratio": 0.969,
+   "per_km": 0.2228,
+   "dest_name": "Moscow",
+   "dest_name_zh": "莫斯科",
+   "country": "RU",
+   "lat": 55.755786,
+   "lon": 37.617633,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "AUH",
    "price": 1826.0,
    "depart": "2027-02-24",
@@ -18929,39 +18995,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "MOW",
-   "price": 1934.0,
-   "depart": "2026-11-23",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 8183,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-16T10:25:27",
-   "source": "aviasales-latest",
-   "id": "KUL-MOW|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1881.0,
-   "ratio": 1.028,
-   "per_km": 0.2363,
-   "dest_name": "Moscow",
-   "dest_name_zh": "莫斯科",
-   "country": "RU",
-   "lat": 55.755786,
-   "lon": 37.617633,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
