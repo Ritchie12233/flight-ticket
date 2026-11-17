@@ -1036,7 +1036,8 @@
    "2026-11-14": 2729.0,
    "2026-11-15": 2757.0,
    "2026-11-16": 2740.0,
-   "2026-11-17": 2748.0
+   "2026-11-17": 2748.0,
+   "2026-11-18": 2717.0
   },
   "KUL-TAS|RT|0": {
    "2026-11-11": 2854.0,
@@ -6884,7 +6885,7 @@
    "2026-11-15": 18413.0,
    "2026-11-16": 18413.0,
    "2026-11-17": 18247.0,
-   "2026-11-18": 18246.0
+   "2026-11-18": 16454.0
   },
   "KUL-FRA|RT|1": {
    "2026-11-11": 17638.0,
@@ -7097,7 +7098,7 @@
    "2026-11-14": 11938.0,
    "2026-11-15": 11938.0,
    "2026-11-17": 10416.0,
-   "2026-11-18": 10416.0
+   "2026-11-18": 10415.0
   },
   "KUL-LED|OW|1": {
    "2026-11-11": 11717.0,
@@ -7817,7 +7818,7 @@
    "2026-11-15": 1019.0,
    "2026-11-16": 1013.0,
    "2026-11-17": 1014.0,
-   "2026-11-18": 1008.0
+   "2026-11-18": 1007.0
   },
   "KUL-TIM|OW|0": {
    "2026-11-13": 1904.0,
@@ -8108,7 +8109,7 @@
    "2026-11-15": 6528.0,
    "2026-11-16": 6528.0,
    "2026-11-17": 6453.0,
-   "2026-11-18": 6453.0
+   "2026-11-18": 6452.0
   },
   "KUL-TWU|RT|1": {
    "2026-11-14": 3095.0,
@@ -8735,7 +8736,7 @@
   },
   "KUL-MIA|RT|1": {
    "2026-11-17": 38149.0,
-   "2026-11-18": 38149.0
+   "2026-11-18": 38148.0
   },
   "KUL-KOE|RT|0": {
    "2026-11-17": 2451.0,
@@ -8777,6 +8778,17 @@
   }
  },
  "news": [
+  {
+   "id": "rss:187b2191728bc554",
+   "type": "news",
+   "level": "news",
+   "title": "HIGH SEASON 😎 ☀️ Qatar Airways flights from European cities to Malaysia from €567",
+   "summary": "Whether you crave the bustling streets of Kuala Lumpur, the beaches of Langkawi, or the rainforests of Borneo – your Southeast Asian adventure begins now. Qatar Airways is offering discounted flights to Kuala Lumpur starting at €567 for a round trip.",
+   "link": "https://www.fly4free.com/flight-deals/europe/qatar-airways-flights-from-europe-to-malaysia-e567/",
+   "source": "Fly4free 全球特价",
+   "published": "2026-11-17T20:00:53+00:00",
+   "is_error_fare": false
+  },
   {
    "id": "rss:34e76abcf1ab0639",
    "type": "news",
