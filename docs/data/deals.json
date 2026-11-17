@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T09:43:58.535793+08:00",
+ "updated_at": "2026-11-17T09:58:21.409983+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -11385,7 +11385,7 @@
    "origin": "KUL",
    "dest": "TGG",
    "price": 153.0,
-   "depart": "2027-02-19",
+   "depart": "2027-02-26",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -11393,7 +11393,7 @@
    "distance": 330,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-17T01:03:37",
+   "found_at": "2026-11-17T01:35:44",
    "source": "aviasales-latest",
    "id": "KUL-TGG|OW|0",
    "type": "fare",
