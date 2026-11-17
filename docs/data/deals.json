@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T14:03:32.662560+08:00",
+ "updated_at": "2026-11-17T14:18:01.832311+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -35,7 +35,7 @@
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -10094,6 +10094,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KUF",
+   "price": 7046.0,
+   "depart": "2026-11-29",
+   "return": "2026-11-29",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 7329,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-17T05:51:02",
+   "source": "aviasales-latest",
+   "id": "KUL-KUF|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 6167.0,
+   "ratio": 1.143,
+   "per_km": 0.4807,
+   "dest_name": "Samara",
+   "dest_name_zh": "萨马拉",
+   "country": "RU",
+   "lat": 53.203772,
+   "lon": 50.1606382,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "OGZ",
    "price": 7055.0,
    "depart": "2027-02-19",
@@ -10118,40 +10151,6 @@
    "country": "RU",
    "lat": 43.0252344,
    "lon": 44.6659759,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "KUF",
-   "price": 7058.0,
-   "depart": "2026-11-29",
-   "return": "2026-11-29",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 7275,
-   "airline": "Emirates (EK)",
-   "flight_number": 343,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "City.Travel",
-   "id": "KUL-KUF|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 6167.0,
-   "ratio": 1.144,
-   "per_km": 0.4851,
-   "dest_name": "Samara",
-   "dest_name_zh": "萨马拉",
-   "country": "RU",
-   "lat": 53.203772,
-   "lon": 50.1606382,
    "visa": {
     "status": "free",
     "label": "免签",
