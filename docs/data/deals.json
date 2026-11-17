@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-18T07:09:44.540032+08:00",
+ "updated_at": "2026-11-18T07:24:09.874871+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1202,
-  "routes": 833,
+  "fares_scanned": 1201,
+  "routes": 831,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1202
+   "count": 1201
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -412,39 +412,6 @@
     "note": "凭港澳通行证及有效签注入境"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "SZX",
-   "price": 4944.0,
-   "depart": "2026-12-16",
-   "return": "2026-12-27",
-   "one_way": false,
-   "trip_class": 1,
-   "transfers": 0,
-   "distance": 2567,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-10T21:15:11Z",
-   "source": "aviasales-latest",
-   "id": "KUL-SZX|RT|1",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 4944.0,
-   "ratio": 1.0,
-   "per_km": 0.963,
-   "dest_name": "Shenzhen",
-   "dest_name_zh": "深圳",
-   "country": "CN",
-   "lat": 22.543099,
-   "lon": 114.057868,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
@@ -16782,39 +16749,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "DOH",
-   "price": 1472.0,
-   "depart": "2026-12-13",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5912,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-10T21:43:35",
-   "source": "aviasales-latest",
-   "id": "KUL-DOH|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1419.0,
-   "ratio": 1.037,
-   "per_km": 0.249,
-   "dest_name": "Doha",
-   "dest_name_zh": "多哈",
-   "country": "QA",
-   "lat": 25.2854473,
-   "lon": 51.5310398,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "MCT",
    "price": 1474.0,
    "depart": "2026-12-09",
@@ -16876,6 +16810,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "DOH",
+   "price": 1496.0,
+   "depart": "2026-12-03",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5912,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-15T17:12:59",
+   "source": "aviasales-latest",
+   "id": "KUL-DOH|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1419.0,
+   "ratio": 1.054,
+   "per_km": 0.253,
+   "dest_name": "Doha",
+   "dest_name_zh": "多哈",
+   "country": "QA",
+   "lat": 25.2854473,
+   "lon": 51.5310398,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
    "visited": false
   },
