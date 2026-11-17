@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T04:14:37.603196+08:00",
+ "updated_at": "2026-11-18T04:29:31.846175+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -20,7 +20,7 @@
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -1996,24 +1996,24 @@
    "current": {
     "origin": "KUL",
     "dest": "TBS",
-    "price": 4679.0,
-    "depart": "2027-11-02",
-    "return": "2027-11-06",
+    "price": 4191.0,
+    "depart": "2027-01-22",
+    "return": "2027-01-29",
     "one_way": false,
     "trip_class": 0,
     "transfers": 1,
     "distance": 7096,
     "airline": null,
-    "gate": "OneTwoTrip",
-    "found_at": "2026-11-16T07:21:07",
+    "gate": "Mytrip.com",
+    "found_at": "2026-11-17T20:13:07",
     "source": "aviasales-latest",
     "id": "KUL-TBS|RT|0",
     "type": "fare",
     "level": "normal",
     "reasons": [],
     "baseline": 4140.0,
-    "ratio": 1.13,
-    "per_km": 0.3297,
+    "ratio": 1.012,
+    "per_km": 0.2953,
     "dest_name": "Tbilisi",
     "dest_name_zh": "第比利斯",
     "country": "GE",
@@ -2091,7 +2091,7 @@
     ],
     [
      "2026-11-18",
-     4673.0
+     4191.0
     ]
    ]
   },
@@ -7769,6 +7769,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "TBS",
+   "price": 4191.0,
+   "depart": "2027-01-22",
+   "return": "2027-01-29",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 7096,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-17T20:13:07",
+   "source": "aviasales-latest",
+   "id": "KUL-TBS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 4140.0,
+   "ratio": 1.012,
+   "per_km": 0.2953,
+   "dest_name": "Tbilisi",
+   "dest_name_zh": "第比利斯",
+   "country": "GE",
+   "lat": 41.7151377,
+   "lon": 44.827096,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "IXZ",
    "price": 4243.0,
    "depart": "2026-12-28",
@@ -8292,39 +8325,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "TBS",
-   "price": 4679.0,
-   "depart": "2027-11-02",
-   "return": "2027-11-06",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 7096,
-   "airline": null,
-   "gate": "OneTwoTrip",
-   "found_at": "2026-11-16T07:21:07",
-   "source": "aviasales-latest",
-   "id": "KUL-TBS|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 4140.0,
-   "ratio": 1.13,
-   "per_km": 0.3297,
-   "dest_name": "Tbilisi",
-   "dest_name_zh": "第比利斯",
-   "country": "GE",
-   "lat": 41.7151377,
-   "lon": 44.827096,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 90 天"
    },
    "visited": false
   },
