@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-17T22:42:14.585623+08:00",
+ "updated_at": "2026-11-17T22:56:35.786477+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1203,
-  "routes": 830,
+  "fares_scanned": 1205,
+  "routes": 831,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1203
+   "count": 1205
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -11549,7 +11549,7 @@
   {
    "origin": "KUL",
    "dest": "PEN",
-   "price": 153.0,
+   "price": 156.0,
    "depart": "2027-01-07",
    "return": null,
    "one_way": true,
@@ -11558,15 +11558,15 @@
    "distance": 324,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-17T14:22:37",
+   "found_at": "2026-11-17T14:35:14",
    "source": "aviasales-latest",
    "id": "KUL-PEN|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 150.0,
-   "ratio": 1.023,
-   "per_km": 0.4722,
+   "ratio": 1.043,
+   "per_km": 0.4815,
    "dest_name": "Penang",
    "dest_name_zh": "槟城",
    "country": "MY",
@@ -21722,7 +21722,7 @@
    "distance": 7003,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-16T17:24:01",
+   "found_at": "2026-11-17T14:29:38",
    "source": "aviasales-latest",
    "id": "KUL-SVX|OW|0",
    "type": "fare",
