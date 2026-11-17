@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-18T02:04:33.418343+08:00",
+ "updated_at": "2026-11-18T02:18:56.922887+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1203,
-  "routes": 833,
+  "fares_scanned": 1204,
+  "routes": 834,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1203
+   "count": 1204
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -7109,6 +7109,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "DOH",
+   "price": 3593.0,
+   "depart": "2026-11-19",
+   "return": "2026-11-22",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5912,
+   "airline": null,
+   "gate": "Oman Air",
+   "found_at": "2026-11-17T17:50:01",
+   "source": "aviasales-latest",
+   "id": "KUL-DOH|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3971.0,
+   "ratio": 0.905,
+   "per_km": 0.3039,
+   "dest_name": "Doha",
+   "dest_name_zh": "多哈",
+   "country": "QA",
+   "lat": 25.2854473,
+   "lon": 51.5310398,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ATH",
    "price": 3598.0,
    "depart": "2027-07-12",
@@ -7599,39 +7632,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DOH",
-   "price": 3970.0,
-   "depart": "2026-11-27",
-   "return": "2026-11-30",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5912,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-12T18:43:20",
-   "source": "aviasales-latest",
-   "id": "KUL-DOH|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3971.0,
-   "ratio": 1.0,
-   "per_km": 0.3358,
-   "dest_name": "Doha",
-   "dest_name_zh": "多哈",
-   "country": "QA",
-   "lat": 25.2854473,
-   "lon": 51.5310398,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -9843,6 +9843,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "YKS",
+   "price": 6355.0,
+   "depart": "2026-11-25",
+   "return": "2026-12-09",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 6951,
+   "airline": "Batik Air Malaysia (OD)",
+   "flight_number": 532,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-YKS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4571,
+   "dest_name": "Yakutsk",
+   "dest_name_zh": "雅库茨克",
+   "country": "RU",
+   "lat": 62.0396912,
+   "lon": 129.7422192,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
