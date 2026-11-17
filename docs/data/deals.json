@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T03:31:09.008720+08:00",
+ "updated_at": "2026-11-18T03:45:30.718040+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -35,7 +35,7 @@
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -12985,6 +12985,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "JOG",
+   "price": 605.0,
+   "depart": "2027-01-24",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 1504,
+   "airline": null,
+   "gate": "Biletix",
+   "found_at": "2026-11-17T19:21:29",
+   "source": "aviasales-latest",
+   "id": "KUL-JOG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 578.0,
+   "ratio": 1.047,
+   "per_km": 0.4023,
+   "dest_name": "Yogyakarta",
+   "dest_name_zh": "日惹",
+   "country": "ID",
+   "lat": -7.7955798,
+   "lon": 110.3694896,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "KMG",
    "price": 608.0,
    "depart": "2027-01-09",
@@ -13112,39 +13145,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "免费 ETA（2026-05 起）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "JOG",
-   "price": 634.0,
-   "depart": "2027-01-16",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 1504,
-   "airline": null,
-   "gate": "Biletix",
-   "found_at": "2026-11-17T17:48:54",
-   "source": "aviasales-latest",
-   "id": "KUL-JOG|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 578.0,
-   "ratio": 1.097,
-   "per_km": 0.4215,
-   "dest_name": "Yogyakarta",
-   "dest_name_zh": "日惹",
-   "country": "ID",
-   "lat": -7.7955798,
-   "lon": 110.3694896,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
    },
    "visited": false
   },
