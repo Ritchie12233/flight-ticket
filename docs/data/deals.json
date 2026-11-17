@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T12:36:26.468400+08:00",
+ "updated_at": "2026-11-17T12:50:55.600876+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -30,7 +30,7 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -19369,6 +19369,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "ZAG",
+   "price": 1970.0,
+   "depart": "2027-03-30",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9449,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-17T04:23:27",
+   "source": "aviasales-latest",
+   "id": "KUL-ZAG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2579.0,
+   "ratio": 0.764,
+   "per_km": 0.2085,
+   "dest_name": "Zagreb",
+   "dest_name_zh": "萨格勒布",
+   "country": "HR",
+   "lat": 45.8150108,
+   "lon": 15.9819189,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "GZP",
    "price": 1976.0,
    "depart": "2026-12-07",
@@ -22429,39 +22462,6 @@
    "country": "PK",
    "lat": 31.4503662,
    "lon": 73.1349605,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "ZAG",
-   "price": 2524.0,
-   "depart": "2027-02-01",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 9449,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-16T07:59:43",
-   "source": "aviasales-latest",
-   "id": "KUL-ZAG|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2579.0,
-   "ratio": 0.979,
-   "per_km": 0.2671,
-   "dest_name": "Zagreb",
-   "dest_name_zh": "萨格勒布",
-   "country": "HR",
-   "lat": 45.8150108,
-   "lon": 15.9819189,
    "visa": {
     "status": "visa",
     "label": "需签证",
