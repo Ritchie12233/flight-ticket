@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T08:17:48.660165+08:00",
+ "updated_at": "2026-11-17T08:32:06.499201+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -18051,7 +18051,7 @@
    "origin": "KUL",
    "dest": "MOW",
    "price": 1810.0,
-   "depart": "2026-12-28",
+   "depart": "2026-12-26",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -18059,7 +18059,7 @@
    "distance": 8183,
    "airline": null,
    "gate": "Oman Air",
-   "found_at": "2026-11-16T23:49:03",
+   "found_at": "2026-11-16T23:46:05",
    "source": "aviasales-latest",
    "id": "KUL-MOW|OW|0",
    "type": "fare",
