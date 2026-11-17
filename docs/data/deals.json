@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-18T05:13:15.474328+08:00",
+ "updated_at": "2026-11-18T05:28:23.546046+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1204,
-  "routes": 834,
+  "fares_scanned": 1203,
+  "routes": 833,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1204
+   "count": 1203
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -280,39 +280,6 @@
     "note": "免签 60 天"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "SIN",
-   "price": 3417.0,
-   "depart": "2026-11-27",
-   "return": "2026-11-29",
-   "one_way": false,
-   "trip_class": 1,
-   "transfers": 0,
-   "distance": 297,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-10T19:33:49Z",
-   "source": "aviasales-latest",
-   "id": "KUL-SIN|RT|1",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2873.0,
-   "ratio": 1.189,
-   "per_km": 5.7525,
-   "dest_name": "Singapore",
-   "dest_name_zh": "新加坡",
-   "country": "SG",
-   "lat": 1.352083,
-   "lon": 103.819836,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
