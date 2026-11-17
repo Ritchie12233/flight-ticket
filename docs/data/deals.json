@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-17T13:20:06.177140+08:00",
+ "updated_at": "2026-11-17T13:34:34.543879+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1197,
+  "fares_scanned": 1189,
   "routes": 818,
   "bug": 0,
   "great": 0,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1197
+   "count": 1189
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -380,24 +380,24 @@
   {
    "origin": "KUL",
    "dest": "HKG",
-   "price": 4774.0,
-   "depart": "2027-02-22",
-   "return": "2027-02-28",
+   "price": 4846.0,
+   "depart": "2026-12-01",
+   "return": "2026-12-04",
    "one_way": false,
    "trip_class": 1,
    "transfers": 1,
    "distance": 2544,
    "airline": null,
-   "gate": "Gotogate",
-   "found_at": "2026-11-10T04:20:53Z",
+   "gate": "Trip.com",
+   "found_at": "2026-11-15T15:56:50Z",
    "source": "aviasales-latest",
    "id": "KUL-HKG|RT|1",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 4774.0,
-   "ratio": 1.0,
-   "per_km": 0.9383,
+   "ratio": 1.015,
+   "per_km": 0.9524,
    "dest_name": "Hong Kong",
    "dest_name_zh": "香港",
    "country": "HK",
