@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-18T21:19:22.358991+08:00",
+ "updated_at": "2026-11-18T21:33:40.354734+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1193,
-  "routes": 824,
+  "fares_scanned": 1191,
+  "routes": 823,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1193
+   "count": 1191
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -580,39 +580,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "CEB",
-   "price": 6317.0,
-   "depart": "2027-02-25",
-   "return": "2027-03-11",
-   "one_way": false,
-   "trip_class": 1,
-   "transfers": 1,
-   "distance": 2598,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-11T12:02:41Z",
-   "source": "aviasales-latest",
-   "id": "KUL-CEB|RT|1",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 6317.0,
-   "ratio": 1.0,
-   "per_km": 1.2157,
-   "dest_name": "Cebu City",
-   "dest_name_zh": "宿务",
-   "country": "PH",
-   "lat": 10.313333,
-   "lon": 123.98278,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 14 天（试行，限指定机场入境）"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "MLE",
    "price": 6453.0,
    "depart": "2027-03-15",
@@ -647,7 +614,7 @@
   {
    "origin": "KUL",
    "dest": "PER",
-   "price": 8228.0,
+   "price": 8508.0,
    "depart": "2026-12-18",
    "return": "2027-01-01",
    "one_way": false,
@@ -655,16 +622,16 @@
    "transfers": 0,
    "distance": 4140,
    "airline": null,
-   "gate": "Mytrip.com",
-   "found_at": "2026-11-13T05:51:31Z",
+   "gate": "Gotogate",
+   "found_at": "2026-11-18T13:05:58Z",
    "source": "aviasales-latest",
    "id": "KUL-PER|RT|1",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 8228.0,
-   "ratio": 1.0,
-   "per_km": 0.9937,
+   "ratio": 1.034,
+   "per_km": 1.0275,
    "dest_name": "Perth",
    "dest_name_zh": "佩斯",
    "country": "AU",
