@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T04:04:33.483719+08:00",
+ "updated_at": "2026-11-19T04:18:54.054049+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -1492,7 +1492,7 @@
     "distance": 1964,
     "airline": null,
     "gate": "Trip.com",
-    "found_at": "2026-11-18T19:01:01",
+    "found_at": "2026-11-18T20:00:38",
     "source": "aviasales-latest",
     "id": "KUL-DPS|RT|0",
     "type": "fare",
@@ -3402,7 +3402,7 @@
    "distance": 1964,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-18T19:01:01",
+   "found_at": "2026-11-18T20:00:38",
    "source": "aviasales-latest",
    "id": "KUL-DPS|RT|0",
    "type": "fare",
