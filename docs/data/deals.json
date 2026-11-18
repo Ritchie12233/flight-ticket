@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-18T19:24:06.369784+08:00",
+ "updated_at": "2026-11-18T19:38:25.303897+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1200,
-  "routes": 830,
+  "fares_scanned": 1199,
+  "routes": 829,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1200
+   "count": 1199
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -13216,39 +13216,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "PLM",
-   "price": 643.0,
-   "depart": "2026-11-18",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 711,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-16T12:37:10",
-   "source": "aviasales-latest",
-   "id": "KUL-PLM|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.9044,
-   "dest_name": "Palembang",
-   "dest_name_zh": "巨港",
-   "country": "ID",
-   "lat": -2.9760735,
-   "lon": 104.7754307,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "PER",
    "price": 654.0,
    "depart": "2026-12-10",
@@ -15391,6 +15358,39 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "PLM",
+   "price": 1082.0,
+   "depart": "2027-11-09",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 711,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-17T04:19:00",
+   "source": "aviasales-latest",
+   "id": "KUL-PLM|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.5218,
+   "dest_name": "Palembang",
+   "dest_name_zh": "巨港",
+   "country": "ID",
+   "lat": -2.9760735,
+   "lon": 104.7754307,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
