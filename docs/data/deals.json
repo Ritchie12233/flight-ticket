@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-18T08:07:34.623785+08:00",
+ "updated_at": "2026-11-18T08:21:55.450980+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1202,
+  "fares_scanned": 1203,
   "routes": 831,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1202
+   "count": 1203
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -4766,39 +4766,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "NKG",
-   "price": 1729.0,
-   "depart": "2026-11-26",
-   "return": "2026-12-01",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3689,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-10T23:24:50",
-   "source": "aviasales-latest",
-   "id": "KUL-NKG|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1733.0,
-   "ratio": 0.998,
-   "per_km": 0.2343,
-   "dest_name": "Nanjing",
-   "dest_name_zh": "南京",
-   "country": "CN",
-   "lat": 32.060255,
-   "lon": 118.796877,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "MFM",
    "price": 1735.0,
    "depart": "2026-11-21",
@@ -5819,6 +5786,39 @@
     "note": "仅富国岛免签 30 天，其他地区需电子签"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "NKG",
+   "price": 2422.0,
+   "depart": "2026-12-19",
+   "return": "2027-01-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3689,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-15T12:57:01",
+   "source": "aviasales-latest",
+   "id": "KUL-NKG|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1733.0,
+   "ratio": 1.398,
+   "per_km": 0.3283,
+   "dest_name": "Nanjing",
+   "dest_name_zh": "南京",
+   "country": "CN",
+   "lat": 32.060255,
+   "lon": 118.796877,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
@@ -10965,6 +10965,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BUE",
+   "price": 10125.0,
+   "depart": "2027-03-30",
+   "return": "2027-04-08",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 15906,
+   "airline": null,
+   "gate": "Turna.com",
+   "found_at": "2026-11-17T23:59:54",
+   "source": "aviasales-latest",
+   "id": "KUL-BUE|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3183,
+   "dest_name": "Buenos Aires",
+   "dest_name_zh": "布宜诺斯艾利斯",
+   "country": "AR",
+   "lat": -34.6084175,
+   "lon": -58.3731613,
+   "visa": {
+    "status": "conditional",
+    "label": "有条件免签",
+    "note": "持有效美/申根签证可申请电子签"
    },
    "visited": false
   },
