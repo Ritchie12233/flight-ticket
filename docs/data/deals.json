@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-18T09:47:56.228571+08:00",
+ "updated_at": "2026-11-18T10:02:14.685472+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1204,
-  "routes": 832,
+  "fares_scanned": 1205,
+  "routes": 833,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1204
+   "count": 1205
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -14536,6 +14536,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "LMN",
+   "price": 941.0,
+   "depart": "2026-12-12",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1490,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-18T01:45:34",
+   "source": "aviasales-latest",
+   "id": "KUL-LMN|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.6315,
+   "dest_name": "Limbang",
+   "dest_name_zh": "林邦",
+   "country": "MY",
+   "lat": 4.666667,
+   "lon": 115,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "BJS",
    "price": 942.0,
    "depart": "2027-03-01",
@@ -17838,6 +17871,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "ALA",
+   "price": 1732.0,
+   "depart": "2026-11-19",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5129,
+   "airline": null,
+   "gate": "Aviakassa",
+   "found_at": "2026-11-18T01:38:28",
+   "source": "aviasales-latest",
+   "id": "KUL-ALA|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1742.0,
+   "ratio": 0.994,
+   "per_km": 0.3377,
+   "dest_name": "Almaty",
+   "dest_name_zh": "阿拉木图",
+   "country": "KZ",
+   "lat": 43.2220146,
+   "lon": 76.8512485,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "SOQ",
    "price": 1732.0,
    "depart": "2027-01-02",
@@ -18163,39 +18229,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "ALA",
-   "price": 1788.0,
-   "depart": "2027-02-28",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 5129,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-15T10:36:42",
-   "source": "aviasales-latest",
-   "id": "KUL-ALA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1742.0,
-   "ratio": 1.026,
-   "per_km": 0.3486,
-   "dest_name": "Almaty",
-   "dest_name_zh": "阿拉木图",
-   "country": "KZ",
-   "lat": 43.2220146,
-   "lon": 76.8512485,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -24664,39 +24697,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "AGA",
-   "price": 3285.0,
-   "depart": "2027-01-01",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 11869,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-12T19:54:24",
-   "source": "aviasales-latest",
-   "id": "KUL-AGA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3290.0,
-   "ratio": 0.998,
-   "per_km": 0.2768,
-   "dest_name": "Agadir",
-   "dest_name_zh": "阿加迪尔",
-   "country": "MA",
-   "lat": 30.4277547,
-   "lon": -9.5981072,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 90 天"
    },
    "visited": false
   }
