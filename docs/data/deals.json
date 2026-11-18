@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-18T14:21:07.651906+08:00",
+ "updated_at": "2026-11-18T14:35:25.502661+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1208,
+  "fares_scanned": 1209,
   "routes": 833,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1208
+   "count": 1209
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,8 +30,8 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": false,
-   "count": 0
+   "ok": true,
+   "count": 1
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
@@ -4073,6 +4073,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "CNX",
+   "price": 1343.0,
+   "depart": "2027-02-19",
+   "return": "2027-02-23",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 1805,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-18T06:11:21",
+   "source": "aviasales-latest",
+   "id": "KUL-CNX|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1504.0,
+   "ratio": 0.893,
+   "per_km": 0.372,
+   "dest_name": "Chiang Mai",
+   "dest_name_zh": "清迈",
+   "country": "TH",
+   "lat": 18.7952876,
+   "lon": 98.9620002,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "VTE",
    "price": 1343.0,
    "depart": "2027-01-16",
@@ -4268,39 +4301,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "CNX",
-   "price": 1504.0,
-   "depart": "2027-02-25",
-   "return": "2027-02-27",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 1805,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-11T05:20:32",
-   "source": "aviasales-latest",
-   "id": "KUL-CNX|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1504.0,
-   "ratio": 1.0,
-   "per_km": 0.4166,
-   "dest_name": "Chiang Mai",
-   "dest_name_zh": "清迈",
-   "country": "TH",
-   "lat": 18.7952876,
-   "lon": 98.9620002,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 60 天"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
@@ -5789,39 +5789,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "UNN",
-   "price": 2443.0,
-   "depart": "2027-03-07",
-   "return": "2027-03-14",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 859,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-15T04:20:22",
-   "source": "aviasales-latest",
-   "id": "KUL-UNN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 1.422,
-   "dest_name": "Ranong",
-   "dest_name_zh": "拉廊",
-   "country": "TH",
-   "lat": 9.852778,
-   "lon": 98.629166,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 60 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "KTM",
    "price": 2444.0,
    "depart": "2027-03-11",
@@ -5916,6 +5883,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "UNN",
+   "price": 2480.0,
+   "depart": "2027-03-07",
+   "return": "2027-03-14",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 859,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-18T06:07:55",
+   "source": "aviasales-latest",
+   "id": "KUL-UNN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.4435,
+   "dest_name": "Ranong",
+   "dest_name_zh": "拉廊",
+   "country": "TH",
+   "lat": 9.852778,
+   "lon": 98.629166,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
    },
    "visited": false
   },
@@ -19422,39 +19422,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "BEG",
-   "price": 1946.0,
-   "depart": "2027-03-13",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 9113,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-16T11:37:27",
-   "source": "aviasales-latest",
-   "id": "KUL-BEG|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1950.0,
-   "ratio": 0.998,
-   "per_km": 0.2135,
-   "dest_name": "Belgrade",
-   "dest_name_zh": "贝尔格莱德",
-   "country": "RS",
-   "lat": 44.786568,
-   "lon": 20.4489216,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "MAN",
    "price": 1950.0,
    "depart": "2027-02-01",
@@ -20110,6 +20077,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BEG",
+   "price": 2050.0,
+   "depart": "2027-01-31",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9113,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-14T21:24:31",
+   "source": "aviasales-latest",
+   "id": "KUL-BEG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1950.0,
+   "ratio": 1.051,
+   "per_km": 0.225,
+   "dest_name": "Belgrade",
+   "dest_name_zh": "贝尔格莱德",
+   "country": "RS",
+   "lat": 44.786568,
+   "lon": 20.4489216,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -24847,6 +24847,17 @@
    "source": "Fly4free 全球特价",
    "published": "2026-11-10T08:00:06+00:00",
    "is_error_fare": false
+  },
+  {
+   "id": "rss:f7bfe06004e8d84d",
+   "type": "news",
+   "level": "global",
+   "title": "WOW: Cathay Pacific Will Honor First Class Mistake Fares - One Mile at a Time",
+   "summary": "WOW: Cathay Pacific Will Honor First Class Mistake Fares One Mile at a Time",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1yekdJa3FtYi01V3NEc1hCTDAza3pxU1FCR2g0cXdlR3RrdmFCQXdEYzB5YWZtYUxxLXBfdktqMHFFSkI0UmNTWE9RckhYZ0NFcF91ampKQUxaS1FwbUpwTHJfQUk3WUtUbTBVaExkN1lhdw?oc=5",
+   "source": "Google 新闻 · KL 错误票价",
+   "published": "2019-01-02T08:00:00+00:00",
+   "is_error_fare": true
   }
  ],
  "alerts": [

@@ -524,7 +524,7 @@
    "2026-11-15": 1512.0,
    "2026-11-16": 1503.0,
    "2026-11-17": 1504.0,
-   "2026-11-18": 1497.0
+   "2026-11-18": 1343.0
   },
   "KUL-PER|RT|0": {
    "2026-11-11": 1516.0,
@@ -8879,6 +8879,17 @@
    "source": "Fly4free 全球特价",
    "published": "2026-11-10T08:00:06+00:00",
    "is_error_fare": false
+  },
+  {
+   "id": "rss:f7bfe06004e8d84d",
+   "type": "news",
+   "level": "global",
+   "title": "WOW: Cathay Pacific Will Honor First Class Mistake Fares - One Mile at a Time",
+   "summary": "WOW: Cathay Pacific Will Honor First Class Mistake Fares One Mile at a Time",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1yekdJa3FtYi01V3NEc1hCTDAza3pxU1FCR2g0cXdlR3RrdmFCQXdEYzB5YWZtYUxxLXBfdktqMHFFSkI0UmNTWE9RckhYZ0NFcF91ampKQUxaS1FwbUpwTHJfQUk3WUtUbTBVaExkN1lhdw?oc=5",
+   "source": "Google 新闻 · KL 错误票价",
+   "published": "2019-01-02T08:00:00+00:00",
+   "is_error_fare": true
   }
  ],
  "alerts_log": [
