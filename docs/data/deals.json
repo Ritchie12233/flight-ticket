@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-18T21:47:57.812347+08:00",
+ "updated_at": "2026-11-18T22:02:19.351460+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1192,
+  "fares_scanned": 1193,
   "routes": 824,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1192
+   "count": 1193
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10409,6 +10409,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "UUD",
+   "price": 7756.0,
+   "depart": "2027-07-01",
+   "return": "2027-07-04",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 5483,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-18T13:38:39",
+   "source": "aviasales-latest",
+   "id": "KUL-UUD|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 5871.0,
+   "ratio": 1.321,
+   "per_km": 0.7073,
+   "dest_name": "Ulan-Ude",
+   "dest_name_zh": "乌兰乌德",
+   "country": "RU",
+   "lat": 51.8335896,
+   "lon": 107.5840433,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "OAK",
    "price": 7771.0,
    "depart": "2027-01-18",
@@ -10437,39 +10470,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "UUD",
-   "price": 7777.0,
-   "depart": "2027-07-01",
-   "return": "2027-07-04",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": null,
-   "distance": 5442,
-   "airline": "China Southern Airlines (CZ)",
-   "flight_number": 350,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "id": "KUL-UUD|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 5871.0,
-   "ratio": 1.325,
-   "per_km": 0.7145,
-   "dest_name": "Ulan-Ude",
-   "dest_name_zh": "乌兰乌德",
-   "country": "RU",
-   "lat": 51.8335896,
-   "lon": 107.5840433,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
