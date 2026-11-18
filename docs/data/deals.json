@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-18T22:16:42.093729+08:00",
+ "updated_at": "2026-11-18T22:31:23.239587+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1193,
-  "routes": 823,
+  "fares_scanned": 1194,
+  "routes": 824,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1193
+   "count": 1194
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -608,6 +608,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（行前 96 小时填 IMUGA）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TYO",
+   "price": 8180.0,
+   "depart": "2026-11-19",
+   "return": "2026-11-23",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 5408,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-18T14:02:29Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TYO|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 8097.0,
+   "ratio": 1.01,
+   "per_km": 0.7563,
+   "dest_name": "Tokyo",
+   "dest_name_zh": "东京",
+   "country": "JP",
+   "lat": 35.6761919,
+   "lon": 139.6503106,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -11963,7 +11996,7 @@
   {
    "origin": "KUL",
    "dest": "BTH",
-   "price": 385.0,
+   "price": 392.0,
    "depart": "2026-11-24",
    "return": null,
    "one_way": true,
@@ -11972,15 +12005,15 @@
    "distance": 323,
    "airline": null,
    "gate": "Tickets",
-   "found_at": "2026-11-18T05:24:41",
+   "found_at": "2026-11-18T14:04:08",
    "source": "aviasales-latest",
    "id": "KUL-BTH|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 376.0,
-   "ratio": 1.024,
-   "per_km": 1.192,
+   "ratio": 1.043,
+   "per_km": 1.2136,
    "dest_name": "Batam",
    "dest_name_zh": "巴都贝萨尔",
    "country": "ID",
