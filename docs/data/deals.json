@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-19T10:18:37.367335+08:00",
+ "updated_at": "2026-11-19T10:33:06.787990+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1190,
-  "routes": 821,
+  "fares_scanned": 1191,
+  "routes": 822,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1190
+   "count": 1191
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
-   "count": 1
+   "ok": false,
+   "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -3296,14 +3296,14 @@
    "origin": "KUL",
    "dest": "PQC",
    "price": 865.0,
-   "depart": "2027-01-20",
-   "return": "2027-01-21",
+   "depart": "2027-01-19",
+   "return": "2027-01-28",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
    "distance": 827,
    "airline": "AirAsia (AK)",
-   "flight_number": 543,
+   "flight_number": 545,
    "found_at": null,
    "source": "aviasales-cheap",
    "gate": "Kupi.com",
@@ -6150,6 +6150,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "UTP",
+   "price": 2583.0,
+   "depart": "2027-03-06",
+   "return": "2027-03-10",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1092,
+   "airline": "AirAsia (AK)",
+   "flight_number": 818,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Vayama",
+   "id": "KUL-UTP|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2946.0,
+   "ratio": 0.877,
+   "per_km": 1.1831,
+   "dest_name": "Pattaya",
+   "dest_name_zh": "乌塔保",
+   "country": "TH",
+   "lat": 12.9235557,
+   "lon": 100.8824551,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BDJ",
    "price": 2602.0,
    "depart": "2027-06-27",
@@ -6179,40 +6213,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "UTP",
-   "price": 2619.0,
-   "depart": "2027-01-19",
-   "return": "2027-01-31",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 1092,
-   "airline": "AirAsia (AK)",
-   "flight_number": 818,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Trip.com",
-   "id": "KUL-UTP|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2946.0,
-   "ratio": 0.889,
-   "per_km": 1.1996,
-   "dest_name": "Pattaya",
-   "dest_name_zh": "乌塔保",
-   "country": "TH",
-   "lat": 12.9235557,
-   "lon": 100.8824551,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 60 天"
    },
    "visited": false
   },
@@ -20282,7 +20282,7 @@
    "distance": 5430,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-18T17:07:32",
+   "found_at": "2026-11-19T02:13:16",
    "source": "aviasales-latest",
    "id": "KUL-CIT|OW|0",
    "type": "fare",
