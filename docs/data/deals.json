@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T00:14:19.217062+08:00",
+ "updated_at": "2026-11-20T00:28:48.894319+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -11559,7 +11559,7 @@
    "origin": "KUL",
    "dest": "KBV",
    "price": 332.0,
-   "depart": "2027-02-28",
+   "depart": "2027-02-27",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -11567,7 +11567,7 @@
    "distance": 666,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-14T22:16:30",
+   "found_at": "2026-11-15T08:27:43",
    "source": "aviasales-latest",
    "id": "KUL-KBV|OW|0",
    "type": "fare",
