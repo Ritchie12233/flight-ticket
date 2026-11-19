@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-20T07:11:35.549014+08:00",
+ "updated_at": "2026-11-20T07:26:06.720029+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1175,
-  "routes": 820,
+  "fares_scanned": 1174,
+  "routes": 822,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1175
+   "count": 1174
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -20364,39 +20364,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "TUN",
-   "price": 2085.0,
-   "depart": "2026-12-03",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 9955,
-   "airline": null,
-   "gate": "Ubfly",
-   "found_at": "2026-11-12T22:13:07",
-   "source": "aviasales-latest",
-   "id": "KUL-TUN|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2005.0,
-   "ratio": 1.04,
-   "per_km": 0.2094,
-   "dest_name": "Tunis",
-   "dest_name_zh": "突尼斯",
-   "country": "TN",
-   "lat": 36.8064948,
-   "lon": 10.1815316,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 90 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "DUS",
    "price": 2095.0,
    "depart": "2026-12-14",
@@ -22344,39 +22311,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "OSL",
-   "price": 2484.0,
-   "depart": "2027-04-19",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 9774,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-12T21:31:33",
-   "source": "aviasales-latest",
-   "id": "KUL-OSL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2023.0,
-   "ratio": 1.228,
-   "per_km": 0.2541,
-   "dest_name": "Oslo",
-   "dest_name_zh": "奥斯陆",
-   "country": "NO",
-   "lat": 59.9138688,
-   "lon": 10.7522454,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "STR",
    "price": 2499.0,
    "depart": "2026-11-29",
@@ -23098,6 +23032,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TUN",
+   "price": 2657.0,
+   "depart": "2026-11-20",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 9955,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-17T14:44:02",
+   "source": "aviasales-latest",
+   "id": "KUL-TUN|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2005.0,
+   "ratio": 1.325,
+   "per_km": 0.2669,
+   "dest_name": "Tunis",
+   "dest_name_zh": "突尼斯",
+   "country": "TN",
+   "lat": 36.8064948,
+   "lon": 10.1815316,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
    },
    "visited": false
   },
@@ -24715,6 +24682,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "PWQ",
+   "price": 3346.0,
+   "depart": "2026-11-21",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5950,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-16T16:38:29",
+   "source": "aviasales-latest",
+   "id": "KUL-PWQ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2591.0,
+   "ratio": 1.291,
+   "per_km": 0.5624,
+   "dest_name": "Pavlodar",
+   "dest_name_zh": "Pavlodar",
+   "country": "KZ",
+   "lat": 52.2873032,
+   "lon": 76.9674023,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
    "visited": false
   }
