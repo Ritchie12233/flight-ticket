@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T06:13:52.349427+08:00",
+ "updated_at": "2026-11-20T06:28:23.324311+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -3592,39 +3592,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "BTU",
-   "price": 969.0,
-   "depart": "2026-11-20",
-   "return": "2026-11-22",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 1259,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-19T17:25:28",
-   "source": "aviasales-latest",
-   "id": "KUL-BTU|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3848,
-   "dest_name": "Bintulu",
-   "dest_name_zh": "宾图卢",
-   "country": "MY",
-   "lat": 3.171772,
-   "lon": 113.04346,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "HDY",
    "price": 977.0,
    "depart": "2027-03-01",
@@ -3724,6 +3691,40 @@
     "note": "免签 14 天"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BTU",
+   "price": 1106.0,
+   "depart": "2026-12-21",
+   "return": "2026-12-28",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 1261,
+   "airline": "AirAsia (AK)",
+   "flight_number": 5246,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Trip.com",
+   "id": "KUL-BTU|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4386,
+   "dest_name": "Bintulu",
+   "dest_name_zh": "宾图卢",
+   "country": "MY",
+   "lat": 3.171772,
+   "lon": 113.04346,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
