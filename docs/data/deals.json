@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-19T16:04:33.074844+08:00",
+ "updated_at": "2026-11-19T16:18:56.453588+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1181,
-  "routes": 819,
+  "fares_scanned": 1183,
+  "routes": 820,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1181
+   "count": 1183
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -11488,6 +11488,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "SAB",
+   "price": 31848.0,
+   "depart": "2026-12-15",
+   "return": "2026-12-17",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 17172,
+   "airline": "KLM (KL)",
+   "flight_number": 810,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "City.Travel",
+   "id": "KUL-SAB|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.9273,
+   "dest_name": "Saba",
+   "dest_name_zh": "沙巴",
+   "country": "BQ",
+   "lat": 17.65,
+   "lon": -63.216667,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "KHV",
    "price": 41486.0,
    "depart": "2026-12-13",
@@ -11987,7 +12021,7 @@
   {
    "origin": "KUL",
    "dest": "MES",
-   "price": 340.0,
+   "price": 339.0,
    "depart": "2027-07-12",
    "return": null,
    "one_way": true,
@@ -11996,15 +12030,15 @@
    "distance": 329,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-14T19:26:41",
+   "found_at": "2026-11-19T07:59:54",
    "source": "aviasales-latest",
    "id": "KUL-MES|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 313.0,
-   "ratio": 1.086,
-   "per_km": 1.0334,
+   "ratio": 1.083,
+   "per_km": 1.0304,
    "dest_name": "Medan",
    "dest_name_zh": "棉兰",
    "country": "ID",
