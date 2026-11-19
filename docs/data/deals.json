@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-19T10:33:06.787990+08:00",
+ "updated_at": "2026-11-19T10:47:55.185046+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1191,
-  "routes": 822,
+  "fares_scanned": 1192,
+  "routes": 823,
   "bug": 0,
   "great": 0,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1191
+   "count": 1192
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": false,
-   "count": 0
+   "ok": true,
+   "count": 1
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -16743,7 +16743,7 @@
    "origin": "KUL",
    "dest": "LON",
    "price": 1447.0,
-   "depart": "2026-11-26",
+   "depart": "2027-01-28",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -16751,7 +16751,7 @@
    "distance": 10603,
    "airline": null,
    "gate": "Oman Air",
-   "found_at": "2026-11-16T09:31:50",
+   "found_at": "2026-11-19T02:21:46",
    "source": "aviasales-latest",
    "id": "KUL-LON|OW|0",
    "type": "fare",
@@ -23737,6 +23737,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "CWL",
+   "price": 2908.0,
+   "depart": "2027-01-28",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 10800,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-19T02:20:15",
+   "source": "aviasales-latest",
+   "id": "KUL-CWL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2693,
+   "dest_name": "Cardiff",
+   "dest_name_zh": "加的夫",
+   "country": "GB",
+   "lat": 51.481581,
+   "lon": -3.17909,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ZTH",
    "price": 2926.0,
    "depart": "2026-12-14",
@@ -24790,39 +24823,6 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "CPT",
-   "price": 3342.0,
-   "depart": "2027-03-01",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 9544,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-12T02:33:56",
-   "source": "aviasales-latest",
-   "id": "KUL-CPT|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3140.0,
-   "ratio": 1.064,
-   "per_km": 0.3502,
-   "dest_name": "Cape Town",
-   "dest_name_zh": "开普敦",
-   "country": "ZA",
-   "lat": -33.9248685,
-   "lon": 18.4240553,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": true
   }
  ],
  "trend": {},
