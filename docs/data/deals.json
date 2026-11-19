@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-20T02:38:15.333758+08:00",
+ "updated_at": "2026-11-20T02:52:37.725500+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1170,
-  "routes": 818,
+  "fares_scanned": 1174,
+  "routes": 821,
   "bug": 0,
-  "great": 0,
+  "great": 1,
   "target": 0
  },
  "channels": [
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1170
+   "count": 1174
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -44,7 +44,43 @@
    "count": 50
   }
  ],
- "hot": [],
+ "hot": [
+  {
+   "origin": "KUL",
+   "dest": "OKA",
+   "price": 2991.0,
+   "depart": "2026-11-23",
+   "return": "2026-11-30",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 3801,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-19T18:51:27",
+   "source": "aviasales-latest",
+   "id": "KUL-OKA|RT|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 39%"
+   ],
+   "baseline": 4870.0,
+   "ratio": 0.614,
+   "per_km": 0.3934,
+   "dest_name": "Okinawa",
+   "dest_name_zh": "冲绳",
+   "country": "JP",
+   "lat": 26.1201911,
+   "lon": 127.7025012,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  }
+ ],
  "hot_business": [],
  "business_routes": [
   {
@@ -2383,8 +2419,8 @@
    "current_ow": {
     "origin": "KUL",
     "dest": "YVR",
-    "price": 2494.0,
-    "depart": "2026-11-20",
+    "price": 3041.0,
+    "depart": "2027-05-01",
     "return": null,
     "one_way": true,
     "trip_class": 0,
@@ -2392,15 +2428,15 @@
     "distance": 12811,
     "airline": null,
     "gate": "Trip.com",
-    "found_at": "2026-11-15T15:28:25",
+    "found_at": "2026-11-15T15:12:48",
     "source": "aviasales-latest",
     "id": "KUL-YVR|OW|0",
     "type": "fare",
     "level": "normal",
     "reasons": [],
     "baseline": 2492.0,
-    "ratio": 1.001,
-    "per_km": 0.1947,
+    "ratio": 1.221,
+    "per_km": 0.2374,
     "dest_name": "Vancouver",
     "dest_name_zh": "温哥华",
     "country": "CA",
@@ -6439,6 +6475,41 @@
    "country": "AU",
    "lat": -37.8131869,
    "lon": 144.9629796,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "OKA",
+   "price": 2991.0,
+   "depart": "2026-11-23",
+   "return": "2026-11-30",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 3801,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-19T18:51:27",
+   "source": "aviasales-latest",
+   "id": "KUL-OKA|RT|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 39%"
+   ],
+   "baseline": 4870.0,
+   "ratio": 0.614,
+   "per_km": 0.3934,
+   "dest_name": "Okinawa",
+   "dest_name_zh": "冲绳",
+   "country": "JP",
+   "lat": 26.1201911,
+   "lon": 127.7025012,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -12048,7 +12119,7 @@
    "origin": "KUL",
    "dest": "HDY",
    "price": 420.0,
-   "depart": "2026-11-29",
+   "depart": "2026-11-25",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -12056,7 +12127,7 @@
    "distance": 487,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-19T18:07:43",
+   "found_at": "2026-11-15T11:11:40",
    "source": "aviasales-latest",
    "id": "KUL-HDY|OW|0",
    "type": "fare",
@@ -16567,6 +16638,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "YIC",
+   "price": 1465.0,
+   "depart": "2026-11-29",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3089,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-19T18:46:09",
+   "source": "aviasales-latest",
+   "id": "KUL-YIC|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4743,
+   "dest_name": "Yichun",
+   "dest_name_zh": "宜春市",
+   "country": "CN",
+   "lat": 27.816,
+   "lon": 114.417,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "ENI",
    "price": 1480.0,
    "depart": "2027-03-05",
@@ -18788,7 +18892,7 @@
    "distance": 8183,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-19T17:31:45",
+   "found_at": "2026-11-19T18:30:52",
    "source": "aviasales-latest",
    "id": "KUL-MOW|OW|0",
    "type": "fare",
@@ -20956,39 +21060,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "AER",
-   "price": 2282.0,
-   "depart": "2027-01-18",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 7550,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-15T12:11:09",
-   "source": "aviasales-latest",
-   "id": "KUL-AER|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2264.0,
-   "ratio": 1.008,
-   "per_km": 0.3023,
-   "dest_name": "Adler/Sochi",
-   "dest_name_zh": "索契",
-   "country": "RU",
-   "lat": 43.4343234,
-   "lon": 39.9339462,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "BAK",
    "price": 2285.0,
    "depart": "2027-02-17",
@@ -21121,6 +21192,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "LED",
+   "price": 2318.0,
+   "depart": "2026-11-27",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 8712,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-19T18:38:55",
+   "source": "aviasales-latest",
+   "id": "KUL-LED|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2258.0,
+   "ratio": 1.027,
+   "per_km": 0.2661,
+   "dest_name": "Saint Petersburg",
+   "dest_name_zh": "圣彼得堡",
+   "country": "RU",
+   "lat": 59.9310584,
+   "lon": 30.3609096,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "MSQ",
    "price": 2320.0,
    "depart": "2026-12-07",
@@ -21149,6 +21253,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "AER",
+   "price": 2331.0,
+   "depart": "2027-01-20",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 7550,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-19T12:24:33",
+   "source": "aviasales-latest",
+   "id": "KUL-AER|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2264.0,
+   "ratio": 1.03,
+   "per_km": 0.3087,
+   "dest_name": "Adler/Sochi",
+   "dest_name_zh": "索契",
+   "country": "RU",
+   "lat": 43.4343234,
+   "lon": 39.9339462,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
@@ -21380,39 +21517,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 / 电子签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "LED",
-   "price": 2376.0,
-   "depart": "2026-11-27",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 8712,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-19T14:59:19",
-   "source": "aviasales-latest",
-   "id": "KUL-LED|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2258.0,
-   "ratio": 1.052,
-   "per_km": 0.2727,
-   "dest_name": "Saint Petersburg",
-   "dest_name_zh": "圣彼得堡",
-   "country": "RU",
-   "lat": 59.9310584,
-   "lon": 30.3609096,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
@@ -22069,39 +22173,6 @@
    "country": "NO",
    "lat": 59.9138688,
    "lon": 10.7522454,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "YVR",
-   "price": 2494.0,
-   "depart": "2026-11-20",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 12811,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-15T15:28:25",
-   "source": "aviasales-latest",
-   "id": "KUL-YVR|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2492.0,
-   "ratio": 1.001,
-   "per_km": 0.1947,
-   "dest_name": "Vancouver",
-   "dest_name_zh": "温哥华",
-   "country": "CA",
-   "lat": 49.2827291,
-   "lon": -123.1207375,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -23002,6 +23073,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "SZG",
+   "price": 2732.0,
+   "depart": "2026-11-29",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 9683,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-19T18:42:17",
+   "source": "aviasales-latest",
+   "id": "KUL-SZG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2821,
+   "dest_name": "Salzburg",
+   "dest_name_zh": "萨尔斯堡",
+   "country": "AT",
+   "lat": 47.80949,
+   "lon": 13.05501,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ULY",
    "price": 2775.0,
    "depart": "2026-11-24",
@@ -23761,6 +23865,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "YVR",
+   "price": 3041.0,
+   "depart": "2027-05-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 12811,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-15T15:12:48",
+   "source": "aviasales-latest",
+   "id": "KUL-YVR|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2492.0,
+   "ratio": 1.221,
+   "per_km": 0.2374,
+   "dest_name": "Vancouver",
+   "dest_name_zh": "温哥华",
+   "country": "CA",
+   "lat": 49.2827291,
+   "lon": -123.1207375,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "SGC",
    "price": 3061.0,
    "depart": "2027-03-18",
@@ -24352,75 +24489,40 @@
     "note": "免签 90 天"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "ORN",
-   "price": 3311.0,
-   "depart": "2027-01-01",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 10934,
-   "airline": null,
-   "gate": "Mytrip.com",
-   "found_at": "2026-11-18T17:07:13",
-   "source": "aviasales-latest",
-   "id": "KUL-ORN|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3028,
-   "dest_name": "Oran",
-   "dest_name_zh": "奥兰",
-   "country": "DZ",
-   "lat": 35.6969444,
-   "lon": -0.6330556,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PWQ",
-   "price": 3341.0,
-   "depart": "2026-11-21",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 5950,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-16T16:38:29",
-   "source": "aviasales-latest",
-   "id": "KUL-PWQ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2591.0,
-   "ratio": 1.289,
-   "per_km": 0.5615,
-   "dest_name": "Pavlodar",
-   "dest_name_zh": "Pavlodar",
-   "country": "KZ",
-   "lat": 52.2873032,
-   "lon": 76.9674023,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
   }
  ],
- "trend": {},
+ "trend": {
+  "KUL-OKA|RT|0": [
+   [
+    "2026-11-11",
+    4898.0
+   ],
+   [
+    "2026-11-12",
+    4872.0
+   ],
+   [
+    "2026-11-13",
+    4847.0
+   ],
+   [
+    "2026-11-14",
+    4847.0
+   ],
+   [
+    "2026-11-15",
+    4897.0
+   ],
+   [
+    "2026-11-16",
+    4867.0
+   ],
+   [
+    "2026-11-20",
+    2991.0
+   ]
+  ]
+ },
  "news": [
   {
    "id": "rss:6c6c5f93e30ffaa0",
