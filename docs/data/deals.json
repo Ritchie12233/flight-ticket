@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-20T11:02:12.715316+08:00",
+ "updated_at": "2026-11-20T11:16:32.600846+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1177,
+  "fares_scanned": 1176,
   "routes": 824,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1177
+   "count": 1176
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -284,7 +284,7 @@
   {
    "origin": "KUL",
    "dest": "SGN",
-   "price": 3897.0,
+   "price": 3898.0,
    "depart": "2027-02-02",
    "return": "2027-02-09",
    "one_way": false,
@@ -301,7 +301,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 1.8575,
+   "per_km": 1.858,
    "dest_name": "Ho Chi Minh City",
    "dest_name_zh": "胡志明市",
    "country": "VN",
