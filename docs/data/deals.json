@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-20T17:02:58.467062+08:00",
+ "updated_at": "2026-11-20T17:17:23.523680+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
   "fares_scanned": 1181,
-  "routes": 829,
+  "routes": 830,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -8482,6 +8482,39 @@
    "country": "RU",
    "lat": 59.9310584,
    "lon": 30.3609096,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "KJA",
+   "price": 4843.0,
+   "depart": "2026-11-25",
+   "return": "2026-12-07",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 5955,
+   "airline": "Sichuan Airlines (3U)",
+   "flight_number": 8196,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-KJA|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 5550.0,
+   "ratio": 0.873,
+   "per_km": 0.4066,
+   "dest_name": "Krasnoyarsk",
+   "dest_name_zh": "克拉斯诺尔斯克",
+   "country": "RU",
+   "lat": 56.18113,
+   "lon": 92.48286,
    "visa": {
     "status": "free",
     "label": "免签",
