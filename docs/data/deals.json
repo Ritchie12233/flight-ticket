@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-20T10:04:50.995527+08:00",
+ "updated_at": "2026-11-20T10:19:10.358868+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1175,
-  "routes": 823,
+  "fares_scanned": 1176,
+  "routes": 824,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1175
+   "count": 1176
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -12981,6 +12981,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KWL",
+   "price": 635.0,
+   "depart": "2027-01-19",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2653,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-20T01:50:16",
+   "source": "aviasales-latest",
+   "id": "KUL-KWL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 667.0,
+   "ratio": 0.952,
+   "per_km": 0.2394,
+   "dest_name": "Guilin",
+   "dest_name_zh": "桂林",
+   "country": "CN",
+   "lat": 25.234479,
+   "lon": 110.179953,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "LOP",
    "price": 638.0,
    "depart": "2027-01-08",
@@ -13110,39 +13143,6 @@
     "note": "落地签 30 天"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "KWL",
-   "price": 665.0,
-   "depart": "2027-01-19",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2653,
-   "airline": null,
-   "gate": "Tickets",
-   "found_at": "2026-11-14T19:25:10",
-   "source": "aviasales-latest",
-   "id": "KUL-KWL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 667.0,
-   "ratio": 0.997,
-   "per_km": 0.2507,
-   "dest_name": "Guilin",
-   "dest_name_zh": "桂林",
-   "country": "CN",
-   "lat": 25.234479,
-   "lon": 110.179953,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
@@ -22254,6 +22254,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "FEG",
+   "price": 2511.0,
+   "depart": "2026-12-07",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5151,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-20T01:58:27",
+   "source": "aviasales-latest",
+   "id": "KUL-FEG|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4875,
+   "dest_name": "Fergana",
+   "dest_name_zh": "费尔干纳",
+   "country": "UZ",
+   "lat": 40.3733802,
+   "lon": 71.7978333,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "URA",
    "price": 2512.0,
    "depart": "2026-12-11",
@@ -24427,39 +24460,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "NYC",
-   "price": 3342.0,
-   "depart": "2027-02-14",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 15167,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-17T08:25:44",
-   "source": "aviasales-latest",
-   "id": "KUL-NYC|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3319.0,
-   "ratio": 1.007,
-   "per_km": 0.2203,
-   "dest_name": "New York",
-   "dest_name_zh": "纽约",
-   "country": "US",
-   "lat": 40.7143528,
-   "lon": -74.0059731,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
