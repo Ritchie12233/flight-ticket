@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-20T11:45:29.022906+08:00",
+ "updated_at": "2026-11-20T12:00:39.411988+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1170,
-  "routes": 821,
+  "fares_scanned": 1171,
+  "routes": 822,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,16 +16,16 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1170
+   "count": 1171
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
    "name": "Secret Flying · 错误票价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -10697,6 +10697,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MEX",
+   "price": 9182.0,
+   "depart": "2027-03-06",
+   "return": "2027-03-10",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 16628,
+   "airline": "STARLUX Airlines (JX)",
+   "flight_number": 726,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-MEX|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 10192.0,
+   "ratio": 0.901,
+   "per_km": 0.2761,
+   "dest_name": "Mexico City",
+   "dest_name_zh": "墨西哥城",
+   "country": "MX",
+   "lat": 19.4270499,
+   "lon": -99.1275711,
+   "visa": {
+    "status": "conditional",
+    "label": "有条件免签",
+    "note": "持有效美/加/日/英/申根签证可免签"
    },
    "visited": false
   },
