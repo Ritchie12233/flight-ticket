@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-20T15:36:41.249843+08:00",
+ "updated_at": "2026-11-20T15:51:17.917150+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1176,
-  "routes": 825,
+  "fares_scanned": 1177,
+  "routes": 826,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1176
+   "count": 1177
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -35,7 +35,7 @@
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -22320,6 +22320,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KTW",
+   "price": 2516.0,
+   "depart": "2026-12-21",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 9249,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-20T07:35:43",
+   "source": "aviasales-latest",
+   "id": "KUL-KTW|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.272,
+   "dest_name": "Katowice",
+   "dest_name_zh": "卡托维兹",
+   "country": "PL",
+   "lat": 50.2648919,
+   "lon": 19.0237815,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "LYP",
    "price": 2517.0,
    "depart": "2026-11-25",
@@ -24462,39 +24495,6 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "CPT",
-   "price": 3418.0,
-   "depart": "2026-11-24",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 9544,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-14T08:10:10",
-   "source": "aviasales-latest",
-   "id": "KUL-CPT|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3141.0,
-   "ratio": 1.088,
-   "per_km": 0.3581,
-   "dest_name": "Cape Town",
-   "dest_name_zh": "开普敦",
-   "country": "ZA",
-   "lat": -33.9248685,
-   "lon": 18.4240553,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": true
   }
  ],
  "trend": {
