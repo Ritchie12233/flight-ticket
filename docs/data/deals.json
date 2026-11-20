@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-20T14:24:29.042056+08:00",
+ "updated_at": "2026-11-20T14:38:52.107285+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1174,
+  "fares_scanned": 1176,
   "routes": 824,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1174
+   "count": 1176
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -19218,39 +19218,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "WAW",
-   "price": 1960.0,
-   "depart": "2027-02-24",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 9133,
-   "airline": null,
-   "gate": "Wingie",
-   "found_at": "2026-11-15T16:15:58",
-   "source": "aviasales-latest",
-   "id": "KUL-WAW|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1878.0,
-   "ratio": 1.044,
-   "per_km": 0.2146,
-   "dest_name": "Warsaw",
-   "dest_name_zh": "华沙",
-   "country": "PL",
-   "lat": 52.2296756,
-   "lon": 21.0122287,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "ZAG",
    "price": 1967.0,
    "depart": "2027-03-30",
@@ -19312,6 +19279,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "WAW",
+   "price": 1987.0,
+   "depart": "2026-12-15",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9133,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-18T02:32:38",
+   "source": "aviasales-latest",
+   "id": "KUL-WAW|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1878.0,
+   "ratio": 1.058,
+   "per_km": 0.2176,
+   "dest_name": "Warsaw",
+   "dest_name_zh": "华沙",
+   "country": "PL",
+   "lat": 52.2296756,
+   "lon": 21.0122287,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
