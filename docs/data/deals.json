@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-20T14:09:59.979367+08:00",
+ "updated_at": "2026-11-20T14:24:29.042056+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1173,
-  "routes": 823,
+  "fares_scanned": 1174,
+  "routes": 824,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1173
+   "count": 1174
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -9778,6 +9778,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "DEN",
+   "price": 6769.0,
+   "depart": "2027-04-15",
+   "return": "2027-04-25",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 14566,
+   "airline": null,
+   "gate": "Aviakassa",
+   "found_at": "2026-11-20T06:18:10",
+   "source": "aviasales-latest",
+   "id": "KUL-DEN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2324,
+   "dest_name": "Denver",
+   "dest_name_zh": "丹佛",
+   "country": "US",
+   "lat": 39.7391536,
+   "lon": -104.9847034,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ONT",
    "price": 6860.0,
    "depart": "2026-12-18",
@@ -18261,39 +18294,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "BSZ",
-   "price": 1851.0,
-   "depart": "2026-11-26",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5227,
-   "airline": null,
-   "gate": "Wingie",
-   "found_at": "2026-11-19T23:39:05",
-   "source": "aviasales-latest",
-   "id": "KUL-BSZ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1856.0,
-   "ratio": 0.997,
-   "per_km": 0.3541,
-   "dest_name": "Bishkek",
-   "dest_name_zh": "比什凯克",
-   "country": "KG",
-   "lat": 42.8746212,
-   "lon": 74.5697617,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "FUO",
    "price": 1855.0,
    "depart": "2026-11-21",
@@ -18357,6 +18357,39 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "BSZ",
+   "price": 1859.0,
+   "depart": "2027-02-21",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5227,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-15T19:11:20",
+   "source": "aviasales-latest",
+   "id": "KUL-BSZ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1856.0,
+   "ratio": 1.002,
+   "per_km": 0.3557,
+   "dest_name": "Bishkek",
+   "dest_name_zh": "比什凯克",
+   "country": "KG",
+   "lat": 42.8746212,
+   "lon": 74.5697617,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
