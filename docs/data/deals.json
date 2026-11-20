@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T05:02:49.873063+08:00",
+ "updated_at": "2026-11-21T05:17:08.771766+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1208,
-  "routes": 837,
+  "fares_scanned": 1209,
+  "routes": 838,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1208
+   "count": 1209
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -6753,6 +6753,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "DIL",
+   "price": 3034.0,
+   "depart": "2026-11-23",
+   "return": "2026-11-25",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2924,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-20T20:55:31",
+   "source": "aviasales-latest",
+   "id": "KUL-DIL|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3225.0,
+   "ratio": 0.941,
+   "per_km": 0.5188,
+   "dest_name": "Dili",
+   "dest_name_zh": "Dili",
+   "country": "TL",
+   "lat": -8.5568557,
+   "lon": 125.5603143,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "IST",
    "price": 3043.0,
    "depart": "2026-12-30",
@@ -6781,40 +6814,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签（180 天内累计 90 天，2026-01 起）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DIL",
-   "price": 3050.0,
-   "depart": "2026-11-23",
-   "return": "2026-11-25",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2949,
-   "airline": "Batik Air Malaysia (OD)",
-   "flight_number": 372,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Trip.com",
-   "id": "KUL-DIL|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3225.0,
-   "ratio": 0.946,
-   "per_km": 0.5171,
-   "dest_name": "Dili",
-   "dest_name_zh": "Dili",
-   "country": "TL",
-   "lat": -8.5568557,
-   "lon": 125.5603143,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签"
    },
    "visited": false
   },
