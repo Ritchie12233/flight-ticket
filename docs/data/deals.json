@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-21T04:34:08.805442+08:00",
+ "updated_at": "2026-11-21T04:48:28.900113+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1207,
+  "fares_scanned": 1208,
   "routes": 837,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1207
+   "count": 1208
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -11971,7 +11971,7 @@
    "origin": "KUL",
    "dest": "KBV",
    "price": 332.0,
-   "depart": "2027-02-27",
+   "depart": "2027-02-28",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -11979,7 +11979,7 @@
    "distance": 666,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-15T08:27:43",
+   "found_at": "2026-11-14T22:16:30",
    "source": "aviasales-latest",
    "id": "KUL-KBV|OW|0",
    "type": "fare",
