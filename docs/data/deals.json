@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-20T16:34:15.337166+08:00",
+ "updated_at": "2026-11-20T16:48:37.153897+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1180,
+  "fares_scanned": 1181,
   "routes": 829,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1180
+   "count": 1181
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -4869,7 +4869,7 @@
    "distance": 3749,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-20T05:12:30",
+   "found_at": "2026-11-20T08:22:47",
    "source": "aviasales-latest",
    "id": "KUL-CGO|RT|0",
    "type": "fare",
