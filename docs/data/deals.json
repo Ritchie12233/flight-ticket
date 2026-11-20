@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-20T15:22:04.836396+08:00",
+ "updated_at": "2026-11-20T15:36:41.249843+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1175,
-  "routes": 824,
+  "fares_scanned": 1176,
+  "routes": 825,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1175
+   "count": 1176
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
-   "count": 1
+   "ok": false,
+   "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -21231,39 +21231,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "MSQ",
-   "price": 2311.0,
-   "depart": "2026-12-07",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 8696,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-19T15:36:27",
-   "source": "aviasales-latest",
-   "id": "KUL-MSQ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2359.0,
-   "ratio": 0.98,
-   "per_km": 0.2658,
-   "dest_name": "Minsk",
-   "dest_name_zh": "明斯克",
-   "country": "BY",
-   "lat": 53.9,
-   "lon": 27.5666667,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "AER",
    "price": 2322.0,
    "depart": "2027-01-20",
@@ -21849,6 +21816,39 @@
    "country": "RS",
    "lat": 43.3209022,
    "lon": 21.8957589,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MSQ",
+   "price": 2431.0,
+   "depart": "2026-12-03",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 8696,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-17T07:49:16",
+   "source": "aviasales-latest",
+   "id": "KUL-MSQ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2359.0,
+   "ratio": 1.031,
+   "per_km": 0.2796,
+   "dest_name": "Minsk",
+   "dest_name_zh": "明斯克",
+   "country": "BY",
+   "lat": 53.9,
+   "lon": 27.5666667,
    "visa": {
     "status": "free",
     "label": "免签",
