@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T02:38:36.382666+08:00",
+ "updated_at": "2026-11-21T02:53:01.712359+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1206,
-  "routes": 836,
+  "fares_scanned": 1207,
+  "routes": 837,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1206
+   "count": 1207
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -18173,6 +18173,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "FUK",
+   "price": 1722.0,
+   "depart": "2026-11-24",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4544,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-20T18:31:34",
+   "source": "aviasales-latest",
+   "id": "KUL-FUK|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1473.0,
+   "ratio": 1.169,
+   "per_km": 0.379,
+   "dest_name": "Fukuoka",
+   "dest_name_zh": "福冈",
+   "country": "JP",
+   "lat": 33.5901838,
+   "lon": 130.4016888,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "MAD",
    "price": 1728.0,
    "depart": "2026-12-01",
@@ -18333,39 +18366,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "FUK",
-   "price": 1794.0,
-   "depart": "2026-11-27",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 4544,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-17T12:32:34",
-   "source": "aviasales-latest",
-   "id": "KUL-FUK|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1473.0,
-   "ratio": 1.218,
-   "per_km": 0.3948,
-   "dest_name": "Fukuoka",
-   "dest_name_zh": "福冈",
-   "country": "JP",
-   "lat": 33.5901838,
-   "lon": 130.4016888,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
