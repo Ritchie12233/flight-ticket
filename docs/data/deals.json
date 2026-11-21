@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T20:08:39.021667+08:00",
+ "updated_at": "2026-11-21T20:22:58.503064+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -14738,6 +14738,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "SEL",
+   "price": 946.0,
+   "depart": "2027-01-19",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4610,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-21T11:53:39",
+   "source": "aviasales-latest",
+   "id": "KUL-SEL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 994.0,
+   "ratio": 0.952,
+   "per_km": 0.2052,
+   "dest_name": "Seoul",
+   "dest_name_zh": "首尔",
+   "country": "KR",
+   "lat": 37.566535,
+   "lon": 126.9779692,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "LMN",
    "price": 948.0,
    "depart": "2026-12-12",
@@ -15098,39 +15131,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "SEL",
-   "price": 995.0,
-   "depart": "2027-01-12",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4610,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-20T00:19:10",
-   "source": "aviasales-latest",
-   "id": "KUL-SEL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 994.0,
-   "ratio": 1.002,
-   "per_km": 0.2158,
-   "dest_name": "Seoul",
-   "dest_name_zh": "首尔",
-   "country": "KR",
-   "lat": 37.566535,
-   "lon": 126.9779692,
-   "visa": {
-    "status": "free_partial",
-    "label": "部分免签",
-    "note": "仅济州岛免签 30 天，其他地区需签证"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
