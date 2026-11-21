@@ -12402,6 +12402,9 @@
   },
   "KUL-GES|OW|0": {
    "2026-11-22": 1214.0
+  },
+  "KUL-NAP|OW|0": {
+   "2026-11-22": 1745.0
   }
  },
  "alerted": {
@@ -12411,6 +12414,17 @@
   }
  },
  "news": [
+  {
+   "id": "rss:b415363a6f33c7b4",
+   "type": "news",
+   "level": "news",
+   "title": "Fantastic fares to Malaysia! 😎 🌴 Cheap last-minute full-service direct flights from Warsaw to Penang for €476",
+   "summary": "Fancy swapping European autumn for street-food nights, tropical heat and one of Southeast Asia’s most atmospheric islands? LOT is offering direct return flights from Warsaw to Penang from just €476 — a rare chance to reach this Malaysian island without an extra connection.",
+   "link": "https://www.fly4free.com/flight-deals/europe/flights-from-warsaw-to-penang-e476/",
+   "source": "Fly4free 全球特价",
+   "published": "2026-11-21T19:00:50+00:00",
+   "is_error_fare": false
+  },
   {
    "id": "rss:6c6c5f93e30ffaa0",
    "type": "news",
