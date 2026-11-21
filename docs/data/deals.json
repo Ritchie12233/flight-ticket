@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-21T19:54:12.471224+08:00",
+ "updated_at": "2026-11-21T20:08:39.021667+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1206,
+  "fares_scanned": 1205,
   "routes": 830,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1206
+   "count": 1205
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -16190,6 +16190,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "CRK",
+   "price": 1206.0,
+   "depart": "2027-02-09",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 2484,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-21T11:45:20",
+   "source": "aviasales-latest",
+   "id": "KUL-CRK|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 670.0,
+   "ratio": 1.8,
+   "per_km": 0.4855,
+   "dest_name": "City of Angeles",
+   "dest_name_zh": "City of Angeles",
+   "country": "PH",
+   "lat": 15.147181,
+   "lon": 120.584733,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "SWA",
    "price": 1208.0,
    "depart": "2026-11-23",
@@ -16709,39 +16742,6 @@
    "country": "PH",
    "lat": 9.858889,
    "lon": 126.013885,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 14 天（试行，限指定机场入境）"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "CRK",
-   "price": 1354.0,
-   "depart": "2027-02-09",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 2484,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-20T14:15:44",
-   "source": "aviasales-latest",
-   "id": "KUL-CRK|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 670.0,
-   "ratio": 2.021,
-   "per_km": 0.5451,
-   "dest_name": "City of Angeles",
-   "dest_name_zh": "City of Angeles",
-   "country": "PH",
-   "lat": 15.147181,
-   "lon": 120.584733,
    "visa": {
     "status": "free",
     "label": "免签",
