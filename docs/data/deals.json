@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T09:50:38.058768+08:00",
+ "updated_at": "2026-11-21T10:04:57.463882+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -23086,6 +23086,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "OSL",
+   "price": 2629.0,
+   "depart": "2026-12-18",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9774,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-21T01:41:58",
+   "source": "aviasales-latest",
+   "id": "KUL-OSL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2024.0,
+   "ratio": 1.299,
+   "per_km": 0.269,
+   "dest_name": "Oslo",
+   "dest_name_zh": "奥斯陆",
+   "country": "NO",
+   "lat": 59.9138688,
+   "lon": 10.7522454,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "CTA",
    "price": 2629.0,
    "depart": "2026-12-14",
@@ -24698,39 +24731,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "RAK",
-   "price": 3313.0,
-   "depart": "2027-05-22",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 11696,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-15T19:20:07",
-   "source": "aviasales-latest",
-   "id": "KUL-RAK|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3293.0,
-   "ratio": 1.006,
-   "per_km": 0.2833,
-   "dest_name": "Marrakech",
-   "dest_name_zh": "马拉喀什",
-   "country": "MA",
-   "lat": 31.6294723,
-   "lon": -7.9810845,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 90 天"
    },
    "visited": false
   }
