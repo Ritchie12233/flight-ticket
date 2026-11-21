@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-22T03:35:05.949842+08:00",
+ "updated_at": "2026-11-22T03:49:27.924807+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
   "fares_scanned": 1207,
   "routes": 833,
   "bug": 0,
-  "great": 2,
+  "great": 3,
   "target": 0
  },
  "channels": [
@@ -77,6 +77,41 @@
     "status": "free",
     "label": "免签",
     "note": "免签 90 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TDX",
+   "price": 985.0,
+   "depart": "2027-02-28",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1060,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-21T19:28:25",
+   "source": "aviasales-latest",
+   "id": "KUL-TDX|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 35%"
+   ],
+   "baseline": 1526.0,
+   "ratio": 0.646,
+   "per_km": 0.9292,
+   "dest_name": "Trat",
+   "dest_name_zh": "Trat",
+   "country": "TH",
+   "lat": 12.273953,
+   "lon": 102.31867,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
    },
    "visited": false
   },
@@ -1657,15 +1692,15 @@
     "origin": "KUL",
     "dest": "DPS",
     "price": 891.0,
-    "depart": "2027-02-20",
-    "return": "2027-02-22",
+    "depart": "2027-02-19",
+    "return": "2027-02-28",
     "one_way": false,
     "trip_class": 0,
     "transfers": 0,
     "distance": 1964,
     "airline": null,
     "gate": "Trip.com",
-    "found_at": "2026-11-21T16:00:48",
+    "found_at": "2026-11-21T18:40:49",
     "source": "aviasales-latest",
     "id": "KUL-DPS|RT|0",
     "type": "fare",
@@ -3639,15 +3674,15 @@
    "origin": "KUL",
    "dest": "DPS",
    "price": 891.0,
-   "depart": "2027-02-20",
-   "return": "2027-02-22",
+   "depart": "2027-02-19",
+   "return": "2027-02-28",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
    "distance": 1964,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-21T16:00:48",
+   "found_at": "2026-11-21T18:40:49",
    "source": "aviasales-latest",
    "id": "KUL-DPS|RT|0",
    "type": "fare",
@@ -12177,8 +12212,8 @@
   {
    "origin": "KUL",
    "dest": "BKI",
-   "price": 381.0,
-   "depart": "2027-02-23",
+   "price": 351.0,
+   "depart": "2027-02-26",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -12186,15 +12221,15 @@
    "distance": 1628,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-18T23:23:31",
+   "found_at": "2026-11-21T19:22:25",
    "source": "aviasales-latest",
    "id": "KUL-BKI|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 368.0,
-   "ratio": 1.035,
-   "per_km": 0.234,
+   "ratio": 0.954,
+   "per_km": 0.2156,
    "dest_name": "Kota-Kinabalu",
    "dest_name_zh": "哥打基纳巴卢",
    "country": "MY",
@@ -15080,6 +15115,41 @@
   },
   {
    "origin": "KUL",
+   "dest": "TDX",
+   "price": 985.0,
+   "depart": "2027-02-28",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1060,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-21T19:28:25",
+   "source": "aviasales-latest",
+   "id": "KUL-TDX|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 35%"
+   ],
+   "baseline": 1526.0,
+   "ratio": 0.646,
+   "per_km": 0.9292,
+   "dest_name": "Trat",
+   "dest_name_zh": "Trat",
+   "country": "TH",
+   "lat": 12.273953,
+   "lon": 102.31867,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 60 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BLR",
    "price": 987.0,
    "depart": "2027-01-18",
@@ -15176,39 +15246,6 @@
     "note": "免签 14 天（试行，限指定机场入境）"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "TDX",
-   "price": 1000.0,
-   "depart": "2027-02-28",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 1060,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-21T15:26:49",
-   "source": "aviasales-latest",
-   "id": "KUL-TDX|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1526.0,
-   "ratio": 0.656,
-   "per_km": 0.9434,
-   "dest_name": "Trat",
-   "dest_name_zh": "Trat",
-   "country": "TH",
-   "lat": 12.273953,
-   "lon": 102.31867,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 60 天"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
@@ -24812,6 +24849,44 @@
    [
     "2026-11-22",
     1968.0
+   ]
+  ],
+  "KUL-TDX|OW|0": [
+   [
+    "2026-11-11",
+    1693.0
+   ],
+   [
+    "2026-11-12",
+    1689.0
+   ],
+   [
+    "2026-11-16",
+    1525.0
+   ],
+   [
+    "2026-11-17",
+    1526.0
+   ],
+   [
+    "2026-11-18",
+    1518.0
+   ],
+   [
+    "2026-11-19",
+    1529.0
+   ],
+   [
+    "2026-11-20",
+    1305.0
+   ],
+   [
+    "2026-11-21",
+    1000.0
+   ],
+   [
+    "2026-11-22",
+    985.0
    ]
   ],
   "KUL-OKA|RT|0": [
