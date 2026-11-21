@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-22T06:56:19.738053+08:00",
+ "updated_at": "2026-11-22T07:10:40.814757+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1204,
-  "routes": 832,
+  "fares_scanned": 1205,
+  "routes": 834,
   "bug": 0,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1204
+   "count": 1205
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -4577,7 +4577,7 @@
    "trip_class": 0,
    "transfers": 0,
    "distance": 1020,
-   "airline": "Cambodia Airways (KR)",
+   "airline": null,
    "gate": "Kiwi.com",
    "found_at": "2026-11-14T21:28:19",
    "source": "aviasales-latest",
@@ -24260,6 +24260,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "RAI",
+   "price": 2888.0,
+   "depart": "2027-01-25",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 13669,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-21T22:50:57",
+   "source": "aviasales-latest",
+   "id": "KUL-RAI|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2113,
+   "dest_name": "Praia",
+   "dest_name_zh": "Praia",
+   "country": "CV",
+   "lat": 14.93305,
+   "lon": -23.5133267,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "CWL",
    "price": 2898.0,
    "depart": "2027-01-28",
@@ -24717,39 +24750,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "YEI",
-   "price": 3178.0,
-   "depart": "2026-11-24",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 8300,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-16T04:58:46",
-   "source": "aviasales-latest",
-   "id": "KUL-YEI|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2860.0,
-   "ratio": 1.111,
-   "per_km": 0.3829,
-   "dest_name": "Bursa",
-   "dest_name_zh": "Bursa",
-   "country": "TR",
-   "lat": 40.1885281,
-   "lon": 29.0609636,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签（180 天内累计 90 天，2026-01 起）"
    },
    "visited": false
   }
