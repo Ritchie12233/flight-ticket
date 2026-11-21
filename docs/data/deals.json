@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T22:47:23.433197+08:00",
+ "updated_at": "2026-11-21T23:01:43.198662+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1211,
-  "routes": 833,
+  "fares_scanned": 1213,
+  "routes": 835,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1211
+   "count": 1213
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -7051,6 +7051,39 @@
    "country": "AU",
    "lat": -33.8689009,
    "lon": 151.2070914,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "HYD",
+   "price": 3213.0,
+   "depart": "2026-11-28",
+   "return": "2026-12-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 2986,
+   "airline": "Biman Bangladesh Airlines (BG)",
+   "flight_number": 387,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-HYD|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2676.0,
+   "ratio": 1.201,
+   "per_km": 0.5381,
+   "dest_name": "Hyderabad",
+   "dest_name_zh": "海德拉巴",
+   "country": "IN",
+   "lat": 17.385044,
+   "lon": 78.486671,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14870,7 +14903,7 @@
    "origin": "KUL",
    "dest": "BJS",
    "price": 949.0,
-   "depart": "2027-03-01",
+   "depart": "2027-01-25",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -14878,7 +14911,7 @@
    "distance": 4347,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-16T15:56:12",
+   "found_at": "2026-11-18T13:59:01",
    "source": "aviasales-latest",
    "id": "KUL-BJS|OW|0",
    "type": "fare",
@@ -21470,7 +21503,7 @@
    "origin": "KUL",
    "dest": "KZN",
    "price": 2270.0,
-   "depart": "2026-12-07",
+   "depart": "2027-01-15",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -21478,7 +21511,7 @@
    "distance": 7497,
    "airline": null,
    "gate": "Emirates",
-   "found_at": "2026-11-21T02:45:06",
+   "found_at": "2026-11-21T14:38:05",
    "source": "aviasales-latest",
    "id": "KUL-KZN|OW|0",
    "type": "fare",
