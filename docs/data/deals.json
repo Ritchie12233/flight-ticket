@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T12:00:07.079937+08:00",
+ "updated_at": "2026-11-21T12:14:28.909830+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1199,
-  "routes": 832,
+  "fares_scanned": 1201,
+  "routes": 833,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1199
+   "count": 1201
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -4793,40 +4793,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "UPG",
-   "price": 1661.0,
-   "depart": "2027-02-28",
-   "return": "2027-03-29",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 2176,
-   "airline": "Singapore Airlines (SQ)",
-   "flight_number": 103,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Vayama",
-   "id": "KUL-UPG|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1659.0,
-   "ratio": 1.001,
-   "per_km": 0.3817,
-   "dest_name": "Makassar",
-   "dest_name_zh": "乌戒潘当",
-   "country": "ID",
-   "lat": -5.1476651,
-   "lon": 119.4327314,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "TPE",
    "price": 1669.0,
    "depart": "2026-12-02",
@@ -4890,6 +4856,39 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "UPG",
+   "price": 1745.0,
+   "depart": "2027-02-28",
+   "return": "2027-03-29",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 2163,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-21T03:57:07",
+   "source": "aviasales-latest",
+   "id": "KUL-UPG|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1659.0,
+   "ratio": 1.052,
+   "per_km": 0.4034,
+   "dest_name": "Makassar",
+   "dest_name_zh": "乌戒潘当",
+   "country": "ID",
+   "lat": -5.1476651,
+   "lon": 119.4327314,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -6356,6 +6355,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "VCA",
+   "price": 2653.0,
+   "depart": "2027-02-03",
+   "return": "2027-02-09",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 926,
+   "airline": null,
+   "gate": "Wingie",
+   "found_at": "2026-11-21T03:57:51",
+   "source": "aviasales-latest",
+   "id": "KUL-VCA|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.4325,
+   "dest_name": "Can Tho",
+   "dest_name_zh": "芹苴",
+   "country": "VN",
+   "lat": 10.0451618,
+   "lon": 105.7468535,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅富国岛免签 30 天，其他地区需电子签"
    },
    "visited": false
   },
