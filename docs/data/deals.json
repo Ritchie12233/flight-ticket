@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-22T06:27:21.128354+08:00",
+ "updated_at": "2026-11-22T06:41:49.178326+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1203,
-  "routes": 831,
+  "fares_scanned": 1204,
+  "routes": 832,
   "bug": 0,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1203
+   "count": 1204
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -20244,7 +20244,7 @@
    "distance": 7214,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-21T12:16:37",
+   "found_at": "2026-11-21T22:22:43",
    "source": "aviasales-latest",
    "id": "KUL-NBO|OW|0",
    "type": "fare",
@@ -20654,6 +20654,39 @@
    "country": "CY",
    "lat": 34.9002535,
    "lon": 33.6231723,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MMA",
+   "price": 2068.0,
+   "depart": "2026-12-07",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9650,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-21T22:23:49",
+   "source": "aviasales-latest",
+   "id": "KUL-MMA|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2143,
+   "dest_name": "Malmo",
+   "dest_name_zh": "马尔穆",
+   "country": "SE",
+   "lat": 55.61,
+   "lon": 13.004,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -24719,39 +24752,6 @@
     "note": "免签（180 天内累计 90 天，2026-01 起）"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DUR",
-   "price": 3183.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 8299,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-19T17:33:10",
-   "source": "aviasales-latest",
-   "id": "KUL-DUR|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3835,
-   "dest_name": "Durban",
-   "dest_name_zh": "德班",
-   "country": "ZA",
-   "lat": -29.857876,
-   "lon": 31.027581,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": true
   }
  ],
  "trend": {
