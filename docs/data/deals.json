@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T23:44:47.938232+08:00",
+ "updated_at": "2026-11-21T23:59:07.310214+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1213,
-  "routes": 834,
+  "fares_scanned": 1212,
+  "routes": 833,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1213
+   "count": 1212
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -12635,7 +12635,7 @@
    "distance": 1640,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-20T05:01:54",
+   "found_at": "2026-11-21T15:38:16",
    "source": "aviasales-latest",
    "id": "KUL-DAD|OW|0",
    "type": "fare",
@@ -21141,7 +21141,7 @@
    "origin": "KUL",
    "dest": "BAK",
    "price": 2195.0,
-   "depart": "2027-02-10",
+   "depart": "2027-02-12",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -21149,7 +21149,7 @@
    "distance": 6651,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-21T07:30:57",
+   "found_at": "2026-11-21T07:29:49",
    "source": "aviasales-latest",
    "id": "KUL-BAK|OW|0",
    "type": "fare",
