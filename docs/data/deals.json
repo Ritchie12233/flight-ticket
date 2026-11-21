@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T18:27:48.906641+08:00",
+ "updated_at": "2026-11-21T18:42:22.250870+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1207,
-  "routes": 832,
+  "fares_scanned": 1209,
+  "routes": 833,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1207
+   "count": 1209
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -9621,6 +9621,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "HRG",
+   "price": 5873.0,
+   "depart": "2026-12-30",
+   "return": "2027-01-03",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 7686,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-21T10:24:57",
+   "source": "aviasales-latest",
+   "id": "KUL-HRG|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 5831.0,
+   "ratio": 1.007,
+   "per_km": 0.3821,
+   "dest_name": "Hurghada",
+   "dest_name_zh": "赫尔加达",
+   "country": "EG",
+   "lat": 27.2578957,
+   "lon": 33.8116067,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签"
    },
    "visited": false
   },
