@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-21T17:58:59.745442+08:00",
+ "updated_at": "2026-11-21T18:13:17.474046+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1206,
+  "fares_scanned": 1207,
   "routes": 832,
   "bug": 0,
   "great": 1,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1206
+   "count": 1207
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -1142,16 +1142,16 @@
   {
    "origin": "KUL",
    "dest": "MRU",
-   "price": 26986.0,
-   "depart": "2026-12-25",
-   "return": "2027-01-03",
+   "price": 26146.0,
+   "depart": "2027-02-19",
+   "return": "2027-02-27",
    "one_way": false,
    "trip_class": 1,
    "transfers": 1,
    "distance": 5447,
    "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-17T12:01:52Z",
+   "gate": "OneTwoTrip",
+   "found_at": "2026-11-21T09:55:08Z",
    "source": "aviasales-latest",
    "id": "KUL-MRU|RT|1",
    "type": "fare",
@@ -1159,7 +1159,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 2.4771,
+   "per_km": 2.4,
    "dest_name": "Mauritius",
    "dest_name_zh": "毛里求斯",
    "country": "MU",
