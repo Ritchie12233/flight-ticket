@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T21:06:21.150107+08:00",
+ "updated_at": "2026-11-21T21:20:46.531610+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1205,
-  "routes": 831,
+  "fares_scanned": 1209,
+  "routes": 832,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1205
+   "count": 1209
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -16123,6 +16123,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KWE",
+   "price": 1194.0,
+   "depart": "2026-12-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2700,
+   "airline": null,
+   "gate": "Wowtickets",
+   "found_at": "2026-11-21T12:59:00",
+   "source": "aviasales-latest",
+   "id": "KUL-KWE|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1484.0,
+   "ratio": 0.805,
+   "per_km": 0.4422,
+   "dest_name": "Guiyang",
+   "dest_name_zh": "贵阳",
+   "country": "CN",
+   "lat": 26.647661,
+   "lon": 106.630153,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "AMD",
    "price": 1199.0,
    "depart": "2027-03-13",
@@ -24764,39 +24797,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "RAK",
-   "price": 3313.0,
-   "depart": "2027-05-22",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 11696,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-15T19:20:07",
-   "source": "aviasales-latest",
-   "id": "KUL-RAK|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3293.0,
-   "ratio": 1.006,
-   "per_km": 0.2833,
-   "dest_name": "Marrakech",
-   "dest_name_zh": "马拉喀什",
-   "country": "MA",
-   "lat": 31.6294723,
-   "lon": -7.9810845,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 90 天"
    },
    "visited": false
   }
