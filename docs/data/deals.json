@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T15:35:16.454637+08:00",
+ "updated_at": "2026-11-21T15:49:34.391392+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -20917,7 +20917,7 @@
    "distance": 6651,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-21T07:04:39",
+   "found_at": "2026-11-21T07:30:57",
    "source": "aviasales-latest",
    "id": "KUL-BAK|OW|0",
    "type": "fare",
