@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-22T02:37:21.667142+08:00",
+ "updated_at": "2026-11-22T02:51:49.617104+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
   "fares_scanned": 1212,
   "routes": 835,
   "bug": 0,
-  "great": 1,
+  "great": 2,
   "target": 0
  },
  "channels": [
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
-   "count": 1
+   "ok": false,
+   "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -45,6 +45,41 @@
   }
  ],
  "hot": [
+  {
+   "origin": "KUL",
+   "dest": "RAK",
+   "price": 1968.0,
+   "depart": "2026-12-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 11696,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-21T18:25:00",
+   "source": "aviasales-latest",
+   "id": "KUL-RAK|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 40%"
+   ],
+   "baseline": 3290.0,
+   "ratio": 0.598,
+   "per_km": 0.1683,
+   "dest_name": "Marrakech",
+   "dest_name_zh": "马拉喀什",
+   "country": "MA",
+   "lat": 31.6294723,
+   "lon": -7.9810845,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
+  },
   {
    "origin": "KUL",
    "dest": "OKA",
@@ -1622,15 +1657,15 @@
     "origin": "KUL",
     "dest": "DPS",
     "price": 891.0,
-    "depart": "2027-02-19",
-    "return": "2027-02-28",
+    "depart": "2027-02-20",
+    "return": "2027-02-22",
     "one_way": false,
     "trip_class": 0,
     "transfers": 0,
     "distance": 1964,
     "airline": null,
     "gate": "Trip.com",
-    "found_at": "2026-11-21T11:01:06",
+    "found_at": "2026-11-21T16:00:48",
     "source": "aviasales-latest",
     "id": "KUL-DPS|RT|0",
     "type": "fare",
@@ -3604,15 +3639,15 @@
    "origin": "KUL",
    "dest": "DPS",
    "price": 891.0,
-   "depart": "2027-02-19",
-   "return": "2027-02-28",
+   "depart": "2027-02-20",
+   "return": "2027-02-22",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
    "distance": 1964,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-21T11:01:06",
+   "found_at": "2026-11-21T16:00:48",
    "source": "aviasales-latest",
    "id": "KUL-DPS|RT|0",
    "type": "fare",
@@ -20061,6 +20096,41 @@
   },
   {
    "origin": "KUL",
+   "dest": "RAK",
+   "price": 1968.0,
+   "depart": "2026-12-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 11696,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-21T18:25:00",
+   "source": "aviasales-latest",
+   "id": "KUL-RAK|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 40%"
+   ],
+   "baseline": 3290.0,
+   "ratio": 0.598,
+   "per_km": 0.1683,
+   "dest_name": "Marrakech",
+   "dest_name_zh": "马拉喀什",
+   "country": "MA",
+   "lat": 31.6294723,
+   "lon": -7.9810845,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 90 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ZAG",
    "price": 1974.0,
    "depart": "2027-03-30",
@@ -24810,42 +24880,39 @@
     "note": "免签（180 天内累计 90 天，2026-01 起）"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DUR",
-   "price": 3183.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 8299,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-19T17:33:10",
-   "source": "aviasales-latest",
-   "id": "KUL-DUR|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3835,
-   "dest_name": "Durban",
-   "dest_name_zh": "德班",
-   "country": "ZA",
-   "lat": -29.857876,
-   "lon": 31.027581,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": true
   }
  ],
  "trend": {
+  "KUL-RAK|OW|0": [
+   [
+    "2026-11-16",
+    3293.0
+   ],
+   [
+    "2026-11-17",
+    3295.0
+   ],
+   [
+    "2026-11-18",
+    3279.0
+   ],
+   [
+    "2026-11-19",
+    3301.0
+   ],
+   [
+    "2026-11-20",
+    3287.0
+   ],
+   [
+    "2026-11-21",
+    3288.0
+   ],
+   [
+    "2026-11-22",
+    1968.0
+   ]
+  ],
   "KUL-OKA|RT|0": [
    [
     "2026-11-11",
