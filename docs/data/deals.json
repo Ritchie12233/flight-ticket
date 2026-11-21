@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T09:07:17.944323+08:00",
+ "updated_at": "2026-11-21T09:21:36.616804+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1205,
-  "routes": 836,
+  "fares_scanned": 1203,
+  "routes": 835,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1205
+   "count": 1203
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10935,39 +10935,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "ACC",
-   "price": 8991.0,
-   "depart": "2026-11-25",
-   "return": "2026-12-02",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 11289,
-   "airline": null,
-   "gate": "Wingie",
-   "found_at": "2026-11-14T00:44:04",
-   "source": "aviasales-latest",
-   "id": "KUL-ACC|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 8944.0,
-   "ratio": 1.005,
-   "per_km": 0.3982,
-   "dest_name": "Accra",
-   "dest_name_zh": "阿克拉",
-   "country": "GH",
-   "lat": 5.6037168,
-   "lon": -0.1869644,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "MEX",
    "price": 9170.0,
    "depart": "2027-03-06",
@@ -13087,6 +13054,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "PER",
+   "price": 614.0,
+   "depart": "2026-12-16",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 4140,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-17T23:00:59",
+   "source": "aviasales-latest",
+   "id": "KUL-PER|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 634.0,
+   "ratio": 0.969,
+   "per_km": 0.1483,
+   "dest_name": "Perth",
+   "dest_name_zh": "佩斯",
+   "country": "AU",
+   "lat": -31.9522222,
+   "lon": 115.8588889,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "MKM",
    "price": 617.0,
    "depart": "2027-09-11",
@@ -13214,39 +13214,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "免费 ETA（2026-05 起）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PER",
-   "price": 634.0,
-   "depart": "2026-12-21",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 4140,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-19T03:27:39",
-   "source": "aviasales-latest",
-   "id": "KUL-PER|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 634.0,
-   "ratio": 1.001,
-   "per_km": 0.1531,
-   "dest_name": "Perth",
-   "dest_name_zh": "佩斯",
-   "country": "AU",
-   "lat": -31.9522222,
-   "lon": 115.8588889,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
