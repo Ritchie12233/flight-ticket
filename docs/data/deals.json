@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-21T09:36:11.312683+08:00",
+ "updated_at": "2026-11-21T09:50:38.058768+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1203,
-  "routes": 835,
+  "fares_scanned": 1204,
+  "routes": 836,
   "bug": 0,
   "great": 1,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1203
+   "count": 1204
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
