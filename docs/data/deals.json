@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-22T17:00:01.012685+08:00",
+ "updated_at": "2026-11-22T17:14:37.272732+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1205,
+  "fares_scanned": 1206,
   "routes": 834,
   "bug": 0,
   "great": 3,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1205
+   "count": 1206
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -9677,6 +9677,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "MSQ",
+   "price": 5779.0,
+   "depart": "2027-01-23",
+   "return": "2027-01-30",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 8696,
+   "airline": "Emirates (EK)",
+   "gate": "Kupi.com",
+   "found_at": "2026-11-22T08:51:58",
+   "source": "aviasales-latest",
+   "id": "KUL-MSQ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 5640.0,
+   "ratio": 1.025,
+   "per_km": 0.3323,
+   "dest_name": "Minsk",
+   "dest_name_zh": "明斯克",
+   "country": "BY",
+   "lat": 53.9,
+   "lon": 27.5666667,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BQS",
    "price": 5817.0,
    "depart": "2026-12-14",
@@ -9840,40 +9873,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "MSQ",
-   "price": 6161.0,
-   "depart": "2027-05-01",
-   "return": "2027-05-15",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 8691,
-   "airline": "Turkish Airlines (TK)",
-   "flight_number": 61,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Turna.com",
-   "id": "KUL-MSQ|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 5640.0,
-   "ratio": 1.092,
-   "per_km": 0.3545,
-   "dest_name": "Minsk",
-   "dest_name_zh": "明斯克",
-   "country": "BY",
-   "lat": 53.9,
-   "lon": 27.5666667,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
    },
    "visited": false
   },
