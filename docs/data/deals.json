@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-23T01:37:28.733007+08:00",
+ "updated_at": "2026-11-23T01:51:48.048395+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1190,
-  "routes": 832,
+  "fares_scanned": 1191,
+  "routes": 833,
   "bug": 0,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1190
+   "count": 1191
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -20084,6 +20084,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KKJ",
+   "price": 1988.0,
+   "depart": "2026-12-02",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 4597,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-22T17:27:10",
+   "source": "aviasales-latest",
+   "id": "KUL-KKJ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4325,
+   "dest_name": "Kitakyushu",
+   "dest_name_zh": "北九州",
+   "country": "JP",
+   "lat": 33.8834976,
+   "lon": 130.8751773,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "LYS",
    "price": 1998.0,
    "depart": "2026-12-15",
@@ -21274,7 +21307,7 @@
    "origin": "KUL",
    "dest": "LED",
    "price": 2203.0,
-   "depart": "2026-12-30",
+   "depart": "2026-12-31",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -24534,39 +24567,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "YEI",
-   "price": 3157.0,
-   "depart": "2026-11-24",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 8300,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-16T04:58:46",
-   "source": "aviasales-latest",
-   "id": "KUL-YEI|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3002.0,
-   "ratio": 1.051,
-   "per_km": 0.3804,
-   "dest_name": "Bursa",
-   "dest_name_zh": "Bursa",
-   "country": "TR",
-   "lat": 40.1885281,
-   "lon": 29.0609636,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签（180 天内累计 90 天，2026-01 起）"
    },
    "visited": false
   }
