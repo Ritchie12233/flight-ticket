@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T21:04:24.502923+08:00",
+ "updated_at": "2026-11-22T21:18:49.795532+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -12479,39 +12479,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "IPH",
-   "price": 490.0,
-   "depart": "2026-12-02",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 212,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-22T06:37:49",
-   "source": "aviasales-latest",
-   "id": "KUL-IPH|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 491.0,
-   "ratio": 0.998,
-   "per_km": 2.3113,
-   "dest_name": "Ipoh",
-   "dest_name_zh": "怡保",
-   "country": "MY",
-   "lat": 4.597479,
-   "lon": 101.090106,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "BWN",
    "price": 504.0,
    "depart": "2027-07-29",
@@ -12542,6 +12509,39 @@
     "note": "免签 14 天"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "IPH",
+   "price": 504.0,
+   "depart": "2026-12-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 212,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-21T20:00:29",
+   "source": "aviasales-latest",
+   "id": "KUL-IPH|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 491.0,
+   "ratio": 1.026,
+   "per_km": 2.3774,
+   "dest_name": "Ipoh",
+   "dest_name_zh": "怡保",
+   "country": "MY",
+   "lat": 4.597479,
+   "lon": 101.090106,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
