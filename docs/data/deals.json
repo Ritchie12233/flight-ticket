@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T00:25:38.877856+08:00",
+ "updated_at": "2026-11-23T00:40:02.764855+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -6556,7 +6556,7 @@
    "distance": 6316,
    "airline": null,
    "gate": "Turna.com",
-   "found_at": "2026-11-22T15:30:39",
+   "found_at": "2026-11-22T16:21:25",
    "source": "aviasales-latest",
    "id": "KUL-MEL|RT|0",
    "type": "fare",
