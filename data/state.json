@@ -325,7 +325,7 @@
    "2026-11-19": 897.0,
    "2026-11-20": 881.0,
    "2026-11-21": 867.0,
-   "2026-11-22": 856.0
+   "2026-11-22": 850.0
   },
   "KUL-PNK|RT|0": {
    "2026-11-11": 935.0,
@@ -2261,7 +2261,7 @@
    "2026-11-19": 5424.0,
    "2026-11-20": 5401.0,
    "2026-11-21": 5402.0,
-   "2026-11-22": 5406.0
+   "2026-11-22": 4895.0
   },
   "KUL-BCN|RT|0": {
    "2026-11-11": 4792.0,
@@ -9524,7 +9524,7 @@
    "2026-11-19": 9495.0,
    "2026-11-20": 9495.0,
    "2026-11-21": 9751.0,
-   "2026-11-22": 9705.0
+   "2026-11-22": 7872.0
   },
   "KUL-MRU|OW|1": {
    "2026-11-11": 10996.0,
@@ -12472,6 +12472,12 @@
   },
   "KUL-POA|RT|0": {
    "2026-11-22": 10631.0
+  },
+  "KUL-COK|RT|1": {
+   "2026-11-22": 5109.0
+  },
+  "KUL-TRZ|RT|1": {
+   "2026-11-22": 5610.0
   }
  },
  "alerted": {
@@ -12481,6 +12487,17 @@
   }
  },
  "news": [
+  {
+   "id": "rss:2ab667e8604094cd",
+   "type": "news",
+   "level": "news",
+   "title": "HIGH SEASON 😎 ☀️ Full-service flights from European cities to Malaysia from €497",
+   "summary": "Whether you crave the bustling streets of Kuala Lumpur, the beaches of Langkawi, or the rainforests of Borneo – your Southeast Asian adventure begins now. Oman Air is offering discounted flights to Kuala Lumpur starting at €497 for a round trip.",
+   "link": "https://www.fly4free.com/flight-deals/europe/oman-air-flights-from-europe-to-malaysia-e497/",
+   "source": "Fly4free 全球特价",
+   "published": "2026-11-22T14:00:49+00:00",
+   "is_error_fare": false
+  },
   {
    "id": "rss:b415363a6f33c7b4",
    "type": "news",
