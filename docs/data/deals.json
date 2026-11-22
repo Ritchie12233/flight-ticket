@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T15:04:53.315915+08:00",
+ "updated_at": "2026-11-22T15:19:15.616585+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -17281,6 +17281,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "BAH",
+   "price": 1447.0,
+   "depart": "2026-12-10",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6034,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-22T06:55:38",
+   "source": "aviasales-latest",
+   "id": "KUL-BAH|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1501.0,
+   "ratio": 0.964,
+   "per_km": 0.2398,
+   "dest_name": "Manama",
+   "dest_name_zh": "巴林",
+   "country": "BH",
+   "lat": 26.2235305,
+   "lon": 50.5875935,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 / 电子签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "YNT",
    "price": 1450.0,
    "depart": "2026-11-30",
@@ -17476,39 +17509,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "BAH",
-   "price": 1486.0,
-   "depart": "2026-12-12",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6034,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-20T20:21:57",
-   "source": "aviasales-latest",
-   "id": "KUL-BAH|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1501.0,
-   "ratio": 0.99,
-   "per_km": 0.2463,
-   "dest_name": "Manama",
-   "dest_name_zh": "巴林",
-   "country": "BH",
-   "lat": 26.2235305,
-   "lon": 50.5875935,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 / 电子签"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
