@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-23T04:30:36.144908+08:00",
+ "updated_at": "2026-11-23T04:44:54.395349+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1191,
-  "routes": 833,
+  "fares_scanned": 1192,
+  "routes": 834,
   "bug": 0,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1191
+   "count": 1192
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -17914,7 +17914,7 @@
    "distance": 6058,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-20T11:16:31",
+   "found_at": "2026-11-22T20:24:58",
    "source": "aviasales-latest",
    "id": "KUL-OVB|OW|0",
    "type": "fare",
@@ -19578,6 +19578,39 @@
    "country": "ES",
    "lat": 28.9651694,
    "lon": -13.5550363,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MLA",
+   "price": 1928.0,
+   "depart": "2026-12-02",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9577,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-22T20:15:26",
+   "source": "aviasales-latest",
+   "id": "KUL-MLA|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2013,
+   "dest_name": "Malta",
+   "dest_name_zh": "马耳他",
+   "country": "MT",
+   "lat": 35.849777,
+   "lon": 14.495401,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -24468,39 +24501,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PBH",
-   "price": 3134.0,
-   "depart": "2026-11-24",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3039,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-22T06:26:05",
-   "source": "aviasales-latest",
-   "id": "KUL-PBH|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2902.0,
-   "ratio": 1.08,
-   "per_km": 1.0313,
-   "dest_name": "Paro",
-   "dest_name_zh": "Paro",
-   "country": "BT",
-   "lat": 27.433332,
-   "lon": 89.416664,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
