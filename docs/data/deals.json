@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-22T11:00:37.008004+08:00",
+ "updated_at": "2026-11-22T11:15:07.766906+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1202,
-  "routes": 832,
+  "fares_scanned": 1203,
+  "routes": 833,
   "bug": 0,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1202
+   "count": 1203
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -13624,7 +13624,7 @@
   {
    "origin": "KUL",
    "dest": "PNH",
-   "price": 737.0,
+   "price": 735.0,
    "depart": "2026-12-12",
    "return": null,
    "one_way": true,
@@ -13633,15 +13633,15 @@
    "distance": 1020,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-18T22:12:30",
+   "found_at": "2026-11-22T02:56:39",
    "source": "aviasales-latest",
    "id": "KUL-PNH|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 643.0,
-   "ratio": 1.146,
-   "per_km": 0.7225,
+   "ratio": 1.143,
+   "per_km": 0.7206,
    "dest_name": "Phnom Penh",
    "dest_name_zh": "金边",
    "country": "KH",
@@ -17813,6 +17813,39 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "CGD",
+   "price": 1589.0,
+   "depart": "2026-12-02",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3093,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-22T02:58:34",
+   "source": "aviasales-latest",
+   "id": "KUL-CGD|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5137,
+   "dest_name": "Changde",
+   "dest_name_zh": "常德",
+   "country": "CN",
+   "lat": 29.031654,
+   "lon": 111.698784,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
@@ -24712,39 +24745,6 @@
     "note": "免签（180 天内累计 90 天，2026-01 起）"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DUR",
-   "price": 3185.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 8299,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-19T17:33:10",
-   "source": "aviasales-latest",
-   "id": "KUL-DUR|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.3838,
-   "dest_name": "Durban",
-   "dest_name_zh": "德班",
-   "country": "ZA",
-   "lat": -29.857876,
-   "lon": 31.027581,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": true
   }
  ],
  "trend": {
