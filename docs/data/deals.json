@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T03:33:11.063474+08:00",
+ "updated_at": "2026-11-23T03:47:34.606565+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -15835,7 +15835,7 @@
    "distance": 4857,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-22T19:13:34",
+   "found_at": "2026-11-22T19:23:44",
    "source": "aviasales-latest",
    "id": "KUL-SHE|OW|0",
    "type": "fare",
@@ -21373,7 +21373,7 @@
    "origin": "KUL",
    "dest": "LED",
    "price": 2224.0,
-   "depart": "2026-12-23",
+   "depart": "2026-12-24",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -21381,7 +21381,7 @@
    "distance": 8712,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-22T17:48:58",
+   "found_at": "2026-11-22T18:02:52",
    "source": "aviasales-latest",
    "id": "KUL-LED|OW|0",
    "type": "fare",
