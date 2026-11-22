@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T22:30:52.764946+08:00",
+ "updated_at": "2026-11-22T22:45:15.271933+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -1733,7 +1733,7 @@
     "distance": 1964,
     "airline": null,
     "gate": "Kupi.com",
-    "found_at": "2026-11-22T11:29:03",
+    "found_at": "2026-11-22T14:24:16",
     "source": "aviasales-latest",
     "id": "KUL-DPS|OW|0",
     "type": "fare",
@@ -12159,7 +12159,7 @@
    "distance": 1964,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-22T11:29:03",
+   "found_at": "2026-11-22T14:24:16",
    "source": "aviasales-latest",
    "id": "KUL-DPS|OW|0",
    "type": "fare",
