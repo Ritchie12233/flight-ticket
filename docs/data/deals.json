@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T23:36:13.739013+08:00",
+ "updated_at": "2026-11-23T23:50:44.787627+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -19358,7 +19358,7 @@
    "origin": "KUL",
    "dest": "MOW",
    "price": 1928.0,
-   "depart": "2026-12-20",
+   "depart": "2026-12-15",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -19366,7 +19366,7 @@
    "distance": 8183,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-23T13:27:33",
+   "found_at": "2026-11-23T15:15:17",
    "source": "aviasales-latest",
    "id": "KUL-MOW|OW|0",
    "type": "fare",
