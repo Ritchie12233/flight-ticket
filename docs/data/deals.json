@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T20:14:51.942060+08:00",
+ "updated_at": "2026-11-23T20:29:15.502080+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -79,12 +79,7 @@
     "label": "免签",
     "note": "免签 30 天"
    },
-   "visited": false,
-   "back": {
-    "price": 2294.0,
-    "depart": "2027-01-29"
-   },
-   "rt_ref": 4273.0
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -5965,39 +5960,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "PKN",
-   "price": 2222.0,
-   "depart": "2026-11-23",
-   "return": "2027-01-15",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 1262,
-   "airline": null,
-   "gate": "Lucky2Go",
-   "found_at": "2026-11-22T15:33:02",
-   "source": "aviasales-latest",
-   "id": "KUL-PKN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.8803,
-   "dest_name": "Pangkalanbun",
-   "dest_name_zh": "庞卡兰布翁",
-   "country": "ID",
-   "lat": -2.7,
-   "lon": 111.666664,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "USM",
    "price": 2224.0,
    "depart": "2027-02-22",
@@ -6026,6 +5988,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 60 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "PKN",
+   "price": 2287.0,
+   "depart": "2026-11-23",
+   "return": "2027-01-15",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 1262,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-22T15:33:02",
+   "source": "aviasales-latest",
+   "id": "KUL-PKN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.9061,
+   "dest_name": "Pangkalanbun",
+   "dest_name_zh": "庞卡兰布翁",
+   "country": "ID",
+   "lat": -2.7,
+   "lon": 111.666664,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
    },
    "visited": false
   },
@@ -12644,12 +12639,7 @@
     "label": "免签",
     "note": "免签 30 天"
    },
-   "visited": false,
-   "back": {
-    "price": 2294.0,
-    "depart": "2027-01-29"
-   },
-   "rt_ref": 4273.0
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -15528,39 +15518,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "CGO",
-   "price": 1089.0,
-   "depart": "2026-11-23",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3749,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-23T03:47:41",
-   "source": "aviasales-latest",
-   "id": "KUL-CGO|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 986.0,
-   "ratio": 1.104,
-   "per_km": 0.2905,
-   "dest_name": "Zhengzhou",
-   "dest_name_zh": "郑州",
-   "country": "CN",
-   "lat": 34.746611,
-   "lon": 113.625328,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "VCS",
    "price": 1100.0,
    "depart": "2027-01-10",
@@ -17569,6 +17526,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "CGO",
+   "price": 1535.0,
+   "depart": "2027-08-12",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3749,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-22T06:31:36",
+   "source": "aviasales-latest",
+   "id": "KUL-CGO|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 986.0,
+   "ratio": 1.556,
+   "per_km": 0.4094,
+   "dest_name": "Zhengzhou",
+   "dest_name_zh": "郑州",
+   "country": "CN",
+   "lat": 34.746611,
+   "lon": 113.625328,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
    },
    "visited": true
   },
