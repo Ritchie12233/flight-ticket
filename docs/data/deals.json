@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-24T02:43:53.451561+08:00",
+ "updated_at": "2026-11-24T02:58:15.763283+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1178,
-  "routes": 823,
+  "fares_scanned": 1182,
+  "routes": 825,
   "bug": 0,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1178
+   "count": 1182
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10215,6 +10215,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "HNL",
+   "price": 6854.0,
+   "depart": "2027-10-29",
+   "return": "2027-11-10",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 10966,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-23T18:30:09",
+   "source": "aviasales-latest",
+   "id": "KUL-HNL|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 8102.0,
+   "ratio": 0.846,
+   "per_km": 0.3125,
+   "dest_name": "Honolulu",
+   "dest_name_zh": "火奴鲁鲁",
+   "country": "US",
+   "lat": 21.3069444,
+   "lon": -157.8583333,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -22405,6 +22438,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "BEN",
+   "price": 2445.0,
+   "depart": "2026-12-09",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 9038,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-23T18:37:50",
+   "source": "aviasales-latest",
+   "id": "KUL-BEN|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3597.0,
+   "ratio": 0.68,
+   "per_km": 0.2705,
+   "dest_name": "Benghazi",
+   "dest_name_zh": "班加西",
+   "country": "LY",
+   "lat": 32.1194242,
+   "lon": 20.0867909,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BHX",
    "price": 2449.0,
    "depart": "2027-08-15",
@@ -24442,39 +24508,6 @@
    "country": "BT",
    "lat": 27.433332,
    "lon": 89.416664,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "QSF",
-   "price": 3156.0,
-   "depart": "2027-01-11",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 10396,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-17T09:56:10",
-   "source": "aviasales-latest",
-   "id": "KUL-QSF|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3137.0,
-   "ratio": 1.006,
-   "per_km": 0.3036,
-   "dest_name": "Setif",
-   "dest_name_zh": "Setif",
-   "country": "DZ",
-   "lat": 36.1897593,
-   "lon": 5.4107984,
    "visa": {
     "status": "visa",
     "label": "需签证",
