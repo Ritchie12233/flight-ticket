@@ -1,11 +1,11 @@
 {
- "updated_at": "2026-11-23T20:43:37.378042+08:00",
+ "updated_at": "2026-11-23T20:57:58.971162+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1194,
-  "routes": 834,
-  "bug": 1,
+  "fares_scanned": 1196,
+  "routes": 836,
+  "bug": 0,
   "great": 3,
   "target": 0
  },
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1194
+   "count": 1196
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -45,42 +45,6 @@
   }
  ],
  "hot": [
-  {
-   "origin": "KUL",
-   "dest": "BAK",
-   "price": 523.0,
-   "depart": "2026-12-07",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6651,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-23T11:54:55",
-   "source": "aviasales-latest",
-   "id": "KUL-BAK|OW|0",
-   "type": "fare",
-   "level": "bug",
-   "reasons": [
-    "仅为近期常规价的 24%",
-    "每公里 0.079，很划算"
-   ],
-   "baseline": 2223.0,
-   "ratio": 0.235,
-   "per_km": 0.0786,
-   "dest_name": "Baku",
-   "dest_name_zh": "巴库",
-   "country": "AZ",
-   "lat": 40.4092617,
-   "lon": 49.8670924,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
   {
    "origin": "KUL",
    "dest": "RAK",
@@ -545,6 +509,39 @@
    "country": "IN",
    "lat": 10.7904833,
    "lon": 78.7046725,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TPE",
+   "price": 6087.0,
+   "depart": "2026-12-02",
+   "return": "2026-12-05",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 3244,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-23T12:43:00Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TPE|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 6075.0,
+   "ratio": 1.002,
+   "per_km": 0.9382,
+   "dest_name": "Taipei",
+   "dest_name_zh": "台北",
+   "country": "TW",
+   "lat": 25.0329694,
+   "lon": 121.5654177,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -1715,7 +1712,7 @@
     "distance": 1964,
     "airline": null,
     "gate": "Kupi.com",
-    "found_at": "2026-11-23T11:27:51",
+    "found_at": "2026-11-23T12:34:35",
     "source": "aviasales-latest",
     "id": "KUL-DPS|OW|0",
     "type": "fare",
@@ -5427,6 +5424,39 @@
     "note": "免签 30 天（行前 96 小时填 IMUGA）"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BXU",
+   "price": 1954.0,
+   "depart": "2027-02-09",
+   "return": "2027-02-27",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 2714,
+   "airline": "Firefly (FY)",
+   "flight_number": 4695,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-BXU|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.36,
+   "dest_name": "Butuan",
+   "dest_name_zh": "武端",
+   "country": "PH",
+   "lat": 8.9475377,
+   "lon": 125.5406234,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
@@ -11217,6 +11247,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "BOB",
+   "price": 13931.0,
+   "depart": "2027-02-08",
+   "return": "2027-02-25",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 11873,
+   "airline": "AirAsia (AK)",
+   "flight_number": 368,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Kupi.com",
+   "id": "KUL-BOB|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 14036.0,
+   "ratio": 0.992,
+   "per_km": 0.5867,
+   "dest_name": "Bora Bora",
+   "dest_name_zh": "博拉博拉",
+   "country": "PF",
+   "lat": -16.501111,
+   "lon": -151.74,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "ASU",
    "price": 14282.0,
    "depart": "2027-08-24",
@@ -11279,39 +11343,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "BOB",
-   "price": 17124.0,
-   "depart": "2026-12-18",
-   "return": "2027-01-03",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 11857,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-21T12:50:26",
-   "source": "aviasales-latest",
-   "id": "KUL-BOB|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 14036.0,
-   "ratio": 1.22,
-   "per_km": 0.7221,
-   "dest_name": "Bora Bora",
-   "dest_name_zh": "博拉博拉",
-   "country": "PF",
-   "lat": -16.501111,
-   "lon": -151.74,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -12221,7 +12252,7 @@
    "distance": 1964,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-23T11:27:51",
+   "found_at": "2026-11-23T12:34:35",
    "source": "aviasales-latest",
    "id": "KUL-DPS|OW|0",
    "type": "fare",
@@ -12602,42 +12633,6 @@
     "status": "free_partial",
     "label": "部分免签",
     "note": "仅富国岛免签 30 天，其他地区需电子签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "BAK",
-   "price": 523.0,
-   "depart": "2026-12-07",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6651,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-23T11:54:55",
-   "source": "aviasales-latest",
-   "id": "KUL-BAK|OW|0",
-   "type": "fare",
-   "level": "bug",
-   "reasons": [
-    "仅为近期常规价的 24%",
-    "每公里 0.079，很划算"
-   ],
-   "baseline": 2223.0,
-   "ratio": 0.235,
-   "per_km": 0.0786,
-   "dest_name": "Baku",
-   "dest_name_zh": "巴库",
-   "country": "AZ",
-   "lat": 40.4092617,
-   "lon": 49.8670924,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -13074,7 +13069,7 @@
    "origin": "KUL",
    "dest": "KOS",
    "price": 626.0,
-   "depart": "2027-03-06",
+   "depart": "2027-03-29",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -13082,7 +13077,7 @@
    "distance": 898,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-22T03:32:29",
+   "found_at": "2026-11-21T07:46:16",
    "source": "aviasales-latest",
    "id": "KUL-KOS|OW|0",
    "type": "fare",
@@ -21295,6 +21290,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "BAK",
+   "price": 2193.0,
+   "depart": "2027-02-12",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6651,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-21T07:29:49",
+   "source": "aviasales-latest",
+   "id": "KUL-BAK|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2223.0,
+   "ratio": 0.987,
+   "per_km": 0.3297,
+   "dest_name": "Baku",
+   "dest_name_zh": "巴库",
+   "country": "AZ",
+   "lat": 40.4092617,
+   "lon": 49.8670924,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BER",
    "price": 2217.0,
    "depart": "2027-01-13",
@@ -24595,60 +24623,6 @@
   }
  ],
  "trend": {
-  "KUL-BAK|OW|0": [
-   [
-    "2026-11-11",
-    2216.0
-   ],
-   [
-    "2026-11-12",
-    2204.0
-   ],
-   [
-    "2026-11-13",
-    2209.0
-   ],
-   [
-    "2026-11-14",
-    2209.0
-   ],
-   [
-    "2026-11-15",
-    2232.0
-   ],
-   [
-    "2026-11-16",
-    2230.0
-   ],
-   [
-    "2026-11-17",
-    2276.0
-   ],
-   [
-    "2026-11-18",
-    2263.0
-   ],
-   [
-    "2026-11-19",
-    2278.0
-   ],
-   [
-    "2026-11-20",
-    2269.0
-   ],
-   [
-    "2026-11-21",
-    2195.0
-   ],
-   [
-    "2026-11-22",
-    2180.0
-   ],
-   [
-    "2026-11-23",
-    523.0
-   ]
-  ],
   "KUL-RAK|OW|0": [
    [
     "2026-11-16",
