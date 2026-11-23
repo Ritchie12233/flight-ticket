@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T09:41:57.607061+08:00",
+ "updated_at": "2026-11-23T09:56:24.672412+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -13282,39 +13282,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "LBJ",
-   "price": 706.0,
-   "depart": "2026-12-15",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2373,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-20T01:25:50",
-   "source": "aviasales-latest",
-   "id": "KUL-LBJ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 602.0,
-   "ratio": 1.173,
-   "per_km": 0.2975,
-   "dest_name": "Labuan Bajo",
-   "dest_name_zh": "下拉布安",
-   "country": "ID",
-   "lat": -8.4538484,
-   "lon": 119.8728421,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "LDU",
    "price": 708.0,
    "depart": "2027-02-28",
@@ -13345,6 +13312,39 @@
     "note": "免签 30 天"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "LBJ",
+   "price": 729.0,
+   "depart": "2026-12-24",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2373,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-20T17:14:02",
+   "source": "aviasales-latest",
+   "id": "KUL-LBJ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 602.0,
+   "ratio": 1.211,
+   "per_km": 0.3072,
+   "dest_name": "Labuan Bajo",
+   "dest_name_zh": "下拉布安",
+   "country": "ID",
+   "lat": -8.4538484,
+   "lon": 119.8728421,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
