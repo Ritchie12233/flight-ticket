@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-23T20:00:26.317500+08:00",
+ "updated_at": "2026-11-23T20:14:51.942060+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
   "fares_scanned": 1193,
   "routes": 833,
-  "bug": 0,
-  "great": 4,
+  "bug": 1,
+  "great": 3,
   "target": 0
  },
  "channels": [
@@ -45,6 +45,47 @@
   }
  ],
  "hot": [
+  {
+   "origin": "KUL",
+   "dest": "BAK",
+   "price": 523.0,
+   "depart": "2026-12-07",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6651,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-23T11:54:55",
+   "source": "aviasales-latest",
+   "id": "KUL-BAK|OW|0",
+   "type": "fare",
+   "level": "bug",
+   "reasons": [
+    "仅为近期常规价的 24%",
+    "每公里 0.079，很划算"
+   ],
+   "baseline": 2223.0,
+   "ratio": 0.235,
+   "per_km": 0.0786,
+   "dest_name": "Baku",
+   "dest_name_zh": "巴库",
+   "country": "AZ",
+   "lat": 40.4092617,
+   "lon": 49.8670924,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false,
+   "back": {
+    "price": 2294.0,
+    "depart": "2027-01-29"
+   },
+   "rt_ref": 4273.0
+  },
   {
    "origin": "KUL",
    "dest": "RAK",
@@ -147,41 +188,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 60 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "OKA",
-   "price": 2991.0,
-   "depart": "2026-11-23",
-   "return": "2026-11-30",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 3801,
-   "airline": null,
-   "gate": "Mytrip.com",
-   "found_at": "2026-11-19T18:51:27",
-   "source": "aviasales-latest",
-   "id": "KUL-OKA|RT|0",
-   "type": "fare",
-   "level": "great",
-   "reasons": [
-    "比近期常规价低 38%"
-   ],
-   "baseline": 4847.0,
-   "ratio": 0.617,
-   "per_km": 0.3934,
-   "dest_name": "Okinawa",
-   "dest_name_zh": "冲绳",
-   "country": "JP",
-   "lat": 26.1201911,
-   "lon": 127.7025012,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
@@ -323,7 +329,7 @@
   {
    "origin": "KUL",
    "dest": "DPS",
-   "price": 4071.0,
+   "price": 4072.0,
    "depart": "2027-06-02",
    "return": "2027-06-17",
    "one_way": false,
@@ -340,7 +346,7 @@
    "reasons": [],
    "baseline": 3457.0,
    "ratio": 1.178,
-   "per_km": 1.0364,
+   "per_km": 1.0367,
    "dest_name": "Denpasar (Bali)",
    "dest_name_zh": "巴厘",
    "country": "ID",
@@ -455,7 +461,7 @@
   {
    "origin": "KUL",
    "dest": "DAD",
-   "price": 5337.0,
+   "price": 5338.0,
    "depart": "2027-01-30",
    "return": "2027-02-07",
    "one_way": false,
@@ -472,7 +478,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 1.6271,
+   "per_km": 1.6274,
    "dest_name": "Da Nang",
    "dest_name_zh": "岘港",
    "country": "VN",
@@ -719,7 +725,7 @@
   {
    "origin": "KUL",
    "dest": "LON",
-   "price": 11428.0,
+   "price": 11429.0,
    "depart": "2027-03-10",
    "return": "2027-03-24",
    "one_way": false,
@@ -1571,7 +1577,7 @@
    "current_ow": {
     "origin": "KUL",
     "dest": "BKK",
-    "price": 429.0,
+    "price": 428.0,
     "depart": "2027-03-22",
     "return": null,
     "one_way": true,
@@ -1587,8 +1593,8 @@
     "level": "normal",
     "reasons": [],
     "baseline": 424.0,
-    "ratio": 1.011,
-    "per_km": 0.3516,
+    "ratio": 1.008,
+    "per_km": 0.3508,
     "dest_name": "Bangkok",
     "dest_name_zh": "曼谷",
     "country": "TH",
@@ -5305,7 +5311,7 @@
    "trip_class": 0,
    "transfers": 1,
    "distance": 1630,
-   "airline": "AirAsia (AK)",
+   "airline": null,
    "gate": "Kiwi.com",
    "found_at": "2026-11-23T02:31:30",
    "source": "aviasales-latest",
@@ -5795,7 +5801,7 @@
   {
    "origin": "KUL",
    "dest": "VCS",
-   "price": 2138.0,
+   "price": 2137.0,
    "depart": "2026-12-31",
    "return": "2027-01-07",
    "one_way": false,
@@ -5812,7 +5818,7 @@
    "reasons": [],
    "baseline": 2123.0,
    "ratio": 1.007,
-   "per_km": 1.0626,
+   "per_km": 1.0621,
    "dest_name": "Con Dao",
    "dest_name_zh": "Con Dao",
    "country": "VN",
@@ -6785,41 +6791,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "OKA",
-   "price": 2991.0,
-   "depart": "2026-11-23",
-   "return": "2026-11-30",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 3801,
-   "airline": null,
-   "gate": "Mytrip.com",
-   "found_at": "2026-11-19T18:51:27",
-   "source": "aviasales-latest",
-   "id": "KUL-OKA|RT|0",
-   "type": "fare",
-   "level": "great",
-   "reasons": [
-    "比近期常规价低 38%"
-   ],
-   "baseline": 4847.0,
-   "ratio": 0.617,
-   "per_km": 0.3934,
-   "dest_name": "Okinawa",
-   "dest_name_zh": "冲绳",
-   "country": "JP",
-   "lat": 26.1201911,
-   "lon": 127.7025012,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "DXB",
    "price": 3024.0,
    "depart": "2027-03-31",
@@ -7746,7 +7717,7 @@
   {
    "origin": "KUL",
    "dest": "VVO",
-   "price": 3720.0,
+   "price": 3719.0,
    "depart": "2027-01-03",
    "return": "2027-01-15",
    "one_way": false,
@@ -7763,7 +7734,7 @@
    "reasons": [],
    "baseline": 3454.0,
    "ratio": 1.077,
-   "per_km": 0.343,
+   "per_km": 0.3429,
    "dest_name": "Vladivostok",
    "dest_name_zh": "海参崴",
    "country": "RU",
@@ -7977,14 +7948,14 @@
   {
    "origin": "KUL",
    "dest": "NGS",
-   "price": 3888.0,
+   "price": 3887.0,
    "depart": "2027-02-17",
    "return": "2027-02-20",
    "one_way": false,
    "trip_class": 0,
    "transfers": 2,
    "distance": 4458,
-   "airline": "Scoot (TR)",
+   "airline": null,
    "gate": "Gotogate",
    "found_at": "2026-11-18T02:52:44",
    "source": "aviasales-latest",
@@ -7994,7 +7965,7 @@
    "reasons": [],
    "baseline": 3861.0,
    "ratio": 1.007,
-   "per_km": 0.4361,
+   "per_km": 0.436,
    "dest_name": "Nagasaki",
    "dest_name_zh": "长崎",
    "country": "JP",
@@ -8637,7 +8608,7 @@
   {
    "origin": "KUL",
    "dest": "RMO",
-   "price": 4490.0,
+   "price": 4489.0,
    "depart": "2027-02-09",
    "return": "2027-02-23",
    "one_way": false,
@@ -8653,8 +8624,8 @@
    "level": "normal",
    "reasons": [],
    "baseline": 4728.0,
-   "ratio": 0.95,
-   "per_km": 0.2644,
+   "ratio": 0.949,
+   "per_km": 0.2643,
    "dest_name": "Chisinau",
    "dest_name_zh": "基辛那乌",
    "country": "MD",
@@ -8868,7 +8839,7 @@
   {
    "origin": "KUL",
    "dest": "BUS",
-   "price": 4763.0,
+   "price": 4762.0,
    "depart": "2027-02-10",
    "return": "2027-02-21",
    "one_way": false,
@@ -9132,6 +9103,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "AKX",
+   "price": 5062.0,
+   "depart": "2027-01-15",
+   "return": "2027-01-29",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6725,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-23T11:53:11",
+   "source": "aviasales-latest",
+   "id": "KUL-AKX|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 5467.0,
+   "ratio": 0.926,
+   "per_km": 0.3764,
+   "dest_name": "Aktobe",
+   "dest_name_zh": "Aktobe",
+   "country": "KZ",
+   "lat": 50.2839339,
+   "lon": 57.166978,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "NBO",
    "price": 5134.0,
    "depart": "2027-02-13",
@@ -9363,39 +9367,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "AKX",
-   "price": 5486.0,
-   "depart": "2026-12-30",
-   "return": "2027-01-22",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6725,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-18T12:02:33",
-   "source": "aviasales-latest",
-   "id": "KUL-AKX|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 5467.0,
-   "ratio": 1.003,
-   "per_km": 0.4079,
-   "dest_name": "Aktobe",
-   "dest_name_zh": "Aktobe",
-   "country": "KZ",
-   "lat": 50.2839339,
-   "lon": 57.166978,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "DAR",
    "price": 5527.0,
    "depart": "2027-01-20",
@@ -9496,14 +9467,14 @@
   {
    "origin": "KUL",
    "dest": "OSS",
-   "price": 5657.0,
+   "price": 5656.0,
    "depart": "2026-12-22",
    "return": "2027-01-02",
    "one_way": false,
    "trip_class": 0,
    "transfers": 2,
    "distance": 5111,
-   "airline": "AirAsia (AK)",
+   "airline": null,
    "gate": "Kupi.com",
    "found_at": "2026-11-23T02:40:33",
    "source": "aviasales-latest",
@@ -9513,7 +9484,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.5534,
+   "per_km": 0.5533,
    "dest_name": "Osh",
    "dest_name_zh": "奥什",
    "country": "KG",
@@ -9762,7 +9733,7 @@
   {
    "origin": "KUL",
    "dest": "CPT",
-   "price": 5992.0,
+   "price": 5991.0,
    "depart": "2026-12-13",
    "return": "2026-12-24",
    "one_way": false,
@@ -9861,7 +9832,7 @@
   {
    "origin": "KUL",
    "dest": "KSN",
-   "price": 6144.0,
+   "price": 6143.0,
    "depart": "2026-11-24",
    "return": "2026-12-07",
    "one_way": false,
@@ -9878,7 +9849,7 @@
    "reasons": [],
    "baseline": 8461.0,
    "ratio": 0.726,
-   "per_km": 0.4651,
+   "per_km": 0.465,
    "dest_name": "Kostanay",
    "dest_name_zh": "Kostanay",
    "country": "KZ",
@@ -10357,7 +10328,7 @@
   {
    "origin": "KUL",
    "dest": "SEZ",
-   "price": 7187.0,
+   "price": 7186.0,
    "depart": "2027-04-01",
    "return": "2027-04-22",
    "one_way": false,
@@ -10374,7 +10345,7 @@
    "reasons": [],
    "baseline": 6128.0,
    "ratio": 1.173,
-   "per_km": 0.6927,
+   "per_km": 0.6926,
    "dest_name": "Mahe",
    "dest_name_zh": "马埃岛",
    "country": "SC",
@@ -10588,6 +10559,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "OKA",
+   "price": 7854.0,
+   "depart": "2026-11-23",
+   "return": "2026-11-30",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3801,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-19T18:51:27",
+   "source": "aviasales-latest",
+   "id": "KUL-OKA|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 4847.0,
+   "ratio": 1.62,
+   "per_km": 1.0331,
+   "dest_name": "Okinawa",
+   "dest_name_zh": "冲绳",
+   "country": "JP",
+   "lat": 26.1201911,
+   "lon": 127.7025012,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "PEE",
    "price": 8139.0,
    "depart": "2027-01-08",
@@ -10722,7 +10726,7 @@
   {
    "origin": "KUL",
    "dest": "KRR",
-   "price": 8886.0,
+   "price": 8885.0,
    "depart": "2026-12-09",
    "return": "2026-12-09",
    "one_way": false,
@@ -10739,7 +10743,7 @@
    "reasons": [],
    "baseline": 5422.0,
    "ratio": 1.639,
-   "per_km": 0.5796,
+   "per_km": 0.5795,
    "dest_name": "Krasnodar",
    "dest_name_zh": "克拉斯诺达尔",
    "country": "RU",
@@ -10827,19 +10831,18 @@
    "one_way": false,
    "trip_class": 0,
    "transfers": 2,
-   "distance": 14610,
+   "distance": 14662,
    "airline": "Emirates (EK)",
-   "flight_number": 347,
-   "found_at": null,
-   "source": "aviasales-cheap",
    "gate": "Kupi.com",
+   "found_at": "2026-11-17T03:37:38",
+   "source": "aviasales-latest",
    "id": "KUL-YOW|RT|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 8896.0,
    "ratio": 1.085,
-   "per_km": 0.3302,
+   "per_km": 0.3291,
    "dest_name": "Ottawa",
    "dest_name_zh": "渥太华",
    "country": "CA",
@@ -10922,7 +10925,7 @@
   {
    "origin": "KUL",
    "dest": "SUV",
-   "price": 10380.0,
+   "price": 10379.0,
    "depart": "2026-11-26",
    "return": "2026-12-11",
    "one_way": false,
@@ -10939,7 +10942,7 @@
    "reasons": [],
    "baseline": null,
    "ratio": null,
-   "per_km": 0.5954,
+   "per_km": 0.5953,
    "dest_name": "Suva",
    "dest_name_zh": "苏瓦",
    "country": "FJ",
@@ -11153,7 +11156,7 @@
   {
    "origin": "KUL",
    "dest": "PDX",
-   "price": 11219.0,
+   "price": 11218.0,
    "depart": "2026-11-23",
    "return": "2026-11-30",
    "one_way": false,
@@ -12313,7 +12316,7 @@
   {
    "origin": "KUL",
    "dest": "BKK",
-   "price": 429.0,
+   "price": 428.0,
    "depart": "2027-03-22",
    "return": null,
    "one_way": true,
@@ -12329,8 +12332,8 @@
    "level": "normal",
    "reasons": [],
    "baseline": 424.0,
-   "ratio": 1.011,
-   "per_km": 0.3516,
+   "ratio": 1.008,
+   "per_km": 0.3508,
    "dest_name": "Bangkok",
    "dest_name_zh": "曼谷",
    "country": "TH",
@@ -12606,6 +12609,47 @@
     "note": "仅富国岛免签 30 天，其他地区需电子签"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BAK",
+   "price": 523.0,
+   "depart": "2026-12-07",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6651,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-23T11:54:55",
+   "source": "aviasales-latest",
+   "id": "KUL-BAK|OW|0",
+   "type": "fare",
+   "level": "bug",
+   "reasons": [
+    "仅为近期常规价的 24%",
+    "每公里 0.079，很划算"
+   ],
+   "baseline": 2223.0,
+   "ratio": 0.235,
+   "per_km": 0.0786,
+   "dest_name": "Baku",
+   "dest_name_zh": "巴库",
+   "country": "AZ",
+   "lat": 40.4092617,
+   "lon": 49.8670924,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false,
+   "back": {
+    "price": 2294.0,
+    "depart": "2027-01-29"
+   },
+   "rt_ref": 4273.0
   },
   {
    "origin": "KUL",
@@ -16574,7 +16618,7 @@
   {
    "origin": "KUL",
    "dest": "DLC",
-   "price": 1321.0,
+   "price": 1320.0,
    "depart": "2026-11-28",
    "return": null,
    "one_way": true,
@@ -16590,8 +16634,8 @@
    "level": "normal",
    "reasons": [],
    "baseline": 1128.0,
-   "ratio": 1.171,
-   "per_km": 0.2936,
+   "ratio": 1.17,
+   "per_km": 0.2934,
    "dest_name": "Dalian",
    "dest_name_zh": "大连",
    "country": "CN",
@@ -17696,7 +17740,7 @@
   {
    "origin": "KUL",
    "dest": "YNJ",
-   "price": 1586.0,
+   "price": 1585.0,
    "depart": "2026-11-25",
    "return": null,
    "one_way": true,
@@ -17712,8 +17756,8 @@
    "level": "normal",
    "reasons": [],
    "baseline": 1262.0,
-   "ratio": 1.257,
-   "per_km": 0.3028,
+   "ratio": 1.256,
+   "per_km": 0.3026,
    "dest_name": "Yanji",
    "dest_name_zh": "延吉",
    "country": "CN",
@@ -17993,7 +18037,7 @@
   {
    "origin": "KUL",
    "dest": "SHJ",
-   "price": 1658.0,
+   "price": 1657.0,
    "depart": "2027-03-01",
    "return": null,
    "one_way": true,
@@ -18010,7 +18054,7 @@
    "reasons": [],
    "baseline": 1806.0,
    "ratio": 0.918,
-   "per_km": 0.2995,
+   "per_km": 0.2994,
    "dest_name": "Sharjah",
    "dest_name_zh": "沙迦",
    "country": "AE",
@@ -20041,7 +20085,7 @@
   {
    "origin": "KUL",
    "dest": "UBN",
-   "price": 1993.0,
+   "price": 1992.0,
    "depart": "2026-11-25",
    "return": null,
    "one_way": true,
@@ -20058,7 +20102,7 @@
    "reasons": [],
    "baseline": 2288.0,
    "ratio": 0.871,
-   "per_km": 0.3974,
+   "per_km": 0.3972,
    "dest_name": "Ulaanbaatar",
    "dest_name_zh": "乌兰巴托",
    "country": "MN",
@@ -21256,39 +21300,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "BAK",
-   "price": 2193.0,
-   "depart": "2027-02-12",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6651,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-21T07:29:49",
-   "source": "aviasales-latest",
-   "id": "KUL-BAK|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2223.0,
-   "ratio": 0.987,
-   "per_km": 0.3297,
-   "dest_name": "Baku",
-   "dest_name_zh": "巴库",
-   "country": "AZ",
-   "lat": 40.4092617,
-   "lon": 49.8670924,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -23110,7 +23121,7 @@
   {
    "origin": "KUL",
    "dest": "TJM",
-   "price": 2582.0,
+   "price": 2581.0,
    "depart": "2027-01-26",
    "return": null,
    "one_way": true,
@@ -23127,7 +23138,7 @@
    "reasons": [],
    "baseline": 2629.0,
    "ratio": 0.982,
-   "per_km": 0.3773,
+   "per_km": 0.3772,
    "dest_name": "Tyumen",
    "dest_name_zh": "秋明",
    "country": "RU",
@@ -23308,7 +23319,7 @@
   {
    "origin": "KUL",
    "dest": "CTA",
-   "price": 2628.0,
+   "price": 2627.0,
    "depart": "2026-12-14",
    "return": null,
    "one_way": true,
@@ -23324,8 +23335,8 @@
    "level": "normal",
    "reasons": [],
    "baseline": 2156.0,
-   "ratio": 1.219,
-   "per_km": 0.2759,
+   "ratio": 1.218,
+   "per_km": 0.2758,
    "dest_name": "Catania",
    "dest_name_zh": "卡塔尼亚",
    "country": "IT",
@@ -23935,7 +23946,7 @@
   {
    "origin": "KUL",
    "dest": "BQS",
-   "price": 2834.0,
+   "price": 2833.0,
    "depart": "2027-02-18",
    "return": null,
    "one_way": true,
@@ -23951,8 +23962,8 @@
    "level": "normal",
    "reasons": [],
    "baseline": 2337.0,
-   "ratio": 1.213,
-   "per_km": 0.4868,
+   "ratio": 1.212,
+   "per_km": 0.4866,
    "dest_name": "Blagoveschensk",
    "dest_name_zh": "布拉戈维申斯克",
    "country": "RU",
@@ -24463,7 +24474,7 @@
   {
    "origin": "KUL",
    "dest": "VAR",
-   "price": 3007.0,
+   "price": 3006.0,
    "depart": "2026-11-26",
    "return": null,
    "one_way": true,
@@ -24480,7 +24491,7 @@
    "reasons": [],
    "baseline": 2632.0,
    "ratio": 1.142,
-   "per_km": 0.354,
+   "per_km": 0.3539,
    "dest_name": "Varna",
    "dest_name_zh": "瓦尔纳",
    "country": "BG",
@@ -24594,6 +24605,60 @@
   }
  ],
  "trend": {
+  "KUL-BAK|OW|0": [
+   [
+    "2026-11-11",
+    2216.0
+   ],
+   [
+    "2026-11-12",
+    2204.0
+   ],
+   [
+    "2026-11-13",
+    2209.0
+   ],
+   [
+    "2026-11-14",
+    2209.0
+   ],
+   [
+    "2026-11-15",
+    2232.0
+   ],
+   [
+    "2026-11-16",
+    2230.0
+   ],
+   [
+    "2026-11-17",
+    2276.0
+   ],
+   [
+    "2026-11-18",
+    2263.0
+   ],
+   [
+    "2026-11-19",
+    2278.0
+   ],
+   [
+    "2026-11-20",
+    2269.0
+   ],
+   [
+    "2026-11-21",
+    2195.0
+   ],
+   [
+    "2026-11-22",
+    2180.0
+   ],
+   [
+    "2026-11-23",
+    523.0
+   ]
+  ],
   "KUL-RAK|OW|0": [
    [
     "2026-11-16",
@@ -24722,48 +24787,6 @@
    [
     "2026-11-23",
     977.0
-   ]
-  ],
-  "KUL-OKA|RT|0": [
-   [
-    "2026-11-11",
-    4898.0
-   ],
-   [
-    "2026-11-12",
-    4872.0
-   ],
-   [
-    "2026-11-13",
-    4847.0
-   ],
-   [
-    "2026-11-14",
-    4847.0
-   ],
-   [
-    "2026-11-15",
-    4897.0
-   ],
-   [
-    "2026-11-16",
-    4867.0
-   ],
-   [
-    "2026-11-20",
-    2970.0
-   ],
-   [
-    "2026-11-21",
-    2970.0
-   ],
-   [
-    "2026-11-22",
-    2973.0
-   ],
-   [
-    "2026-11-23",
-    2968.0
    ]
   ]
  },
@@ -24913,6 +24936,14 @@
   }
  ],
  "alerts": [
+  {
+   "at": "2026-11-23T20:14:51.942060+08:00",
+   "title": "🔥 疑似BUG价 吉隆坡→巴库 ¥523【免签】",
+   "url": "https://www.aviasales.com/search/KUL0712BAK1",
+   "channels": [
+    "ntfy"
+   ]
+  },
   {
    "at": "2026-11-16T00:01:55.877125+08:00",
    "title": "🔥 疑似BUG价 吉隆坡→达卡 ¥235【落地签/电子签】",
