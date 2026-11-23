@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T16:10:24.631202+08:00",
+ "updated_at": "2026-11-23T16:24:44.758018+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -4566,39 +4566,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "BJS",
-   "price": 1568.0,
-   "depart": "2026-11-23",
-   "return": "2026-12-04",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4347,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-18T20:13:19",
-   "source": "aviasales-latest",
-   "id": "KUL-BJS|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1560.0,
-   "ratio": 1.005,
-   "per_km": 0.1804,
-   "dest_name": "Beijing",
-   "dest_name_zh": "北京",
-   "country": "CN",
-   "lat": 39.904214,
-   "lon": 116.407413,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "CMB",
    "price": 1573.0,
    "depart": "2027-03-25",
@@ -4662,6 +4629,39 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BJS",
+   "price": 1596.0,
+   "depart": "2027-01-15",
+   "return": "2027-02-26",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4347,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-18T03:02:20",
+   "source": "aviasales-latest",
+   "id": "KUL-BJS|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1560.0,
+   "ratio": 1.023,
+   "per_km": 0.1836,
+   "dest_name": "Beijing",
+   "dest_name_zh": "北京",
+   "country": "CN",
+   "lat": 39.904214,
+   "lon": 116.407413,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
