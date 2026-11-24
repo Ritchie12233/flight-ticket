@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-24T12:04:42.763594+08:00",
+ "updated_at": "2026-11-24T12:19:01.740566+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1179,
-  "routes": 816,
+  "fares_scanned": 1180,
+  "routes": 817,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1179
+   "count": 1180
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -771,6 +771,39 @@
    "country": "IT",
    "lat": 45.463681,
    "lon": 9.1881714,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "MEL",
+   "price": 13284.0,
+   "depart": "2027-01-20",
+   "return": "2027-01-29",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 6316,
+   "airline": null,
+   "gate": "Mytrip.com",
+   "found_at": "2026-11-24T04:01:54Z",
+   "source": "aviasales-latest",
+   "id": "KUL-MEL|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.0516,
+   "dest_name": "Melbourne",
+   "dest_name_zh": "墨尔本",
+   "country": "AU",
+   "lat": -37.8131869,
+   "lon": 144.9629796,
    "visa": {
     "status": "visa",
     "label": "需签证",
