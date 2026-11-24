@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T05:38:33.576292+08:00",
+ "updated_at": "2026-11-25T05:52:53.327761+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1125,
-  "routes": 781,
+  "fares_scanned": 1128,
+  "routes": 782,
   "bug": 1,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1125
+   "count": 1128
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -6071,6 +6071,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "电子签"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "SWQ",
+   "price": 2177.0,
+   "depart": "2027-01-08",
+   "return": "2027-01-17",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 2144,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-24T21:41:00",
+   "source": "aviasales-latest",
+   "id": "KUL-SWQ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2318.0,
+   "ratio": 0.939,
+   "per_km": 0.5077,
+   "dest_name": "Sumbawa Besar",
+   "dest_name_zh": "松吧哇岛",
+   "country": "ID",
+   "lat": -8.5,
+   "lon": 117.416664,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
    },
    "visited": false
   },
