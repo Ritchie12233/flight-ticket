@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T07:34:09.477563+08:00",
+ "updated_at": "2026-11-25T07:48:31.274353+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -4342,6 +4342,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "JOG",
+   "price": 1285.0,
+   "depart": "2027-04-04",
+   "return": "2027-04-15",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 1551,
+   "airline": "AirAsia (AK)",
+   "flight_number": 346,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Trip.com",
+   "id": "KUL-JOG|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1224.0,
+   "ratio": 1.05,
+   "per_km": 0.4142,
+   "dest_name": "Yogyakarta",
+   "dest_name_zh": "日惹",
+   "country": "ID",
+   "lat": -7.7955798,
+   "lon": 110.3694896,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "SAI",
    "price": 1299.0,
    "depart": "2027-06-13",
@@ -4441,40 +4475,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "JOG",
-   "price": 1332.0,
-   "depart": "2026-12-10",
-   "return": "2026-12-17",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 1551,
-   "airline": "AirAsia (AK)",
-   "flight_number": 348,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Kiwi.com",
-   "id": "KUL-JOG|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1224.0,
-   "ratio": 1.088,
-   "per_km": 0.4294,
-   "dest_name": "Yogyakarta",
-   "dest_name_zh": "日惹",
-   "country": "ID",
-   "lat": -7.7955798,
-   "lon": 110.3694896,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
