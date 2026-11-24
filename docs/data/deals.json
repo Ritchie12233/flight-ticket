@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-24T20:29:27.314823+08:00",
+ "updated_at": "2026-11-24T20:43:49.360111+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1156,
-  "routes": 801,
+  "fares_scanned": 1159,
+  "routes": 802,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1156
+   "count": 1159
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -9022,6 +9022,40 @@
   },
   {
    "origin": "KUL",
+   "dest": "PMI",
+   "price": 4829.0,
+   "depart": "2027-04-22",
+   "return": "2027-05-03",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 10556,
+   "airline": "Etihad Airways (EY)",
+   "flight_number": 489,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Turna.com",
+   "id": "KUL-PMI|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.2287,
+   "dest_name": "Palma",
+   "dest_name_zh": "马略卡",
+   "country": "ES",
+   "lat": 39.5696005,
+   "lon": 2.6501603,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "KJA",
    "price": 4833.0,
    "depart": "2026-11-25",
@@ -9153,39 +9187,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PMI",
-   "price": 5009.0,
-   "depart": "2027-04-23",
-   "return": "2027-05-03",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": null,
-   "distance": 10556,
-   "airline": "Etihad Airways (EY)",
-   "flight_number": 489,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "id": "KUL-PMI|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2373,
-   "dest_name": "Palma",
-   "dest_name_zh": "马略卡",
-   "country": "ES",
-   "lat": 39.5696005,
-   "lon": 2.6501603,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -17119,6 +17120,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "TRK",
+   "price": 1450.0,
+   "depart": "2027-04-05",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1762,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-24T12:20:50",
+   "source": "aviasales-latest",
+   "id": "KUL-TRK|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.8229,
+   "dest_name": "Tarakan",
+   "dest_name_zh": "打拉根",
+   "country": "ID",
+   "lat": 3.327222,
+   "lon": 117.56528,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "DIL",
    "price": 1451.0,
    "depart": "2026-12-24",
@@ -24739,39 +24773,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "SKT",
-   "price": 3517.0,
-   "depart": "2026-11-25",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 4360,
-   "airline": null,
-   "gate": "Lucky2Go",
-   "found_at": "2026-11-22T00:06:37",
-   "source": "aviasales-latest",
-   "id": "KUL-SKT|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2947.0,
-   "ratio": 1.193,
-   "per_km": 0.8067,
-   "dest_name": "Sialkot",
-   "dest_name_zh": "锡亚尔科特",
-   "country": "PK",
-   "lat": 32.4944991,
-   "lon": 74.5228916,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
