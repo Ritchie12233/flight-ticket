@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T01:33:06.614301+08:00",
+ "updated_at": "2026-11-25T01:47:45.205915+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1125,
-  "routes": 780,
+  "fares_scanned": 1127,
+  "routes": 781,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1125
+   "count": 1127
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -2157,9 +2157,9 @@
    "current": {
     "origin": "KUL",
     "dest": "IST",
-    "price": 2986.0,
-    "depart": "2027-01-27",
-    "return": "2027-02-07",
+    "price": 2902.0,
+    "depart": "2027-03-29",
+    "return": "2027-04-11",
     "one_way": false,
     "trip_class": 0,
     "transfers": 0,
@@ -2174,8 +2174,8 @@
     "level": "normal",
     "reasons": [],
     "baseline": 2964.0,
-    "ratio": 1.007,
-    "per_km": 0.1792,
+    "ratio": 0.979,
+    "per_km": 0.1741,
     "dest_name": "Istanbul",
     "dest_name_zh": "伊斯坦布尔",
     "country": "TR",
@@ -2281,7 +2281,7 @@
     ],
     [
      "2026-11-25",
-     2986.0
+     2902.0
     ]
    ]
   },
@@ -6824,9 +6824,9 @@
   {
    "origin": "KUL",
    "dest": "IST",
-   "price": 2986.0,
-   "depart": "2027-01-27",
-   "return": "2027-02-07",
+   "price": 2902.0,
+   "depart": "2027-03-29",
+   "return": "2027-04-11",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
@@ -6841,8 +6841,8 @@
    "level": "normal",
    "reasons": [],
    "baseline": 2964.0,
-   "ratio": 1.007,
-   "per_km": 0.1792,
+   "ratio": 0.979,
+   "per_km": 0.1741,
    "dest_name": "Istanbul",
    "dest_name_zh": "伊斯坦布尔",
    "country": "TR",
@@ -10116,6 +10116,40 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "YMQ",
+   "price": 6545.0,
+   "depart": "2027-03-04",
+   "return": "2027-04-01",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 14585,
+   "airline": "Turkish Airlines (TK)",
+   "flight_number": 63,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Trip.com",
+   "id": "KUL-YMQ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 7658.0,
+   "ratio": 0.855,
+   "per_km": 0.2244,
+   "dest_name": "Montreal",
+   "dest_name_zh": "蒙特利尔",
+   "country": "CA",
+   "lat": 45.5088889,
+   "lon": -73.5541667,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
