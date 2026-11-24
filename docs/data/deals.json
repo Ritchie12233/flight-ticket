@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T02:45:18.441357+08:00",
+ "updated_at": "2026-11-25T02:59:54.470401+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1127,
-  "routes": 781,
+  "fares_scanned": 1126,
+  "routes": 780,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1127
+   "count": 1126
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -11102,39 +11102,6 @@
     "status": "conditional",
     "label": "有条件免签",
     "note": "持有效美/加签证可免签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "RAI",
-   "price": 11029.0,
-   "depart": "2026-11-25",
-   "return": "2026-11-26",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": null,
-   "distance": 13657,
-   "airline": "Malaysia Airlines (MH)",
-   "flight_number": 4992,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "id": "KUL-RAI|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 10940.0,
-   "ratio": 1.008,
-   "per_km": 0.4038,
-   "dest_name": "Praia",
-   "dest_name_zh": "Praia",
-   "country": "CV",
-   "lat": 14.93305,
-   "lon": -23.5133267,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签"
    },
    "visited": false
   },
