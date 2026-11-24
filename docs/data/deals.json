@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-24T21:26:54.093061+08:00",
+ "updated_at": "2026-11-24T21:41:15.140169+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1149,
-  "routes": 796,
+  "fares_scanned": 1151,
+  "routes": 797,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1149
+   "count": 1151
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -11364,6 +11364,40 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BGI",
+   "price": 14547.0,
+   "depart": "2026-12-16",
+   "return": "2026-12-22",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 17272,
+   "airline": "British Airways (BA)",
+   "flight_number": 7260,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "SuperKassa",
+   "id": "KUL-BGI|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4211,
+   "dest_name": "Bridgetown",
+   "dest_name_zh": "Bridgetown",
+   "country": "BB",
+   "lat": 13.1059816,
+   "lon": -59.6131741,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签"
    },
    "visited": false
   },
