@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-24T22:24:32.654640+08:00",
+ "updated_at": "2026-11-24T22:39:05.276646+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1153,
-  "routes": 797,
+  "fares_scanned": 1154,
+  "routes": 798,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1153
+   "count": 1154
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -544,6 +544,39 @@
     "status": "easy",
     "label": "通行证",
     "note": "凭港澳通行证及有效签注入境"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "BOM",
+   "price": 6007.0,
+   "depart": "2027-02-11",
+   "return": "2027-02-15",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 3622,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-24T14:10:05Z",
+   "source": "aviasales-latest",
+   "id": "KUL-BOM|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.8292,
+   "dest_name": "Mumbai",
+   "dest_name_zh": "孟买",
+   "country": "IN",
+   "lat": 19.0759837,
+   "lon": 72.8776559,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -11574,39 +11607,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "LGK",
-   "price": 152.0,
-   "depart": "2027-03-16",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 454,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-24T11:36:01",
-   "source": "aviasales-latest",
-   "id": "KUL-LGK|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 165.0,
-   "ratio": 0.921,
-   "per_km": 0.3348,
-   "dest_name": "Langkawi",
-   "dest_name_zh": "兰卡威",
-   "country": "MY",
-   "lat": 6.342174,
-   "lon": 99.7314,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "TGG",
    "price": 155.0,
    "depart": "2027-02-26",
@@ -11631,6 +11631,39 @@
    "country": "MY",
    "lat": 5.329624,
    "lon": 103.1370142,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "LGK",
+   "price": 160.0,
+   "depart": "2027-02-21",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 454,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-24T11:47:04",
+   "source": "aviasales-latest",
+   "id": "KUL-LGK|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 165.0,
+   "ratio": 0.97,
+   "per_km": 0.3524,
+   "dest_name": "Langkawi",
+   "dest_name_zh": "兰卡威",
+   "country": "MY",
+   "lat": 6.342174,
+   "lon": 99.7314,
    "visa": {
     "status": "free",
     "label": "免签",
