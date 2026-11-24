@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T06:07:15.596441+08:00",
+ "updated_at": "2026-11-25T06:21:40.769532+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1129,
-  "routes": 783,
+  "fares_scanned": 1132,
+  "routes": 785,
   "bug": 1,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1129
+   "count": 1132
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -7567,6 +7567,40 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "IXZ",
+   "price": 3582.0,
+   "depart": "2027-02-15",
+   "return": "2027-02-24",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 1365,
+   "airline": "AirAsia (AK)",
+   "flight_number": 65,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Clickavia",
+   "id": "KUL-IXZ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 4258.0,
+   "ratio": 0.841,
+   "per_km": 1.3117,
+   "dest_name": "Port Blair",
+   "dest_name_zh": "布莱尔港",
+   "country": "IN",
+   "lat": 11.6233774,
+   "lon": 92.7264828,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -16576,7 +16610,7 @@
    "distance": 2924,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-24T21:49:34",
+   "found_at": "2026-11-24T21:54:40",
    "source": "aviasales-latest",
    "id": "KUL-DIL|OW|0",
    "type": "fare",
@@ -19830,6 +19864,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "NAV",
+   "price": 2052.0,
+   "depart": "2026-12-04",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 7830,
+   "airline": null,
+   "gate": "Vayama",
+   "found_at": "2026-11-24T21:59:47",
+   "source": "aviasales-latest",
+   "id": "KUL-NAV|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2181.0,
+   "ratio": 0.941,
+   "per_km": 0.2621,
+   "dest_name": "Nevsehir",
+   "dest_name_zh": "内夫谢希尔",
+   "country": "TR",
+   "lat": 38.63333,
+   "lon": 34.716667,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签（180 天内累计 90 天，2026-01 起）"
    },
    "visited": false
   },
@@ -24512,39 +24579,6 @@
    "country": "UG",
    "lat": 0.0511839,
    "lon": 32.463708,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "HNL",
-   "price": 3584.0,
-   "depart": "2026-11-30",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 10966,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-18T12:27:59",
-   "source": "aviasales-latest",
-   "id": "KUL-HNL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3152.0,
-   "ratio": 1.137,
-   "per_km": 0.3268,
-   "dest_name": "Honolulu",
-   "dest_name_zh": "火奴鲁鲁",
-   "country": "US",
-   "lat": 21.3069444,
-   "lon": -157.8583333,
    "visa": {
     "status": "visa",
     "label": "需签证",
