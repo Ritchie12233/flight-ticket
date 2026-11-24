@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-24T16:38:10.178772+08:00",
+ "updated_at": "2026-11-24T16:52:31.626465+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1170,
-  "routes": 808,
+  "fares_scanned": 1171,
+  "routes": 807,
   "bug": 0,
   "great": 2,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1170
+   "count": 1171
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -12476,7 +12476,7 @@
    "distance": 1049,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-24T04:53:49",
+   "found_at": "2026-11-24T08:33:44",
    "source": "aviasales-latest",
    "id": "KUL-SGN|OW|0",
    "type": "fare",
