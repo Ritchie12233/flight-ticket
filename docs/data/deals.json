@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T22:28:06.359102+08:00",
+ "updated_at": "2026-11-25T22:42:28.651176+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1132,
-  "routes": 784,
+  "fares_scanned": 1133,
+  "routes": 785,
   "bug": 1,
   "great": 4,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1132
+   "count": 1133
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -251,6 +251,39 @@
    "country": "MY",
    "lat": 6.342174,
    "lon": 99.7314,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "KBR",
+   "price": 1328.0,
+   "depart": "2026-12-12",
+   "return": "2026-12-14",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 385,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-25T14:16:37Z",
+   "source": "aviasales-latest",
+   "id": "KUL-KBR|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 1.7247,
+   "dest_name": "Kota Bharu",
+   "dest_name_zh": "哥达巴鲁",
+   "country": "MY",
+   "lat": 6.124785,
+   "lon": 102.2543825,
    "visa": {
     "status": "free",
     "label": "免签",
