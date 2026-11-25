@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T08:31:46.201871+08:00",
+ "updated_at": "2026-11-25T08:46:08.126576+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1127,
-  "routes": 783,
+  "fares_scanned": 1128,
+  "routes": 784,
   "bug": 1,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1127
+   "count": 1128
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -10040,6 +10040,39 @@
     "note": "免签"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "JNB",
+   "price": 6269.0,
+   "depart": "2026-12-18",
+   "return": "2027-01-11",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 8541,
+   "airline": "Ethiopian Airlines (ET)",
+   "flight_number": 639,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-JNB|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 5714.0,
+   "ratio": 1.097,
+   "per_km": 0.367,
+   "dest_name": "Johannesburg",
+   "dest_name_zh": "约翰内斯堡",
+   "country": "ZA",
+   "lat": -26.2041028,
+   "lon": 28.0473051,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
