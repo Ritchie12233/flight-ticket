@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T07:33:46.304988+08:00",
+ "updated_at": "2026-11-26T07:48:08.810140+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -148,12 +148,7 @@
     "label": "落地签/电子签",
     "note": "落地签 30 天"
    },
-   "visited": false,
-   "back": {
-    "price": 410.0,
-    "depart": "2026-11-30"
-   },
-   "rt_ref": 661.0
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -11796,12 +11791,7 @@
     "label": "落地签/电子签",
     "note": "落地签 30 天"
    },
-   "visited": false,
-   "back": {
-    "price": 410.0,
-    "depart": "2026-11-30"
-   },
-   "rt_ref": 661.0
+   "visited": false
   },
   {
    "origin": "KUL",
