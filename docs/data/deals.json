@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-25T13:19:56.760044+08:00",
+ "updated_at": "2026-11-25T13:34:19.321943+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1134,
+  "fares_scanned": 1133,
   "routes": 787,
   "bug": 1,
   "great": 3,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1134
+   "count": 1133
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -484,39 +484,6 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "SHA",
-   "price": 5267.0,
-   "depart": "2027-01-13",
-   "return": "2027-01-18",
-   "one_way": false,
-   "trip_class": 1,
-   "transfers": 0,
-   "distance": 3796,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-18T03:37:33Z",
-   "source": "aviasales-latest",
-   "id": "KUL-SHA|RT|1",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 5178.0,
-   "ratio": 1.017,
-   "per_km": 0.6938,
-   "dest_name": "Shanghai",
-   "dest_name_zh": "上海",
-   "country": "CN",
-   "lat": 31.230393,
-   "lon": 121.473704,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
@@ -4221,24 +4188,25 @@
   {
    "origin": "KUL",
    "dest": "HKG",
-   "price": 1192.0,
+   "price": 1190.0,
    "depart": "2027-03-02",
    "return": "2027-03-07",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
-   "distance": 2516,
-   "airline": null,
+   "distance": 2522,
+   "airline": "HK Express (UO)",
+   "flight_number": 717,
+   "found_at": null,
+   "source": "aviasales-cheap",
    "gate": "Kiwi.com",
-   "found_at": "2026-11-25T05:14:34",
-   "source": "aviasales-latest",
    "id": "KUL-HKG|RT|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 1126.0,
-   "ratio": 1.059,
-   "per_km": 0.2369,
+   "ratio": 1.057,
+   "per_km": 0.2359,
    "dest_name": "Hong Kong",
    "dest_name_zh": "香港",
    "country": "HK",
