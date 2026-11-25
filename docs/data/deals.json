@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T12:36:34.796347+08:00",
+ "updated_at": "2026-11-25T12:50:58.136609+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1130,
-  "routes": 784,
+  "fares_scanned": 1131,
+  "routes": 785,
   "bug": 1,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1130
+   "count": 1131
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -24407,6 +24407,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "YTO",
+   "price": 3507.0,
+   "depart": "2027-02-15",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 14849,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-25T04:32:31",
+   "source": "aviasales-latest",
+   "id": "KUL-YTO|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3630.0,
+   "ratio": 0.966,
+   "per_km": 0.2362,
+   "dest_name": "Toronto",
+   "dest_name_zh": "多伦多",
+   "country": "CA",
+   "lat": 43.653524,
+   "lon": -79.3839069,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "EBB",
    "price": 3538.0,
    "depart": "2026-12-03",
@@ -24468,39 +24501,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "HMA",
-   "price": 3565.0,
-   "depart": "2026-12-19",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 7035,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-20T03:19:46",
-   "source": "aviasales-latest",
-   "id": "KUL-HMA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3496.0,
-   "ratio": 1.02,
-   "per_km": 0.5068,
-   "dest_name": "Khanty-Mansiysk",
-   "dest_name_zh": "汉特-曼西斯克",
-   "country": "RU",
-   "lat": 61.006057,
-   "lon": 69.0312136,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   }
