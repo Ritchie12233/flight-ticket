@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-25T12:07:49.794635+08:00",
+ "updated_at": "2026-11-25T12:22:13.972442+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1128,
-  "routes": 782,
+  "fares_scanned": 1129,
+  "routes": 783,
   "bug": 1,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1128
+   "count": 1129
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -256,39 +256,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "TWU",
-   "price": 3139.0,
-   "depart": "2027-05-01",
-   "return": "2027-05-08",
-   "one_way": false,
-   "trip_class": 1,
-   "transfers": 0,
-   "distance": 1803,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-22T01:33:49Z",
-   "source": "aviasales-latest",
-   "id": "KUL-TWU|RT|1",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3095.0,
-   "ratio": 1.014,
-   "per_km": 0.8705,
-   "dest_name": "Tawau",
-   "dest_name_zh": "斗湖",
-   "country": "MY",
-   "lat": 4.244651,
-   "lon": 117.8911861,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": true
-  },
-  {
-   "origin": "KUL",
    "dest": "BKK",
    "price": 3300.0,
    "depart": "2026-11-26",
@@ -319,6 +286,39 @@
     "note": "免签 60 天"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TWU",
+   "price": 3683.0,
+   "depart": "2027-05-01",
+   "return": "2027-05-08",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 0,
+   "distance": 1803,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-25T03:53:35Z",
+   "source": "aviasales-latest",
+   "id": "KUL-TWU|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3095.0,
+   "ratio": 1.19,
+   "per_km": 1.0214,
+   "dest_name": "Tawau",
+   "dest_name_zh": "斗湖",
+   "country": "MY",
+   "lat": 4.244651,
+   "lon": 117.8911861,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": true
   },
   {
    "origin": "KUL",
@@ -20614,7 +20614,7 @@
    "origin": "KUL",
    "dest": "LED",
    "price": 2217.0,
-   "depart": "2026-12-31",
+   "depart": "2026-12-28",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -20622,7 +20622,7 @@
    "distance": 8712,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-24T20:46:00",
+   "found_at": "2026-11-25T04:00:10",
    "source": "aviasales-latest",
    "id": "KUL-LED|OW|0",
    "type": "fare",
