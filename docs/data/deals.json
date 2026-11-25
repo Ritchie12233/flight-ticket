@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-25T19:35:14.153068+08:00",
+ "updated_at": "2026-11-25T19:49:35.562946+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1136,
-  "routes": 789,
+  "fares_scanned": 1138,
+  "routes": 790,
   "bug": 1,
-  "great": 3,
+  "great": 4,
   "target": 0
  },
  "channels": [
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1136
+   "count": 1138
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -179,6 +179,42 @@
    "country": "JP",
    "lat": 35.6761919,
    "lon": 139.6503106,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "OKA",
+   "price": 2458.0,
+   "depart": "2027-01-16",
+   "return": "2027-01-25",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3772,
+   "airline": "Scoot (TR)",
+   "flight_number": 475,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Biletix",
+   "id": "KUL-OKA|RT|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 49%"
+   ],
+   "baseline": 4847.0,
+   "ratio": 0.507,
+   "per_km": 0.3258,
+   "dest_name": "Okinawa",
+   "dest_name_zh": "冲绳",
+   "country": "JP",
+   "lat": 26.1201911,
+   "lon": 127.7025012,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -6417,6 +6453,42 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "OKA",
+   "price": 2458.0,
+   "depart": "2027-01-16",
+   "return": "2027-01-25",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3772,
+   "airline": "Scoot (TR)",
+   "flight_number": 475,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Biletix",
+   "id": "KUL-OKA|RT|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 49%"
+   ],
+   "baseline": 4847.0,
+   "ratio": 0.507,
+   "per_km": 0.3258,
+   "dest_name": "Okinawa",
+   "dest_name_zh": "冲绳",
+   "country": "JP",
+   "lat": 26.1201911,
+   "lon": 127.7025012,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -16407,6 +16479,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "SOQ",
+   "price": 1371.0,
+   "depart": "2027-01-21",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3313,
+   "airline": null,
+   "gate": "Aviakassa",
+   "found_at": "2026-11-25T11:23:45",
+   "source": "aviasales-latest",
+   "id": "KUL-SOQ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1712.0,
+   "ratio": 0.801,
+   "per_km": 0.4138,
+   "dest_name": "Sorong",
+   "dest_name_zh": "索龙",
+   "country": "ID",
+   "lat": -0.8761629,
+   "lon": 131.255828,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "VNS",
    "price": 1374.0,
    "depart": "2027-02-10",
@@ -17991,39 +18096,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "SOQ",
-   "price": 1703.0,
-   "depart": "2027-04-11",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3313,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-23T09:39:01",
-   "source": "aviasales-latest",
-   "id": "KUL-SOQ|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1712.0,
-   "ratio": 0.994,
-   "per_km": 0.514,
-   "dest_name": "Sorong",
-   "dest_name_zh": "索龙",
-   "country": "ID",
-   "lat": -0.8761629,
-   "lon": 131.255828,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "ZRH",
    "price": 1715.0,
    "depart": "2026-12-01",
@@ -18224,7 +18296,7 @@
    "origin": "KUL",
    "dest": "ALA",
    "price": 1768.0,
-   "depart": "2027-06-16",
+   "depart": "2027-03-02",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -18232,7 +18304,7 @@
    "distance": 5129,
    "airline": null,
    "gate": "Tickets.kz",
-   "found_at": "2026-11-25T10:16:44",
+   "found_at": "2026-11-25T11:22:34",
    "source": "aviasales-latest",
    "id": "KUL-ALA|OW|0",
    "type": "fare",
@@ -20303,6 +20375,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "MUC",
+   "price": 2148.0,
+   "depart": "2027-02-28",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 9771,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-25T11:17:25",
+   "source": "aviasales-latest",
+   "id": "KUL-MUC|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2192.0,
+   "ratio": 0.98,
+   "per_km": 0.2198,
+   "dest_name": "Munich",
+   "dest_name_zh": "慕尼黑",
+   "country": "DE",
+   "lat": 48.1391265,
+   "lon": 11.5801863,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "SZG",
    "price": 2151.0,
    "depart": "2026-12-02",
@@ -20595,39 +20700,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "MUC",
-   "price": 2200.0,
-   "depart": "2027-01-26",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 9771,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-23T07:20:24",
-   "source": "aviasales-latest",
-   "id": "KUL-MUC|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2192.0,
-   "ratio": 1.004,
-   "per_km": 0.2252,
-   "dest_name": "Munich",
-   "dest_name_zh": "慕尼黑",
-   "country": "DE",
-   "lat": 48.1391265,
-   "lon": 11.5801863,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -24766,6 +24838,56 @@
    [
     "2026-11-25",
     543.0
+   ]
+  ],
+  "KUL-OKA|RT|0": [
+   [
+    "2026-11-11",
+    4898.0
+   ],
+   [
+    "2026-11-12",
+    4872.0
+   ],
+   [
+    "2026-11-13",
+    4847.0
+   ],
+   [
+    "2026-11-14",
+    4847.0
+   ],
+   [
+    "2026-11-15",
+    4897.0
+   ],
+   [
+    "2026-11-16",
+    4867.0
+   ],
+   [
+    "2026-11-20",
+    2970.0
+   ],
+   [
+    "2026-11-21",
+    2970.0
+   ],
+   [
+    "2026-11-22",
+    2973.0
+   ],
+   [
+    "2026-11-23",
+    2968.0
+   ],
+   [
+    "2026-11-24",
+    7850.0
+   ],
+   [
+    "2026-11-25",
+    2458.0
    ]
   ]
  },
