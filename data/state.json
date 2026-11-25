@@ -799,7 +799,7 @@
    "2026-11-22": 1847.0,
    "2026-11-23": 1844.0,
    "2026-11-24": 1857.0,
-   "2026-11-25": 1849.0
+   "2026-11-25": 1848.0
   },
   "KUL-CMB|RT|0": {
    "2026-11-11": 1398.0,
@@ -12597,7 +12597,7 @@
    "2026-11-22": 2300.0,
    "2026-11-23": 2297.0,
    "2026-11-24": 2313.0,
-   "2026-11-25": 2089.0
+   "2026-11-25": 2088.0
   },
   "KUL-FUE|OW|0": {
    "2026-11-13": 1994.0,
@@ -15147,6 +15147,17 @@
   }
  },
  "news": [
+  {
+   "id": "rss:011cbee8835d295e",
+   "type": "news",
+   "level": "news",
+   "title": "HIGH SEASON 🌴 🥥 3-in-1 trip from Prague to Istanbul, Kuala Lumpur, and a Malaysian laid-back island for €493",
+   "summary": "This itinerary has a really nice rhythm: first Istanbul, where Europe and Asia meet; then Kuala Lumpur, one of Southeast Asia’s easiest and most exciting capitals; and finally Pangkor Island, a quiet tropical escape where everything slows down. The combination of all flights, buses, and ferries will be only €493.",
+   "link": "https://www.fly4free.com/flight-deals/europe/3-in-1-trip-from-prague-to-istanbul-and-malaysia-e493/",
+   "source": "Fly4free 全球特价",
+   "published": "2026-11-25T08:00:20+00:00",
+   "is_error_fare": false
+  },
   {
    "id": "rss:4ee8cb8f21ec9206",
    "type": "news",
