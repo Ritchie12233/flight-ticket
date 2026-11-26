@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T07:33:33.572747+08:00",
+ "updated_at": "2026-11-27T07:47:53.988158+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -219,7 +219,12 @@
     "label": "落地签/电子签",
     "note": "落地签 30 天"
    },
-   "visited": false
+   "visited": false,
+   "back": {
+    "price": 407.0,
+    "depart": "2026-11-30"
+   },
+   "rt_ref": 661.0
   },
   {
    "origin": "KUL",
@@ -11520,7 +11525,12 @@
     "label": "落地签/电子签",
     "note": "落地签 30 天"
    },
-   "visited": false
+   "visited": false,
+   "back": {
+    "price": 407.0,
+    "depart": "2026-11-30"
+   },
+   "rt_ref": 661.0
   },
   {
    "origin": "KUL",
@@ -24861,6 +24871,14 @@
   }
  ],
  "alerts": [
+  {
+   "at": "2026-11-27T07:47:53.988158+08:00",
+   "title": "🔥 疑似BUG价 吉隆坡→巨港 ¥320【落地签/电子签】",
+   "url": "https://www.aviasales.com/search/KUL0412PLM1",
+   "channels": [
+    "ntfy"
+   ]
+  },
   {
    "at": "2026-11-26T14:02:43.201802+08:00",
    "title": "🔥 疑似BUG价 吉隆坡→哈巴罗夫斯克 ¥4,561【免签】",
