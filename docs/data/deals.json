@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-26T09:14:31.711994+08:00",
+ "updated_at": "2026-11-26T09:28:51.926423+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1129,
-  "routes": 786,
+  "fares_scanned": 1128,
+  "routes": 785,
   "bug": 1,
   "great": 4,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1129
+   "count": 1128
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -7932,40 +7932,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "SHJ",
-   "price": 3879.0,
-   "depart": "2026-12-01",
-   "return": "2026-12-03",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 5522,
-   "airline": "Air India (AI)",
-   "flight_number": 2385,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "gate": "Kupi.com",
-   "id": "KUL-SHJ|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3642.0,
-   "ratio": 1.065,
-   "per_km": 0.3512,
-   "dest_name": "Sharjah",
-   "dest_name_zh": "沙迦",
-   "country": "AE",
-   "lat": 25.3462553,
-   "lon": 55.4209317,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "BNE",
    "price": 3926.0,
    "depart": "2027-10-17",
@@ -8029,6 +7995,40 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "SHJ",
+   "price": 3961.0,
+   "depart": "2027-01-02",
+   "return": "2027-01-10",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5522,
+   "airline": "Air Arabia (G9)",
+   "flight_number": 801,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "gate": "Wingie",
+   "id": "KUL-SHJ|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3642.0,
+   "ratio": 1.088,
+   "per_km": 0.3586,
+   "dest_name": "Sharjah",
+   "dest_name_zh": "沙迦",
+   "country": "AE",
+   "lat": 25.3462553,
+   "lon": 55.4209317,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -14896,39 +14896,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "NAW",
-   "price": 1066.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 418,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-19T00:27:33",
-   "source": "aviasales-latest",
-   "id": "KUL-NAW|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1054.0,
-   "ratio": 1.011,
-   "per_km": 2.5502,
-   "dest_name": "Narathiwat",
-   "dest_name_zh": "那拉提瓦",
-   "country": "TH",
-   "lat": 6.516667,
-   "lon": 101.75,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 60 天"
    },
    "visited": false
   },
@@ -24402,6 +24369,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "NYC",
+   "price": 3331.0,
+   "depart": "2027-01-11",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 15167,
+   "airline": null,
+   "gate": "City.Travel",
+   "found_at": "2026-11-26T00:33:18",
+   "source": "aviasales-latest",
+   "id": "KUL-NYC|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3318.0,
+   "ratio": 1.004,
+   "per_km": 0.2196,
+   "dest_name": "New York",
+   "dest_name_zh": "纽约",
+   "country": "US",
+   "lat": 40.7143528,
+   "lon": -74.0059731,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   }
