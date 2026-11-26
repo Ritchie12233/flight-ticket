@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-27T00:07:16.379593+08:00",
+ "updated_at": "2026-11-27T00:21:40.259837+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1121,
-  "routes": 772,
+  "fares_scanned": 1120,
+  "routes": 771,
   "bug": 2,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1121
+   "count": 1120
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -1628,14 +1628,14 @@
     "origin": "KUL",
     "dest": "DPS",
     "price": 886.0,
-    "depart": "2026-12-06",
-    "return": "2026-12-15",
+    "depart": "2026-12-01",
+    "return": "2026-12-03",
     "one_way": false,
     "trip_class": 0,
     "transfers": 0,
     "distance": 1993,
     "airline": "AirAsia (AK)",
-    "flight_number": 378,
+    "flight_number": 368,
     "found_at": null,
     "source": "aviasales-cheap",
     "gate": "Flightnetwork",
@@ -3795,14 +3795,14 @@
    "origin": "KUL",
    "dest": "DPS",
    "price": 886.0,
-   "depart": "2026-12-06",
-   "return": "2026-12-15",
+   "depart": "2026-12-01",
+   "return": "2026-12-03",
    "one_way": false,
    "trip_class": 0,
    "transfers": 0,
    "distance": 1993,
    "airline": "AirAsia (AK)",
-   "flight_number": 378,
+   "flight_number": 368,
    "found_at": null,
    "source": "aviasales-cheap",
    "gate": "Flightnetwork",
