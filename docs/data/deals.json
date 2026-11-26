@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T19:33:42.067973+08:00",
+ "updated_at": "2026-11-26T19:48:00.783350+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -20775,8 +20775,8 @@
   {
    "origin": "KUL",
    "dest": "AER",
-   "price": 2266.0,
-   "depart": "2026-12-09",
+   "price": 2265.0,
+   "depart": "2027-01-18",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -20784,7 +20784,7 @@
    "distance": 7550,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-26T08:49:55",
+   "found_at": "2026-11-26T11:21:25",
    "source": "aviasales-latest",
    "id": "KUL-AER|OW|0",
    "type": "fare",
@@ -20792,7 +20792,7 @@
    "reasons": [],
    "baseline": 2275.0,
    "ratio": 0.996,
-   "per_km": 0.3001,
+   "per_km": 0.3,
    "dest_name": "Adler/Sochi",
    "dest_name_zh": "索契",
    "country": "RU",
