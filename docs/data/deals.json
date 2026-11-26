@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T12:22:05.535790+08:00",
+ "updated_at": "2026-11-26T12:36:26.299495+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -17138,6 +17138,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "ALA",
+   "price": 1566.0,
+   "depart": "2026-12-02",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5129,
+   "airline": null,
+   "gate": "Aviakassa",
+   "found_at": "2026-11-26T04:06:23",
+   "source": "aviasales-latest",
+   "id": "KUL-ALA|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1731.0,
+   "ratio": 0.905,
+   "per_km": 0.3053,
+   "dest_name": "Almaty",
+   "dest_name_zh": "阿拉木图",
+   "country": "KZ",
+   "lat": 43.2220146,
+   "lon": 76.8512485,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "AMQ",
    "price": 1568.0,
    "depart": "2026-11-27",
@@ -17333,39 +17366,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "ALA",
-   "price": 1597.0,
-   "depart": "2026-12-02",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5129,
-   "airline": null,
-   "gate": "Aviakassa",
-   "found_at": "2026-11-26T02:48:47",
-   "source": "aviasales-latest",
-   "id": "KUL-ALA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1731.0,
-   "ratio": 0.923,
-   "per_km": 0.3114,
-   "dest_name": "Almaty",
-   "dest_name_zh": "阿拉木图",
-   "country": "KZ",
-   "lat": 43.2220146,
-   "lon": 76.8512485,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
