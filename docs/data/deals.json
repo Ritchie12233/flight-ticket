@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-27T06:21:19.595849+08:00",
+ "updated_at": "2026-11-27T06:35:47.226939+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1109,
-  "routes": 764,
+  "fares_scanned": 1108,
+  "routes": 763,
   "bug": 2,
   "great": 4,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1109
+   "count": 1108
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -8946,39 +8946,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "LKO",
-   "price": 5032.0,
-   "depart": "2026-11-27",
-   "return": "2026-11-27",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3470,
-   "airline": null,
-   "gate": "Wingie",
-   "found_at": "2026-11-24T03:30:40",
-   "source": "aviasales-latest",
-   "id": "KUL-LKO|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3658.0,
-   "ratio": 1.376,
-   "per_km": 0.7251,
-   "dest_name": "Lucknow",
-   "dest_name_zh": "勒克瑙",
-   "country": "IN",
-   "lat": 26.8466937,
-   "lon": 80.946166,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "MSQ",
    "price": 5061.0,
    "depart": "2026-12-21",
@@ -12214,7 +12181,7 @@
   {
    "origin": "KUL",
    "dest": "DLI",
-   "price": 503.0,
+   "price": 500.0,
    "depart": "2027-02-01",
    "return": null,
    "one_way": true,
@@ -12223,15 +12190,15 @@
    "distance": 1241,
    "airline": null,
    "gate": "Trip.com",
-   "found_at": "2026-11-22T09:01:37",
+   "found_at": "2026-11-26T22:23:39",
    "source": "aviasales-latest",
    "id": "KUL-DLI|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 482.0,
-   "ratio": 1.042,
-   "per_km": 0.4053,
+   "ratio": 1.036,
+   "per_km": 0.4029,
    "dest_name": "Dalat",
    "dest_name_zh": "大叻",
    "country": "VN",
