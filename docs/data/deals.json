@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-26T13:19:43.633759+08:00",
+ "updated_at": "2026-11-26T13:34:01.941971+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1117,
-  "routes": 777,
+  "fares_scanned": 1116,
+  "routes": 776,
   "bug": 1,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1117
+   "count": 1116
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -6601,39 +6601,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "GAN",
-   "price": 2721.0,
-   "depart": "2026-12-22",
-   "return": "2026-12-29",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": null,
-   "distance": 3200,
-   "airline": "SriLankan Airlines (UL)",
-   "flight_number": 319,
-   "found_at": null,
-   "source": "aviasales-cheap",
-   "id": "KUL-GAN|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2702.0,
-   "ratio": 1.007,
-   "per_km": 0.4252,
-   "dest_name": "Gan Island",
-   "dest_name_zh": "Gan Island",
-   "country": "MV",
-   "lat": -0.690003,
-   "lon": 73.15654,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（行前 96 小时填 IMUGA）"
    },
    "visited": false
   },
