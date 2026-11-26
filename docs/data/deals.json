@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-27T07:04:36.704067+08:00",
+ "updated_at": "2026-11-27T07:19:09.238437+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1108,
-  "routes": 763,
+  "fares_scanned": 1110,
+  "routes": 765,
   "bug": 2,
-  "great": 4,
+  "great": 5,
   "target": 0
  },
  "channels": [
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1108
+   "count": 1110
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -78,6 +78,41 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "NMA",
+   "price": 2923.0,
+   "depart": "2026-12-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 5209,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-26T22:59:27",
+   "source": "aviasales-latest",
+   "id": "KUL-NMA|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 49%"
+   ],
+   "baseline": 5745.0,
+   "ratio": 0.509,
+   "per_km": 0.5611,
+   "dest_name": "Namangan",
+   "dest_name_zh": "纳曼干",
+   "country": "UZ",
+   "lat": 41.0057729,
+   "lon": 71.6436028,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
    },
    "visited": false
   },
@@ -14691,39 +14726,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "OSA",
-   "price": 1075.0,
-   "depart": "2027-01-18",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4942,
-   "airline": null,
-   "gate": "Tickets",
-   "found_at": "2026-11-20T00:36:42",
-   "source": "aviasales-latest",
-   "id": "KUL-OSA|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1104.0,
-   "ratio": 0.974,
-   "per_km": 0.2175,
-   "dest_name": "Osaka",
-   "dest_name_zh": "大阪",
-   "country": "JP",
-   "lat": 34.6937378,
-   "lon": 135.5021651,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "RGN",
    "price": 1080.0,
    "depart": "2027-01-12",
@@ -14790,30 +14792,30 @@
   },
   {
    "origin": "KUL",
-   "dest": "TYO",
-   "price": 1093.0,
-   "depart": "2027-01-24",
+   "dest": "OSA",
+   "price": 1087.0,
+   "depart": "2027-01-17",
    "return": null,
    "one_way": true,
    "trip_class": 0,
    "transfers": 1,
-   "distance": 5349,
+   "distance": 4942,
    "airline": null,
-   "gate": "Tickets",
-   "found_at": "2026-11-25T15:31:00",
+   "gate": "Wowtickets",
+   "found_at": "2026-11-20T01:08:40",
    "source": "aviasales-latest",
-   "id": "KUL-TYO|OW|0",
+   "id": "KUL-OSA|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
-   "baseline": 1103.0,
-   "ratio": 0.991,
-   "per_km": 0.2043,
-   "dest_name": "Tokyo",
-   "dest_name_zh": "东京",
+   "baseline": 1104.0,
+   "ratio": 0.985,
+   "per_km": 0.22,
+   "dest_name": "Osaka",
+   "dest_name_zh": "大阪",
    "country": "JP",
-   "lat": 35.6761919,
-   "lon": 139.6503106,
+   "lat": 34.6937378,
+   "lon": 135.5021651,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14884,6 +14886,39 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TYO",
+   "price": 1100.0,
+   "depart": "2027-03-02",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 5408,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-21T10:03:29",
+   "source": "aviasales-latest",
+   "id": "KUL-TYO|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1103.0,
+   "ratio": 0.997,
+   "per_km": 0.2034,
+   "dest_name": "Tokyo",
+   "dest_name_zh": "东京",
+   "country": "JP",
+   "lat": 35.6761919,
+   "lon": 139.6503106,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -23110,6 +23145,41 @@
   },
   {
    "origin": "KUL",
+   "dest": "NMA",
+   "price": 2923.0,
+   "depart": "2026-12-01",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 5209,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-26T22:59:27",
+   "source": "aviasales-latest",
+   "id": "KUL-NMA|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 49%"
+   ],
+   "baseline": 5745.0,
+   "ratio": 0.509,
+   "per_km": 0.5611,
+   "dest_name": "Namangan",
+   "dest_name_zh": "纳曼干",
+   "country": "UZ",
+   "lat": 41.0057729,
+   "lon": 71.6436028,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "SEZ",
    "price": 2926.0,
    "depart": "2027-01-12",
@@ -23935,6 +24005,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "RGK",
+   "price": 3493.0,
+   "depart": "2027-02-11",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 5666,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-26T23:01:56",
+   "source": "aviasales-latest",
+   "id": "KUL-RGK|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3103.0,
+   "ratio": 1.126,
+   "per_km": 0.6165,
+   "dest_name": "Gorno-Altaysk",
+   "dest_name_zh": "Gorno-Altaysk",
+   "country": "RU",
+   "lat": 51.9587202,
+   "lon": 85.9601203,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "YTO",
    "price": 3494.0,
    "depart": "2027-02-14",
@@ -24163,72 +24266,6 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "NJC",
-   "price": 3675.0,
-   "depart": "2027-04-02",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6811,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-23T01:10:19",
-   "source": "aviasales-latest",
-   "id": "KUL-NJC|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3528.0,
-   "ratio": 1.042,
-   "per_km": 0.5396,
-   "dest_name": "Nizhnevartovsk",
-   "dest_name_zh": "下瓦爾托夫斯克",
-   "country": "RU",
-   "lat": 60.9389425,
-   "lon": 76.5952345,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DUR",
-   "price": 3727.0,
-   "depart": "2026-11-30",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 8299,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-20T18:02:38",
-   "source": "aviasales-latest",
-   "id": "KUL-DUR|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3170.0,
-   "ratio": 1.176,
-   "per_km": 0.4491,
-   "dest_name": "Durban",
-   "dest_name_zh": "德班",
-   "country": "ZA",
-   "lat": -29.857876,
-   "lon": 31.027581,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": true
   }
  ],
  "trend": {
@@ -24292,6 +24329,72 @@
    [
     "2026-11-27",
     4560.0
+   ]
+  ],
+  "KUL-NMA|OW|0": [
+   [
+    "2026-11-11",
+    4904.0
+   ],
+   [
+    "2026-11-12",
+    4859.0
+   ],
+   [
+    "2026-11-13",
+    4834.0
+   ],
+   [
+    "2026-11-14",
+    4834.0
+   ],
+   [
+    "2026-11-15",
+    4884.0
+   ],
+   [
+    "2026-11-16",
+    5324.0
+   ],
+   [
+    "2026-11-17",
+    5338.0
+   ],
+   [
+    "2026-11-18",
+    5747.0
+   ],
+   [
+    "2026-11-19",
+    5771.0
+   ],
+   [
+    "2026-11-20",
+    5747.0
+   ],
+   [
+    "2026-11-21",
+    5749.0
+   ],
+   [
+    "2026-11-22",
+    5753.0
+   ],
+   [
+    "2026-11-23",
+    5745.0
+   ],
+   [
+    "2026-11-24",
+    5784.0
+   ],
+   [
+    "2026-11-25",
+    5795.0
+   ],
+   [
+    "2026-11-27",
+    2923.0
    ]
   ],
   "KUL-RAK|OW|0": [
