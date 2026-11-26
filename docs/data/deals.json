@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-26T10:26:15.724475+08:00",
+ "updated_at": "2026-11-26T10:40:46.127560+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1126,
-  "routes": 784,
+  "fares_scanned": 1125,
+  "routes": 783,
   "bug": 1,
   "great": 4,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1126
+   "count": 1125
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -981,39 +981,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "ALA",
-   "price": 14012.0,
-   "depart": "2026-11-26",
-   "return": "2026-12-10",
-   "one_way": false,
-   "trip_class": 1,
-   "transfers": 1,
-   "distance": 5129,
-   "airline": null,
-   "gate": "Gotogate",
-   "found_at": "2026-11-19T14:45:56Z",
-   "source": "aviasales-latest",
-   "id": "KUL-ALA|RT|1",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 14012.0,
-   "ratio": 1.0,
-   "per_km": 1.366,
-   "dest_name": "Almaty",
-   "dest_name_zh": "阿拉木图",
-   "country": "KZ",
-   "lat": 43.2220146,
-   "lon": 76.8512485,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
    },
    "visited": false
   },
