@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T16:12:14.278630+08:00",
+ "updated_at": "2026-11-26T16:26:55.543745+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -18562,6 +18562,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "HEK",
+   "price": 1895.0,
+   "depart": "2026-12-09",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5805,
+   "airline": null,
+   "gate": "Т-Банк",
+   "found_at": "2026-11-26T08:10:49",
+   "source": "aviasales-latest",
+   "id": "KUL-HEK|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1814.0,
+   "ratio": 1.045,
+   "per_km": 0.3264,
+   "dest_name": "Heihe",
+   "dest_name_zh": "黑河",
+   "country": "CN",
+   "lat": 50.245129,
+   "lon": 127.528293,
+   "visa": {
+    "status": "free",
+    "label": "国内",
+    "note": "回国，不需要签证"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "YNJ",
    "price": 1896.0,
    "depart": "2026-11-26",
@@ -18724,39 +18757,6 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "HEK",
-   "price": 1915.0,
-   "depart": "2026-12-10",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5805,
-   "airline": null,
-   "gate": "SuperKassa",
-   "found_at": "2026-11-26T07:56:45",
-   "source": "aviasales-latest",
-   "id": "KUL-HEK|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1814.0,
-   "ratio": 1.056,
-   "per_km": 0.3299,
-   "dest_name": "Heihe",
-   "dest_name_zh": "黑河",
-   "country": "CN",
-   "lat": 50.245129,
-   "lon": 127.528293,
-   "visa": {
-    "status": "free",
-    "label": "国内",
-    "note": "回国，不需要签证"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
