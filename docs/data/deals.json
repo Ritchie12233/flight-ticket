@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-26T08:17:02.322629+08:00",
+ "updated_at": "2026-11-26T08:31:29.768802+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1130,
-  "routes": 787,
+  "fares_scanned": 1129,
+  "routes": 786,
   "bug": 1,
   "great": 4,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1130
+   "count": 1129
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -7661,7 +7661,7 @@
   {
    "origin": "KUL",
    "dest": "URC",
-   "price": 3668.0,
+   "price": 3667.0,
    "depart": "2026-12-17",
    "return": "2026-12-28",
    "one_way": false,
@@ -7679,7 +7679,7 @@
    "reasons": [],
    "baseline": 3386.0,
    "ratio": 1.083,
-   "per_km": 0.3876,
+   "per_km": 0.3875,
    "dest_name": "Urumqi",
    "dest_name_zh": "乌鲁木齐",
    "country": "CN",
@@ -8471,39 +8471,6 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "LUV",
-   "price": 4332.0,
-   "depart": "2027-01-20",
-   "return": "2027-02-05",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 3568,
-   "airline": null,
-   "gate": "Aviakassa",
-   "found_at": "2026-11-18T23:12:05",
-   "source": "aviasales-latest",
-   "id": "KUL-LUV|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 4312.0,
-   "ratio": 1.005,
-   "per_km": 0.6071,
-   "dest_name": "Langgur",
-   "dest_name_zh": "兰格格尔",
-   "country": "ID",
-   "lat": -5.666667,
-   "lon": 132.71666,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
    },
    "visited": false
   },
