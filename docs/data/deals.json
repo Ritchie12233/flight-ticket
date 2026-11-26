@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-26T12:07:47.549830+08:00",
+ "updated_at": "2026-11-26T12:22:05.535790+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
   "fares_scanned": 1124,
   "routes": 783,
   "bug": 1,
-  "great": 4,
+  "great": 3,
   "target": 0
  },
  "channels": [
@@ -147,42 +147,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "TYO",
-   "price": 546.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 5408,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-25T06:40:56",
-   "source": "aviasales-latest",
-   "id": "KUL-TYO|OW|0",
-   "type": "fare",
-   "level": "great",
-   "reasons": [
-    "比近期常规价低 50%",
-    "每公里 0.101，很划算"
-   ],
-   "baseline": 1103.0,
-   "ratio": 0.495,
-   "per_km": 0.101,
-   "dest_name": "Tokyo",
-   "dest_name_zh": "东京",
-   "country": "JP",
-   "lat": 35.6761919,
-   "lon": 139.6503106,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -12519,42 +12483,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "TYO",
-   "price": 546.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 5408,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-25T06:40:56",
-   "source": "aviasales-latest",
-   "id": "KUL-TYO|OW|0",
-   "type": "fare",
-   "level": "great",
-   "reasons": [
-    "比近期常规价低 50%",
-    "每公里 0.101，很划算"
-   ],
-   "baseline": 1103.0,
-   "ratio": 0.495,
-   "per_km": 0.101,
-   "dest_name": "Tokyo",
-   "dest_name_zh": "东京",
-   "country": "JP",
-   "lat": 35.6761919,
-   "lon": 139.6503106,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "JOG",
    "price": 586.0,
    "depart": "2027-02-18",
@@ -14990,6 +14918,39 @@
    "country": "JP",
    "lat": 34.6937378,
    "lon": 135.5021651,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "TYO",
+   "price": 1099.0,
+   "depart": "2027-01-24",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5349,
+   "airline": null,
+   "gate": "Tickets",
+   "found_at": "2026-11-25T15:31:00",
+   "source": "aviasales-latest",
+   "id": "KUL-TYO|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1103.0,
+   "ratio": 0.996,
+   "per_km": 0.2055,
+   "dest_name": "Tokyo",
+   "dest_name_zh": "东京",
+   "country": "JP",
+   "lat": 35.6761919,
+   "lon": 139.6503106,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -24496,72 +24457,6 @@
    [
     "2026-11-26",
     329.0
-   ]
-  ],
-  "KUL-TYO|OW|0": [
-   [
-    "2026-11-11",
-    1117.0
-   ],
-   [
-    "2026-11-12",
-    1118.0
-   ],
-   [
-    "2026-11-13",
-    1103.0
-   ],
-   [
-    "2026-11-14",
-    1103.0
-   ],
-   [
-    "2026-11-15",
-    1114.0
-   ],
-   [
-    "2026-11-16",
-    1107.0
-   ],
-   [
-    "2026-11-17",
-    1108.0
-   ],
-   [
-    "2026-11-18",
-    1103.0
-   ],
-   [
-    "2026-11-19",
-    1110.0
-   ],
-   [
-    "2026-11-20",
-    1105.0
-   ],
-   [
-    "2026-11-21",
-    1057.0
-   ],
-   [
-    "2026-11-22",
-    1058.0
-   ],
-   [
-    "2026-11-23",
-    1056.0
-   ],
-   [
-    "2026-11-24",
-    1064.0
-   ],
-   [
-    "2026-11-25",
-    543.0
-   ],
-   [
-    "2026-11-26",
-    545.0
    ]
   ],
   "KUL-OKA|RT|0": [
