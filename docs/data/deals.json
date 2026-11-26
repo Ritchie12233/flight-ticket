@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T02:02:27.953743+08:00",
+ "updated_at": "2026-11-27T02:16:50.576723+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -6158,7 +6158,7 @@
   {
    "origin": "KUL",
    "dest": "KOE",
-   "price": 2351.0,
+   "price": 2352.0,
    "depart": "2027-01-15",
    "return": "2027-01-24",
    "one_way": false,
@@ -6176,7 +6176,7 @@
    "reasons": [],
    "baseline": 2444.0,
    "ratio": 0.962,
-   "per_km": 0.4134,
+   "per_km": 0.4136,
    "dest_name": "Kupang",
    "dest_name_zh": "古邦",
    "country": "ID",
@@ -10346,7 +10346,7 @@
   {
    "origin": "KUL",
    "dest": "NOZ",
-   "price": 6805.0,
+   "price": 6806.0,
    "depart": "2027-03-13",
    "return": "2027-03-20",
    "one_way": false,
@@ -10364,7 +10364,7 @@
    "reasons": [],
    "baseline": 6923.0,
    "ratio": 0.983,
-   "per_km": 0.5883,
+   "per_km": 0.5884,
    "dest_name": "Novokuznetsk",
    "dest_name_zh": "新库兹涅茨克",
    "country": "RU",
