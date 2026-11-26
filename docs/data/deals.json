@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-26T14:02:43.201802+08:00",
+ "updated_at": "2026-11-26T14:17:02.838647+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1118,
+  "fares_scanned": 1119,
   "routes": 777,
   "bug": 2,
   "great": 3,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1118
+   "count": 1119
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -35,7 +35,7 @@
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
@@ -53,12 +53,13 @@
    "return": "2026-12-14",
    "one_way": false,
    "trip_class": 0,
-   "transfers": null,
+   "transfers": 2,
    "distance": 5958,
    "airline": "Spring Airlines (9C)",
    "flight_number": 6516,
    "found_at": null,
    "source": "aviasales-cheap",
+   "gate": "Kupi.com",
    "id": "KUL-KHV|RT|0",
    "type": "fare",
    "level": "bug",
@@ -8516,12 +8517,13 @@
    "return": "2026-12-14",
    "one_way": false,
    "trip_class": 0,
-   "transfers": null,
+   "transfers": 2,
    "distance": 5958,
    "airline": "Spring Airlines (9C)",
    "flight_number": 6516,
    "found_at": null,
    "source": "aviasales-cheap",
+   "gate": "Kupi.com",
    "id": "KUL-KHV|RT|0",
    "type": "fare",
    "level": "bug",
@@ -14105,6 +14107,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "SEL",
+   "price": 944.0,
+   "depart": "2027-01-12",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 4610,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-26T05:53:18",
+   "source": "aviasales-latest",
+   "id": "KUL-SEL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 987.0,
+   "ratio": 0.956,
+   "per_km": 0.2048,
+   "dest_name": "Seoul",
+   "dest_name_zh": "首尔",
+   "country": "KR",
+   "lat": 37.566535,
+   "lon": 126.9779692,
+   "visa": {
+    "status": "free_partial",
+    "label": "部分免签",
+    "note": "仅济州岛免签 30 天，其他地区需签证"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "INC",
    "price": 947.0,
    "depart": "2026-12-03",
@@ -14135,39 +14170,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "SEL",
-   "price": 951.0,
-   "depart": "2027-01-19",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 4610,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-21T11:53:39",
-   "source": "aviasales-latest",
-   "id": "KUL-SEL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 987.0,
-   "ratio": 0.964,
-   "per_km": 0.2063,
-   "dest_name": "Seoul",
-   "dest_name_zh": "首尔",
-   "country": "KR",
-   "lat": 37.566535,
-   "lon": 126.9779692,
-   "visa": {
-    "status": "free_partial",
-    "label": "部分免签",
-    "note": "仅济州岛免签 30 天，其他地区需签证"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
