@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-26T17:38:51.050382+08:00",
+ "updated_at": "2026-11-26T17:53:11.453140+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1119,
-  "routes": 776,
+  "fares_scanned": 1120,
+  "routes": 777,
   "bug": 2,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1119
+   "count": 1120
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -8401,6 +8401,39 @@
    "country": "PK",
    "lat": 31.5203696,
    "lon": 74.3587473,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "UBN",
+   "price": 4475.0,
+   "depart": "2026-12-25",
+   "return": "2027-01-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5015,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-26T09:48:07",
+   "source": "aviasales-latest",
+   "id": "KUL-UBN|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 6535.0,
+   "ratio": 0.685,
+   "per_km": 0.4462,
+   "dest_name": "Ulaanbaatar",
+   "dest_name_zh": "乌兰巴托",
+   "country": "MN",
+   "lat": 47.8863988,
+   "lon": 106.9057439,
    "visa": {
     "status": "visa",
     "label": "需签证",
