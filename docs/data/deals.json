@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-27T04:26:34.038442+08:00",
+ "updated_at": "2026-11-27T04:40:55.853088+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1112,
-  "routes": 766,
+  "fares_scanned": 1113,
+  "routes": 767,
   "bug": 2,
   "great": 4,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1112
+   "count": 1113
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -23798,6 +23798,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KYZ",
+   "price": 3274.0,
+   "depart": "2026-12-25",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 5483,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-26T20:12:16",
+   "source": "aviasales-latest",
+   "id": "KUL-KYZ|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.5971,
+   "dest_name": "Kyzyl",
+   "dest_name_zh": "克孜勒",
+   "country": "RU",
+   "lat": 51.7150832,
+   "lon": 94.4574804,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "CPT",
    "price": 3285.0,
    "depart": "2027-02-21",
@@ -24290,39 +24323,6 @@
     "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "YYC",
-   "price": 3738.0,
-   "depart": "2026-12-01",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 13134,
-   "airline": null,
-   "gate": "Tickets",
-   "found_at": "2026-11-24T16:55:01",
-   "source": "aviasales-latest",
-   "id": "KUL-YYC|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": null,
-   "ratio": null,
-   "per_km": 0.2846,
-   "dest_name": "Calgary",
-   "dest_name_zh": "卡尔加利",
-   "country": "CA",
-   "lat": 51.0447331,
-   "lon": -114.0718831,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
   }
  ],
  "trend": {
