@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T02:35:54.832473+08:00",
+ "updated_at": "2026-11-28T02:51:08.570231+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -20,17 +20,17 @@
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
    "name": "Secret Flying · 错误票价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -6715,39 +6715,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "HYD",
-   "price": 3194.0,
-   "depart": "2026-11-28",
-   "return": "2026-12-02",
-   "one_way": false,
-   "trip_class": 0,
-   "transfers": 2,
-   "distance": 3008,
-   "airline": null,
-   "gate": "City.Travel",
-   "found_at": "2026-11-21T14:57:21",
-   "source": "aviasales-latest",
-   "id": "KUL-HYD|RT|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 2691.0,
-   "ratio": 1.187,
-   "per_km": 0.5309,
-   "dest_name": "Hyderabad",
-   "dest_name_zh": "海德拉巴",
-   "country": "IN",
-   "lat": 17.385044,
-   "lon": 78.486671,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "TAS",
    "price": 3209.0,
    "depart": "2027-05-22",
@@ -7240,6 +7207,39 @@
     "note": "免签 14 天（试行，限指定机场入境）"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "HYD",
+   "price": 3599.0,
+   "depart": "2026-11-28",
+   "return": "2026-12-02",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3008,
+   "airline": null,
+   "gate": "Gotogate",
+   "found_at": "2026-11-21T14:57:21",
+   "source": "aviasales-latest",
+   "id": "KUL-HYD|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 2691.0,
+   "ratio": 1.337,
+   "per_km": 0.5982,
+   "dest_name": "Hyderabad",
+   "dest_name_zh": "海德拉巴",
+   "country": "IN",
+   "lat": 17.385044,
+   "lon": 78.486671,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
@@ -12890,6 +12890,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "CEB",
+   "price": 723.0,
+   "depart": "2027-04-13",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 2598,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-27T18:35:14",
+   "source": "aviasales-latest",
+   "id": "KUL-CEB|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 606.0,
+   "ratio": 1.193,
+   "per_km": 0.2783,
+   "dest_name": "Cebu City",
+   "dest_name_zh": "宿务",
+   "country": "PH",
+   "lat": 10.313333,
+   "lon": 123.98278,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天（试行，限指定机场入境）"
+   },
+   "visited": true
+  },
+  {
+   "origin": "KUL",
    "dest": "MFM",
    "price": 725.0,
    "depart": "2027-01-28",
@@ -12920,39 +12953,6 @@
     "note": "凭港澳通行证及有效签注入境"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "CEB",
-   "price": 728.0,
-   "depart": "2027-04-21",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 2598,
-   "airline": null,
-   "gate": "Авиасейлс",
-   "found_at": "2026-11-22T16:15:13",
-   "source": "aviasales-latest",
-   "id": "KUL-CEB|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 606.0,
-   "ratio": 1.201,
-   "per_km": 0.2802,
-   "dest_name": "Cebu City",
-   "dest_name_zh": "宿务",
-   "country": "PH",
-   "lat": 10.313333,
-   "lon": 123.98278,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 14 天（试行，限指定机场入境）"
-   },
-   "visited": true
   },
   {
    "origin": "KUL",
@@ -20789,7 +20789,7 @@
    "distance": 5394,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-27T17:34:47",
+   "found_at": "2026-11-27T18:23:02",
    "source": "aviasales-latest",
    "id": "KUL-SKD|OW|0",
    "type": "fare",
