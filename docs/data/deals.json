@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-27T08:16:36.905433+08:00",
+ "updated_at": "2026-11-27T08:30:54.823143+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1109,
-  "routes": 764,
+  "fares_scanned": 1108,
+  "routes": 763,
   "bug": 2,
   "great": 5,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1109
+   "count": 1108
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -17177,6 +17177,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "OOL",
+   "price": 1615.0,
+   "depart": "2026-12-12",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6510,
+   "airline": null,
+   "gate": "Flightnetwork",
+   "found_at": "2026-11-27T00:09:04",
+   "source": "aviasales-latest",
+   "id": "KUL-OOL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1753.0,
+   "ratio": 0.921,
+   "per_km": 0.2481,
+   "dest_name": "Gold Coast",
+   "dest_name_zh": "黄金海岸",
+   "country": "AU",
+   "lat": -28.016667,
+   "lon": 153.4,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "PAR",
    "price": 1624.0,
    "depart": "2026-12-17",
@@ -18059,39 +18092,6 @@
    "country": "IN",
    "lat": 34.14035,
    "lon": 77.54746,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "OOL",
-   "price": 1818.0,
-   "depart": "2026-12-06",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6510,
-   "airline": null,
-   "gate": "Kiwi.com",
-   "found_at": "2026-11-21T21:59:45",
-   "source": "aviasales-latest",
-   "id": "KUL-OOL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1753.0,
-   "ratio": 1.037,
-   "per_km": 0.2793,
-   "dest_name": "Gold Coast",
-   "dest_name_zh": "黄金海岸",
-   "country": "AU",
-   "lat": -28.016667,
-   "lon": 153.4,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -19880,39 +19880,6 @@
     "status": "free",
     "label": "免签",
     "note": "免签 90 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "HYD",
-   "price": 2120.0,
-   "depart": "2026-11-29",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3008,
-   "airline": null,
-   "gate": "Vayama",
-   "found_at": "2026-11-19T23:37:32",
-   "source": "aviasales-latest",
-   "id": "KUL-HYD|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1569.0,
-   "ratio": 1.351,
-   "per_km": 0.7048,
-   "dest_name": "Hyderabad",
-   "dest_name_zh": "海德拉巴",
-   "country": "IN",
-   "lat": 17.385044,
-   "lon": 78.486671,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
@@ -24174,6 +24141,39 @@
     "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "DUR",
+   "price": 3707.0,
+   "depart": "2026-11-30",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 2,
+   "distance": 8299,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-20T18:02:38",
+   "source": "aviasales-latest",
+   "id": "KUL-DUR|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3170.0,
+   "ratio": 1.169,
+   "per_km": 0.4467,
+   "dest_name": "Durban",
+   "dest_name_zh": "德班",
+   "country": "ZA",
+   "lat": -29.857876,
+   "lon": 31.027581,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": true
   }
  ],
  "trend": {
