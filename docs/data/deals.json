@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-27T23:24:39.630800+08:00",
+ "updated_at": "2026-11-27T23:39:01.210964+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1083,
-  "routes": 751,
+  "fares_scanned": 1084,
+  "routes": 752,
   "bug": 2,
   "great": 5,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1083
+   "count": 1084
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -880,6 +880,39 @@
    "country": "AU",
    "lat": -37.8131869,
    "lon": 144.9629796,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "AMS",
+   "price": 13320.0,
+   "depart": "2027-04-13",
+   "return": "2027-05-02",
+   "one_way": false,
+   "trip_class": 1,
+   "transfers": 1,
+   "distance": 10234,
+   "airline": null,
+   "gate": "Flightnetwork",
+   "found_at": "2026-11-27T15:12:59Z",
+   "source": "aviasales-latest",
+   "id": "KUL-AMS|RT|1",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.6508,
+   "dest_name": "Amsterdam",
+   "dest_name_zh": "阿姆斯特丹",
+   "country": "NL",
+   "lat": 52.3730556,
+   "lon": 4.8922222,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -16716,7 +16749,7 @@
   {
    "origin": "KUL",
    "dest": "VVO",
-   "price": 1552.0,
+   "price": 1548.0,
    "depart": "2026-12-30",
    "return": null,
    "one_way": true,
@@ -16725,15 +16758,15 @@
    "distance": 5423,
    "airline": null,
    "gate": "Kupi.com",
-   "found_at": "2026-11-23T13:16:11",
+   "found_at": "2026-11-27T15:15:36",
    "source": "aviasales-latest",
    "id": "KUL-VVO|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 1451.0,
-   "ratio": 1.07,
-   "per_km": 0.2862,
+   "ratio": 1.067,
+   "per_km": 0.2855,
    "dest_name": "Vladivostok",
    "dest_name_zh": "海参崴",
    "country": "RU",
