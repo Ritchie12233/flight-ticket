@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T00:22:10.819865+08:00",
+ "updated_at": "2026-11-28T00:37:31.486999+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -11605,7 +11605,7 @@
    "origin": "KUL",
    "dest": "BTH",
    "price": 392.0,
-   "depart": "2026-12-06",
+   "depart": "2026-12-07",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -11613,7 +11613,7 @@
    "distance": 323,
    "airline": null,
    "gate": "Kiwi.com",
-   "found_at": "2026-11-26T16:34:56",
+   "found_at": "2026-11-27T16:07:53",
    "source": "aviasales-latest",
    "id": "KUL-BTH|OW|0",
    "type": "fare",
