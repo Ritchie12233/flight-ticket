@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-28T00:07:48.285500+08:00",
+ "updated_at": "2026-11-28T00:22:10.819865+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1084,
-  "routes": 752,
+  "fares_scanned": 1083,
+  "routes": 751,
   "bug": 1,
   "great": 3,
   "target": 0
@@ -16,16 +16,16 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1084
+   "count": 1083
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
    "name": "Secret Flying · 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -20251,6 +20251,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "KSN",
+   "price": 2215.0,
+   "depart": "2027-01-29",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 6605,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-27T16:01:13",
+   "source": "aviasales-latest",
+   "id": "KUL-KSN|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 3000.0,
+   "ratio": 0.738,
+   "per_km": 0.3354,
+   "dest_name": "Kostanay",
+   "dest_name_zh": "Kostanay",
+   "country": "KZ",
+   "lat": 53.2198089,
+   "lon": 63.6354232,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "LED",
    "price": 2215.0,
    "depart": "2026-12-28",
@@ -23214,39 +23247,6 @@
    "country": "KZ",
    "lat": 52.2873032,
    "lon": 76.9674023,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "KSN",
-   "price": 3190.0,
-   "depart": "2027-04-04",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 6605,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-23T09:08:08",
-   "source": "aviasales-latest",
-   "id": "KUL-KSN|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 3000.0,
-   "ratio": 1.063,
-   "per_km": 0.483,
-   "dest_name": "Kostanay",
-   "dest_name_zh": "Kostanay",
-   "country": "KZ",
-   "lat": 53.2198089,
-   "lon": 63.6354232,
    "visa": {
     "status": "free",
     "label": "免签",
