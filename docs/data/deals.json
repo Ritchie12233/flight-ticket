@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T07:39:18.480558+08:00",
+ "updated_at": "2026-11-28T07:53:39.156241+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -113,7 +113,12 @@
     "label": "落地签/电子签",
     "note": "落地签 30 天"
    },
-   "visited": false
+   "visited": false,
+   "back": {
+    "price": 443.0,
+    "depart": "2026-11-30"
+   },
+   "rt_ref": 658.0
   },
   {
    "origin": "KUL",
@@ -653,7 +658,7 @@
   {
    "origin": "KUL",
    "dest": "MIL",
-   "price": 9077.0,
+   "price": 9130.0,
    "depart": "2027-01-28",
    "return": "2027-02-10",
    "one_way": false,
@@ -662,15 +667,15 @@
    "distance": 10020,
    "airline": null,
    "gate": "Ubfly",
-   "found_at": "2026-11-27T00:23:56Z",
+   "found_at": "2026-11-27T23:37:27Z",
    "source": "aviasales-latest",
    "id": "KUL-MIL|RT|1",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 12023.0,
-   "ratio": 0.755,
-   "per_km": 0.4529,
+   "ratio": 0.759,
+   "per_km": 0.4556,
    "dest_name": "Milan",
    "dest_name_zh": "米兰",
    "country": "IT",
@@ -11434,7 +11439,12 @@
     "label": "落地签/电子签",
     "note": "落地签 30 天"
    },
-   "visited": false
+   "visited": false,
+   "back": {
+    "price": 443.0,
+    "depart": "2026-11-30"
+   },
+   "rt_ref": 658.0
   },
   {
    "origin": "KUL",
@@ -24539,6 +24549,14 @@
   }
  ],
  "alerts": [
+  {
+   "at": "2026-11-28T07:53:39.156241+08:00",
+   "title": "🔥 疑似BUG价 吉隆坡→巨港 ¥332【落地签/电子签】",
+   "url": "https://www.aviasales.com/search/KUL0412PLM1",
+   "channels": [
+    "ntfy"
+   ]
+  },
   {
    "at": "2026-11-27T14:15:31.731833+08:00",
    "title": "🔥 疑似BUG价 吉隆坡→哈巴罗夫斯克 ¥4,545【免签】",
