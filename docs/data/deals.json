@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T04:46:14.744958+08:00",
+ "updated_at": "2026-11-28T05:00:35.877042+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -16720,39 +16720,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "ADL",
-   "price": 1576.0,
-   "depart": "2026-12-12",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5682,
-   "airline": null,
-   "gate": "Flightnetwork",
-   "found_at": "2026-11-27T11:03:00",
-   "source": "aviasales-latest",
-   "id": "KUL-ADL|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1675.0,
-   "ratio": 0.941,
-   "per_km": 0.2774,
-   "dest_name": "Adelaide",
-   "dest_name_zh": "阿德莱德",
-   "country": "AU",
-   "lat": -34.9286212,
-   "lon": 138.5999594,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "XFN",
    "price": 1577.0,
    "depart": "2026-12-15",
@@ -16816,6 +16783,39 @@
     "note": "回国，不需要签证"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "ADL",
+   "price": 1595.0,
+   "depart": "2026-12-10",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5682,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-25T19:05:37",
+   "source": "aviasales-latest",
+   "id": "KUL-ADL|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1675.0,
+   "ratio": 0.952,
+   "per_km": 0.2807,
+   "dest_name": "Adelaide",
+   "dest_name_zh": "阿德莱德",
+   "country": "AU",
+   "lat": -34.9286212,
+   "lon": 138.5999594,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
