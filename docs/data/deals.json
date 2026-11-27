@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T13:46:55.242135+08:00",
+ "updated_at": "2026-11-27T14:01:13.503909+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -20555,7 +20555,7 @@
    "distance": 7186,
    "airline": null,
    "gate": "Clickavia",
-   "found_at": "2026-11-27T02:07:39",
+   "found_at": "2026-11-27T05:41:56",
    "source": "aviasales-latest",
    "id": "KUL-OGZ|OW|0",
    "type": "fare",
