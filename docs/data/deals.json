@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-27T22:26:39.577844+08:00",
+ "updated_at": "2026-11-27T22:41:12.373967+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1079,
-  "routes": 750,
+  "fares_scanned": 1080,
+  "routes": 751,
   "bug": 2,
   "great": 5,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1079
+   "count": 1080
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -14469,6 +14469,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "TYO",
+   "price": 1083.0,
+   "depart": "2027-10-19",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5408,
+   "airline": null,
+   "gate": "Trip.com",
+   "found_at": "2026-11-27T14:21:30",
+   "source": "aviasales-latest",
+   "id": "KUL-TYO|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1103.0,
+   "ratio": 0.982,
+   "per_km": 0.2003,
+   "dest_name": "Tokyo",
+   "dest_name_zh": "东京",
+   "country": "JP",
+   "lat": 35.6761919,
+   "lon": 139.6503106,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "MLG",
    "price": 1094.0,
    "depart": "2026-12-01",
@@ -14497,39 +14530,6 @@
     "status": "easy",
     "label": "落地签/电子签",
     "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "TYO",
-   "price": 1095.0,
-   "depart": "2027-03-02",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 5408,
-   "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-21T10:03:29",
-   "source": "aviasales-latest",
-   "id": "KUL-TYO|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1103.0,
-   "ratio": 0.993,
-   "per_km": 0.2025,
-   "dest_name": "Tokyo",
-   "dest_name_zh": "东京",
-   "country": "JP",
-   "lat": 35.6761919,
-   "lon": 139.6503106,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
    },
    "visited": false
   },
