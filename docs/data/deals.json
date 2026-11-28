@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T10:03:16.532611+08:00",
+ "updated_at": "2026-11-28T10:17:41.397140+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -117,6 +117,41 @@
   },
   {
    "origin": "KUL",
+   "dest": "DRW",
+   "price": 1035.0,
+   "depart": "2026-12-13",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3636,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-28T01:52:33",
+   "source": "aviasales-latest",
+   "id": "KUL-DRW|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 43%"
+   ],
+   "baseline": 1806.0,
+   "ratio": 0.573,
+   "per_km": 0.2847,
+   "dest_name": "Darwin",
+   "dest_name_zh": "达尔文",
+   "country": "AU",
+   "lat": -12.4628198,
+   "lon": 130.8417694,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "OKA",
    "price": 2457.0,
    "depart": "2027-01-16",
@@ -143,41 +178,6 @@
    "country": "JP",
    "lat": 26.1201911,
    "lon": 127.7025012,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "DRW",
-   "price": 1172.0,
-   "depart": "2026-12-12",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3636,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-27T22:19:17",
-   "source": "aviasales-latest",
-   "id": "KUL-DRW|OW|0",
-   "type": "fare",
-   "level": "great",
-   "reasons": [
-    "比近期常规价低 35%"
-   ],
-   "baseline": 1806.0,
-   "ratio": 0.649,
-   "per_km": 0.3223,
-   "dest_name": "Darwin",
-   "dest_name_zh": "达尔文",
-   "country": "AU",
-   "lat": -12.4628198,
-   "lon": 130.8417694,
    "visa": {
     "status": "visa",
     "label": "需签证",
@@ -14492,6 +14492,41 @@
   },
   {
    "origin": "KUL",
+   "dest": "DRW",
+   "price": 1035.0,
+   "depart": "2026-12-13",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 3636,
+   "airline": null,
+   "gate": "Kiwi.com",
+   "found_at": "2026-11-28T01:52:33",
+   "source": "aviasales-latest",
+   "id": "KUL-DRW|OW|0",
+   "type": "fare",
+   "level": "great",
+   "reasons": [
+    "比近期常规价低 43%"
+   ],
+   "baseline": 1806.0,
+   "ratio": 0.573,
+   "per_km": 0.2847,
+   "dest_name": "Darwin",
+   "dest_name_zh": "达尔文",
+   "country": "AU",
+   "lat": -12.4628198,
+   "lon": 130.8417694,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "BXU",
    "price": 1037.0,
    "depart": "2027-02-07",
@@ -15083,41 +15118,6 @@
     "note": "回国，不需要签证"
    },
    "visited": true
-  },
-  {
-   "origin": "KUL",
-   "dest": "DRW",
-   "price": 1172.0,
-   "depart": "2026-12-12",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 3636,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-27T22:19:17",
-   "source": "aviasales-latest",
-   "id": "KUL-DRW|OW|0",
-   "type": "fare",
-   "level": "great",
-   "reasons": [
-    "比近期常规价低 35%"
-   ],
-   "baseline": 1806.0,
-   "ratio": 0.649,
-   "per_km": 0.3223,
-   "dest_name": "Darwin",
-   "dest_name_zh": "达尔文",
-   "country": "AU",
-   "lat": -12.4628198,
-   "lon": 130.8417694,
-   "visa": {
-    "status": "visa",
-    "label": "需签证",
-    "note": "需提前办签证，抢到特价票也可能来不及"
-   },
-   "visited": false
   },
   {
    "origin": "KUL",
@@ -24421,68 +24421,6 @@
     325.0
    ]
   ],
-  "KUL-OKA|RT|0": [
-   [
-    "2026-11-11",
-    4898.0
-   ],
-   [
-    "2026-11-12",
-    4872.0
-   ],
-   [
-    "2026-11-13",
-    4847.0
-   ],
-   [
-    "2026-11-14",
-    4847.0
-   ],
-   [
-    "2026-11-15",
-    4897.0
-   ],
-   [
-    "2026-11-16",
-    4867.0
-   ],
-   [
-    "2026-11-20",
-    2970.0
-   ],
-   [
-    "2026-11-21",
-    2970.0
-   ],
-   [
-    "2026-11-22",
-    2973.0
-   ],
-   [
-    "2026-11-23",
-    2968.0
-   ],
-   [
-    "2026-11-24",
-    7850.0
-   ],
-   [
-    "2026-11-25",
-    2457.0
-   ],
-   [
-    "2026-11-26",
-    2458.0
-   ],
-   [
-    "2026-11-27",
-    2443.0
-   ],
-   [
-    "2026-11-28",
-    2445.0
-   ]
-  ],
   "KUL-DRW|OW|0": [
    [
     "2026-11-11",
@@ -24550,7 +24488,69 @@
    ],
    [
     "2026-11-28",
-    1166.0
+    1035.0
+   ]
+  ],
+  "KUL-OKA|RT|0": [
+   [
+    "2026-11-11",
+    4898.0
+   ],
+   [
+    "2026-11-12",
+    4872.0
+   ],
+   [
+    "2026-11-13",
+    4847.0
+   ],
+   [
+    "2026-11-14",
+    4847.0
+   ],
+   [
+    "2026-11-15",
+    4897.0
+   ],
+   [
+    "2026-11-16",
+    4867.0
+   ],
+   [
+    "2026-11-20",
+    2970.0
+   ],
+   [
+    "2026-11-21",
+    2970.0
+   ],
+   [
+    "2026-11-22",
+    2973.0
+   ],
+   [
+    "2026-11-23",
+    2968.0
+   ],
+   [
+    "2026-11-24",
+    7850.0
+   ],
+   [
+    "2026-11-25",
+    2457.0
+   ],
+   [
+    "2026-11-26",
+    2458.0
+   ],
+   [
+    "2026-11-27",
+    2443.0
+   ],
+   [
+    "2026-11-28",
+    2445.0
    ]
   ]
  },
