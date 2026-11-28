@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T18:31:43.969275+08:00",
+ "updated_at": "2026-11-28T18:46:07.009650+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -35,7 +35,7 @@
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": false,
+   "ok": true,
    "count": 0
   },
   {
