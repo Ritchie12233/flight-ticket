@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-28T16:22:33.743638+08:00",
+ "updated_at": "2026-11-28T16:36:57.028955+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1079,
+  "fares_scanned": 1080,
   "routes": 748,
   "bug": 1,
   "great": 3,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1079
+   "count": 1080
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -8639,12 +8639,13 @@
    "return": "2026-12-20",
    "one_way": false,
    "trip_class": 0,
-   "transfers": null,
+   "transfers": 1,
    "distance": 5414,
    "airline": "Oman Air (WY)",
    "flight_number": 824,
    "found_at": null,
    "source": "aviasales-cheap",
+   "gate": "Mytrip.com",
    "id": "KUL-SLL|RT|0",
    "type": "fare",
    "level": "normal",
