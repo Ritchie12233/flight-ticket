@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28T14:53:01.800044+08:00",
+ "updated_at": "2026-11-28T15:07:32.371083+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
@@ -30,12 +30,12 @@
   },
   {
    "name": "Google 新闻 · KL 错误票价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
    "name": "Google 新闻 · 中文 bug 价",
-   "ok": true,
+   "ok": false,
    "count": 0
   },
   {
@@ -17008,39 +17008,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "IKT",
-   "price": 1591.0,
-   "depart": "2026-12-31",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 1,
-   "distance": 5511,
-   "airline": null,
-   "gate": "Clickavia",
-   "found_at": "2026-11-28T02:23:54",
-   "source": "aviasales-latest",
-   "id": "KUL-IKT|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 1617.0,
-   "ratio": 0.984,
-   "per_km": 0.2887,
-   "dest_name": "Irkutsk",
-   "dest_name_zh": "伊尔库次克",
-   "country": "RU",
-   "lat": 52.2869741,
-   "lon": 104.3050183,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天（据报道延至 2027 年底）"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "ADL",
    "price": 1603.0,
    "depart": "2026-12-10",
@@ -17102,6 +17069,39 @@
     "status": "visa",
     "label": "需签证",
     "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "IKT",
+   "price": 1612.0,
+   "depart": "2026-12-31",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 1,
+   "distance": 5511,
+   "airline": null,
+   "gate": "Kupi.com",
+   "found_at": "2026-11-28T06:50:30",
+   "source": "aviasales-latest",
+   "id": "KUL-IKT|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 1617.0,
+   "ratio": 0.997,
+   "per_km": 0.2925,
+   "dest_name": "Irkutsk",
+   "dest_name_zh": "伊尔库次克",
+   "country": "RU",
+   "lat": 52.2869741,
+   "lon": 104.3050183,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 30 天（据报道延至 2027 年底）"
    },
    "visited": false
   },
@@ -18363,7 +18363,7 @@
    "origin": "KUL",
    "dest": "MOW",
    "price": 1923.0,
-   "depart": "2027-02-16",
+   "depart": "2027-03-02",
    "return": null,
    "one_way": true,
    "trip_class": 0,
@@ -18371,7 +18371,7 @@
    "distance": 8183,
    "airline": null,
    "gate": "Авиасейлс",
-   "found_at": "2026-11-27T20:04:14",
+   "found_at": "2026-11-28T06:38:20",
    "source": "aviasales-latest",
    "id": "KUL-MOW|OW|0",
    "type": "fare",
