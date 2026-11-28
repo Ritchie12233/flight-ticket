@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-28T16:07:52.527179+08:00",
+ "updated_at": "2026-11-28T16:22:33.743638+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1078,
-  "routes": 747,
+  "fares_scanned": 1079,
+  "routes": 748,
   "bug": 1,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1078
+   "count": 1079
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -8628,6 +8628,39 @@
     "status": "free",
     "label": "免签",
     "note": "免签 30 天"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
+   "dest": "SLL",
+   "price": 4638.0,
+   "depart": "2026-12-12",
+   "return": "2026-12-20",
+   "one_way": false,
+   "trip_class": 0,
+   "transfers": null,
+   "distance": 5414,
+   "airline": "Oman Air (WY)",
+   "flight_number": 824,
+   "found_at": null,
+   "source": "aviasales-cheap",
+   "id": "KUL-SLL|RT|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.4283,
+   "dest_name": "Salalah",
+   "dest_name_zh": "塞拉莱",
+   "country": "OM",
+   "lat": 17.0193843,
+   "lon": 54.1107505,
+   "visa": {
+    "status": "free",
+    "label": "免签",
+    "note": "免签 14 天"
    },
    "visited": false
   },
