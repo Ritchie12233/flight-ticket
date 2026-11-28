@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-28T13:26:41.615347+08:00",
+ "updated_at": "2026-11-28T13:41:01.314239+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1078,
+  "fares_scanned": 1079,
   "routes": 748,
   "bug": 1,
   "great": 3,
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1078
+   "count": 1079
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -11099,12 +11099,13 @@
    "return": "2027-01-15",
    "one_way": false,
    "trip_class": 0,
-   "transfers": null,
+   "transfers": 2,
    "distance": 19015,
    "airline": "China Airlines (CI)",
    "flight_number": 722,
    "found_at": null,
    "source": "aviasales-cheap",
+   "gate": "Trip.com",
    "id": "KUL-LIM|RT|0",
    "type": "fare",
    "level": "normal",
@@ -13078,39 +13079,6 @@
   },
   {
    "origin": "KUL",
-   "dest": "PNH",
-   "price": 716.0,
-   "depart": "2026-12-05",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 0,
-   "distance": 1020,
-   "airline": null,
-   "gate": "Tickets",
-   "found_at": "2026-11-24T09:40:06",
-   "source": "aviasales-latest",
-   "id": "KUL-PNH|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 697.0,
-   "ratio": 1.027,
-   "per_km": 0.702,
-   "dest_name": "Phnom Penh",
-   "dest_name_zh": "金边",
-   "country": "KH",
-   "lat": 11.5563738,
-   "lon": 104.9282099,
-   "visa": {
-    "status": "easy",
-    "label": "落地签/电子签",
-    "note": "落地签 30 天"
-   },
-   "visited": false
-  },
-  {
-   "origin": "KUL",
    "dest": "VTE",
    "price": 718.0,
    "depart": "2027-01-16",
@@ -13207,6 +13175,39 @@
     "note": "免签 14 天（试行，限指定机场入境）"
    },
    "visited": true
+  },
+  {
+   "origin": "KUL",
+   "dest": "PNH",
+   "price": 728.0,
+   "depart": "2027-01-05",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 0,
+   "distance": 1020,
+   "airline": null,
+   "gate": "Clickavia",
+   "found_at": "2026-11-23T10:35:59",
+   "source": "aviasales-latest",
+   "id": "KUL-PNH|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": 697.0,
+   "ratio": 1.044,
+   "per_km": 0.7137,
+   "dest_name": "Phnom Penh",
+   "dest_name_zh": "金边",
+   "country": "KH",
+   "lat": 11.5563738,
+   "lon": 104.9282099,
+   "visa": {
+    "status": "easy",
+    "label": "落地签/电子签",
+    "note": "落地签 30 天"
+   },
+   "visited": false
   },
   {
    "origin": "KUL",
