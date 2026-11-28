@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-11-28T18:46:07.009650+08:00",
+ "updated_at": "2026-11-28T19:00:27.262287+08:00",
  "origin": "KUL",
  "currency": "CNY",
  "stats": {
-  "fares_scanned": 1080,
-  "routes": 748,
+  "fares_scanned": 1082,
+  "routes": 750,
   "bug": 1,
   "great": 3,
   "target": 0
@@ -16,7 +16,7 @@
   {
    "name": "Aviasales 实时低价",
    "ok": true,
-   "count": 1080
+   "count": 1082
   },
   {
    "name": "Secret Flying · 吉隆坡出发",
@@ -16683,24 +16683,24 @@
   {
    "origin": "KUL",
    "dest": "BBI",
-   "price": 1523.0,
-   "depart": "2027-01-18",
+   "price": 1513.0,
+   "depart": "2027-02-06",
    "return": null,
    "one_way": true,
    "trip_class": 0,
    "transfers": 1,
    "distance": 2598,
    "airline": null,
-   "gate": "Trip.com",
-   "found_at": "2026-11-27T12:43:27",
+   "gate": "Kupi.com",
+   "found_at": "2026-11-28T10:37:09",
    "source": "aviasales-latest",
    "id": "KUL-BBI|OW|0",
    "type": "fare",
    "level": "normal",
    "reasons": [],
    "baseline": 1676.0,
-   "ratio": 0.909,
-   "per_km": 0.5862,
+   "ratio": 0.903,
+   "per_km": 0.5824,
    "dest_name": "Bhubaneswar",
    "dest_name_zh": "布巴内斯瓦尔",
    "country": "IN",
@@ -23548,6 +23548,39 @@
   },
   {
    "origin": "KUL",
+   "dest": "TRD",
+   "price": 3324.0,
+   "depart": "2027-01-07",
+   "return": null,
+   "one_way": true,
+   "trip_class": 0,
+   "transfers": 3,
+   "distance": 9772,
+   "airline": null,
+   "gate": "Aviakassa",
+   "found_at": "2026-11-28T10:32:01",
+   "source": "aviasales-latest",
+   "id": "KUL-TRD|OW|0",
+   "type": "fare",
+   "level": "normal",
+   "reasons": [],
+   "baseline": null,
+   "ratio": null,
+   "per_km": 0.3402,
+   "dest_name": "Trondheim",
+   "dest_name_zh": "特隆赫姆",
+   "country": "NO",
+   "lat": 63.4305149,
+   "lon": 10.3950528,
+   "visa": {
+    "status": "visa",
+    "label": "需签证",
+    "note": "需提前办签证，抢到特价票也可能来不及"
+   },
+   "visited": false
+  },
+  {
+   "origin": "KUL",
    "dest": "PKC",
    "price": 3325.0,
    "depart": "2026-12-07",
@@ -24370,39 +24403,6 @@
     "note": "持有效美/加/日/英/申根签证可免签"
    },
    "visited": false
-  },
-  {
-   "origin": "KUL",
-   "dest": "PRI",
-   "price": 4142.0,
-   "depart": "2026-11-30",
-   "return": null,
-   "one_way": true,
-   "trip_class": 0,
-   "transfers": 3,
-   "distance": 5172,
-   "airline": null,
-   "gate": "Kupi.com",
-   "found_at": "2026-11-23T18:49:29",
-   "source": "aviasales-latest",
-   "id": "KUL-PRI|OW|0",
-   "type": "fare",
-   "level": "normal",
-   "reasons": [],
-   "baseline": 4146.0,
-   "ratio": 0.999,
-   "per_km": 0.8009,
-   "dest_name": "Praslin Island",
-   "dest_name_zh": "普拉兰岛",
-   "country": "SC",
-   "lat": -4.323883,
-   "lon": 55.692314,
-   "visa": {
-    "status": "free",
-    "label": "免签",
-    "note": "免签 30 天"
-   },
-   "visited": false
   }
  ],
  "trend": {
@@ -24664,6 +24664,17 @@
   ]
  },
  "news": [
+  {
+   "id": "rss:57f07a74b8847d13",
+   "type": "news",
+   "level": "news",
+   "title": "HIGH SEASON ☀️🌴 Cheap full-service flights from many European cities to South East Asia from €438",
+   "summary": "Your Southeast Asian escape just got more affordable! Take advantage of discounted Saudia flights to Thailand, Singapore, Indonesia, and Malaysia with fares starting from only €438 return. Whether you fancy island hopping in Thailand, soaking up Bali’s laid-back atmosphere, exploring Singapore’s futuristic skyline or discovering Malaysia’s incredible diversity, these flight deals make planning a h",
+   "link": "https://www.fly4free.com/flight-deals/europe/flights-from-europe-to-south-east-asia-e438/",
+   "source": "Fly4free 全球特价",
+   "published": "2026-11-28T10:55:32+00:00",
+   "is_error_fare": false
+  },
   {
    "id": "rss:08861597d1ac442d",
    "type": "news",

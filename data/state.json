@@ -8006,7 +8006,7 @@
    "2026-11-22": 1675.0,
    "2026-11-23": 1675.0,
    "2026-11-27": 1512.0,
-   "2026-11-28": 1515.0
+   "2026-11-28": 1513.0
   },
   "KUL-BUH|OW|0": {
    "2026-11-11": 1808.0,
@@ -15894,7 +15894,8 @@
    "2026-11-21": 4389.0,
    "2026-11-22": 4393.0,
    "2026-11-23": 4386.0,
-   "2026-11-24": 4417.0
+   "2026-11-24": 4417.0,
+   "2026-11-28": 5492.0
   },
   "KUL-IXB|OW|0": {
    "2026-11-17": 1939.0,
@@ -17626,6 +17627,9 @@
   },
   "KUL-NUX|OW|0": {
    "2026-11-28": 4569.0
+  },
+  "KUL-TRD|OW|0": {
+   "2026-11-28": 3324.0
   }
  },
  "alerted": {
@@ -17647,6 +17651,17 @@
   }
  },
  "news": [
+  {
+   "id": "rss:57f07a74b8847d13",
+   "type": "news",
+   "level": "news",
+   "title": "HIGH SEASON ☀️🌴 Cheap full-service flights from many European cities to South East Asia from €438",
+   "summary": "Your Southeast Asian escape just got more affordable! Take advantage of discounted Saudia flights to Thailand, Singapore, Indonesia, and Malaysia with fares starting from only €438 return. Whether you fancy island hopping in Thailand, soaking up Bali’s laid-back atmosphere, exploring Singapore’s futuristic skyline or discovering Malaysia’s incredible diversity, these flight deals make planning a h",
+   "link": "https://www.fly4free.com/flight-deals/europe/flights-from-europe-to-south-east-asia-e438/",
+   "source": "Fly4free 全球特价",
+   "published": "2026-11-28T10:55:32+00:00",
+   "is_error_fare": false
+  },
   {
    "id": "rss:08861597d1ac442d",
    "type": "news",
